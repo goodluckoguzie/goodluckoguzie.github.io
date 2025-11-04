@@ -10,7 +10,7 @@ title: Home
     </div>
     <div class="hero-text">
       <h1>Welcome!</h1>
-      <p class="lead">I conduct research on <strong>intelligent systems</strong> that integrate <strong>computer vision</strong>, <strong>machine learning</strong>, and <strong>human-computer interaction</strong> to support independent living and technological advancement. My work spans predictive world models for social navigation, neural network architectures (including Cosine Gated LSTM), and healthcare technology applications. Across these directions, I focus on developing adaptive, privacy-preserving, and sustainable systems that promote user trust and comfort.</p>
+      <p class="lead">I conduct research on <strong>intelligent systems</strong> that integrate <strong>computer vision</strong>, <strong>machine learning</strong>, and <strong>human-computer interaction</strong> to support independent living and technological advancement. My work spans predictive world models for social navigation, neural network architectures (including Cosine Gated LSTM), and healthcare technology applications.</p>
       <p><a href="{{ '/research' | relative_url }}" class="btn">Explore My Research</a></p>
     </div>
   </div>
