@@ -118,22 +118,9 @@ A comprehensive web-based healthcare resource discovery system integrating:
 
 ---
 
-## Awards & Recognition
-
-- [Awards and recognition will be listed here]
-
----
-
-## Professional Memberships
-
-- [Professional memberships will be listed here]
-
----
-
 ## Languages
 
-- English: Fluent
-- [Other languages]
+- **English:** Fluent
 
 ---
 
@@ -143,7 +130,7 @@ Available upon request.
 
 ---
 
-**Last Updated:** [Date]
+**Last Updated:** January 2025
 
 ---
 
