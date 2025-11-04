@@ -708,6 +708,52 @@ code {
         width: 40px;
         height: 40px;
     }
+    
+    .about-hero {
+        flex-direction: column;
+        text-align: center;
+        gap: 2rem;
+    }
+    
+    .about-photo {
+        width: 150px;
+        height: 150px;
+    }
+    
+    .hero-actions {
+        flex-direction: column;
+    }
+    
+    .hero-actions .btn {
+        width: 100%;
+        text-align: center;
+    }
+    
+    .contact-actions {
+        flex-direction: column;
+    }
+    
+    .contact-actions .btn {
+        width: 100%;
+        text-align: center;
+    }
+    
+    .research-icon {
+        font-size: 2.5rem;
+    }
+    
+    .stats-grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 1rem;
+    }
+    
+    .stat-card {
+        padding: 1.5rem;
+    }
+    
+    .stat-number {
+        font-size: 2rem;
+    }
 }
 
 /* Smooth scroll animations */
