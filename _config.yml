@@ -1,0 +1,56 @@
+# Site Settings
+title: "Goodluck Oguzie"
+name: "Goodluck Oguzie"
+description: "Research in AI, Machine Learning, and Human-Computer Interaction"
+url: "https://goodluckoguzie.github.io"
+baseurl: ""
+
+# Author/Profile Information
+author:
+  name: "Goodluck Oguzie"
+  email: "drgoodluckoguzie@gmail.com"
+  location: "United Kingdom"
+  institution: "Solent University"
+  bio: "I conduct research on intelligent systems that integrate computer vision, machine learning, and human-computer interaction. My work spans predictive world models, neural network architectures, and healthcare technology applications. I focus on developing adaptive and sustainable AI solutions that promote user trust and technological advancement."
+  
+# Social Links
+social:
+  linkedin: "goodluck-oguzie-0387b3157"
+  github: "goodluckoguzie"  # Update with your GitHub username
+  google_scholar: ""  # Add your Google Scholar ID
+  orcid: ""  # Add your ORCID ID
+  researchgate: ""  # Add your ResearchGate profile
+
+# Theme Settings
+theme: minima
+plugins:
+  - jekyll-feed
+  - jekyll-seo-tag
+
+# Build Settings
+markdown: kramdown
+highlighter: rouge
+
+# Navigation
+navigation:
+  - title: Home
+    url: /
+  - title: Research
+    url: /research/
+  - title: Publications
+    url: /publications/
+  - title: Teaching
+    url: /teaching/
+  - title: CV
+    url: /cv/
+
+# Exclude from processing
+exclude:
+  - Gemfile
+  - Gemfile.lock
+  - node_modules
+  - vendor/bundle/
+  - vendor/cache/
+  - vendor/gems/
+  - vendor/ruby/
+

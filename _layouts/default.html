@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{% if page.title %}{{ page.title }} - {% endif %}{{ site.title }}</title>
+    <link rel="stylesheet" href="{{ '/assets/css/style.css' | relative_url }}">
+    {% seo %}
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <div class="container">
+                <div class="nav-brand">
+                    <a href="{{ '/' | relative_url }}">{{ site.author.name }}</a>
+                </div>
+                <ul class="nav-menu">
+                    <li><a href="{{ '/' | relative_url }}">Home</a></li>
+                    <li><a href="{{ '/research' | relative_url }}">Research</a></li>
+                    <li><a href="{{ '/publications' | relative_url }}">Publications</a></li>
+                    <li><a href="{{ '/teaching' | relative_url }}">Teaching</a></li>
+                    <li><a href="{{ '/cv' | relative_url }}">CV</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <main class="container">
+        {{ content }}
+    </main>
+
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>Contact</h3>
+                    <p><strong>Location:</strong> {{ site.author.location }}</p>
+                    <p><strong>Institution:</strong> {{ site.author.institution }}</p>
+                    <p><strong>Email:</strong> <a href="mailto:{{ site.author.email }}">{{ site.author.email }}</a></p>
+                </div>
+                <div class="footer-section">
+                    <h3>Follow</h3>
+                    <ul class="social-links">
+                        {% if site.social.linkedin %}
+                        <li><a href="https://www.linkedin.com/in/{{ site.social.linkedin }}" target="_blank">LinkedIn</a></li>
+                        {% endif %}
+                        {% if site.social.github %}
+                        <li><a href="https://github.com/{{ site.social.github }}" target="_blank">GitHub</a></li>
+                        {% endif %}
+                        {% if site.social.google_scholar %}
+                        <li><a href="https://scholar.google.com/citations?user={{ site.social.google_scholar }}" target="_blank">Google Scholar</a></li>
+                        {% endif %}
+                        {% if site.social.orcid %}
+                        <li><a href="https://orcid.org/{{ site.social.orcid }}" target="_blank">ORCID</a></li>
+                        {% endif %}
+                        {% if site.social.researchgate %}
+                        <li><a href="https://www.researchgate.net/profile/{{ site.social.researchgate }}" target="_blank">ResearchGate</a></li>
+                        {% endif %}
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; {{ 'now' | date: "%Y" }} {{ site.author.name }}. Powered by <a href="https://jekyllrb.com/" target="_blank">Jekyll</a>.</p>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
+
