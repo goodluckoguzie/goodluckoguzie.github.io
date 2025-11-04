@@ -23,12 +23,6 @@ Developing advanced neural network architectures using cosine gating mechanisms 
 
 **Paper** | **Code**
 
-### Healthcare Resource Discovery Systems
-
-Designing and implementing web-based systems for discovering and managing healthcare resources, integrating modern web technologies with user-centered design principles.
-
-**Paper** | **Code**
-
 ---
 
 ## Recent News
