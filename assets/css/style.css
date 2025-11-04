@@ -1053,7 +1053,132 @@ code {
     margin-top: 0.5rem;
 }
 
-/* Portfolio Page Styles */
+/* Portfolio Page Styles - Case Study Format */
+.portfolio-filters {
+    display: flex;
+    gap: 1rem;
+    margin: 2rem 0;
+    flex-wrap: wrap;
+}
+
+.portfolio-filter-btn {
+    padding: 0.75rem 1.5rem;
+    border: 2px solid var(--border);
+    background: var(--bg-card);
+    color: var(--text);
+    border-radius: 8px;
+    font-size: 0.95rem;
+    font-weight: 500;
+    cursor: pointer;
+    transition: all var(--transition-fast);
+}
+
+.portfolio-filter-btn:hover {
+    border-color: var(--secondary);
+    background: var(--bg-alt);
+}
+
+.portfolio-filter-btn.active {
+    background: var(--secondary);
+    color: white;
+    border-color: var(--secondary);
+}
+
+.project-status-badge {
+    display: inline-block;
+    padding: 0.5rem 1rem;
+    border-radius: 20px;
+    font-size: 0.85rem;
+    font-weight: 600;
+    margin-bottom: 1rem;
+}
+
+.project-status-badge.ongoing {
+    background: var(--accent-alt);
+    color: white;
+}
+
+.project-status-badge.completed {
+    background: var(--accent);
+    color: white;
+}
+
+/* Case Study Project Format */
+.portfolio-case-study {
+    background: var(--bg-card);
+    padding: 2.5rem;
+    border-radius: 16px;
+    box-shadow: var(--shadow);
+    margin-bottom: 3rem;
+    border-left: 4px solid var(--secondary);
+}
+
+.portfolio-case-study h3 {
+    margin-top: 0;
+    margin-bottom: 1rem;
+    color: var(--text);
+    font-size: 1.75rem;
+}
+
+.portfolio-case-study .project-meta {
+    color: var(--text-light);
+    font-size: 0.95rem;
+    margin-bottom: 2rem;
+    line-height: 1.8;
+}
+
+.portfolio-case-study .project-section {
+    margin-bottom: 2rem;
+}
+
+.portfolio-case-study .project-section h4 {
+    margin-bottom: 1rem;
+    color: var(--text);
+    font-size: 1.25rem;
+}
+
+.portfolio-case-study .project-section ul {
+    margin-left: 1.5rem;
+    margin-bottom: 1rem;
+}
+
+.portfolio-case-study .project-section li {
+    margin-bottom: 0.75rem;
+    line-height: 1.6;
+    color: var(--text);
+}
+
+.portfolio-case-study .project-section strong {
+    color: var(--text);
+    font-weight: 600;
+}
+
+.portfolio-case-study .tech-tools {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+    margin-top: 1rem;
+}
+
+.portfolio-case-study .tech-tools span {
+    background: var(--bg-alt);
+    padding: 0.5rem 1rem;
+    border-radius: 6px;
+    font-size: 0.9rem;
+    color: var(--text);
+    border: 1px solid var(--border);
+}
+
+.portfolio-case-study .project-links {
+    margin-top: 2rem;
+    padding-top: 2rem;
+    border-top: 2px solid var(--border);
+    display: flex;
+    gap: 1rem;
+    flex-wrap: wrap;
+}
+
+/* Portfolio Grid (for card-based layout) */
 .portfolio-grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
@@ -1140,6 +1265,31 @@ code {
 }
 
 @media (max-width: 768px) {
+    .portfolio-filters {
+        flex-direction: column;
+    }
+    
+    .portfolio-filter-btn {
+        width: 100%;
+        text-align: center;
+    }
+    
+    .portfolio-case-study {
+        padding: 1.5rem;
+    }
+    
+    .portfolio-case-study h3 {
+        font-size: 1.5rem;
+    }
+    
+    .portfolio-case-study .project-links {
+        flex-direction: column;
+    }
+    
+    .portfolio-case-study .project-links .btn {
+        width: 100%;
+    }
+    
     .portfolio-grid {
         grid-template-columns: 1fr;
         gap: 1.5rem;

@@ -202,6 +202,56 @@
                 });
             }
         }
+
+        // Portfolio Filtering (if on portfolio page)
+        if (document.querySelector('.portfolio-filters')) {
+            const portfolioFilterButtons = document.querySelectorAll('.portfolio-filter-btn');
+            const portfolioProjects = document.querySelectorAll('h3');
+            
+            portfolioFilterButtons.forEach(btn => {
+                btn.addEventListener('click', () => {
+                    // Toggle active state
+                    portfolioFilterButtons.forEach(b => b.classList.remove('active'));
+                    btn.classList.add('active');
+                    
+                    const filter = btn.dataset.filter;
+                    
+                    // Find all project sections (h3 elements followed by case studies)
+                    const allProjects = Array.from(document.querySelectorAll('h3')).filter(h3 => {
+                        return h3.textContent && !h3.textContent.includes('Research Methodologies');
+                    });
+                    
+                    allProjects.forEach((project, index) => {
+                        const projectSection = project.closest('div') || project.parentElement;
+                        if (projectSection) {
+                            const projectText = project.textContent.toLowerCase();
+                            const isResearch = projectText.includes('prediction') || 
+                                            projectText.includes('navigation') || 
+                                            projectText.includes('lstm') || 
+                                            projectText.includes('thesis') ||
+                                            projectText.includes('simulator');
+                            const isWeb = projectText.includes('discoverhealth') || 
+                                        projectText.includes('web') ||
+                                        projectText.includes('healthcare');
+                            const isTeaching = projectText.includes('teaching') || 
+                                            projectText.includes('module');
+                            
+                            if (filter === 'all') {
+                                projectSection.style.display = '';
+                            } else if (filter === 'research' && isResearch) {
+                                projectSection.style.display = '';
+                            } else if (filter === 'web' && isWeb) {
+                                projectSection.style.display = '';
+                            } else if (filter === 'teaching' && isTeaching) {
+                                projectSection.style.display = '';
+                            } else {
+                                projectSection.style.display = 'none';
+                            }
+                        }
+                    });
+                });
+            });
+        }
     </script>
     
     <!-- Google Analytics (Replace G-XXXXXXXXXX with your actual tracking ID) -->
