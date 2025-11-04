@@ -5,85 +5,39 @@ title: Insights
 
 # Research Insights & Articles
 
-<p class="lead">Articles on machine learning, social robotics, neural network architectures, and AI research trends.</p>
+A side interest in AI research trends, machine learning innovations, and robotics developments
 
----
-
-## Coming Soon
-
-<div class="coming-soon-card">
-  <div class="coming-soon-icon">📝</div>
-  <div class="coming-soon-content">
-    <h2>Research Insights Coming Soon</h2>
-    <p>I'm currently working on articles covering:</p>
-    <ul>
-      <li><strong>Machine Learning Trends:</strong> Latest developments in neural network architectures and sequential learning</li>
-      <li><strong>Social Robotics:</strong> Insights into predictive models for social navigation and human-robot interaction</li>
-      <li><strong>Reinforcement Learning:</strong> Advances in adaptive prediction horizons and world models</li>
-      <li><strong>Healthcare Technology:</strong> Applications of AI in healthcare resource discovery and management</li>
-      <li><strong>Research Methodology:</strong> Best practices for conducting research in AI and machine learning</li>
-    </ul>
-    <p>Check back soon for new articles and insights!</p>
-  </div>
+<div class="insights-filters">
+  <p>Filter by category:</p>
+  <button class="insight-filter-btn active" data-filter="all">All</button>
+  <button class="insight-filter-btn" data-filter="ml">Machine Learning</button>
+  <button class="insight-filter-btn" data-filter="robotics">Robotics</button>
+  <button class="insight-filter-btn" data-filter="neural">Neural Networks</button>
+  <button class="insight-filter-btn" data-filter="research">Research Trends</button>
+  <button class="insight-filter-btn" data-filter="healthcare">Healthcare Tech</button>
 </div>
 
----
+<div class="insights-content">
+  <div class="insight-icon">📝</div>
+  <h2>Articles Coming Soon</h2>
+  <p>I'm currently preparing articles on machine learning trends, social robotics innovations, neural network architecture developments, and AI research insights.</p>
+  <p><strong>Check back soon for insights on:</strong></p>
+  <ul class="insights-list">
+    <li>▸ Neural network architecture improvements and novel gating mechanisms</li>
+    <li>▸ Social robotics navigation trends and predictive modeling advances</li>
+    <li>▸ Reinforcement learning research guides and adaptive prediction horizons</li>
+    <li>▸ AI research policy updates and funding opportunities</li>
+    <li>▸ Latest innovations in sequential learning and pattern recognition</li>
+    <li>▸ Healthcare technology applications and geographic information systems</li>
+    <li>▸ Machine learning best practices and research methodology insights</li>
+  </ul>
+</div>
 
-## Research Areas of Interest
-
-### Machine Learning & Neural Networks
-- Novel architectures for sequential learning
-- Gating mechanisms in recurrent networks
-- Performance optimization techniques
-- Benchmark comparisons and evaluations
-
-### Social Robotics & Navigation
-- Predictive models for social environments
-- Human behavior prediction
-- Adaptive navigation strategies
-- Real-time decision-making systems
-
-### Reinforcement Learning
-- Adaptive prediction horizons
-- World models and planning
-- Continuous control algorithms
-- Sample efficiency improvements
-
-### Healthcare Technology
-- Web-based healthcare systems
-- Geographic information systems
-- User-centered design approaches
-- Accessibility and usability
-
----
-
-## Recent Publications
-
-For detailed information about my published work, please visit the [Publications](/publications) page.
-
-### Quick Links:
-- [Predictive World Models for Social Navigation](/publications#predictive-world-models)
-- [Cosine-Gated LSTM for Sequential Learning](/publications#cosine-gated-lstm)
-- [PhD Thesis: Social Robot Navigation](/publications#phd-thesis)
-
----
-
-## Research Philosophy
-
-My research philosophy centers on:
-- **Practical Applications:** Developing solutions that address real-world challenges
-- **Rigorous Evaluation:** Conducting thorough testing and validation
-- **Interdisciplinary Approach:** Combining insights from multiple fields
-- **Open Science:** Sharing code, data, and findings with the community
-- **User-Centered Design:** Prioritizing usability and accessibility
-
----
-
-## Contact
-
-For questions about my research or to discuss potential collaborations, please contact me at [drgoodluckoguzie@gmail.com](mailto:drgoodluckoguzie@gmail.com).
-
----
-
-**Last Updated:** January 2025
-
+<div class="stay-updated">
+  <h3>Stay Updated</h3>
+  <p>Get monthly updates on AI research trends, machine learning innovations, and robotics developments</p>
+  <div class="email-subscribe">
+    <input type="email" placeholder="Enter your email address" class="email-input">
+    <button class="btn subscribe-btn">Subscribe</button>
+  </div>
+</div>
