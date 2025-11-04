@@ -30,15 +30,17 @@ This research focuses on developing predictive models that enable autonomous sys
 
 **Focus:** Sequential Learning and Pattern Recognition
 
-I work on developing novel neural network architectures, particularly focusing on gating mechanisms for improved sequential learning. My research includes the development of Cosine Gated LSTM models that demonstrate superior performance in complex sequential data processing.
+I work on developing novel neural network architectures, particularly focusing on gating mechanisms for improved sequential learning. My research includes the development of Cosine-Gated LSTM (CGLSTM) models that demonstrate superior performance in complex sequential data processing.
 
 **Key Contributions:**
-- Development of Cosine Gated LSTM architecture
-- Application to sequential learning tasks
+- Development of Cosine-Gated LSTM (CGLSTM) architecture
+- Dynamic weighting of inputs based on cosine similarity
+- Superior performance over LSTM, GRU, and Transformer in benchmark tasks
+- Application to sequential learning and prediction tasks
 - Performance analysis and optimization
 
 **Publications:**
-- Cosine Gated LSTM for Sequential Learning
+- Cosine-Gated LSTM for Sequential Learning (IEEE PRML 2024)
 
 ---
 
