@@ -1054,38 +1054,112 @@ code {
 }
 
 /* Portfolio Page Styles */
-.portfolio-section {
-    margin-bottom: 4rem;
+.portfolio-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+    gap: 2rem;
+    margin-top: 2rem;
+    margin-bottom: 3rem;
 }
 
-.portfolio-section h2 {
-    margin-bottom: 2rem;
-    padding-bottom: 1rem;
-    border-bottom: 2px solid var(--border);
+.portfolio-card {
+    background: var(--bg-card);
+    padding: 2.5rem;
+    border-radius: 16px;
+    border-left: 4px solid var(--secondary);
+    box-shadow: var(--shadow);
+    transition: all var(--transition-base);
+    position: relative;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
 }
 
-.project-status {
-    display: inline-block;
-    padding: 0.25rem 0.75rem;
-    border-radius: 12px;
-    font-size: 0.85rem;
-    font-weight: 600;
-    margin-bottom: 1rem;
+.portfolio-card:hover {
+    transform: translateY(-8px);
+    box-shadow: var(--shadow-lg);
+    border-left-color: var(--accent);
 }
 
-.project-status.in-progress {
-    background: var(--accent-alt);
-    color: white;
+.portfolio-icon {
+    font-size: 3.5rem;
+    margin-bottom: 1.5rem;
+    text-align: center;
 }
 
-.project-status.completed {
-    background: var(--accent);
-    color: white;
+.portfolio-content {
+    flex: 1;
 }
 
-.project-status.ongoing {
-    background: var(--secondary);
-    color: white;
+.portfolio-content h3 {
+    margin-bottom: 0.75rem;
+    color: var(--text);
+    font-size: 1.5rem;
+}
+
+.portfolio-meta {
+    color: var(--text-light);
+    font-size: 0.9rem;
+    margin-bottom: 1.25rem;
+    font-style: italic;
+}
+
+.portfolio-content p {
+    margin-bottom: 1.25rem;
+    line-height: 1.6;
+    color: var(--text);
+}
+
+.portfolio-tech {
+    margin-bottom: 1.5rem;
+    padding: 1rem;
+    background: var(--bg-alt);
+    border-radius: 8px;
+    font-size: 0.9rem;
+    color: var(--text-light);
+}
+
+.portfolio-tech strong {
+    color: var(--text);
+    margin-right: 0.5rem;
+}
+
+.portfolio-links {
+    display: flex;
+    gap: 1rem;
+    flex-wrap: wrap;
+    margin-top: auto;
+    padding-top: 1rem;
+    border-top: 1px solid var(--border);
+}
+
+.portfolio-links .btn {
+    flex: 1;
+    min-width: 120px;
+    text-align: center;
+}
+
+@media (max-width: 768px) {
+    .portfolio-grid {
+        grid-template-columns: 1fr;
+        gap: 1.5rem;
+    }
+    
+    .portfolio-card {
+        padding: 2rem;
+    }
+    
+    .portfolio-icon {
+        font-size: 3rem;
+    }
+    
+    .portfolio-links {
+        flex-direction: column;
+    }
+    
+    .portfolio-links .btn {
+        width: 100%;
+    }
 }
 
 /* Coming Soon Card */
