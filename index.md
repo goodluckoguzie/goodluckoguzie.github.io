@@ -9,88 +9,103 @@ title: Home
       <img src="{{ '/assets/images/goodluck.jpg' | relative_url }}" alt="Goodluck Oguzie" class="profile-photo">
     </div>
     <div class="hero-text">
-      <h1>Welcome!</h1>
-      <p class="lead">I conduct research on <strong>intelligent systems</strong> that integrate <strong>computer vision</strong>, <strong>machine learning</strong>, and <strong>human-computer interaction</strong> to support independent living and technological advancement. My work spans predictive world models for social navigation, neural network architectures (including Cosine Gated LSTM), and healthcare technology applications.</p>
-      <p><a href="{{ '/research' | relative_url }}" class="btn">Explore My Research</a></p>
+      <h1>Goodluck Oguzie</h1>
+      <p class="lead">AI Researcher & Lecturer | Machine Learning & Social Robotics</p>
+      <p>I conduct research on <strong>intelligent systems</strong> that integrate <strong>computer vision</strong>, <strong>machine learning</strong>, and <strong>human-computer interaction</strong> to support independent living and technological advancement. My work spans predictive world models for social navigation, neural network architectures (including Cosine-Gated LSTM), and healthcare technology applications. Currently serving as Lecturer/Researcher at Solent University, teaching AI and Software Development modules while continuing research in reinforcement learning and predictive models.</p>
+      <div class="hero-actions">
+        <a href="{{ '/portfolio' | relative_url }}" class="btn">View My Projects</a>
+        <a href="{{ '/DrGoodluck.pdf' | relative_url }}" class="btn btn-secondary" target="_blank">Download CV</a>
+      </div>
     </div>
   </div>
 </div>
 
-## Research Highlights
+## Key Achievements
+
+<div class="stats-grid">
+  <div class="stat-card">
+    <div class="stat-number">2+</div>
+    <p class="stat-label">Conference Papers Published</p>
+  </div>
+  <div class="stat-card">
+    <div class="stat-number">1</div>
+    <p class="stat-label">PhD Thesis Completed</p>
+  </div>
+  <div class="stat-card">
+    <div class="stat-number">4+</div>
+    <p class="stat-label">Modules Taught</p>
+  </div>
+  <div class="stat-card">
+    <div class="stat-number">3</div>
+    <p class="stat-label">Research Contributions</p>
+  </div>
+</div>
+
+## Featured Research Projects
+
+<p>A selection of my most impactful research contributions</p>
 
 <div class="research-grid">
   <div class="research-card">
-    <h3>Predictive World Models for Social Navigation (UKCI 2023)</h3>
-    <p>This research focuses on developing predictive models for safe and intuitive navigation in social environments, enabling robots and autonomous systems to navigate effectively while respecting human presence and social norms.</p>
-    <div class="research-links">
-      <a href="{{ '/_UKCI_2023__Predictive_World_Models_for_Social_Navigation.pdf' | relative_url }}" class="btn" target="_blank">📄 Paper</a>
-      <a href="https://github.com/goodluckoguzie" class="btn" target="_blank">💻 Code</a>
-      <a href="{{ '/publications' | relative_url }}" class="btn btn-secondary">Learn More</a>
+    <div class="research-icon">🤖</div>
+    <div class="research-content">
+      <h3>Predictive World Models for Social Navigation</h3>
+      <p class="research-meta">UKCI 2023 • Published</p>
+      <p>Developed predictive models that enable autonomous systems to navigate safely in social environments. The work introduces 2StepAhead and Multi-Action State Predictive Models (MASPM) that enable multi-step ahead predictions and comprehensive action evaluation, significantly improving navigation performance in dynamic social environments.</p>
+      <a href="{{ '/publications' | relative_url }}" class="research-link">View Publication →</a>
     </div>
   </div>
 
   <div class="research-card">
-    <h3>Cosine-Gated LSTM for Sequential Learning</h3>
-    <p>Developing advanced neural network architectures using cosine gating mechanisms for improved sequential learning and pattern recognition in complex datasets. Published at IEEE PRML 2024.</p>
-    <div class="research-links">
-      <a href="{{ '/Cosine_Gated_LSTM_main.pdf' | relative_url }}" class="btn" target="_blank">📄 Paper</a>
-      <a href="https://github.com/goodluckoguzie" class="btn" target="_blank">💻 Code</a>
-      <a href="{{ '/publications' | relative_url }}" class="btn btn-secondary">Learn More</a>
+    <div class="research-icon">🧠</div>
+    <div class="research-content">
+      <h3>Cosine-Gated LSTM for Sequential Learning</h3>
+      <p class="research-meta">IEEE PRML 2024 • Published</p>
+      <p>Introduced a novel Cosine-Gated LSTM (CGLSTM) architecture that uses cosine gating mechanisms for improved sequential learning. The architecture dynamically weighs new inputs versus hidden states based on similarities, outperforming LSTM, GRU, and Transformer models in benchmark tasks.</p>
+      <a href="{{ '/publications' | relative_url }}" class="research-link">View Publication →</a>
+    </div>
+  </div>
+
+  <div class="research-card">
+    <div class="research-icon">🎓</div>
+    <div class="research-content">
+      <h3>PhD Thesis: Social Robot Navigation</h3>
+      <p class="research-meta">Aston University • 2024</p>
+      <p>Completed PhD thesis on "Enhancing Robot Social Navigation with Reinforcement Learning and Advanced Predictive Models". The research introduces three key contributions: Predictive World Models, Cosine-Gated LSTM, and Adaptive Prediction Horizons, achieving superior performance in simulation environments.</p>
+      <a href="{{ '/publications' | relative_url }}" class="research-link">View Thesis →</a>
     </div>
   </div>
 </div>
+
+<a href="{{ '/portfolio' | relative_url }}" class="btn btn-secondary" style="display: block; text-align: center; margin-top: 2rem;">View All Projects</a>
 
 ---
 
-## Recent News
+## Latest Research Insights
 
-<div class="timeline">
-  <div class="timeline-item">
-    <div class="timeline-year">2024</div>
-    <div class="timeline-content">
-      <strong>Completed PhD Thesis Defense</strong><br>
-      Successfully defended PhD thesis on "Enhancing Robot Social Navigation with Reinforcement Learning and Advanced Predictive Models" at Aston University. <a href="https://goodluckoguzie.github.io/Viva/" target="_blank">View Viva Presentation →</a>
-    </div>
-  </div>
-  
-  <div class="timeline-item">
-    <div class="timeline-year">2024</div>
-    <div class="timeline-content">
-      <strong>Started teaching at Solent University</strong><br>
-      Focusing on AI and Software Development modules, bringing research insights into the classroom.
-    </div>
-  </div>
-  
-  <div class="timeline-item">
-    <div class="timeline-year">2024</div>
-    <div class="timeline-content">
-      <strong>Published Cosine-Gated LSTM at IEEE PRML 2024</strong><br>
-      Introduced advanced neural network architecture for sequential learning tasks, published at IEEE Pattern Recognition and Machine Learning conference.
-    </div>
-  </div>
-  
-  <div class="timeline-item">
-    <div class="timeline-year">2023</div>
-    <div class="timeline-content">
-      <strong>Published research on Predictive World Models at UKCI conference</strong><br>
-      Presented novel approaches to social navigation in autonomous systems.
+<p>A side interest in AI research trends and innovations</p>
+
+<div class="insights-preview">
+  <div class="insight-card">
+    <div class="insight-icon">📝</div>
+    <div class="insight-content">
+      <span class="insight-badge">Coming Soon</span>
+      <h3>Research Insights & Articles</h3>
+      <p>Articles on machine learning, social robotics, neural network architectures, and AI research trends coming soon...</p>
+      <a href="{{ '/insights' | relative_url }}" class="research-link">View Insights Page →</a>
     </div>
   </div>
 </div>
+
+<a href="{{ '/insights' | relative_url }}" class="btn btn-secondary" style="display: block; text-align: center; margin-top: 1rem;">View Insights Page</a>
 
 ---
 
-## Contact
+## Let's Work Together
 
-**Location:** United Kingdom  
-**Institution:** Solent University  
-**Email:** [drgoodluckoguzie@gmail.com](mailto:drgoodluckoguzie@gmail.com)  
-**LinkedIn:** [linkedin.com/in/goodluck-oguzie-0387b3157](https://www.linkedin.com/in/goodluck-oguzie-0387b3157)
+<p>I'm always interested in hearing about new research opportunities, collaborations, and teaching positions.</p>
 
-<div class="social-links-inline">
-  <span>Follow me on:</span>
-  <span class="social-placeholder">Google Scholar (coming soon)</span>
-  <span class="social-placeholder">ORCID (coming soon)</span>
-  <span class="social-placeholder">ResearchGate (coming soon)</span>
+<div class="contact-actions">
+  <a href="https://www.linkedin.com/in/goodluck-oguzie-0387b3157" class="btn" target="_blank">Connect on LinkedIn</a>
+  <a href="mailto:drgoodluckoguzie@gmail.com" class="btn btn-secondary">Send Email</a>
 </div>
-
