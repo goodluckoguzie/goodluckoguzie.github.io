@@ -87,26 +87,6 @@ title: Home
 
 ---
 
-## Latest Research Insights
-
-<p>A side interest in AI research trends and innovations</p>
-
-<div class="insights-preview">
-  <div class="insight-card">
-    <div class="insight-icon">📝</div>
-    <div class="insight-content">
-      <span class="insight-badge">Coming Soon</span>
-      <h3>Research Insights & Articles</h3>
-      <p>Articles on machine learning, social robotics, neural network architectures, and AI research trends coming soon...</p>
-      <a href="{{ '/insights' | relative_url }}" class="research-link">View Insights Page →</a>
-    </div>
-  </div>
-</div>
-
-<a href="{{ '/insights' | relative_url }}" class="btn btn-secondary" style="display: block; text-align: center; margin-top: 1rem;">View Insights Page</a>
-
----
-
 ## Let's Work Together
 
 <p>I'm always interested in hearing about new research opportunities, collaborations, and teaching positions.</p>
