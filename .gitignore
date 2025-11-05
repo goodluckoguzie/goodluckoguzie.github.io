@@ -9,3 +9,11 @@ vendor/
 .DS_Store
 node_modules/
 
+# Teaching materials and local files (not part of the website)
+Solent University/
+Ulster/
+*.ps1
+GITHUB_SETUP.md
+PUSH_TO_GITHUB.md
+QUICK_START.md
+goodluck.jpg
