@@ -1479,6 +1479,52 @@ code {
     margin-bottom: 3rem;
 }
 
+/* Project Media Placeholders */
+.project-media {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 1.5rem;
+    margin: 2rem 0;
+    padding: 1.5rem;
+    background: var(--bg-alt);
+    border-radius: 8px;
+    border: 2px dashed var(--border);
+}
+
+.project-image-placeholder,
+.project-video-placeholder {
+    padding: 1.5rem;
+    background: var(--bg-card);
+    border-radius: 6px;
+    border: 1px solid var(--border);
+    text-align: center;
+}
+
+.project-image-placeholder p,
+.project-video-placeholder p {
+    margin: 0;
+    color: var(--text-light);
+    font-size: 0.9rem;
+    line-height: 1.6;
+}
+
+.project-image-placeholder em,
+.project-video-placeholder em {
+    font-style: italic;
+    color: var(--text-muted);
+}
+
+.project-image-placeholder a,
+.project-video-placeholder a {
+    color: var(--link);
+    text-decoration: underline;
+}
+
+.project-image-placeholder a:hover,
+.project-video-placeholder a:hover {
+    color: var(--link-hover);
+}
+
 .portfolio-case-study:hover {
     box-shadow: var(--shadow-md);
     border-color: var(--link);

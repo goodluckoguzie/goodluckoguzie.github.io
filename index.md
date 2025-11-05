@@ -11,11 +11,12 @@ title: Home
     <div class="hero-text">
       <h1>Dr. Goodluck Oguzie</h1>
       <p class="lead">PhD, MSc, BSc | AI Researcher & Lecturer</p>
-      <p>I conduct research on intelligent systems that integrate computer vision, machine learning, and human-computer interaction. My work focuses on three main areas:</p>
+      <p>I conduct research on intelligent systems that integrate computer vision, machine learning, and human-computer interaction. My work focuses on four main areas:</p>
       <ul style="margin-top: 1rem; margin-bottom: 1rem;">
-        <li><strong>Social Robot Navigation:</strong> Developing predictive models for safe autonomous navigation</li>
-        <li><strong>Neural Network Architectures:</strong> Creating novel designs like Cosine-Gated LSTM</li>
-        <li><strong>Healthcare Technology:</strong> Building web-based systems for resource discovery</li>
+        <li><strong>Reinforcement Learning:</strong> Developing adaptive prediction horizons and advanced RL algorithms for autonomous systems</li>
+        <li><strong>Social Robot Navigation:</strong> Creating predictive world models for safe autonomous navigation in dynamic environments</li>
+        <li><strong>Neural Network Architectures:</strong> Designing novel architectures like Cosine-Gated LSTM for improved sequential learning</li>
+        <li><strong>Healthcare Technology:</strong> Building web-based systems for resource discovery and management</li>
       </ul>
       <p>Currently teaching at QA Ltd and Crimson (5+ years), I combine academic research with practical instruction in AI, robotics, and software development.</p>
       <div class="hero-actions">

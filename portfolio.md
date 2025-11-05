@@ -25,6 +25,15 @@ Detailed case studies of research projects and software development work I've su
 
 <p><strong>2023</strong> • Aston University • Published at UKCI 2023</p>
 
+<div class="project-media">
+  <div class="project-image-placeholder">
+    <p><em>📸 Project Image: Please provide visualization of 2StepAhead and MASPM models, navigation performance comparisons, or simulation screenshots</em></p>
+  </div>
+  <div class="project-video-placeholder">
+    <p><em>🎥 Demo Video: Please provide video showing social navigation in action, model predictions, or performance demonstrations</em></p>
+  </div>
+</div>
+
 <h4>Project Overview</h4>
 
 <p>Developed predictive world models enabling autonomous systems to navigate safely in social environments. Introduced 2StepAhead and Multi-Action State Predictive Models (MASPM) for improved navigation performance with multi-step ahead predictions and comprehensive action evaluation.</p>
@@ -67,6 +76,15 @@ Detailed case studies of research projects and software development work I've su
 <div class="project-status-badge completed">Completed</div>
 
 <p><strong>2024</strong> • Aston University • Published at IEEE PRML 2024 (pp. 8-15)</p>
+
+<div class="project-media">
+  <div class="project-image-placeholder">
+    <p><em>📸 Project Image: Please provide architecture diagrams, performance graphs comparing CGLSTM vs LSTM/GRU/Transformer, or training visualization</em></p>
+  </div>
+  <div class="project-video-placeholder">
+    <p><em>🎥 Demo Video: Please provide video showing sequential learning performance, benchmark comparisons, or model architecture explanation</em></p>
+  </div>
+</div>
 
 <h4>Project Overview</h4>
 
@@ -111,6 +129,15 @@ Detailed case studies of research projects and software development work I've su
 
 <p><strong>2020 - 2024</strong> • Aston University • Supervisors: Dr. Luis J. Manso, Prof. Dr. Aniko Ekart</p>
 
+<div class="project-media">
+  <div class="project-image-placeholder">
+    <p><em>📸 Project Images: Please provide thesis figures, experimental results, architecture diagrams, or performance comparisons from your PhD work</em></p>
+  </div>
+  <div class="project-video-placeholder">
+    <p><em>🎥 Viva Presentation: <a href="https://goodluckoguzie.github.io/Viva/" target="_blank">View Viva Presentation Slides</a> • Please add video recording if available</em></p>
+  </div>
+</div>
+
 <h4>Project Overview</h4>
 
 <p>Completed PhD thesis integrating reinforcement learning with advanced predictive models. The research introduced three key contributions: Predictive World Models, Cosine-Gated LSTM architecture, and Adaptive Prediction Horizons, achieving superior performance in LunarLander-v2 and SocNavGym environments.</p>
@@ -154,6 +181,15 @@ Detailed case studies of research projects and software development work I've su
 
 <p><strong>2023 - 2024</strong> • Solent University • Full-Stack Web Application</p>
 
+<div class="project-media">
+  <div class="project-image-placeholder">
+    <p><em>📸 Project Screenshots: Please provide screenshots of the web application, user interface, map visualization, or system architecture</em></p>
+  </div>
+  <div class="project-video-placeholder">
+    <p><em>🎥 Demo Video: Please provide video walkthrough of the application, showing features like resource search, map integration, or user authentication</em></p>
+  </div>
+</div>
+
 <h4>Project Overview</h4>
 
 <p>Developed a comprehensive web-based system for discovering and managing healthcare resources, integrating modern web technologies with geographic information systems. The system includes React.js frontend, Node.js/Express backend, SQLite database, and Leaflet.js for geographic visualization.</p>
@@ -195,6 +231,15 @@ Detailed case studies of research projects and software development work I've su
 <div class="project-status-badge completed">Completed</div>
 
 <p><strong>2023 - 2024</strong> • Solent University • 6 Progressive Teaching Modules</p>
+
+<div class="project-media">
+  <div class="project-image-placeholder">
+    <p><em>📸 Teaching Materials: Please provide screenshots of module structure, example code demonstrations, or student work examples</em></p>
+  </div>
+  <div class="project-video-placeholder">
+    <p><em>🎥 Teaching Video: Please provide video walkthrough of module progression, code demonstrations, or student presentations</em></p>
+  </div>
+</div>
 
 <h4>Project Overview</h4>
 
