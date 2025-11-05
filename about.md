@@ -16,7 +16,7 @@ My Professional Journey
     <p><strong>PhD, MSc, BSc</strong></p>
     <p>I'm an AI Researcher and Lecturer specializing in machine learning, social robotics, and human-computer interaction.</p>
     <p>I develop intelligent systems that integrate computer vision, machine learning, and predictive models to solve real-world problems. My research has been published at top conferences including UKCI 2023 and IEEE PRML 2024.</p>
-    <p>Currently at Solent University, I teach undergraduate and postgraduate students while continuing my research in reinforcement learning and neural network architectures. I believe in combining rigorous theoretical development with practical implementation to create solutions that make a real impact.</p>
+    <p>Currently teaching at multiple institutions including Solent University, QA Ltd, and Crimson, I combine academic research with practical teaching to inspire the next generation of computer scientists and AI researchers.</p>
   </div>
 </div>
 
@@ -48,31 +48,28 @@ My Professional Journey
     <div class="education-icon">🎓</div>
     <div class="education-content">
       <h3>PhD, Computer Science</h3>
-      <p><strong>Aston University, United Kingdom</strong></p>
-      <p><strong>2020 - 2024</strong></p>
+      <p><strong>Aston University</strong></p>
+      <p>United Kingdom • 2020 - 2024</p>
       <p><strong>Thesis:</strong> "Enhancing Robot Social Navigation with Reinforcement Learning and Advanced Predictive Models"</p>
       <p><strong>Supervisors:</strong> Dr. Luis J. Manso, Prof. Dr. Aniko Ekart</p>
-      <p><strong>Key Contributions:</strong> Predictive World Models, Cosine-Gated LSTM architecture, Adaptive Prediction Horizons</p>
     </div>
   </div>
   
   <div class="education-card">
     <div class="education-icon">🎓</div>
     <div class="education-content">
-      <h3>MSc, Computer Science</h3>
-      <p><strong>[University Name]</strong></p>
-      <p><strong>[Year]</strong></p>
-      <p><em>Please provide university name and year</em></p>
+      <h3>MSc, Automation Control and Robotics</h3>
+      <p><strong>Sheffield Hallam University</strong></p>
+      <p>Sheffield, United Kingdom • 2018 - 2019</p>
     </div>
   </div>
   
   <div class="education-card">
     <div class="education-icon">🎓</div>
     <div class="education-content">
-      <h3>BSc, Computer Science</h3>
-      <p><strong>[University Name]</strong></p>
-      <p><strong>[Year]</strong></p>
-      <p><em>Please provide university name and year</em></p>
+      <h3>BSc, Electrical and Electronics Engineering</h3>
+      <p><strong>Cyprus International University</strong></p>
+      <p>Cyprus • 2011 - 2015</p>
     </div>
   </div>
 </div>
@@ -81,20 +78,51 @@ My Professional Journey
 
 <div class="experience-timeline">
   <div class="experience-item">
-    <div class="experience-date">2024 - Present</div>
+    <div class="experience-date">Jan 2024 - Present</div>
     <div class="experience-content">
-      <h3>Lecturer/Researcher</h3>
-      <p><strong>Solent University, United Kingdom</strong></p>
+      <h3>Lecturer</h3>
+      <p><strong>QA Ltd</strong></p>
+      <p>Birmingham, United Kingdom • Part-time • Hybrid</p>
       <div class="experience-achievements">
-        <h4>Key Responsibilities & Achievements:</h4>
+        <h4>Key Areas:</h4>
         <ul>
-          <li>✓ Teaching undergraduate and postgraduate modules including QHO305 (Problem Solving) and QHO543 (Advanced Software Development)</li>
-          <li>✓ Conducting research in machine learning, computer vision, and human-computer interaction</li>
-          <li>✓ Supervising student projects and dissertations across multiple disciplines</li>
-          <li>✓ Published 2 conference papers at UKCI 2023 and IEEE PRML 2024</li>
-          <li>✓ Developed novel Cosine-Gated LSTM architecture demonstrating superior performance</li>
-          <li>✓ Created Predictive World Models for improved social navigation</li>
-          <li>✓ Built DiscoverHealth teaching platform with 6 progressive modules</li>
+          <li>✓ Teaching computer science and AI courses</li>
+          <li>✓ Covering topics in algorithms, data structures, and machine learning</li>
+          <li>✓ Delivering hybrid instruction combining online and in-person teaching</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+
+  <div class="experience-item">
+    <div class="experience-date">Nov 2020 - Present</div>
+    <div class="experience-content">
+      <h3>Lecturer in Computer Science</h3>
+      <p><strong>Crimson</strong></p>
+      <p>Full-time</p>
+      <div class="experience-achievements">
+        <h4>Key Responsibilities:</h4>
+        <ul>
+          <li>✓ Teaching computer science fundamentals and advanced topics</li>
+          <li>✓ Curriculum development and course design</li>
+          <li>✓ Student mentoring and academic support</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+
+  <div class="experience-item">
+    <div class="experience-date">Jan 2020 - Dec 2024</div>
+    <div class="experience-content">
+      <h3>Teaching Assistant</h3>
+      <p><strong>Aston University</strong></p>
+      <p>Birmingham, United Kingdom • Contract</p>
+      <div class="experience-achievements">
+        <h4>Key Responsibilities:</h4>
+        <ul>
+          <li>✓ Supporting teaching in mathematics, algorithms, and data structures</li>
+          <li>✓ Assisting with course delivery and student support</li>
+          <li>✓ Conducting tutorials and laboratory sessions</li>
         </ul>
       </div>
     </div>
@@ -108,10 +136,14 @@ My Professional Journey
     <h3>Programming Languages</h3>
     <div class="tools-tags">
       <span>Python</span>
-      <span>JavaScript (ES6+)</span>
+      <span>JavaScript</span>
+      <span>C++</span>
+      <span>C#</span>
+      <span>C</span>
       <span>Java</span>
       <span>SQL</span>
       <span>HTML/CSS</span>
+      <span>MATLAB</span>
     </div>
   </div>
   <div class="tools-section">
@@ -119,68 +151,82 @@ My Professional Journey
     <div class="tools-tags">
       <span>PyTorch</span>
       <span>TensorFlow</span>
-      <span>Reinforcement Learning</span>
+      <span>Keras</span>
+      <span>Scikit-Learn</span>
       <span>Neural Networks</span>
-      <span>Gymnasium</span>
-      <span>SocNavGym</span>
+      <span>Deep Learning</span>
+      <span>Reinforcement Learning</span>
+      <span>NLP</span>
     </div>
   </div>
   <div class="tools-section">
-    <h3>Web Development</h3>
+    <h3>Computer Vision & Robotics</h3>
     <div class="tools-tags">
+      <span>OpenCV</span>
+      <span>Computer Vision</span>
+      <span>Robot Programming</span>
+      <span>Arduino</span>
+      <span>PLC</span>
+      <span>Robotics</span>
+    </div>
+  </div>
+  <div class="tools-section">
+    <h3>Data Science & Development</h3>
+    <div class="tools-tags">
+      <span>Pandas</span>
+      <span>Data Analysis</span>
+      <span>Big Data</span>
       <span>React.js</span>
       <span>Node.js</span>
-      <span>Express</span>
-      <span>SQLite</span>
-      <span>Leaflet.js</span>
-      <span>RESTful APIs</span>
-    </div>
-  </div>
-  <div class="tools-section">
-    <h3>Research Tools</h3>
-    <div class="tools-tags">
+      <span>Jupyter</span>
       <span>Git/GitHub</span>
-      <span>Jupyter Notebooks</span>
-      <span>Docker</span>
-      <span>Geographic Information Systems</span>
     </div>
   </div>
 </div>
 
-## Research Interests
+## Skills & Competencies
 
 <div class="skills-grid">
   <div class="skills-section">
-    <h3>Machine Learning & AI</h3>
+    <h3>Research & Development</h3>
     <div class="skills-tags">
-      <span>Neural Networks</span>
-      <span>Deep Learning</span>
+      <span>Algorithm Development</span>
+      <span>Neural Network Architectures</span>
       <span>Reinforcement Learning</span>
-      <span>Predictive Modeling</span>
+      <span>Computer Vision</span>
+      <span>Experimental Design</span>
+      <span>Performance Evaluation</span>
     </div>
   </div>
   <div class="skills-section">
-    <h3>Social Robotics</h3>
+    <h3>Teaching & Mentoring</h3>
     <div class="skills-tags">
-      <span>Social Navigation</span>
-      <span>Human-Robot Interaction</span>
-      <span>Autonomous Systems</span>
+      <span>Curriculum Development</span>
+      <span>Student Supervision</span>
+      <span>Course Design</span>
+      <span>Mathematics</span>
+      <span>OOP</span>
+      <span>Data Structures</span>
     </div>
   </div>
   <div class="skills-section">
-    <h3>Computer Vision</h3>
+    <h3>Engineering & Robotics</h3>
     <div class="skills-tags">
-      <span>Object Recognition</span>
-      <span>Scene Understanding</span>
-      <span>Visual Navigation</span>
+      <span>Automation Control</span>
+      <span>Robotics Programming</span>
+      <span>Arduino Development</span>
+      <span>PLC Programming</span>
+      <span>Electronics Engineering</span>
     </div>
   </div>
   <div class="skills-section">
-    <h3>Applications</h3>
+    <h3>Data & Analytics</h3>
     <div class="skills-tags">
-      <span>Healthcare Technology</span>
-      <span>Web Development</span>
-      <span>Geographic Information Systems</span>
+      <span>Data Science</span>
+      <span>Data Analysis</span>
+      <span>Big Data</span>
+      <span>Image Processing</span>
+      <span>Statistical Analysis</span>
     </div>
   </div>
 </div>
