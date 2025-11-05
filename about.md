@@ -16,7 +16,7 @@ My Professional Journey
     <p><strong>PhD, MSc, BSc</strong></p>
     <p>I'm an AI Researcher and Lecturer specializing in machine learning, social robotics, and human-computer interaction.</p>
     <p>I develop intelligent systems that integrate computer vision, machine learning, and predictive models to solve real-world problems. My research has been published at top conferences including UKCI 2023 and IEEE PRML 2024.</p>
-    <p>Currently teaching at multiple institutions including Solent University, QA Ltd, and Crimson, I combine academic research with practical teaching to inspire the next generation of computer scientists and AI researchers.</p>
+    <p>With 5+ years of teaching experience at Crimson and QA Ltd, and research at Aston University, I combine academic rigor with practical instruction to inspire the next generation of computer scientists and AI researchers.</p>
   </div>
 </div>
 
