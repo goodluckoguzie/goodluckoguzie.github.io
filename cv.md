@@ -13,7 +13,16 @@ Download my CV or view it online
 
 ## Profile
 
-Results-driven AI Researcher and Lecturer specializing in machine learning, social robotics, and human-computer interaction. Experienced in developing intelligent systems that integrate computer vision, machine learning, and predictive models for real-world applications. Adept at conducting rigorous research, teaching undergraduate and postgraduate modules, and supervising student projects while maintaining high academic standards. Strong ability to collaborate with cross-functional teams, develop novel algorithms and architectures, and implement practical solutions that address real-world challenges. Proven ability to publish research in top-tier conferences and complete comprehensive PhD thesis. Committed to advancing knowledge in AI and robotics while fostering student success and long-term research collaborations.
+AI Researcher and Lecturer with expertise in machine learning, social robotics, and human-computer interaction. Experienced in developing intelligent systems that integrate computer vision, machine learning, and predictive models for real-world applications. 
+
+Proven track record of:
+- Publishing research in top-tier conferences (UKCI 2023, IEEE PRML 2024)
+- Teaching undergraduate and postgraduate AI and Software Development modules
+- Supervising student projects and developing comprehensive curriculum materials
+- Creating novel algorithms and neural network architectures
+- Implementing practical solutions for complex real-world challenges
+
+Committed to advancing knowledge in AI and robotics while fostering student success and building long-term research collaborations.
 
 ## Professional Experience
 
@@ -22,22 +31,24 @@ Results-driven AI Researcher and Lecturer specializing in machine learning, soci
 **United Kingdom**  
 **2024 – Present**
 
-- Teaching 4+ undergraduate and postgraduate modules in AI, Software Development, and Computer Science, ensuring high-quality education delivery
-- Conducting research in machine learning, computer vision, and human-computer interaction, resulting in 2 conference publications
-- Supervising student projects and dissertations, guiding students through complex research and development tasks
-- Developing curriculum and teaching materials, creating comprehensive learning resources for modern web development and AI courses
-- Published research on Predictive World Models for Social Navigation (UKCI 2023) and Cosine-Gated LSTM for Sequential Learning (IEEE PRML 2024)
-- Completed PhD thesis on "Enhancing Robot Social Navigation with Reinforcement Learning and Advanced Predictive Models" at Aston University
-- Developed novel Cosine-Gated LSTM (CGLSTM) architecture demonstrating superior performance over LSTM, GRU, and Transformer models
-- Created Predictive World Models (2StepAhead, MASPM) for improved social navigation performance
-- Developed DiscoverHealth teaching platform with 6 progressive modules covering full-stack web development
-- Integrated modern web technologies (React.js, Node.js, Express) with geographic information systems (Leaflet.js)
+Teaching and Research:
+- Teaching 4+ modules in AI, Software Development, and Computer Science
+- Conducting cutting-edge research in machine learning and human-computer interaction
+- Supervising student projects and dissertations
+- Developing modern curriculum materials for AI and web development courses
+
+Research Achievements:
+- Published 2 conference papers (UKCI 2023, IEEE PRML 2024)
+- Completed PhD thesis on social robot navigation at Aston University
+- Developed novel Cosine-Gated LSTM (CGLSTM) architecture outperforming LSTM, GRU, and Transformer models
+- Created Predictive World Models (2StepAhead, MASPM) for social navigation
+- Built DiscoverHealth teaching platform with 6 progressive modules
+- Integrated modern web technologies with geographic information systems
 
 ## Education
 
-### PhD, Computer Science
-**Aston University**  
-**United Kingdom**  
+### PhD in Computer Science
+**Aston University, United Kingdom**  
 **2020 – 2024**
 
 **Thesis:** "Enhancing Robot Social Navigation with Reinforcement Learning and Advanced Predictive Models"
@@ -53,6 +64,31 @@ Results-driven AI Researcher and Lecturer specializing in machine learning, soci
 - Superior performance in LunarLander-v2 and SocNavGym environments
 - Higher success rates compared to baseline methods
 - More efficient navigation with adaptive prediction horizons
+
+---
+
+## Publications
+
+### Conference Papers
+
+1. **Predictive World Models for Social Navigation**  
+   Goodluck Oguzie  
+   UKCI 2023 - UK Conference on Intelligent Systems, 2023  
+   [Paper PDF]({{ '/_UKCI_2023__Predictive_World_Models_for_Social_Navigation.pdf' | relative_url }})
+
+2. **Cosine-Gated LSTM for Sequential Learning**  
+   Goodluck Oguzie  
+   2024 IEEE 5th International Conference on Pattern Recognition and Machine Learning (PRML), 2024, pp. 8-15  
+   [Paper PDF]({{ '/Cosine_Gated_LSTM_main.pdf' | relative_url }})
+
+### PhD Thesis
+
+**Enhancing Robot Social Navigation with Reinforcement Learning and Advanced Predictive Models**  
+Goodluck Oguzie  
+PhD Thesis, Aston University, United Kingdom, 2024  
+[Thesis PDF]({{ '/Goodluck_s_thesis.zip' | relative_url }}) | [Viva Presentation](https://goodluckoguzie.github.io/Viva/)
+
+---
 
 ## Core Competencies
 
@@ -71,7 +107,7 @@ Results-driven AI Researcher and Lecturer specializing in machine learning, soci
   <span>Geographic Information Systems</span>
 </div>
 
-## Technical Tools
+## Technical Skills
 
 ### Programming Languages
 Python, JavaScript (ES6+), Java, SQL, HTML/CSS
@@ -83,4 +119,4 @@ PyTorch, TensorFlow, Reinforcement Learning, Neural Networks, Gymnasium, SocNavG
 React.js, Node.js, Express, SQLite, PostgreSQL, Leaflet.js, RESTful APIs
 
 ### Research Tools
-Git/GitHub, Jupyter Notebooks, Docker, RESTful APIs, Geographic Information Systems
+Git/GitHub, Jupyter Notebooks, Docker, Geographic Information Systems

@@ -11,7 +11,13 @@ title: Home
     <div class="hero-text">
       <h1>Goodluck Oguzie</h1>
       <p class="lead">AI Researcher & Lecturer | Machine Learning & Social Robotics</p>
-      <p>I conduct research on <strong>intelligent systems</strong> that integrate <strong>computer vision</strong>, <strong>machine learning</strong>, and <strong>human-computer interaction</strong> to support independent living and technological advancement. My work spans predictive world models for social navigation, neural network architectures (including Cosine-Gated LSTM), and healthcare technology applications. Currently serving as Lecturer/Researcher at Solent University, teaching AI and Software Development modules while continuing research in reinforcement learning and predictive models.</p>
+      <p>I conduct research on intelligent systems that integrate computer vision, machine learning, and human-computer interaction. My work focuses on three main areas:</p>
+      <ul style="margin-top: 1rem; margin-bottom: 1rem;">
+        <li><strong>Social Robot Navigation:</strong> Developing predictive models for safe autonomous navigation</li>
+        <li><strong>Neural Network Architectures:</strong> Creating novel designs like Cosine-Gated LSTM</li>
+        <li><strong>Healthcare Technology:</strong> Building web-based systems for resource discovery</li>
+      </ul>
+      <p>Currently serving as Lecturer/Researcher at Solent University, I teach AI and Software Development while conducting active research in reinforcement learning and predictive models.</p>
       <div class="hero-actions">
         <a href="{{ '/portfolio' | relative_url }}" class="btn">View My Projects</a>
         <a href="{{ '/DrGoodluck.pdf' | relative_url }}" class="btn btn-secondary" target="_blank">Download CV</a>
