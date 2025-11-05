@@ -5,9 +5,9 @@ title: Portfolio
 
 # Project Portfolio
 
-Detailed case studies of research projects and software development work I've successfully delivered
+Detailed case studies of research projects and software development work I've successfully delivered.
 
-**Filter by:**
+<p><strong>Filter by:</strong></p>
 
 <div class="portfolio-filters">
   <button class="portfolio-filter-btn active" data-filter="all">All Projects</button>
@@ -19,337 +19,389 @@ Detailed case studies of research projects and software development work I've su
 ---
 
 <div class="portfolio-case-study" data-category="research">
-### Adaptive Prediction Horizons in Reinforcement Learning
+<h3>Adaptive Prediction Horizons in Reinforcement Learning</h3>
 
 <div class="project-status-badge ongoing">Ongoing</div>
 
-📅 **2024 - Present** 🏢 **Aston University / Solent University** 👥 **Research Team** 📊 **In Progress**
+<p>📅 <strong>2024 - Present</strong> • 🏢 <strong>Aston University / Solent University</strong> • 👥 <strong>Research Team</strong> • 📊 <strong>In Progress</strong></p>
 
-#### 🎯 Project Overview
+<h4>🎯 Project Overview</h4>
 
-Developing an entropy-driven adaptive prediction horizon system for reinforcement learning applications. This work extends my PhD thesis research by implementing dynamic prediction horizon adjustment based on environmental complexity and action entropy. The system integrates with SAC (Soft Actor-Critic) algorithms and demonstrates improved performance in complex environments including SocNavGym and LunarLander-v2.
+<p>Developing an entropy-driven adaptive prediction horizon system for reinforcement learning applications. This work extends my PhD thesis research by implementing dynamic prediction horizon adjustment based on environmental complexity and action entropy. The system integrates with SAC (Soft Actor-Critic) algorithms and demonstrates improved performance in complex environments including SocNavGym and LunarLander-v2.</p>
 
-#### ⚠️ Challenges
+<h4>⚠️ Challenges</h4>
 
-* Complex environment dynamics requiring adaptive prediction strategies
-* Balancing prediction accuracy with computational efficiency
-* Integration with existing reinforcement learning algorithms
-* Handling varying environmental complexity across different scenarios
-* Optimizing entropy-based selection mechanisms
-* Real-time performance requirements for practical applications
+<ul>
+<li>Complex environment dynamics requiring adaptive prediction strategies</li>
+<li>Balancing prediction accuracy with computational efficiency</li>
+<li>Integration with existing reinforcement learning algorithms</li>
+<li>Handling varying environmental complexity across different scenarios</li>
+<li>Optimizing entropy-based selection mechanisms</li>
+<li>Real-time performance requirements for practical applications</li>
+</ul>
 
-#### 💡 Solution
+<h4>💡 Solution</h4>
 
-* Developed entropy-driven prediction horizon selection algorithm
-* Implemented dynamic adjustment mechanism based on environmental complexity
-* Created integration framework for SAC (Soft Actor-Critic) algorithms
-* Designed adaptive prediction system that scales with environment complexity
-* Built performance optimization framework for real-time applications
-* Established evaluation metrics for prediction horizon effectiveness
+<ul>
+<li>Developed entropy-driven prediction horizon selection algorithm</li>
+<li>Implemented dynamic adjustment mechanism based on environmental complexity</li>
+<li>Created integration framework for SAC (Soft Actor-Critic) algorithms</li>
+<li>Designed adaptive prediction system that scales with environment complexity</li>
+<li>Built performance optimization framework for real-time applications</li>
+<li>Established evaluation metrics for prediction horizon effectiveness</li>
+</ul>
 
-#### 📈 Impact & Results
+<h4>📈 Impact & Results</h4>
 
-* **Improved navigation performance** in complex social environments
-* **Enhanced efficiency** compared to fixed prediction horizons
-* **Better handling** of varying environmental complexity
-* **Superior performance** in SocNavGym and LunarLander-v2 environments
-* **Reduced computational overhead** through adaptive mechanisms
-* Work in progress for conference submission
+<ul>
+<li><strong>Improved navigation performance</strong> in complex social environments</li>
+<li><strong>Enhanced efficiency</strong> compared to fixed prediction horizons</li>
+<li><strong>Better handling</strong> of varying environmental complexity</li>
+<li><strong>Superior performance</strong> in SocNavGym and LunarLander-v2 environments</li>
+<li><strong>Reduced computational overhead</strong> through adaptive mechanisms</li>
+<li>Work in progress for conference submission</li>
+</ul>
 
-#### 🛠️ Technologies & Tools
+<h4>🛠️ Technologies & Tools</h4>
 
-Python PyTorch Gymnasium SocNavGym Reinforcement Learning Jupyter Notebooks Git GitHub
+<p>Python • PyTorch • Gymnasium • SocNavGym • Reinforcement Learning • Jupyter Notebooks • Git • GitHub</p>
 </div>
 
 ---
 
 <div class="portfolio-case-study" data-category="research">
-### Predictive World Models for Social Navigation
+<h3>Predictive World Models for Social Navigation</h3>
 
 <div class="project-status-badge completed">Completed</div>
 
-📅 **2023** 🏢 **Aston University** 👥 **Research Team** 📊 **Published at UKCI 2023**
+<p>📅 <strong>2023</strong> • 🏢 <strong>Aston University</strong> • 👥 <strong>Research Team</strong> • 📊 <strong>Published at UKCI 2023</strong></p>
 
-#### 🎯 Project Overview
+<h4>🎯 Project Overview</h4>
 
-Developed predictive world models that enable autonomous systems to navigate safely in social environments. Introduced 2StepAhead and Multi-Action State Predictive Models (MASPM) for improved navigation performance. The work demonstrates superior performance in dynamic social environments with multi-step ahead predictions and comprehensive action evaluation.
+<p>Developed predictive world models that enable autonomous systems to navigate safely in social environments. Introduced 2StepAhead and Multi-Action State Predictive Models (MASPM) for improved navigation performance. The work demonstrates superior performance in dynamic social environments with multi-step ahead predictions and comprehensive action evaluation.</p>
 
-#### ⚠️ Challenges
+<h4>⚠️ Challenges</h4>
 
-* Predicting human behavior in dynamic social environments
-* Integrating multi-step ahead predictions into navigation algorithms
-* Balancing prediction accuracy with real-time performance requirements
-* Handling uncertainty in social navigation scenarios
-* Evaluating comprehensive action spaces efficiently
-* Adapting to varying social dynamics
+<ul>
+<li>Predicting human behavior in dynamic social environments</li>
+<li>Integrating multi-step ahead predictions into navigation algorithms</li>
+<li>Balancing prediction accuracy with real-time performance requirements</li>
+<li>Handling uncertainty in social navigation scenarios</li>
+<li>Evaluating comprehensive action spaces efficiently</li>
+<li>Adapting to varying social dynamics</li>
+</ul>
 
-#### 💡 Solution
+<h4>💡 Solution</h4>
 
-* Developed 2StepAhead predictive model for multi-step ahead predictions
-* Created Multi-Action State Predictive Model (MASPM) for comprehensive action evaluation
-* Designed hybrid 2StepAhead-MASPM model combining both approaches
-* Implemented efficient prediction algorithms for real-time applications
-* Established evaluation framework for social navigation performance
-* Integrated predictive models with reinforcement learning algorithms
+<ul>
+<li>Developed 2StepAhead predictive model for multi-step ahead predictions</li>
+<li>Created Multi-Action State Predictive Model (MASPM) for comprehensive action evaluation</li>
+<li>Designed hybrid 2StepAhead-MASPM model combining both approaches</li>
+<li>Implemented efficient prediction algorithms for real-time applications</li>
+<li>Established evaluation framework for social navigation performance</li>
+<li>Integrated predictive models with reinforcement learning algorithms</li>
+</ul>
 
-#### 📈 Impact & Results
+<h4>📈 Impact & Results</h4>
 
-* **Published at UKCI 2023** - UK Conference on Intelligent Systems
-* **Superior performance** in dynamic social environments
-* **Improved navigation safety** through predictive human behavior modeling
-* **Enhanced multi-step ahead predictions** compared to baseline methods
-* **Better action evaluation** through comprehensive state modeling
-* **Significant contribution** to social robot navigation research
+<ul>
+<li><strong>Published at UKCI 2023</strong> - UK Conference on Intelligent Systems</li>
+<li><strong>Superior performance</strong> in dynamic social environments</li>
+<li><strong>Improved navigation safety</strong> through predictive human behavior modeling</li>
+<li><strong>Enhanced multi-step ahead predictions</strong> compared to baseline methods</li>
+<li><strong>Better action evaluation</strong> through comprehensive state modeling</li>
+<li><strong>Significant contribution</strong> to social robot navigation research</li>
+</ul>
 
-#### 🛠️ Technologies & Tools
+<h4>🛠️ Technologies & Tools</h4>
 
-Python PyTorch Reinforcement Learning Social Navigation Algorithms Git GitHub
+<p>Python • PyTorch • Reinforcement Learning • Social Navigation Algorithms • Git • GitHub</p>
 
-**Links:**
-- [Paper PDF]({{ '/_UKCI_2023__Predictive_World_Models_for_Social_Navigation.pdf' | relative_url }})
-- [Code Repository](https://github.com/goodluckoguzie)
+<p><strong>Links:</strong></p>
+<ul>
+<li><a href="{{ '/_UKCI_2023__Predictive_World_Models_for_Social_Navigation.pdf' | relative_url }}">Paper PDF</a></li>
+<li><a href="https://github.com/goodluckoguzie">Code Repository</a></li>
+</ul>
 </div>
 
 ---
 
 <div class="portfolio-case-study" data-category="research">
-### Cosine-Gated LSTM for Sequential Learning
+<h3>Cosine-Gated LSTM for Sequential Learning</h3>
 
 <div class="project-status-badge completed">Completed</div>
 
-📅 **2024** 🏢 **Aston University** 👥 **Research Team** 📊 **Published at IEEE PRML 2024 (pp. 8-15)**
+<p>📅 <strong>2024</strong> • 🏢 <strong>Aston University</strong> • 👥 <strong>Research Team</strong> • 📊 <strong>Published at IEEE PRML 2024 (pp. 8-15)</strong></p>
 
-#### 🎯 Project Overview
+<h4>🎯 Project Overview</h4>
 
-Introduced a novel Cosine-Gated LSTM (CGLSTM) architecture that uses cosine gating mechanisms for improved sequential learning. The architecture dynamically weighs new inputs versus hidden states based on similarities, outperforming LSTM, GRU, and Transformer models in benchmark tasks including FallingBallEnv and SocNavGym.
+<p>Introduced a novel Cosine-Gated LSTM (CGLSTM) architecture that uses cosine gating mechanisms for improved sequential learning. The architecture dynamically weighs new inputs versus hidden states based on similarities, outperforming LSTM, GRU, and Transformer models in benchmark tasks including FallingBallEnv and SocNavGym.</p>
 
-#### ⚠️ Challenges
+<h4>⚠️ Challenges</h4>
 
-* Improving sequential learning performance over existing architectures
-* Designing effective gating mechanisms for long-term dependencies
-* Balancing parameter efficiency with performance
-* Handling complex sequential patterns in benchmark tasks
-* Comparing against state-of-the-art models (LSTM, GRU, Transformer)
-* Optimizing cosine similarity computations
+<ul>
+<li>Improving sequential learning performance over existing architectures</li>
+<li>Designing effective gating mechanisms for long-term dependencies</li>
+<li>Balancing parameter efficiency with performance</li>
+<li>Handling complex sequential patterns in benchmark tasks</li>
+<li>Comparing against state-of-the-art models (LSTM, GRU, Transformer)</li>
+<li>Optimizing cosine similarity computations</li>
+</ul>
 
-#### 💡 Solution
+<h4>💡 Solution</h4>
 
-* Developed novel cosine gating mechanism for LSTM architecture
-* Implemented dynamic input weighting based on cosine similarity
-* Created efficient parameter usage strategy
-* Designed comprehensive evaluation framework for sequential learning
-* Established benchmark comparisons with LSTM, GRU, and Transformer
-* Optimized cosine similarity computations for performance
+<ul>
+<li>Developed novel cosine gating mechanism for LSTM architecture</li>
+<li>Implemented dynamic input weighting based on cosine similarity</li>
+<li>Created efficient parameter usage strategy</li>
+<li>Designed comprehensive evaluation framework for sequential learning</li>
+<li>Established benchmark comparisons with LSTM, GRU, and Transformer</li>
+<li>Optimized cosine similarity computations for performance</li>
+</ul>
 
-#### 📈 Impact & Results
+<h4>📈 Impact & Results</h4>
 
-* **Published at IEEE PRML 2024** - 2024 IEEE 5th International Conference on Pattern Recognition and Machine Learning (pp. 8-15)
-* **Superior performance** over LSTM, GRU, and Transformer in benchmark tasks
-* **Better handling** of long-term dependencies through cosine gating
-* **Improved efficiency** in sequential data processing
-* **Efficient parameter usage** compared to baseline models
-* **Significant contribution** to neural network architecture research
+<ul>
+<li><strong>Published at IEEE PRML 2024</strong> - 2024 IEEE 5th International Conference on Pattern Recognition and Machine Learning (pp. 8-15)</li>
+<li><strong>Superior performance</strong> over LSTM, GRU, and Transformer in benchmark tasks</li>
+<li><strong>Better handling</strong> of long-term dependencies through cosine gating</li>
+<li><strong>Improved efficiency</strong> in sequential data processing</li>
+<li><strong>Efficient parameter usage</strong> compared to baseline models</li>
+<li><strong>Significant contribution</strong> to neural network architecture research</li>
+</ul>
 
-#### 🛠️ Technologies & Tools
+<h4>🛠️ Technologies & Tools</h4>
 
-Python PyTorch TensorFlow Neural Network Architectures Sequential Learning Jupyter Notebooks Git GitHub
+<p>Python • PyTorch • TensorFlow • Neural Network Architectures • Sequential Learning • Jupyter Notebooks • Git • GitHub</p>
 
-**Links:**
-- [Paper PDF]({{ '/Cosine_Gated_LSTM_main.pdf' | relative_url }})
-- [Code Repository](https://github.com/goodluckoguzie)
+<p><strong>Links:</strong></p>
+<ul>
+<li><a href="{{ '/Cosine_Gated_LSTM_main.pdf' | relative_url }}">Paper PDF</a></li>
+<li><a href="https://github.com/goodluckoguzie">Code Repository</a></li>
+</ul>
 </div>
 
 ---
 
 <div class="portfolio-case-study" data-category="research">
-### PhD Thesis: Enhancing Robot Social Navigation
+<h3>PhD Thesis: Enhancing Robot Social Navigation</h3>
 
 <div class="project-status-badge completed">Completed</div>
 
-📅 **2020 - 2024** 🏢 **Aston University** 👥 **Supervisors: Dr. Luis J. Manso, Prof. Dr. Aniko Ekart** 📊 **PhD Thesis Completed**
+<p>📅 <strong>2020 - 2024</strong> • 🏢 <strong>Aston University</strong> • 👥 <strong>Supervisors: Dr. Luis J. Manso, Prof. Dr. Aniko Ekart</strong> • 📊 <strong>PhD Thesis Completed</strong></p>
 
-#### 🎯 Project Overview
+<h4>🎯 Project Overview</h4>
 
-Completed PhD thesis on "Enhancing Robot Social Navigation with Reinforcement Learning and Advanced Predictive Models" at Aston University. The research integrates reinforcement learning with advanced predictive models, introducing three key contributions: Predictive World Models, Cosine-Gated LSTM architecture, and Adaptive Prediction Horizons. Achieved superior performance in simulation environments including LunarLander-v2 and SocNavGym.
+<p>Completed PhD thesis on "Enhancing Robot Social Navigation with Reinforcement Learning and Advanced Predictive Models" at Aston University. The research integrates reinforcement learning with advanced predictive models, introducing three key contributions: Predictive World Models, Cosine-Gated LSTM architecture, and Adaptive Prediction Horizons. Achieved superior performance in simulation environments including LunarLander-v2 and SocNavGym.</p>
 
-#### ⚠️ Challenges
+<h4>⚠️ Challenges</h4>
 
-* Integrating multiple research contributions into coherent framework
-* Balancing theoretical development with practical implementation
-* Evaluating comprehensive navigation systems across multiple environments
-* Handling complex social navigation scenarios
-* Demonstrating superior performance compared to baseline methods
-* Managing large-scale research project over multiple years
+<ul>
+<li>Integrating multiple research contributions into coherent framework</li>
+<li>Balancing theoretical development with practical implementation</li>
+<li>Evaluating comprehensive navigation systems across multiple environments</li>
+<li>Handling complex social navigation scenarios</li>
+<li>Demonstrating superior performance compared to baseline methods</li>
+<li>Managing large-scale research project over multiple years</li>
+</ul>
 
-#### 💡 Solution
+<h4>💡 Solution</h4>
 
-* Developed comprehensive research framework integrating three key contributions
-* Created unified evaluation system for social navigation performance
-* Implemented rigorous testing across multiple simulation environments
-* Established systematic approach to research methodology
-* Designed comprehensive experiments comparing against baselines
-* Built reproducible research infrastructure with detailed documentation
+<ul>
+<li>Developed comprehensive research framework integrating three key contributions</li>
+<li>Created unified evaluation system for social navigation performance</li>
+<li>Implemented rigorous testing across multiple simulation environments</li>
+<li>Established systematic approach to research methodology</li>
+<li>Designed comprehensive experiments comparing against baselines</li>
+<li>Built reproducible research infrastructure with detailed documentation</li>
+</ul>
 
-#### 📈 Impact & Results
+<h4>📈 Impact & Results</h4>
 
-* **PhD Thesis Completed** - Aston University, 2024
-* **Three key research contributions** to social robot navigation
-* **Superior performance** in LunarLander-v2 and SocNavGym environments
-* **Higher success rates** compared to baseline methods
-* **More efficient navigation** through adaptive prediction horizons
-* **Published research** leading to two conference papers (UKCI 2023, IEEE PRML 2024)
-* **Successfully defended** thesis with excellent feedback
+<ul>
+<li><strong>PhD Thesis Completed</strong> - Aston University, 2024</li>
+<li><strong>Three key research contributions</strong> to social robot navigation</li>
+<li><strong>Superior performance</strong> in LunarLander-v2 and SocNavGym environments</li>
+<li><strong>Higher success rates</strong> compared to baseline methods</li>
+<li><strong>More efficient navigation</strong> through adaptive prediction horizons</li>
+<li><strong>Published research</strong> leading to two conference papers (UKCI 2023, IEEE PRML 2024)</li>
+<li><strong>Successfully defended</strong> thesis with excellent feedback</li>
+</ul>
 
-#### 🛠️ Technologies & Tools
+<h4>🛠️ Technologies & Tools</h4>
 
-Python PyTorch Reinforcement Learning Neural Networks Social Navigation Git GitHub Jupyter Notebooks Research Methodology
+<p>Python • PyTorch • Reinforcement Learning • Neural Networks • Social Navigation • Git • GitHub • Jupyter Notebooks • Research Methodology</p>
 
-**Links:**
-- [Thesis PDF]({{ '/Goodluck_s_thesis.zip' | relative_url }})
-- [Thesis Document]({{ '/OGUZIE DIRICHUKWU GOODLUCK  190212683 2024.pdf' | relative_url }})
-- [Viva Presentation](https://goodluckoguzie.github.io/Viva/)
+<p><strong>Links:</strong></p>
+<ul>
+<li><a href="{{ '/Goodluck_s_thesis.zip' | relative_url }}">Thesis PDF</a></li>
+<li><a href="{{ '/OGUZIE DIRICHUKWU GOODLUCK  190212683 2024.pdf' | relative_url }}">Thesis Document</a></li>
+<li><a href="https://goodluckoguzie.github.io/Viva/">Viva Presentation</a></li>
+</ul>
 </div>
 
 ---
 
 <div class="portfolio-case-study" data-category="web">
-### DiscoverHealth: Healthcare Resource Discovery System
+<h3>DiscoverHealth: Healthcare Resource Discovery System</h3>
 
 <div class="project-status-badge completed">Completed</div>
 
-📅 **2023 - 2024** 🏢 **Solent University** 👥 **Teaching Project** 📊 **Full-Stack Web Application**
+<p>📅 <strong>2023 - 2024</strong> • 🏢 <strong>Solent University</strong> • 👥 <strong>Teaching Project</strong> • 📊 <strong>Full-Stack Web Application</strong></p>
 
-#### 🎯 Project Overview
+<h4>🎯 Project Overview</h4>
 
-Developed a comprehensive web-based system for discovering and managing healthcare resources, integrating modern web technologies with geographic information systems. The system includes React.js frontend, Node.js/Express backend, SQLite database, and Leaflet.js for geographic visualization. Used as a teaching example for web development modules.
+<p>Developed a comprehensive web-based system for discovering and managing healthcare resources, integrating modern web technologies with geographic information systems. The system includes React.js frontend, Node.js/Express backend, SQLite database, and Leaflet.js for geographic visualization. Used as a teaching example for web development modules.</p>
 
-#### ⚠️ Challenges
+<h4>⚠️ Challenges</h4>
 
-* Integrating multiple technologies (React, Node.js, SQLite, Leaflet.js)
-* Designing user-friendly interface for healthcare resource discovery
-* Implementing geographic information system functionality
-* Managing database operations for healthcare resources
-* Ensuring responsive design for multiple devices
-* Creating comprehensive teaching materials
+<ul>
+<li>Integrating multiple technologies (React, Node.js, SQLite, Leaflet.js)</li>
+<li>Designing user-friendly interface for healthcare resource discovery</li>
+<li>Implementing geographic information system functionality</li>
+<li>Managing database operations for healthcare resources</li>
+<li>Ensuring responsive design for multiple devices</li>
+<li>Creating comprehensive teaching materials</li>
+</ul>
 
-#### 💡 Solution
+<h4>💡 Solution</h4>
 
-* Developed React.js frontend with responsive design
-* Built Node.js/Express backend with RESTful API
-* Implemented SQLite database for resource management
-* Integrated Leaflet.js for geographic visualization
-* Created user authentication and management system
-* Designed search and filter functionality
-* Developed comprehensive teaching documentation
+<ul>
+<li>Developed React.js frontend with responsive design</li>
+<li>Built Node.js/Express backend with RESTful API</li>
+<li>Implemented SQLite database for resource management</li>
+<li>Integrated Leaflet.js for geographic visualization</li>
+<li>Created user authentication and management system</li>
+<li>Designed search and filter functionality</li>
+<li>Developed comprehensive teaching documentation</li>
+</ul>
 
-#### 📈 Impact & Results
+<h4>📈 Impact & Results</h4>
 
-* **Full-stack web application** successfully deployed
-* **Comprehensive teaching resource** for web development modules
-* **Geographic information system** integration working effectively
-* **User-friendly interface** for healthcare resource discovery
-* **Responsive design** working across multiple devices
-* **Teaching modules** used successfully in courses
+<ul>
+<li><strong>Full-stack web application</strong> successfully deployed</li>
+<li><strong>Comprehensive teaching resource</strong> for web development modules</li>
+<li><strong>Geographic information system</strong> integration working effectively</li>
+<li><strong>User-friendly interface</strong> for healthcare resource discovery</li>
+<li><strong>Responsive design</strong> working across multiple devices</li>
+<li><strong>Teaching modules</strong> used successfully in courses</li>
+</ul>
 
-#### 🛠️ Technologies & Tools
+<h4>🛠️ Technologies & Tools</h4>
 
-React.js Node.js Express SQLite Leaflet.js RESTful APIs Geographic Information Systems Git GitHub
+<p>React.js • Node.js • Express • SQLite • Leaflet.js • RESTful APIs • Geographic Information Systems • Git • GitHub</p>
 
-**Links:**
-- [GitHub Repository](https://github.com/goodluckoguzie)
+<p><strong>Links:</strong></p>
+<ul>
+<li><a href="https://github.com/goodluckoguzie">GitHub Repository</a></li>
+</ul>
 </div>
 
 ---
 
 <div class="portfolio-case-study" data-category="teaching">
-### DiscoverHealth Teaching Modules (Parts A-F)
+<h3>DiscoverHealth Teaching Modules (Parts A-F)</h3>
 
 <div class="project-status-badge completed">Completed</div>
 
-📅 **2023 - 2024** 🏢 **Solent University** 👥 **Teaching Resources** 📊 **6 Progressive Modules**
+<p>📅 <strong>2023 - 2024</strong> • 🏢 <strong>Solent University</strong> • 👥 <strong>Teaching Resources</strong> • 📊 <strong>6 Progressive Modules</strong></p>
 
-#### 🎯 Project Overview
+<h4>🎯 Project Overview</h4>
 
-Developed comprehensive teaching modules for web development courses, covering progressive implementation of the DiscoverHealth platform from basic database setup (Part A) through full-stack development with React frontend, Node.js backend, and geographic information systems integration (Part F). Each module builds upon previous concepts and demonstrates modern web development practices.
+<p>Developed comprehensive teaching modules for web development courses, covering progressive implementation of the DiscoverHealth platform from basic database setup (Part A) through full-stack development with React frontend, Node.js backend, and geographic information systems integration (Part F). Each module builds upon previous concepts and demonstrates modern web development practices.</p>
 
-#### ⚠️ Challenges
+<h4>⚠️ Challenges</h4>
 
-* Creating progressive learning path from basic to advanced concepts
-* Ensuring each module builds upon previous knowledge
-* Balancing theoretical concepts with practical implementation
-* Providing comprehensive documentation and examples
-* Managing multiple versions of the same project
-* Ensuring consistency across all modules
+<ul>
+<li>Creating progressive learning path from basic to advanced concepts</li>
+<li>Ensuring each module builds upon previous knowledge</li>
+<li>Balancing theoretical concepts with practical implementation</li>
+<li>Providing comprehensive documentation and examples</li>
+<li>Managing multiple versions of the same project</li>
+<li>Ensuring consistency across all modules</li>
+</ul>
 
-#### 💡 Solution
+<h4>💡 Solution</h4>
 
-* Developed six progressive teaching modules (Parts A-F)
-* Created comprehensive documentation for each module
-* Designed step-by-step implementation guides
-* Built example code for each module stage
-* Established clear progression from basic to advanced concepts
-* Integrated modern web development best practices
-* Created assessment materials for each module
+<ul>
+<li>Developed six progressive teaching modules (Parts A-F)</li>
+<li>Created comprehensive documentation for each module</li>
+<li>Designed step-by-step implementation guides</li>
+<li>Built example code for each module stage</li>
+<li>Established clear progression from basic to advanced concepts</li>
+<li>Integrated modern web development best practices</li>
+<li>Created assessment materials for each module</li>
+</ul>
 
-#### 📈 Impact & Results
+<h4>📈 Impact & Results</h4>
 
-* **6 comprehensive teaching modules** successfully developed
-* **Progressive learning path** from basic to advanced web development
-* **Used successfully** in undergraduate and postgraduate courses
-* **Student engagement** improved through hands-on projects
-* **Modern web development practices** demonstrated effectively
-* **Teaching resources** widely adopted in courses
+<ul>
+<li><strong>6 comprehensive teaching modules</strong> successfully developed</li>
+<li><strong>Progressive learning path</strong> from basic to advanced web development</li>
+<li><strong>Used successfully</strong> in undergraduate and postgraduate courses</li>
+<li><strong>Student engagement</strong> improved through hands-on projects</li>
+<li><strong>Modern web development practices</strong> demonstrated effectively</li>
+<li><strong>Teaching resources</strong> widely adopted in courses</li>
+</ul>
 
-#### 🛠️ Technologies & Tools
+<h4>🛠️ Technologies & Tools</h4>
 
-React.js Node.js Express SQLite Leaflet.js RESTful APIs Modern JavaScript (ES6+) Git GitHub Teaching Documentation
+<p>React.js • Node.js • Express • SQLite • Leaflet.js • RESTful APIs • Modern JavaScript (ES6+) • Git • GitHub • Teaching Documentation</p>
 
-**Links:**
-- [GitHub Repository](https://github.com/goodluckoguzie)
+<p><strong>Links:</strong></p>
+<ul>
+<li><a href="https://github.com/goodluckoguzie">GitHub Repository</a></li>
+</ul>
 </div>
 
 ---
 
 <div class="portfolio-case-study" data-category="research">
-### Social Robot Navigation Simulator
+<h3>Social Robot Navigation Simulator</h3>
 
 <div class="project-status-badge ongoing">Ongoing</div>
 
-📅 **2024 - Present** 🏢 **Solent University** 👥 **Research Tool** 📊 **In Development**
+<p>📅 <strong>2024 - Present</strong> • 🏢 <strong>Solent University</strong> • 👥 <strong>Research Tool</strong> • 📊 <strong>In Development</strong></p>
 
-#### 🎯 Project Overview
+<h4>🎯 Project Overview</h4>
 
-Developing a comprehensive simulation environment for testing and evaluating social robot navigation algorithms. The simulator supports multiple environments (SocNavGym, LunarLander-v2) and provides detailed performance metrics, real-time visualization, and debugging tools for reinforcement learning research.
+<p>Developing a comprehensive simulation environment for testing and evaluating social robot navigation algorithms. The simulator supports multiple environments (SocNavGym, LunarLander-v2) and provides detailed performance metrics, real-time visualization, and debugging tools for reinforcement learning research.</p>
 
-#### ⚠️ Challenges
+<h4>⚠️ Challenges</h4>
 
-* Supporting multiple simulation environments
-* Providing detailed performance metrics
-* Implementing real-time visualization
-* Creating debugging tools for research
-* Ensuring reproducibility of experiments
-* Managing complex simulation configurations
+<ul>
+<li>Supporting multiple simulation environments</li>
+<li>Providing detailed performance metrics</li>
+<li>Implementing real-time visualization</li>
+<li>Creating debugging tools for research</li>
+<li>Ensuring reproducibility of experiments</li>
+<li>Managing complex simulation configurations</li>
+</ul>
 
-#### 💡 Solution
+<h4>💡 Solution</h4>
 
-* Developing multi-environment simulation framework
-* Implementing comprehensive performance metrics collection
-* Creating real-time visualization tools
-* Building debugging and analysis tools
-* Establishing reproducible experiment configurations
-* Designing user-friendly interface for researchers
+<ul>
+<li>Developing multi-environment simulation framework</li>
+<li>Implementing comprehensive performance metrics collection</li>
+<li>Creating real-time visualization tools</li>
+<li>Building debugging and analysis tools</li>
+<li>Establishing reproducible experiment configurations</li>
+<li>Designing user-friendly interface for researchers</li>
+</ul>
 
-#### 📈 Impact & Results
+<h4>📈 Impact & Results</h4>
 
-* **Multi-environment support** for diverse research scenarios
-* **Comprehensive metrics** for algorithm evaluation
-* **Real-time visualization** for research insights
-* **Debugging tools** improving research efficiency
-* Work in progress for research tool release
+<ul>
+<li><strong>Multi-environment support</strong> for diverse research scenarios</li>
+<li><strong>Comprehensive metrics</strong> for algorithm evaluation</li>
+<li><strong>Real-time visualization</strong> for research insights</li>
+<li><strong>Debugging tools</strong> improving research efficiency</li>
+<li>Work in progress for research tool release</li>
+</ul>
 
-#### 🛠️ Technologies & Tools
+<h4>🛠️ Technologies & Tools</h4>
 
-Python PyTorch Gymnasium SocNavGym Visualization Tools Reinforcement Learning Git GitHub
+<p>Python • PyTorch • Gymnasium • SocNavGym • Visualization Tools • Reinforcement Learning • Git • GitHub</p>
 </div>
 
 ---
@@ -358,19 +410,19 @@ Python PyTorch Gymnasium SocNavGym Visualization Tools Reinforcement Learning Gi
 
 ### Algorithm Development
 
-Expert in developing novel algorithms and architectures for machine learning and robotics
+Expert in developing novel algorithms and architectures for machine learning and robotics.
 
 ### Experimental Design
 
-Rigorous experimental design ensuring reproducible and valid research results
+Rigorous experimental design ensuring reproducible and valid research results.
 
 ### Performance Evaluation
 
-Comprehensive evaluation frameworks achieving superior performance metrics
+Comprehensive evaluation frameworks achieving superior performance metrics.
 
 ### Research Integration
 
-Integrating multiple research contributions into coherent frameworks
+Integrating multiple research contributions into coherent frameworks.
 
 ---
 
