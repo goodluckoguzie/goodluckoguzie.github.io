@@ -20,15 +20,14 @@ Download my CV or view it online
 
 ## Profile
 
-AI Researcher and Lecturer with **PhD in Computer Science** from Aston University and extensive experience in machine learning, robotics, and computer vision. 
+**AI Researcher and Lecturer** with PhD from Aston University and 5+ years teaching experience.
 
-Research published in top-tier conferences (UKCI 2023, IEEE PRML 2024). Experienced in:
-- Developing intelligent systems integrating computer vision, machine learning, and predictive models
-- Teaching AI, robotics, and software development across multiple institutions
-- Creating novel algorithms and neural network architectures
-- Implementing practical solutions for autonomous systems and healthcare technology
+**Research:** Published in top-tier conferences (UKCI 2023, IEEE PRML 2024). Expertise in:
+- Developing novel neural network architectures (Cosine-Gated LSTM)
+- Creating predictive models for social robot navigation
+- Teaching AI, robotics, and software development
 
-Currently teaching at Solent University, QA Ltd, and Crimson while conducting active research in reinforcement learning and social robotics.
+**Currently:** Teaching at QA Ltd and Crimson while conducting research in reinforcement learning and computer vision.
 
 ---
 
@@ -88,7 +87,7 @@ Foundation in electrical engineering, electronics, and embedded systems.
 **Crimson**  
 **November 2020 – Present** • Full-time
 
-- Teaching computer science fundamentals and advanced topics
+- Teaching computer science fundamentals and advanced topics for 5+ years
 - Curriculum development and course design
 - Student mentoring and academic support
 - Developing comprehensive teaching materials
@@ -108,7 +107,7 @@ Foundation in electrical engineering, electronics, and embedded systems.
 
 ---
 
-### Department Representative & Student Leadership Roles
+### Student Leadership Roles
 **Sheffield Hallam University**  
 **2018 – 2020**
 
@@ -142,17 +141,15 @@ PhD Thesis, Aston University, United Kingdom, 2024
 
 ---
 
-## Professional Certifications
+## Professional Development
 
-- **Networking Basics** - Cisco (2024)
-- **Sensor Fusion** - Udacity (2020)
-- **Autonomous Robots: Kalman Filter** - Udemy (2020)
-- **Artificial Intelligence for Business** - Udemy (2019)
-- **Deep Reinforcement Learning** - Udemy (2019)
-- **Self-Driving Car - Applied Deep Learning** - Udemy (2019)
-- **Machine Learning, Data Science and Deep Learning with Python** - Udemy (2019)
-- **Introduction to Deep Learning using Keras** - Udemy (2018)
-- **TensorFlow for Deep Learning with Python** - Udemy (2018)
+**Advanced Certifications:**
+- Networking Basics (Cisco, 2024)
+- Sensor Fusion (Udacity, 2020)
+- Autonomous Robots: Kalman Filter (Udemy, 2020)
+
+**Additional Training (2018-2019):**
+Multiple certifications in AI, Machine Learning, Deep Learning, and TensorFlow from Udemy
 
 ---
 
@@ -202,4 +199,4 @@ Git/GitHub • Docker • Geographic Information Systems • Microsoft Office �
 
 ---
 
-**Last Updated:** January 2025
+**Last Updated:** November 2024

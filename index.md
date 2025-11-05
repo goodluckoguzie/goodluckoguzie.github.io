@@ -17,7 +17,7 @@ title: Home
         <li><strong>Neural Network Architectures:</strong> Creating novel designs like Cosine-Gated LSTM</li>
         <li><strong>Healthcare Technology:</strong> Building web-based systems for resource discovery</li>
       </ul>
-      <p>Currently serving as Lecturer/Researcher at Solent University, I teach AI and Software Development while conducting active research in reinforcement learning and predictive models.</p>
+      <p>Currently teaching at QA Ltd and Crimson (5+ years), I combine academic research with practical instruction in AI, robotics, and software development.</p>
       <div class="hero-actions">
         <a href="{{ '/portfolio' | relative_url }}" class="btn">View My Projects</a>
         <a href="{{ '/DrGoodluck.pdf' | relative_url }}" class="btn btn-secondary" target="_blank">Download CV</a>
@@ -58,7 +58,7 @@ title: Home
       <h3>Predictive World Models for Social Navigation</h3>
       <p class="research-meta">UKCI 2023 • Published</p>
       <p>Developed predictive models that enable autonomous systems to navigate safely in social environments. The work introduces 2StepAhead and Multi-Action State Predictive Models (MASPM) that enable multi-step ahead predictions and comprehensive action evaluation, significantly improving navigation performance in dynamic social environments.</p>
-      <a href="{{ '/publications' | relative_url }}" class="research-link">View Publication →</a>
+      <a href="{{ '/portfolio' | relative_url }}" class="research-link">View Project →</a>
     </div>
   </div>
 
@@ -68,7 +68,7 @@ title: Home
       <h3>Cosine-Gated LSTM for Sequential Learning</h3>
       <p class="research-meta">IEEE PRML 2024 • Published</p>
       <p>Introduced a novel Cosine-Gated LSTM (CGLSTM) architecture that uses cosine gating mechanisms for improved sequential learning. The architecture dynamically weighs new inputs versus hidden states based on similarities, outperforming LSTM, GRU, and Transformer models in benchmark tasks.</p>
-      <a href="{{ '/publications' | relative_url }}" class="research-link">View Publication →</a>
+      <a href="{{ '/portfolio' | relative_url }}" class="research-link">View Project →</a>
     </div>
   </div>
 
@@ -78,7 +78,7 @@ title: Home
       <h3>PhD Thesis: Social Robot Navigation</h3>
       <p class="research-meta">Aston University • 2024</p>
       <p>Completed PhD thesis on "Enhancing Robot Social Navigation with Reinforcement Learning and Advanced Predictive Models". The research introduces three key contributions: Predictive World Models, Cosine-Gated LSTM, and Adaptive Prediction Horizons, achieving superior performance in simulation environments.</p>
-      <a href="{{ '/publications' | relative_url }}" class="research-link">View Thesis →</a>
+      <a href="{{ '/portfolio' | relative_url }}" class="research-link">View Project →</a>
     </div>
   </div>
 </div>
