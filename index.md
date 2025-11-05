@@ -9,8 +9,8 @@ title: Home
       <img src="{{ '/assets/images/goodluck.jpg' | relative_url }}" alt="Goodluck Oguzie" class="profile-photo">
     </div>
     <div class="hero-text">
-      <h1>Goodluck Oguzie</h1>
-      <p class="lead">AI Researcher & Lecturer | Machine Learning & Social Robotics</p>
+      <h1>Dr. Goodluck Oguzie</h1>
+      <p class="lead">PhD, MSc, BSc | AI Researcher & Lecturer</p>
       <p>I conduct research on intelligent systems that integrate computer vision, machine learning, and human-computer interaction. My work focuses on three main areas:</p>
       <ul style="margin-top: 1rem; margin-bottom: 1rem;">
         <li><strong>Social Robot Navigation:</strong> Developing predictive models for safe autonomous navigation</li>

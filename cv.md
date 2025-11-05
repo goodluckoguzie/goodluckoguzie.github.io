@@ -5,45 +5,30 @@ title: CV
 
 # Curriculum Vitae
 
+## Dr. Goodluck Oguzie
+**PhD, MSc, BSc**
+
 Download my CV or view it online
 
 <div class="cv-download">
   <a href="{{ '/DrGoodluck.pdf' | relative_url }}" class="btn" target="_blank">Download CV (PDF)</a>
 </div>
 
+---
+
 ## Profile
 
-AI Researcher and Lecturer with expertise in machine learning, social robotics, and human-computer interaction. Experienced in developing intelligent systems that integrate computer vision, machine learning, and predictive models for real-world applications. 
+AI Researcher and Lecturer with expertise in machine learning, social robotics, and human-computer interaction. 
 
-Proven track record of:
-- Publishing research in top-tier conferences (UKCI 2023, IEEE PRML 2024)
+**PhD in Computer Science** from Aston University with research published in top-tier conferences (UKCI 2023, IEEE PRML 2024). Experienced in:
+- Developing intelligent systems integrating computer vision, machine learning, and predictive models
 - Teaching undergraduate and postgraduate AI and Software Development modules
-- Supervising student projects and developing comprehensive curriculum materials
 - Creating novel algorithms and neural network architectures
 - Implementing practical solutions for complex real-world challenges
 
-Committed to advancing knowledge in AI and robotics while fostering student success and building long-term research collaborations.
+Committed to advancing knowledge in AI and robotics while fostering student success and building research collaborations.
 
-## Professional Experience
-
-### Lecturer/Researcher
-**Solent University**  
-**United Kingdom**  
-**2024 – Present**
-
-Teaching and Research:
-- Teaching 4+ modules in AI, Software Development, and Computer Science
-- Conducting cutting-edge research in machine learning and human-computer interaction
-- Supervising student projects and dissertations
-- Developing modern curriculum materials for AI and web development courses
-
-Research Achievements:
-- Published 2 conference papers (UKCI 2023, IEEE PRML 2024)
-- Completed PhD thesis on social robot navigation at Aston University
-- Developed novel Cosine-Gated LSTM (CGLSTM) architecture outperforming LSTM, GRU, and Transformer models
-- Created Predictive World Models (2StepAhead, MASPM) for social navigation
-- Built DiscoverHealth teaching platform with 6 progressive modules
-- Integrated modern web technologies with geographic information systems
+---
 
 ## Education
 
@@ -64,6 +49,43 @@ Research Achievements:
 - Superior performance in LunarLander-v2 and SocNavGym environments
 - Higher success rates compared to baseline methods
 - More efficient navigation with adaptive prediction horizons
+
+---
+
+### MSc, Computer Science
+**[University Name]**  
+**[Year - Year]**
+
+*Please provide: University name, location, and years*
+
+---
+
+### BSc, Computer Science
+**[University Name]**  
+**[Year - Year]**
+
+*Please provide: University name, location, and years*
+
+---
+
+## Professional Experience
+
+### Lecturer/Researcher
+**Solent University, United Kingdom**  
+**2024 – Present**
+
+**Teaching and Research:**
+- Teaching 4+ modules in AI, Software Development, and Computer Science
+- Conducting research in machine learning and human-computer interaction
+- Supervising student projects and dissertations
+- Developing modern curriculum materials
+
+**Research Achievements:**
+- Published 2 conference papers (UKCI 2023, IEEE PRML 2024)
+- Developed novel Cosine-Gated LSTM (CGLSTM) architecture
+- Created Predictive World Models (2StepAhead, MASPM)
+- Built DiscoverHealth teaching platform with 6 progressive modules
+- Integrated modern web technologies with geographic information systems
 
 ---
 
@@ -107,6 +129,8 @@ PhD Thesis, Aston University, United Kingdom, 2024
   <span>Geographic Information Systems</span>
 </div>
 
+---
+
 ## Technical Skills
 
 ### Programming Languages
@@ -120,3 +144,15 @@ React.js, Node.js, Express, SQLite, PostgreSQL, Leaflet.js, RESTful APIs
 
 ### Research Tools
 Git/GitHub, Jupyter Notebooks, Docker, Geographic Information Systems
+
+---
+
+## Contact
+
+**Email:** [drgoodluckoguzie@gmail.com](mailto:drgoodluckoguzie@gmail.com)  
+**LinkedIn:** [linkedin.com/in/goodluck-oguzie-0387b3157](https://www.linkedin.com/in/goodluck-oguzie-0387b3157)  
+**GitHub:** [github.com/goodluckoguzie](https://github.com/goodluckoguzie)
+
+---
+
+**Last Updated:** January 2025

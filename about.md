@@ -9,10 +9,11 @@ My Professional Journey
 
 <div class="about-hero-section">
   <div class="about-image">
-    <img src="{{ '/assets/images/goodluck.jpg' | relative_url }}" alt="Goodluck Oguzie" class="about-photo">
+    <img src="{{ '/assets/images/goodluck.jpg' | relative_url }}" alt="Dr. Goodluck Oguzie" class="about-photo">
   </div>
   <div class="about-content">
-    <h2>Hello, I'm Goodluck Oguzie</h2>
+    <h2>Hello, I'm Dr. Goodluck Oguzie</h2>
+    <p><strong>PhD, MSc, BSc</strong></p>
     <p>I'm an AI Researcher and Lecturer specializing in machine learning, social robotics, and human-computer interaction.</p>
     <p>I develop intelligent systems that integrate computer vision, machine learning, and predictive models to solve real-world problems. My research has been published at top conferences including UKCI 2023 and IEEE PRML 2024.</p>
     <p>Currently at Solent University, I teach undergraduate and postgraduate students while continuing my research in reinforcement learning and neural network architectures. I believe in combining rigorous theoretical development with practical implementation to create solutions that make a real impact.</p>
@@ -52,6 +53,26 @@ My Professional Journey
       <p><strong>Thesis:</strong> "Enhancing Robot Social Navigation with Reinforcement Learning and Advanced Predictive Models"</p>
       <p><strong>Supervisors:</strong> Dr. Luis J. Manso, Prof. Dr. Aniko Ekart</p>
       <p><strong>Key Contributions:</strong> Predictive World Models, Cosine-Gated LSTM architecture, Adaptive Prediction Horizons</p>
+    </div>
+  </div>
+  
+  <div class="education-card">
+    <div class="education-icon">🎓</div>
+    <div class="education-content">
+      <h3>MSc, Computer Science</h3>
+      <p><strong>[University Name]</strong></p>
+      <p><strong>[Year]</strong></p>
+      <p><em>Please provide university name and year</em></p>
+    </div>
+  </div>
+  
+  <div class="education-card">
+    <div class="education-icon">🎓</div>
+    <div class="education-content">
+      <h3>BSc, Computer Science</h3>
+      <p><strong>[University Name]</strong></p>
+      <p><strong>[Year]</strong></p>
+      <p><em>Please provide university name and year</em></p>
     </div>
   </div>
 </div>
