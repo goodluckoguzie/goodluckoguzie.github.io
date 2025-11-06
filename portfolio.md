@@ -51,72 +51,106 @@ These are the environments I've created or contributed to for evaluating reinfor
     <button class="carousel-nav carousel-next" aria-label="Next project" onclick="moveCarousel('environments', 1)">→</button>
     
     <!-- Carousel Content -->
-    <div class="environments-carousel-content">
-      <div class="carousel-left">
-        <div class="environments-carousel" id="environments-carousel">
-          
-          <div class="carousel-slide active" data-slide="0" data-video="{{ '/assets/images/FallingBallEnv.webm' | relative_url }}" data-caption="Real-time demonstration of FallingBallEnv showing ball physics, bouncing mechanics, and model predictions in action">
-            <div class="carousel-card">
+    <div class="environments-carousel" id="environments-carousel">
+      
+      <div class="carousel-slide active" data-slide="0">
+        <div class="carousel-card">
+          <div class="card-header">
+            <div class="card-badges">
               <div class="contribution-badge created">CREATED</div>
-              <h3>⚽ FallingBallEnv</h3>
               <div class="project-status-badge completed">COMPLETED</div>
-              <p class="project-meta"><strong>2023</strong> • Custom OpenAI Gym Environment • Published in PhD Thesis Chapter 6</p>
-              <p class="project-description">A custom OpenAI Gym environment simulating a ball falling under gravity and bouncing off the floor. The key challenge: <strong>the floor position is NOT included in the observation space</strong>, requiring models to infer this hidden boundary condition to predict when and how the ball will bounce. Created to evaluate sequential learning models like the Cosine-Gated LSTM (CGLSTM) in a controlled setting before applying methods to complex social navigation scenarios.</p>
+            </div>
+            <h3>⚽ FallingBallEnv</h3>
+            <p class="project-meta"><strong>2023</strong> • Custom OpenAI Gym Environment</p>
+          </div>
+          
+          <div class="card-content">
+            <div class="card-text">
+              <p class="project-description">A custom OpenAI Gym environment simulating a ball falling under gravity and bouncing off the floor. The key challenge: <strong>the floor position is NOT included in the observation space</strong>, requiring models to infer this hidden boundary condition to predict when and how the ball will bounce.</p>
               <a href="{{ '/projects/fallingballenv' | relative_url }}" class="see-more-btn">
                 <span class="btn-text">View Full Details</span>
                 <span class="btn-icon">→</span>
               </a>
             </div>
+            
+            <div class="card-video">
+              <video controls class="carousel-video">
+                <source src="{{ '/assets/images/FallingBallEnv.webm' | relative_url }}" type="video/webm">
+                Your browser does not support the video tag.
+              </video>
+              <p class="video-caption">Real-time demonstration showing ball physics, bouncing mechanics, and model predictions</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <div class="carousel-slide" data-slide="1">
+        <div class="carousel-card">
+          <div class="card-header">
+            <div class="card-badges">
+              <div class="contribution-badge created">CREATED</div>
+              <div class="project-status-badge completed">COMPLETED</div>
+            </div>
+            <h3>🤖 LiteSocNavGym</h3>
+            <p class="project-meta"><strong>2024</strong> • Lightweight Social Navigation Environment</p>
           </div>
           
-          <div class="carousel-slide" data-slide="1" data-video="" data-caption="LiteSocNavGym environment demonstration">
-            <div class="carousel-card">
-              <div class="contribution-badge created">CREATED</div>
-              <h3>🤖 LiteSocNavGym</h3>
-              <div class="project-status-badge completed">COMPLETED</div>
-              <p class="project-meta"><strong>2024</strong> • Lightweight Social Navigation Environment</p>
+          <div class="card-content">
+            <div class="card-text">
               <p class="project-description">A lightweight social navigation environment created for faster simulation and evaluation of social navigation algorithms. Designed for efficient testing of predictive models and reinforcement learning approaches, optimizing for rapid iteration while maintaining core social interaction dynamics.</p>
               <a href="{{ '/projects/litesocnavgym' | relative_url }}" class="see-more-btn">
                 <span class="btn-text">View Full Details</span>
                 <span class="btn-icon">→</span>
               </a>
             </div>
+            
+            <div class="card-video">
+              <div class="video-placeholder">
+                <p>Video coming soon</p>
+              </div>
+              <p class="video-caption">LiteSocNavGym environment demonstration</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <div class="carousel-slide" data-slide="2">
+        <div class="carousel-card">
+          <div class="card-header">
+            <div class="card-badges">
+              <div class="contribution-badge team">TEAM CONTRIBUTION</div>
+              <div class="project-status-badge completed">COMPLETED</div>
+            </div>
+            <h3>👥 SocNavGym</h3>
+            <p class="project-meta"><strong>2020-2024</strong> • Team Project • Supervisor: Dr. Luis J. Manso</p>
           </div>
           
-          <div class="carousel-slide" data-slide="2" data-video="" data-caption="SocNavGym environment demonstration with dynamic obstacles and social navigation scenarios">
-            <div class="carousel-card">
-              <div class="contribution-badge team">TEAM CONTRIBUTION</div>
-              <h3>👥 SocNavGym</h3>
-              <div class="project-status-badge completed">COMPLETED</div>
-              <p class="project-meta"><strong>2020-2024</strong> • Team Project • Supervisor: Dr. Luis J. Manso</p>
-              <p class="project-description">Comprehensive social navigation gymnasium environment for evaluating social robot navigation algorithms. As part of the development team, I focused on reinforcement learning aspects and integration with predictive models. This was the primary environment for testing Predictive World Models and validating Adaptive Prediction Horizons, with results published in UKCI 2023 and my PhD thesis.</p>
+          <div class="card-content">
+            <div class="card-text">
+              <p class="project-description">Comprehensive social navigation gymnasium environment for evaluating social robot navigation algorithms. As part of the development team, I focused on reinforcement learning aspects and integration with predictive models. This was the primary environment for testing Predictive World Models and validating Adaptive Prediction Horizons.</p>
               <a href="{{ '/projects/socnavgym' | relative_url }}" class="see-more-btn">
                 <span class="btn-text">View Full Details</span>
                 <span class="btn-icon">→</span>
               </a>
             </div>
+            
+            <div class="card-video">
+              <div class="video-placeholder">
+                <p>Video coming soon</p>
+              </div>
+              <p class="video-caption">SocNavGym environment demonstration with dynamic obstacles and social navigation scenarios</p>
+            </div>
           </div>
-          
-        </div>
-        
-        <!-- Carousel Indicators -->
-        <div class="carousel-indicators">
-          <button class="carousel-dot active" onclick="goToSlide('environments', 0)" aria-label="Go to slide 1"></button>
-          <button class="carousel-dot" onclick="goToSlide('environments', 1)" aria-label="Go to slide 2"></button>
-          <button class="carousel-dot" onclick="goToSlide('environments', 2)" aria-label="Go to slide 3"></button>
         </div>
       </div>
       
-      <!-- Video Section on Right -->
-      <div class="carousel-right">
-        <div class="carousel-video-container">
-          <video id="environments-video" controls class="carousel-video">
-            <source src="{{ '/assets/images/FallingBallEnv.webm' | relative_url }}" type="video/webm">
-            Your browser does not support the video tag.
-          </video>
-          <p class="video-caption"><strong>Demo Video:</strong> <span id="video-caption-text">Real-time demonstration of FallingBallEnv showing ball physics, bouncing mechanics, and model predictions in action</span></p>
-        </div>
-      </div>
+    </div>
+    
+    <!-- Carousel Indicators -->
+    <div class="carousel-indicators">
+      <button class="carousel-dot active" onclick="goToSlide('environments', 0)" aria-label="Go to slide 1"></button>
+      <button class="carousel-dot" onclick="goToSlide('environments', 1)" aria-label="Go to slide 2"></button>
+      <button class="carousel-dot" onclick="goToSlide('environments', 2)" aria-label="Go to slide 3"></button>
     </div>
   </div>
 </div>

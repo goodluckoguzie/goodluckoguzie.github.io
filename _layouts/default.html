@@ -314,9 +314,8 @@
             
             init: function() {
                 const carousel = document.getElementById('environments-carousel');
-                const video = document.getElementById('environments-video');
                 
-                if (!carousel || !video) return;
+                if (!carousel) return;
                 
                 this.updateSlide();
                 this.startAutoPlay();
@@ -395,34 +394,11 @@
             updateSlide: function() {
                 const slides = document.querySelectorAll('#environments-carousel .carousel-slide');
                 const dots = document.querySelectorAll('.carousel-indicators .carousel-dot');
-                const video = document.getElementById('environments-video');
-                const caption = document.getElementById('video-caption-text');
                 
                 slides.forEach((slide, index) => {
                     slide.classList.remove('active');
                     if (index === this.currentSlide) {
                         slide.classList.add('active');
-                        
-                        // Get video and caption from current slide's data attributes
-                        const videoSrc = slide.getAttribute('data-video');
-                        const videoCaption = slide.getAttribute('data-caption');
-                        
-                        // Update video if available
-                        if (video && videoSrc) {
-                            const source = video.querySelector('source');
-                            if (source) {
-                                source.src = videoSrc;
-                                video.load();
-                            } else {
-                                video.src = videoSrc;
-                                video.load();
-                            }
-                        }
-                        
-                        // Update caption
-                        if (caption && videoCaption) {
-                            caption.textContent = videoCaption;
-                        }
                     }
                 });
                 
