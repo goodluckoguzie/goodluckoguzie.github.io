@@ -67,12 +67,21 @@ These are the environments I've created or contributed to for evaluating reinfor
           
           <div class="card-content">
             <div class="card-text">
-              <p class="project-description">Custom Gym environment testing sequential learning with a hidden floor challenge - models must infer the boundary condition to predict ball bounces.</p>
+              <p class="project-description">A deceptively simple environment that tests whether models can learn hidden physics. The floor position is hidden—can your model infer where the ball will bounce?</p>
               
               <div class="project-stats" style="margin: 1rem 0; padding: 0.75rem; background: var(--bg-alt); border-radius: 6px; font-size: 0.875rem;">
-                <p style="margin: 0.25rem 0;"><strong>📊 Datasets:</strong> 20K full • 14.7K balanced • 14.7K unbalanced</p>
-                <p style="margin: 0.25rem 0;"><strong>🎯 Result:</strong> CGLSTM achieved 25% lower MAE with balanced dataset</p>
-                <p style="margin: 0.25rem 0;"><strong>📚 Published:</strong> PhD Thesis Ch.6 • IEEE PRML 2024</p>
+                <div style="display: flex; align-items: center; gap: 0.5rem; margin: 0.5rem 0;">
+                  <span style="font-size: 1.2rem;">🎯</span>
+                  <span><strong>25% lower MAE</strong> with balanced datasets</span>
+                </div>
+                <div style="display: flex; align-items: center; gap: 0.5rem; margin: 0.5rem 0;">
+                  <span style="font-size: 1.2rem;">📚</span>
+                  <span>Published in <strong>IEEE PRML 2024</strong></span>
+                </div>
+                <div style="display: flex; align-items: center; gap: 0.5rem; margin: 0.5rem 0;">
+                  <span style="font-size: 1.2rem;">✅</span>
+                  <span>Validated <strong>CGLSTM</strong> architecture</span>
+                </div>
               </div>
               
               <a href="{{ '/projects/fallingballenv' | relative_url }}" class="see-more-btn">
@@ -91,7 +100,7 @@ These are the environments I've created or contributed to for evaluating reinfor
                 <source src="{{ '/assets/images/FallingBallEnv.webm' | relative_url }}" type="video/webm">
                 Your browser does not support the video tag.
               </video>
-              <p class="video-caption">Real-time demonstration showing ball physics, bouncing mechanics, and model predictions</p>
+              <p class="video-caption">Watch how CGLSTM predicts bounces when the floor position is hidden—the challenge that makes this environment unique.</p>
             </div>
           </div>
         </div>
