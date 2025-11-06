@@ -1523,6 +1523,71 @@ code {
     background: var(--bg-card);
 }
 
+/* Project Preview & Expandable Details */
+.project-preview {
+    margin: 1.5rem 0;
+}
+
+.project-details-collapsed {
+    display: none;
+    margin-top: 2rem;
+    padding-top: 2rem;
+    border-top: 2px solid var(--border);
+}
+
+.project-details-collapsed.expanded {
+    display: block;
+    animation: fadeIn 0.3s ease-in;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(-10px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.see-more-btn {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
+    padding: 0.75rem 1.5rem;
+    margin-top: 1.5rem;
+    background: var(--bg-card);
+    border: 2px solid var(--link);
+    border-radius: 6px;
+    color: var(--link);
+    font-weight: 600;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: all var(--transition);
+    text-align: center;
+}
+
+.see-more-btn:hover {
+    background: var(--link);
+    color: white;
+    transform: translateY(-2px);
+    box-shadow: var(--shadow-md);
+}
+
+.see-more-btn.expanded .btn-icon {
+    transform: rotate(180deg);
+}
+
+.see-more-btn .btn-icon {
+    transition: transform 0.3s ease;
+    font-size: 0.8rem;
+}
+
+.see-more-btn .btn-text {
+    transition: all var(--transition);
+}
+
 .project-image-placeholder p,
 .project-video-placeholder p {
     margin: 0;

@@ -276,6 +276,33 @@
                 });
             });
         }
+        
+        // Expandable Project Details Toggle
+        function toggleDetails(button) {
+            const targetId = button.getAttribute('data-target');
+            const detailsDiv = document.getElementById(targetId);
+            
+            if (detailsDiv) {
+                const isExpanded = detailsDiv.classList.contains('expanded');
+                
+                if (isExpanded) {
+                    // Collapse
+                    detailsDiv.classList.remove('expanded');
+                    button.classList.remove('expanded');
+                    button.querySelector('.btn-text').textContent = 'See More Details';
+                } else {
+                    // Expand
+                    detailsDiv.classList.add('expanded');
+                    button.classList.add('expanded');
+                    button.querySelector('.btn-text').textContent = 'See Less Details';
+                    
+                    // Smooth scroll to details
+                    setTimeout(() => {
+                        detailsDiv.scrollIntoView({ behavior: 'smooth', block: 'nearest' });
+                    }, 100);
+                }
+            }
+        }
     </script>
     
     <!-- Google Analytics (Replace G-XXXXXXXXXX with your actual tracking ID) -->
