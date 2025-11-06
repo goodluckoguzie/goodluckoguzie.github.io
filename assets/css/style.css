@@ -1609,9 +1609,9 @@ code {
 
 .environments-carousel-wrapper {
     position: relative;
-    max-width: 1000px;
+    max-width: 1200px;
     margin: 0 auto;
-    padding: 0 3rem;
+    padding: 0 24px;
 }
 
 .environments-carousel {
