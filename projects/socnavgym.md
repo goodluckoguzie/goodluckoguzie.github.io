@@ -68,7 +68,7 @@ title: SocNavGym - Research Project
         <source src="{{ '/video/SocNavGym.mp4' | relative_url }}" type="video/mp4">
         Your browser does not support the video tag.
       </video>
-      <p style="margin-top: 0.75rem; font-size: 0.875rem; color: var(--text-light); font-style: italic;">We can see SocNavGym in action: multiple entities interacting in social navigation scenarios. Blue circle = robot agent, colored circles = human pedestrians, gray rectangles = static obstacles (tables, walls), green markers = goals/destinations (see Technical Specifications section for entity details)</p>
+      <p style="margin-top: 0.75rem; font-size: 0.875rem; color: var(--text-light); font-style: italic;">We can see SocNavGym in action: multiple entities interacting in social navigation scenarios. Blue circle = robot agent, colored circles = human pedestrians, gray rectangles = static obstacles (tables, walls), green markers = goals/destinations (<a href="#specs" style="color: var(--link); text-decoration: underline;">see Technical Specifications section</a> for entity details)</p>
     </div>
   </div>
 </div>
