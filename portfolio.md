@@ -110,6 +110,13 @@ These are the environments I've created or contributed to for evaluating reinfor
         <img src="{{ '/assets/images/FallingBallwithprediction.png' | relative_url }}" alt="FallingBall Prediction Results" style="max-width: 100%; height: auto; border-radius: 6px; margin-bottom: 1rem;">
         <p><strong>Prediction Results:</strong> Visual comparison showing predicted vs actual ball trajectories demonstrating CGLSTM's accuracy</p>
       </div>
+      <div class="project-video-placeholder">
+        <video controls style="max-width: 100%; height: auto; border-radius: 6px; margin-bottom: 1rem;">
+          <source src="{{ '/assets/images/FallingBallEnv.webm' | relative_url }}" type="video/webm">
+          Your browser does not support the video tag. <a href="{{ '/assets/images/FallingBallEnv.webm' | relative_url }}">Download the video</a>
+        </video>
+        <p><strong>Demo Video:</strong> Real-time demonstration of FallingBallEnv showing ball physics, bouncing mechanics, and model predictions in action</p>
+      </div>
     </div>
     
     <p><strong>Technologies:</strong> Python • OpenAI Gym • NumPy • OpenCV • Machine Learning</p>

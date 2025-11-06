@@ -1511,6 +1511,18 @@ code {
     margin-right: auto;
 }
 
+.project-video-placeholder video {
+    max-width: 100%;
+    height: auto;
+    border-radius: 6px;
+    margin-bottom: 1rem;
+    box-shadow: var(--shadow);
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    background: var(--bg-card);
+}
+
 .project-image-placeholder p,
 .project-video-placeholder p {
     margin: 0;
