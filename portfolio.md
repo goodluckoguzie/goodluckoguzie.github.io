@@ -67,7 +67,7 @@ These are the environments I've created or contributed to for evaluating reinfor
           
           <div class="card-content">
             <div class="card-text">
-              <p class="project-description">A simple environment where a ball falls and bounces. The floor position is not shown to the model. Can your model learn where the ball will bounce?</p>
+              <p class="project-description">A custom OpenAI Gym environment that simulates a ball falling under gravity and bouncing off the floor. The floor position is not included in the observation space, requiring models to infer this hidden boundary condition to predict when and how the ball will bounce.</p>
               
               <div class="project-stats" style="margin: 1rem 0; padding: 0.75rem; background: var(--bg-alt); border-radius: 6px; font-size: 0.875rem;">
                 <div style="display: flex; align-items: center; gap: 0.5rem; margin: 0.5rem 0;">
