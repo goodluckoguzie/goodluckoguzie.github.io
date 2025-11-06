@@ -1602,6 +1602,240 @@ code {
     margin-bottom: 0.5rem;
 }
 
+/* Environments Carousel */
+.environments-carousel-container {
+    margin: 3rem 0;
+}
+
+.environments-carousel-wrapper {
+    position: relative;
+    background: var(--bg-alt);
+    padding: 2rem;
+    border-radius: 12px;
+    border: 1px solid var(--border);
+}
+
+.environments-carousel-content {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 2rem;
+    align-items: start;
+}
+
+.carousel-left {
+    position: relative;
+}
+
+.environments-carousel {
+    position: relative;
+    overflow: hidden;
+    min-height: 400px;
+}
+
+.carousel-slide {
+    display: none;
+    animation: fadeIn 0.5s ease-in;
+}
+
+.carousel-slide.active {
+    display: block;
+}
+
+.carousel-card {
+    background: var(--bg-card);
+    border: 1px solid #e0f0ff;
+    border-radius: 8px;
+    padding: 2rem;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+}
+
+.carousel-card h3 {
+    margin-top: 0.5rem;
+    margin-bottom: 0.75rem;
+    font-size: 1.5rem;
+    color: var(--text);
+    font-weight: 700;
+}
+
+.carousel-card .project-meta {
+    color: var(--text-light);
+    font-size: 0.95rem;
+    margin-bottom: 1.5rem;
+}
+
+.carousel-card .project-description {
+    color: var(--text);
+    line-height: 1.7;
+    margin-bottom: 2rem;
+    font-size: 1rem;
+}
+
+.contribution-badge {
+    display: inline-block;
+    padding: 0.4rem 0.9rem;
+    border-radius: 20px;
+    font-size: 0.75rem;
+    font-weight: 600;
+    margin-bottom: 0.75rem;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+}
+
+.contribution-badge.created {
+    background: #28a745;
+    color: white;
+}
+
+.contribution-badge.team {
+    background: #0066cc;
+    color: white;
+}
+
+.project-status-badge {
+    display: inline-block;
+    padding: 0.4rem 0.9rem;
+    border-radius: 20px;
+    font-size: 0.75rem;
+    font-weight: 600;
+    margin-left: 0.5rem;
+    margin-bottom: 0.75rem;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+}
+
+.project-status-badge.completed {
+    background: #ffa500;
+    color: white;
+}
+
+.project-status-badge.ongoing {
+    background: #ff6b6b;
+    color: white;
+}
+
+.carousel-nav {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background: var(--bg-card);
+    border: 2px solid var(--link);
+    color: var(--link);
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+    font-size: 1.2rem;
+    font-weight: bold;
+    cursor: pointer;
+    z-index: 10;
+    transition: all var(--transition);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: var(--shadow-md);
+}
+
+.carousel-nav:hover {
+    background: var(--link);
+    color: white;
+    transform: translateY(-50%) scale(1.1);
+}
+
+.carousel-prev {
+    left: -20px;
+}
+
+.carousel-next {
+    right: -20px;
+}
+
+.carousel-indicators {
+    display: flex;
+    justify-content: center;
+    gap: 0.75rem;
+    margin-top: 1.5rem;
+}
+
+.carousel-dot {
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    border: 2px solid var(--link);
+    background: transparent;
+    cursor: pointer;
+    transition: all var(--transition);
+    padding: 0;
+}
+
+.carousel-dot.active {
+    background: var(--link);
+    transform: scale(1.2);
+}
+
+.carousel-dot:hover {
+    background: var(--link);
+    opacity: 0.7;
+}
+
+.carousel-right {
+    position: sticky;
+    top: 2rem;
+}
+
+.carousel-video-container {
+    background: var(--bg-card);
+    border: 1px solid var(--border);
+    border-radius: 8px;
+    padding: 1.5rem;
+    box-shadow: var(--shadow);
+}
+
+.carousel-video {
+    width: 100%;
+    height: auto;
+    border-radius: 6px;
+    margin-bottom: 1rem;
+    background: var(--bg-alt);
+}
+
+.video-caption {
+    color: var(--text-light);
+    font-size: 0.9rem;
+    margin: 0;
+    line-height: 1.6;
+}
+
+.video-caption strong {
+    color: var(--text);
+    font-weight: 600;
+}
+
+/* Responsive Design for Carousel */
+@media (max-width: 968px) {
+    .environments-carousel-content {
+        grid-template-columns: 1fr;
+        gap: 2rem;
+    }
+    
+    .carousel-right {
+        position: relative;
+        top: 0;
+    }
+    
+    .carousel-nav {
+        width: 40px;
+        height: 40px;
+        font-size: 1rem;
+    }
+    
+    .carousel-prev {
+        left: 10px;
+    }
+    
+    .carousel-next {
+        right: 10px;
+    }
+}
+
 .project-image-placeholder p,
 .project-video-placeholder p {
     margin: 0;

@@ -303,6 +303,213 @@
                 }
             }
         }
+        
+        // Environments Carousel
+        const environmentsCarousel = {
+            currentSlide: 0,
+            totalSlides: 3,
+            autoPlayInterval: null,
+            autoPlayDelay: 5000, // 5 seconds
+            videos: [],
+            
+            init: function() {
+                const carousel = document.getElementById('environments-carousel');
+                const video = document.getElementById('environments-video');
+                const caption = document.getElementById('video-caption-text');
+                
+                if (!carousel || !video) return;
+                
+                // Get videos from data attribute
+                try {
+                    const videoData = video.getAttribute('data-videos');
+                    if (videoData) {
+                        this.videos = JSON.parse(videoData);
+                    }
+                } catch (e) {
+                    console.error('Error parsing video data:', e);
+                    // Fallback videos
+                    this.videos = [
+                        {
+                            src: video.querySelector('source') ? video.querySelector('source').src : '',
+                            caption: "Real-time demonstration of FallingBallEnv showing ball physics, bouncing mechanics, and model predictions in action"
+                        },
+                        {
+                            src: "",
+                            caption: "LiteSocNavGym environment demonstration"
+                        },
+                        {
+                            src: "",
+                            caption: "SocNavGym environment demonstration with dynamic obstacles and social navigation scenarios"
+                        }
+                    ];
+                }
+                
+                this.updateSlide();
+                this.startAutoPlay();
+                
+                // Touch/swipe support
+                let startX = 0;
+                let isDragging = false;
+                
+                carousel.addEventListener('touchstart', (e) => {
+                    startX = e.touches[0].clientX;
+                    isDragging = true;
+                    this.stopAutoPlay();
+                });
+                
+                carousel.addEventListener('touchmove', (e) => {
+                    if (!isDragging) return;
+                    e.preventDefault();
+                });
+                
+                carousel.addEventListener('touchend', (e) => {
+                    if (!isDragging) return;
+                    isDragging = false;
+                    const endX = e.changedTouches[0].clientX;
+                    const diff = startX - endX;
+                    
+                    if (Math.abs(diff) > 50) {
+                        if (diff > 0) {
+                            this.next();
+                        } else {
+                            this.prev();
+                        }
+                    }
+                    this.startAutoPlay();
+                });
+                
+                // Mouse drag support
+                let mouseStartX = 0;
+                let mouseIsDragging = false;
+                
+                carousel.addEventListener('mousedown', (e) => {
+                    mouseStartX = e.clientX;
+                    mouseIsDragging = true;
+                    this.stopAutoPlay();
+                    carousel.style.cursor = 'grabbing';
+                });
+                
+                carousel.addEventListener('mousemove', (e) => {
+                    if (!mouseIsDragging) return;
+                    e.preventDefault();
+                });
+                
+                carousel.addEventListener('mouseup', (e) => {
+                    if (!mouseIsDragging) return;
+                    mouseIsDragging = false;
+                    carousel.style.cursor = 'default';
+                    const mouseEndX = e.clientX;
+                    const mouseDiff = mouseStartX - mouseEndX;
+                    
+                    if (Math.abs(mouseDiff) > 50) {
+                        if (mouseDiff > 0) {
+                            this.next();
+                        } else {
+                            this.prev();
+                        }
+                    }
+                    this.startAutoPlay();
+                });
+                
+                carousel.addEventListener('mouseleave', () => {
+                    mouseIsDragging = false;
+                    carousel.style.cursor = 'default';
+                    this.startAutoPlay();
+                });
+            },
+            
+            updateSlide: function() {
+                const slides = document.querySelectorAll('#environments-carousel .carousel-slide');
+                const dots = document.querySelectorAll('.carousel-indicators .carousel-dot');
+                const video = document.getElementById('environments-video');
+                const caption = document.getElementById('video-caption-text');
+                
+                slides.forEach((slide, index) => {
+                    slide.classList.remove('active');
+                    if (index === this.currentSlide) {
+                        slide.classList.add('active');
+                    }
+                });
+                
+                dots.forEach((dot, index) => {
+                    dot.classList.remove('active');
+                    if (index === this.currentSlide) {
+                        dot.classList.add('active');
+                    }
+                });
+                
+                // Update video if available
+                if (video && this.videos[this.currentSlide].src) {
+                    video.src = this.videos[this.currentSlide].src;
+                    video.load();
+                }
+                
+                if (caption) {
+                    caption.textContent = this.videos[this.currentSlide].caption;
+                }
+            },
+            
+            next: function() {
+                this.currentSlide = (this.currentSlide + 1) % this.totalSlides;
+                this.updateSlide();
+                this.restartAutoPlay();
+            },
+            
+            prev: function() {
+                this.currentSlide = (this.currentSlide - 1 + this.totalSlides) % this.totalSlides;
+                this.updateSlide();
+                this.restartAutoPlay();
+            },
+            
+            goTo: function(index) {
+                if (index >= 0 && index < this.totalSlides) {
+                    this.currentSlide = index;
+                    this.updateSlide();
+                    this.restartAutoPlay();
+                }
+            },
+            
+            startAutoPlay: function() {
+                this.stopAutoPlay();
+                this.autoPlayInterval = setInterval(() => {
+                    this.next();
+                }, this.autoPlayDelay);
+            },
+            
+            stopAutoPlay: function() {
+                if (this.autoPlayInterval) {
+                    clearInterval(this.autoPlayInterval);
+                    this.autoPlayInterval = null;
+                }
+            },
+            
+            restartAutoPlay: function() {
+                this.stopAutoPlay();
+                this.startAutoPlay();
+            }
+        };
+        
+        // Carousel Control Functions
+        function moveCarousel(carouselId, direction) {
+            if (carouselId === 'environments') {
+                if (direction > 0) {
+                    environmentsCarousel.next();
+                } else {
+                    environmentsCarousel.prev();
+                }
+            }
+        }
+        
+        function goToSlide(carouselId, index) {
+            if (carouselId === 'environments') {
+                environmentsCarousel.goTo(index);
+            }
+        }
+        
+        // Initialize carousel when page loads
+        document.addEventListener('DOMContentLoaded', function() {
+            environmentsCarousel.init();
+        });
     </script>
     
     <!-- Google Analytics (Replace G-XXXXXXXXXX with your actual tracking ID) -->
