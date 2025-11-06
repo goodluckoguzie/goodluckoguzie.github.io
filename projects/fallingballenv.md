@@ -99,7 +99,7 @@ The balanced dataset ensured models were exposed to bounce events more frequentl
 
 ### What Makes This Hard?
 
-In FallingBallEnv, the floor position is deliberately hidden from the observation space (see Key Innovation section). Models only receive:
+In FallingBallEnv, the floor position is deliberately hidden from the observation space (<a href="#innovation" style="color: var(--link); text-decoration: underline;">see Key Innovation section</a>). Models only receive:
 - Ball's position (x, y)
 - Ball's velocity (vx, vy)
 
@@ -121,7 +121,7 @@ This tests whether models can:
 Unlike most Gym environments that reveal all state information, FallingBallEnv deliberately omits the floor position from the observation space. This creates a controlled test of sequential learning where models must infer boundary conditions from trajectory patterns alone.
 
 **Key Design Elements:**
-- **Observation Space:** (x, y, vx, vy) - 4D continuous vector (see Technical Specifications)
+- **Observation Space:** (x, y, vx, vy) - 4D continuous vector (<a href="#specs" style="color: var(--link); text-decoration: underline;">see Technical Specifications section</a>)
 - **Hidden State:** Floor position (y_floor) - deliberately excluded
 - **Learning Challenge:** Infer floor position from trajectory observations
 - **Controlled Complexity:** Simple physics simulation with complex learning requirement
@@ -265,7 +265,7 @@ Unlike most Gym environments that reveal all state information, FallingBallEnv d
   - `y`: Vertical position (continuous)
   - `vx`: Horizontal velocity (continuous)
   - `vy`: Vertical velocity (continuous)
-- **Important:** Floor position (`y_floor`) is deliberately excluded from observations (see Key Innovation section)
+- **Important:** Floor position (`y_floor`) is deliberately excluded from observations (<a href="#innovation" style="color: var(--link); text-decoration: underline;">see Key Innovation section</a>)
 
 ### Action Space
 - **Type:** None (prediction/forecasting task)
@@ -417,17 +417,17 @@ FallingBallEnv was important for evaluating and validating the Cosine-Gated LSTM
 - <a href="{{ '/projects/litesocnavgym' | relative_url }}">LiteSocNavGym</a> - Lightweight version for faster iteration
 
 **Comparison with Other Environments:**
-Unlike standard Gym environments (CartPole, MountainCar, etc.), FallingBallEnv deliberately omits state information to test implicit physics learning (see Key Innovation section). This makes it unique for evaluating sequential learning models that must infer hidden dynamics.
+Unlike standard Gym environments (CartPole, MountainCar, etc.), FallingBallEnv deliberately omits state information to test implicit physics learning (<a href="#innovation" style="color: var(--link); text-decoration: underline;">see Key Innovation section</a>). This makes it unique for evaluating sequential learning models that must infer hidden dynamics.
 
 ---
 
 ## <a id="faq"></a>13. FAQ
 
 ### Q: Why is the floor position hidden?
-**A:** This design tests whether models can learn implicit physics from observations alone. Unlike most Gym environments that reveal all state information, FallingBallEnv requires models to infer hidden boundary conditions from trajectory patterns (see Key Innovation section).
+**A:** This design tests whether models can learn implicit physics from observations alone. Unlike most Gym environments that reveal all state information, FallingBallEnv requires models to infer hidden boundary conditions from trajectory patterns (<a href="#innovation" style="color: var(--link); text-decoration: underline;">see Key Innovation section</a>).
 
 ### Q: How does this compare to other Gym environments?
-**A:** Most Gym environments (CartPole, MountainCar, etc.) reveal all state information. FallingBallEnv uniquely tests learning of implicit physics by hiding the floor position, creating a controlled test of sequential learning capabilities (see Key Innovation section).
+**A:** Most Gym environments (CartPole, MountainCar, etc.) reveal all state information. FallingBallEnv uniquely tests learning of implicit physics by hiding the floor position, creating a controlled test of sequential learning capabilities (<a href="#innovation" style="color: var(--link); text-decoration: underline;">see Key Innovation section</a>).
 
 ### Q: Can I use this for my research?
 **A:** Yes! The environment is open-source and available on GitHub. It's particularly useful for:
@@ -440,7 +440,7 @@ Unlike standard Gym environments (CartPole, MountainCar, etc.), FallingBallEnv d
 **A:** The hidden floor position forces models to learn implicit physics from trajectory observations alone. This tests whether models can infer boundary conditions without explicit state information.
 
 ### Q: How do I get started?
-**A:** Clone the repository, install dependencies, and check out the Quick Start example in the Installation & Usage section above.
+**A:** Clone the repository, install dependencies, and check out the Quick Start example in the <a href="#usage" style="color: var(--link); text-decoration: underline;">Installation & Usage section</a> above.
 
 ### Q: What datasets were used?
 **A:** Three datasets were created:
