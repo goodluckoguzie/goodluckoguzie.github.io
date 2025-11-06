@@ -50,28 +50,63 @@ These are the environments I've created or contributed to for evaluating reinfor
     <div class="contribution-badge created">CREATED</div>
     <h3>⚽ FallingBallEnv</h3>
     <div class="project-status-badge completed">COMPLETED</div>
-    <p><strong>2023</strong> • Custom OpenAI Gym Environment</p>
+    <p><strong>2023</strong> • Custom OpenAI Gym Environment • Published in PhD Thesis Chapter 6</p>
     
     <h4>Overview</h4>
-    <p>A custom Gym environment simulating a ball falling due to gravity and bouncing off the floor. Designed for evaluating reinforcement learning algorithms and sequential learning models, particularly used in testing Cosine-Gated LSTM performance.</p>
+    <p>A custom OpenAI Gym environment simulating a ball falling under gravity and bouncing off the floor. While appearing simple, it introduces a subtle challenge: <strong>the floor position is NOT included in the observation space</strong>, requiring models to infer this hidden boundary condition to predict when and how the ball will bounce.</p>
+    
+    <h4>Research Motivation</h4>
+    <p>Created to address limitations observed when transitioning from discrete to continuous action spaces in SocNavGym. As action choices increased from 4 to 16, prediction errors became more pronounced, highlighting the need for more robust sequential learning models. FallingBallEnv serves as a controlled testing ground to explore fundamental challenges in temporal prediction before applying methods to complex environments like SocNavGym.</p>
     
     <h4>Key Features</h4>
     <ul>
-      <li>Gravity simulation with configurable parameters</li>
-      <li>Bouncing mechanism with energy loss</li>
-      <li>Render support for visualization</li>
-      <li>OpenAI Gym compatible interface</li>
+      <li><strong>Simplified Physics:</strong> Gravity simulation with customizable parameters (initial position, velocity, radius)</li>
+      <li><strong>Limited Observation Space:</strong> Only ball's (x,y) coordinates and velocity - floor position is hidden</li>
+      <li><strong>Bouncing Mechanism:</strong> Ball bounces off floor with reduced velocity (energy loss)</li>
+      <li><strong>Render Support:</strong> Visualize ball motion for analysis</li>
+      <li><strong>OpenAI Gym Compatible:</strong> Standard interface for RL algorithm integration</li>
+      <li><strong>Controlled Complexity:</strong> Focuses on prediction rather than complex physics simulation</li>
     </ul>
     
-    <h4>Usage</h4>
-    <p>Used in testing and validating the Cosine-Gated LSTM architecture, demonstrating superior performance in sequential learning tasks compared to baseline LSTM, GRU, and Transformer models.</p>
+    <h4>Research Design & Datasets</h4>
+    <p>Three distinct datasets were created to study the impact of data distribution on model performance:</p>
+    <ul>
+      <li><strong>Full Dataset:</strong> 20,000 episodes capturing complete ball motion from start to finish (unbalanced - bounce events underrepresented)</li>
+      <li><strong>Balanced Dataset:</strong> 14,700 episodes with equal representation of bounce and free-fall windows (17-step windows categorized by initial velocity)</li>
+      <li><strong>Unbalanced Subset:</strong> 14,700 episodes randomly sampled without balancing (control group)</li>
+    </ul>
+    <p>The balanced dataset ensured models were exposed to bounce events more frequently, improving their ability to learn bounce dynamics effectively.</p>
     
-    <p><strong>Technologies:</strong> Python • OpenAI Gym • NumPy • OpenCV</p>
+    <h4>Usage in Research</h4>
+    <p>FallingBallEnv was central to evaluating and validating the Cosine-Gated LSTM (CGLSTM) architecture. The environment enabled:</p>
+    <ul>
+      <li>Testing fundamental temporal dependency learning</li>
+      <li>Analyzing transition event prediction (bounces)</li>
+      <li>Comparing CGLSTM against Vanilla LSTM, GRU, RAU, and Transformer models</li>
+      <li>Demonstrating the importance of balanced training data</li>
+      <li>Validating model performance before complex SocNavGym applications</li>
+    </ul>
+    
+    <h4>Key Research Results</h4>
+    <p>CGLSTM demonstrated superior performance in FallingBallEnv:</p>
+    <ul>
+      <li><strong>Lower MAE:</strong> Achieved MAE values of 3.558×10⁻⁵ (k=1), 4.302×10⁻⁵ (k=3), 2.341×10⁻⁵ (k=5), and 1.360×10⁻³ (k=10) - consistently best across all prediction horizons</li>
+      <li><strong>Lower MSE:</strong> Achieved MSE values consistently lower than all baseline models</li>
+      <li><strong>Balanced Dataset Impact:</strong> Balanced dataset showed 25% lower MAE compared to unbalanced dataset</li>
+      <li><strong>Prediction Time:</strong> 0.00325s (faster than Transformer's 0.01417s, though slower than GRU/LSTM)</li>
+      <li><strong>Visual Validation:</strong> Accurate predictions demonstrated through visual comparison of predicted vs actual ball positions</li>
+    </ul>
+    
+    <h4>Research Impact</h4>
+    <p>The FallingBallEnv provided crucial insights into sequential learning that informed the development and validation of CGLSTM. Results demonstrated that CGLSTM's cosine similarity gating mechanism significantly improves prediction accuracy in temporal tasks, establishing a foundation for applying the model to more complex social navigation scenarios.</p>
+    
+    <p><strong>Technologies:</strong> Python • OpenAI Gym • NumPy • OpenCV • Machine Learning</p>
     
     <p><strong>Links:</strong></p>
     <ul>
       <li><a href="https://github.com/goodluckoguzie/falling_ball_env" target="_blank">GitHub Repository: falling_ball_env</a></li>
       <li><a href="{{ '/portfolio' | relative_url }}#cosine-gated-lstm">Used in: Cosine-Gated LSTM Research</a></li>
+      <li><a href="{{ '/publications' | relative_url }}">Publication: IEEE PRML 2024</a></li>
     </ul>
   </div>
 
