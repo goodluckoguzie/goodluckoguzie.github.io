@@ -127,21 +127,15 @@ This tests whether models can:
 
 ## <a id="innovation"></a>4. Key Innovation
 
-### The Hidden Floor Challenge
+### What Makes This Unique
 
-The core innovation is **deliberately omitting the floor position** from observations. This creates a controlled test of sequential learning:
+Unlike most Gym environments that reveal all state information, FallingBallEnv deliberately omits the floor position from the observation space. This creates a controlled test of sequential learning where models must infer boundary conditions from trajectory patterns alone.
 
-- **Observation Space:** (x, y, vx, vy) - 4D continuous
-- **Hidden:** Floor position (y_floor)
-- **Challenge:** Infer floor position from trajectory patterns
-
-### Why This Is Unique
-
-Unlike most Gym environments:
-- ❌ **Most environments:** Reveal all state information
-- ✅ **FallingBallEnv:** Tests learning of implicit physics
-- ✅ **Controlled complexity:** Simple physics, complex learning challenge
-- ✅ **Reproducible:** Exact same conditions for fair comparison
+**Key Design Elements:**
+- **Observation Space:** (x, y, vx, vy) - 4D continuous vector
+- **Hidden State:** Floor position (y_floor) - deliberately excluded
+- **Learning Challenge:** Infer floor position from trajectory observations
+- **Controlled Complexity:** Simple physics simulation with complex learning requirement
 
 ---
 
@@ -291,13 +285,13 @@ The balanced dataset ensured models were exposed to bounce events more frequentl
 ## <a id="specs"></a>9. Technical Specifications
 
 ### Observation Space
-- **Dimensions:** 4D continuous vector
+- **Dimensions:** 4D continuous vector `[x, y, vx, vy]`
 - **Components:** 
   - `x`: Horizontal position (continuous)
   - `y`: Vertical position (continuous)
   - `vx`: Horizontal velocity (continuous)
   - `vy`: Vertical velocity (continuous)
-- **Note:** Floor position (`y_floor`) is **NOT** included in observations
+- **Important:** Floor position (`y_floor`) is deliberately excluded from observations (see Key Innovation section)
 
 ### Action Space
 - **Type:** None (prediction/forecasting task)
@@ -316,7 +310,7 @@ The balanced dataset ensured models were exposed to bounce events more frequentl
 
 ### Key Features
 - **Simplified Physics:** Gravity simulation with customizable parameters
-- **Limited Observation Space:** Only ball's (x,y) coordinates and velocity. The floor position is hidden.
+- **Limited Observation Space:** Only ball's (x,y) coordinates and velocity (floor position excluded)
 - **Bouncing Mechanism:** Ball bounces off floor with reduced velocity (energy loss)
 - **Render Support:** Visualize ball motion for analysis
 - **OpenAI Gym Compatible:** Standard interface for RL algorithm integration
@@ -456,7 +450,7 @@ Unlike standard Gym environments (CartPole, MountainCar, etc.), FallingBallEnv d
 ## <a id="faq"></a>14. FAQ
 
 ### Q: Why is the floor position hidden?
-**A:** To test whether models can learn implicit physics from observations alone. Most Gym environments reveal all state information. FallingBallEnv tests whether models can infer hidden boundary conditions from trajectory patterns.
+**A:** This design tests whether models can learn implicit physics from observations alone. Unlike most Gym environments that reveal all state information, FallingBallEnv requires models to infer hidden boundary conditions from trajectory patterns, creating a controlled test of sequential learning capabilities.
 
 ### Q: How does this compare to other Gym environments?
 **A:** Most Gym environments (CartPole, MountainCar, etc.) reveal all state information. FallingBallEnv uniquely tests learning of implicit physics by hiding the floor position, creating a controlled test of sequential learning capabilities.

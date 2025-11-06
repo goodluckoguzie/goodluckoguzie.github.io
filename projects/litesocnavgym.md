@@ -135,7 +135,7 @@ LiteSocNavGym achieves 3-5x faster simulation speeds by:
 
 <div style="background: var(--bg-alt); padding: 1.5rem; border-radius: 8px; margin: 1.5rem 0;">
   <h4>Key Performance Metrics</h4>
-  <p>LiteSocNavGym achieves <strong>3-5x faster simulation speeds</strong> compared to SocNavGym while maintaining core social navigation dynamics. This makes it ideal for:</p>
+  <p>LiteSocNavGym achieves <strong>3-5x faster simulation speeds</strong> compared to SocNavGym while maintaining essential social navigation dynamics. This performance gain makes it ideal for:</p>
   <ul>
     <li>Rapid algorithm development and testing</li>
     <li>Quick iteration during model training</li>
@@ -243,14 +243,14 @@ Despite optimizations, LiteSocNavGym maintains:
 - **Note:** Core actions preserved
 
 ### Performance Characteristics
-- **Simulation Speed:** 3-5x faster than SocNavGym
+- **Simulation Speed:** 3-5x faster than SocNavGym (see Performance Comparison section)
 - **Memory Usage:** Reduced compared to SocNavGym
 - **CPU Requirements:** Lower than SocNavGym
 - **Visual Quality:** Streamlined for speed
 
 ### Key Features
-- **Lightweight Implementation** - Optimized for speed
-- **Social Navigation Scenarios** - Core dynamics preserved
+- **Lightweight Implementation** - Optimized for speed (3-5x faster than SocNavGym)
+- **Social Navigation Scenarios** - Essential dynamics preserved
 - **RL Framework Compatible** - Works with standard frameworks
 - **Performance Optimized** - Fast evaluation and testing
 
@@ -412,10 +412,10 @@ LiteSocNavGym has been used for:
 ## <a id="faq"></a>12. FAQ
 
 ### Q: How much faster is LiteSocNavGym than SocNavGym?
-**A:** LiteSocNavGym achieves 3-5x faster simulation speeds compared to SocNavGym, making it ideal for rapid algorithm development and testing.
+**A:** LiteSocNavGym achieves 3-5x faster simulation speeds compared to SocNavGym (see Performance Comparison section), making it ideal for rapid algorithm development and testing.
 
 ### Q: What features were removed or simplified?
-**A:** Visual rendering was streamlined, physics calculations were optimized, and non-essential features were removed. However, core social navigation dynamics are preserved.
+**A:** Visual rendering was streamlined, physics calculations were optimized, and non-essential features were removed. However, essential social navigation dynamics are preserved (see What Was Preserved section).
 
 ### Q: Can I use the same code for both environments?
 **A:** Yes! LiteSocNavGym maintains API compatibility with SocNavGym, so code written for one can typically run in the other with minimal changes.
@@ -424,10 +424,10 @@ LiteSocNavGym has been used for:
 **A:** Use LiteSocNavGym for rapid development, testing, and prototyping. Use SocNavGym for final evaluation, comprehensive testing, and when you need full visual rendering.
 
 ### Q: Are the results comparable between environments?
-**A:** Yes, core dynamics are preserved, so results should be comparable. However, always validate final results in the full SocNavGym environment.
+**A:** Yes, essential dynamics are preserved, so results should be comparable. However, always validate final results in the full SocNavGym environment.
 
 ### Q: What research has used LiteSocNavGym?
-**A:** LiteSocNavGym has been used for testing Predictive World Models (2StepAhead, MASPM) and Adaptive Prediction Horizons, enabling rapid iteration during development.
+**A:** LiteSocNavGym has been used for testing Predictive World Models (2StepAhead, MASPM) and Adaptive Prediction Horizons (see Research Applications section), enabling rapid iteration during development.
 
 ### Q: How do I get started?
 **A:** Install the environment, check the Usage & Examples section above, and start with the basic usage example. The API is compatible with SocNavGym, so existing code should work.
