@@ -1809,6 +1809,90 @@ code {
     color: var(--text-light);
 }
 
+/* Research Overview Stats */
+.research-overview-stats {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    gap: 1.5rem;
+    margin: 2rem 0;
+    padding: 1.5rem;
+    background: var(--bg-alt);
+    border-radius: 8px;
+}
+
+.stat-box {
+    text-align: center;
+    padding: 1rem;
+    background: var(--bg-card);
+    border-radius: 6px;
+    border: 1px solid var(--border);
+}
+
+.stat-box .stat-number {
+    font-size: 2.5rem;
+    font-weight: 700;
+    color: var(--link);
+    margin-bottom: 0.25rem;
+}
+
+.stat-box .stat-label {
+    font-size: 0.9rem;
+    color: var(--text-light);
+    margin: 0;
+}
+
+/* Contribution Badges */
+.contribution-badge {
+    display: inline-block;
+    padding: 0.4rem 0.9rem;
+    border-radius: 16px;
+    font-size: 0.8rem;
+    font-weight: 600;
+    margin-bottom: 0.75rem;
+    margin-right: 0.5rem;
+}
+
+.contribution-badge.created {
+    background: #28a745;
+    color: white;
+}
+
+.contribution-badge.team {
+    background: #0066cc;
+    color: white;
+}
+
+/* Environment Grid */
+.environment-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+    gap: 2rem;
+    margin: 2rem 0;
+}
+
+/* Section Headers Enhancement */
+.portfolio-case-study h3 {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.portfolio-case-study .contribution-badge {
+    margin-top: 0;
+}
+
+/* Research Area Sections */
+.research-area-section {
+    margin: 3rem 0;
+    padding-top: 2rem;
+    border-top: 2px solid var(--border);
+}
+
+.research-area-section:first-child {
+    border-top: none;
+    padding-top: 0;
+}
+
 /* Mobile Responsive Enhancements */
 @media (max-width: 768px) {
     .collaboration-cta {
@@ -1834,6 +1918,14 @@ code {
     
     .research-actions {
         flex-direction: column;
+    }
+    
+    .environment-grid {
+        grid-template-columns: 1fr;
+    }
+    
+    .research-overview-stats {
+        grid-template-columns: repeat(2, 1fr);
     }
 }
 

@@ -224,46 +224,46 @@
                         const category = project.dataset.category || '';
                         const projectText = project.textContent.toLowerCase();
                         
-                        // Determine project type
-                        const isResearch = category.includes('research') || 
-                                         projectText.includes('prediction') || 
-                                         projectText.includes('navigation') || 
-                                         projectText.includes('lstm') || 
-                                         projectText.includes('thesis') ||
-                                         projectText.includes('reinforcement');
-                        const isWeb = category.includes('web') || 
-                                    projectText.includes('discoverhealth') || 
-                                    projectText.includes('web');
-                        const isTeaching = category.includes('teaching') || 
-                                         projectText.includes('teaching') || 
-                                         projectText.includes('module');
+                        // Determine project type based on category and content
+                        const isSocialNav = category.includes('social-nav') || 
+                                          projectText.includes('socnav') || 
+                                          projectText.includes('social navigation') ||
+                                          projectText.includes('predictive world');
+                        const isRLModels = category.includes('rl-models') || 
+                                          projectText.includes('cosine-gated') ||
+                                          projectText.includes('cglstm') ||
+                                          projectText.includes('adaptive prediction');
+                        const isActionRec = category.includes('action-rec') || 
+                                          projectText.includes('action recognition') ||
+                                          projectText.includes('wi-fi csi') ||
+                                          projectText.includes('esp32');
+                        const isEnvironments = category.includes('environments') || 
+                                              projectText.includes('fallingballenv') ||
+                                              projectText.includes('litesocnavgym') ||
+                                              projectText.includes('socnavgym') ||
+                                              projectText.includes('environment');
                         
                         const isOngoing = category.includes('ongoing') || 
-                                        projectText.includes('ongoing') ||
                                         project.querySelector('.project-status-badge.ongoing');
                         const isCompleted = category.includes('completed') || 
-                                          projectText.includes('completed') ||
                                           project.querySelector('.project-status-badge.completed');
-                        
-                        // Check section headers
-                        const sectionHeader = project.previousElementSibling;
-                        const isInOngoingSection = sectionHeader && sectionHeader.textContent.includes('Ongoing');
-                        const isInCompletedSection = sectionHeader && sectionHeader.textContent.includes('Completed');
                         
                         let shouldShow = false;
                         
                         if (filter === 'all') {
                             shouldShow = true;
                         } else if (filter === 'ongoing') {
-                            shouldShow = isOngoing || isInOngoingSection;
+                            shouldShow = isOngoing;
                         } else if (filter === 'completed') {
-                            shouldShow = isCompleted || isInCompletedSection;
-                        } else if (filter === 'research') {
-                            shouldShow = isResearch;
-                        } else if (filter === 'web') {
-                            shouldShow = isWeb;
-                        } else if (filter === 'teaching') {
-                            shouldShow = isTeaching;
+                            shouldShow = isCompleted;
+                        } else if (filter === 'social-nav') {
+                            shouldShow = isSocialNav;
+                        } else if (filter === 'rl-models') {
+                            shouldShow = isRLModels;
+                        } else if (filter === 'action-rec') {
+                            shouldShow = isActionRec;
+                        } else if (filter === 'environments') {
+                            shouldShow = isEnvironments;
                         }
                         
                         // Show/hide project

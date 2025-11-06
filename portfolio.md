@@ -5,338 +5,376 @@ title: Research Portfolio
 
 # Research Portfolio
 
-Detailed case studies of research projects I've completed and ongoing work I'm actively developing.
+My research focuses on **Social Robot Navigation**, **Reinforcement Learning**, and **Action Recognition**. Below are the environments I've created or contributed to, the models I've proposed, and applications I've developed.
 
-<p><strong>Filter by:</strong></p>
+<div class="research-overview-stats">
+  <div class="stat-box">
+    <div class="stat-number">3</div>
+    <div class="stat-label">Proposed Models</div>
+  </div>
+  <div class="stat-box">
+    <div class="stat-number">3</div>
+    <div class="stat-label">Environments</div>
+  </div>
+  <div class="stat-box">
+    <div class="stat-number">2</div>
+    <div class="stat-label">Papers Published</div>
+  </div>
+  <div class="stat-box">
+    <div class="stat-number">1</div>
+    <div class="stat-label">PhD Thesis</div>
+  </div>
+</div>
+
+<p><strong>Filter by Research Area:</strong></p>
 
 <div class="portfolio-filters">
-  <button class="portfolio-filter-btn active" data-filter="all">All Projects</button>
+  <button class="portfolio-filter-btn active" data-filter="all">All Research</button>
+  <button class="portfolio-filter-btn" data-filter="social-nav">Social Navigation</button>
+  <button class="portfolio-filter-btn" data-filter="rl-models">RL Models</button>
+  <button class="portfolio-filter-btn" data-filter="action-rec">Action Recognition</button>
+  <button class="portfolio-filter-btn" data-filter="environments">Environments</button>
   <button class="portfolio-filter-btn" data-filter="ongoing">Ongoing</button>
   <button class="portfolio-filter-btn" data-filter="completed">Completed</button>
-  <button class="portfolio-filter-btn" data-filter="research">Research Projects</button>
-  <button class="portfolio-filter-btn" data-filter="web">Web Development</button>
-  <button class="portfolio-filter-btn" data-filter="teaching">Teaching</button>
 </div>
 
 ---
 
-## 🔄 Ongoing Research (Active Projects)
+## 🎯 Research Environments
 
-<div class="portfolio-case-study" data-category="research ongoing">
-<h3>🔄 Adaptive Prediction Horizons in Reinforcement Learning</h3>
+These are the environments I've created or contributed to for evaluating reinforcement learning algorithms and social navigation models.
 
-<div class="project-status-badge ongoing">ONGOING</div>
-
-<p><strong>2024 - Present</strong> • Aston University</p>
-
-<div class="project-media">
-  <div class="project-image-placeholder">
-    <p><em>📸 Project Image: Please provide visualization of adaptive prediction horizon system, entropy measurements, performance comparisons with fixed horizons, or experimental results</em></p>
+<div class="environment-grid">
+  
+  <div class="portfolio-case-study" data-category="environments social-nav completed">
+    <div class="contribution-badge created">CREATED</div>
+    <h3>⚽ FallingBallEnv</h3>
+    <div class="project-status-badge completed">COMPLETED</div>
+    <p><strong>2023</strong> • Custom OpenAI Gym Environment</p>
+    
+    <h4>Overview</h4>
+    <p>A custom Gym environment simulating a ball falling due to gravity and bouncing off the floor. Designed for evaluating reinforcement learning algorithms and sequential learning models, particularly used in testing Cosine-Gated LSTM performance.</p>
+    
+    <h4>Key Features</h4>
+    <ul>
+      <li>Gravity simulation with configurable parameters</li>
+      <li>Bouncing mechanism with energy loss</li>
+      <li>Render support for visualization</li>
+      <li>OpenAI Gym compatible interface</li>
+    </ul>
+    
+    <h4>Usage</h4>
+    <p>Used in testing and validating the Cosine-Gated LSTM architecture, demonstrating superior performance in sequential learning tasks compared to baseline LSTM, GRU, and Transformer models.</p>
+    
+    <p><strong>Technologies:</strong> Python • OpenAI Gym • NumPy • OpenCV</p>
+    
+    <p><strong>Links:</strong></p>
+    <ul>
+      <li><a href="https://github.com/goodluckoguzie/falling_ball_env" target="_blank">GitHub Repository: falling_ball_env</a></li>
+      <li><a href="{{ '/portfolio' | relative_url }}#cosine-gated-lstm">Used in: Cosine-Gated LSTM Research</a></li>
+    </ul>
   </div>
-  <div class="project-video-placeholder">
-    <p><em>🎥 Demo Video: Please provide video showing adaptive horizon adjustment in action, comparison with baseline methods, or performance demonstrations</em></p>
+
+  <div class="portfolio-case-study" data-category="environments social-nav completed">
+    <div class="contribution-badge created">CREATED</div>
+    <h3>🤖 LiteSocNavGym</h3>
+    <div class="project-status-badge completed">COMPLETED</div>
+    <p><strong>2024</strong> • Lightweight Social Navigation Environment</p>
+    
+    <h4>Overview</h4>
+    <p>A lightweight social navigation environment I created for faster simulation and evaluation of social navigation algorithms. Designed for efficient testing of predictive models and reinforcement learning approaches.</p>
+    
+    <h4>Key Features</h4>
+    <ul>
+      <li>Lightweight implementation for rapid iteration</li>
+      <li>Social navigation scenarios</li>
+      <li>Compatible with standard RL frameworks</li>
+      <li>Optimized for performance evaluation</li>
+    </ul>
+    
+    <h4>Usage</h4>
+    <p>Used in developing and testing Predictive World Models and Adaptive Prediction Horizons for social robot navigation.</p>
+    
+    <p><strong>Technologies:</strong> Python • Gymnasium • Reinforcement Learning</p>
+    
+    <p><strong>Links:</strong></p>
+    <ul>
+      <li><a href="{{ '/portfolio' | relative_url }}#predictive-world-models">Used in: Predictive World Models Research</a></li>
+      <li><a href="{{ '/portfolio' | relative_url }}#adaptive-prediction-horizons">Used in: Adaptive Prediction Horizons</a></li>
+    </ul>
   </div>
-</div>
 
-<h4>Project Overview</h4>
-
-<p>Developing entropy-driven adaptive prediction horizon systems for reinforcement learning applications. This research enables dynamic adjustment of prediction horizons based on environmental complexity, improving performance in autonomous systems and robotics applications.</p>
-
-<h4>Key Challenges</h4>
-
-<ul>
-<li>Designing effective metrics for environmental complexity measurement</li>
-<li>Developing adaptive mechanisms that adjust prediction horizons dynamically</li>
-<li>Balancing prediction accuracy with computational efficiency</li>
-<li>Validating adaptive horizons across diverse RL environments</li>
-<li>Integrating entropy-based measures for horizon adaptation</li>
-</ul>
-
-<h4>Current Progress</h4>
-
-<ul>
-<li>Framework development for adaptive prediction horizons</li>
-<li>Entropy measurement and environmental complexity analysis</li>
-<li>Initial experiments in simulation environments</li>
-<li>Performance evaluation against fixed-horizon baselines</li>
-</ul>
-
-<h4>Collaboration Opportunities</h4>
-
-<p>👥 <strong>Seeking Collaborators in:</strong></p>
-<ul>
-<li>RL algorithm development and optimization</li>
-<li>Performance evaluation and benchmarking</li>
-<li>Real-world deployment and validation</li>
-<li>Multi-agent systems integration</li>
-</ul>
-
-<p>Technologies: Python • PyTorch • Gymnasium • Reinforcement Learning • Git</p>
-
-<p><strong>Links:</strong></p>
-<ul>
-<li><a href="{{ '/collaborations' | relative_url }}">Interested in Collaborating?</a></li>
-<li><a href="https://github.com/goodluckoguzie">Code Repository</a></li>
-</ul>
-</div>
-
----
-
-## ✅ Completed Research
-
-<div class="portfolio-case-study" data-category="research completed">
-<h3>🤖 Predictive World Models for Social Navigation</h3>
-
-<div class="project-status-badge completed">COMPLETED</div>
-
-<p><strong>2023</strong> • Aston University • Published at UKCI 2023</p>
-
-<div class="project-media">
-  <div class="project-image-placeholder">
-    <p><em>📸 Project Image: Please provide visualization of 2StepAhead and MASPM models, navigation performance comparisons, or simulation screenshots</em></p>
+  <div class="portfolio-case-study" data-category="environments social-nav completed">
+    <div class="contribution-badge team">TEAM CONTRIBUTION</div>
+    <h3>👥 SocNavGym</h3>
+    <div class="project-status-badge completed">COMPLETED</div>
+    <p><strong>2020-2024</strong> • Team Project • Supervisor: Dr. Luis J. Manso</p>
+    
+    <h4>Overview</h4>
+    <p>Comprehensive social navigation gymnasium environment for evaluating social robot navigation algorithms. I was part of the development team, focusing specifically on reinforcement learning aspects and integration with predictive models.</p>
+    
+    <h4>My Contribution</h4>
+    <ul>
+      <li>RL algorithm integration and testing</li>
+      <li>Predictive model evaluation framework</li>
+      <li>Performance benchmarking systems</li>
+      <li>Integration with proposed models (Predictive World Models, Adaptive Prediction Horizons)</li>
+    </ul>
+    
+    <h4>Usage</h4>
+    <p>Primary environment for testing Predictive World Models (2StepAhead, MASPM) and validating Adaptive Prediction Horizons. Results published in UKCI 2023 and PhD thesis.</p>
+    
+    <p><strong>Technologies:</strong> Python • Gymnasium • Reinforcement Learning • Social Navigation</p>
+    
+    <p><strong>Links:</strong></p>
+    <ul>
+      <li><a href="https://github.com/gnns4hri/SocNavGym" target="_blank">GitHub Repository: gnns4hri/SocNavGym</a></li>
+      <li><a href="{{ '/portfolio' | relative_url }}#predictive-world-models">Used in: Predictive World Models</a></li>
+      <li><a href="{{ '/publications' | relative_url }}">Publication: UKCI 2023</a></li>
+    </ul>
   </div>
-  <div class="project-video-placeholder">
-    <p><em>🎥 Demo Video: Please provide video showing social navigation in action, model predictions, or performance demonstrations</em></p>
-  </div>
-</div>
 
-<h4>Project Overview</h4>
-
-<p>Developed predictive world models enabling autonomous systems to navigate safely in social environments. Introduced 2StepAhead and Multi-Action State Predictive Models (MASPM) for improved navigation performance with multi-step ahead predictions and comprehensive action evaluation.</p>
-
-<h4>Key Challenges</h4>
-
-<ul>
-<li>Predicting human behavior in dynamic social environments</li>
-<li>Integrating multi-step ahead predictions into navigation algorithms</li>
-<li>Balancing prediction accuracy with real-time performance</li>
-<li>Handling uncertainty in social navigation scenarios</li>
-</ul>
-
-<h4>Solution & Impact</h4>
-
-<ul>
-<li>Created 2StepAhead and MASPM models for comprehensive action evaluation</li>
-<li>Designed hybrid model combining both approaches for optimal performance</li>
-<li>Published at UKCI 2023 - UK Conference on Intelligent Systems</li>
-<li>Demonstrated superior performance compared to baseline methods</li>
-<li>Significant contribution to social robot navigation research</li>
-</ul>
-
-<h4>Technologies</h4>
-
-<p>Python • PyTorch • Reinforcement Learning • Social Navigation • Git</p>
-
-<p><strong>Links:</strong></p>
-<ul>
-<li><a href="{{ '/_UKCI_2023__Predictive_World_Models_for_Social_Navigation.pdf' | relative_url }}">Paper PDF</a></li>
-<li><a href="https://github.com/goodluckoguzie">Code Repository</a></li>
-</ul>
 </div>
 
 ---
 
-<div class="portfolio-case-study" data-category="research completed">
-<h3>🧠 Cosine-Gated LSTM for Sequential Learning</h3>
+## 🧠 Proposed Models & Algorithms
 
-<div class="project-status-badge completed">COMPLETED</div>
+### 1. Predictive World Models for Social Navigation
 
-<p><strong>2024</strong> • Aston University • Published at IEEE PRML 2024 (pp. 8-15)</p>
-
-<div class="project-media">
-  <div class="project-image-placeholder">
-    <p><em>📸 Project Image: Please provide architecture diagrams, performance graphs comparing CGLSTM vs LSTM/GRU/Transformer, or training visualization</em></p>
-  </div>
-  <div class="project-video-placeholder">
-    <p><em>🎥 Demo Video: Please provide video showing sequential learning performance, benchmark comparisons, or model architecture explanation</em></p>
-  </div>
-</div>
-
-<h4>Project Overview</h4>
-
-<p>Introduced a novel Cosine-Gated LSTM (CGLSTM) architecture using cosine gating mechanisms for improved sequential learning. The architecture dynamically weighs inputs versus hidden states based on cosine similarities, outperforming LSTM, GRU, and Transformer models in benchmark tasks.</p>
-
-<h4>Key Challenges</h4>
-
-<ul>
-<li>Improving sequential learning performance over existing architectures</li>
-<li>Designing effective gating mechanisms for long-term dependencies</li>
-<li>Balancing parameter efficiency with performance</li>
-<li>Optimizing cosine similarity computations for speed</li>
-</ul>
-
-<h4>Solution & Impact</h4>
-
-<ul>
-<li>Developed novel cosine gating mechanism for LSTM architecture</li>
-<li>Implemented dynamic input weighting based on cosine similarity</li>
-<li>Published at IEEE PRML 2024 with superior benchmark results</li>
-<li>Outperformed LSTM, GRU, and Transformer in FallingBallEnv and SocNavGym</li>
-<li>Achieved efficient parameter usage with better long-term dependency handling</li>
-</ul>
-
-<h4>Technologies</h4>
-
-<p>Python • PyTorch • TensorFlow • Neural Networks • Sequential Learning • Jupyter</p>
-
-<p><strong>Links:</strong></p>
-<ul>
-<li><a href="{{ '/Cosine_Gated_LSTM_main.pdf' | relative_url }}">Paper PDF</a></li>
-<li><a href="https://github.com/goodluckoguzie">Code Repository</a></li>
-</ul>
+<div class="portfolio-case-study" id="predictive-world-models" data-category="rl-models social-nav completed">
+  <div class="contribution-badge created">PROPOSED MODEL</div>
+  <h3>🤖 Predictive World Models (2StepAhead & MASPM)</h3>
+  <div class="project-status-badge completed">COMPLETED • PUBLISHED</div>
+  <p><strong>2023</strong> • Aston University • Published at UKCI 2023</p>
+  
+  <h4>Model Overview</h4>
+  <p>Proposed reinforcement learning models enabling autonomous systems to navigate safely in social environments. Introduced two complementary approaches:</p>
+  <ul>
+    <li><strong>2StepAhead:</strong> Multi-step ahead prediction system</li>
+    <li><strong>MASPM:</strong> Multi-Action State Predictive Model for comprehensive action evaluation</li>
+    <li><strong>Hybrid Model:</strong> Combining both approaches for optimal performance</li>
+  </ul>
+  
+  <h4>Key Innovations</h4>
+  <ul>
+    <li>Multi-step ahead predictions for better navigation planning</li>
+    <li>Comprehensive action evaluation framework</li>
+    <li>Dynamic social environment handling</li>
+    <li>Superior performance compared to baseline methods</li>
+  </ul>
+  
+  <h4>Validation Environments</h4>
+  <p>Tested and validated in: <strong>SocNavGym</strong>, <strong>LunarLander-v2</strong></p>
+  
+  <h4>Results & Impact</h4>
+  <ul>
+    <li>Published at UKCI 2023 - UK Conference on Intelligent Systems</li>
+    <li>Demonstrated superior navigation performance</li>
+    <li>Higher success rates than baseline methods</li>
+    <li>Foundation for PhD thesis research</li>
+  </ul>
+  
+  <p><strong>Technologies:</strong> Python • PyTorch • Reinforcement Learning • Social Navigation</p>
+  
+  <p><strong>Links:</strong></p>
+  <ul>
+    <li><a href="{{ '/_UKCI_2023__Predictive_World_Models_for_Social_Navigation.pdf' | relative_url }}">Paper PDF</a></li>
+    <li><a href="https://github.com/gnns4hri/SocNavGym" target="_blank">Environment: SocNavGym</a></li>
+    <li><a href="{{ '/publications' | relative_url }}">Publication Details</a></li>
+  </ul>
 </div>
 
 ---
 
-<div class="portfolio-case-study" data-category="research completed">
-<h3>🎓 PhD Thesis: Enhancing Robot Social Navigation</h3>
+### 2. Cosine-Gated LSTM (CGLSTM)
 
-<div class="project-status-badge completed">COMPLETED</div>
-
-<p><strong>2020 - 2024</strong> • Aston University • Supervisors: Dr. Luis J. Manso, Prof. Dr. Aniko Ekart</p>
-
-<div class="project-media">
-  <div class="project-image-placeholder">
-    <p><em>📸 Project Images: Please provide thesis figures, experimental results, architecture diagrams, or performance comparisons from your PhD work</em></p>
-  </div>
-  <div class="project-video-placeholder">
-    <p><em>🎥 Viva Presentation: <a href="https://goodluckoguzie.github.io/Viva/" target="_blank">View Viva Presentation Slides</a> • Please add video recording if available</em></p>
-  </div>
-</div>
-
-<h4>Project Overview</h4>
-
-<p>Completed PhD thesis integrating reinforcement learning with advanced predictive models. The research introduced three key contributions: Predictive World Models, Cosine-Gated LSTM architecture, and Adaptive Prediction Horizons, achieving superior performance in LunarLander-v2 and SocNavGym environments.</p>
-
-<h4>Key Contributions</h4>
-
-<ul>
-<li>Predictive World Models (2StepAhead, MASPM) for multi-step ahead predictions</li>
-<li>Cosine-Gated LSTM (CGLSTM) architecture for improved sequential learning</li>
-<li>Adaptive Prediction Horizons adjusting dynamically based on environment complexity</li>
-<li>Comprehensive research framework integrating three major innovations</li>
-</ul>
-
-<h4>Results & Impact</h4>
-
-<ul>
-<li>Successfully defended PhD thesis with excellent feedback</li>
-<li>Superior performance in simulation environments (LunarLander-v2, SocNavGym)</li>
-<li>Published 2 conference papers (UKCI 2023, IEEE PRML 2024)</li>
-<li>Higher success rates and more efficient navigation than baseline methods</li>
-</ul>
-
-<h4>Technologies</h4>
-
-<p>Python • PyTorch • Reinforcement Learning • Neural Networks • Social Navigation • Research Methodology</p>
-
-<p><strong>Links:</strong></p>
-<ul>
-<li><a href="{{ '/Goodluck_s_thesis.zip' | relative_url }}">Thesis PDF</a></li>
-<li><a href="{{ '/OGUZIE DIRICHUKWU GOODLUCK  190212683 2024.pdf' | relative_url }}">Thesis Document</a></li>
-<li><a href="https://goodluckoguzie.github.io/Viva/">Viva Presentation</a></li>
-</ul>
+<div class="portfolio-case-study" id="cosine-gated-lstm" data-category="rl-models completed">
+  <div class="contribution-badge created">PROPOSED MODEL</div>
+  <h3>🧠 Cosine-Gated LSTM for Sequential Learning</h3>
+  <div class="project-status-badge completed">COMPLETED • PUBLISHED</div>
+  <p><strong>2024</strong> • Aston University • Published at IEEE PRML 2024 (pp. 8-15)</p>
+  
+  <h4>Model Overview</h4>
+  <p>Novel neural network architecture using cosine gating mechanisms for improved sequential learning. The CGLSTM dynamically weighs inputs versus hidden states based on cosine similarities, outperforming LSTM, GRU, and Transformer models.</p>
+  
+  <h4>Key Innovations</h4>
+  <ul>
+    <li>Cosine gating mechanism replacing traditional sigmoid gates</li>
+    <li>Dynamic input weighting based on similarity measures</li>
+    <li>Improved long-term dependency handling</li>
+    <li>Efficient parameter usage</li>
+  </ul>
+  
+  <h4>Validation Environments</h4>
+  <p>Tested in: <strong>FallingBallEnv</strong> (custom), <strong>SocNavGym</strong>, standard sequential learning benchmarks</p>
+  
+  <h4>Results & Impact</h4>
+  <ul>
+    <li>Published at IEEE PRML 2024 with superior benchmark results</li>
+    <li>Outperformed LSTM, GRU, and Transformer in FallingBallEnv and SocNavGym</li>
+    <li>Achieved better sequential learning performance</li>
+    <li>Used as component in Predictive World Models framework</li>
+  </ul>
+  
+  <p><strong>Technologies:</strong> Python • PyTorch • TensorFlow • Neural Networks • Sequential Learning</p>
+  
+  <p><strong>Links:</strong></p>
+  <ul>
+    <li><a href="{{ '/Cosine_Gated_LSTM_main.pdf' | relative_url }}">Paper PDF</a></li>
+    <li><a href="https://github.com/goodluckoguzie/CosineGatedLSTM" target="_blank">GitHub Repository: CosineGatedLSTM</a></li>
+    <li><a href="https://github.com/goodluckoguzie/falling_ball_env" target="_blank">Environment: FallingBallEnv</a></li>
+    <li><a href="{{ '/publications' | relative_url }}">Publication Details</a></li>
+  </ul>
 </div>
 
 ---
 
-<div class="portfolio-case-study" data-category="web completed">
-<h3>💻 DiscoverHealth: Healthcare Resource Discovery System</h3>
+### 3. Adaptive Prediction Horizons
 
-<div class="project-status-badge completed">COMPLETED</div>
-
-<p><strong>2023 - 2024</strong> • Solent University • Full-Stack Web Application</p>
-
-<div class="project-media">
-  <div class="project-image-placeholder">
-    <p><em>📸 Project Screenshots: Please provide screenshots of the web application, user interface, map visualization, or system architecture</em></p>
-  </div>
-  <div class="project-video-placeholder">
-    <p><em>🎥 Demo Video: Please provide video walkthrough of the application, showing features like resource search, map integration, or user authentication</em></p>
-  </div>
-</div>
-
-<h4>Project Overview</h4>
-
-<p>Developed a comprehensive web-based system for discovering and managing healthcare resources, integrating modern web technologies with geographic information systems. The system includes React.js frontend, Node.js/Express backend, SQLite database, and Leaflet.js for geographic visualization.</p>
-
-<h4>Key Features</h4>
-
-<ul>
-<li>React.js frontend with responsive design for multiple devices</li>
-<li>Node.js/Express backend with RESTful API architecture</li>
-<li>SQLite database for efficient resource management</li>
-<li>Leaflet.js integration for interactive geographic visualization</li>
-<li>User authentication and search functionality</li>
-</ul>
-
-<h4>Impact</h4>
-
-<ul>
-<li>Successfully deployed as teaching resource for web development modules</li>
-<li>Used in undergraduate and postgraduate courses</li>
-<li>Demonstrates modern full-stack development best practices</li>
-<li>Integrates geographic information systems with healthcare data</li>
-</ul>
-
-<h4>Technologies</h4>
-
-<p>React.js • Node.js • Express • SQLite • Leaflet.js • RESTful APIs • Git</p>
-
-<p><strong>Links:</strong></p>
-<ul>
-<li><a href="https://github.com/goodluckoguzie">GitHub Repository</a></li>
-</ul>
+<div class="portfolio-case-study" id="adaptive-prediction-horizons" data-category="rl-models social-nav ongoing">
+  <div class="contribution-badge created">PROPOSED MODEL</div>
+  <h3>🔄 Adaptive Predictive Reinforcement Learning: Entropy-Driven Adaptive Prediction Horizons</h3>
+  <div class="project-status-badge ongoing">ONGOING</div>
+  <p><strong>2024 - Present</strong> • Aston University</p>
+  
+  <h4>Model Overview</h4>
+  <p>Developing entropy-driven adaptive prediction horizon systems for reinforcement learning applications. This research enables dynamic adjustment of prediction horizons based on environmental complexity, improving performance in autonomous systems and robotics.</p>
+  
+  <h4>Key Innovations</h4>
+  <ul>
+    <li>Entropy-based environmental complexity measurement</li>
+    <li>Dynamic prediction horizon adjustment</li>
+    <li>Adaptive mechanism balancing accuracy and efficiency</li>
+    <li>Integration with existing Predictive World Models</li>
+  </ul>
+  
+  <h4>Validation Environments</h4>
+  <p>Testing in: <strong>SocNavGym</strong>, <strong>LiteSocNavGym</strong>, <strong>LunarLander-v2</strong></p>
+  
+  <h4>Current Progress</h4>
+  <ul>
+    <li>Framework development for adaptive prediction horizons</li>
+    <li>Entropy measurement and environmental complexity analysis</li>
+    <li>Initial experiments in simulation environments</li>
+    <li>Performance evaluation against fixed-horizon baselines</li>
+  </ul>
+  
+  <h4>Collaboration Opportunities</h4>
+  <p>👥 <strong>Seeking Collaborators in:</strong></p>
+  <ul>
+    <li>RL algorithm development and optimization</li>
+    <li>Performance evaluation and benchmarking</li>
+    <li>Real-world deployment and validation</li>
+    <li>Multi-agent systems integration</li>
+  </ul>
+  
+  <p><strong>Technologies:</strong> Python • PyTorch • Gymnasium • Reinforcement Learning</p>
+  
+  <p><strong>Links:</strong></p>
+  <ul>
+    <li><a href="{{ '/collaborations' | relative_url }}">Interested in Collaborating?</a></li>
+    <li><a href="https://github.com/gnns4hri/SocNavGym" target="_blank">Environment: SocNavGym</a></li>
+  </ul>
 </div>
 
 ---
 
-<div class="portfolio-case-study" data-category="teaching completed">
-<h3>📚 DiscoverHealth Teaching Modules (Parts A-F)</h3>
+## 📡 Action Recognition Research
 
-<div class="project-status-badge completed">COMPLETED</div>
-
-<p><strong>2023 - 2024</strong> • Solent University • 6 Progressive Teaching Modules</p>
-
-<div class="project-media">
-  <div class="project-image-placeholder">
-    <p><em>📸 Teaching Materials: Please provide screenshots of module structure, example code demonstrations, or student work examples</em></p>
-  </div>
-  <div class="project-video-placeholder">
-    <p><em>🎥 Teaching Video: Please provide video walkthrough of module progression, code demonstrations, or student presentations</em></p>
-  </div>
+<div class="portfolio-case-study" data-category="action-rec ongoing">
+  <div class="contribution-badge created">PROPOSED PROJECT</div>
+  <h3>📡 Wi-Fi CSI Action Recognition with ESP32</h3>
+  <div class="project-status-badge ongoing">ONGOING</div>
+  <p><strong>2024 - Present</strong> • Hardware-based Action Recognition</p>
+  
+  <h4>Project Overview</h4>
+  <p>Developing action recognition systems using Wi-Fi Channel State Information (CSI) with ESP32 microcontrollers. This research explores contactless human activity recognition through wireless signals, combining hardware design with machine learning.</p>
+  
+  <h4>Key Features</h4>
+  <ul>
+    <li>ESP32-based Wi-Fi CSI data collection</li>
+    <li>Contactless action recognition</li>
+    <li>Hardware-software integration</li>
+    <li>Machine learning for signal processing</li>
+  </ul>
+  
+  <h4>Research Focus</h4>
+  <p>Exploring novel approaches to human activity recognition without cameras or wearables, using wireless signal analysis and embedded systems.</p>
+  
+  <p><strong>Technologies:</strong> ESP32 • Wi-Fi CSI • Python • Machine Learning • Embedded Systems</p>
+  
+  <p><strong>Links:</strong></p>
+  <ul>
+    <li><a href="https://github.com/goodluckoguzie/ActionRecognitionUsingWiFi" target="_blank">GitHub Repository: ActionRecognitionUsingWiFi</a></li>
+  </ul>
 </div>
 
-<h4>Project Overview</h4>
+---
 
-<p>Developed comprehensive teaching modules covering progressive implementation of the DiscoverHealth platform from basic database setup through full-stack development with React frontend, Node.js backend, and geographic information systems integration. Each module builds upon previous concepts.</p>
+## 🔧 Other Projects & Tools
 
-<h4>Key Components</h4>
+<div class="portfolio-case-study" data-category="completed">
+  <h3>🎢 Disneyland Project</h3>
+  <div class="project-status-badge completed">COMPLETED</div>
+  <p><strong>Projects related to Disneyland simulation or analysis</strong></p>
+  
+  <p><strong>Links:</strong></p>
+  <ul>
+    <li><a href="https://github.com/goodluckoguzie/disneyland_Project" target="_blank">GitHub Repository: disneyland_Project</a></li>
+  </ul>
+</div>
 
-<ul>
-<li>Six progressive modules (Parts A-F) from beginner to advanced</li>
-<li>Comprehensive documentation and step-by-step implementation guides</li>
-<li>Example code for each module stage with assessment materials</li>
-<li>Modern web development best practices throughout</li>
-</ul>
+<div class="portfolio-case-study" data-category="completed">
+  <h3>🌍 WorldModels</h3>
+  <div class="project-status-badge completed">COMPLETED</div>
+  <p><strong>World models implementation or research</strong></p>
+  
+  <p><strong>Links:</strong></p>
+  <ul>
+    <li><a href="https://github.com/goodluckoguzie/WorldModels" target="_blank">GitHub Repository: WorldModels</a></li>
+  </ul>
+</div>
 
-<h4>Impact</h4>
+---
 
-<ul>
-<li>Successfully used in undergraduate and postgraduate courses</li>
-<li>Improved student engagement through hands-on projects</li>
-<li>Progressive learning path from basic to advanced concepts</li>
-<li>Teaching resources adopted across multiple institutions</li>
-</ul>
+## 🎓 PhD Thesis Integration
 
-<h4>Technologies</h4>
-
-<p>React.js • Node.js • Express • SQLite • Leaflet.js • Modern JavaScript • Git</p>
-
-<p><strong>Links:</strong></p>
-<ul>
-<li><a href="https://github.com/goodluckoguzie">GitHub Repository</a></li>
-</ul>
+<div class="portfolio-case-study" data-category="completed">
+  <h3>📚 PhD Thesis: Enhancing Robot Social Navigation</h3>
+  <div class="project-status-badge completed">COMPLETED</div>
+  <p><strong>2020 - 2024</strong> • Aston University • Supervisors: Dr. Luis J. Manso, Prof. Dr. Aniko Ekart</p>
+  
+  <h4>Thesis Overview</h4>
+  <p>Completed PhD thesis integrating all three proposed models into a comprehensive framework for social robot navigation:</p>
+  <ul>
+    <li><strong>Predictive World Models</strong> (2StepAhead, MASPM)</li>
+    <li><strong>Cosine-Gated LSTM</strong> architecture</li>
+    <li><strong>Adaptive Prediction Horizons</strong> (entropy-driven)</li>
+  </ul>
+  
+  <h4>Environments Used</h4>
+  <ul>
+    <li>SocNavGym (team contribution)</li>
+    <li>FallingBallEnv (created)</li>
+    <li>LiteSocNavGym (created)</li>
+    <li>LunarLander-v2 (benchmark)</li>
+  </ul>
+  
+  <h4>Results</h4>
+  <ul>
+    <li>Successfully defended PhD thesis</li>
+    <li>2 conference papers published (UKCI 2023, IEEE PRML 2024)</li>
+    <li>Superior performance in all tested environments</li>
+    <li>Comprehensive research framework established</li>
+  </ul>
+  
+  <p><strong>Links:</strong></p>
+  <ul>
+    <li><a href="{{ '/Goodluck_s_thesis.zip' | relative_url }}">Thesis PDF (ZIP)</a></li>
+    <li><a href="{{ '/OGUZIE DIRICHUKWU GOODLUCK  190212683 2024.pdf' | relative_url }}">Thesis Document (PDF)</a></li>
+    <li><a href="https://goodluckoguzie.github.io/Viva/" target="_blank">Viva Presentation</a></li>
+  </ul>
 </div>
 
 ---
@@ -344,21 +382,17 @@ Detailed case studies of research projects I've completed and ongoing work I'm a
 ## Research Methodologies
 
 ### Algorithm Development
-
 Expert in developing novel algorithms and architectures for machine learning and robotics.
 
 ### Experimental Design
-
 Rigorous experimental design ensuring reproducible and valid research results.
 
 ### Performance Evaluation
-
 Comprehensive evaluation frameworks achieving superior performance metrics.
 
 ### Research Integration
-
 Integrating multiple research contributions into coherent frameworks.
 
 ---
 
-**Note:** These case studies represent specific research projects and software development work. For complete work experience and previous positions, please visit the [About](/about) or [CV](/cv) page.
+**Note:** For complete work experience and previous positions, please visit the [About](/about) or [CV](/cv) page.
