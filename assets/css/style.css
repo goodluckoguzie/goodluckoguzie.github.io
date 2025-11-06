@@ -1566,6 +1566,7 @@ code {
     cursor: pointer;
     transition: all var(--transition);
     text-align: center;
+    text-decoration: none;
 }
 
 .see-more-btn:hover {
@@ -1573,6 +1574,7 @@ code {
     color: white;
     transform: translateY(-2px);
     box-shadow: var(--shadow-md);
+    text-decoration: none;
 }
 
 .see-more-btn.expanded .btn-icon {
@@ -1586,6 +1588,18 @@ code {
 
 .see-more-btn .btn-text {
     transition: all var(--transition);
+}
+
+/* Project Header Styles for Individual Project Pages */
+.project-header {
+    margin-bottom: 2rem;
+}
+
+.project-header .contribution-badge,
+.project-header .project-status-badge {
+    display: inline-block;
+    margin-right: 0.5rem;
+    margin-bottom: 0.5rem;
 }
 
 .project-image-placeholder p,
