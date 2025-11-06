@@ -67,7 +67,7 @@ These are the environments I've created or contributed to for evaluating reinfor
           
           <div class="card-content">
             <div class="card-text">
-              <p class="project-description">A deceptively simple environment that tests whether models can learn hidden physics. The floor position is hidden - can your model infer where the ball will bounce?</p>
+              <p class="project-description">A deceptively simple environment that tests whether models can learn hidden physics. The floor position is hidden can your model infer where the ball will bounce?</p>
               
               <div class="project-stats" style="margin: 1rem 0; padding: 0.75rem; background: var(--bg-alt); border-radius: 6px; font-size: 0.875rem;">
                 <div style="display: flex; align-items: center; gap: 0.5rem; margin: 0.5rem 0;">
@@ -103,7 +103,7 @@ These are the environments I've created or contributed to for evaluating reinfor
                 <source src="{{ '/video/FallingBallEnv.webm' | relative_url }}" type="video/webm">
                 Your browser does not support the video tag.
               </video>
-              <p class="video-caption">Watch how CGLSTM predicts bounces when the floor position is hidden - the challenge that makes this environment unique.</p>
+              <p class="video-caption">Watch how CGLSTM predicts bounces when the floor position is hidden the challenge that makes this environment unique.</p>
             </div>
           </div>
         </div>
@@ -122,7 +122,7 @@ These are the environments I've created or contributed to for evaluating reinfor
           
           <div class="card-content">
             <div class="card-text">
-              <p class="project-description">A streamlined version of SocNavGym optimized for rapid iteration. 3-5x faster simulations while preserving core social navigation dynamics - perfect for algorithm development and testing.</p>
+              <p class="project-description">A streamlined version of SocNavGym optimized for rapid iteration. 3-5x faster simulations while preserving core social navigation dynamics perfect for algorithm development and testing.</p>
               
               <div class="project-stats" style="margin: 1rem 0; padding: 0.75rem; background: var(--bg-alt); border-radius: 6px; font-size: 0.875rem;">
                 <div style="display: flex; align-items: center; gap: 0.5rem; margin: 0.5rem 0;">
