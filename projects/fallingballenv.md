@@ -253,16 +253,10 @@ env = FallingBallEnv(
     <p>Visual comparison showing predicted vs actual ball trajectories. The sky blue circle represents the actual future state, the blue circle shows CGLSTM predictions, and red circles indicate prediction errors. Gray circles appear when all three align perfectly, demonstrating CGLSTM's superior accuracy.</p>
   </div>
   
-  <div class="project-image-placeholder">
-    <img src="https://goodluckoguzie.github.io/Viva/img/fallingballenv_cglstm_results.jpg" alt="CGLSTM Results in FallingBallEnv" style="max-width: 100%; height: auto; border-radius: 6px; margin-bottom: 1rem;">
+  <div class="project-image-placeholder" style="grid-column: 1 / -1; max-width: 100%;">
+    <img src="https://goodluckoguzie.github.io/Viva/img/fallingballenv_cglstm_results.jpg" alt="CGLSTM Results in FallingBallEnv" style="width: 100%; max-width: 1200px; height: auto; border-radius: 6px; margin-bottom: 1rem; display: block; margin-left: auto; margin-right: auto;">
     <p><strong>Figure 3: CGLSTM Performance in FallingBallEnv</strong></p>
     <p>Detailed results showing CGLSTM's prediction accuracy across different prediction horizons (k=1, 3, 5, 10). Demonstrates consistently lower MAE compared to baseline models.</p>
-  </div>
-  
-  <div class="project-image-placeholder">
-    <img src="https://goodluckoguzie.github.io/Viva/img/limitationforCGLSTM.jpg" alt="Training and Validation Losses" style="max-width: 100%; height: auto; border-radius: 6px; margin-bottom: 1rem;">
-    <p><strong>Figure 4: Training and Validation Loss Comparison</strong></p>
-    <p>Comparison of training and validation losses across models (Vanilla LSTM, GRU, Transformer, CGLSTM) showing CGLSTM's superior convergence and lower final loss values.</p>
   </div>
   
   <div class="project-video-placeholder">
