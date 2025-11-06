@@ -41,7 +41,7 @@ title: SocNavGym - Research Project
     <div>
       <h2 style="margin-top: 0; color: var(--text); font-size: 2rem;">Comprehensive Social Navigation</h2>
       <p style="font-size: 1.125rem; line-height: 1.8; color: var(--text); margin-bottom: 1.5rem;">
-        SocNavGym is a comprehensive social navigation gymnasium environment for evaluating social robot navigation algorithms with multiple entity types including robot agents, human pedestrians, and obstacles (see Technical Specifications section). As part of the development team, I focused on reinforcement learning aspects and integration with predictive models (see My Contribution section). This was the primary environment for testing Predictive World Models and validating Adaptive Prediction Horizons (see Research Impact section), with results published in UKCI 2023 and my PhD thesis.
+        SocNavGym is a comprehensive social navigation gymnasium environment for evaluating social robot navigation algorithms with multiple entity types including robot agents, human pedestrians, and obstacles (<a href="#specs" style="color: var(--link); text-decoration: underline;">see Technical Specifications section</a>). As part of the development team, I focused on reinforcement learning aspects and integration with predictive models (<a href="#contribution" style="color: var(--link); text-decoration: underline;">see My Contribution section</a>). This was the primary environment for testing Predictive World Models and validating Adaptive Prediction Horizons (<a href="#impact" style="color: var(--link); text-decoration: underline;">see Research Impact section</a>), with results published in UKCI 2023 and my PhD thesis.
       </p>
       
       <div class="quick-stats" style="display: grid; grid-template-columns: repeat(3, 1fr); gap: 1rem; margin: 1.5rem 0;">
@@ -81,15 +81,15 @@ title: SocNavGym - Research Project
 
 Social robot navigation requires algorithms that can handle complex interactions with humans and dynamic environments. Traditional navigation environments lacked the social dynamics necessary to evaluate algorithms designed for real-world social scenarios.
 
-SocNavGym was developed to provide a comprehensive testing ground for social navigation algorithms with multiple entity types (see Technical Specifications section), enabling researchers to:
+SocNavGym was developed to provide a comprehensive testing ground for social navigation algorithms with multiple entity types (<a href="#specs" style="color: var(--link); text-decoration: underline;">see Technical Specifications section</a>), enabling researchers to:
 - **Evaluate Social Navigation Algorithms** - Test algorithms in realistic social scenarios
 - **Benchmark Performance** - Compare different approaches systematically
-- **Validate Predictive Models** - Test predictive world models in complex environments (see Research Impact section)
+- **Validate Predictive Models** - Test predictive world models in complex environments (<a href="#impact" style="color: var(--link); text-decoration: underline;">see Research Impact section</a>)
 - **Study Social Dynamics** - Understand how robots interact with humans and other entities
 
 ### Research Design
 
-As part of the development team, I focused on reinforcement learning aspects and integration with predictive models (see My Contribution section). SocNavGym became the primary environment for testing Predictive World Models (2StepAhead, MASPM) and validating Adaptive Prediction Horizons (see Research Impact section), enabling comprehensive evaluation of sequential learning approaches in complex social navigation scenarios.
+As part of the development team, I focused on reinforcement learning aspects and integration with predictive models (<a href="#contribution" style="color: var(--link); text-decoration: underline;">see My Contribution section</a>). SocNavGym became the primary environment for testing Predictive World Models (2StepAhead, MASPM) and validating Adaptive Prediction Horizons (<a href="#impact" style="color: var(--link); text-decoration: underline;">see Research Impact section</a>), enabling comprehensive evaluation of sequential learning approaches in complex social navigation scenarios.
 
 ---
 
@@ -98,7 +98,7 @@ As part of the development team, I focused on reinforcement learning aspects and
 ### What Makes This Hard?
 
 Social navigation presents unique challenges:
-- **Dynamic Environments** - Human pedestrians and obstacles move unpredictably (see Technical Specifications section for entity details)
+- **Dynamic Environments** - Human pedestrians and obstacles move unpredictably (<a href="#specs" style="color: var(--link); text-decoration: underline;">see Technical Specifications section</a> for entity details)
 - **Social Rules** - Algorithms must respect social norms and conventions
 - **Complex Interactions** - Multiple entities (robot, humans, obstacles) interact simultaneously
 - **Real-time Performance** - Algorithms must respond quickly to changes in entity positions and behaviors
@@ -106,7 +106,7 @@ Social navigation presents unique challenges:
 ### The Solution
 
 SocNavGym addresses these challenges by providing:
-- **Comprehensive Social Scenarios** - Realistic social navigation situations with multiple entity types (see Technical Specifications section)
+- **Comprehensive Social Scenarios** - Realistic social navigation situations with multiple entity types (<a href="#specs" style="color: var(--link); text-decoration: underline;">see Technical Specifications section</a>)
 - **Dynamic Obstacles** - Moving agents and obstacles that create realistic navigation challenges
 - **Social Rules Engine** - Built-in social navigation conventions for human-robot interactions
 - **Flexible Evaluation** - Customizable metrics and scenarios
@@ -120,7 +120,7 @@ SocNavGym addresses these challenges by providing:
 SocNavGym provides a comprehensive social navigation environment with:
 
 1. **Full Social Dynamics**
-   - Realistic human-robot interactions with multiple entity types (see Technical Specifications section)
+   - Realistic human-robot interactions with multiple entity types (<a href="#specs" style="color: var(--link); text-decoration: underline;">see Technical Specifications section</a>)
    - Social navigation rules and conventions
    - Multi-agent scenarios with robot, humans, and obstacles
 
@@ -145,14 +145,14 @@ SocNavGym provides a comprehensive social navigation environment with:
 
 ### Research Outcomes
 
-SocNavGym has been used successfully for testing Predictive World Models (2StepAhead, MASPM) and validating Adaptive Prediction Horizons in complex social navigation scenarios with multiple entities (see Research Impact section for details). Results were published in UKCI 2023 and used in my PhD thesis.
+SocNavGym has been used successfully for testing Predictive World Models (2StepAhead, MASPM) and validating Adaptive Prediction Horizons in complex social navigation scenarios with multiple entities (<a href="#impact" style="color: var(--link); text-decoration: underline;">see Research Impact section</a> for details). Results were published in UKCI 2023 and used in my PhD thesis.
 
 ### Key Achievements
 
-- **Primary Testing Environment** - Used for all predictive model evaluations (see Research Impact section)
+- **Primary Testing Environment** - Used for all predictive model evaluations (<a href="#impact" style="color: var(--link); text-decoration: underline;">see Research Impact section</a>)
 - **Published Results** - UKCI 2023 publication
 - **PhD Thesis Validation** - Core environment for thesis research
-- **Comprehensive Evaluation** - Full-featured testing platform with multiple entity types (see Technical Specifications section)
+- **Comprehensive Evaluation** - Full-featured testing platform with multiple entity types (<a href="#specs" style="color: var(--link); text-decoration: underline;">see Technical Specifications section</a>)
 
 ---
 
@@ -191,7 +191,7 @@ As part of the development team, I focused on:
 - **Purpose:** Social navigation simulation
 - **Features:** Comprehensive social dynamics
 
-### Environment Entities
+### <a id="entities"></a>Environment Entities
 
 SocNavGym simulates a social navigation environment with the following entities:
 
@@ -237,8 +237,8 @@ SocNavGym simulates a social navigation environment with the following entities:
 - **Features:** Full action space support for navigation control
 
 ### Key Features
-- **Comprehensive Social Scenarios** - Realistic social navigation situations (see Key Innovation section)
-- **Dynamic Obstacles** - Moving agents and obstacles (see Environment Entities section)
+- **Comprehensive Social Scenarios** - Realistic social navigation situations (<a href="#innovation" style="color: var(--link); text-decoration: underline;">see Key Innovation section</a>)
+- **Dynamic Obstacles** - Moving agents and obstacles (<a href="#entities" style="color: var(--link); text-decoration: underline;">see Environment Entities section</a>)
 - **Social Rules Engine** - Built-in social navigation conventions
 - **Full Visual Rendering** - Detailed graphics and visualization
 - **RL Framework Compatible** - Works with standard frameworks
@@ -335,12 +335,12 @@ for step in range(1000):
 **Observation Format:**
 - Returns: Social navigation state information
 - Format: Comprehensive state representation
-- Features: Full environment state (see Technical Specifications section)
+- Features: Full environment state (<a href="#specs" style="color: var(--link); text-decoration: underline;">see Technical Specifications section</a>)
 
 **Action Format:**
 - Type: Navigation actions
 - Format: Continuous and discrete actions
-- Features: Full action space support (see Technical Specifications section)
+- Features: Full action space support (<a href="#specs" style="color: var(--link); text-decoration: underline;">see Technical Specifications section</a>)
 
 ---
 
@@ -349,10 +349,10 @@ for step in range(1000):
 SocNavGym was the primary environment for testing Predictive World Models (2StepAhead, MASPM) and validating Adaptive Prediction Horizons, with results published in UKCI 2023 and used in my PhD thesis. The environment enabled comprehensive evaluation of sequential learning approaches in complex social navigation scenarios, establishing a foundation for applying predictive models to real-world social robot navigation.
 
 **Key Contributions:**
-1. **Primary Testing Environment** - Used for all predictive model evaluations (see Results & Performance section)
+1. **Primary Testing Environment** - Used for all predictive model evaluations (<a href="#results" style="color: var(--link); text-decoration: underline;">see Results & Performance section</a>)
 2. **Published Results** - UKCI 2023 publication
 3. **PhD Thesis Support** - Core environment for thesis research
-4. **Comprehensive Evaluation** - Full-featured testing platform (see Key Innovation section)
+4. **Comprehensive Evaluation** - Full-featured testing platform (<a href="#innovation" style="color: var(--link); text-decoration: underline;">see Key Innovation section</a>)
 
 ### Usage in Research
 
@@ -370,7 +370,7 @@ SocNavGym was important for evaluating and validating Predictive World Models an
 
 ### Research Context
 
-SocNavGym was used as the primary environment for testing Predictive World Models (2StepAhead, MASPM) and validating Adaptive Prediction Horizons (see Research Impact section). The environment enabled comprehensive evaluation of sequential learning approaches in complex social navigation scenarios with multiple entities including robot agents, human pedestrians, and dynamic obstacles.
+SocNavGym was used as the primary environment for testing Predictive World Models (2StepAhead, MASPM) and validating Adaptive Prediction Horizons (<a href="#impact" style="color: var(--link); text-decoration: underline;">see Research Impact section</a>). The environment enabled comprehensive evaluation of sequential learning approaches in complex social navigation scenarios with multiple entities including robot agents, human pedestrians, and dynamic obstacles.
 
 ### Evaluation Framework
 
@@ -383,7 +383,7 @@ As part of the development team, I developed the evaluation framework for:
 ### Research Integration
 
 SocNavGym was integrated with:
-- **Predictive World Models** - 2StepAhead and MASPM models (see Research Impact section)
+- **Predictive World Models** - 2StepAhead and MASPM models (<a href="#impact" style="color: var(--link); text-decoration: underline;">see Research Impact section</a>)
 - **Adaptive Prediction Horizons** - Dynamic prediction horizon systems
 - **Standard RL Frameworks** - Gymnasium-compatible interfaces
 - **Evaluation Metrics** - Customizable performance metrics
@@ -436,8 +436,8 @@ SocNavGym was integrated with:
 ### Key Differences
 
 **SocNavGym:**
-- 🎨 Full visual rendering (see Key Innovation section)
-- 📋 Comprehensive features (see Key Innovation section)
+- 🎨 Full visual rendering (<a href="#innovation" style="color: var(--link); text-decoration: underline;">see Key Innovation section</a>)
+- 📋 Comprehensive features (<a href="#innovation" style="color: var(--link); text-decoration: underline;">see Key Innovation section</a>)
 - 🔬 Full evaluation environment
 - 🎯 Complete social navigation dynamics
 
@@ -483,11 +483,11 @@ SocNavGym was integrated with:
 - <a href="{{ '/portfolio' | relative_url }}#predictive-world-models">UKCI 2023 Publication</a> - Results published in UKCI 2023
 
 **Related Environments:**
-- <a href="{{ '/projects/litesocnavgym' | relative_url }}">LiteSocNavGym</a> - Lightweight version for faster iteration (see Comparison section)
+- <a href="{{ '/projects/litesocnavgym' | relative_url }}">LiteSocNavGym</a> - Lightweight version for faster iteration (<a href="#comparison" style="color: var(--link); text-decoration: underline;">see Comparison section</a>)
 - <a href="{{ '/projects/fallingballenv' | relative_url }}">FallingBallEnv</a> - Controlled testing environment before applying methods to SocNavGym
 
 **Comparison with Other Environments:**
-- **vs. LiteSocNavGym:** Full-featured vs. lite version (see Comparison section)
+- **vs. LiteSocNavGym:** Full-featured vs. lite version (<a href="#comparison" style="color: var(--link); text-decoration: underline;">see Comparison section</a>)
 - **vs. FallingBallEnv:** Complex social navigation vs. simple physics simulation
 - **vs. Standard Gym Environments:** Social dynamics vs. basic navigation
 
@@ -496,16 +496,16 @@ SocNavGym was integrated with:
 ## <a id="faq"></a>14. FAQ
 
 ### Q: What is SocNavGym?
-**A:** SocNavGym is a comprehensive social navigation gymnasium environment for evaluating social robot navigation algorithms. It provides full-featured social navigation scenarios with multiple entity types including robot agents, human pedestrians, static obstacles, and dynamic obstacles (see Technical Specifications section for details).
+**A:** SocNavGym is a comprehensive social navigation gymnasium environment for evaluating social robot navigation algorithms. It provides full-featured social navigation scenarios with multiple entity types including robot agents, human pedestrians, static obstacles, and dynamic obstacles (<a href="#specs" style="color: var(--link); text-decoration: underline;">see Technical Specifications section</a> for details).
 
 ### Q: How was SocNavGym used in your research?
-**A:** SocNavGym was the primary environment for testing Predictive World Models (2StepAhead, MASPM) and validating Adaptive Prediction Horizons (see Research Impact section). Results were published in UKCI 2023 and used in my PhD thesis.
+**A:** SocNavGym was the primary environment for testing Predictive World Models (2StepAhead, MASPM) and validating Adaptive Prediction Horizons (<a href="#impact" style="color: var(--link); text-decoration: underline;">see Research Impact section</a>). Results were published in UKCI 2023 and used in my PhD thesis.
 
 ### Q: What was your contribution to SocNavGym?
-**A:** As part of the development team, I focused on reinforcement learning aspects, predictive model evaluation framework, performance benchmarking systems, and integration with proposed models (see My Contribution section).
+**A:** As part of the development team, I focused on reinforcement learning aspects, predictive model evaluation framework, performance benchmarking systems, and integration with proposed models (<a href="#contribution" style="color: var(--link); text-decoration: underline;">see My Contribution section</a>).
 
 ### Q: When should I use SocNavGym vs LiteSocNavGym?
-**A:** Use SocNavGym for final evaluation, comprehensive testing, and when you need full visual rendering. Use LiteSocNavGym for rapid development, testing, and prototyping (see Comparison section).
+**A:** Use SocNavGym for final evaluation, comprehensive testing, and when you need full visual rendering. Use LiteSocNavGym for rapid development, testing, and prototyping (<a href="#comparison" style="color: var(--link); text-decoration: underline;">see Comparison section</a>).
 
 ### Q: Is SocNavGym compatible with standard RL frameworks?
 **A:** Yes, SocNavGym is compatible with standard reinforcement learning frameworks and works with Gymnasium.
@@ -555,9 +555,9 @@ In UK Conference on Intelligent Systems (UKCI 2023). Aston University.
 - <a href="{{ '/publications' | relative_url }}" class="btn btn-secondary" style="display: inline-block; margin: 0.25rem;">UKCI 2023 Publication</a> - Predictive World Models for Social Navigation
 
 **Research Applications:**
-- Primary environment for testing Predictive World Models (see Research Impact section)
-- Used for validating Adaptive Prediction Horizons (see Research Impact section)
-- Core environment for PhD thesis research (see Research Impact section)
+- Primary environment for testing Predictive World Models (<a href="#impact" style="color: var(--link); text-decoration: underline;">see Research Impact section</a>)
+- Used for validating Adaptive Prediction Horizons (<a href="#impact" style="color: var(--link); text-decoration: underline;">see Research Impact section</a>)
+- Core environment for PhD thesis research (<a href="#impact" style="color: var(--link); text-decoration: underline;">see Research Impact section</a>)
 
 <div style="margin-top: 3rem; padding-top: 2rem; border-top: 2px solid var(--border);">
   <a href="{{ '/portfolio' | relative_url }}" class="btn">← Back to Research Portfolio</a>
