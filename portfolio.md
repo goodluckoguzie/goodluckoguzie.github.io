@@ -278,19 +278,51 @@ These are the environments I've created or contributed to for evaluating reinfor
 
 ## 📡 Action Recognition Research
 
-<div class="portfolio-case-study" data-category="action-rec ongoing">
-  <div class="contribution-badge created">PROPOSED PROJECT</div>
-  <h3>📡 Wi-Fi CSI Action Recognition with ESP32</h3>
-  <div class="project-status-badge ongoing">ONGOING</div>
-  <p><strong>2024 - Present</strong> • Hardware-based Action Recognition</p>
-  
-  <div class="project-preview">
-    <p>Developing action recognition systems using Wi-Fi Channel State Information (CSI) with ESP32 microcontrollers. This research explores contactless human activity recognition through wireless signals, combining hardware design with machine learning. Exploring novel approaches to human activity recognition without cameras or wearables.</p>
+<div class="environments-carousel-container">
+  <div class="environments-carousel-wrapper">
+    <!-- Carousel Navigation -->
+    <button class="carousel-nav carousel-prev" aria-label="Previous project" onclick="moveCarousel('action-rec', -1)">←</button>
+    <button class="carousel-nav carousel-next" aria-label="Next project" onclick="moveCarousel('action-rec', 1)">→</button>
     
-    <a href="{{ '/projects/action-recognition' | relative_url }}" class="see-more-btn">
-      <span class="btn-text">View Full Details</span>
-      <span class="btn-icon">→</span>
-    </a>
+    <!-- Carousel Content -->
+    <div class="environments-carousel" id="action-rec-carousel">
+      
+      <div class="carousel-slide active" data-slide="0">
+        <div class="carousel-card">
+          <div class="card-header">
+            <div class="card-badges">
+              <div class="contribution-badge created">PROPOSED PROJECT</div>
+              <div class="project-status-badge ongoing">ONGOING</div>
+            </div>
+            <h3>📡 Wi-Fi CSI Action Recognition with ESP32</h3>
+            <p class="project-meta"><strong>2024 - Present</strong> • Hardware-based Action Recognition</p>
+          </div>
+          
+          <div class="card-content">
+            <div class="card-text">
+              <p class="project-description">Developing action recognition systems using Wi-Fi Channel State Information (CSI) with ESP32 microcontrollers. This research explores contactless human activity recognition through wireless signals, combining hardware design with machine learning. Exploring novel approaches to human activity recognition without cameras or wearables.</p>
+              <a href="{{ '/projects/action-recognition' | relative_url }}" class="see-more-btn">
+                <span class="btn-text">View Full Details</span>
+                <span class="btn-icon">→</span>
+              </a>
+            </div>
+            
+            <div class="card-video">
+              <div class="image-placeholder">
+                <img src="https://goodluckoguzie.github.io/Viva/img/output.png" alt="Wi-Fi CSI Action Recognition" class="carousel-image">
+              </div>
+              <p class="video-caption">Wi-Fi CSI Action Recognition system with ESP32 microcontroller</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+    </div>
+    
+    <!-- Carousel Indicators -->
+    <div class="carousel-indicators">
+      <button class="carousel-dot active" onclick="goToSlide('action-rec', 0)" aria-label="Go to slide 1"></button>
+    </div>
   </div>
 </div>
 
@@ -298,33 +330,80 @@ These are the environments I've created or contributed to for evaluating reinfor
 
 ## 🔧 Other Projects & Tools
 
-<div class="portfolio-case-study" data-category="completed">
-  <h3>🎢 Disneyland Project</h3>
-  <div class="project-status-badge completed">COMPLETED</div>
-  <p><strong>Data Analysis & Visualization Project</strong></p>
-  
-  <div class="project-preview">
-    <p>Data analysis project exploring Disneyland visitor data, including demographics, ride popularity, and operational insights using data science techniques.</p>
+<div class="environments-carousel-container">
+  <div class="environments-carousel-wrapper">
+    <!-- Carousel Navigation -->
+    <button class="carousel-nav carousel-prev" aria-label="Previous project" onclick="moveCarousel('other-projects', -1)">←</button>
+    <button class="carousel-nav carousel-next" aria-label="Next project" onclick="moveCarousel('other-projects', 1)">→</button>
     
-    <a href="{{ '/projects/disneyland' | relative_url }}" class="see-more-btn">
-      <span class="btn-text">View Full Details</span>
-      <span class="btn-icon">→</span>
-    </a>
-  </div>
-</div>
-
-<div class="portfolio-case-study" data-category="completed">
-  <h3>🌍 WorldModels</h3>
-  <div class="project-status-badge completed">COMPLETED</div>
-  <p><strong>Predictive Modeling Research</strong></p>
-  
-  <div class="project-preview">
-    <p>Exploration and implementation of World Models concept in reinforcement learning, where an agent learns a compressed, predictive model of its environment for efficient policy learning.</p>
+    <!-- Carousel Content -->
+    <div class="environments-carousel" id="other-projects-carousel">
+      
+      <div class="carousel-slide active" data-slide="0">
+        <div class="carousel-card">
+          <div class="card-header">
+            <div class="card-badges">
+              <div class="project-status-badge completed">COMPLETED</div>
+            </div>
+            <h3>🎢 Disneyland Project</h3>
+            <p class="project-meta"><strong>Data Analysis & Visualization Project</strong></p>
+          </div>
+          
+          <div class="card-content">
+            <div class="card-text">
+              <p class="project-description">Data analysis project exploring Disneyland visitor data, including demographics, ride popularity, and operational insights using data science techniques.</p>
+              <a href="{{ '/projects/disneyland' | relative_url }}" class="see-more-btn">
+                <span class="btn-text">View Full Details</span>
+                <span class="btn-icon">→</span>
+              </a>
+            </div>
+            
+            <div class="card-video">
+              <div class="image-placeholder">
+                <img src="https://via.placeholder.com/400x225?text=Disneyland+Project" alt="Disneyland Project Visualization" class="carousel-image">
+              </div>
+              <p class="video-caption">Data visualization and analysis of Disneyland visitor patterns</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <div class="carousel-slide" data-slide="1">
+        <div class="carousel-card">
+          <div class="card-header">
+            <div class="card-badges">
+              <div class="project-status-badge completed">COMPLETED</div>
+            </div>
+            <h3>🌍 WorldModels</h3>
+            <p class="project-meta"><strong>Predictive Modeling Research</strong></p>
+          </div>
+          
+          <div class="card-content">
+            <div class="card-text">
+              <p class="project-description">Exploration and implementation of World Models concept in reinforcement learning, where an agent learns a compressed, predictive model of its environment for efficient policy learning.</p>
+              <a href="{{ '/projects/worldmodels' | relative_url }}" class="see-more-btn">
+                <span class="btn-text">View Full Details</span>
+                <span class="btn-icon">→</span>
+              </a>
+            </div>
+            
+            <div class="card-video">
+              <div class="image-placeholder">
+                <img src="https://goodluckoguzie.github.io/Viva/img/world_model_schematic.jpg" alt="World Models Architecture" class="carousel-image">
+              </div>
+              <p class="video-caption">World Models architecture and implementation</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+    </div>
     
-    <a href="{{ '/projects/worldmodels' | relative_url }}" class="see-more-btn">
-      <span class="btn-text">View Full Details</span>
-      <span class="btn-icon">→</span>
-    </a>
+    <!-- Carousel Indicators -->
+    <div class="carousel-indicators">
+      <button class="carousel-dot active" onclick="goToSlide('other-projects', 0)" aria-label="Go to slide 1"></button>
+      <button class="carousel-dot" onclick="goToSlide('other-projects', 1)" aria-label="Go to slide 2"></button>
+    </div>
   </div>
 </div>
 
@@ -332,18 +411,50 @@ These are the environments I've created or contributed to for evaluating reinfor
 
 ## 🎓 PhD Thesis Integration
 
-<div class="portfolio-case-study" data-category="completed">
-  <h3>📚 PhD Thesis: Enhancing Robot Social Navigation</h3>
-  <div class="project-status-badge completed">COMPLETED</div>
-  <p><strong>2020 - 2024</strong> • Aston University • Supervisors: Dr. Luis J. Manso, Prof. Dr. Aniko Ekart</p>
-  
-  <div class="project-preview">
-    <p>Completed PhD thesis integrating all three proposed models into a comprehensive framework for social robot navigation: <strong>Predictive World Models</strong> (2StepAhead, MASPM), <strong>Cosine-Gated LSTM</strong> architecture, and <strong>Adaptive Prediction Horizons</strong> (entropy-driven). Successfully defended with 2 conference papers published (UKCI 2023, IEEE PRML 2024) and superior performance in all tested environments.</p>
+<div class="environments-carousel-container">
+  <div class="environments-carousel-wrapper">
+    <!-- Carousel Navigation -->
+    <button class="carousel-nav carousel-prev" aria-label="Previous project" onclick="moveCarousel('phd-thesis', -1)">←</button>
+    <button class="carousel-nav carousel-next" aria-label="Next project" onclick="moveCarousel('phd-thesis', 1)">→</button>
     
-    <a href="{{ '/projects/phd-thesis' | relative_url }}" class="see-more-btn">
-      <span class="btn-text">View Full Details</span>
-      <span class="btn-icon">→</span>
-    </a>
+    <!-- Carousel Content -->
+    <div class="environments-carousel" id="phd-thesis-carousel">
+      
+      <div class="carousel-slide active" data-slide="0">
+        <div class="carousel-card">
+          <div class="card-header">
+            <div class="card-badges">
+              <div class="project-status-badge completed">COMPLETED</div>
+            </div>
+            <h3>📚 PhD Thesis: Enhancing Robot Social Navigation</h3>
+            <p class="project-meta"><strong>2020 - 2024</strong> • Aston University • Supervisors: Dr. Luis J. Manso, Prof. Dr. Aniko Ekart</p>
+          </div>
+          
+          <div class="card-content">
+            <div class="card-text">
+              <p class="project-description">Completed PhD thesis integrating all three proposed models into a comprehensive framework for social robot navigation: <strong>Predictive World Models</strong> (2StepAhead, MASPM), <strong>Cosine-Gated LSTM</strong> architecture, and <strong>Adaptive Prediction Horizons</strong> (entropy-driven). Successfully defended with 2 conference papers published (UKCI 2023, IEEE PRML 2024) and superior performance in all tested environments.</p>
+              <a href="{{ '/projects/phd-thesis' | relative_url }}" class="see-more-btn">
+                <span class="btn-text">View Full Details</span>
+                <span class="btn-icon">→</span>
+              </a>
+            </div>
+            
+            <div class="card-video">
+              <div class="image-placeholder">
+                <img src="https://goodluckoguzie.github.io/Viva/img/aston_title_background.jpg" alt="PhD Thesis Cover" class="carousel-image">
+              </div>
+              <p class="video-caption">PhD Thesis: Enhancing Robot Social Navigation with Reinforcement Learning and Advanced Predictive Models</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+    </div>
+    
+    <!-- Carousel Indicators -->
+    <div class="carousel-indicators">
+      <button class="carousel-dot active" onclick="goToSlide('phd-thesis', 0)" aria-label="Go to slide 1"></button>
+    </div>
   </div>
 </div>
 

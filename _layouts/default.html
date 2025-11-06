@@ -624,10 +624,173 @@
             }
         }
         
+        // Action Recognition Carousel
+        const actionRecCarousel = {
+            currentSlide: 0,
+            totalSlides: 1,
+            autoPlayInterval: null,
+            autoPlayDelay: 5000,
+            
+            init: function() {
+                const carousel = document.getElementById('action-rec-carousel');
+                if (!carousel) return;
+                this.updateSlide();
+                this.initSwipe(carousel);
+            },
+            
+            initSwipe: function(carousel) {
+                // Touch/swipe support
+                let startX = 0;
+                carousel.addEventListener('touchstart', (e) => { startX = e.touches[0].clientX; });
+                carousel.addEventListener('touchend', (e) => {
+                    const diff = startX - e.changedTouches[0].clientX;
+                    if (Math.abs(diff) > 50) {
+                        if (diff > 0) this.next(); else this.prev();
+                    }
+                });
+            },
+            
+            updateSlide: function() {
+                const slides = document.querySelectorAll('#action-rec-carousel .carousel-slide');
+                const wrapper = document.getElementById('action-rec-carousel')?.closest('.environments-carousel-wrapper');
+                const dots = wrapper?.querySelectorAll('.carousel-indicators .carousel-dot');
+                slides.forEach((slide, index) => {
+                    slide.classList.toggle('active', index === this.currentSlide);
+                });
+                dots?.forEach((dot, index) => {
+                    dot.classList.toggle('active', index === this.currentSlide);
+                });
+            },
+            
+            next: function() { this.currentSlide = (this.currentSlide + 1) % this.totalSlides; this.updateSlide(); },
+            prev: function() { this.currentSlide = (this.currentSlide - 1 + this.totalSlides) % this.totalSlides; this.updateSlide(); },
+            goTo: function(index) { if (index >= 0 && index < this.totalSlides) { this.currentSlide = index; this.updateSlide(); } }
+        };
+        
+        // Other Projects Carousel
+        const otherProjectsCarousel = {
+            currentSlide: 0,
+            totalSlides: 2,
+            autoPlayInterval: null,
+            autoPlayDelay: 5000,
+            
+            init: function() {
+                const carousel = document.getElementById('other-projects-carousel');
+                if (!carousel) return;
+                this.updateSlide();
+                this.startAutoPlay();
+                this.initSwipe(carousel);
+            },
+            
+            initSwipe: function(carousel) {
+                let startX = 0, isDragging = false;
+                carousel.addEventListener('touchstart', (e) => { startX = e.touches[0].clientX; isDragging = true; this.stopAutoPlay(); });
+                carousel.addEventListener('touchmove', (e) => { if (isDragging) e.preventDefault(); });
+                carousel.addEventListener('touchend', (e) => {
+                    if (!isDragging) return;
+                    isDragging = false;
+                    const diff = startX - e.changedTouches[0].clientX;
+                    if (Math.abs(diff) > 50) {
+                        if (diff > 0) this.next(); else this.prev();
+                    }
+                    this.startAutoPlay();
+                });
+            },
+            
+            updateSlide: function() {
+                const carousel = document.getElementById('other-projects-carousel');
+                if (!carousel) return;
+                const wrapper = carousel.closest('.environments-carousel-wrapper');
+                const slides = wrapper.querySelectorAll('.carousel-slide');
+                const dots = wrapper.querySelectorAll('.carousel-indicators .carousel-dot');
+                slides.forEach((slide, index) => {
+                    slide.classList.toggle('active', index === this.currentSlide);
+                });
+                dots.forEach((dot, index) => {
+                    dot.classList.toggle('active', index === this.currentSlide);
+                });
+            },
+            
+            next: function() { this.currentSlide = (this.currentSlide + 1) % this.totalSlides; this.updateSlide(); this.restartAutoPlay(); },
+            prev: function() { this.currentSlide = (this.currentSlide - 1 + this.totalSlides) % this.totalSlides; this.updateSlide(); this.restartAutoPlay(); },
+            goTo: function(index) { if (index >= 0 && index < this.totalSlides) { this.currentSlide = index; this.updateSlide(); this.restartAutoPlay(); } },
+            
+            startAutoPlay: function() { this.stopAutoPlay(); this.autoPlayInterval = setInterval(() => this.next(), this.autoPlayDelay); },
+            stopAutoPlay: function() { if (this.autoPlayInterval) { clearInterval(this.autoPlayInterval); this.autoPlayInterval = null; } },
+            restartAutoPlay: function() { this.stopAutoPlay(); this.startAutoPlay(); }
+        };
+        
+        // PhD Thesis Carousel
+        const phdThesisCarousel = {
+            currentSlide: 0,
+            totalSlides: 1,
+            
+            init: function() {
+                const carousel = document.getElementById('phd-thesis-carousel');
+                if (!carousel) return;
+                this.updateSlide();
+                this.initSwipe(carousel);
+            },
+            
+            initSwipe: function(carousel) {
+                // Touch/swipe support (even though single slide)
+                let startX = 0;
+                carousel.addEventListener('touchstart', (e) => { startX = e.touches[0].clientX; });
+            },
+            
+            updateSlide: function() {
+                const slides = document.querySelectorAll('#phd-thesis-carousel .carousel-slide');
+                const wrapper = document.getElementById('phd-thesis-carousel')?.closest('.environments-carousel-wrapper');
+                const dots = wrapper?.querySelectorAll('.carousel-indicators .carousel-dot');
+                slides.forEach((slide, index) => {
+                    slide.classList.toggle('active', index === this.currentSlide);
+                });
+                dots?.forEach((dot, index) => {
+                    dot.classList.toggle('active', index === this.currentSlide);
+                });
+            },
+            
+            next: function() { this.currentSlide = (this.currentSlide + 1) % this.totalSlides; this.updateSlide(); },
+            prev: function() { this.currentSlide = (this.currentSlide - 1 + this.totalSlides) % this.totalSlides; this.updateSlide(); },
+            goTo: function(index) { if (index >= 0 && index < this.totalSlides) { this.currentSlide = index; this.updateSlide(); } }
+        };
+        
+        // Carousel Control Functions (updated)
+        function moveCarousel(carouselId, direction) {
+            if (carouselId === 'environments') {
+                if (direction > 0) environmentsCarousel.next(); else environmentsCarousel.prev();
+            } else if (carouselId === 'models') {
+                if (direction > 0) modelsCarousel.next(); else modelsCarousel.prev();
+            } else if (carouselId === 'action-rec') {
+                if (direction > 0) actionRecCarousel.next(); else actionRecCarousel.prev();
+            } else if (carouselId === 'other-projects') {
+                if (direction > 0) otherProjectsCarousel.next(); else otherProjectsCarousel.prev();
+            } else if (carouselId === 'phd-thesis') {
+                if (direction > 0) phdThesisCarousel.next(); else phdThesisCarousel.prev();
+            }
+        }
+        
+        function goToSlide(carouselId, index) {
+            if (carouselId === 'environments') {
+                environmentsCarousel.goTo(index);
+            } else if (carouselId === 'models') {
+                modelsCarousel.goTo(index);
+            } else if (carouselId === 'action-rec') {
+                actionRecCarousel.goTo(index);
+            } else if (carouselId === 'other-projects') {
+                otherProjectsCarousel.goTo(index);
+            } else if (carouselId === 'phd-thesis') {
+                phdThesisCarousel.goTo(index);
+            }
+        }
+        
         // Initialize carousels when page loads
         document.addEventListener('DOMContentLoaded', function() {
             environmentsCarousel.init();
             modelsCarousel.init();
+            actionRecCarousel.init();
+            otherProjectsCarousel.init();
+            phdThesisCarousel.init();
         });
     </script>
     
