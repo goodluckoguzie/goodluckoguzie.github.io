@@ -137,6 +137,10 @@ These are the environments I've created or contributed to for evaluating reinfor
                   <span style="font-size: 1.2rem;">✅</span>
                   <span>Core social dynamics <strong>preserved</strong></span>
                 </div>
+                <div style="display: flex; align-items: center; gap: 0.5rem; margin: 0.5rem 0;">
+                  <span style="font-size: 1.2rem;">🧪</span>
+                  <span>For testing <strong>RL models</strong></span>
+                </div>
               </div>
               
               <a href="{{ '/projects/litesocnavgym' | relative_url }}" class="see-more-btn">
