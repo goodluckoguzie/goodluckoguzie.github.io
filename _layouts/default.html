@@ -450,6 +450,155 @@
             }
         };
         
+        // Models Carousel (same as environments)
+        const modelsCarousel = {
+            currentSlide: 0,
+            totalSlides: 3,
+            autoPlayInterval: null,
+            autoPlayDelay: 5000,
+            
+            init: function() {
+                const carousel = document.getElementById('models-carousel');
+                
+                if (!carousel) return;
+                
+                this.updateSlide();
+                this.startAutoPlay();
+                
+                // Touch/swipe support
+                let startX = 0;
+                let isDragging = false;
+                
+                carousel.addEventListener('touchstart', (e) => {
+                    startX = e.touches[0].clientX;
+                    isDragging = true;
+                    this.stopAutoPlay();
+                });
+                
+                carousel.addEventListener('touchmove', (e) => {
+                    if (!isDragging) return;
+                    e.preventDefault();
+                });
+                
+                carousel.addEventListener('touchend', (e) => {
+                    if (!isDragging) return;
+                    isDragging = false;
+                    const endX = e.changedTouches[0].clientX;
+                    const diff = startX - endX;
+                    
+                    if (Math.abs(diff) > 50) {
+                        if (diff > 0) {
+                            this.next();
+                        } else {
+                            this.prev();
+                        }
+                    }
+                    this.startAutoPlay();
+                });
+                
+                // Mouse drag support
+                let mouseStartX = 0;
+                let mouseIsDragging = false;
+                
+                carousel.addEventListener('mousedown', (e) => {
+                    mouseStartX = e.clientX;
+                    mouseIsDragging = true;
+                    this.stopAutoPlay();
+                    carousel.style.cursor = 'grabbing';
+                });
+                
+                carousel.addEventListener('mousemove', (e) => {
+                    if (!mouseIsDragging) return;
+                    e.preventDefault();
+                });
+                
+                carousel.addEventListener('mouseup', (e) => {
+                    if (!mouseIsDragging) return;
+                    mouseIsDragging = false;
+                    carousel.style.cursor = 'default';
+                    const mouseEndX = e.clientX;
+                    const mouseDiff = mouseStartX - mouseEndX;
+                    
+                    if (Math.abs(mouseDiff) > 50) {
+                        if (mouseDiff > 0) {
+                            this.next();
+                        } else {
+                            this.prev();
+                        }
+                    }
+                    this.startAutoPlay();
+                });
+                
+                carousel.addEventListener('mouseleave', () => {
+                    mouseIsDragging = false;
+                    carousel.style.cursor = 'default';
+                    this.startAutoPlay();
+                });
+            },
+            
+            updateSlide: function() {
+                const slides = document.querySelectorAll('#models-carousel .carousel-slide');
+                const dots = document.querySelectorAll('#models-carousel').closest('.environments-carousel-wrapper')?.querySelectorAll('.carousel-indicators .carousel-dot');
+                
+                if (!slides.length) return;
+                
+                slides.forEach((slide, index) => {
+                    slide.classList.remove('active');
+                    if (index === this.currentSlide) {
+                        slide.classList.add('active');
+                    }
+                });
+                
+                if (dots && dots.length) {
+                    dots.forEach((dot, index) => {
+                        dot.classList.remove('active');
+                        if (index === this.currentSlide) {
+                            dot.classList.add('active');
+                        }
+                    });
+                }
+            },
+            
+            next: function() {
+                this.currentSlide = (this.currentSlide + 1) % this.totalSlides;
+                this.updateSlide();
+                this.restartAutoPlay();
+            },
+            
+            prev: function() {
+                this.currentSlide = (this.currentSlide - 1 + this.totalSlides) % this.totalSlides;
+                this.updateSlide();
+                this.restartAutoPlay();
+            },
+            
+            goTo: function(index) {
+                if (index >= 0 && index < this.totalSlides) {
+                    this.currentSlide = index;
+                    this.updateSlide();
+                    this.restartAutoPlay();
+                }
+            },
+            
+            startAutoPlay: function() {
+                this.stopAutoPlay();
+                this.autoPlayInterval = setInterval(() => {
+                    this.next();
+                }, this.autoPlayDelay);
+            },
+            
+            stopAutoPlay: function() {
+                if (this.autoPlayInterval) {
+                    clearInterval(this.autoPlayInterval);
+                    this.autoPlayInterval = null;
+                }
+            },
+            
+            restartAutoPlay: function() {
+                this.stopAutoPlay();
+                this.startAutoPlay();
+            }
+        };
+        
         // Carousel Control Functions
         function moveCarousel(carouselId, direction) {
             if (carouselId === 'environments') {
@@ -458,18 +607,27 @@
                 } else {
                     environmentsCarousel.prev();
                 }
+            } else if (carouselId === 'models') {
+                if (direction > 0) {
+                    modelsCarousel.next();
+                } else {
+                    modelsCarousel.prev();
+                }
             }
         }
         
         function goToSlide(carouselId, index) {
             if (carouselId === 'environments') {
                 environmentsCarousel.goTo(index);
+            } else if (carouselId === 'models') {
+                modelsCarousel.goTo(index);
             }
         }
         
-        // Initialize carousel when page loads
+        // Initialize carousels when page loads
         document.addEventListener('DOMContentLoaded', function() {
             environmentsCarousel.init();
+            modelsCarousel.init();
         });
     </script>
     

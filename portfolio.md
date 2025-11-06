@@ -161,61 +161,116 @@ These are the environments I've created or contributed to for evaluating reinfor
 
 ## 🧠 Proposed Models & Algorithms
 
-### 1. Predictive World Models for Social Navigation
-
-<div class="portfolio-case-study" id="predictive-world-models" data-category="rl-models social-nav completed">
-  <div class="contribution-badge created">PROPOSED MODEL</div>
-  <h3>🤖 Predictive World Models (2StepAhead & MASPM)</h3>
-  <div class="project-status-badge completed">COMPLETED • PUBLISHED</div>
-  <p><strong>2023</strong> • Aston University • Published at UKCI 2023</p>
-  
-  <div class="project-preview">
-    <p>Proposed reinforcement learning models enabling autonomous systems to navigate safely in social environments. Introduced two complementary approaches: <strong>2StepAhead</strong> (multi-step ahead prediction system) and <strong>MASPM</strong> (Multi-Action State Predictive Model for comprehensive action evaluation). Published at UKCI 2023 with superior navigation performance compared to baseline methods.</p>
+<div class="environments-carousel-container">
+  <div class="environments-carousel-wrapper">
+    <!-- Carousel Navigation -->
+    <button class="carousel-nav carousel-prev" aria-label="Previous model" onclick="moveCarousel('models', -1)">←</button>
+    <button class="carousel-nav carousel-next" aria-label="Next model" onclick="moveCarousel('models', 1)">→</button>
     
-    <a href="{{ '/projects/predictive-world-models' | relative_url }}" class="see-more-btn">
-      <span class="btn-text">View Full Details</span>
-      <span class="btn-icon">→</span>
-    </a>
-  </div>
-</div>
-
----
-
-### 2. Cosine-Gated LSTM (CGLSTM)
-
-<div class="portfolio-case-study" id="cosine-gated-lstm" data-category="rl-models completed">
-  <div class="contribution-badge created">PROPOSED MODEL</div>
-  <h3>🧠 Cosine-Gated LSTM for Sequential Learning</h3>
-  <div class="project-status-badge completed">COMPLETED • PUBLISHED</div>
-  <p><strong>2024</strong> • Aston University • Published at IEEE PRML 2024 (pp. 8-15)</p>
-  
-  <div class="project-preview">
-    <p>Novel neural network architecture using cosine gating mechanisms for improved sequential learning. The CGLSTM dynamically weighs inputs versus hidden states based on cosine similarities, outperforming LSTM, GRU, and Transformer models. Published at IEEE PRML 2024 with superior benchmark results and used as a component in the Predictive World Models framework.</p>
+    <!-- Carousel Content -->
+    <div class="environments-carousel" id="models-carousel">
+      
+      <div class="carousel-slide active" data-slide="0">
+        <div class="carousel-card">
+          <div class="card-header">
+            <div class="card-badges">
+              <div class="contribution-badge created">PROPOSED MODEL</div>
+              <div class="project-status-badge completed">COMPLETED • PUBLISHED</div>
+            </div>
+            <h3>🤖 Predictive World Models (2StepAhead & MASPM)</h3>
+            <p class="project-meta"><strong>2023</strong> • Aston University • Published at UKCI 2023</p>
+          </div>
+          
+          <div class="card-content">
+            <div class="card-text">
+              <p class="project-description">Proposed reinforcement learning models enabling autonomous systems to navigate safely in social environments. Introduced two complementary approaches: <strong>2StepAhead</strong> (multi-step ahead prediction system) and <strong>MASPM</strong> (Multi-Action State Predictive Model for comprehensive action evaluation). Published at UKCI 2023 with superior navigation performance compared to baseline methods.</p>
+              <a href="{{ '/projects/predictive-world-models' | relative_url }}" class="see-more-btn">
+                <span class="btn-text">View Full Details</span>
+                <span class="btn-icon">→</span>
+              </a>
+            </div>
+            
+            <div class="card-video">
+              <video controls class="carousel-video">
+                <source src="https://goodluckoguzie.github.io/Viva/img/problem.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+              </video>
+              <p class="video-caption">Predictive World Models demonstration showing navigation performance</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <div class="carousel-slide" data-slide="1">
+        <div class="carousel-card">
+          <div class="card-header">
+            <div class="card-badges">
+              <div class="contribution-badge created">PROPOSED MODEL</div>
+              <div class="project-status-badge completed">COMPLETED • PUBLISHED</div>
+            </div>
+            <h3>🧠 Cosine-Gated LSTM for Sequential Learning</h3>
+            <p class="project-meta"><strong>2024</strong> • Aston University • Published at IEEE PRML 2024</p>
+          </div>
+          
+          <div class="card-content">
+            <div class="card-text">
+              <p class="project-description">Novel neural network architecture using cosine gating mechanisms for improved sequential learning. The CGLSTM dynamically weighs inputs versus hidden states based on cosine similarities, outperforming LSTM, GRU, and Transformer models. Published at IEEE PRML 2024 with superior benchmark results and used as a component in the Predictive World Models framework.</p>
+              <a href="{{ '/projects/cosine-gated-lstm' | relative_url }}" class="see-more-btn">
+                <span class="btn-text">View Full Details</span>
+                <span class="btn-icon">→</span>
+              </a>
+            </div>
+            
+            <div class="card-video">
+              <video controls class="carousel-video">
+                <source src="https://goodluckoguzie.github.io/Viva/img/whypredictivemodellimitation.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+              </video>
+              <p class="video-caption">Cosine-Gated LSTM architecture and performance demonstration</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <div class="carousel-slide" data-slide="2">
+        <div class="carousel-card">
+          <div class="card-header">
+            <div class="card-badges">
+              <div class="contribution-badge created">PROPOSED MODEL</div>
+              <div class="project-status-badge ongoing">ONGOING</div>
+            </div>
+            <h3>🔄 Adaptive Predictive Reinforcement Learning</h3>
+            <p class="project-meta"><strong>2024 - Present</strong> • Aston University</p>
+          </div>
+          
+          <div class="card-content">
+            <div class="card-text">
+              <p class="project-description">Developing entropy-driven adaptive prediction horizon systems for reinforcement learning applications. This research enables dynamic adjustment of prediction horizons based on environmental complexity, improving performance in autonomous systems and robotics. Currently in active development with framework completion and initial experimental validation in progress.</p>
+              <a href="{{ '/projects/adaptive-prediction-horizons' | relative_url }}" class="see-more-btn">
+                <span class="btn-text">View Full Details</span>
+                <span class="btn-icon">→</span>
+              </a>
+            </div>
+            
+            <div class="card-video">
+              <video controls class="carousel-video">
+                <source src="https://goodluckoguzie.github.io/Viva/img/LunarLander.webm" type="video/webm">
+                Your browser does not support the video tag.
+              </video>
+              <p class="video-caption">Adaptive Prediction Horizons in LunarLander environment</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+    </div>
     
-    <a href="{{ '/projects/cosine-gated-lstm' | relative_url }}" class="see-more-btn">
-      <span class="btn-text">View Full Details</span>
-      <span class="btn-icon">→</span>
-    </a>
-  </div>
-</div>
-
----
-
-### 3. Adaptive Prediction Horizons
-
-<div class="portfolio-case-study" id="adaptive-prediction-horizons" data-category="rl-models social-nav ongoing">
-  <div class="contribution-badge created">PROPOSED MODEL</div>
-  <h3>🔄 Adaptive Predictive Reinforcement Learning: Entropy-Driven Adaptive Prediction Horizons</h3>
-  <div class="project-status-badge ongoing">ONGOING</div>
-  <p><strong>2024 - Present</strong> • Aston University</p>
-  
-  <div class="project-preview">
-    <p>Developing entropy-driven adaptive prediction horizon systems for reinforcement learning applications. This research enables dynamic adjustment of prediction horizons based on environmental complexity, improving performance in autonomous systems and robotics. Currently in active development with framework completion and initial experimental validation in progress.</p>
-    
-    <a href="{{ '/projects/adaptive-prediction-horizons' | relative_url }}" class="see-more-btn">
-      <span class="btn-text">View Full Details</span>
-      <span class="btn-icon">→</span>
-    </a>
+    <!-- Carousel Indicators -->
+    <div class="carousel-indicators">
+      <button class="carousel-dot active" onclick="goToSlide('models', 0)" aria-label="Go to slide 1"></button>
+      <button class="carousel-dot" onclick="goToSlide('models', 1)" aria-label="Go to slide 2"></button>
+      <button class="carousel-dot" onclick="goToSlide('models', 2)" aria-label="Go to slide 3"></button>
+    </div>
   </div>
 </div>
 
