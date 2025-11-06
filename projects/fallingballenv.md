@@ -16,20 +16,19 @@ title: FallingBallEnv - Research Project
   <h3 style="margin-top: 0; color: var(--link);">📑 Table of Contents</h3>
   <ul style="columns: 2; column-gap: 2rem; list-style: none; padding-left: 0;">
     <li><a href="#hero">1. Overview</a></li>
-    <li><a href="#challenge">2. The Challenge</a></li>
-    <li><a href="#visual-demo">3. Visual Demo</a></li>
+    <li><a href="#motivation">2. Research Motivation</a></li>
+    <li><a href="#challenge">3. The Challenge</a></li>
     <li><a href="#innovation">4. Key Innovation</a></li>
-    <li><a href="#motivation">5. Research Motivation</a></li>
-    <li><a href="#results">6. Visual Results</a></li>
-    <li><a href="#performance">7. Model Performance</a></li>
-    <li><a href="#setup">8. Experimental Setup</a></li>
-    <li><a href="#specs">9. Technical Specifications</a></li>
-    <li><a href="#usage">10. Installation & Usage</a></li>
-    <li><a href="#impact">11. Research Impact</a></li>
-    <li><a href="#limitations">12. Limitations & Future Work</a></li>
-    <li><a href="#related">13. Related Work</a></li>
-    <li><a href="#faq">14. FAQ</a></li>
-    <li><a href="#citation">15. Citation & Resources</a></li>
+    <li><a href="#results">5. Results & Performance</a></li>
+    <li><a href="#visual-demo">6. Visual Demo</a></li>
+    <li><a href="#setup">7. Experimental Setup</a></li>
+    <li><a href="#specs">8. Technical Specifications</a></li>
+    <li><a href="#usage">9. Installation & Usage</a></li>
+    <li><a href="#impact">10. Research Impact</a></li>
+    <li><a href="#limitations">11. Limitations & Future Work</a></li>
+    <li><a href="#related">12. Related Work</a></li>
+    <li><a href="#faq">13. FAQ</a></li>
+    <li><a href="#citation">14. Citation & Resources</a></li>
   </ul>
 </div>
 
@@ -76,11 +75,31 @@ title: FallingBallEnv - Research Project
 
 ---
 
-## <a id="challenge"></a>2. The Challenge
+## <a id="motivation"></a>2. Research Motivation
+
+### Why This Was Needed
+
+When transitioning from discrete to continuous action spaces in SocNavGym, I observed that as action choices increased from 4 to 16, prediction errors became more pronounced. This highlighted the need for more robust sequential learning models that could handle incomplete state information.
+
+FallingBallEnv was developed as a controlled testing ground to explore fundamental challenges in temporal prediction before applying methods to complex environments like SocNavGym. This environment isolates the core challenge of learning from incomplete observations, allowing for focused investigation of sequential learning capabilities without the complexity of social navigation dynamics.
+
+### Research Design
+
+To study the impact of data distribution on model performance, I created three distinct datasets:
+
+- **Full Dataset:** 20,000 episodes (unbalanced, with bounce events underrepresented)
+- **Balanced Dataset:** 14,700 episodes with equal representation of bounce and free-fall windows
+- **Unbalanced Subset:** 14,700 episodes randomly sampled without balancing (control group)
+
+The balanced dataset ensured models were exposed to bounce events more frequently, improving their ability to learn bounce dynamics effectively.
+
+---
+
+## <a id="challenge"></a>3. The Challenge
 
 ### What Makes This Hard?
 
-Most Gym environments reveal all state information. In FallingBallEnv, the **floor position is deliberately hidden** from the observation space. Models only receive:
+In FallingBallEnv, the floor position is deliberately hidden from the observation space (see Key Innovation section). Models only receive:
 - Ball's position (x, y)
 - Ball's velocity (vx, vy)
 
@@ -93,36 +112,6 @@ This tests whether models can:
 2. **Handle incomplete information** - Make predictions with missing state data
 3. **Generalize patterns** - Learn bounce dynamics without explicit floor coordinates
 
-### Visual Concept
-
-<div style="background: var(--bg-alt); padding: 1.5rem; border-radius: 8px; margin: 1.5rem 0; border-left: 4px solid var(--link);">
-  <p><strong>Key Insight:</strong> The environment forces models to learn the hidden floor position through repeated observations of the ball's trajectory. This tests sequential learning capabilities in a controlled setting.</p>
-</div>
-
----
-
-## <a id="visual-demo"></a>3. Visual Demo
-
-<div class="project-media">
-  <div class="project-image-placeholder">
-    <img src="{{ '/assets/images/FallingBall.png' | relative_url }}" alt="FallingBall Environment Visualization" style="max-width: 100%; height: auto; border-radius: 6px; margin-bottom: 1rem;">
-    <p><strong>Figure 1: Environment Visualization</strong></p>
-    <p>Ball falling and bouncing in FallingBallEnv. Yellow circle = current state. The floor position is hidden from observations.</p>
-  </div>
-  
-  <div class="project-image-placeholder">
-    <img src="{{ '/assets/images/FallingBallwithprediction.png' | relative_url }}" alt="FallingBall Prediction Results" style="max-width: 100%; height: auto; border-radius: 6px; margin-bottom: 1rem;">
-    <p><strong>Figure 2: Prediction Comparison</strong></p>
-    <p>Sky blue = actual future, blue = CGLSTM prediction, red = errors, gray = perfect alignment.</p>
-  </div>
-  
-  <div class="project-image-placeholder" style="grid-column: 1 / -1; max-width: 100%;">
-    <img src="https://goodluckoguzie.github.io/Viva/img/fallingballenv_cglstm_results.jpg" alt="CGLSTM Results in FallingBallEnv" style="width: 100%; max-width: 1200px; height: auto; border-radius: 6px; margin-bottom: 1rem; display: block; margin-left: auto; margin-right: auto;">
-    <p><strong>Figure 3: CGLSTM Performance</strong></p>
-    <p>Detailed results showing CGLSTM's superior accuracy across prediction horizons (k=1, 3, 5, 10).</p>
-  </div>
-</div>
-
 ---
 
 ## <a id="innovation"></a>4. Key Innovation
@@ -132,41 +121,16 @@ This tests whether models can:
 Unlike most Gym environments that reveal all state information, FallingBallEnv deliberately omits the floor position from the observation space. This creates a controlled test of sequential learning where models must infer boundary conditions from trajectory patterns alone.
 
 **Key Design Elements:**
-- **Observation Space:** (x, y, vx, vy) - 4D continuous vector
+- **Observation Space:** (x, y, vx, vy) - 4D continuous vector (see Technical Specifications)
 - **Hidden State:** Floor position (y_floor) - deliberately excluded
 - **Learning Challenge:** Infer floor position from trajectory observations
 - **Controlled Complexity:** Simple physics simulation with complex learning requirement
 
 ---
 
-## <a id="motivation"></a>5. Research Motivation
+## <a id="results"></a>5. Results & Performance
 
-Developed to address limitations observed when transitioning from discrete to continuous action spaces in SocNavGym. As action choices increased from 4 to 16, prediction errors became more pronounced, highlighting the need for more robust sequential learning models.
-
-FallingBallEnv serves as a controlled testing ground to explore fundamental challenges in temporal prediction before applying methods to complex environments like SocNavGym.
-
-### Research Design
-
-Three distinct datasets were created to study the impact of data distribution on model performance:
-
-- **Full Dataset:** 20,000 episodes (unbalanced, with bounce events underrepresented)
-- **Balanced Dataset:** 14,700 episodes with equal representation of bounce and free-fall windows
-- **Unbalanced Subset:** 14,700 episodes randomly sampled without balancing (control group)
-
-The balanced dataset ensured models were exposed to bounce events more frequently, improving their ability to learn bounce dynamics effectively.
-
----
-
-## <a id="results"></a>6. Visual Results
-
-### Performance Summary
-
-<div style="background: var(--bg-alt); padding: 1.5rem; border-radius: 8px; margin: 1.5rem 0;">
-  <h4>Key Finding: Balanced Dataset Impact</h4>
-  <p>The balanced dataset (equal representation of bounce and free-fall windows) resulted in a <strong>25% reduction in MAE</strong> compared to the unbalanced dataset, highlighting the importance of balanced training data for learning transition events like bounces.</p>
-</div>
-
-### Performance Visualization
+### Key Achievements
 
 <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 1rem; margin: 2rem 0;">
   <div style="background: var(--bg-card); padding: 1.5rem; border-radius: 8px; border: 2px solid #28a745; text-align: center;">
@@ -183,11 +147,14 @@ The balanced dataset ensured models were exposed to bounce events more frequentl
   </div>
 </div>
 
----
+### Balanced Dataset Impact
 
-## <a id="performance"></a>7. Model Performance Comparison
+<div style="background: var(--bg-alt); padding: 1.5rem; border-radius: 8px; margin: 1.5rem 0;">
+  <h4>Key Finding: Balanced Dataset Impact</h4>
+  <p>The balanced dataset (equal representation of bounce and free-fall windows) resulted in a <strong>25% reduction in MAE</strong> compared to the unbalanced dataset, highlighting the importance of balanced training data for learning transition events like bounces.</p>
+</div>
 
-### Comprehensive Results Table
+### Model Performance Comparison
 
 <div style="overflow-x: auto; margin: 2rem 0;">
 <table style="width: 100%; border-collapse: collapse; font-size: 0.9rem;">
@@ -257,7 +224,31 @@ The balanced dataset ensured models were exposed to bounce events more frequentl
 
 ---
 
-## <a id="setup"></a>8. Experimental Setup
+## <a id="visual-demo"></a>6. Visual Demo
+
+<div class="project-media">
+  <div class="project-image-placeholder">
+    <img src="{{ '/assets/images/FallingBall.png' | relative_url }}" alt="FallingBall Environment Visualization" style="max-width: 100%; height: auto; border-radius: 6px; margin-bottom: 1rem;">
+    <p><strong>Figure 1: Environment Visualization</strong></p>
+    <p>Ball falling and bouncing in FallingBallEnv. Yellow circle = current state. The floor position is not included in the observation space.</p>
+  </div>
+  
+  <div class="project-image-placeholder">
+    <img src="{{ '/assets/images/FallingBallwithprediction.png' | relative_url }}" alt="FallingBall Prediction Results" style="max-width: 100%; height: auto; border-radius: 6px; margin-bottom: 1rem;">
+    <p><strong>Figure 2: Prediction Comparison</strong></p>
+    <p>Sky blue = actual future, blue = CGLSTM prediction, red = errors, gray = perfect alignment.</p>
+  </div>
+  
+  <div class="project-image-placeholder" style="grid-column: 1 / -1; max-width: 100%;">
+    <img src="https://goodluckoguzie.github.io/Viva/img/fallingballenv_cglstm_results.jpg" alt="CGLSTM Results in FallingBallEnv" style="width: 100%; max-width: 1200px; height: auto; border-radius: 6px; margin-bottom: 1rem; display: block; margin-left: auto; margin-right: auto;">
+    <p><strong>Figure 3: CGLSTM Performance</strong></p>
+    <p>Detailed results showing CGLSTM's superior accuracy across prediction horizons (k=1, 3, 5, 10).</p>
+  </div>
+</div>
+
+---
+
+## <a id="setup"></a>7. Experimental Setup
 
 ### Models Tested
 - **Vanilla LSTM:** Baseline recurrent architecture
@@ -282,7 +273,7 @@ The balanced dataset ensured models were exposed to bounce events more frequentl
 
 ---
 
-## <a id="specs"></a>9. Technical Specifications
+## <a id="specs"></a>8. Technical Specifications
 
 ### Observation Space
 - **Dimensions:** 4D continuous vector `[x, y, vx, vy]`
@@ -318,7 +309,7 @@ The balanced dataset ensured models were exposed to bounce events more frequentl
 
 ---
 
-## <a id="usage"></a>10. Installation & Usage
+## <a id="usage"></a>9. Installation & Usage
 
 ### Installation
 
@@ -393,7 +384,7 @@ env = FallingBallEnv(
 
 ---
 
-## <a id="impact"></a>11. Research Impact
+## <a id="impact"></a>10. Research Impact
 
 FallingBallEnv provided crucial insights into sequential learning that informed the development and validation of CGLSTM. Results demonstrated that CGLSTM's cosine similarity gating mechanism significantly improves prediction accuracy in temporal tasks, establishing a foundation for applying the model to more complex social navigation scenarios.
 
@@ -415,7 +406,7 @@ FallingBallEnv was important for evaluating and validating the Cosine-Gated LSTM
 
 ---
 
-## <a id="limitations"></a>12. Limitations & Future Work
+## <a id="limitations"></a>11. Limitations & Future Work
 
 ### Current Limitations
 - **Simplified Physics:** Does not model air resistance or complex collisions
@@ -432,7 +423,7 @@ FallingBallEnv was important for evaluating and validating the Cosine-Gated LSTM
 
 ---
 
-## <a id="related"></a>13. Related Work
+## <a id="related"></a>12. Related Work
 
 **Used In:**
 - <a href="{{ '/projects/cosine-gated-lstm' | relative_url }}">Cosine-Gated LSTM (CGLSTM)</a> - Validated CGLSTM architecture
@@ -443,17 +434,17 @@ FallingBallEnv was important for evaluating and validating the Cosine-Gated LSTM
 - <a href="{{ '/projects/litesocnavgym' | relative_url }}">LiteSocNavGym</a> - Lightweight version for faster iteration
 
 **Comparison with Other Environments:**
-Unlike standard Gym environments (CartPole, MountainCar, etc.), FallingBallEnv deliberately omits state information to test implicit physics learning. This makes it unique for evaluating sequential learning models that must infer hidden dynamics.
+Unlike standard Gym environments (CartPole, MountainCar, etc.), FallingBallEnv deliberately omits state information to test implicit physics learning (see Key Innovation section). This makes it unique for evaluating sequential learning models that must infer hidden dynamics.
 
 ---
 
-## <a id="faq"></a>14. FAQ
+## <a id="faq"></a>13. FAQ
 
 ### Q: Why is the floor position hidden?
-**A:** This design tests whether models can learn implicit physics from observations alone. Unlike most Gym environments that reveal all state information, FallingBallEnv requires models to infer hidden boundary conditions from trajectory patterns, creating a controlled test of sequential learning capabilities.
+**A:** This design tests whether models can learn implicit physics from observations alone. Unlike most Gym environments that reveal all state information, FallingBallEnv requires models to infer hidden boundary conditions from trajectory patterns (see Key Innovation section).
 
 ### Q: How does this compare to other Gym environments?
-**A:** Most Gym environments (CartPole, MountainCar, etc.) reveal all state information. FallingBallEnv uniquely tests learning of implicit physics by hiding the floor position, creating a controlled test of sequential learning capabilities.
+**A:** Most Gym environments (CartPole, MountainCar, etc.) reveal all state information. FallingBallEnv uniquely tests learning of implicit physics by hiding the floor position, creating a controlled test of sequential learning capabilities (see Key Innovation section).
 
 ### Q: Can I use this for my research?
 **A:** Yes! The environment is open-source and available on GitHub. It's particularly useful for:
@@ -479,7 +470,7 @@ Unlike standard Gym environments (CartPole, MountainCar, etc.), FallingBallEnv d
 
 ---
 
-## <a id="citation"></a>15. Citation & Resources
+## <a id="citation"></a>14. Citation & Resources
 
 ### Citation
 
