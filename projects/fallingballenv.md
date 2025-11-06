@@ -66,7 +66,7 @@ title: FallingBallEnv - Research Project
     
     <div style="text-align: center;">
       <video controls style="width: 100%; max-width: 500px; height: auto; border-radius: 8px; box-shadow: 0 4px 12px rgba(0,0,0,0.15);" poster="{{ '/assets/images/FallingBall.png' | relative_url }}">
-        <source src="{{ '/assets/images/FallingBallEnv.webm' | relative_url }}" type="video/webm">
+        <source src="{{ '/video/FallingBallEnv.webm' | relative_url }}" type="video/webm">
         Your browser does not support the video tag.
       </video>
       <p style="margin-top: 0.75rem; font-size: 0.875rem; color: var(--text-light); font-style: italic;">Watch the environment in action: hidden floor challenge demonstrated</p>

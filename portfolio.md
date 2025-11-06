@@ -97,7 +97,7 @@ These are the environments I've created or contributed to for evaluating reinfor
                 preload="metadata"
                 poster="{{ '/assets/images/FallingBall.png' | relative_url }}"
                 style="width: 100%; height: auto; border-radius: 6px; cursor: pointer;">
-                <source src="{{ '/assets/images/FallingBallEnv.webm' | relative_url }}" type="video/webm">
+                <source src="{{ '/video/FallingBallEnv.webm' | relative_url }}" type="video/webm">
                 Your browser does not support the video tag.
               </video>
               <p class="video-caption">Watch how CGLSTM predicts bounces when the floor position is hidden—the challenge that makes this environment unique.</p>
@@ -147,9 +147,9 @@ These are the environments I've created or contributed to for evaluating reinfor
                 controls 
                 class="carousel-video"
                 preload="metadata"
-                poster="https://goodluckoguzie.github.io/Viva/img/LITESOCNAVGYM.webm"
+                poster="{{ '/video/LITESOCNAVGYM.webm' | relative_url }}"
                 style="width: 100%; height: auto; border-radius: 6px; cursor: pointer;">
-                <source src="https://goodluckoguzie.github.io/Viva/img/LITESOCNAVGYM.webm" type="video/webm">
+                <source src="{{ '/video/LITESOCNAVGYM.webm' | relative_url }}" type="video/webm">
                 Your browser does not support the video tag.
               </video>
               <p class="video-caption">Watch LiteSocNavGym in action: faster simulations with core social navigation features preserved</p>
@@ -179,8 +179,8 @@ These are the environments I've created or contributed to for evaluating reinfor
             </div>
             
             <div class="card-video">
-              <video controls class="carousel-video">
-                <source src="https://goodluckoguzie.github.io/Viva/img/socialrobot.mp4" type="video/mp4">
+              <video controls class="carousel-video" preload="metadata" style="width: 100%; height: auto; border-radius: 6px; cursor: pointer;">
+                <source src="{{ '/video/SocNavGym.mp4' | relative_url }}" type="video/mp4">
                 Your browser does not support the video tag.
               </video>
               <p class="video-caption">SocNavGym environment demonstration with dynamic obstacles and social navigation scenarios</p>
@@ -296,8 +296,8 @@ These are the environments I've created or contributed to for evaluating reinfor
             </div>
             
             <div class="card-video">
-              <video controls class="carousel-video">
-                <source src="https://goodluckoguzie.github.io/Viva/img/LunarLander.webm" type="video/webm">
+              <video controls class="carousel-video" preload="metadata" style="width: 100%; height: auto; border-radius: 6px; cursor: pointer;">
+                <source src="{{ '/video/LunarLander.webm' | relative_url }}" type="video/webm">
                 Your browser does not support the video tag.
               </video>
               <p class="video-caption">Adaptive Prediction Horizons in LunarLander environment</p>

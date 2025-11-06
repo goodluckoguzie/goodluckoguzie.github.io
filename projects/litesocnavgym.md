@@ -62,8 +62,8 @@ title: LiteSocNavGym - Research Project
     </div>
     
     <div style="text-align: center;">
-      <video controls style="width: 100%; max-width: 500px; height: auto; border-radius: 8px; box-shadow: 0 4px 12px rgba(0,0,0,0.15);" poster="https://goodluckoguzie.github.io/Viva/img/LITESOCNAVGYM.webm">
-        <source src="https://goodluckoguzie.github.io/Viva/img/LITESOCNAVGYM.webm" type="video/webm">
+      <video controls style="width: 100%; max-width: 500px; height: auto; border-radius: 8px; box-shadow: 0 4px 12px rgba(0,0,0,0.15);" poster="{{ '/video/LITESOCNAVGYM.webm' | relative_url }}">
+        <source src="{{ '/video/LITESOCNAVGYM.webm' | relative_url }}" type="video/webm">
         Your browser does not support the video tag.
       </video>
       <p style="margin-top: 0.75rem; font-size: 0.875rem; color: var(--text-light); font-style: italic;">Watch LiteSocNavGym in action: faster simulations with core social navigation features</p>
@@ -119,7 +119,7 @@ LiteSocNavGym achieves 3-5x faster simulation speeds by:
 <div class="project-media">
   <div class="project-video-placeholder" style="grid-column: 1 / -1;">
     <video controls style="max-width: 100%; height: auto; border-radius: 6px; margin-bottom: 1rem;">
-      <source src="https://goodluckoguzie.github.io/Viva/img/LITESOCNAVGYM.webm" type="video/webm">
+      <source src="{{ '/video/LITESOCNAVGYM.webm' | relative_url }}" type="video/webm">
       Your browser does not support the video tag.
     </video>
     <p><strong>Demo Video: LiteSocNavGym Environment</strong></p>
