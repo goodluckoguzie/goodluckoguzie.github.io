@@ -59,16 +59,24 @@ These are the environments I've created or contributed to for evaluating reinfor
             <div class="card-badges">
               <div class="contribution-badge created">CREATED</div>
               <div class="project-status-badge completed">COMPLETED</div>
+              <div class="contribution-badge" style="background: #6c757d; color: white;">USED IN: IEEE PRML 2024</div>
             </div>
             <h3>⚽ FallingBallEnv</h3>
-            <p class="project-meta"><strong>2023</strong> • Custom OpenAI Gym Environment</p>
+            <p class="project-meta"><strong>2023</strong> • Custom OpenAI Gym Environment • PhD Thesis Chapter 6</p>
           </div>
           
           <div class="card-content">
             <div class="card-text">
-              <p class="project-description">A custom OpenAI Gym environment simulating a ball falling under gravity and bouncing off the floor. The key challenge: <strong>the floor position is NOT included in the observation space</strong>, requiring models to infer this hidden boundary condition to predict when and how the ball will bounce.</p>
+              <p class="project-description">Custom Gym environment testing sequential learning with a hidden floor challenge - models must infer the boundary condition to predict ball bounces.</p>
+              
+              <div class="project-stats" style="margin: 1rem 0; padding: 0.75rem; background: var(--bg-alt); border-radius: 6px; font-size: 0.875rem;">
+                <p style="margin: 0.25rem 0;"><strong>📊 Datasets:</strong> 20K full • 14.7K balanced • 14.7K unbalanced</p>
+                <p style="margin: 0.25rem 0;"><strong>🎯 Result:</strong> CGLSTM achieved 25% lower MAE with balanced dataset</p>
+                <p style="margin: 0.25rem 0;"><strong>📚 Published:</strong> PhD Thesis Ch.6 • IEEE PRML 2024</p>
+              </div>
+              
               <a href="{{ '/projects/fallingballenv' | relative_url }}" class="see-more-btn">
-                <span class="btn-text">View Full Details</span>
+                <span class="btn-text">Explore Details</span>
                 <span class="btn-icon">→</span>
               </a>
             </div>
