@@ -15,18 +15,19 @@ title: LiteSocNavGym - Research Project
   <h3 style="margin-top: 0; color: var(--link);">📑 Table of Contents</h3>
   <ul style="columns: 2; column-gap: 2rem; list-style: none; padding-left: 0;">
     <li><a href="#hero">1. Overview</a></li>
-    <li><a href="#problem">2. The Problem</a></li>
-    <li><a href="#innovation">3. Key Innovation</a></li>
-    <li><a href="#visual-demo">4. Visual Demo</a></li>
-    <li><a href="#performance">5. Performance Comparison</a></li>
-    <li><a href="#simplified">6. What Was Simplified</a></li>
-    <li><a href="#preserved">7. What Was Preserved</a></li>
-    <li><a href="#specs">8. Technical Specifications</a></li>
-    <li><a href="#usage">9. Usage & Examples</a></li>
-    <li><a href="#applications">10. Research Applications</a></li>
-    <li><a href="#comparison">11. Comparison with SocNavGym</a></li>
-    <li><a href="#faq">12. FAQ</a></li>
-    <li><a href="#resources">13. Resources & Links</a></li>
+    <li><a href="#motivation">2. Research Motivation</a></li>
+    <li><a href="#challenge">3. The Challenge</a></li>
+    <li><a href="#innovation">4. Key Innovation</a></li>
+    <li><a href="#results">5. Results & Performance</a></li>
+    <li><a href="#visual-demo">6. Visual Demo</a></li>
+    <li><a href="#simplified">7. What Was Simplified</a></li>
+    <li><a href="#preserved">8. What Was Preserved</a></li>
+    <li><a href="#specs">9. Technical Specifications</a></li>
+    <li><a href="#usage">10. Installation & Usage</a></li>
+    <li><a href="#impact">11. Research Impact</a></li>
+    <li><a href="#comparison">12. Comparison with SocNavGym</a></li>
+    <li><a href="#faq">13. FAQ</a></li>
+    <li><a href="#resources">14. Resources & Links</a></li>
   </ul>
 </div>
 
@@ -37,9 +38,9 @@ title: LiteSocNavGym - Research Project
 <div class="hero-section" style="background: linear-gradient(135deg, var(--bg-alt) 0%, var(--bg-card) 100%); padding: 2rem; border-radius: 12px; margin: 2rem 0; border: 2px solid var(--border);">
   <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 2rem; align-items: center;">
     <div>
-      <h2 style="margin-top: 0; color: var(--text); font-size: 2rem;">Streamlined for Speed</h2>
+      <h2 style="margin-top: 0; color: var(--text); font-size: 2rem;">Lite for Speed</h2>
       <p style="font-size: 1.125rem; line-height: 1.8; color: var(--text); margin-bottom: 1.5rem;">
-        LiteSocNavGym is a lightweight version of SocNavGym optimized for rapid iteration and faster simulation. Designed for efficient testing of predictive models and reinforcement learning approaches, it maintains core social interaction dynamics while dramatically reducing simulation time.
+        I developed this lightweight version of SocNavGym optimized for rapid iteration and faster simulation. Designed for efficient testing of predictive models and reinforcement learning approaches, it maintains core social interaction dynamics while dramatically reducing simulation time.
       </p>
       
       <div class="quick-stats" style="display: grid; grid-template-columns: repeat(3, 1fr); gap: 1rem; margin: 1.5rem 0;">
@@ -73,20 +74,32 @@ title: LiteSocNavGym - Research Project
 
 ---
 
-## <a id="problem"></a>2. The Problem
+## <a id="motivation"></a>2. Research Motivation
 
-### Why Was LiteSocNavGym Needed?
+### Why This Was Needed
 
-While SocNavGym provides a comprehensive social navigation environment, it can be computationally expensive for rapid iteration during algorithm development. Researchers need:
+While SocNavGym provides a comprehensive social navigation environment, I observed that it could be computationally expensive for rapid iteration during algorithm development. When testing predictive models and reinforcement learning approaches, I needed faster feedback loops to iterate quickly on ideas.
 
-1. **Faster Simulation** - Quick feedback loops during development
-2. **Rapid Testing** - Test multiple algorithms quickly
-3. **Efficient Evaluation** - Benchmark models without long waits
-4. **Core Dynamics Preserved** - Maintain essential social navigation features
+LiteSocNavGym was developed as a lite testing environment to enable rapid iteration during algorithm development. This environment allows for quick testing of predictive models and reinforcement learning approaches before applying methods to the full SocNavGym environment.
+
+### Research Design
+
+I created LiteSocNavGym by simplifying complex features while preserving core social navigation dynamics. The environment achieves 3-5x faster simulation speeds by optimizing rendering, physics calculations, and state management (see Key Innovation section for details).
+
+---
+
+## <a id="challenge"></a>3. The Challenge
+
+### What Makes This Hard?
+
+Creating a lightweight version of SocNavGym required careful balance:
+- **Speed vs. Fidelity** - How to make it faster without losing essential dynamics
+- **Simplicity vs. Compatibility** - Maintain API compatibility while simplifying internals
+- **Core Features** - Identify which features are essential vs. optional
 
 ### The Solution
 
-LiteSocNavGym was developed to address these needs by:
+I addressed these challenges by:
 - **Simplifying complex features** - Removing non-essential components
 - **Optimizing performance** - Faster simulation while preserving core dynamics
 - **Maintaining compatibility** - Works with same RL frameworks
@@ -94,7 +107,7 @@ LiteSocNavGym was developed to address these needs by:
 
 ---
 
-## <a id="innovation"></a>3. Key Innovation
+## <a id="innovation"></a>4. Key Innovation
 
 ### What Makes It "Lightweight"?
 
@@ -110,41 +123,17 @@ LiteSocNavGym achieves 3-5x faster simulation speeds by:
 - **Speed First** - Optimized for rapid iteration
 - **Essentials Only** - Core social navigation dynamics preserved
 - **Compatibility Maintained** - Same API as SocNavGym
-- **Easy Migration** - Code can run in both environments
+- **Easy Migration** - Code can run in both environments (see Installation & Usage section)
 
 ---
 
-## <a id="visual-demo"></a>4. Visual Demo
-
-<div class="project-media">
-  <div class="project-video-placeholder" style="grid-column: 1 / -1;">
-    <video autoplay muted loop playsinline style="max-width: 100%; height: auto; border-radius: 6px; margin-bottom: 1rem;">
-      <source src="{{ '/video/LITESOCNAVGYM.webm' | relative_url }}" type="video/webm">
-      Your browser does not support the video tag.
-    </video>
-    <p><strong>Demo Video: LiteSocNavGym Environment</strong></p>
-    <p>Watch the environment in action: faster simulations with core social navigation features preserved. Notice the streamlined rendering and optimized performance.</p>
-  </div>
-</div>
-
----
-
-## <a id="performance"></a>5. Performance Comparison
+## <a id="results"></a>5. Results & Performance
 
 ### Speed Improvements
 
-<div style="background: var(--bg-alt); padding: 1.5rem; border-radius: 8px; margin: 1.5rem 0;">
-  <h4>Key Performance Metrics</h4>
-  <p>LiteSocNavGym achieves <strong>3-5x faster simulation speeds</strong> compared to SocNavGym while maintaining essential social navigation dynamics. This performance gain makes it ideal for:</p>
-  <ul>
-    <li>Rapid algorithm development and testing</li>
-    <li>Quick iteration during model training</li>
-    <li>Efficient benchmarking of multiple approaches</li>
-    <li>Prototyping and proof-of-concept work</li>
-  </ul>
-</div>
+LiteSocNavGym achieves **3-5x faster simulation speeds** compared to SocNavGym while maintaining essential social navigation dynamics (see What Was Preserved section). This performance gain makes it ideal for rapid algorithm development, quick iteration during model training, efficient benchmarking, and prototyping.
 
-### Performance Visualization
+### Key Performance Metrics
 
 <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 1rem; margin: 2rem 0;">
   <div style="background: var(--bg-card); padding: 1.5rem; border-radius: 8px; border: 2px solid #28a745; text-align: center;">
@@ -161,9 +150,31 @@ LiteSocNavGym achieves 3-5x faster simulation speeds by:
   </div>
 </div>
 
+### Performance Benefits
+
+- **Rapid Algorithm Development** - Quick feedback loops during development
+- **Efficient Testing** - Test multiple algorithms quickly
+- **Fast Benchmarking** - Evaluate models without long waits
+- **Rapid Prototyping** - Validate ideas quickly before applying methods to the full SocNavGym environment
+
 ---
 
-## <a id="simplified"></a>6. What Was Simplified
+## <a id="visual-demo"></a>6. Visual Demo
+
+<div class="project-media">
+  <div class="project-video-placeholder" style="grid-column: 1 / -1;">
+    <video autoplay muted loop playsinline style="max-width: 100%; height: auto; border-radius: 6px; margin-bottom: 1rem;">
+      <source src="{{ '/video/LITESOCNAVGYM.webm' | relative_url }}" type="video/webm">
+      Your browser does not support the video tag.
+    </video>
+    <p><strong>Demo Video: LiteSocNavGym Environment</strong></p>
+    <p>Watch the environment in action: faster simulations with core social navigation features preserved (see What Was Preserved section).</p>
+  </div>
+</div>
+
+---
+
+## <a id="simplified"></a>7. What Was Simplified
 
 ### Optimizations Made
 
@@ -171,7 +182,7 @@ To achieve faster simulation speeds, LiteSocNavGym:
 
 1. **Simplified Rendering**
    - Reduced visual complexity
-   - Streamlined graphics pipeline
+   - Lite graphics pipeline
    - Optimized rendering calls
 
 2. **Optimized Physics**
@@ -179,7 +190,7 @@ To achieve faster simulation speeds, LiteSocNavGym:
    - Simplified physics calculations
    - Reduced computational overhead
 
-3. **Streamlined State Management**
+3. **Lite State Management**
    - Reduced memory footprint
    - Efficient state updates
    - Optimized data structures
@@ -192,12 +203,12 @@ To achieve faster simulation speeds, LiteSocNavGym:
 ### Trade-offs
 
 - **Reduced Visual Fidelity** - Less detailed rendering for speed
-- **Simplified Physics** - Streamlined calculations
+- **Simplified Physics** - Lite calculations
 - **Focused Features** - Core functionality only
 
 ---
 
-## <a id="preserved"></a>7. What Was Preserved
+## <a id="preserved"></a>8. What Was Preserved
 
 ### Core Social Navigation Dynamics
 
@@ -225,7 +236,7 @@ Despite optimizations, LiteSocNavGym maintains:
 
 ---
 
-## <a id="specs"></a>8. Technical Specifications
+## <a id="specs"></a>9. Technical Specifications
 
 ### Environment Type
 - **Base:** Gymnasium-compatible environment
@@ -235,7 +246,7 @@ Despite optimizations, LiteSocNavGym maintains:
 ### Observation Space
 - **Type:** Compatible with SocNavGym core observations
 - **Format:** Social navigation state information
-- **Note:** Streamlined for faster processing
+- **Note:** Lite for faster processing
 
 ### Action Space
 - **Type:** Compatible with SocNavGym action space
@@ -243,20 +254,20 @@ Despite optimizations, LiteSocNavGym maintains:
 - **Note:** Core actions preserved
 
 ### Performance Characteristics
-- **Simulation Speed:** 3-5x faster than SocNavGym (see Performance Comparison section)
+- **Simulation Speed:** 3-5x faster than SocNavGym (see Results & Performance section)
 - **Memory Usage:** Reduced compared to SocNavGym
 - **CPU Requirements:** Lower than SocNavGym
-- **Visual Quality:** Streamlined for speed
+- **Visual Quality:** Lite for speed (see What Was Simplified section)
 
 ### Key Features
-- **Lightweight Implementation** - Optimized for speed (3-5x faster than SocNavGym)
-- **Social Navigation Scenarios** - Essential dynamics preserved
+- **Lightweight Implementation** - Optimized for speed (see Results & Performance section)
+- **Social Navigation Scenarios** - Essential dynamics preserved (see What Was Preserved section)
 - **RL Framework Compatible** - Works with standard frameworks
 - **Performance Optimized** - Fast evaluation and testing
 
 ---
 
-## <a id="usage"></a>9. Usage & Examples
+## <a id="usage"></a>10. Installation & Usage
 
 ### When to Use LiteSocNavGym
 
@@ -320,37 +331,28 @@ env = LiteSocNavGym()
 
 ---
 
-## <a id="applications"></a>10. Research Applications
+## <a id="impact"></a>11. Research Impact
 
-### Used In Research
+LiteSocNavGym enabled rapid iteration during algorithm development, allowing for quick testing of predictive models and reinforcement learning approaches before applying methods to the full SocNavGym environment.
 
-LiteSocNavGym has been used for:
+**Key Contributions:**
+1. **Enabled Rapid Prototyping:** 3-5x faster simulation speeds accelerated algorithm development
+2. **Facilitated Model Testing:** Quick feedback loops for testing 2StepAhead and MASPM models
+3. **Supported Adaptive Prediction Research:** Efficient testing of adaptive prediction systems
+4. **Maintained Core Dynamics:** Preserved essential social navigation features while optimizing performance (see What Was Preserved section)
 
-1. **Predictive World Models**
-   - Testing 2StepAhead and MASPM models
-   - Rapid iteration during development
-   - Efficient evaluation of predictive approaches
+### Usage in Research
 
-2. **Adaptive Prediction Horizons**
-   - Testing adaptive prediction systems
-   - Quick feedback during development
-   - Efficient benchmarking
+LiteSocNavGym was used for:
 
-3. **Algorithm Development**
-   - Rapid prototyping of new approaches
-   - Quick testing of ideas
-   - Efficient algorithm comparison
-
-### Research Benefits
-
-- **Faster Development** - Quick iteration cycles
-- **Efficient Testing** - Test more algorithms in less time
-- **Rapid Prototyping** - Validate ideas quickly
-- **Performance Benchmarking** - Compare approaches efficiently
+- Testing Predictive World Models (2StepAhead, MASPM) during development
+- Rapid iteration on adaptive prediction horizon systems
+- Quick algorithm comparison and benchmarking
+- Prototyping new approaches before full SocNavGym evaluation (see Comparison with SocNavGym section)
 
 ---
 
-## <a id="comparison"></a>11. Comparison with SocNavGym
+## <a id="comparison"></a>12. Comparison with SocNavGym
 
 ### When to Use Which
 
@@ -371,7 +373,7 @@ LiteSocNavGym has been used for:
     </tr>
     <tr style="border-bottom: 1px solid var(--border);">
       <td style="padding: 0.75rem; border: 1px solid var(--border);"><strong>Visual Rendering</strong></td>
-      <td style="padding: 0.75rem; text-align: center; border: 1px solid var(--border);">Streamlined</td>
+      <td style="padding: 0.75rem; text-align: center; border: 1px solid var(--border);">Lite</td>
       <td style="padding: 0.75rem; text-align: center; border: 1px solid var(--border);">Full Detail</td>
     </tr>
     <tr style="border-bottom: 1px solid var(--border);">
@@ -396,10 +398,10 @@ LiteSocNavGym has been used for:
 ### Key Differences
 
 **LiteSocNavGym:**
-- ⚡ 3-5x faster simulation
+- ⚡ 3-5x faster simulation (see Results & Performance section)
 - 🎯 Optimized for rapid iteration
-- ✅ Core dynamics preserved
-- 📊 Streamlined for speed
+- ✅ Core dynamics preserved (see What Was Preserved section)
+- 📊 Lite for speed (see What Was Simplified section)
 
 **SocNavGym:**
 - 🎨 Full visual rendering
@@ -409,13 +411,13 @@ LiteSocNavGym has been used for:
 
 ---
 
-## <a id="faq"></a>12. FAQ
+## <a id="faq"></a>13. FAQ
 
 ### Q: How much faster is LiteSocNavGym than SocNavGym?
-**A:** LiteSocNavGym achieves 3-5x faster simulation speeds compared to SocNavGym (see Performance Comparison section), making it ideal for rapid algorithm development and testing.
+**A:** LiteSocNavGym achieves 3-5x faster simulation speeds compared to SocNavGym (see Results & Performance section), making it ideal for rapid algorithm development and testing.
 
 ### Q: What features were removed or simplified?
-**A:** Visual rendering was streamlined, physics calculations were optimized, and non-essential features were removed. However, essential social navigation dynamics are preserved (see What Was Preserved section for details).
+**A:** Visual rendering was made lite, physics calculations were optimized, and non-essential features were removed (see What Was Simplified section). However, essential social navigation dynamics are preserved (see What Was Preserved section).
 
 ### Q: Can I use the same code for both environments?
 **A:** Yes! LiteSocNavGym maintains API compatibility with SocNavGym, so code written for one can typically run in the other with minimal changes.
@@ -427,14 +429,14 @@ LiteSocNavGym has been used for:
 **A:** Yes, essential dynamics are preserved, so results should be comparable. However, always validate final results in the full SocNavGym environment.
 
 ### Q: What research has used LiteSocNavGym?
-**A:** LiteSocNavGym has been used for testing Predictive World Models (2StepAhead, MASPM) and Adaptive Prediction Horizons (see Research Applications section), enabling rapid iteration during development.
+**A:** LiteSocNavGym has been used for testing Predictive World Models (2StepAhead, MASPM) and Adaptive Prediction Horizons (see Research Impact section for details).
 
 ### Q: How do I get started?
-**A:** Install the environment, check the Usage & Examples section above, and start with the basic usage example. The API is compatible with SocNavGym, so existing code should work.
+**A:** Install the environment, check the Installation & Usage section above, and start with the basic usage example. The API is compatible with SocNavGym, so existing code should work.
 
 ---
 
-## <a id="resources"></a>13. Resources & Links
+## <a id="resources"></a>14. Resources & Links
 
 <p><strong>Technologies:</strong> Python • Gymnasium • Reinforcement Learning • Social Navigation</p>
 
@@ -444,9 +446,8 @@ LiteSocNavGym has been used for:
 - <a href="{{ '/projects/adaptive-prediction-horizons' | relative_url }}" class="btn btn-secondary" style="display: inline-block; margin: 0.25rem;">Adaptive Prediction Horizons</a> - Tested in LiteSocNavGym
 
 **Research Applications:**
-- Used in developing and testing Predictive World Models
-- Used for Adaptive Prediction Horizons research
-- Enables rapid iteration during algorithm development
+- Used in developing and testing Predictive World Models (see Research Impact section)
+- Used for Adaptive Prediction Horizons research (see Research Impact section)
 
 <div style="margin-top: 3rem; padding-top: 2rem; border-top: 2px solid var(--border);">
   <a href="{{ '/portfolio' | relative_url }}" class="btn">← Back to Research Portfolio</a>

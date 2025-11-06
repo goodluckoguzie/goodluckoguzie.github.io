@@ -130,23 +130,6 @@ Unlike most Gym environments that reveal all state information, FallingBallEnv d
 
 ## <a id="results"></a>5. Results & Performance
 
-### Key Achievements
-
-<div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 1rem; margin: 2rem 0;">
-  <div style="background: var(--bg-card); padding: 1.5rem; border-radius: 8px; border: 2px solid #28a745; text-align: center;">
-    <div style="font-size: 2.5rem; font-weight: bold; color: #28a745; margin-bottom: 0.5rem;">78%</div>
-    <div style="font-size: 0.875rem; color: var(--text-light);">Lower MAE than Transformer</div>
-  </div>
-  <div style="background: var(--bg-card); padding: 1.5rem; border-radius: 8px; border: 2px solid #28a745; text-align: center;">
-    <div style="font-size: 2.5rem; font-weight: bold; color: #28a745; margin-bottom: 0.5rem;">77%</div>
-    <div style="font-size: 0.875rem; color: var(--text-light);">Faster than Transformer</div>
-  </div>
-  <div style="background: var(--bg-card); padding: 1.5rem; border-radius: 8px; border: 2px solid #28a745; text-align: center;">
-    <div style="font-size: 2.5rem; font-weight: bold; color: #28a745; margin-bottom: 0.5rem;">25%</div>
-    <div style="font-size: 0.875rem; color: var(--text-light);">Lower MAE with balanced data</div>
-  </div>
-</div>
-
 ### Balanced Dataset Impact
 
 <div style="background: var(--bg-alt); padding: 1.5rem; border-radius: 8px; margin: 1.5rem 0;">

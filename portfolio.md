@@ -122,7 +122,7 @@ These are the environments I've created or contributed to for evaluating reinfor
           
           <div class="card-content">
             <div class="card-text">
-              <p class="project-description">A streamlined version of SocNavGym optimized for rapid iteration. 3-5x faster simulations while preserving core social navigation dynamics, making it perfect for algorithm development and testing.</p>
+              <p class="project-description">I developed this lite version of SocNavGym optimized for rapid iteration. 3-5x faster simulations while preserving core social navigation dynamics, making it perfect for algorithm development and testing.</p>
               
               <div class="project-stats" style="margin: 1rem 0; padding: 0.75rem; background: var(--bg-alt); border-radius: 6px; font-size: 0.875rem;">
                 <div style="display: flex; align-items: center; gap: 0.5rem; margin: 0.5rem 0;">
