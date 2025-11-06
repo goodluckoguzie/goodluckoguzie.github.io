@@ -1,16 +1,18 @@
 ---
 layout: default
-title: Portfolio
+title: Research Portfolio
 ---
 
-# Project Portfolio
+# Research Portfolio
 
-Detailed case studies of research projects and software development work I've successfully delivered.
+Detailed case studies of research projects I've completed and ongoing work I'm actively developing.
 
 <p><strong>Filter by:</strong></p>
 
 <div class="portfolio-filters">
   <button class="portfolio-filter-btn active" data-filter="all">All Projects</button>
+  <button class="portfolio-filter-btn" data-filter="ongoing">Ongoing</button>
+  <button class="portfolio-filter-btn" data-filter="completed">Completed</button>
   <button class="portfolio-filter-btn" data-filter="research">Research Projects</button>
   <button class="portfolio-filter-btn" data-filter="web">Web Development</button>
   <button class="portfolio-filter-btn" data-filter="teaching">Teaching</button>
@@ -18,10 +20,74 @@ Detailed case studies of research projects and software development work I've su
 
 ---
 
-<div class="portfolio-case-study" data-category="research">
+## 🔄 Ongoing Research (Active Projects)
+
+<div class="portfolio-case-study" data-category="research ongoing">
+<h3>🔄 Adaptive Prediction Horizons in Reinforcement Learning</h3>
+
+<div class="project-status-badge ongoing">ONGOING</div>
+
+<p><strong>2024 - Present</strong> • Aston University</p>
+
+<div class="project-media">
+  <div class="project-image-placeholder">
+    <p><em>📸 Project Image: Please provide visualization of adaptive prediction horizon system, entropy measurements, performance comparisons with fixed horizons, or experimental results</em></p>
+  </div>
+  <div class="project-video-placeholder">
+    <p><em>🎥 Demo Video: Please provide video showing adaptive horizon adjustment in action, comparison with baseline methods, or performance demonstrations</em></p>
+  </div>
+</div>
+
+<h4>Project Overview</h4>
+
+<p>Developing entropy-driven adaptive prediction horizon systems for reinforcement learning applications. This research enables dynamic adjustment of prediction horizons based on environmental complexity, improving performance in autonomous systems and robotics applications.</p>
+
+<h4>Key Challenges</h4>
+
+<ul>
+<li>Designing effective metrics for environmental complexity measurement</li>
+<li>Developing adaptive mechanisms that adjust prediction horizons dynamically</li>
+<li>Balancing prediction accuracy with computational efficiency</li>
+<li>Validating adaptive horizons across diverse RL environments</li>
+<li>Integrating entropy-based measures for horizon adaptation</li>
+</ul>
+
+<h4>Current Progress</h4>
+
+<ul>
+<li>Framework development for adaptive prediction horizons</li>
+<li>Entropy measurement and environmental complexity analysis</li>
+<li>Initial experiments in simulation environments</li>
+<li>Performance evaluation against fixed-horizon baselines</li>
+</ul>
+
+<h4>Collaboration Opportunities</h4>
+
+<p>👥 <strong>Seeking Collaborators in:</strong></p>
+<ul>
+<li>RL algorithm development and optimization</li>
+<li>Performance evaluation and benchmarking</li>
+<li>Real-world deployment and validation</li>
+<li>Multi-agent systems integration</li>
+</ul>
+
+<p>Technologies: Python • PyTorch • Gymnasium • Reinforcement Learning • Git</p>
+
+<p><strong>Links:</strong></p>
+<ul>
+<li><a href="{{ '/collaborations' | relative_url }}">Interested in Collaborating?</a></li>
+<li><a href="https://github.com/goodluckoguzie">Code Repository</a></li>
+</ul>
+</div>
+
+---
+
+## ✅ Completed Research
+
+<div class="portfolio-case-study" data-category="research completed">
 <h3>🤖 Predictive World Models for Social Navigation</h3>
 
-<div class="project-status-badge completed">Completed</div>
+<div class="project-status-badge completed">COMPLETED</div>
 
 <p><strong>2023</strong> • Aston University • Published at UKCI 2023</p>
 
@@ -70,10 +136,10 @@ Detailed case studies of research projects and software development work I've su
 
 ---
 
-<div class="portfolio-case-study" data-category="research">
+<div class="portfolio-case-study" data-category="research completed">
 <h3>🧠 Cosine-Gated LSTM for Sequential Learning</h3>
 
-<div class="project-status-badge completed">Completed</div>
+<div class="project-status-badge completed">COMPLETED</div>
 
 <p><strong>2024</strong> • Aston University • Published at IEEE PRML 2024 (pp. 8-15)</p>
 
@@ -104,7 +170,7 @@ Detailed case studies of research projects and software development work I've su
 <ul>
 <li>Developed novel cosine gating mechanism for LSTM architecture</li>
 <li>Implemented dynamic input weighting based on cosine similarity</li>
-<li>Published at IEEE PRML 2024 with superior benchmarkresults</li>
+<li>Published at IEEE PRML 2024 with superior benchmark results</li>
 <li>Outperformed LSTM, GRU, and Transformer in FallingBallEnv and SocNavGym</li>
 <li>Achieved efficient parameter usage with better long-term dependency handling</li>
 </ul>
@@ -122,10 +188,10 @@ Detailed case studies of research projects and software development work I've su
 
 ---
 
-<div class="portfolio-case-study" data-category="research">
+<div class="portfolio-case-study" data-category="research completed">
 <h3>🎓 PhD Thesis: Enhancing Robot Social Navigation</h3>
 
-<div class="project-status-badge completed">Completed</div>
+<div class="project-status-badge completed">COMPLETED</div>
 
 <p><strong>2020 - 2024</strong> • Aston University • Supervisors: Dr. Luis J. Manso, Prof. Dr. Aniko Ekart</p>
 
@@ -174,10 +240,10 @@ Detailed case studies of research projects and software development work I've su
 
 ---
 
-<div class="portfolio-case-study" data-category="web">
+<div class="portfolio-case-study" data-category="web completed">
 <h3>💻 DiscoverHealth: Healthcare Resource Discovery System</h3>
 
-<div class="project-status-badge completed">Completed</div>
+<div class="project-status-badge completed">COMPLETED</div>
 
 <p><strong>2023 - 2024</strong> • Solent University • Full-Stack Web Application</p>
 
@@ -225,10 +291,10 @@ Detailed case studies of research projects and software development work I've su
 
 ---
 
-<div class="portfolio-case-study" data-category="teaching">
+<div class="portfolio-case-study" data-category="teaching completed">
 <h3>📚 DiscoverHealth Teaching Modules (Parts A-F)</h3>
 
-<div class="project-status-badge completed">Completed</div>
+<div class="project-status-badge completed">COMPLETED</div>
 
 <p><strong>2023 - 2024</strong> • Solent University • 6 Progressive Teaching Modules</p>
 

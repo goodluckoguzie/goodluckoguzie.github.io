@@ -1,9 +1,17 @@
 # Site Settings
-title: "Goodluck Oguzie"
-name: "Goodluck Oguzie"
-description: "Research in AI, Machine Learning, and Human-Computer Interaction"
+title: "Dr. Goodluck Oguzie | Post-PhD Researcher & Lecturer"
+name: "Dr. Goodluck Oguzie"
+description: "Post-PhD Researcher & Lecturer specializing in Reinforcement Learning, Social Robotics, and Neural Network Architectures. Active research, teaching AI courses, and open to collaborations."
 url: "https://goodluckoguzie.github.io"
 baseurl: ""
+
+# SEO Settings
+twitter:
+  username: ""
+og_image: "/assets/images/goodluck.jpg"
+
+# Google Analytics (add your ID when ready)
+# google_analytics: ""
 
 # Author/Profile Information
 author:

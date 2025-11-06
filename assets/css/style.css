@@ -1525,6 +1525,318 @@ code {
     color: var(--link-hover);
 }
 
+/* Current Research Section */
+.current-research-section {
+    margin: 3rem 0;
+}
+
+.research-card.featured {
+    border-left: 4px solid #ffa500;
+    background: linear-gradient(to right, rgba(255, 165, 0, 0.05), var(--bg-card));
+}
+
+.research-tags {
+    display: flex;
+    gap: 0.5rem;
+    flex-wrap: wrap;
+    margin: 1rem 0;
+}
+
+.tag {
+    padding: 0.35rem 0.75rem;
+    background: var(--bg-alt);
+    border: 1px solid var(--border);
+    border-radius: 16px;
+    font-size: 0.85rem;
+    color: var(--text-light);
+}
+
+.research-actions {
+    display: flex;
+    gap: 1rem;
+    margin-top: 1.5rem;
+    flex-wrap: wrap;
+}
+
+.research-link {
+    color: var(--link);
+    text-decoration: none;
+    font-weight: 500;
+    transition: all var(--transition);
+}
+
+.research-link:hover {
+    color: var(--link-hover);
+    text-decoration: underline;
+}
+
+/* Teaching Highlights */
+.teaching-highlights {
+    margin: 3rem 0;
+}
+
+.teaching-cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+    margin-top: 2rem;
+}
+
+.teaching-card {
+    background: var(--bg-card);
+    padding: 2rem;
+    border-radius: 8px;
+    border: 1px solid var(--border);
+    box-shadow: var(--shadow);
+    transition: all var(--transition);
+}
+
+.teaching-card:hover {
+    transform: translateY(-4px);
+    box-shadow: var(--shadow-md);
+    border-color: var(--link);
+}
+
+.teaching-card h4 {
+    margin-top: 0;
+    color: var(--primary);
+    margin-bottom: 1rem;
+}
+
+.teaching-link {
+    display: inline-block;
+    margin-top: 1rem;
+    color: var(--link);
+    text-decoration: none;
+    font-weight: 500;
+    transition: all var(--transition);
+}
+
+.teaching-link:hover {
+    color: var(--link-hover);
+    text-decoration: underline;
+}
+
+/* Collaboration CTA */
+.collaboration-cta {
+    background: linear-gradient(135deg, rgba(0, 102, 204, 0.1), rgba(0, 82, 163, 0.05));
+    padding: 3rem 2rem;
+    border-radius: 12px;
+    margin: 3rem 0;
+    border: 2px solid var(--link);
+    text-align: center;
+}
+
+.collaboration-content h2 {
+    margin-top: 0;
+    color: var(--primary);
+    margin-bottom: 1.5rem;
+}
+
+.collaboration-areas,
+.collaboration-types {
+    text-align: left;
+    display: inline-block;
+    margin: 1rem 0;
+    max-width: 600px;
+}
+
+.collaboration-areas li,
+.collaboration-types li {
+    margin: 0.75rem 0;
+    color: var(--text);
+}
+
+.collaboration-actions {
+    margin-top: 2rem;
+    display: flex;
+    gap: 1rem;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+/* Stats Grid Enhancement */
+.stats-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 2rem;
+    margin: 3rem 0;
+}
+
+.stat-card {
+    background: var(--bg-card);
+    padding: 2rem;
+    border-radius: 8px;
+    text-align: center;
+    border: 1px solid var(--border);
+    box-shadow: var(--shadow);
+    transition: all var(--transition);
+}
+
+.stat-card:hover {
+    transform: translateY(-4px);
+    box-shadow: var(--shadow-md);
+    border-color: var(--link);
+}
+
+.stat-card.highlight-stat {
+    background: linear-gradient(135deg, rgba(0, 102, 204, 0.1), rgba(0, 82, 163, 0.05));
+    border-color: var(--link);
+    border-width: 2px;
+}
+
+.stat-number {
+    font-size: 3rem;
+    font-weight: 700;
+    color: var(--link);
+    margin-bottom: 0.5rem;
+}
+
+.stat-label {
+    color: var(--text-light);
+    font-size: 0.95rem;
+    margin: 0;
+}
+
+/* Publications Preview */
+.publications-preview {
+    margin: 3rem 0;
+}
+
+/* Collaboration Pages */
+.collaboration-area-card,
+.collaboration-type-card {
+    background: var(--bg-card);
+    padding: 2rem;
+    border-radius: 8px;
+    border: 1px solid var(--border);
+    box-shadow: var(--shadow);
+    margin: 2rem 0;
+    transition: all var(--transition);
+}
+
+.collaboration-area-card:hover,
+.collaboration-type-card:hover {
+    transform: translateY(-4px);
+    box-shadow: var(--shadow-md);
+    border-color: var(--link);
+}
+
+.collaboration-area-card h4 {
+    margin-top: 1.5rem;
+    margin-bottom: 0.75rem;
+    color: var(--primary);
+}
+
+.collaboration-area-card h4:first-child {
+    margin-top: 0;
+}
+
+.collaboration-form-section {
+    background: var(--bg-alt);
+    padding: 2.5rem;
+    border-radius: 12px;
+    margin: 3rem 0;
+    border: 1px solid var(--border);
+}
+
+.contact-info-box {
+    background: var(--bg-card);
+    padding: 1.5rem;
+    border-radius: 8px;
+    margin: 1.5rem 0;
+    border: 1px solid var(--border);
+}
+
+.form-instructions {
+    background: var(--bg-card);
+    padding: 1.5rem;
+    border-radius: 8px;
+    margin: 1.5rem 0;
+    border-left: 4px solid var(--link);
+}
+
+.email-form-placeholder {
+    background: var(--bg-card);
+    padding: 2rem;
+    border-radius: 8px;
+    border: 2px dashed var(--border);
+    margin: 1.5rem 0;
+    text-align: center;
+}
+
+.collaboration-status {
+    background: var(--bg-alt);
+    padding: 2rem;
+    border-radius: 8px;
+    margin: 2rem 0;
+}
+
+/* Publication Filters */
+.publication-filters {
+    display: flex;
+    gap: 1rem;
+    flex-wrap: wrap;
+    margin: 2rem 0;
+    padding-bottom: 1rem;
+    border-bottom: 2px solid var(--border);
+}
+
+.filter-btn {
+    padding: 0.5rem 1.25rem;
+    background: var(--bg-alt);
+    border: 2px solid var(--border);
+    border-radius: 20px;
+    cursor: pointer;
+    transition: all var(--transition);
+    font-weight: 500;
+    color: var(--text);
+}
+
+.filter-btn:hover,
+.filter-btn.active {
+    background: var(--link);
+    color: white;
+    border-color: var(--link);
+}
+
+.publication.coming-soon {
+    background: var(--bg-alt);
+    border: 2px dashed var(--border);
+    padding: 2rem;
+    text-align: center;
+    font-style: italic;
+    color: var(--text-light);
+}
+
+/* Mobile Responsive Enhancements */
+@media (max-width: 768px) {
+    .collaboration-cta {
+        padding: 2rem 1rem;
+    }
+    
+    .collaboration-actions {
+        flex-direction: column;
+    }
+    
+    .teaching-cards {
+        grid-template-columns: 1fr;
+    }
+    
+    .stats-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    
+    .collaboration-area-card,
+    .collaboration-type-card {
+        padding: 1.5rem;
+    }
+    
+    .research-actions {
+        flex-direction: column;
+    }
+}
+
 .portfolio-case-study:hover {
     box-shadow: var(--shadow-md);
     border-color: var(--link);
