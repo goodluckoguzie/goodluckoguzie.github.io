@@ -94,14 +94,14 @@ Three distinct datasets were created to study the impact of data distribution on
 
 ## Usage in Research
 
-FallingBallEnv was central to evaluating and validating the Cosine-Gated LSTM (CGLSTM) architecture. The environment enabled:
+FallingBallEnv was important for evaluating and validating the Cosine-Gated LSTM (CGLSTM) architecture. The environment enabled:
 
 <ul>
   <li>Testing fundamental temporal dependency learning</li>
   <li>Analyzing transition event prediction (bounces)</li>
   <li>Comparing CGLSTM against Vanilla LSTM, GRU, RAU, and Transformer models</li>
   <li>Demonstrating the importance of balanced training data</li>
-  <li>Validating model performance before complex SocNavGym applications</li>
+  <li>Validating model performance before applying methods to complex SocNavGym scenarios</li>
 </ul>
 
 ## Model Performance Comparison
