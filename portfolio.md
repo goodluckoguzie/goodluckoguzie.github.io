@@ -82,7 +82,12 @@ These are the environments I've created or contributed to for evaluating reinfor
             </div>
             
             <div class="card-video">
-              <video controls class="carousel-video">
+              <video 
+                controls 
+                class="carousel-video"
+                preload="metadata"
+                poster="{{ '/assets/images/FallingBall.png' | relative_url }}"
+                style="width: 100%; height: auto; border-radius: 6px; cursor: pointer;">
                 <source src="{{ '/assets/images/FallingBallEnv.webm' | relative_url }}" type="video/webm">
                 Your browser does not support the video tag.
               </video>
