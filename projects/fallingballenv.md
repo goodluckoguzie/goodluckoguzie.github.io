@@ -65,7 +65,7 @@ title: FallingBallEnv - Research Project
     </div>
     
     <div style="text-align: center;">
-      <video controls style="width: 100%; max-width: 500px; height: auto; border-radius: 8px; box-shadow: 0 4px 12px rgba(0,0,0,0.15);" poster="{{ '/assets/images/FallingBall.png' | relative_url }}">
+      <video autoplay muted loop playsinline style="width: 100%; max-width: 500px; height: auto; border-radius: 8px; box-shadow: 0 4px 12px rgba(0,0,0,0.15);" poster="{{ '/assets/images/FallingBall.png' | relative_url }}">
         <source src="{{ '/video/FallingBallEnv.webm' | relative_url }}" type="video/webm">
         Your browser does not support the video tag.
       </video>

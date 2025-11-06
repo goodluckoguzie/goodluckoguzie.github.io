@@ -92,9 +92,12 @@ These are the environments I've created or contributed to for evaluating reinfor
             
             <div class="card-video">
               <video 
-                controls 
+                autoplay
+                muted
+                loop
+                playsinline
                 class="carousel-video"
-                preload="metadata"
+                preload="auto"
                 poster="{{ '/assets/images/FallingBall.png' | relative_url }}"
                 style="width: 100%; height: auto; border-radius: 6px; cursor: pointer;">
                 <source src="{{ '/video/FallingBallEnv.webm' | relative_url }}" type="video/webm">
@@ -144,9 +147,12 @@ These are the environments I've created or contributed to for evaluating reinfor
             
             <div class="card-video">
               <video 
-                controls 
+                autoplay
+                muted
+                loop
+                playsinline
                 class="carousel-video"
-                preload="metadata"
+                preload="auto"
                 poster="{{ '/video/LITESOCNAVGYM.webm' | relative_url }}"
                 style="width: 100%; height: auto; border-radius: 6px; cursor: pointer;">
                 <source src="{{ '/video/LITESOCNAVGYM.webm' | relative_url }}" type="video/webm">
@@ -179,7 +185,7 @@ These are the environments I've created or contributed to for evaluating reinfor
             </div>
             
             <div class="card-video">
-              <video controls class="carousel-video" preload="metadata" style="width: 100%; height: auto; border-radius: 6px; cursor: pointer;">
+              <video autoplay muted loop playsinline class="carousel-video" preload="auto" style="width: 100%; height: auto; border-radius: 6px; cursor: pointer;">
                 <source src="{{ '/video/SocNavGym.mp4' | relative_url }}" type="video/mp4">
                 Your browser does not support the video tag.
               </video>
@@ -296,7 +302,7 @@ These are the environments I've created or contributed to for evaluating reinfor
             </div>
             
             <div class="card-video">
-              <video controls class="carousel-video" preload="metadata" style="width: 100%; height: auto; border-radius: 6px; cursor: pointer;">
+              <video autoplay muted loop playsinline class="carousel-video" preload="auto" style="width: 100%; height: auto; border-radius: 6px; cursor: pointer;">
                 <source src="{{ '/video/LunarLander.webm' | relative_url }}" type="video/webm">
                 Your browser does not support the video tag.
               </video>

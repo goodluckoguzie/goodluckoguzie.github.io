@@ -62,7 +62,7 @@ title: LiteSocNavGym - Research Project
     </div>
     
     <div style="text-align: center;">
-      <video controls style="width: 100%; max-width: 500px; height: auto; border-radius: 8px; box-shadow: 0 4px 12px rgba(0,0,0,0.15);" poster="{{ '/video/LITESOCNAVGYM.webm' | relative_url }}">
+      <video autoplay muted loop playsinline style="width: 100%; max-width: 500px; height: auto; border-radius: 8px; box-shadow: 0 4px 12px rgba(0,0,0,0.15);" poster="{{ '/video/LITESOCNAVGYM.webm' | relative_url }}">
         <source src="{{ '/video/LITESOCNAVGYM.webm' | relative_url }}" type="video/webm">
         Your browser does not support the video tag.
       </video>
@@ -118,7 +118,7 @@ LiteSocNavGym achieves 3-5x faster simulation speeds by:
 
 <div class="project-media">
   <div class="project-video-placeholder" style="grid-column: 1 / -1;">
-    <video controls style="max-width: 100%; height: auto; border-radius: 6px; margin-bottom: 1rem;">
+    <video autoplay muted loop playsinline style="max-width: 100%; height: auto; border-radius: 6px; margin-bottom: 1rem;">
       <source src="{{ '/video/LITESOCNAVGYM.webm' | relative_url }}" type="video/webm">
       Your browser does not support the video tag.
     </video>
