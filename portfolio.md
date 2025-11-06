@@ -55,7 +55,7 @@ These are the environments I've created or contributed to for evaluating reinfor
       <div class="carousel-left">
         <div class="environments-carousel" id="environments-carousel">
           
-          <div class="carousel-slide active" data-slide="0">
+          <div class="carousel-slide active" data-slide="0" data-video="{{ '/assets/images/FallingBallEnv.webm' | relative_url }}" data-caption="Real-time demonstration of FallingBallEnv showing ball physics, bouncing mechanics, and model predictions in action">
             <div class="carousel-card">
               <div class="contribution-badge created">CREATED</div>
               <h3>⚽ FallingBallEnv</h3>
@@ -69,7 +69,7 @@ These are the environments I've created or contributed to for evaluating reinfor
             </div>
           </div>
           
-          <div class="carousel-slide" data-slide="1">
+          <div class="carousel-slide" data-slide="1" data-video="" data-caption="LiteSocNavGym environment demonstration">
             <div class="carousel-card">
               <div class="contribution-badge created">CREATED</div>
               <h3>🤖 LiteSocNavGym</h3>
@@ -83,7 +83,7 @@ These are the environments I've created or contributed to for evaluating reinfor
             </div>
           </div>
           
-          <div class="carousel-slide" data-slide="2">
+          <div class="carousel-slide" data-slide="2" data-video="" data-caption="SocNavGym environment demonstration with dynamic obstacles and social navigation scenarios">
             <div class="carousel-card">
               <div class="contribution-badge team">TEAM CONTRIBUTION</div>
               <h3>👥 SocNavGym</h3>
@@ -110,11 +110,7 @@ These are the environments I've created or contributed to for evaluating reinfor
       <!-- Video Section on Right -->
       <div class="carousel-right">
         <div class="carousel-video-container">
-          <video id="environments-video" controls class="carousel-video" data-videos='[
-            {"src": "{{ "/assets/images/FallingBallEnv.webm" | relative_url }}", "caption": "Real-time demonstration of FallingBallEnv showing ball physics, bouncing mechanics, and model predictions in action"},
-            {"src": "", "caption": "LiteSocNavGym environment demonstration"},
-            {"src": "", "caption": "SocNavGym environment demonstration with dynamic obstacles and social navigation scenarios"}
-          ]'>
+          <video id="environments-video" controls class="carousel-video">
             <source src="{{ '/assets/images/FallingBallEnv.webm' | relative_url }}" type="video/webm">
             Your browser does not support the video tag.
           </video>
