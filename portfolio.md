@@ -81,31 +81,10 @@ These are the environments I've created or contributed to for evaluating reinfor
     <div class="project-preview">
       <p>A lightweight social navigation environment created for faster simulation and evaluation of social navigation algorithms. Designed for efficient testing of predictive models and reinforcement learning approaches, optimizing for rapid iteration while maintaining core social interaction dynamics.</p>
       
-      <button class="see-more-btn" onclick="toggleDetails(this)" data-target="litesocnavgym-details">
-        <span class="btn-text">See More Details</span>
-        <span class="btn-icon">▼</span>
-      </button>
-    </div>
-    
-    <div id="litesocnavgym-details" class="project-details-collapsed">
-      <h4>Key Features</h4>
-      <ul>
-        <li>Lightweight implementation for rapid iteration</li>
-        <li>Social navigation scenarios</li>
-        <li>Compatible with standard RL frameworks</li>
-        <li>Optimized for performance evaluation</li>
-      </ul>
-      
-      <h4>Usage</h4>
-      <p>Used in developing and testing Predictive World Models and Adaptive Prediction Horizons for social robot navigation.</p>
-      
-      <p><strong>Technologies:</strong> Python • Gymnasium • Reinforcement Learning</p>
-      
-      <p><strong>Links:</strong></p>
-      <ul>
-        <li><a href="{{ '/portfolio' | relative_url }}#predictive-world-models">Used in: Predictive World Models Research</a></li>
-        <li><a href="{{ '/portfolio' | relative_url }}#adaptive-prediction-horizons">Used in: Adaptive Prediction Horizons</a></li>
-      </ul>
+      <a href="{{ '/projects/litesocnavgym' | relative_url }}" class="see-more-btn">
+        <span class="btn-text">View Full Details</span>
+        <span class="btn-icon">→</span>
+      </a>
     </div>
   </div>
 
@@ -118,32 +97,10 @@ These are the environments I've created or contributed to for evaluating reinfor
     <div class="project-preview">
       <p>Comprehensive social navigation gymnasium environment for evaluating social robot navigation algorithms. As part of the development team, I focused on reinforcement learning aspects and integration with predictive models. This was the primary environment for testing Predictive World Models and validating Adaptive Prediction Horizons, with results published in UKCI 2023 and my PhD thesis.</p>
       
-      <button class="see-more-btn" onclick="toggleDetails(this)" data-target="socnavgym-details">
-        <span class="btn-text">See More Details</span>
-        <span class="btn-icon">▼</span>
-      </button>
-    </div>
-    
-    <div id="socnavgym-details" class="project-details-collapsed">
-      <h4>My Contribution</h4>
-      <ul>
-        <li>RL algorithm integration and testing</li>
-        <li>Predictive model evaluation framework</li>
-        <li>Performance benchmarking systems</li>
-        <li>Integration with proposed models (Predictive World Models, Adaptive Prediction Horizons)</li>
-      </ul>
-      
-      <h4>Usage</h4>
-      <p>Primary environment for testing Predictive World Models (2StepAhead, MASPM) and validating Adaptive Prediction Horizons. Results published in UKCI 2023 and PhD thesis.</p>
-      
-      <p><strong>Technologies:</strong> Python • Gymnasium • Reinforcement Learning • Social Navigation</p>
-      
-      <p><strong>Links:</strong></p>
-      <ul>
-        <li><a href="https://github.com/gnns4hri/SocNavGym" target="_blank">GitHub Repository: gnns4hri/SocNavGym</a></li>
-        <li><a href="{{ '/portfolio' | relative_url }}#predictive-world-models">Used in: Predictive World Models</a></li>
-        <li><a href="{{ '/publications' | relative_url }}">Publication: UKCI 2023</a></li>
-      </ul>
+      <a href="{{ '/projects/socnavgym' | relative_url }}" class="see-more-btn">
+        <span class="btn-text">View Full Details</span>
+        <span class="btn-icon">→</span>
+      </a>
     </div>
   </div>
 
@@ -164,48 +121,10 @@ These are the environments I've created or contributed to for evaluating reinfor
   <div class="project-preview">
     <p>Proposed reinforcement learning models enabling autonomous systems to navigate safely in social environments. Introduced two complementary approaches: <strong>2StepAhead</strong> (multi-step ahead prediction system) and <strong>MASPM</strong> (Multi-Action State Predictive Model for comprehensive action evaluation). Published at UKCI 2023 with superior navigation performance compared to baseline methods.</p>
     
-    <button class="see-more-btn" onclick="toggleDetails(this)" data-target="predictive-world-details">
-      <span class="btn-text">See More Details</span>
-      <span class="btn-icon">▼</span>
-    </button>
-  </div>
-  
-  <div id="predictive-world-details" class="project-details-collapsed">
-    <h4>Model Overview</h4>
-    <p>The models enable autonomous systems to navigate safely in social environments through:</p>
-    <ul>
-      <li><strong>2StepAhead:</strong> Multi-step ahead prediction system</li>
-      <li><strong>MASPM:</strong> Multi-Action State Predictive Model for comprehensive action evaluation</li>
-      <li><strong>Hybrid Model:</strong> Combining both approaches for optimal performance</li>
-    </ul>
-    
-    <h4>Key Innovations</h4>
-    <ul>
-      <li>Multi-step ahead predictions for better navigation planning</li>
-      <li>Comprehensive action evaluation framework</li>
-      <li>Dynamic social environment handling</li>
-      <li>Superior performance compared to baseline methods</li>
-    </ul>
-    
-    <h4>Validation Environments</h4>
-    <p>Tested and validated in: <strong>SocNavGym</strong>, <strong>LunarLander-v2</strong></p>
-    
-    <h4>Results & Impact</h4>
-    <ul>
-      <li>Published at UKCI 2023 - UK Conference on Intelligent Systems</li>
-      <li>Demonstrated superior navigation performance</li>
-      <li>Higher success rates than baseline methods</li>
-      <li>Foundation for PhD thesis research</li>
-    </ul>
-    
-    <p><strong>Technologies:</strong> Python • PyTorch • Reinforcement Learning • Social Navigation</p>
-    
-    <p><strong>Links:</strong></p>
-    <ul>
-      <li><a href="{{ '/_UKCI_2023__Predictive_World_Models_for_Social_Navigation.pdf' | relative_url }}">Paper PDF</a></li>
-      <li><a href="https://github.com/gnns4hri/SocNavGym" target="_blank">Environment: SocNavGym</a></li>
-      <li><a href="{{ '/publications' | relative_url }}">Publication Details</a></li>
-    </ul>
+    <a href="{{ '/projects/predictive-world-models' | relative_url }}" class="see-more-btn">
+      <span class="btn-text">View Full Details</span>
+      <span class="btn-icon">→</span>
+    </a>
   </div>
 </div>
 
@@ -222,41 +141,10 @@ These are the environments I've created or contributed to for evaluating reinfor
   <div class="project-preview">
     <p>Novel neural network architecture using cosine gating mechanisms for improved sequential learning. The CGLSTM dynamically weighs inputs versus hidden states based on cosine similarities, outperforming LSTM, GRU, and Transformer models. Published at IEEE PRML 2024 with superior benchmark results and used as a component in the Predictive World Models framework.</p>
     
-    <button class="see-more-btn" onclick="toggleDetails(this)" data-target="cglstm-details">
-      <span class="btn-text">See More Details</span>
-      <span class="btn-icon">▼</span>
-    </button>
-  </div>
-  
-  <div id="cglstm-details" class="project-details-collapsed">
-    <h4>Key Innovations</h4>
-    <ul>
-      <li>Cosine gating mechanism replacing traditional sigmoid gates</li>
-      <li>Dynamic input weighting based on similarity measures</li>
-      <li>Improved long-term dependency handling</li>
-      <li>Efficient parameter usage</li>
-    </ul>
-    
-    <h4>Validation Environments</h4>
-    <p>Tested in: <strong>FallingBallEnv</strong> (custom), <strong>SocNavGym</strong>, standard sequential learning benchmarks</p>
-    
-    <h4>Results & Impact</h4>
-    <ul>
-      <li>Published at IEEE PRML 2024 with superior benchmark results</li>
-      <li>Outperformed LSTM, GRU, and Transformer in FallingBallEnv and SocNavGym</li>
-      <li>Achieved better sequential learning performance</li>
-      <li>Used as component in Predictive World Models framework</li>
-    </ul>
-    
-    <p><strong>Technologies:</strong> Python • PyTorch • TensorFlow • Neural Networks • Sequential Learning</p>
-    
-    <p><strong>Links:</strong></p>
-    <ul>
-      <li><a href="{{ '/Cosine_Gated_LSTM_main.pdf' | relative_url }}">Paper PDF</a></li>
-      <li><a href="https://github.com/goodluckoguzie/CosineGatedLSTM" target="_blank">GitHub Repository: CosineGatedLSTM</a></li>
-      <li><a href="https://github.com/goodluckoguzie/falling_ball_env" target="_blank">Environment: FallingBallEnv</a></li>
-      <li><a href="{{ '/publications' | relative_url }}">Publication Details</a></li>
-    </ul>
+    <a href="{{ '/projects/cosine-gated-lstm' | relative_url }}" class="see-more-btn">
+      <span class="btn-text">View Full Details</span>
+      <span class="btn-icon">→</span>
+    </a>
   </div>
 </div>
 
@@ -273,48 +161,10 @@ These are the environments I've created or contributed to for evaluating reinfor
   <div class="project-preview">
     <p>Developing entropy-driven adaptive prediction horizon systems for reinforcement learning applications. This research enables dynamic adjustment of prediction horizons based on environmental complexity, improving performance in autonomous systems and robotics. Currently in active development with framework completion and initial experimental validation in progress.</p>
     
-    <button class="see-more-btn" onclick="toggleDetails(this)" data-target="adaptive-horizons-details">
-      <span class="btn-text">See More Details</span>
-      <span class="btn-icon">▼</span>
-    </button>
-  </div>
-  
-  <div id="adaptive-horizons-details" class="project-details-collapsed">
-    <h4>Key Innovations</h4>
-    <ul>
-      <li>Entropy-based environmental complexity measurement</li>
-      <li>Dynamic prediction horizon adjustment</li>
-      <li>Adaptive mechanism balancing accuracy and efficiency</li>
-      <li>Integration with existing Predictive World Models</li>
-    </ul>
-    
-    <h4>Validation Environments</h4>
-    <p>Testing in: <strong>SocNavGym</strong>, <strong>LiteSocNavGym</strong>, <strong>LunarLander-v2</strong></p>
-    
-    <h4>Current Progress</h4>
-    <ul>
-      <li>Framework development for adaptive prediction horizons</li>
-      <li>Entropy measurement and environmental complexity analysis</li>
-      <li>Initial experiments in simulation environments</li>
-      <li>Performance evaluation against fixed-horizon baselines</li>
-    </ul>
-    
-    <h4>Collaboration Opportunities</h4>
-    <p>👥 <strong>Seeking Collaborators in:</strong></p>
-    <ul>
-      <li>RL algorithm development and optimization</li>
-      <li>Performance evaluation and benchmarking</li>
-      <li>Real-world deployment and validation</li>
-      <li>Multi-agent systems integration</li>
-    </ul>
-    
-    <p><strong>Technologies:</strong> Python • PyTorch • Gymnasium • Reinforcement Learning</p>
-    
-    <p><strong>Links:</strong></p>
-    <ul>
-      <li><a href="{{ '/collaborations' | relative_url }}">Interested in Collaborating?</a></li>
-      <li><a href="https://github.com/gnns4hri/SocNavGym" target="_blank">Environment: SocNavGym</a></li>
-    </ul>
+    <a href="{{ '/projects/adaptive-prediction-horizons' | relative_url }}" class="see-more-btn">
+      <span class="btn-text">View Full Details</span>
+      <span class="btn-icon">→</span>
+    </a>
   </div>
 </div>
 
@@ -331,30 +181,10 @@ These are the environments I've created or contributed to for evaluating reinfor
   <div class="project-preview">
     <p>Developing action recognition systems using Wi-Fi Channel State Information (CSI) with ESP32 microcontrollers. This research explores contactless human activity recognition through wireless signals, combining hardware design with machine learning. Exploring novel approaches to human activity recognition without cameras or wearables.</p>
     
-    <button class="see-more-btn" onclick="toggleDetails(this)" data-target="action-recognition-details">
-      <span class="btn-text">See More Details</span>
-      <span class="btn-icon">▼</span>
-    </button>
-  </div>
-  
-  <div id="action-recognition-details" class="project-details-collapsed">
-    <h4>Key Features</h4>
-    <ul>
-      <li>ESP32-based Wi-Fi CSI data collection</li>
-      <li>Contactless action recognition</li>
-      <li>Hardware-software integration</li>
-      <li>Machine learning for signal processing</li>
-    </ul>
-    
-    <h4>Research Focus</h4>
-    <p>Exploring novel approaches to human activity recognition without cameras or wearables, using wireless signal analysis and embedded systems.</p>
-    
-    <p><strong>Technologies:</strong> ESP32 • Wi-Fi CSI • Python • Machine Learning • Embedded Systems</p>
-    
-    <p><strong>Links:</strong></p>
-    <ul>
-      <li><a href="https://github.com/goodluckoguzie/ActionRecognitionUsingWiFi" target="_blank">GitHub Repository: ActionRecognitionUsingWiFi</a></li>
-    </ul>
+    <a href="{{ '/projects/action-recognition' | relative_url }}" class="see-more-btn">
+      <span class="btn-text">View Full Details</span>
+      <span class="btn-icon">→</span>
+    </a>
   </div>
 </div>
 
@@ -370,17 +200,10 @@ These are the environments I've created or contributed to for evaluating reinfor
   <div class="project-preview">
     <p>Data analysis project exploring Disneyland visitor data, including demographics, ride popularity, and operational insights using data science techniques.</p>
     
-    <button class="see-more-btn" onclick="toggleDetails(this)" data-target="disneyland-details">
-      <span class="btn-text">See More Details</span>
-      <span class="btn-icon">▼</span>
-    </button>
-  </div>
-  
-  <div id="disneyland-details" class="project-details-collapsed">
-    <p><strong>Links:</strong></p>
-    <ul>
-      <li><a href="https://github.com/goodluckoguzie/disneyland_Project" target="_blank">GitHub Repository: disneyland_Project</a></li>
-    </ul>
+    <a href="{{ '/projects/disneyland' | relative_url }}" class="see-more-btn">
+      <span class="btn-text">View Full Details</span>
+      <span class="btn-icon">→</span>
+    </a>
   </div>
 </div>
 
@@ -392,17 +215,10 @@ These are the environments I've created or contributed to for evaluating reinfor
   <div class="project-preview">
     <p>Exploration and implementation of World Models concept in reinforcement learning, where an agent learns a compressed, predictive model of its environment for efficient policy learning.</p>
     
-    <button class="see-more-btn" onclick="toggleDetails(this)" data-target="worldmodels-details">
-      <span class="btn-text">See More Details</span>
-      <span class="btn-icon">▼</span>
-    </button>
-  </div>
-  
-  <div id="worldmodels-details" class="project-details-collapsed">
-    <p><strong>Links:</strong></p>
-    <ul>
-      <li><a href="https://github.com/goodluckoguzie/WorldModels" target="_blank">GitHub Repository: WorldModels</a></li>
-    </ul>
+    <a href="{{ '/projects/worldmodels' | relative_url }}" class="see-more-btn">
+      <span class="btn-text">View Full Details</span>
+      <span class="btn-icon">→</span>
+    </a>
   </div>
 </div>
 
@@ -418,35 +234,10 @@ These are the environments I've created or contributed to for evaluating reinfor
   <div class="project-preview">
     <p>Completed PhD thesis integrating all three proposed models into a comprehensive framework for social robot navigation: <strong>Predictive World Models</strong> (2StepAhead, MASPM), <strong>Cosine-Gated LSTM</strong> architecture, and <strong>Adaptive Prediction Horizons</strong> (entropy-driven). Successfully defended with 2 conference papers published (UKCI 2023, IEEE PRML 2024) and superior performance in all tested environments.</p>
     
-    <button class="see-more-btn" onclick="toggleDetails(this)" data-target="phd-thesis-details">
-      <span class="btn-text">See More Details</span>
-      <span class="btn-icon">▼</span>
-    </button>
-  </div>
-  
-  <div id="phd-thesis-details" class="project-details-collapsed">
-    <h4>Environments Used</h4>
-    <ul>
-      <li>SocNavGym (team contribution)</li>
-      <li>FallingBallEnv (created)</li>
-      <li>LiteSocNavGym (created)</li>
-      <li>LunarLander-v2 (benchmark)</li>
-    </ul>
-    
-    <h4>Results</h4>
-    <ul>
-      <li>Successfully defended PhD thesis</li>
-      <li>2 conference papers published (UKCI 2023, IEEE PRML 2024)</li>
-      <li>Superior performance in all tested environments</li>
-      <li>Comprehensive research framework established</li>
-    </ul>
-    
-    <p><strong>Links:</strong></p>
-    <ul>
-      <li><a href="{{ '/Goodluck_s_thesis.zip' | relative_url }}">Thesis PDF (ZIP)</a></li>
-      <li><a href="{{ '/OGUZIE DIRICHUKWU GOODLUCK  190212683 2024.pdf' | relative_url }}">Thesis Document (PDF)</a></li>
-      <li><a href="https://goodluckoguzie.github.io/Viva/" target="_blank">Viva Presentation</a></li>
-    </ul>
+    <a href="{{ '/projects/phd-thesis' | relative_url }}" class="see-more-btn">
+      <span class="btn-text">View Full Details</span>
+      <span class="btn-icon">→</span>
+    </a>
   </div>
 </div>
 
