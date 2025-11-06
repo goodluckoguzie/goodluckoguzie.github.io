@@ -155,7 +155,7 @@ FallingBallEnv serves as a controlled testing ground to explore fundamental chal
 
 Three distinct datasets were created to study the impact of data distribution on model performance:
 
-- **Full Dataset:** 20,000 episodes (unbalanced - bounce events underrepresented)
+- **Full Dataset:** 20,000 episodes (unbalanced, with bounce events underrepresented)
 - **Balanced Dataset:** 14,700 episodes with equal representation of bounce and free-fall windows
 - **Unbalanced Subset:** 14,700 episodes randomly sampled without balancing (control group)
 
@@ -316,7 +316,7 @@ The balanced dataset ensured models were exposed to bounce events more frequentl
 
 ### Key Features
 - **Simplified Physics:** Gravity simulation with customizable parameters
-- **Limited Observation Space:** Only ball's (x,y) coordinates and velocity - floor position is hidden
+- **Limited Observation Space:** Only ball's (x,y) coordinates and velocity. The floor position is hidden.
 - **Bouncing Mechanism:** Ball bounces off floor with reduced velocity (energy loss)
 - **Render Support:** Visualize ball motion for analysis
 - **OpenAI Gym Compatible:** Standard interface for RL algorithm integration

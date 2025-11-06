@@ -293,7 +293,7 @@ for step in range(1000):
     # Step environment
     obs, reward, terminated, truncated, info = env.step(action)
     
-    # Render (optional - faster than SocNavGym)
+    # Render (optional, faster than SocNavGym)
     env.render()
     
     if terminated or truncated:
