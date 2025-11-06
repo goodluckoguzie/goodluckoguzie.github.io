@@ -100,13 +100,27 @@ These are the environments I've created or contributed to for evaluating reinfor
     <h4>Research Impact</h4>
     <p>The FallingBallEnv provided crucial insights into sequential learning that informed the development and validation of CGLSTM. Results demonstrated that CGLSTM's cosine similarity gating mechanism significantly improves prediction accuracy in temporal tasks, establishing a foundation for applying the model to more complex social navigation scenarios.</p>
     
+    <h4>Visual Results</h4>
+    <div class="project-media">
+      <div class="project-image-placeholder">
+        <img src="{{ '/assets/images/FallingBall.png' | relative_url }}" alt="FallingBall Environment Visualization" style="max-width: 100%; height: auto; border-radius: 6px; margin-bottom: 1rem;">
+        <p><strong>Environment Visualization:</strong> Ball falling and bouncing in FallingBallEnv environment</p>
+      </div>
+      <div class="project-image-placeholder">
+        <img src="{{ '/assets/images/FallingBallwithprediction.png' | relative_url }}" alt="FallingBall Prediction Results" style="max-width: 100%; height: auto; border-radius: 6px; margin-bottom: 1rem;">
+        <p><strong>Prediction Results:</strong> Visual comparison showing predicted vs actual ball trajectories demonstrating CGLSTM's accuracy</p>
+      </div>
+    </div>
+    
     <p><strong>Technologies:</strong> Python • OpenAI Gym • NumPy • OpenCV • Machine Learning</p>
     
     <p><strong>Links:</strong></p>
     <ul>
       <li><a href="https://github.com/goodluckoguzie/falling_ball_env" target="_blank">GitHub Repository: falling_ball_env</a></li>
+      <li><a href="https://github.com/goodluckoguzie/falling_ball_env/tree/main/Images" target="_blank">View Images on GitHub</a></li>
       <li><a href="{{ '/portfolio' | relative_url }}#cosine-gated-lstm">Used in: Cosine-Gated LSTM Research</a></li>
       <li><a href="{{ '/publications' | relative_url }}">Publication: IEEE PRML 2024</a></li>
+      <li><a href="https://goodluckoguzie.github.io/Viva/" target="_blank">Viva Presentation (FallingBallEnv slides)</a></li>
     </ul>
   </div>
 

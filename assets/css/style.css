@@ -1500,12 +1500,28 @@ code {
     text-align: center;
 }
 
+.project-image-placeholder img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 6px;
+    margin-bottom: 1rem;
+    box-shadow: var(--shadow);
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
 .project-image-placeholder p,
 .project-video-placeholder p {
     margin: 0;
     color: var(--text-light);
     font-size: 0.9rem;
     line-height: 1.6;
+}
+
+.project-image-placeholder p strong {
+    color: var(--text);
+    font-weight: 600;
 }
 
 .project-image-placeholder em,
