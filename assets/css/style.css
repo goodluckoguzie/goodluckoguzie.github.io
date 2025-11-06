@@ -1894,7 +1894,8 @@ code {
         max-width: 100%;
     }
     
-    .carousel-video {
+    .carousel-video,
+    .carousel-image {
         max-height: 200px;
     }
     
