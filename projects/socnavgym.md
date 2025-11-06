@@ -42,7 +42,7 @@ title: SocNavGym - Research Project
     <div>
       <h2 style="margin-top: 0; color: var(--text); font-size: 2rem;">Comprehensive Social Navigation</h2>
       <p style="font-size: 1.125rem; line-height: 1.8; color: var(--text); margin-bottom: 1.5rem;">
-        SocNavGym is a comprehensive social navigation gymnasium environment for evaluating social robot navigation algorithms. As part of the development team, I focused on reinforcement learning aspects and integration with predictive models. This was the primary environment for testing Predictive World Models and validating Adaptive Prediction Horizons, with results published in UKCI 2023 and my PhD thesis.
+        SocNavGym is a comprehensive social navigation gymnasium environment for evaluating social robot navigation algorithms with multiple entity types including robot agents, human pedestrians, and obstacles (see Technical Specifications section). As part of the development team, I focused on reinforcement learning aspects and integration with predictive models (see My Contribution section). This was the primary environment for testing Predictive World Models and validating Adaptive Prediction Horizons (see Research Impact section), with results published in UKCI 2023 and my PhD thesis.
       </p>
       
       <div class="quick-stats" style="display: grid; grid-template-columns: repeat(3, 1fr); gap: 1rem; margin: 1.5rem 0;">
@@ -69,7 +69,7 @@ title: SocNavGym - Research Project
         <source src="{{ '/video/SocNavGym.mp4' | relative_url }}" type="video/mp4">
         Your browser does not support the video tag.
       </video>
-      <p style="margin-top: 0.75rem; font-size: 0.875rem; color: var(--text-light); font-style: italic;">Watch SocNavGym in action: comprehensive social navigation environment with dynamic obstacles</p>
+      <p style="margin-top: 0.75rem; font-size: 0.875rem; color: var(--text-light); font-style: italic;">Watch SocNavGym in action: multiple entities interacting in social navigation scenarios (see Technical Specifications section)</p>
     </div>
   </div>
 </div>
@@ -82,11 +82,11 @@ title: SocNavGym - Research Project
 
 Social robot navigation requires algorithms that can handle complex interactions with humans and dynamic environments. Traditional navigation environments lacked the social dynamics necessary to evaluate algorithms designed for real-world social scenarios.
 
-SocNavGym was developed to provide a comprehensive testing ground for social navigation algorithms, enabling researchers to:
+SocNavGym was developed to provide a comprehensive testing ground for social navigation algorithms with multiple entity types (see Technical Specifications section), enabling researchers to:
 - **Evaluate Social Navigation Algorithms** - Test algorithms in realistic social scenarios
 - **Benchmark Performance** - Compare different approaches systematically
-- **Validate Predictive Models** - Test predictive world models in complex environments
-- **Study Social Dynamics** - Understand how robots interact with humans
+- **Validate Predictive Models** - Test predictive world models in complex environments (see Research Impact section)
+- **Study Social Dynamics** - Understand how robots interact with humans and other entities
 
 ### Research Design
 
@@ -99,17 +99,17 @@ As part of the development team, I focused on reinforcement learning aspects and
 ### What Makes This Hard?
 
 Social navigation presents unique challenges:
-- **Dynamic Environments** - Obstacles and humans move unpredictably
+- **Dynamic Environments** - Human pedestrians and obstacles move unpredictably (see Technical Specifications section for entity details)
 - **Social Rules** - Algorithms must respect social norms and conventions
-- **Complex Interactions** - Multiple agents interact simultaneously
-- **Real-time Performance** - Algorithms must respond quickly to changes
+- **Complex Interactions** - Multiple entities (robot, humans, obstacles) interact simultaneously
+- **Real-time Performance** - Algorithms must respond quickly to changes in entity positions and behaviors
 
 ### The Solution
 
 SocNavGym addresses these challenges by providing:
-- **Comprehensive Social Scenarios** - Realistic social navigation situations
-- **Dynamic Obstacles** - Moving agents and obstacles
-- **Social Rules Engine** - Built-in social navigation conventions
+- **Comprehensive Social Scenarios** - Realistic social navigation situations with multiple entity types (see Technical Specifications section)
+- **Dynamic Obstacles** - Moving agents and obstacles that create realistic navigation challenges
+- **Social Rules Engine** - Built-in social navigation conventions for human-robot interactions
 - **Flexible Evaluation** - Customizable metrics and scenarios
 
 ---
@@ -121,14 +121,14 @@ SocNavGym addresses these challenges by providing:
 SocNavGym provides a comprehensive social navigation environment with:
 
 1. **Full Social Dynamics**
-   - Realistic human-robot interactions
+   - Realistic human-robot interactions with multiple entity types (see Technical Specifications section)
    - Social navigation rules and conventions
-   - Multi-agent scenarios
+   - Multi-agent scenarios with robot, humans, and obstacles
 
 2. **Comprehensive Features**
-   - Detailed visual rendering
-   - Full physics simulation
-   - Complete state representation
+   - Detailed visual rendering of all entities
+   - Full physics simulation for realistic movement
+   - Complete state representation including all entity information
 
 3. **Research Integration**
    - Compatible with standard RL frameworks
@@ -136,7 +136,7 @@ SocNavGym provides a comprehensive social navigation environment with:
    - Enables comprehensive benchmarking
 
 4. **Extensibility**
-   - Customizable scenarios
+   - Customizable scenarios and entity configurations
    - Flexible evaluation metrics
    - Easy integration with new algorithms
 
@@ -146,14 +146,14 @@ SocNavGym provides a comprehensive social navigation environment with:
 
 ### Research Outcomes
 
-SocNavGym has been used successfully for testing Predictive World Models (2StepAhead, MASPM) and validating Adaptive Prediction Horizons, with results published in UKCI 2023 and used in my PhD thesis (see Research Impact section for details).
+SocNavGym has been used successfully for testing Predictive World Models (2StepAhead, MASPM) and validating Adaptive Prediction Horizons in complex social navigation scenarios with multiple entities (see Research Impact section for details). Results were published in UKCI 2023 and used in my PhD thesis.
 
 ### Key Achievements
 
-- **Primary Testing Environment** - Used for all predictive model evaluations
+- **Primary Testing Environment** - Used for all predictive model evaluations (see Research Impact section)
 - **Published Results** - UKCI 2023 publication
 - **PhD Thesis Validation** - Core environment for thesis research
-- **Comprehensive Evaluation** - Full-featured testing platform (see Key Innovation section)
+- **Comprehensive Evaluation** - Full-featured testing platform with multiple entity types (see Technical Specifications section)
 
 ---
 
@@ -166,7 +166,7 @@ SocNavGym has been used successfully for testing Predictive World Models (2StepA
       Your browser does not support the video tag.
     </video>
     <p><strong>Demo Video: SocNavGym Environment</strong></p>
-    <p>Watch the environment in action: comprehensive social navigation scenarios with dynamic obstacles and multi-agent interactions (see Key Innovation section).</p>
+    <p>Watch the environment in action: multiple entities (robot, humans, obstacles) interacting in social navigation scenarios (see Technical Specifications section for entity details).</p>
   </div>
 </div>
 
@@ -207,19 +207,54 @@ As part of the development team, I focused on:
 - **Purpose:** Social navigation simulation
 - **Features:** Comprehensive social dynamics
 
+### Environment Entities
+
+SocNavGym simulates a social navigation environment with the following entities:
+
+1. **Robot Agent**
+   - The controlled agent navigating the environment
+   - Receives observations and executes actions
+   - Must navigate while respecting social norms
+
+2. **Human Pedestrians**
+   - Dynamic entities that move through the environment
+   - Follow social navigation patterns and conventions
+   - Interact with the robot and other pedestrians
+   - Represent realistic human movement behaviors
+
+3. **Static Obstacles**
+   - Fixed obstacles in the environment (walls, barriers, furniture)
+   - Define the physical layout and constraints
+   - Create navigation challenges and path planning requirements
+
+4. **Dynamic Obstacles**
+   - Moving obstacles that change position over time
+   - May include other robots or moving objects
+   - Add complexity to navigation and prediction tasks
+
+5. **Goals/Destinations**
+   - Target locations the robot must reach
+   - Define navigation objectives and success criteria
+   - May be static or dynamic depending on the scenario
+
 ### Observation Space
 - **Type:** Social navigation state information
-- **Format:** Comprehensive state representation
-- **Features:** Full environment state
+- **Format:** Comprehensive state representation including:
+  - Robot position and velocity
+  - Human pedestrian positions and velocities
+  - Obstacle positions (static and dynamic)
+  - Goal/destination information
+  - Social context and interaction states
+- **Features:** Full environment state representation
 
 ### Action Space
 - **Type:** Navigation actions
 - **Format:** Continuous and discrete actions
-- **Features:** Full action space support
+- **Features:** Full action space support for navigation control
 
 ### Key Features
 - **Comprehensive Social Scenarios** - Realistic social navigation situations (see Key Innovation section)
-- **Dynamic Obstacles** - Moving agents and obstacles
+- **Dynamic Obstacles** - Moving agents and obstacles (see Environment Entities section)
 - **Social Rules Engine** - Built-in social navigation conventions
 - **Full Visual Rendering** - Detailed graphics and visualization
 - **RL Framework Compatible** - Works with standard frameworks
@@ -351,7 +386,7 @@ SocNavGym was important for evaluating and validating Predictive World Models an
 
 ### Research Context
 
-SocNavGym was used as the primary environment for testing Predictive World Models (2StepAhead, MASPM) and validating Adaptive Prediction Horizons. The environment enabled comprehensive evaluation of sequential learning approaches in complex social navigation scenarios.
+SocNavGym was used as the primary environment for testing Predictive World Models (2StepAhead, MASPM) and validating Adaptive Prediction Horizons (see Research Impact section). The environment enabled comprehensive evaluation of sequential learning approaches in complex social navigation scenarios with multiple entities including robot agents, human pedestrians, and dynamic obstacles.
 
 ### Evaluation Framework
 
@@ -364,7 +399,7 @@ As part of the development team, I developed the evaluation framework for:
 ### Research Integration
 
 SocNavGym was integrated with:
-- **Predictive World Models** - 2StepAhead and MASPM models
+- **Predictive World Models** - 2StepAhead and MASPM models (see Research Impact section)
 - **Adaptive Prediction Horizons** - Dynamic prediction horizon systems
 - **Standard RL Frameworks** - Gymnasium-compatible interfaces
 - **Evaluation Metrics** - Customizable performance metrics
@@ -477,7 +512,7 @@ SocNavGym was integrated with:
 ## <a id="faq"></a>15. FAQ
 
 ### Q: What is SocNavGym?
-**A:** SocNavGym is a comprehensive social navigation gymnasium environment for evaluating social robot navigation algorithms. It provides full-featured social navigation scenarios with dynamic obstacles and multi-agent interactions.
+**A:** SocNavGym is a comprehensive social navigation gymnasium environment for evaluating social robot navigation algorithms. It provides full-featured social navigation scenarios with multiple entity types including robot agents, human pedestrians, static obstacles, and dynamic obstacles (see Technical Specifications section for details).
 
 ### Q: How was SocNavGym used in your research?
 **A:** SocNavGym was the primary environment for testing Predictive World Models (2StepAhead, MASPM) and validating Adaptive Prediction Horizons (see Research Impact section). Results were published in UKCI 2023 and used in my PhD thesis.
