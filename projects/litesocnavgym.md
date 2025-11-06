@@ -6,7 +6,7 @@ title: LiteSocNavGym - Research Project
 # 🤖 LiteSocNavGym
 
 <div class="project-header">
-  <div class="contribution-badge created">CREATED</div>
+  <div class="contribution-badge created">DEVELOPED</div>
   <div class="project-status-badge completed">COMPLETED</div>
   <p><strong>2024</strong> • Lightweight Social Navigation Environment • Optimized for Rapid Iteration</p>
 </div>
@@ -86,7 +86,7 @@ While SocNavGym provides a comprehensive social navigation environment, it can b
 
 ### The Solution
 
-LiteSocNavGym was created to address these needs by:
+LiteSocNavGym was developed to address these needs by:
 - **Simplifying complex features** - Removing non-essential components
 - **Optimizing performance** - Faster simulation while preserving core dynamics
 - **Maintaining compatibility** - Works with same RL frameworks

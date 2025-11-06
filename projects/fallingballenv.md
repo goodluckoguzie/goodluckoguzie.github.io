@@ -6,7 +6,7 @@ title: FallingBallEnv - Research Project
 # ⚽ FallingBallEnv
 
 <div class="project-header">
-  <div class="contribution-badge created">CREATED</div>
+  <div class="contribution-badge created">DEVELOPED</div>
   <div class="project-status-badge completed">COMPLETED</div>
   <div class="contribution-badge" style="background: #6c757d; color: white; display: inline-block; margin-left: 0.5rem;">USED IN: IEEE PRML 2024</div>
   <p><strong>2023</strong> • Custom OpenAI Gym Environment • Published in PhD Thesis Chapter 6</p>
@@ -141,7 +141,7 @@ Unlike most Gym environments that reveal all state information, FallingBallEnv d
 
 ## <a id="motivation"></a>5. Research Motivation
 
-Created to address limitations observed when transitioning from discrete to continuous action spaces in SocNavGym. As action choices increased from 4 to 16, prediction errors became more pronounced, highlighting the need for more robust sequential learning models.
+Developed to address limitations observed when transitioning from discrete to continuous action spaces in SocNavGym. As action choices increased from 4 to 16, prediction errors became more pronounced, highlighting the need for more robust sequential learning models.
 
 FallingBallEnv serves as a controlled testing ground to explore fundamental challenges in temporal prediction before applying methods to complex environments like SocNavGym.
 

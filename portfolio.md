@@ -57,7 +57,7 @@ These are the environments I've created or contributed to for evaluating reinfor
         <div class="carousel-card">
           <div class="card-header">
             <div class="card-badges">
-              <div class="contribution-badge created">CREATED</div>
+              <div class="contribution-badge created">DEVELOPED</div>
               <div class="project-status-badge completed">COMPLETED</div>
               <div class="contribution-badge" style="background: #6c757d; color: white;">USED IN: IEEE PRML 2024</div>
             </div>
@@ -113,7 +113,7 @@ These are the environments I've created or contributed to for evaluating reinfor
         <div class="carousel-card">
           <div class="card-header">
             <div class="card-badges">
-              <div class="contribution-badge created">CREATED</div>
+              <div class="contribution-badge created">DEVELOPED</div>
               <div class="project-status-badge completed">COMPLETED</div>
             </div>
             <h3>🤖 LiteSocNavGym</h3>
