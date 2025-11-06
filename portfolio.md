@@ -105,9 +105,10 @@ These are the environments I've created or contributed to for evaluating reinfor
             </div>
             
             <div class="card-video">
-              <div class="video-placeholder">
-                <p>Video coming soon</p>
-              </div>
+              <video controls class="carousel-video">
+                <source src="https://goodluckoguzie.github.io/Viva/img/LITESOCNAVGYM.webm" type="video/webm">
+                Your browser does not support the video tag.
+              </video>
               <p class="video-caption">LiteSocNavGym environment demonstration</p>
             </div>
           </div>
@@ -135,9 +136,10 @@ These are the environments I've created or contributed to for evaluating reinfor
             </div>
             
             <div class="card-video">
-              <div class="video-placeholder">
-                <p>Video coming soon</p>
-              </div>
+              <video controls class="carousel-video">
+                <source src="https://goodluckoguzie.github.io/Viva/img/socialrobot.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+              </video>
               <p class="video-caption">SocNavGym environment demonstration with dynamic obstacles and social navigation scenarios</p>
             </div>
           </div>
