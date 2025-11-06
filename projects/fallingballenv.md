@@ -40,9 +40,9 @@ title: FallingBallEnv - Research Project
 <div class="hero-section" style="background: linear-gradient(135deg, var(--bg-alt) 0%, var(--bg-card) 100%); padding: 2rem; border-radius: 12px; margin: 2rem 0; border: 2px solid var(--border);">
   <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 2rem; align-items: center;">
     <div>
-      <h2 style="margin-top: 0; color: var(--text); font-size: 2rem;">A Deceptively Simple Challenge</h2>
+      <h2 style="margin-top: 0; color: var(--text); font-size: 2rem;">A Simple Challenge</h2>
       <p style="font-size: 1.125rem; line-height: 1.8; color: var(--text); margin-bottom: 1.5rem;">
-        FallingBallEnv is a custom OpenAI Gym environment that simulates a ball falling under gravity and bouncing off the floor. While appearing simple, it introduces a subtle challenge: <strong>the floor position is NOT included in the observation space</strong>, requiring models to infer this hidden boundary condition to predict when and how the ball will bounce.
+        I developed this simple environment where a ball falls and bounces, obeying the free fall of gravity. The floor position is not included in the observation space. Can the model learn to predict the next state of this environment, for example, the bouncing of the ball when it hits the ground?
       </p>
       
       <div class="quick-stats" style="display: grid; grid-template-columns: repeat(3, 1fr); gap: 1rem; margin: 1.5rem 0;">
