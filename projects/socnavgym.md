@@ -19,17 +19,16 @@ title: SocNavGym - Research Project
     <li><a href="#challenge">3. The Challenge</a></li>
     <li><a href="#innovation">4. Key Innovation</a></li>
     <li><a href="#results">5. Results & Performance</a></li>
-    <li><a href="#visual-demo">6. Visual Demo</a></li>
-    <li><a href="#contribution">7. My Contribution</a></li>
-    <li><a href="#specs">8. Technical Specifications</a></li>
-    <li><a href="#usage">9. Installation & Usage</a></li>
-    <li><a href="#impact">10. Research Impact</a></li>
-    <li><a href="#setup">11. Experimental Setup</a></li>
-    <li><a href="#comparison">12. Comparison with LiteSocNavGym</a></li>
-    <li><a href="#limitations">13. Limitations & Future Work</a></li>
-    <li><a href="#related">14. Related Work</a></li>
-    <li><a href="#faq">15. FAQ</a></li>
-    <li><a href="#citation">16. Citation & Resources</a></li>
+    <li><a href="#contribution">6. My Contribution</a></li>
+    <li><a href="#specs">7. Technical Specifications</a></li>
+    <li><a href="#usage">8. Installation & Usage</a></li>
+    <li><a href="#impact">9. Research Impact</a></li>
+    <li><a href="#setup">10. Experimental Setup</a></li>
+    <li><a href="#comparison">11. Comparison with LiteSocNavGym</a></li>
+    <li><a href="#limitations">12. Limitations & Future Work</a></li>
+    <li><a href="#related">13. Related Work</a></li>
+    <li><a href="#faq">14. FAQ</a></li>
+    <li><a href="#citation">15. Citation & Resources</a></li>
   </ul>
 </div>
 
@@ -157,22 +156,7 @@ SocNavGym has been used successfully for testing Predictive World Models (2StepA
 
 ---
 
-## <a id="visual-demo"></a>6. Visual Demo
-
-<div class="project-media">
-  <div class="project-video-placeholder" style="grid-column: 1 / -1;">
-    <video autoplay muted loop playsinline style="max-width: 100%; height: auto; border-radius: 6px; margin-bottom: 1rem;">
-      <source src="{{ '/video/SocNavGym.mp4' | relative_url }}" type="video/mp4">
-      Your browser does not support the video tag.
-    </video>
-    <p><strong>Demo Video: SocNavGym Environment</strong></p>
-    <p>Watch the environment in action: multiple entities (robot, humans, obstacles) interacting in social navigation scenarios (see Technical Specifications section for entity details).</p>
-  </div>
-</div>
-
----
-
-## <a id="contribution"></a>7. My Contribution
+## <a id="contribution"></a>6. My Contribution
 
 ### Team Role
 
@@ -200,7 +184,7 @@ As part of the development team, I focused on:
 
 ---
 
-## <a id="specs"></a>8. Technical Specifications
+## <a id="specs"></a>7. Technical Specifications
 
 ### Environment Type
 - **Base:** Gymnasium-compatible environment
@@ -262,7 +246,7 @@ SocNavGym simulates a social navigation environment with the following entities:
 
 ---
 
-## <a id="usage"></a>9. Installation & Usage
+## <a id="usage"></a>8. Installation & Usage
 
 ### Installation
 
@@ -360,7 +344,7 @@ for step in range(1000):
 
 ---
 
-## <a id="impact"></a>10. Research Impact
+## <a id="impact"></a>9. Research Impact
 
 SocNavGym was the primary environment for testing Predictive World Models (2StepAhead, MASPM) and validating Adaptive Prediction Horizons, with results published in UKCI 2023 and used in my PhD thesis. The environment enabled comprehensive evaluation of sequential learning approaches in complex social navigation scenarios, establishing a foundation for applying predictive models to real-world social robot navigation.
 
@@ -382,7 +366,7 @@ SocNavGym was important for evaluating and validating Predictive World Models an
 
 ---
 
-## <a id="setup"></a>11. Experimental Setup
+## <a id="setup"></a>10. Experimental Setup
 
 ### Research Context
 
@@ -406,7 +390,7 @@ SocNavGym was integrated with:
 
 ---
 
-## <a id="comparison"></a>12. Comparison with LiteSocNavGym
+## <a id="comparison"></a>11. Comparison with LiteSocNavGym
 
 ### When to Use Which
 
@@ -465,7 +449,7 @@ SocNavGym was integrated with:
 
 ---
 
-## <a id="limitations"></a>13. Limitations & Future Work
+## <a id="limitations"></a>12. Limitations & Future Work
 
 ### Current Limitations
 
@@ -491,7 +475,7 @@ SocNavGym was integrated with:
 
 ---
 
-## <a id="related"></a>14. Related Work
+## <a id="related"></a>13. Related Work
 
 **Used In:**
 - <a href="{{ '/projects/predictive-world-models' | relative_url }}">Predictive World Models</a> - Primary testing environment for 2StepAhead and MASPM models
@@ -509,7 +493,7 @@ SocNavGym was integrated with:
 
 ---
 
-## <a id="faq"></a>15. FAQ
+## <a id="faq"></a>14. FAQ
 
 ### Q: What is SocNavGym?
 **A:** SocNavGym is a comprehensive social navigation gymnasium environment for evaluating social robot navigation algorithms. It provides full-featured social navigation scenarios with multiple entity types including robot agents, human pedestrians, static obstacles, and dynamic obstacles (see Technical Specifications section for details).
@@ -531,7 +515,7 @@ SocNavGym was integrated with:
 
 ---
 
-## <a id="citation"></a>16. Citation & Resources
+## <a id="citation"></a>15. Citation & Resources
 
 ### Citation
 
