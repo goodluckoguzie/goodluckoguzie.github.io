@@ -67,7 +67,7 @@ These are the environments I've created or contributed to for evaluating reinfor
           
           <div class="card-content">
             <div class="card-text">
-              <p class="project-description">I developed this simple environment where a ball falls and bounces. The floor position is not included in the observation space. Can the model learn to predict the next state of this environment?</p>
+              <p class="project-description">I developed this simple environment where a ball falls and bounces. The floor position is not included in the observation space. Can the model learn to predict the next state of this environment, for example, the bouncing of the ball when it hits the ground?</p>
               
               <div class="project-stats" style="margin: 1rem 0; padding: 0.75rem; background: var(--bg-alt); border-radius: 6px; font-size: 0.875rem;">
                 <div style="display: flex; align-items: center; gap: 0.5rem; margin: 0.5rem 0;">
