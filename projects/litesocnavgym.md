@@ -415,7 +415,7 @@ LiteSocNavGym has been used for:
 **A:** LiteSocNavGym achieves 3-5x faster simulation speeds compared to SocNavGym (see Performance Comparison section), making it ideal for rapid algorithm development and testing.
 
 ### Q: What features were removed or simplified?
-**A:** Visual rendering was streamlined, physics calculations were optimized, and non-essential features were removed. However, essential social navigation dynamics are preserved (see What Was Preserved section).
+**A:** Visual rendering was streamlined, physics calculations were optimized, and non-essential features were removed. However, essential social navigation dynamics are preserved (see What Was Preserved section for details).
 
 ### Q: Can I use the same code for both environments?
 **A:** Yes! LiteSocNavGym maintains API compatibility with SocNavGym, so code written for one can typically run in the other with minimal changes.
