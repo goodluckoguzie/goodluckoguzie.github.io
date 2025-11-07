@@ -84,7 +84,7 @@ LiteSocNavGym was developed as a lite testing environment to enable rapid iterat
 
 ### Research Design
 
-I created LiteSocNavGym by simplifying complex features while preserving core social navigation dynamics. The environment achieves 3-5x faster simulation speeds by optimizing rendering, physics calculations, and state management (<a href="#innovation" style="color: var(--link); text-decoration: underline;">see Key Innovation section</a> for details).
+I created LiteSocNavGym by simplifying complex features while preserving core social navigation dynamics. The environment achieves 3-5x faster simulation speeds by optimizing rendering, physics calculations, and state management (<a href="#innovation" class="internal-link">see Key Innovation section</a> for details).
 
 ---
 
