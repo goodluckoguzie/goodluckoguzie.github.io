@@ -10,7 +10,7 @@ title: Home
     </div>
     <div class="home-hero-text">
       <h1 class="home-hero-title">Dr. Goodluck Oguzie</h1>
-      <p class="home-hero-tagline">Advancing Social Robot Navigation through Reinforcement Learning</p>
+      <p class="home-hero-tagline">Advancing Social Robot Navigation through Reinforcement Learning and Predictive Models</p>
       <p class="home-hero-credentials">Published at IEEE PRML 2024 • UKCI 2023<br>PhD Researcher & Lecturer</p>
       <p class="home-hero-bio">I develop intelligent systems that integrate reinforcement learning, predictive models, and neural network architectures to solve real-world problems in social robotics.</p>
       <div class="home-hero-actions">
