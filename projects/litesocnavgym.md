@@ -63,7 +63,7 @@ title: LiteSocNavGym - Research Project
     </div>
     
     <div class="hero-section-media">
-      <video autoplay muted loop playsinline poster="{{ '/video/LITESOCNAVGYM.webm' | relative_url }}">
+      <video autoplay muted loop playsinline preload="metadata" poster="{{ '/video/LITESOCNAVGYM.webm' | relative_url }}">
         <source src="{{ '/video/LITESOCNAVGYM.webm' | relative_url }}" type="video/webm">
         Your browser does not support the video tag.
       </video>

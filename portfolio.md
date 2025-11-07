@@ -97,7 +97,7 @@ These are the environments I've created or contributed to for evaluating reinfor
                 loop
                 playsinline
                 class="carousel-video"
-                preload="auto"
+                preload="metadata"
                 poster="{{ '/assets/images/FallingBall.png' | relative_url }}"
                 style="width: 100%; height: auto; border-radius: 6px; cursor: pointer;">
                 <source src="{{ '/video/FallingBallEnv.webm' | relative_url }}" type="video/webm">
@@ -156,7 +156,7 @@ These are the environments I've created or contributed to for evaluating reinfor
                 loop
                 playsinline
                 class="carousel-video"
-                preload="auto"
+                preload="metadata"
                 poster="{{ '/video/LITESOCNAVGYM.webm' | relative_url }}"
                 style="width: 100%; height: auto; border-radius: 6px; cursor: pointer;">
                 <source src="{{ '/video/LITESOCNAVGYM.webm' | relative_url }}" type="video/webm">

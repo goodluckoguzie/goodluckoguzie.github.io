@@ -60,7 +60,7 @@ title: Predictive World Models - Research Project
     </div>
 
     <div class="hero-section-media">
-      <img src="{{ '/assets/images/predictive_world_models_training.png' | relative_url }}" alt="Training reward curves for predictive world models" />
+      <img src="{{ '/assets/images/predictive_world_models_training.png' | relative_url }}" alt="Training reward curves for predictive world models" loading="lazy" />
       <p>Training reward progression for baseline Dueling DQN and the three predictive world models (see <a href="#results" class="internal-link">Results & Evaluation section</a>).</p>
     </div>
   </div>
@@ -121,7 +121,7 @@ Each method feeds the resulting latent forecasts into the same Dueling DQN backb
 This method was validated in the thesis instead of testing longer horizons because predicting four or more steps degraded performance while increasing runtime.
 
 <figure style="margin: 2rem 0; text-align: center;">
-  <img src="{{ '/assets/images/2StepAhead.jpg' | relative_url }}" alt="2StepAhead predictive world model architecture" style="width: 100%; max-width: 680px; height: auto; border-radius: 8px; border: 1px solid var(--border);">
+  <img src="{{ '/assets/images/2StepAhead.jpg' | relative_url }}" alt="2StepAhead predictive world model architecture" loading="lazy" style="width: 100%; max-width: 680px; height: auto; border-radius: 8px; border: 1px solid var(--border);">
   <figcaption style="margin-top: 0.5rem; font-size: 0.85rem; color: var(--text-light);">Figure: 2StepAhead pipeline the VAE-LSTM world model forecasts two latent steps for the currently selected action.</figcaption>
 </figure>
 
@@ -134,7 +134,7 @@ This method was validated in the thesis instead of testing longer horizons becau
 MASPM gives the policy a snapshot of “what if” scenarios before it commits to any action.
 
 <figure style="margin: 2rem 0; text-align: center;">
-  <img src="{{ '/assets/images/MASPM.jpg' | relative_url }}" alt="MASPM predictive world model architecture" style="width: 100%; max-width: 760px; height: auto; border-radius: 8px; border: 1px solid var(--border);">
+  <img src="{{ '/assets/images/MASPM.jpg' | relative_url }}" alt="MASPM predictive world model architecture" loading="lazy" style="width: 100%; max-width: 760px; height: auto; border-radius: 8px; border: 1px solid var(--border);">
   <figcaption style="margin-top: 0.5rem; font-size: 0.85rem; color: var(--text-light);">Figure: MASPM pipeline each discrete action branches through an LSTM to provide the Dueling DQN with one-step forecasts for all actions.</figcaption>
 </figure>
 
@@ -147,7 +147,7 @@ MASPM gives the policy a snapshot of “what if” scenarios before it commits t
 This hybrid provides depth (two steps) and breadth (all actions), which explains its superior results in Figure <a href="#results" class="internal-link">Results & Evaluation section</a>.
 
 <figure style="margin: 2rem 0; text-align: center;">
-  <img src="{{ '/assets/images/2StepAhead-MASPM.jpg' | relative_url }}" alt="2StepAhead-MASPM predictive world model architecture" style="width: 100%; max-width: 720px; height: auto; border-radius: 8px; border: 1px solid var(--border);">
+  <img src="{{ '/assets/images/2StepAhead-MASPM.jpg' | relative_url }}" alt="2StepAhead-MASPM predictive world model architecture" loading="lazy" style="width: 100%; max-width: 720px; height: auto; border-radius: 8px; border: 1px solid var(--border);">
   <figcaption style="margin-top: 0.5rem; font-size: 0.85rem; color: var(--text-light);">Figure: 2StepAhead-MASPM pipeline combines MASPM's action branching with two-step rollouts to give the policy the richest horizon.</figcaption>
 </figure>
 
@@ -217,12 +217,12 @@ Quantitatively, the 500-episode evaluation logs recorded:
 </div>
 
 <figure style="margin: 2rem 0; text-align: center;">
-  <img src="{{ '/assets/images/TestingMetrics1.jpg' | relative_url }}" alt="Histogram comparison of metrics across baselines and predictive world models" style="width: 100%; border-radius: 8px; border: 1px solid var(--border);">
+  <img src="{{ '/assets/images/TestingMetrics1.jpg' | relative_url }}" alt="Histogram comparison of metrics across baselines and predictive world models" loading="lazy" style="width: 100%; border-radius: 8px; border: 1px solid var(--border);">
   <figcaption style="margin-top: 0.5rem; font-size: 0.85rem; color: var(--text-light);">Figure: Episode metrics across classical baselines (RVO2, SFM) and the Dueling DQN variants. The purple bars (2StepAhead-MASPM) show lower collision frequency and higher reward than the baselines.</figcaption>
 </figure>
 
 <figure style="margin: 2rem 0; text-align: center;">
-  <img src="{{ '/assets/images/TestingMetrics2.jpg' | relative_url }}" alt="Histogram comparison of MASPM, 2StepAhead-MASPM and 2StepAhead variants" style="width: 100%; border-radius: 8px; border: 1px solid var(--border);">
+  <img src="{{ '/assets/images/TestingMetrics2.jpg' | relative_url }}" alt="Histogram comparison of MASPM, 2StepAhead-MASPM and 2StepAhead variants" loading="lazy" style="width: 100%; border-radius: 8px; border: 1px solid var(--border);">
   <figcaption style="margin-top: 0.5rem; font-size: 0.85rem; color: var(--text-light);">Figure: Focused comparison of the three predictive variants. The hybrid retains the highest success counts while sharing idle-time and compliance distributions with MASPM and 2StepAhead.</figcaption>
 </figure>
 

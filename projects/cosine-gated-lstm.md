@@ -58,7 +58,7 @@ title: Cosine-Gated LSTM - Research Project
     </div>
 
     <div class="hero-section-media">
-      <img src="{{ '/assets/images/CGLSTMArchitecture.jpg' | relative_url }}" alt="Overview of Cosine-Gated LSTM architecture" />
+      <img src="{{ '/assets/images/CGLSTMArchitecture.jpg' | relative_url }}" alt="Overview of Cosine-Gated LSTM architecture" loading="lazy" />
       <p>Architecture overview from my viva slides: vanilla LSTM (left), cosine-gated module (centre), and integrated output path (right).</p>
     </div>
   </div>
@@ -160,7 +160,7 @@ The IEEE PRML 2024 paper reports results across synthetic sequence modelling, vi
 
 <p style="font-size: 0.85rem; color: var(--text-light);">* CGLSTM matches or exceeds recurrent baselines but Transformer remains ahead on IMDB and PTB in the published results. This is noted as a limitation below.</p>
 
-<img src="{{ '/assets/images/cgltsmtestResult.jpg' | relative_url }}" alt="Table of benchmark accuracies for CGLSTM versus LSTM, GRU, RAU, and Transformer" style="width: 100%; max-width: 780px; height: auto; border-radius: 8px; border: 1px solid var(--border); margin: 2rem 0;">
+<img src="{{ '/assets/images/cgltsmtestResult.jpg' | relative_url }}" alt="Table of benchmark accuracies for CGLSTM versus LSTM, GRU, RAU, and Transformer" loading="lazy" style="width: 100%; max-width: 780px; height: auto; border-radius: 8px; border: 1px solid var(--border); margin: 2rem 0;">
 <p style="margin-top: -1.25rem; font-size: 0.85rem; color: var(--text-light); font-style: italic; text-align: center;">Benchmark comparison extracted from my viva deck: accuracy and MAE highlights across MNIST, Fashion-MNIST, IMDB, Penn Treebank, and the adding problem.</p>
 
 ---
@@ -219,7 +219,7 @@ Key takeaways:
 - Visual inspection (Fig. 3 in the paper) shows blue dominance for CGLSTM, indicating tighter alignment with ground-truth trajectories.
 - The model was subsequently integrated into the <a href="{{ '/projects/predictive-world-models' | relative_url }}" class="internal-link">Predictive World Models</a> pipeline to replace the world-model backbone.
 
-<img src="{{ '/assets/images/cgltsmtestResultforsocnav.jpg' | relative_url }}" alt="Visual comparison of predictive trajectories in SocNavGym for CGLSTM and baselines" style="width: 100%; max-width: 760px; height: auto; border-radius: 8px; border: 1px solid var(--border); margin: 2rem 0;">
+<img src="{{ '/assets/images/cgltsmtestResultforsocnav.jpg' | relative_url }}" alt="Visual comparison of predictive trajectories in SocNavGym for CGLSTM and baselines" loading="lazy" style="width: 100%; max-width: 760px; height: auto; border-radius: 8px; border: 1px solid var(--border); margin: 2rem 0;">
 <p style="margin-top: -1.25rem; font-size: 0.85rem; color: var(--text-light); font-style: italic; text-align: center;">SocNavGym qualitative comparison from my viva: CGLSTM predictions (right) retain blue overlays indicating accurate future states, whereas vanilla LSTM and GRU (left) accumulate red error regions.</p>
 
 ---
@@ -274,7 +274,7 @@ cglstm = CosineGatedLSTM(latent_dim=64, hidden_size=128)
 
 Planned improvements include cosine-gated GRUs, multi-task transfer experiments, and deeper analysis of horizon-adaptive strategies for social navigation.
 
-<img src="{{ '/assets/images/limitationforCGLSTM.jpg' | relative_url }}" alt="Summary of CGLSTM limitations from viva presentation" style="width: 100%; max-width: 640px; height: auto; border-radius: 8px; border: 1px solid var(--border); margin: 2rem 0;">
+<img src="{{ '/assets/images/limitationforCGLSTM.jpg' | relative_url }}" alt="Summary of CGLSTM limitations from viva presentation" loading="lazy" style="width: 100%; max-width: 640px; height: auto; border-radius: 8px; border: 1px solid var(--border); margin: 2rem 0;">
 <p style="margin-top: -1.25rem; font-size: 0.85rem; color: var(--text-light); font-style: italic; text-align: center;">Slide excerpt summarising trade-offs: Transformer still leads on PTB perplexity, and training cost increases relative to GRU.</p>
 
 ---
