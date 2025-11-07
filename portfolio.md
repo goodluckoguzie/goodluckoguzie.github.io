@@ -303,8 +303,8 @@ These are the environments I've created or contributed to for evaluating reinfor
             </div>
             
             <div class="card-video">
-              <img src="{{ '/assets/images/CGLSTMArchitecture.jpg' | relative_url }}" alt="Cosine-Gated LSTM architecture and performance demonstration" class="carousel-image" style="width: 100%; height: auto; border-radius: 6px; display: block;">
-              <p class="video-caption">Cosine-Gated LSTM architecture and performance demonstration</p>
+              <img src="{{ '/assets/images/CGLSTMArchitecture.jpg' | relative_url }}" alt="Cosine-Gated LSTM architecture" class="carousel-image" style="width: 100%; height: auto; border-radius: 6px; display: block;">
+              <p class="video-caption">Cosine-Gated LSTM architecture</p>
             </div>
           </div>
         </div>
