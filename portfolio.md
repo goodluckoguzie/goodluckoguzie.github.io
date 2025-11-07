@@ -236,7 +236,7 @@ These are the environments I've created or contributed to for evaluating reinfor
           
           <div class="card-content">
             <div class="card-text">
-              <p class="project-description">I designed three predictive world models for SocNavGym: 2StepAhead extends the latent rollout two steps for the current action, MASPM estimates the next state for every discrete action, and 2StepAhead-MASPM fuses both behaviours. This framework improved success rate, reduced human collisions, and underpinned my UKCI 2023 publication.</p>
+              <p class="project-description">I designed three predictive world models for <a href="{{ '/projects/socnavgym' | relative_url }}" style="color: var(--link); text-decoration: underline;">SocNavGym</a>: 2StepAhead extends the latent rollout two steps for the current action, MASPM estimates the next state for every discrete action, and 2StepAhead-MASPM fuses both behaviours. This framework improved success rate, reduced human collisions, and underpinned my <a href="{{ '/publications' | relative_url }}#ukci-2023" style="color: var(--link); text-decoration: underline;">UKCI 2023 publication</a>.</p>
 
               <div class="project-stats" style="margin: 1rem 0; padding: 0.75rem; background: var(--bg-alt); border-radius: 6px; font-size: 0.875rem;">
                 <div style="display: flex; align-items: center; gap: 0.5rem; margin: 0.5rem 0;">
