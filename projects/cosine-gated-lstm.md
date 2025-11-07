@@ -58,8 +58,8 @@ title: Cosine-Gated LSTM - Research Project
     </div>
 
     <div style="text-align: center;">
-      <object data="{{ '/assets/images/CGLSTM.pdf' | relative_url }}" type="application/pdf" style="width: 100%; max-width: 520px; height: 420px; border-radius: 8px; border: 1px solid var(--border); box-shadow: 0 4px 12px rgba(0,0,0,0.15);"></object>
-      <p style="margin-top: 0.75rem; font-size: 0.85rem; color: var(--text-light); font-style: italic;">Gate design: cosine similarity scores adjust how much new input mixes with the hidden state.</p>
+      <img src="{{ '/assets/images/CGLSTMArchitecture.jpg' | relative_url }}" alt="Overview of Cosine-Gated LSTM architecture" style="width: 100%; max-width: 580px; height: auto; border-radius: 8px; border: 1px solid var(--border); box-shadow: 0 4px 12px rgba(0,0,0,0.15);">
+      <p style="margin-top: 0.75rem; font-size: 0.85rem; color: var(--text-light); font-style: italic;">Architecture overview from my viva slides: vanilla LSTM (left), cosine-gated module (centre), and integrated output path (right).</p>
     </div>
   </div>
 </div>
@@ -160,6 +160,11 @@ The IEEE PRML 2024 paper reports results across synthetic sequence modelling, vi
 
 <p style="font-size: 0.85rem; color: var(--text-light);">* CGLSTM matches or exceeds recurrent baselines but Transformer remains ahead on IMDB and PTB in the published results. This is noted as a limitation below.</p>
 
+<figure style="margin: 2rem 0; text-align: center;">
+  <img src="{{ '/assets/images/cgltsmtestResult.jpg' | relative_url }}" alt="Table of benchmark accuracies for CGLSTM versus LSTM, GRU, RAU, and Transformer" style="width: 100%; max-width: 780px; height: auto; border-radius: 8px; border: 1px solid var(--border);">
+  <figcaption style="margin-top: 0.5rem; font-size: 0.85rem; color: var(--text-light);">Benchmark comparison extracted from my viva deck: accuracy and MAE highlights across MNIST, Fashion-MNIST, IMDB, Penn Treebank, and the adding problem.</figcaption>
+</figure>
+
 ---
 
 ## <a id="socnav"></a>5. SocNavGym Performance
@@ -216,6 +221,11 @@ Key takeaways:
 - Visual inspection (Fig. 3 in the paper) shows blue dominance for CGLSTM, indicating tighter alignment with ground-truth trajectories.
 - The model was subsequently integrated into the <a href="{{ '/projects/predictive-world-models' | relative_url }}" style="color: var(--link); text-decoration: underline;">Predictive World Models</a> pipeline to replace the world-model backbone.
 
+<figure style="margin: 2rem 0; text-align: center;">
+  <img src="{{ '/assets/images/cgltsmtestResultforsocnav.jpg' | relative_url }}" alt="Visual comparison of predictive trajectories in SocNavGym for CGLSTM and baselines" style="width: 100%; max-width: 760px; height: auto; border-radius: 8px; border: 1px solid var(--border);">
+  <figcaption style="margin-top: 0.5rem; font-size: 0.85rem; color: var(--text-light);">SocNavGym qualitative comparison from my viva: CGLSTM predictions (right) retain blue overlays indicating accurate future states, whereas vanilla LSTM and GRU (left) accumulate red error regions.</figcaption>
+</figure>
+
 ---
 
 ## <a id="implementation"></a>6. Implementation & Usage
@@ -267,6 +277,11 @@ cglstm = CosineGatedLSTM(latent_dim=64, hidden_size=128)
 - **IMDB accuracy plateau:** GRU slightly outperformed CGLSTM (86.48% vs 86.30%); integrating cosine gates into GRU variants is proposed as future work in the paper.
 
 Planned improvements include cosine-gated GRUs, multi-task transfer experiments, and deeper analysis of horizon-adaptive strategies for social navigation.
+
+<figure style="margin: 2rem 0; text-align: center;">
+  <img src="{{ '/assets/images/limitationforCGLSTM.jpg' | relative_url }}" alt="Summary of CGLSTM limitations from viva presentation" style="width: 100%; max-width: 640px; height: auto; border-radius: 8px; border: 1px solid var(--border);">
+  <figcaption style="margin-top: 0.5rem; font-size: 0.85rem; color: var(--text-light);">Slide excerpt summarising trade-offs: Transformer still leads on PTB perplexity, and training cost increases relative to GRU.</figcaption>
+</figure>
 
 ---
 
