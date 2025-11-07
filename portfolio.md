@@ -323,7 +323,22 @@ These are the environments I've created or contributed to for evaluating reinfor
           
           <div class="card-content">
             <div class="card-text">
-              <p class="project-description">Developing entropy-driven adaptive prediction horizon systems for reinforcement learning applications. This research enables dynamic adjustment of prediction horizons based on environmental complexity, improving performance in autonomous systems and robotics. Currently in active development with framework completion and initial experimental validation in progress.</p>
+              <p class="project-description">Entropy-driven controller that extends SAC + CGLSTM only when the policy is uncertain. Cuts wall-time on LunarLander-v2, sustains positive reward on LiteSocNavGym, and preserves real-time inference budgets. Ongoing research building on the Predictive World Models stack.</p>
+
+              <div class="project-stats" style="margin: 1rem 0; padding: 0.75rem; background: var(--bg-alt); border-radius: 6px; font-size: 0.875rem;">
+                <div style="display: flex; align-items: center; gap: 0.5rem; margin: 0.5rem 0;">
+                  <span style="font-size: 1.2rem;">⏱️</span>
+                  <span><strong>53.48 h vs 59.54 h</strong> to hit 500k steps (entropy vs fixed horizon)</span>
+                </div>
+                <div style="display: flex; align-items: center; gap: 0.5rem; margin: 0.5rem 0;">
+                  <span style="font-size: 1.2rem;">✅</span>
+                  <span><strong>100% success</strong> with 0.48 avg. return in LiteSocNavGym</span>
+                </div>
+                <div style="display: flex; align-items: center; gap: 0.5rem; margin: 0.5rem 0;">
+                  <span style="font-size: 1.2rem;">📉</span>
+                  <span><strong>5.62 days</strong> training vs 28.41 days for DreamerV3 + CGLSTM</span>
+                </div>
+              </div>
               <a href="{{ '/projects/adaptive-prediction-horizons' | relative_url }}" class="see-more-btn">
                 <span class="btn-text">View Full Details</span>
                 <span class="btn-icon">→</span>
@@ -331,11 +346,8 @@ These are the environments I've created or contributed to for evaluating reinfor
             </div>
             
             <div class="card-video">
-              <video autoplay muted loop playsinline class="carousel-video" preload="auto" style="width: 100%; height: auto; border-radius: 6px; cursor: pointer;">
-                <source src="{{ '/video/LunarLander.webm' | relative_url }}" type="video/webm">
-                Your browser does not support the video tag.
-              </video>
-              <p class="video-caption">Adaptive Prediction Horizons in LunarLander environment</p>
+              <img src="{{ '/assets/images/TrainingReturn_SocNavGym-1.jpg' | relative_url }}" alt="Adaptive prediction horizon training curve" class="carousel-image" style="width: 100%; height: auto; border-radius: 6px; display: block;">
+              <p class="video-caption">Training performance: adaptive horizon sustains reward on LiteSocNavGym</p>
             </div>
           </div>
         </div>
