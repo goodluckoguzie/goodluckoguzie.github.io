@@ -81,7 +81,7 @@ title: SocNavGym - Research Project
 
 Social robot navigation requires algorithms that can handle complex interactions with humans and dynamic environments. Traditional navigation environments lacked the social dynamics necessary to evaluate algorithms designed for real-world social scenarios.
 
-SocNavGym was developed to provide a comprehensive testing ground for social navigation algorithms with multiple entity types (<a href="#specs" class="internal-link">see Technical Specifications section</a>), enabling researchers to:
+As part of the development team, I contributed to SocNavGym to provide a comprehensive testing ground for social navigation algorithms with multiple entity types (<a href="#specs" class="internal-link">see Technical Specifications section</a>), enabling researchers to:
 - **Evaluate Social Navigation Algorithms** - Test algorithms in realistic social scenarios
 - **Benchmark Performance** - Compare different approaches systematically
 - **Validate Predictive Models** - Test predictive world models in complex environments (<a href="#impact" class="internal-link">see Research Impact section</a>)

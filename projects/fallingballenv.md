@@ -81,7 +81,7 @@ title: FallingBallEnv - Research Project
 
 When transitioning from discrete to continuous action spaces in SocNavGym, I observed that as action choices increased from 4 to 16, prediction errors became more pronounced. This highlighted the need for more robust sequential learning models that could handle incomplete state information.
 
-FallingBallEnv was developed as a controlled testing ground to explore fundamental challenges in temporal prediction before applying methods to complex environments like SocNavGym. This environment isolates the core challenge of learning from incomplete observations, allowing for focused investigation of sequential learning capabilities without the complexity of social navigation dynamics.
+I developed FallingBallEnv as a controlled testing ground to explore fundamental challenges in temporal prediction before applying methods to complex environments like SocNavGym. It isolates the core challenge of learning from incomplete observations, allowing for focused investigation of sequential learning capabilities without the complexity of social navigation dynamics.
 
 ### Research Design
 

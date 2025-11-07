@@ -78,9 +78,9 @@ title: LiteSocNavGym - Research Project
 
 ### Why This Was Needed
 
-While SocNavGym provides a comprehensive social navigation environment, I observed that it could be computationally expensive for rapid iteration during algorithm development. When testing predictive models and reinforcement learning approaches, I needed faster feedback loops to iterate quickly on ideas.
+While SocNavGym provides a comprehensive social navigation environment, I observed that it could be computationally expensive for rapid iteration during algorithm development. When testing predictive models and reinforcement learning approaches, I needed faster feedback loops.
 
-LiteSocNavGym was developed as a lite testing environment to enable rapid iteration during algorithm development. This environment allows for quick testing of predictive models and reinforcement learning approaches before applying methods to the full SocNavGym environment.
+I developed LiteSocNavGym as a lite testing environment to enable rapid iteration during algorithm development. It allows for quick testing of predictive models and reinforcement learning approaches before applying methods to the full SocNavGym environment.
 
 ### Research Design
 
@@ -333,7 +333,7 @@ env = LiteSocNavGym()
 
 ## <a id="impact"></a>11. Research Impact
 
-LiteSocNavGym enabled rapid iteration during algorithm development, allowing for quick testing of predictive models and reinforcement learning approaches before applying methods to the full SocNavGym environment.
+LiteSocNavGym enabled rapid iteration during algorithm development, allowing quick testing before applying methods to the full SocNavGym environment.
 
 **Key Contributions:**
 1. **Enabled Rapid Prototyping:** 3-5x faster simulation speeds accelerated algorithm development
