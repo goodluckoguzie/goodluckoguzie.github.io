@@ -236,7 +236,22 @@ These are the environments I've created or contributed to for evaluating reinfor
           
           <div class="card-content">
             <div class="card-text">
-              <p class="project-description">Proposed reinforcement learning models enabling autonomous systems to navigate safely in social environments. Introduced two complementary approaches: 2StepAhead (multi-step ahead prediction system) and MASPM (Multi-Action State Predictive Model for comprehensive action evaluation). Published at UKCI 2023 with superior navigation performance compared to baseline methods.</p>
+              <p class="project-description">I developed predictive world models that let a Dueling DQN agent see ahead in SocNavGym. 2StepAhead forecasts two latent steps for the chosen action, while MASPM compares the next state for every action. Together they raised navigation success and safety in my UKCI 2023 publication.</p>
+
+              <div class="project-stats" style="margin: 1rem 0; padding: 0.75rem; background: var(--bg-alt); border-radius: 6px; font-size: 0.875rem;">
+                <div style="display: flex; align-items: center; gap: 0.5rem; margin: 0.5rem 0;">
+                  <span style="font-size: 1.2rem;">📈</span>
+                  <span><strong>0.67 reward</strong> peak with 2StepAhead-MASPM</span>
+                </div>
+                <div style="display: flex; align-items: center; gap: 0.5rem; margin: 0.5rem 0;">
+                  <span style="font-size: 1.2rem;">🚫</span>
+                  <span><strong>Lower human collisions</strong> across 500 test runs</span>
+                </div>
+                <div style="display: flex; align-items: center; gap: 0.5rem; margin: 0.5rem 0;">
+                  <span style="font-size: 1.2rem;">🎯</span>
+                  <span><strong>Fast convergence</strong> in ~3,200 episodes</span>
+                </div>
+              </div>
               <a href="{{ '/projects/predictive-world-models' | relative_url }}" class="see-more-btn">
                 <span class="btn-text">View Full Details</span>
                 <span class="btn-icon">→</span>
@@ -245,7 +260,7 @@ These are the environments I've created or contributed to for evaluating reinfor
             
             <div class="card-video">
               <img src="{{ '/assets/images/predictive_world_models_training.png' | relative_url }}" alt="Training reward curves for predictive world models" class="carousel-image" style="width: 100%; height: auto; border-radius: 6px; display: block;">
-              <p class="video-caption">Training reward comparison for the predictive world models</p>
+              <p class="video-caption">Training reward comparison showing how 2StepAhead-MASPM outperforms the baselines</p>
             </div>
           </div>
         </div>
