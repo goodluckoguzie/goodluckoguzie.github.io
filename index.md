@@ -69,7 +69,8 @@ title: Home
     <div class="teaching-card">
       <h4>Key Modules Taught</h4>
       <p><strong>MSc Level:</strong> Deep Learning & Applications, Big Data & Infrastructure, Data Science & Machine Learning, Knowledge Engineering, Scalable Software Solutions</p>
-      <p><strong>Undergraduate:</strong> Object-Oriented Design, Networks & Security, Problem Solving through Programming, UX, Digital Media Technologies</p>
+      <p><strong>Undergraduate:</strong> Object-Oriented Design, Networks & Security, Problem Solving through Programming, Web Application Development, Web Technologies, Network Applications</p>
+      <p><strong>Foundation:</strong> Foundation Computing, Foundation Mathematics, Problem Solving (C Programming)</p>
       <a href="{{ '/teaching' | relative_url }}" class="teaching-link">View Full Details →</a>
     </div>
     <div class="teaching-card">
@@ -94,7 +95,7 @@ title: Home
     <p class="stat-label">Years Teaching Experience</p>
   </div>
   <div class="stat-card">
-    <div class="stat-number">15+</div>
+    <div class="stat-number">20+</div>
     <p class="stat-label">Modules Taught</p>
   </div>
   <div class="stat-card highlight-stat">

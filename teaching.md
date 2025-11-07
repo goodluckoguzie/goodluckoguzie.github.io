@@ -32,32 +32,81 @@ I prepare students worldwide for GCSE and A-level computer science examinations,
 <div class="module">
 <h3>QHO308 - Foundation Computing</h3>
 <p><strong>Level:</strong> Foundation | <strong>Delivery:</strong> Hybrid</p>
+<p><strong>Taught:</strong> 14/10/24 - 16/02/25</p>
 <p>Introduction to computing fundamentals, programming basics, and computational thinking for students beginning their computing journey.</p>
 </div>
 
 <div class="module">
 <h3>QHO328 - Foundation Mathematics</h3>
 <p><strong>Level:</strong> Foundation | <strong>Delivery:</strong> Hybrid</p>
+<p><strong>Taught:</strong> 17/02/25 - 16/06/25</p>
 <p>Mathematical foundations essential for computer science, covering algebra, calculus, and discrete mathematics.</p>
 </div>
 
 <div class="module">
 <h3>QHO427 - Introduction to Networks and Security</h3>
 <p><strong>Level:</strong> Level 4 | <strong>Delivery:</strong> Hybrid</p>
-<p>Fundamentals of computer networks, protocols, network design, and basic cybersecurity principles. Covers protocol fundamentals and security considerations.</p>
+<p><strong>Taught:</strong> 19/02/24 - 24/06/24 | 17/02/25 - 16/06/25 | 13/10/25 - 8/02/26</p>
+<p>Fundamentals of computer networks, protocols, network design, and basic cybersecurity principles. Uses Cisco NetAcad resources covering the OSI model, network operating systems (Windows and Linux), network services, resilience, and security principles. Students gain hands-on experience with both Windows and Linux server environments, shared resources, and command-line operations.</p>
+<p><strong>Technologies Covered:</strong> Cisco NetAcad • Windows Server • Linux • Network Protocols • Security Fundamentals</p>
+</div>
+
+<div class="module">
+<h3>QHO443 - Network Applications</h3>
+<p><strong>Level:</strong> Level 4 | <strong>Delivery:</strong> Hybrid</p>
+<p><strong>Taught:</strong> 13/10/25 - 8/02/26</p>
+<p>Exploration of network applications, core networking concepts, the OSI model, key features of Windows and Linux network operating systems, and essential network services, resilience, and security principles. Students practice in both Windows and Linux server environments, locating shared resources, and performing basic command-line operations for file and system management.</p>
+<p><strong>Technologies Covered:</strong> Windows Server • Linux • Network Services • Command-Line Operations</p>
 </div>
 
 <div class="module">
 <h3>QHO543 - Object Oriented Design and Development</h3>
 <p><strong>Level:</strong> Level 5 | <strong>Delivery:</strong> Hybrid</p>
-<p>Advanced software development practices including OOP principles, modern frameworks, API design, and software engineering best practices. Students learn to build scalable applications using contemporary technologies.</p>
-<p><strong>Technologies Covered:</strong> Python • Java • OOP Design • Git • Software Engineering</p>
+<p><strong>Taught:</strong> 19/02/24 - 24/06/24 | 17/02/25 - 16/06/25</p>
+<p>Advanced software development practices including OOP principles, Java programming, UML design, JSP (JavaServer Pages), JDBC, exception handling, and software engineering best practices. Covers design patterns, coupling, cohesion, and testing with JUnit. Students learn to build scalable web applications using Java technologies.</p>
+<p><strong>Technologies Covered:</strong> Java • OOP Design • UML • JSP • JDBC • JUnit • Design Patterns • Git • Software Engineering</p>
+<p><strong>Topics:</strong> Introduction to Java, OOP principles, UML modeling, Arrays, JSP Sessions, Exception Handling, Database Connectivity (JDBC), Unit Testing, Coupling & Cohesion, Design Patterns</p>
+</div>
+
+<div class="module">
+<h3>QHO305 - Problem Solving</h3>
+<p><strong>Level:</strong> Level 3 | <strong>Delivery:</strong> Hybrid</p>
+<p><strong>Taught:</strong> 10/02/25 - 16/06/25 | 16/06/25 - 6/10/25</p>
+<p>Introduction to programming using the C language. Covers the fundamentals of C programming including vocabulary, basics of programming, flow control, variables, escape sequences, strings, calculations, and more. Students learn to obtain a compiler and IDE, write basic C code, add comments, work with variables and strings, and perform calculations.</p>
+<p><strong>Technologies Covered:</strong> C Programming Language • Compilers • IDEs</p>
+<p><strong>Learning Objectives:</strong> Recognize how to obtain a compiler and IDE, determine the basics of C code, identify how to add comments, break down flow control, examine variables, recognize string components, evaluate calculations</p>
 </div>
 
 <div class="module">
 <h3>QHO426 - Problem Solving through Programming</h3>
 <p><strong>Level:</strong> Level 4 | <strong>Delivery:</strong> Hybrid</p>
-<p>Core programming concepts, data structures, algorithms, and problem-solving methodologies. Emphasizes computational thinking and practical coding skills.</p>
+<p><strong>Taught:</strong> 17/02/25 - 16/06/25</p>
+<p>Core programming concepts, data structures, algorithms, and problem-solving methodologies. Emphasizes computational thinking and practical coding skills using Python. Covers user input/output, data types, variables, operators, decisions, repetition, nesting, functions, modules, imports, packages and namespaces.</p>
+<p><strong>Technologies Covered:</strong> Python • Data Structures • Algorithms</p>
+</div>
+
+<div class="module">
+<h3>QHO444 - Problem Solving Through Programming</h3>
+<p><strong>Level:</strong> Level 4 | <strong>Delivery:</strong> Hybrid</p>
+<p><strong>Taught:</strong> 13/10/25 - 8/02/26</p>
+<p>Problem-solving through practice with weekly learning activities including lectures, practical labs and seminars. Structured in four blocks: Basics (user input/output, data types, variables, operators, decisions, repetition, nesting, functions, modules, imports, packages and namespaces), Data (data storage and manipulation, strings, sequences, lists, tuples, sets, maps, dictionaries, file input/output, web resources, testing and debugging, error handling), Visualisation (importing libraries, importing data sets, visualising data, displaying charts, graphs, plots and subplots), and OOP (abstraction, objects, classes, encapsulation, attributes, methods, accessors, mutators, modifiers, inheritance, polymorphism).</p>
+<p><strong>Technologies Covered:</strong> Python • Data Structures • Data Visualization • OOP • File I/O • Testing & Debugging</p>
+</div>
+
+<div class="module">
+<h3>QHO540 - Web Application Development</h3>
+<p><strong>Level:</strong> Level 5 | <strong>Delivery:</strong> Hybrid</p>
+<p><strong>Taught:</strong> 16/06/25 - 6/10/25</p>
+<p>Comprehensive web application development covering both frontend and backend technologies. Students learn to build modern, scalable web applications using industry-standard frameworks and tools. Covers full-stack development, API design, database integration, and deployment practices.</p>
+<p><strong>Technologies Covered:</strong> Modern Web Frameworks • Frontend Technologies • Backend Technologies • APIs • Databases • Deployment</p>
+</div>
+
+<div class="module">
+<h3>QHO431 - Web Technologies</h3>
+<p><strong>Level:</strong> Level 4 | <strong>Delivery:</strong> Hybrid</p>
+<p><strong>Taught:</strong> 10/02/25 - 16/06/25</p>
+<p>Introduction to web technologies covering HTML, CSS, JavaScript, and modern web development practices. Students learn to create responsive, interactive web applications using current web standards and technologies.</p>
+<p><strong>Technologies Covered:</strong> HTML • CSS • JavaScript • Web Standards • Responsive Design</p>
 </div>
 
 <div class="module">
@@ -258,7 +307,7 @@ Comprehensive progressive teaching modules covering full-stack web development:
 
 <ul>
 <li><strong>13+ years</strong> of programming and teaching experience across multiple institutions</li>
-<li><strong>15+ modules</strong> developed and delivered at undergraduate and postgraduate levels</li>
+<li><strong>20+ modules</strong> developed and delivered at undergraduate and postgraduate levels</li>
 <li><strong>100+ students</strong> taught across various levels (Foundation, GCSE, A-Level, Undergraduate, MSc)</li>
 <li>Current positions: <strong>QA Ltd</strong> (January 2024 - Present) and <strong>Crimson Education</strong> (November 2020 - Present)</li>
 <li>Previous roles: <strong>South and City College Birmingham</strong> (2023-2024) and <strong>Aston University</strong> (2020-2021)</li>
