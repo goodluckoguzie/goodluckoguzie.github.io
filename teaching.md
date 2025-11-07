@@ -609,7 +609,7 @@ Comprehensive progressive teaching modules covering full-stack web development:
 
 ---
 
-## 📞 Contact & Availability
+## Contact & Availability
 
 <div class="contact-section">
   <div class="contact-card">
@@ -637,7 +637,7 @@ Comprehensive progressive teaching modules covering full-stack web development:
 
 ---
 
-## 📝 Teaching Experience Summary
+## Teaching Experience Summary
 
 <ul>
 <li><strong>13+ years</strong> of programming and teaching experience across multiple institutions</li>
