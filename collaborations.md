@@ -3,15 +3,15 @@ layout: default
 title: Collaborations
 ---
 
-# 🤝 Open for Collaborations
+# Open for Collaborations
 
 I'm actively seeking research collaborations to advance work in reinforcement learning, social robotics, and neural network architectures. Whether you're a fellow researcher, industry partner, or student, I'd love to work together.
 
 ---
 
-## 🔬 Research Areas Seeking Partners
+## Research Areas Seeking Partners
 
-### 🤖 Reinforcement Learning
+### Reinforcement Learning
 
 <div class="collaboration-area-card">
 <h4>Specific Interests</h4>
@@ -35,7 +35,7 @@ I'm actively seeking research collaborations to advance work in reinforcement le
 
 ---
 
-### 🧠 Social Robot Navigation
+### Social Robot Navigation
 
 <div class="collaboration-area-card">
 <h4>Specific Interests</h4>
@@ -83,9 +83,9 @@ I'm actively seeking research collaborations to advance work in reinforcement le
 
 ---
 
-## 🤝 Types of Collaborations
+## Types of Collaborations
 
-### 📝 Joint Research Projects
+### Joint Research Projects
 
 <div class="collaboration-type-card">
 <p><strong>Collaborative research</strong> on cutting-edge AI and robotics topics. Ideal for:</p>
@@ -101,7 +101,7 @@ I'm actively seeking research collaborations to advance work in reinforcement le
 
 ---
 
-### 🎓 Student Co-Supervision
+### Student Co-Supervision
 
 <div class="collaboration-type-card">
 <p><strong>Open to co-supervising</strong> PhD and MSc students in areas of:</p>
@@ -134,7 +134,7 @@ I'm actively seeking research collaborations to advance work in reinforcement le
 
 ---
 
-## ✉️ Start a Collaboration
+## Start a Collaboration
 
 <div id="contact-form" class="collaboration-form-section">
 <h3>Collaboration Inquiry</h3>

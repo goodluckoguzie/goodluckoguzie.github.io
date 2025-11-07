@@ -24,19 +24,19 @@ My Professional Journey
 
 <div class="approach-grid">
   <div class="approach-card">
-    <h3>🎯 Research-Driven</h3>
+    <h3>Research-Driven</h3>
     <p>Every project starts with clear research objectives. I focus on solving real-world problems while advancing knowledge in AI and robotics.</p>
   </div>
   <div class="approach-card">
-    <h3>🤝 Collaborative</h3>
+    <h3>Collaborative</h3>
     <p>Success is a team effort. I work closely with colleagues, students, and research partners to achieve the best outcomes.</p>
   </div>
   <div class="approach-card">
-    <h3>📊 Rigorous</h3>
+    <h3>Rigorous</h3>
     <p>I use rigorous evaluation methodologies to validate research and continuously optimize performance in both research and teaching.</p>
   </div>
   <div class="approach-card">
-    <h3>🔄 Adaptive</h3>
+    <h3>Adaptive</h3>
     <p>Research environments evolve quickly. I stay flexible and adjust strategies to meet new challenges and opportunities.</p>
   </div>
 </div>
@@ -45,7 +45,7 @@ My Professional Journey
 
 <div class="education-grid">
   <div class="education-card">
-    <div class="education-icon">🎓</div>
+    <div class="education-icon">Degree</div>
     <div class="education-content">
       <h3>PhD, Computer Science</h3>
       <p><strong>Aston University</strong></p>
@@ -56,7 +56,7 @@ My Professional Journey
   </div>
   
   <div class="education-card">
-    <div class="education-icon">🎓</div>
+    <div class="education-icon">Degree</div>
     <div class="education-content">
       <h3>MSc, Automation Control and Robotics</h3>
       <p><strong>Sheffield Hallam University</strong></p>
@@ -65,7 +65,7 @@ My Professional Journey
   </div>
   
   <div class="education-card">
-    <div class="education-icon">🎓</div>
+    <div class="education-icon">Degree</div>
     <div class="education-content">
       <h3>BSc, Electrical and Electronics Engineering</h3>
       <p><strong>Cyprus International University</strong></p>

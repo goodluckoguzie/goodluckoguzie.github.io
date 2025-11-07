@@ -3,7 +3,7 @@ layout: default
 title: WorldModels - Research Project
 ---
 
-# 🌍 WorldModels
+# WorldModels
 
 <div class="project-header">
   <div class="project-status-badge completed">COMPLETED</div>

@@ -3,7 +3,7 @@ layout: default
 title: PhD Thesis - Research Project
 ---
 
-# 📚 PhD Thesis: Enhancing Robot Social Navigation
+# PhD Thesis: Enhancing Robot Social Navigation
 
 <div class="project-header">
   <div class="project-status-badge completed">COMPLETED</div>

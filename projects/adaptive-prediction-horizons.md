@@ -3,7 +3,7 @@ layout: default
 title: Adaptive Prediction Horizons - Research Project
 ---
 
-# 🔄 Adaptive Predictive Reinforcement Learning: Entropy-Driven Adaptive Prediction Horizons
+# Adaptive Predictive Reinforcement Learning: Entropy-Driven Adaptive Prediction Horizons
 
 <div class="project-header">
   <div class="contribution-badge created">PROPOSED MODEL</div>
@@ -12,7 +12,7 @@ title: Adaptive Prediction Horizons - Research Project
 </div>
 
 <div class="table-of-contents">
-  <h3>📑 Table of Contents</h3>
+  <h3>Table of Contents</h3>
   <ul>
     <li><a href="#hero">1. Overview</a></li>
     <li><a href="#motivation">2. Research Motivation</a></li>
@@ -39,7 +39,7 @@ title: Adaptive Prediction Horizons - Research Project
 
       <div class="quick-stats">
         <div class="quick-stats-item">
-          <div class="quick-stats-item-icon">⏱️</div>
+          <div class="quick-stats-item-icon">Time</div>
           <div class="quick-stats-item-value">53.48 h to 500k steps</div>
           <div class="quick-stats-item-label">Entropy horizon vs 59.54 h fixed (LunarLander)</div>
         </div>

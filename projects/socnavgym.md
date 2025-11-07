@@ -12,7 +12,7 @@ title: SocNavGym - Research Project
 </div>
 
 <div class="table-of-contents">
-  <h3>📑 Table of Contents</h3>
+  <h3>Table of Contents</h3>
   <ul>
     <li><a href="#hero">1. Overview</a></li>
     <li><a href="#motivation">2. Research Motivation</a></li>
@@ -46,17 +46,17 @@ title: SocNavGym - Research Project
       
       <div class="quick-stats">
         <div class="quick-stats-item">
-          <div class="quick-stats-item-icon">🎯</div>
+          <div class="quick-stats-item-icon">Target</div>
           <div class="quick-stats-item-value">Primary Environment</div>
           <div class="quick-stats-item-label">For predictive models</div>
         </div>
         <div class="quick-stats-item">
-          <div class="quick-stats-item-icon">📚</div>
+          <div class="quick-stats-item-icon">Book</div>
           <div class="quick-stats-item-value">UKCI 2023</div>
           <div class="quick-stats-item-label">Published results</div>
         </div>
         <div class="quick-stats-item">
-          <div class="quick-stats-item-icon">✅</div>
+          <div class="quick-stats-item-icon">Check</div>
           <div class="quick-stats-item-value">Team Project</div>
           <div class="quick-stats-item-label">2020-2024</div>
         </div>
@@ -264,16 +264,16 @@ pip install gymnasium numpy pygame
 ### When to Use SocNavGym
 
 **Use SocNavGym when:**
-- ✅ Need comprehensive social navigation features
-- ✅ Require detailed visual rendering
-- ✅ Final evaluation and validation
-- ✅ Full-featured environment testing
-- ✅ Research publication validation
+- Need comprehensive social navigation features
+- Require detailed visual rendering
+- Final evaluation and validation
+- Full-featured environment testing
+- Research publication validation
 
 **Use LiteSocNavGym when:**
-- ✅ Rapid development and testing
-- ✅ Quick iteration during prototyping
-- ✅ Fast algorithm benchmarking
+- Rapid development and testing
+- Quick iteration during prototyping
+- Fast algorithm benchmarking
 
 ### Basic Usage
 
@@ -416,8 +416,8 @@ SocNavGym was integrated with:
     </tr>
     <tr style="border-bottom: 1px solid var(--border);">
       <td style="padding: 0.75rem; border: 1px solid var(--border);"><strong>Core Dynamics</strong></td>
-      <td style="padding: 0.75rem; text-align: center; border: 1px solid var(--border); color: #28a745;">✅ Full</td>
-      <td style="padding: 0.75rem; text-align: center; border: 1px solid var(--border); color: #28a745;">✅ Preserved</td>
+      <td style="padding: 0.75rem; text-align: center; border: 1px solid var(--border); color: #28a745;">Full</td>
+      <td style="padding: 0.75rem; text-align: center; border: 1px solid var(--border); color: #28a745;">Preserved</td>
     </tr>
     <tr style="border-bottom: 1px solid var(--border);">
       <td style="padding: 0.75rem; border: 1px solid var(--border);"><strong>Use Case</strong></td>
@@ -426,8 +426,8 @@ SocNavGym was integrated with:
     </tr>
     <tr style="border-bottom: 1px solid var(--border);">
       <td style="padding: 0.75rem; border: 1px solid var(--border);"><strong>API Compatibility</strong></td>
-      <td style="padding: 0.75rem; text-align: center; border: 1px solid var(--border); color: #28a745;">✅ Full</td>
-      <td style="padding: 0.75rem; text-align: center; border: 1px solid var(--border); color: #28a745;">✅ Compatible</td>
+      <td style="padding: 0.75rem; text-align: center; border: 1px solid var(--border); color: #28a745;">Full</td>
+      <td style="padding: 0.75rem; text-align: center; border: 1px solid var(--border); color: #28a745;">Compatible</td>
     </tr>
   </tbody>
 </table>
@@ -436,16 +436,16 @@ SocNavGym was integrated with:
 ### Key Differences
 
 **SocNavGym:**
-- 🎨 Full visual rendering (<a href="#innovation" class="internal-link">see Key Innovation section</a>)
-- 📋 Comprehensive features (<a href="#innovation" class="internal-link">see Key Innovation section</a>)
-- 🔬 Full evaluation environment
-- 🎯 Complete social navigation dynamics
+- Full visual rendering (<a href="#innovation" class="internal-link">see Key Innovation section</a>)
+- Comprehensive features (<a href="#innovation" class="internal-link">see Key Innovation section</a>)
+- Full evaluation environment
+- Complete social navigation dynamics
 
 **LiteSocNavGym:**
-- ⚡ 3-5x faster simulation
-- 🎯 Optimized for rapid iteration
-- ✅ Core dynamics preserved
-- 📊 Lite for speed
+- 3-5x faster simulation
+- Optimized for rapid iteration
+- Core dynamics preserved
+- Lite for speed
 
 ---
 

@@ -3,7 +3,7 @@ layout: default
 title: FallingBallEnv - Research Project
 ---
 
-# ⚽ FallingBallEnv
+# FallingBallEnv
 
 <div class="project-header">
   <div class="contribution-badge created">DEVELOPED</div>
@@ -13,7 +13,7 @@ title: FallingBallEnv - Research Project
 </div>
 
 <div class="table-of-contents">
-  <h3>📑 Table of Contents</h3>
+  <h3>Table of Contents</h3>
   <ul>
     <li><a href="#hero">1. Overview</a></li>
     <li><a href="#motivation">2. Research Motivation</a></li>
@@ -46,17 +46,17 @@ title: FallingBallEnv - Research Project
       
       <div class="quick-stats">
         <div class="quick-stats-item">
-          <div class="quick-stats-item-icon">🎯</div>
+          <div class="quick-stats-item-icon">Target</div>
           <div class="quick-stats-item-value">25% Lower MAE</div>
           <div class="quick-stats-item-label">with balanced datasets</div>
         </div>
         <div class="quick-stats-item">
-          <div class="quick-stats-item-icon">📊</div>
+          <div class="quick-stats-item-icon">Chart</div>
           <div class="quick-stats-item-value">3 Datasets</div>
           <div class="quick-stats-item-label">20K, 14.7K balanced, 14.7K unbalanced</div>
         </div>
         <div class="quick-stats-item">
-          <div class="quick-stats-item-icon">✅</div>
+          <div class="quick-stats-item-icon">Check</div>
           <div class="quick-stats-item-value">Validated CGLSTM</div>
           <div class="quick-stats-item-label">IEEE PRML 2024</div>
         </div>
@@ -181,7 +181,7 @@ Unlike most Gym environments that reveal all state information, FallingBallEnv d
       <td class="text-center">1,125,059</td>
     </tr>
     <tr class="highlight-row">
-      <td><strong>🎯 CGLSTM</strong></td>
+      <td><strong>CGLSTM</strong></td>
       <td class="text-center"><strong>3.558×10⁻⁵</strong></td>
       <td class="text-center"><strong>4.302×10⁻⁵</strong></td>
       <td class="text-center"><strong>2.341×10⁻⁵</strong></td>
@@ -198,12 +198,12 @@ Unlike most Gym environments that reveal all state information, FallingBallEnv d
 ### Key Performance Findings
 
 **CGLSTM Achievements:**
-- ✅ **Best MAE across all prediction horizons** (k=1, 3, 5, 10)
-- ✅ **78% lower MAE than Transformer** at k=1
-- ✅ **77% lower MAE than Vanilla LSTM** at k=1
-- ✅ **79% lower MAE than GRU** at k=1
-- ✅ **77% faster than Transformer** in prediction time
-- ✅ **25% lower MAE with balanced dataset** compared to unbalanced
+- **Best MAE across all prediction horizons** (k=1, 3, 5, 10)
+- **78% lower MAE than Transformer** at k=1
+- **77% lower MAE than Vanilla LSTM** at k=1
+- **79% lower MAE than GRU** at k=1
+- **77% faster than Transformer** in prediction time
+- **25% lower MAE with balanced dataset** compared to unbalanced
 
 ---
 

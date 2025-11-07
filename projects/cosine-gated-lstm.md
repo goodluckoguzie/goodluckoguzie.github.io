@@ -3,7 +3,7 @@ layout: default
 title: Cosine-Gated LSTM - Research Project
 ---
 
-# 🧠 Cosine-Gated LSTM for Sequential Learning
+# Cosine-Gated LSTM for Sequential Learning
 
 <div class="project-header">
   <div class="contribution-badge created">PROPOSED MODEL</div>
@@ -12,7 +12,7 @@ title: Cosine-Gated LSTM - Research Project
 </div>
 
 <div class="table-of-contents">
-  <h3>📑 Table of Contents</h3>
+  <h3>Table of Contents</h3>
   <ul>
     <li><a href="#hero">1. Overview</a></li>
     <li><a href="#motivation">2. Research Motivation</a></li>
@@ -40,7 +40,7 @@ title: Cosine-Gated LSTM - Research Project
 
       <div class="quick-stats">
         <div class="quick-stats-item">
-          <div class="quick-stats-item-icon">📈</div>
+          <div class="quick-stats-item-icon">Chart</div>
           <div class="quick-stats-item-value">99.07% Accuracy</div>
           <div class="quick-stats-item-label">Row-wise MNIST (↑0.65 pts vs LSTM/GRU)</div>
         </div>

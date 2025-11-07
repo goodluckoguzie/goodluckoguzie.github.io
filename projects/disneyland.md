@@ -3,7 +3,7 @@ layout: default
 title: Disneyland Project - Research Project
 ---
 
-# 🎢 Disneyland Project
+# Disneyland Project
 
 <div class="project-header">
   <div class="project-status-badge completed">COMPLETED</div>

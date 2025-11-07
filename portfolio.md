@@ -40,7 +40,7 @@ My research focuses on **Social Robot Navigation**, **Reinforcement Learning**, 
 
 ---
 
-## 🎯 Research Environments
+## Research Environments
 
 These are the environments I've created or contributed to for evaluating reinforcement learning algorithms and social navigation models.
 
@@ -61,7 +61,7 @@ These are the environments I've created or contributed to for evaluating reinfor
               <div class="project-status-badge completed">COMPLETED</div>
               <div class="contribution-badge" style="background: #6c757d; color: white;">USED IN: IEEE PRML 2024</div>
             </div>
-            <h3>⚽ FallingBallEnv</h3>
+            <h3>FallingBallEnv</h3>
             <p class="project-meta"><strong>2023</strong> • Custom OpenAI Gym Environment • PhD Thesis Chapter 6</p>
           </div>
           
@@ -71,11 +71,9 @@ These are the environments I've created or contributed to for evaluating reinfor
               
               <div class="project-stats" style="margin: 1rem 0; padding: 0.75rem; background: var(--bg-alt); border-radius: 6px; font-size: 0.875rem;">
                 <div style="display: flex; align-items: center; gap: 0.5rem; margin: 0.5rem 0;">
-                  <span style="font-size: 1.2rem;">🎯</span>
                   <span><strong>25% lower MAE</strong> with balanced datasets</span>
                 </div>
                 <div style="display: flex; align-items: center; gap: 0.5rem; margin: 0.5rem 0;">
-                  <span style="font-size: 1.2rem;">📚</span>
                   <span>Published in <strong>IEEE PRML 2024</strong></span>
                 </div>
                 <div style="display: flex; align-items: center; gap: 0.5rem; margin: 0.5rem 0;">
@@ -130,7 +128,6 @@ These are the environments I've created or contributed to for evaluating reinfor
                   <span><strong>3-5x faster</strong> than SocNavGym</span>
                 </div>
                 <div style="display: flex; align-items: center; gap: 0.5rem; margin: 0.5rem 0;">
-                  <span style="font-size: 1.2rem;">🎯</span>
                   <span>Used for <strong>Predictive World Models</strong></span>
                 </div>
                 <div style="display: flex; align-items: center; gap: 0.5rem; margin: 0.5rem 0;">
@@ -212,7 +209,7 @@ These are the environments I've created or contributed to for evaluating reinfor
 
 ---
 
-## 🧠 Proposed Models & Algorithms
+## Proposed Models & Algorithms
 
 <div class="environments-carousel-container" data-category="rl-models social-nav completed">
   <div class="environments-carousel-wrapper">
@@ -273,7 +270,7 @@ These are the environments I've created or contributed to for evaluating reinfor
               <div class="contribution-badge created">PROPOSED MODEL</div>
               <div class="project-status-badge completed">COMPLETED • PUBLISHED</div>
             </div>
-            <h3>🧠 Cosine-Gated LSTM for Sequential Learning</h3>
+            <h3>Cosine-Gated LSTM for Sequential Learning</h3>
             <p class="project-meta"><strong>2024</strong> • Aston University • Published at IEEE PRML 2024</p>
           </div>
           
@@ -287,7 +284,6 @@ These are the environments I've created or contributed to for evaluating reinfor
                   <span><strong>0.0225 MAE</strong> on the adding problem (T=1000)</span>
                 </div>
                 <div style="display: flex; align-items: center; gap: 0.5rem; margin: 0.5rem 0;">
-                  <span style="font-size: 1.2rem;">🎯</span>
                   <span><strong>99.07% accuracy</strong> on row-wise MNIST</span>
                 </div>
                 <div style="display: flex; align-items: center; gap: 0.5rem; margin: 0.5rem 0;">
@@ -317,7 +313,7 @@ These are the environments I've created or contributed to for evaluating reinfor
               <div class="contribution-badge created">PROPOSED MODEL</div>
               <div class="project-status-badge ongoing">ONGOING</div>
             </div>
-            <h3>🔄 Adaptive Predictive Reinforcement Learning</h3>
+            <h3>Adaptive Predictive Reinforcement Learning</h3>
             <p class="project-meta"><strong>2024 - Present</strong> • Aston University</p>
           </div>
           
@@ -327,7 +323,6 @@ These are the environments I've created or contributed to for evaluating reinfor
 
               <div class="project-stats" style="margin: 1rem 0; padding: 0.75rem; background: var(--bg-alt); border-radius: 6px; font-size: 0.875rem;">
                 <div style="display: flex; align-items: center; gap: 0.5rem; margin: 0.5rem 0;">
-                  <span style="font-size: 1.2rem;">⏱️</span>
                   <span><strong>53.48 h vs 59.54 h</strong> to hit 500k steps (entropy vs fixed horizon)</span>
                 </div>
                 <div style="display: flex; align-items: center; gap: 0.5rem; margin: 0.5rem 0;">
@@ -366,7 +361,7 @@ These are the environments I've created or contributed to for evaluating reinfor
 
 ---
 
-## 📡 Action Recognition Research
+## Action Recognition Research
 
 <div class="environments-carousel-container" data-category="action-rec ongoing">
   <div class="environments-carousel-wrapper">
@@ -384,7 +379,7 @@ These are the environments I've created or contributed to for evaluating reinfor
               <div class="contribution-badge created">PROPOSED PROJECT</div>
               <div class="project-status-badge ongoing">ONGOING</div>
             </div>
-            <h3>📡 Wi-Fi CSI Action Recognition with ESP32</h3>
+            <h3>Wi-Fi CSI Action Recognition with ESP32</h3>
             <p class="project-meta"><strong>2024 - Present</strong> • Hardware-based Action Recognition</p>
           </div>
           
@@ -418,7 +413,7 @@ These are the environments I've created or contributed to for evaluating reinfor
 
 ---
 
-## 🔧 Other Projects & Tools
+## Other Projects & Tools
 
 <div class="environments-carousel-container" data-category="completed">
   <div class="environments-carousel-wrapper">
@@ -435,7 +430,7 @@ These are the environments I've created or contributed to for evaluating reinfor
             <div class="card-badges">
               <div class="project-status-badge completed">COMPLETED</div>
             </div>
-            <h3>🌍 WorldModels</h3>
+            <h3>WorldModels</h3>
             <p class="project-meta"><strong>Predictive Modeling Research</strong></p>
           </div>
           
@@ -470,7 +465,7 @@ These are the environments I've created or contributed to for evaluating reinfor
 
 ---
 
-## 🎓 PhD Thesis Integration
+## PhD Thesis Integration
 
 <div class="environments-carousel-container" data-category="completed">
   <div class="environments-carousel-wrapper">
@@ -487,7 +482,7 @@ These are the environments I've created or contributed to for evaluating reinfor
             <div class="card-badges">
               <div class="project-status-badge completed">COMPLETED</div>
             </div>
-            <h3>📚 PhD Thesis: Enhancing Robot Social Navigation</h3>
+            <h3>PhD Thesis: Enhancing Robot Social Navigation</h3>
             <p class="project-meta"><strong>2020 - 2024</strong> • Aston University • Supervisors: Dr. Luis J. Manso, Prof. Dr. Aniko Ekart</p>
           </div>
           

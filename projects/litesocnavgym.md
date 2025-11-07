@@ -12,7 +12,7 @@ title: LiteSocNavGym - Research Project
 </div>
 
 <div class="table-of-contents">
-  <h3>📑 Table of Contents</h3>
+  <h3>Table of Contents</h3>
   <ul>
     <li><a href="#hero">1. Overview</a></li>
     <li><a href="#motivation">2. Research Motivation</a></li>
@@ -45,17 +45,17 @@ title: LiteSocNavGym - Research Project
       
       <div class="quick-stats">
         <div class="quick-stats-item">
-          <div class="quick-stats-item-icon">⚡</div>
+          <div class="quick-stats-item-icon">Fast</div>
           <div class="quick-stats-item-value">3-5x Faster</div>
           <div class="quick-stats-item-label">than SocNavGym</div>
         </div>
         <div class="quick-stats-item">
-          <div class="quick-stats-item-icon">🎯</div>
+          <div class="quick-stats-item-icon">Target</div>
           <div class="quick-stats-item-value">Predictive Models</div>
           <div class="quick-stats-item-label">Testing & validation</div>
         </div>
         <div class="quick-stats-item">
-          <div class="quick-stats-item-icon">✅</div>
+          <div class="quick-stats-item-icon">Check</div>
           <div class="quick-stats-item-value">Core Dynamics</div>
           <div class="quick-stats-item-label">Preserved</div>
         </div>
@@ -141,11 +141,9 @@ LiteSocNavGym achieves **3-5x faster simulation speeds** compared to SocNavGym w
     <div style="font-size: 0.875rem; color: var(--text-light);">Faster Simulation</div>
   </div>
   <div style="background: var(--bg-card); padding: 1.5rem; border-radius: 8px; border: 2px solid #28a745; text-align: center;">
-    <div style="font-size: 2.5rem; font-weight: bold; color: #28a745; margin-bottom: 0.5rem;">✅</div>
     <div style="font-size: 0.875rem; color: var(--text-light);">Core Dynamics Preserved</div>
   </div>
   <div style="background: var(--bg-card); padding: 1.5rem; border-radius: 8px; border: 2px solid #28a745; text-align: center;">
-    <div style="font-size: 2.5rem; font-weight: bold; color: #28a745; margin-bottom: 0.5rem;">🎯</div>
     <div style="font-size: 0.875rem; color: var(--text-light);">Optimized for Rapid Iteration</div>
   </div>
 </div>
@@ -272,17 +270,17 @@ Despite optimizations, LiteSocNavGym maintains:
 ### When to Use LiteSocNavGym
 
 **Use LiteSocNavGym when:**
-- ✅ Developing and testing algorithms rapidly
-- ✅ Iterating on model architectures quickly
-- ✅ Benchmarking multiple approaches efficiently
-- ✅ Prototyping new ideas
-- ✅ Training models that need fast feedback
+- Developing and testing algorithms rapidly
+- Iterating on model architectures quickly
+- Benchmarking multiple approaches efficiently
+- Prototyping new ideas
+- Training models that need fast feedback
 
 **Use SocNavGym when:**
-- ✅ Need comprehensive social navigation features
-- ✅ Require detailed visual rendering
-- ✅ Final evaluation and validation
-- ✅ Full-featured environment testing
+- Need comprehensive social navigation features
+- Require detailed visual rendering
+- Final evaluation and validation
+- Full-featured environment testing
 
 ### Basic Usage
 
@@ -378,8 +376,8 @@ LiteSocNavGym was used for:
     </tr>
     <tr style="border-bottom: 1px solid var(--border);">
       <td style="padding: 0.75rem; border: 1px solid var(--border);"><strong>Core Dynamics</strong></td>
-      <td style="padding: 0.75rem; text-align: center; border: 1px solid var(--border); color: #28a745;">✅ Preserved</td>
-      <td style="padding: 0.75rem; text-align: center; border: 1px solid var(--border); color: #28a745;">✅ Full</td>
+      <td style="padding: 0.75rem; text-align: center; border: 1px solid var(--border); color: #28a745;">Preserved</td>
+      <td style="padding: 0.75rem; text-align: center; border: 1px solid var(--border); color: #28a745;">Full</td>
     </tr>
     <tr style="border-bottom: 1px solid var(--border);">
       <td style="padding: 0.75rem; border: 1px solid var(--border);"><strong>Use Case</strong></td>
@@ -388,8 +386,8 @@ LiteSocNavGym was used for:
     </tr>
     <tr style="border-bottom: 1px solid var(--border);">
       <td style="padding: 0.75rem; border: 1px solid var(--border);"><strong>API Compatibility</strong></td>
-      <td style="padding: 0.75rem; text-align: center; border: 1px solid var(--border); color: #28a745;">✅ Compatible</td>
-      <td style="padding: 0.75rem; text-align: center; border: 1px solid var(--border); color: #28a745;">✅ Full</td>
+      <td style="padding: 0.75rem; text-align: center; border: 1px solid var(--border); color: #28a745;">Compatible</td>
+      <td style="padding: 0.75rem; text-align: center; border: 1px solid var(--border); color: #28a745;">Full</td>
     </tr>
   </tbody>
 </table>
@@ -398,16 +396,16 @@ LiteSocNavGym was used for:
 ### Key Differences
 
 **LiteSocNavGym:**
-- ⚡ 3-5x faster simulation (<a href="#results" class="internal-link">see Results & Performance section</a>)
-- 🎯 Optimized for rapid iteration
-- ✅ Core dynamics preserved (<a href="#preserved" class="internal-link">see What Was Preserved section</a>)
-- 📊 Lite for speed (<a href="#simplified" class="internal-link">see What Was Simplified section</a>)
+- 3-5x faster simulation (<a href="#results" class="internal-link">see Results & Performance section</a>)
+- Optimized for rapid iteration
+- Core dynamics preserved (<a href="#preserved" class="internal-link">see What Was Preserved section</a>)
+- Lite for speed (<a href="#simplified" class="internal-link">see What Was Simplified section</a>)
 
 **SocNavGym:**
-- 🎨 Full visual rendering
-- 📋 Comprehensive features
-- 🔬 Full evaluation environment
-- 🎯 Complete social navigation dynamics
+- Full visual rendering
+- Comprehensive features
+- Full evaluation environment
+- Complete social navigation dynamics
 
 ---
 

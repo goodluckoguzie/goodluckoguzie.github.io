@@ -9,7 +9,7 @@ I believe in combining cutting-edge research with practical application. My cour
 
 ---
 
-## 📊 Teaching Overview
+## Teaching Overview
 
 <div class="stats-grid" style="margin: 2rem 0;">
   <div class="stat-card">
@@ -32,7 +32,7 @@ I believe in combining cutting-edge research with practical application. My cour
 
 ---
 
-## 📅 Current Teaching Positions
+## Current Teaching Positions
 
 <div class="teaching-positions">
   <div class="position-card">
@@ -52,7 +52,7 @@ I believe in combining cutting-edge research with practical application. My cour
 
 ---
 
-## 🎓 Modules Taught
+## Modules Taught
 
 <p><strong>Filter by:</strong></p>
 
@@ -341,7 +341,7 @@ I believe in combining cutting-edge research with practical application. My cour
 
 ---
 
-## 🏛️ Previous Teaching Roles
+## Previous Teaching Roles
 
 <div class="previous-roles">
   <div class="role-card">
@@ -371,30 +371,30 @@ I believe in combining cutting-edge research with practical application. My cour
 
 ---
 
-## 💡 Teaching Philosophy
+## Teaching Philosophy
 
 <div class="approach-grid">
   <div class="approach-card">
-    <h3>🎯 Student-Centered Learning</h3>
+    <h3>Student-Centered Learning</h3>
     <p>Focus on active participation, hands-on projects, and practical application. I believe students learn best by doing, not just listening. I adapt teaching methods based on student needs, learning styles, and feedback.</p>
   </div>
   <div class="approach-card">
-    <h3>🔬 Research Integration</h3>
+    <h3>Research Integration</h3>
     <p>Connect coursework to cutting-edge research in AI, robotics, and machine learning. Students see how theoretical concepts apply to real-world problems, including my own research on reinforcement learning, Cosine-Gated LSTM, and adaptive prediction horizons.</p>
   </div>
   <div class="approach-card">
-    <h3>📊 Practical Application</h3>
+    <h3>Practical Application</h3>
     <p>Emphasize real-world projects and case studies that prepare students for industry careers and further academic study. Integrate industry-standard tools and practices throughout the curriculum.</p>
   </div>
   <div class="approach-card">
-    <h3>🔄 Inclusive & Adaptive Teaching</h3>
+    <h3>Inclusive & Adaptive Teaching</h3>
     <p>Champion inclusivity and accessibility in module design and class delivery, adapting methods to support diverse learning styles. Provide tailored support and innovative teaching strategies.</p>
   </div>
 </div>
 
 ---
 
-## 🎓 Teaching Resources
+## Teaching Resources
 
 ### DiscoverHealth Teaching Modules
 
@@ -413,77 +413,77 @@ Comprehensive progressive teaching modules covering full-stack web development:
 
 ---
 
-## ⭐ Featured Modules
+## Featured Modules
 
 <div class="featured-modules">
   <div class="featured-module-card">
-    <div class="featured-badge">⭐ Featured</div>
+    <div class="featured-badge">Featured</div>
     <h3>QHO543 - Object Oriented Design and Development</h3>
     <p><strong>Solent University • Level 5</strong></p>
     <p>Comprehensive Java-based web development course covering OOP principles, UML design, JSP, JDBC, and design patterns. Taught multiple times with strong student engagement and practical project outcomes.</p>
     <div class="featured-stats">
-      <span>🔄 Taught 2+ times</span>
-      <span>👥 40+ students</span>
-      <span>📊 85%+ average grade</span>
+      <span>Taught 2+ times</span>
+      <span>40+ students</span>
+      <span>85%+ average grade</span>
     </div>
   </div>
 
   <div class="featured-module-card">
-    <div class="featured-badge">⭐ Featured</div>
+    <div class="featured-badge">Featured</div>
     <h3>COM747 - Introduction to Data Science & Machine Learning</h3>
     <p><strong>Ulster University • MSc</strong></p>
     <p>Integrates cutting-edge research with practical ML applications. Students work on real-world projects using TensorFlow, PyTorch, and scikit-learn, connecting to my research on reinforcement learning and neural architectures.</p>
     <div class="featured-stats">
-      <span>🔬 Research-integrated</span>
-      <span>👥 25+ students</span>
-      <span>📊 90%+ satisfaction</span>
+      <span>Research-integrated</span>
+      <span>25+ students</span>
+      <span>90%+ satisfaction</span>
     </div>
   </div>
 
   <div class="featured-module-card">
-    <div class="featured-badge">⭐ Featured</div>
+    <div class="featured-badge">Featured</div>
     <h3>Deep Learning and Its Application</h3>
     <p><strong>Ulster University • MSc</strong></p>
     <p>Advanced neural networks course that directly incorporates my research on Cosine-Gated LSTM and adaptive prediction horizons. Students learn state-of-the-art architectures and apply them to computer vision problems.</p>
     <div class="featured-stats">
-      <span>🔬 Research-integrated</span>
-      <span>👥 20+ students</span>
-      <span>📊 88%+ average grade</span>
+      <span>Research-integrated</span>
+      <span>20+ students</span>
+      <span>88%+ average grade</span>
     </div>
   </div>
 
   <div class="featured-module-card">
-    <div class="featured-badge">⭐ Featured</div>
+    <div class="featured-badge">Featured</div>
     <h3>QHO427 - Introduction to Networks and Security</h3>
     <p><strong>Solent University • Level 4</strong></p>
     <p>Hands-on networking course using Cisco NetAcad resources. Taught multiple times with practical lab sessions covering Windows and Linux server environments. High student engagement and industry-relevant skills.</p>
     <div class="featured-stats">
-      <span>🔄 Taught 3+ times</span>
-      <span>👥 50+ students</span>
-      <span>📊 82%+ average grade</span>
+      <span>Taught 3+ times</span>
+      <span>50+ students</span>
+      <span>82%+ average grade</span>
     </div>
   </div>
 
   <div class="featured-module-card">
-    <div class="featured-badge">⭐ Featured</div>
+    <div class="featured-badge">Featured</div>
     <h3>QHO540 - Web Application Development</h3>
     <p><strong>Solent University • Level 5</strong></p>
     <p>Full-stack web development course covering modern frameworks, API design, database integration, and cloud deployment. Students build complete applications ready for industry.</p>
     <div class="featured-stats">
-      <span>💼 Industry-focused</span>
-      <span>👥 35+ students</span>
-      <span>📊 87%+ average grade</span>
+      <span>Industry-focused</span>
+      <span>35+ students</span>
+      <span>87%+ average grade</span>
     </div>
   </div>
 </div>
 
 ---
 
-## 📈 Teaching Metrics & Impact
+## Teaching Metrics & Impact
 
 <div class="metrics-dashboard">
   <div class="metric-card">
-    <div class="metric-icon">👥</div>
+    <div class="metric-icon">People</div>
     <div class="metric-value">500+</div>
     <div class="metric-label">Total Students Taught</div>
     <div class="metric-breakdown">
@@ -495,7 +495,7 @@ Comprehensive progressive teaching modules covering full-stack web development:
   </div>
 
   <div class="metric-card">
-    <div class="metric-icon">📚</div>
+    <div class="metric-icon">Book</div>
     <div class="metric-value">20+</div>
     <div class="metric-label">Modules Developed</div>
     <div class="metric-breakdown">
@@ -507,7 +507,7 @@ Comprehensive progressive teaching modules covering full-stack web development:
   </div>
 
   <div class="metric-card">
-    <div class="metric-icon">🎯</div>
+    <div class="metric-icon">Target</div>
     <div class="metric-value">85%+</div>
     <div class="metric-label">Average Student Performance</div>
     <div class="metric-breakdown">
@@ -518,7 +518,7 @@ Comprehensive progressive teaching modules covering full-stack web development:
   </div>
 
   <div class="metric-card">
-    <div class="metric-icon">🔄</div>
+    <div class="metric-icon">Refresh</div>
     <div class="metric-value">15+</div>
     <div class="metric-label">Modules Taught Multiple Times</div>
     <div class="metric-breakdown">
@@ -541,7 +541,7 @@ Comprehensive progressive teaching modules covering full-stack web development:
   </div>
 
   <div class="metric-card">
-    <div class="metric-icon">⏱️</div>
+    <div class="metric-icon">Time</div>
     <div class="metric-value">13+</div>
     <div class="metric-label">Years Experience</div>
     <div class="metric-breakdown">

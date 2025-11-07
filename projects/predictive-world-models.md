@@ -12,7 +12,7 @@ title: Predictive World Models - Research Project
 </div>
 
 <div class="table-of-contents">
-  <h3>📑 Table of Contents</h3>
+  <h3>Table of Contents</h3>
   <ul>
     <li><a href="#hero">1. Overview</a></li>
     <li><a href="#motivation">2. Research Motivation</a></li>
@@ -42,17 +42,17 @@ title: Predictive World Models - Research Project
 
       <div class="quick-stats">
         <div class="quick-stats-item">
-          <div class="quick-stats-item-icon">📈</div>
+          <div class="quick-stats-item-icon">Chart</div>
           <div class="quick-stats-item-value">0.67 Reward</div>
           <div class="quick-stats-item-label">Peak value with 2StepAhead-MASPM</div>
         </div>
         <div class="quick-stats-item">
-          <div class="quick-stats-item-icon">⏱️</div>
+          <div class="quick-stats-item-icon">Time</div>
           <div class="quick-stats-item-value">3,200 Episodes</div>
           <div class="quick-stats-item-label">2StepAhead solves SocNavGym</div>
         </div>
         <div class="quick-stats-item">
-          <div class="quick-stats-item-icon">🤝</div>
+          <div class="quick-stats-item-icon">Handshake</div>
           <div class="quick-stats-item-value">0.83 Compliance</div>
           <div class="quick-stats-item-label">Slightly below RVO2's 0.88 (Pareto trade-off)</div>
         </div>

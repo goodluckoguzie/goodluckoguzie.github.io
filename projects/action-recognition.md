@@ -3,7 +3,7 @@ layout: default
 title: Wi-Fi CSI Action Recognition - Research Project
 ---
 
-# 📡 Wi-Fi CSI Action Recognition with ESP32
+# Wi-Fi CSI Action Recognition with ESP32
 
 <div class="project-header">
   <div class="contribution-badge created">PROPOSED PROJECT</div>

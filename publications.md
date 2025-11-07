@@ -17,7 +17,7 @@ My research contributions in reinforcement learning, social robotics, and neural
 
 ---
 
-## 📄 Conference Papers
+## Conference Papers
 
 <div class="publication" data-type="conference">
 <h3>Cosine-Gated LSTM for Sequential Learning</h3>
@@ -78,7 +78,7 @@ My research contributions in reinforcement learning, social robotics, and neural
 
 ---
 
-## 🎓 PhD Thesis
+## PhD Thesis
 
 <div class="publication" data-type="thesis">
 <h3>Enhancing Robot Social Navigation with Reinforcement Learning and Advanced Predictive Models</h3>
@@ -162,7 +162,7 @@ My research contributions in reinforcement learning, social robotics, and neural
 
 ---
 
-## 📚 Citation
+## Citation
 
 If you use my work in your research, please cite appropriately:
 

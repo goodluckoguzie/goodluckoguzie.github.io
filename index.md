@@ -46,7 +46,7 @@ title: Home
 
 ---
 
-## 📄 Recent Publications
+## Recent Publications
 
 <div class="home-publications">
   <div class="home-publication-card">
@@ -74,7 +74,7 @@ title: Home
 
 ---
 
-## 🔬 Current Research
+## Current Research
 
 <div class="home-research-section">
   <div class="home-research-card featured">
@@ -103,7 +103,7 @@ title: Home
 
 ---
 
-## 📚 Teaching
+## Teaching
 
 <div class="home-teaching-section">
   <p>I teach AI and machine learning courses at multiple institutions, with <strong>13+ years of experience</strong> preparing students for academic and industry careers. My courses integrate cutting-edge research with practical application.</p>
@@ -124,7 +124,7 @@ title: Home
 
 ---
 
-## 🤝 Open for Collaboration
+## Open for Collaboration
 
 <div class="home-collaboration-section">
   <h2>Let's Work Together</h2>
