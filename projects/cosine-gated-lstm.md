@@ -50,7 +50,7 @@ title: Cosine-Gated LSTM - Research Project
           <div class="quick-stats-item-label">Adding problem (T=1000) lowest error</div>
         </div>
         <div class="quick-stats-item">
-          <div class="quick-stats-item-icon">🤖</div>
+          <div class="quick-stats-item-icon">Robot</div>
           <div class="quick-stats-item-value">35% ↓ MAE @ k=10</div>
           <div class="quick-stats-item-label">SocNavGym vs Transformer baseline</div>
         </div>
