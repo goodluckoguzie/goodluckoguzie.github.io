@@ -398,10 +398,10 @@ These are the environments I've created or contributed to for evaluating reinfor
             </div>
             
             <div class="card-video">
-              <div class="image-placeholder">
-                <img src="{{ '/assets/images/output.png' | relative_url }}" alt="Wi-Fi CSI Action Recognition system showing ESP32 microcontroller and signal processing visualization" class="carousel-image" loading="lazy">
+              <div class="image-placeholder" style="display: flex; align-items: center; justify-content: center; min-height: 200px; background: var(--bg-alt); border-radius: 6px; border: 2px dashed var(--border);">
+                <p style="color: var(--text-light); font-size: 1.125rem; font-weight: 500; margin: 0;">Coming Soon</p>
               </div>
-              <p class="video-caption">Wi-Fi CSI Action Recognition system with ESP32 microcontroller</p>
+              <p class="video-caption">Visual content coming soon</p>
             </div>
           </div>
         </div>
