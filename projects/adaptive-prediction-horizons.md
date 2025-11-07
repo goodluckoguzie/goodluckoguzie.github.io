@@ -111,19 +111,19 @@ value, action = sac.update(rollout)
 
 ## <a id="lunar"></a>5. LunarLander Experiments (500k steps)
 
-### 4.1 Window-slide selection for CGLSTM
+### 5.1 Window-slide selection for CGLSTM
 <img src="{{ '/assets/images/WindowSlide_TrainLoss-1.jpg' | relative_url }}" alt="Training loss over steps for window slides 16, 32, 64" loading="lazy" style="width: 100%; max-width: 680px; height: auto; border-radius: 8px; border: 1px solid var(--border); margin: 1.5rem 0;">
 <p style="margin-top: -1rem; font-size: 0.85rem; color: var(--text-light); text-align: center;">Entropy controller uses a 32-step window (middle curve) – fastest loss decay without the instability seen for 16.</p>
 
-### 4.2 Horizon candidate comparison
+### 5.2 Horizon candidate comparison
 <img src="{{ '/assets/images/Lunarlander_Horizon_Comparison-1.jpg' | relative_url }}" alt="Reward curves comparing two horizon sets" loading="lazy" style="width: 100%; max-width: 760px; height: auto; border-radius: 8px; border: 1px solid var(--border); margin: 1.5rem 0;">
 <p style="margin-top: -1rem; font-size: 0.85rem; color: var(--text-light); text-align: center;">Candidate set {1,2,3,4,5} converges quickly; {1,2,4,6,8} overtakes after 200k steps. Set B selected for final runs.</p>
 
-### 4.3 Training performance
+### 5.3 Training performance
 <img src="{{ '/assets/images/TrainingReturn_LunderLander-1.jpg' | relative_url }}" alt="Training results for LunarLander" loading="lazy" style="width: 100%; max-width: 780px; height: auto; border-radius: 8px; border: 1px solid var(--border); margin: 1.5rem 0;">
 <p style="margin-top: -1rem; font-size: 0.85rem; color: var(--text-light); text-align: center;">Entropy-driven horizon (cyan) matches DreamerV3 + CGLSTM convergence while remaining stable after 350k steps.</p>
 
-### 4.4 Wall-time savings
+### 5.4 Wall-time savings
 <img src="{{ '/assets/images/Lunarlander_Fixed_vs_Entropy.jpg' | relative_url }}" alt="Wall-time comparison fixed vs entropy horizon" loading="lazy" style="width: 100%; max-width: 760px; height: auto; border-radius: 8px; border: 1px solid var(--border); margin: 1.5rem 0;">
 <p style="margin-top: -1rem; font-size: 0.85rem; color: var(--text-light); text-align: center;">Entropy controller reaches 500k steps in <strong>53.48</strong> hours (blue) vs <strong>59.54</strong> hours for the fixed horizon baseline (orange).</p>
 
@@ -131,23 +131,23 @@ value, action = sac.update(rollout)
 
 ## <a id="lite"></a>6. LiteSocNavGym Experiments (4M steps)
 
-### 5.1 Training reward progression
+### 6.1 Training reward progression
 <img src="{{ '/assets/images/TrainingReturn_SocNavGym-1.jpg' | relative_url }}" alt="Training results for LiteSocNavGym" loading="lazy" style="width: 100%; max-width: 780px; height: auto; border-radius: 8px; border: 1px solid var(--border); margin: 1.5rem 0;">
 <p style="margin-top: -1rem; font-size: 0.85rem; color: var(--text-light); text-align: center;">Adaptive horizon (cyan) and DreamerV3 + CGLSTM (brown) are the only agents sustaining positive reward after 3M steps.</p>
 
-### 5.2 Success rate vs average return
+### 6.2 Success rate vs average return
 <img src="{{ '/assets/images/AverageReturnvsInferenceTime.png' | relative_url }}" alt="Success rate vs average return" loading="lazy" style="width: 100%; max-width: 780px; height: auto; border-radius: 8px; border: 1px solid var(--border); margin: 1.5rem 0;">
 <p style="margin-top: -1rem; font-size: 0.85rem; color: var(--text-light); text-align: center;">Adaptive horizon with CGLSTM achieves ~0.48 average return at ~1.6 ms inference, outperforming PPO/TD3 in both axes.</p>
 
-### 5.3 Training cost profile
+### 6.3 Training cost profile
 <img src="{{ '/assets/images/TrainTimeLite.png' | relative_url }}" alt="Training time comparison" loading="lazy" style="width: 100%; max-width: 780px; height: auto; border-radius: 8px; border: 1px solid var(--border); margin: 1.5rem 0;">
 <p style="margin-top: -1rem; font-size: 0.85rem; color: var(--text-light); text-align: center;">Adaptive horizon needs <strong>5.62</strong> days to train (hidden size 256), versus <strong>28.41</strong> days for DreamerV3 + CGLSTM.</p>
 
-### 5.4 Success vs return scatter (aggregate)
+### 6.4 Success vs return scatter (aggregate)
 <img src="{{ '/assets/images/2StepAhead-MASPM (Fixed Horizon).jpg' | relative_url }}" alt="Success vs average return for adaptive variants" loading="lazy" style="width: 100%; max-width: 760px; height: auto; border-radius: 8px; border: 1px solid var(--border); margin: 1.5rem 0;">
 <p style="margin-top: -1rem; font-size: 0.85rem; color: var(--text-light); text-align: center;">Scatter from viva slides: adaptive SAC variants dominate the top-right corner (high success, high return).</p>
 
-### 5.5 Dreamer comparison
+### 6.5 Dreamer comparison
 <img src="{{ '/assets/images/DreamerV3_CGLSTM.jfif' | relative_url }}" alt="DreamerV3 and DreamerV3 + CGLSTM comparison" loading="lazy" style="width: 100%; max-width: 640px; height: auto; border-radius: 8px; border: 1px solid var(--border); margin: 1.5rem 0;">
 <p style="margin-top: -1rem; font-size: 0.85rem; color: var(--text-light); text-align: center;">DreamerV3 + CGLSTM (orange marker) obtains the best success/return compromise, justifying its role as a teacher for adaptive SAC.</p>
 
