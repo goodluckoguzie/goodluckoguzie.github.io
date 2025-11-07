@@ -30,6 +30,10 @@ title: Home
       <div class="project-status-badge ongoing">ONGOING</div>
       <h3>Adaptive Prediction Horizons in Reinforcement Learning</h3>
       <p class="research-meta">2024 - Present • Aston University</p>
+      <div style="margin: 1rem 0;">
+        <img src="{{ '/assets/images/TrainingReturn_SocNavGym-1.jpg' | relative_url }}" alt="Adaptive prediction horizon training performance" style="width: 100%; max-width: 600px; height: auto; border-radius: 6px; display: block; margin: 0 auto;">
+        <p style="text-align: center; font-size: 0.875rem; color: var(--text-secondary); margin-top: 0.5rem;">Training performance: adaptive horizon sustains reward on LiteSocNavGym</p>
+      </div>
       <p>Developing entropy-driven adaptive prediction horizon systems for RL applications, enabling dynamic adjustment based on environmental complexity for improved performance in autonomous systems.</p>
       <div class="research-tags">
         <span class="tag">Reinforcement Learning</span>
