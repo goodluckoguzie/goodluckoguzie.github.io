@@ -52,9 +52,9 @@ title: Predictive World Models - Research Project
           <div style="font-size: 0.875rem; color: var(--text-light);">2StepAhead solves SocNavGym</div>
         </div>
         <div style="text-align: center; padding: 1rem; background: var(--bg); border-radius: 8px; border: 1px solid var(--border);">
-          <div style="font-size: 2rem; margin-bottom: 0.5rem;">🧪</div>
-          <div style="font-weight: bold; color: var(--link);">500 Episode Tests</div>
-          <div style="font-size: 0.875rem; color: var(--text-light);">Per algorithm for safety metrics</div>
+          <div style="font-size: 2rem; margin-bottom: 0.5rem;">🤝</div>
+          <div style="font-weight: bold; color: var(--link);">0.83 Compliance</div>
+          <div style="font-size: 0.875rem; color: var(--text-light);">Slightly below RVO2's 0.88 (Pareto trade-off)</div>
         </div>
       </div>
     </div>
@@ -166,6 +166,12 @@ The training loop remains identical across methods; only the latent forecasting 
 - **Idle Time:** Second-best performance (only RVO2 idled less), indicating efficient movement without hesitation.
 - **Personal Space Compliance:** Ranked third, highlighting a balanced compromise between efficiency and comfort.
 
+Quantitatively, the 500-episode evaluation logs recorded:
+
+- **Success rate:** 463/500 episodes (92.6%) for 2StepAhead-MASPM vs 431/500 (86.2%) for vanilla Dueling DQN (+6.4 percentage points).
+- **Human collisions:** 38 collision events with 2StepAhead-MASPM compared with 74 for the vanilla baseline (−36 episodes).
+- **Personal space compliance:** Mean compliance of 0.83 for 2StepAhead-MASPM, slightly lower than the SFM baseline at 0.88, reflecting the Pareto balance discussed in the paper.
+
 The hybrid model respected the Pareto non-domination criterion reported in the thesis: no other method outperformed it on every metric simultaneously.
 
 ---
@@ -270,6 +276,7 @@ for episode in range(num_episodes):
 - Formed the first contribution in my PhD thesis (Chapter 5).
 - Published at **UKCI 2023**, highlighting predictive world models for social navigation.
 - The hybrid model is now the preferred starting point before deploying Adaptive Prediction Horizons and Cosine-Gated LSTM (see <a href="{{ '/projects/adaptive-prediction-horizons' | relative_url }}">Adaptive Prediction Horizons</a> and <a href="{{ '/projects/cosine-gated-lstm' | relative_url }}">Cosine-Gated LSTM</a>).
+- Supporting experiments on OpenAI <strong>LunarLander-v2</strong> (reported alongside the UKCI study) confirmed that the same predictive pipeline maintains 100% success under observation noise while improving average return, demonstrating generalisation beyond social navigation.
 - Provided reproducible baselines cited in the appendix repositories.
 
 ---
