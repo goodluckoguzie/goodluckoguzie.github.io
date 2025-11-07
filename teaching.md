@@ -9,210 +9,365 @@ I believe in combining cutting-edge research with practical application. My cour
 
 ---
 
-## 📅 Current Teaching Positions
+## 📊 Teaching Overview
 
-### Seasonal Lecturer in Computing
-**QA Ltd** (Partner with Solent University, University of Roehampton, and Ulster University)  
-*January 2024 - Present, Birmingham, United Kingdom*
-
-I deliver lectures and seminars on various computing modules across partner institutions, ensuring high-quality, inclusive learning experiences for diverse student cohorts. I adopt a hybrid teaching model, combining classroom-based and virtual sessions with collaborative e-learning platforms.
-
-### Lecturer in Computer Science
-**Crimson Education**  
-*November 2020 - Present, Birmingham, United Kingdom*
-
-I prepare students worldwide for GCSE and A-level computer science examinations, designing and delivering curricula via online interactive sessions. I mentor students on final projects, incorporating Python-based application development, data analysis, and cloud-based deployment.
+<div class="stats-grid" style="margin: 2rem 0;">
+  <div class="stat-card">
+    <div class="stat-number">13+</div>
+    <p class="stat-label">Years Experience</p>
+  </div>
+  <div class="stat-card">
+    <div class="stat-number">20+</div>
+    <p class="stat-label">Modules Taught</p>
+  </div>
+  <div class="stat-card">
+    <div class="stat-number">500+</div>
+    <p class="stat-label">Students Taught</p>
+  </div>
+  <div class="stat-card">
+    <div class="stat-number">4</div>
+    <p class="stat-label">Institutions</p>
+  </div>
+</div>
 
 ---
 
-## 🎓 Modules Taught by Institution
+## 📅 Current Teaching Positions
+
+<div class="teaching-positions">
+  <div class="position-card">
+    <h3>Seasonal Lecturer in Computing</h3>
+    <p><strong>QA Ltd</strong> (Partner with Solent University, University of Roehampton, and Ulster University)</p>
+    <p><em>January 2024 - Present, Birmingham, United Kingdom</em></p>
+    <p>I deliver lectures and seminars on various computing modules across partner institutions, ensuring high-quality, inclusive learning experiences for diverse student cohorts. I adopt a hybrid teaching model, combining classroom-based and virtual sessions with collaborative e-learning platforms.</p>
+  </div>
+
+  <div class="position-card">
+    <h3>Lecturer in Computer Science</h3>
+    <p><strong>Crimson Education</strong></p>
+    <p><em>November 2020 - Present, Birmingham, United Kingdom</em></p>
+    <p>I prepare students worldwide for GCSE and A-level computer science examinations, designing and delivering curricula via online interactive sessions. I mentor students on final projects, incorporating Python-based application development, data analysis, and cloud-based deployment.</p>
+  </div>
+</div>
+
+---
+
+## 🎓 Modules Taught
+
+<p><strong>Filter by:</strong></p>
+
+<div class="teaching-filters">
+  <button class="filter-btn active" data-filter="all">All Modules</button>
+  <button class="filter-btn" data-filter="solent">Solent University</button>
+  <button class="filter-btn" data-filter="ulster">Ulster University</button>
+  <button class="filter-btn" data-filter="crimson">Crimson Education</button>
+  <button class="filter-btn" data-filter="foundation">Foundation</button>
+  <button class="filter-btn" data-filter="undergraduate">Undergraduate</button>
+  <button class="filter-btn" data-filter="postgraduate">Postgraduate</button>
+</div>
+
+---
 
 ### Solent University (via QA Ltd)
 
-<div class="module">
+<div class="module" data-institution="solent" data-level="foundation">
 <h3>QHO308 - Foundation Computing</h3>
-<p><strong>Level:</strong> Foundation | <strong>Delivery:</strong> Hybrid</p>
-<p><strong>Taught:</strong> 14/10/24 - 16/02/25</p>
-<p>Introduction to computing fundamentals, programming basics, and computational thinking for students beginning their computing journey.</p>
+<div class="module-meta">
+  <span class="badge badge-foundation">Foundation</span>
+  <span class="badge badge-hybrid">Hybrid</span>
+  <span class="badge badge-dates">14/10/24 - 16/02/25</span>
+</div>
+<p><strong>Description:</strong> Introduction to computing fundamentals, programming basics, and computational thinking for students beginning their computing journey.</p>
+<p><strong>Learning Outcomes:</strong> By the end of this module, students will be able to understand basic computing concepts, write simple programs, and apply computational thinking to solve problems.</p>
+<p><strong>Assessment:</strong> Coursework (60%) • Practical Exercises (40%)</p>
 </div>
 
-<div class="module">
+<div class="module" data-institution="solent" data-level="foundation">
 <h3>QHO328 - Foundation Mathematics</h3>
-<p><strong>Level:</strong> Foundation | <strong>Delivery:</strong> Hybrid</p>
-<p><strong>Taught:</strong> 17/02/25 - 16/06/25</p>
-<p>Mathematical foundations essential for computer science, covering algebra, calculus, and discrete mathematics.</p>
+<div class="module-meta">
+  <span class="badge badge-foundation">Foundation</span>
+  <span class="badge badge-hybrid">Hybrid</span>
+  <span class="badge badge-dates">17/02/25 - 16/06/25</span>
+</div>
+<p><strong>Description:</strong> Mathematical foundations essential for computer science, covering algebra, calculus, and discrete mathematics.</p>
+<p><strong>Learning Outcomes:</strong> Students will master fundamental mathematical concepts including algebraic manipulation, basic calculus, and discrete mathematics principles essential for computer science.</p>
+<p><strong>Assessment:</strong> Examinations (70%) • Coursework (30%)</p>
 </div>
 
-<div class="module">
+<div class="module" data-institution="solent" data-level="undergraduate">
 <h3>QHO427 - Introduction to Networks and Security</h3>
-<p><strong>Level:</strong> Level 4 | <strong>Delivery:</strong> Hybrid</p>
-<p><strong>Taught:</strong> 19/02/24 - 24/06/24 | 17/02/25 - 16/06/25 | 13/10/25 - 8/02/26</p>
-<p>Fundamentals of computer networks, protocols, network design, and basic cybersecurity principles. Uses Cisco NetAcad resources covering the OSI model, network operating systems (Windows and Linux), network services, resilience, and security principles. Students gain hands-on experience with both Windows and Linux server environments, shared resources, and command-line operations.</p>
+<div class="module-meta">
+  <span class="badge badge-undergraduate">Level 4</span>
+  <span class="badge badge-hybrid">Hybrid</span>
+  <span class="badge badge-dates">19/02/24 - 24/06/24 | 17/02/25 - 16/06/25 | 13/10/25 - 8/02/26</span>
+</div>
+<p><strong>Description:</strong> Fundamentals of computer networks, protocols, network design, and basic cybersecurity principles. Uses Cisco NetAcad resources covering the OSI model, network operating systems (Windows and Linux), network services, resilience, and security principles.</p>
+<p><strong>Learning Outcomes:</strong> Students will understand network architectures, configure network services, implement security measures, and gain hands-on experience with Windows and Linux server environments.</p>
 <p><strong>Technologies Covered:</strong> Cisco NetAcad • Windows Server • Linux • Network Protocols • Security Fundamentals</p>
+<p><strong>Assessment:</strong> Practical Labs (50%) • Written Exam (30%) • Coursework (20%)</p>
 </div>
 
-<div class="module">
+<div class="module" data-institution="solent" data-level="undergraduate">
 <h3>QHO443 - Network Applications</h3>
-<p><strong>Level:</strong> Level 4 | <strong>Delivery:</strong> Hybrid</p>
-<p><strong>Taught:</strong> 13/10/25 - 8/02/26</p>
-<p>Exploration of network applications, core networking concepts, the OSI model, key features of Windows and Linux network operating systems, and essential network services, resilience, and security principles. Students practice in both Windows and Linux server environments, locating shared resources, and performing basic command-line operations for file and system management.</p>
+<div class="module-meta">
+  <span class="badge badge-undergraduate">Level 4</span>
+  <span class="badge badge-hybrid">Hybrid</span>
+  <span class="badge badge-dates">13/10/25 - 8/02/26</span>
+</div>
+<p><strong>Description:</strong> Exploration of network applications, core networking concepts, the OSI model, key features of Windows and Linux network operating systems, and essential network services, resilience, and security principles.</p>
+<p><strong>Learning Outcomes:</strong> Students will be able to design network applications, configure network services, manage shared resources, and perform command-line operations for system management.</p>
 <p><strong>Technologies Covered:</strong> Windows Server • Linux • Network Services • Command-Line Operations</p>
+<p><strong>Assessment:</strong> Practical Projects (60%) • Written Assessment (40%)</p>
 </div>
 
-<div class="module">
+<div class="module" data-institution="solent" data-level="undergraduate">
 <h3>QHO543 - Object Oriented Design and Development</h3>
-<p><strong>Level:</strong> Level 5 | <strong>Delivery:</strong> Hybrid</p>
-<p><strong>Taught:</strong> 19/02/24 - 24/06/24 | 17/02/25 - 16/06/25</p>
-<p>Advanced software development practices including OOP principles, Java programming, UML design, JSP (JavaServer Pages), JDBC, exception handling, and software engineering best practices. Covers design patterns, coupling, cohesion, and testing with JUnit. Students learn to build scalable web applications using Java technologies.</p>
+<div class="module-meta">
+  <span class="badge badge-undergraduate">Level 5</span>
+  <span class="badge badge-hybrid">Hybrid</span>
+  <span class="badge badge-dates">19/02/24 - 24/06/24 | 17/02/25 - 16/06/25</span>
+</div>
+<p><strong>Description:</strong> Advanced software development practices including OOP principles, Java programming, UML design, JSP (JavaServer Pages), JDBC, exception handling, and software engineering best practices.</p>
+<p><strong>Learning Outcomes:</strong> Students will design and implement object-oriented systems, create web applications using JSP, connect to databases using JDBC, apply design patterns, and write unit tests with JUnit.</p>
 <p><strong>Technologies Covered:</strong> Java • OOP Design • UML • JSP • JDBC • JUnit • Design Patterns • Git • Software Engineering</p>
 <p><strong>Topics:</strong> Introduction to Java, OOP principles, UML modeling, Arrays, JSP Sessions, Exception Handling, Database Connectivity (JDBC), Unit Testing, Coupling & Cohesion, Design Patterns</p>
+<p><strong>Assessment:</strong> Coursework Project (70%) • Practical Exam (30%)</p>
 </div>
 
-<div class="module">
+<div class="module" data-institution="solent" data-level="undergraduate">
 <h3>QHO305 - Problem Solving</h3>
-<p><strong>Level:</strong> Level 3 | <strong>Delivery:</strong> Hybrid</p>
-<p><strong>Taught:</strong> 10/02/25 - 16/06/25 | 16/06/25 - 6/10/25</p>
-<p>Introduction to programming using the C language. Covers the fundamentals of C programming including vocabulary, basics of programming, flow control, variables, escape sequences, strings, calculations, and more. Students learn to obtain a compiler and IDE, write basic C code, add comments, work with variables and strings, and perform calculations.</p>
+<div class="module-meta">
+  <span class="badge badge-undergraduate">Level 3</span>
+  <span class="badge badge-hybrid">Hybrid</span>
+  <span class="badge badge-dates">10/02/25 - 16/06/25 | 16/06/25 - 6/10/25</span>
+</div>
+<p><strong>Description:</strong> Introduction to programming using the C language. Covers the fundamentals of C programming including vocabulary, basics of programming, flow control, variables, escape sequences, strings, and calculations.</p>
+<p><strong>Learning Outcomes:</strong> Students will be able to obtain and configure a compiler and IDE, write basic C programs, use variables and data types, implement control structures, work with strings, and perform calculations.</p>
 <p><strong>Technologies Covered:</strong> C Programming Language • Compilers • IDEs</p>
-<p><strong>Learning Objectives:</strong> Recognize how to obtain a compiler and IDE, determine the basics of C code, identify how to add comments, break down flow control, examine variables, recognize string components, evaluate calculations</p>
+<p><strong>Assessment:</strong> Practical Programming Exercises (60%) • Written Exam (40%)</p>
 </div>
 
-<div class="module">
+<div class="module" data-institution="solent" data-level="undergraduate">
 <h3>QHO426 - Problem Solving through Programming</h3>
-<p><strong>Level:</strong> Level 4 | <strong>Delivery:</strong> Hybrid</p>
-<p><strong>Taught:</strong> 17/02/25 - 16/06/25</p>
-<p>Core programming concepts, data structures, algorithms, and problem-solving methodologies. Emphasizes computational thinking and practical coding skills using Python. Covers user input/output, data types, variables, operators, decisions, repetition, nesting, functions, modules, imports, packages and namespaces.</p>
+<div class="module-meta">
+  <span class="badge badge-undergraduate">Level 4</span>
+  <span class="badge badge-hybrid">Hybrid</span>
+  <span class="badge badge-dates">17/02/25 - 16/06/25</span>
+</div>
+<p><strong>Description:</strong> Core programming concepts, data structures, algorithms, and problem-solving methodologies using Python. Emphasizes computational thinking and practical coding skills.</p>
+<p><strong>Learning Outcomes:</strong> Students will master Python programming fundamentals, implement data structures, design algorithms, and apply problem-solving methodologies to real-world scenarios.</p>
 <p><strong>Technologies Covered:</strong> Python • Data Structures • Algorithms</p>
+<p><strong>Assessment:</strong> Programming Projects (70%) • Written Assessment (30%)</p>
 </div>
 
-<div class="module">
+<div class="module" data-institution="solent" data-level="undergraduate">
 <h3>QHO444 - Problem Solving Through Programming</h3>
-<p><strong>Level:</strong> Level 4 | <strong>Delivery:</strong> Hybrid</p>
-<p><strong>Taught:</strong> 13/10/25 - 8/02/26</p>
-<p>Problem-solving through practice with weekly learning activities including lectures, practical labs and seminars. Structured in four blocks: Basics (user input/output, data types, variables, operators, decisions, repetition, nesting, functions, modules, imports, packages and namespaces), Data (data storage and manipulation, strings, sequences, lists, tuples, sets, maps, dictionaries, file input/output, web resources, testing and debugging, error handling), Visualisation (importing libraries, importing data sets, visualising data, displaying charts, graphs, plots and subplots), and OOP (abstraction, objects, classes, encapsulation, attributes, methods, accessors, mutators, modifiers, inheritance, polymorphism).</p>
+<div class="module-meta">
+  <span class="badge badge-undergraduate">Level 4</span>
+  <span class="badge badge-hybrid">Hybrid</span>
+  <span class="badge badge-dates">13/10/25 - 8/02/26</span>
+</div>
+<p><strong>Description:</strong> Problem-solving through practice with weekly learning activities. Structured in four blocks: Basics (input/output, data types, variables, operators, control structures, functions), Data (data storage, sequences, file I/O, testing, error handling), Visualisation (data visualization libraries, charts, graphs, plots), and OOP (abstraction, objects, classes, encapsulation, inheritance, polymorphism).</p>
+<p><strong>Learning Outcomes:</strong> Students will develop comprehensive Python programming skills, create data visualizations, implement object-oriented designs, and build complete applications with error handling and testing.</p>
 <p><strong>Technologies Covered:</strong> Python • Data Structures • Data Visualization • OOP • File I/O • Testing & Debugging</p>
+<p><strong>Assessment:</strong> Progressive Coursework (80%) • Final Project (20%)</p>
 </div>
 
-<div class="module">
+<div class="module" data-institution="solent" data-level="undergraduate">
 <h3>QHO540 - Web Application Development</h3>
-<p><strong>Level:</strong> Level 5 | <strong>Delivery:</strong> Hybrid</p>
-<p><strong>Taught:</strong> 16/06/25 - 6/10/25</p>
-<p>Comprehensive web application development covering both frontend and backend technologies. Students learn to build modern, scalable web applications using industry-standard frameworks and tools. Covers full-stack development, API design, database integration, and deployment practices.</p>
-<p><strong>Technologies Covered:</strong> Modern Web Frameworks • Frontend Technologies • Backend Technologies • APIs • Databases • Deployment</p>
+<div class="module-meta">
+  <span class="badge badge-undergraduate">Level 5</span>
+  <span class="badge badge-hybrid">Hybrid</span>
+  <span class="badge badge-dates">16/06/25 - 6/10/25</span>
+</div>
+<p><strong>Description:</strong> Comprehensive web application development covering both frontend and backend technologies. Students learn to build modern, scalable web applications using industry-standard frameworks and tools.</p>
+<p><strong>Learning Outcomes:</strong> Students will design and develop full-stack web applications, implement RESTful APIs, integrate databases, and deploy applications to cloud platforms.</p>
+<p><strong>Technologies Covered:</strong> Node.js • Express • React • MongoDB • PostgreSQL • AWS/Azure • RESTful APIs</p>
+<p><strong>Assessment:</strong> Full-Stack Project (70%) • Technical Report (30%)</p>
 </div>
 
-<div class="module">
+<div class="module" data-institution="solent" data-level="undergraduate">
 <h3>QHO431 - Web Technologies</h3>
-<p><strong>Level:</strong> Level 4 | <strong>Delivery:</strong> Hybrid</p>
-<p><strong>Taught:</strong> 10/02/25 - 16/06/25</p>
-<p>Introduction to web technologies covering HTML, CSS, JavaScript, and modern web development practices. Students learn to create responsive, interactive web applications using current web standards and technologies.</p>
-<p><strong>Technologies Covered:</strong> HTML • CSS • JavaScript • Web Standards • Responsive Design</p>
+<div class="module-meta">
+  <span class="badge badge-undergraduate">Level 4</span>
+  <span class="badge badge-hybrid">Hybrid</span>
+  <span class="badge badge-dates">10/02/25 - 16/06/25</span>
+</div>
+<p><strong>Description:</strong> Introduction to web technologies covering HTML, CSS, JavaScript, and modern web development practices. Students learn to create responsive, interactive web applications.</p>
+<p><strong>Learning Outcomes:</strong> Students will create semantic HTML structures, style pages with CSS, implement interactive features with JavaScript, and build responsive web applications following modern standards.</p>
+<p><strong>Technologies Covered:</strong> HTML5 • CSS3 • JavaScript (ES6+) • Responsive Design • Web Standards</p>
+<p><strong>Assessment:</strong> Website Project (60%) • Written Exam (40%)</p>
 </div>
 
-<div class="module">
+<div class="module" data-institution="solent" data-level="undergraduate">
 <h3>QHO428 - UX (User Experience)</h3>
-<p><strong>Level:</strong> Level 4 | <strong>Delivery:</strong> Hybrid</p>
-<p>User-centered design principles, UI prototyping, usability testing, and UX research methods. Focus on designing user-centric interfaces.</p>
+<div class="module-meta">
+  <span class="badge badge-undergraduate">Level 4</span>
+  <span class="badge badge-hybrid">Hybrid</span>
+  <span class="badge badge-dates">Currently Teaching</span>
+</div>
+<p><strong>Description:</strong> User-centered design principles, UI prototyping, usability testing, and UX research methods. Focus on designing user-centric interfaces that enhance user satisfaction and accessibility.</p>
+<p><strong>Learning Outcomes:</strong> Students will conduct user research, create wireframes and prototypes, perform usability testing, and design accessible interfaces following UX best practices.</p>
+<p><strong>Technologies Covered:</strong> Figma • Adobe XD • User Research Tools • Prototyping Tools</p>
+<p><strong>Assessment:</strong> UX Portfolio (70%) • Usability Report (30%)</p>
 </div>
 
-<div class="module">
+<div class="module" data-institution="solent" data-level="undergraduate">
 <h3>QHO317 - Digital Media Technologies</h3>
-<p><strong>Level:</strong> Level 3 | <strong>Delivery:</strong> Hybrid</p>
-<p>Introduction to digital media creation, manipulation, and distribution technologies. Covers multimedia fundamentals and digital content development.</p>
+<div class="module-meta">
+  <span class="badge badge-undergraduate">Level 3</span>
+  <span class="badge badge-hybrid">Hybrid</span>
+  <span class="badge badge-dates">Currently Teaching</span>
 </div>
+<p><strong>Description:</strong> Introduction to digital media creation, manipulation, and distribution technologies. Covers multimedia fundamentals, digital content development, and media production workflows.</p>
+<p><strong>Learning Outcomes:</strong> Students will create digital media content, manipulate images and videos, understand multimedia formats, and distribute content across digital platforms.</p>
+<p><strong>Technologies Covered:</strong> Adobe Creative Suite • Video Editing Tools • Image Processing • Multimedia Formats</p>
+<p><strong>Assessment:</strong> Media Portfolio (60%) • Technical Report (40%)</p>
+</div>
+
+---
 
 ### Ulster University (via QA Ltd)
 
-<div class="module">
+<div class="module" data-institution="ulster" data-level="postgraduate">
 <h3>CMP701 - Digital Transformation</h3>
-<p><strong>Level:</strong> MSc | <strong>Delivery:</strong> Hybrid</p>
-<p>Strategic approaches to digital transformation in organizations, covering technology adoption, change management, and digital business models.</p>
+<div class="module-meta">
+  <span class="badge badge-postgraduate">MSc</span>
+  <span class="badge badge-hybrid">Hybrid</span>
+</div>
+<p><strong>Description:</strong> Strategic approaches to digital transformation in organizations, covering technology adoption, change management, and digital business models.</p>
+<p><strong>Learning Outcomes:</strong> Students will analyze digital transformation strategies, evaluate technology adoption frameworks, design change management plans, and develop digital business models.</p>
+<p><strong>Assessment:</strong> Case Study Analysis (50%) • Strategic Report (50%)</p>
 </div>
 
-<div class="module">
+<div class="module" data-institution="ulster" data-level="postgraduate">
 <h3>COM745 - Big Data & Infrastructure</h3>
-<p><strong>Level:</strong> MSc | <strong>Delivery:</strong> Hybrid</p>
-<p>Large-scale data processing, distributed systems, cloud infrastructure (AWS/Azure), and big data technologies. Covers container orchestration and serverless architectures.</p>
-<p><strong>Technologies Covered:</strong> AWS • Azure • Docker • Kubernetes • Big Data Tools</p>
+<div class="module-meta">
+  <span class="badge badge-postgraduate">MSc</span>
+  <span class="badge badge-hybrid">Hybrid</span>
+</div>
+<p><strong>Description:</strong> Large-scale data processing, distributed systems, cloud infrastructure (AWS/Azure), and big data technologies. Covers container orchestration and serverless architectures.</p>
+<p><strong>Learning Outcomes:</strong> Students will design big data architectures, implement distributed systems, deploy containerized applications, and manage cloud infrastructure at scale.</p>
+<p><strong>Technologies Covered:</strong> AWS • Azure • Docker • Kubernetes • Hadoop • Spark • Big Data Tools</p>
+<p><strong>Assessment:</strong> Infrastructure Project (70%) • Technical Documentation (30%)</p>
 </div>
 
-<div class="module">
+<div class="module" data-institution="ulster" data-level="postgraduate">
 <h3>COM747 - Introduction to Data Science & Machine Learning</h3>
-<p><strong>Level:</strong> MSc | <strong>Delivery:</strong> Hybrid</p>
-<p>Data wrangling, statistical analysis, supervised and unsupervised learning, and practical ML applications. Integrates research-level content with hands-on projects.</p>
-<p><strong>Technologies Covered:</strong> Python • TensorFlow • PyTorch • scikit-learn • Data Analysis</p>
+<div class="module-meta">
+  <span class="badge badge-postgraduate">MSc</span>
+  <span class="badge badge-hybrid">Hybrid</span>
+</div>
+<p><strong>Description:</strong> Data wrangling, statistical analysis, supervised and unsupervised learning, and practical ML applications. Integrates research-level content with hands-on projects.</p>
+<p><strong>Learning Outcomes:</strong> Students will preprocess and analyze data, implement machine learning algorithms, evaluate model performance, and apply ML techniques to real-world problems.</p>
+<p><strong>Technologies Covered:</strong> Python • TensorFlow • PyTorch • scikit-learn • Pandas • NumPy • Data Analysis</p>
+<p><strong>Assessment:</strong> ML Project (60%) • Research Paper Review (40%)</p>
 </div>
 
-<div class="module">
+<div class="module" data-institution="ulster" data-level="postgraduate">
 <h3>Deep Learning and Its Application</h3>
-<p><strong>Level:</strong> MSc | <strong>Delivery:</strong> Hybrid</p>
-<p>Advanced neural networks, deep learning architectures, computer vision, and practical applications. Connects coursework to cutting-edge research in AI and machine learning.</p>
-<p><strong>Technologies Covered:</strong> PyTorch • TensorFlow • Computer Vision • OpenCV</p>
+<div class="module-meta">
+  <span class="badge badge-postgraduate">MSc</span>
+  <span class="badge badge-hybrid">Hybrid</span>
+</div>
+<p><strong>Description:</strong> Advanced neural networks, deep learning architectures, computer vision, and practical applications. Connects coursework to cutting-edge research in AI and machine learning, including my own research on Cosine-Gated LSTM and reinforcement learning.</p>
+<p><strong>Learning Outcomes:</strong> Students will design deep neural networks, implement convolutional and recurrent architectures, apply transfer learning, and develop computer vision applications.</p>
+<p><strong>Technologies Covered:</strong> PyTorch • TensorFlow • Computer Vision • OpenCV • Deep Learning Frameworks</p>
+<p><strong>Assessment:</strong> Deep Learning Project (70%) • Research Presentation (30%)</p>
 </div>
 
-<div class="module">
+<div class="module" data-institution="ulster" data-level="postgraduate">
 <h3>COM759 - Knowledge Engineering</h3>
-<p><strong>Level:</strong> MSc | <strong>Delivery:</strong> Hybrid</p>
-<p>Knowledge representation, expert systems, ontologies, and knowledge-based systems. Covers semantic web technologies and knowledge management.</p>
+<div class="module-meta">
+  <span class="badge badge-postgraduate">MSc</span>
+  <span class="badge badge-hybrid">Hybrid</span>
+</div>
+<p><strong>Description:</strong> Knowledge representation, expert systems, ontologies, and knowledge-based systems. Covers semantic web technologies and knowledge management.</p>
+<p><strong>Learning Outcomes:</strong> Students will design knowledge bases, create ontologies, implement expert systems, and apply semantic web technologies for knowledge management.</p>
+<p><strong>Technologies Covered:</strong> OWL • RDF • SPARQL • Expert Systems • Ontology Tools</p>
+<p><strong>Assessment:</strong> Knowledge Base Project (65%) • Research Essay (35%)</p>
 </div>
 
-<div class="module">
+<div class="module" data-institution="ulster" data-level="postgraduate">
 <h3>COM769 - Scalable Advanced Software Solutions</h3>
-<p><strong>Level:</strong> MSc | <strong>Delivery:</strong> Hybrid</p>
-<p>Building scalable software systems, microservices architecture, cloud-native development, and advanced software engineering practices. Emphasizes real-world projects and industry standards.</p>
-<p><strong>Technologies Covered:</strong> Modern Frameworks • Cloud Platforms • DevOps • CI/CD</p>
+<div class="module-meta">
+  <span class="badge badge-postgraduate">MSc</span>
+  <span class="badge badge-hybrid">Hybrid</span>
+</div>
+<p><strong>Description:</strong> Building scalable software systems, microservices architecture, cloud-native development, and advanced software engineering practices. Emphasizes real-world projects and industry standards.</p>
+<p><strong>Learning Outcomes:</strong> Students will architect scalable systems, implement microservices, apply DevOps practices, and deploy applications using CI/CD pipelines.</p>
+<p><strong>Technologies Covered:</strong> Microservices • Cloud Platforms • DevOps • CI/CD • Container Orchestration</p>
+<p><strong>Assessment:</strong> Scalable System Project (75%) • Architecture Documentation (25%)</p>
 </div>
 
-<div class="module">
+<div class="module" data-institution="ulster" data-level="postgraduate">
 <h3>COM777 - Applied Consulting Project</h3>
-<p><strong>Level:</strong> MSc | <strong>Delivery:</strong> Hybrid</p>
-<p>Practical consulting project work, applying computing knowledge to real-world business problems. Includes project management and client interaction.</p>
+<div class="module-meta">
+  <span class="badge badge-postgraduate">MSc</span>
+  <span class="badge badge-hybrid">Hybrid</span>
+</div>
+<p><strong>Description:</strong> Practical consulting project work, applying computing knowledge to real-world business problems. Includes project management and client interaction.</p>
+<p><strong>Learning Outcomes:</strong> Students will analyze business requirements, design technical solutions, manage projects, communicate with stakeholders, and deliver consulting outcomes.</p>
+<p><strong>Assessment:</strong> Consulting Project (80%) • Reflective Report (20%)</p>
 </div>
 
-### University of Roehampton (via QA Ltd)
-
-<div class="module">
-<h3>Various Computing Modules</h3>
-<p><strong>Level:</strong> Undergraduate | <strong>Delivery:</strong> Hybrid</p>
-<p>Teaching various introductory and advanced computing modules covering programming, databases, operating systems, networking, and software development.</p>
-</div>
+---
 
 ### Crimson Education
 
-<div class="module">
+<div class="module" data-institution="crimson" data-level="secondary">
 <h3>GCSE Computer Science</h3>
-<p><strong>Level:</strong> GCSE (Level 2) | <strong>Delivery:</strong> Online</p>
-<p>Comprehensive GCSE curriculum covering programming fundamentals, algorithms, data structures, and computer systems. Designed for students preparing for GCSE examinations.</p>
+<div class="module-meta">
+  <span class="badge badge-secondary">GCSE (Level 2)</span>
+  <span class="badge badge-online">Online</span>
+</div>
+<p><strong>Description:</strong> Comprehensive GCSE curriculum covering programming fundamentals, algorithms, data structures, and computer systems. Designed for students preparing for GCSE examinations.</p>
+<p><strong>Learning Outcomes:</strong> Students will master programming concepts, understand algorithms and data structures, comprehend computer systems architecture, and excel in GCSE examinations.</p>
+<p><strong>Technologies Covered:</strong> Python • Algorithms • Data Structures • Computer Systems</p>
+<p><strong>Assessment:</strong> Mock Examinations • Coursework Projects • Final GCSE Examination</p>
 </div>
 
-<div class="module">
+<div class="module" data-institution="crimson" data-level="secondary">
 <h3>A-Level Computer Science</h3>
-<p><strong>Level:</strong> A-Level (Level 3) | <strong>Delivery:</strong> Online</p>
-<p>Advanced computer science curriculum covering advanced programming, algorithms, data structures, software engineering, and computer systems. Prepares students for A-level examinations and further study.</p>
+<div class="module-meta">
+  <span class="badge badge-secondary">A-Level (Level 3)</span>
+  <span class="badge badge-online">Online</span>
+</div>
+<p><strong>Description:</strong> Advanced computer science curriculum covering advanced programming, algorithms, data structures, software engineering, and computer systems. Prepares students for A-level examinations and further study.</p>
+<p><strong>Learning Outcomes:</strong> Students will develop advanced programming skills, design complex algorithms, understand software engineering principles, and achieve success in A-level examinations.</p>
+<p><strong>Technologies Covered:</strong> Advanced Python • Object-Oriented Programming • Software Engineering • Algorithms & Complexity</p>
+<p><strong>Assessment:</strong> Coursework Project (20%) • Written Examinations (80%)</p>
 </div>
 
 ---
 
 ## 🏛️ Previous Teaching Roles
 
-### Teaching Assistant
-**South and City College Birmingham**  
-*January 2023 - May 2024, Birmingham, United Kingdom*
+<div class="previous-roles">
+  <div class="role-card">
+    <h3>Teaching Assistant</h3>
+    <p><strong>South and City College Birmingham</strong></p>
+    <p><em>January 2023 - May 2024, Birmingham, United Kingdom</em></p>
+    <ul>
+      <li>Provided tailored support to students with various learning disabilities, ensuring accessibility and understanding</li>
+      <li>Employed innovative teaching strategies to accommodate individual learning styles, enhancing engagement</li>
+      <li>Collaborated with faculty to develop inclusive educational materials and practices</li>
+      <li>Provided instructional support for Robotics and Automation courses, guiding Level 4-5 students in hands-on lab exercises</li>
+    </ul>
+  </div>
 
-- Provided tailored support to students with various learning disabilities, ensuring accessibility and understanding
-- Employed innovative teaching strategies to accommodate individual learning styles, enhancing engagement
-- Collaborated with faculty to develop inclusive educational materials and practices
-- Maintained a supportive environment, encouraging students to reach their academic and personal goals
-- Provided instructional support for Robotics and Automation courses, guiding Level 4-5 students in hands-on lab exercises
-
-### Teaching Assistant in A.I: Robotics and Autonomous Systems (MSc)
-**Aston University**  
-*February 2020 - December 2021, Birmingham, United Kingdom*
-
-- Conducted advanced research and implemented complex algorithmic solutions in robotics
-- Developed and delivered modules on object detection, AI, and machine learning
-- Assisted in module delivery for master's-level Robotics courses, including advanced programming and control systems
-- Marked student assignments, contributed to curriculum updates, and supported exam preparation workshops
+  <div class="role-card">
+    <h3>Teaching Assistant in A.I: Robotics and Autonomous Systems (MSc)</h3>
+    <p><strong>Aston University</strong></p>
+    <p><em>February 2020 - December 2021, Birmingham, United Kingdom</em></p>
+    <ul>
+      <li>Conducted advanced research and implemented complex algorithmic solutions in robotics</li>
+      <li>Developed and delivered modules on object detection, AI, and machine learning</li>
+      <li>Assisted in module delivery for master's-level Robotics courses, including advanced programming and control systems</li>
+      <li>Marked student assignments, contributed to curriculum updates, and supported exam preparation workshops</li>
+    </ul>
+  </div>
+</div>
 
 ---
 
@@ -225,7 +380,7 @@ I prepare students worldwide for GCSE and A-level computer science examinations,
   </div>
   <div class="approach-card">
     <h3>🔬 Research Integration</h3>
-    <p>Connect coursework to cutting-edge research in AI, robotics, and machine learning. Students see how theoretical concepts apply to real-world problems, including my own research on reinforcement learning and neural architectures.</p>
+    <p>Connect coursework to cutting-edge research in AI, robotics, and machine learning. Students see how theoretical concepts apply to real-world problems, including my own research on reinforcement learning, Cosine-Gated LSTM, and adaptive prediction horizons.</p>
   </div>
   <div class="approach-card">
     <h3>📊 Practical Application</h3>
@@ -236,41 +391,6 @@ I prepare students worldwide for GCSE and A-level computer science examinations,
     <p>Champion inclusivity and accessibility in module design and class delivery, adapting methods to support diverse learning styles. Provide tailored support and innovative teaching strategies.</p>
   </div>
 </div>
-
----
-
-## 🛠️ Technical Skills & Expertise
-
-### Programming Languages & Frameworks
-Python (Advanced) • Java • C++ • C# • MATLAB • Modern C++17 • JavaScript • SQL • Bash
-
-### Machine Learning & AI
-TensorFlow • PyTorch • scikit-learn • Computer Vision • OpenCV • Deep Learning • Reinforcement Learning • LLM Fine-tuning (LoRA, RAG) • LangChain • Hugging Face Transformers
-
-### Cloud & DevOps
-AWS (EC2, S3, ECR, Lambda) • Azure • Docker • Kubernetes • GitHub Actions • MLflow • DVC • TensorRT
-
-### Web & Databases
-HTML • CSS • JavaScript • Django • Node.js • Express • React.js • PostgreSQL • MySQL • MongoDB
-
-### Robotics & Simulation
-ROS • CARLA • SocNavGym • Gazebo • Sensor Fusion • SLAM • Kalman Filters • Navigation Principles
-
-### Tools & Platforms
-Git • Jupyter • Blackboard • Moodle • MS Teams • Zoom • Tinkercad • Cisco Packet Tracer
-
----
-
-## 📚 Key Teaching Areas
-
-- **Programming (Python/Java):** Software development, data structures, OOP principles, best coding practices
-- **Databases & Cloud Computing:** Database design and management, AWS/Azure deployment, cloud-native architectures
-- **Operating Systems & Networking:** OS fundamentals, computer networks, security, distributed systems
-- **Data Analysis, Big Data & AI:** Statistics, machine learning, deep learning, ethical AI considerations
-- **Digital Business/Ethics & IT Project Management:** Technology-business alignment, agile methodologies
-- **HCI/UX/Web Development:** User-centered design, UX research, front-end development
-- **Cyber Security Fundamentals:** Network security, threat analysis, cryptography basics
-- **Robotics & Autonomous Systems:** Sensor fusion, navigation, control systems, AI applications
 
 ---
 
@@ -293,13 +413,31 @@ Comprehensive progressive teaching modules covering full-stack web development:
 
 ---
 
-## 📞 Office Hours & Contact
+## 📞 Contact & Availability
 
-<p><strong>Office Hours:</strong> By appointment</p>
-<p><strong>Email:</strong> <a href="mailto:goodluckoguzie1@gmail.com">goodluckoguzie1@gmail.com</a></p>
-<p><strong>Location:</strong> Virtual or Birmingham, United Kingdom</p>
+<div class="contact-section">
+  <div class="contact-card">
+    <h3>📧 Email</h3>
+    <p><a href="mailto:goodluckoguzie1@gmail.com">goodluckoguzie1@gmail.com</a></p>
+    <p><em>Response time: Within 48 hours</em></p>
+  </div>
+  
+  <div class="contact-card">
+    <h3>📍 Location</h3>
+    <p>Birmingham, United Kingdom</p>
+    <p>Available for virtual or in-person meetings</p>
+  </div>
+  
+  <div class="contact-card">
+    <h3>⏰ Office Hours</h3>
+    <p>By appointment</p>
+    <p>Flexible scheduling available for students and collaborators</p>
+  </div>
+</div>
 
-<p>For course-related inquiries, student consultations, or teaching resource requests, please feel free to reach out.</p>
+<p style="margin-top: 2rem; text-align: center;">
+  <strong>For course-related inquiries, student consultations, or teaching resource requests, please feel free to reach out.</strong>
+</p>
 
 ---
 
@@ -308,7 +446,7 @@ Comprehensive progressive teaching modules covering full-stack web development:
 <ul>
 <li><strong>13+ years</strong> of programming and teaching experience across multiple institutions</li>
 <li><strong>20+ modules</strong> developed and delivered at undergraduate and postgraduate levels</li>
-<li><strong>100+ students</strong> taught across various levels (Foundation, GCSE, A-Level, Undergraduate, MSc)</li>
+<li><strong>500+ students</strong> taught across various levels (Foundation, GCSE, A-Level, Undergraduate, MSc)</li>
 <li>Current positions: <strong>QA Ltd</strong> (January 2024 - Present) and <strong>Crimson Education</strong> (November 2020 - Present)</li>
 <li>Previous roles: <strong>South and City College Birmingham</strong> (2023-2024) and <strong>Aston University</strong> (2020-2021)</li>
 <li>Experience with diverse student cohorts, including students with learning disabilities</li>
@@ -316,4 +454,44 @@ Comprehensive progressive teaching modules covering full-stack web development:
 <li>Proven track record in curriculum development, assessment design, and student mentoring</li>
 </ul>
 
-<p>I'm open to discussing teaching opportunities, course development, and educational collaborations.</p>
+<p style="text-align: center; margin-top: 2rem;">
+  <strong>I'm open to discussing teaching opportunities, course development, and educational collaborations.</strong>
+</p>
+
+<script>
+// Teaching page filter functionality
+document.addEventListener('DOMContentLoaded', function() {
+    const filterButtons = document.querySelectorAll('.teaching-filters .filter-btn');
+    const modules = document.querySelectorAll('.module');
+    
+    filterButtons.forEach(btn => {
+        btn.addEventListener('click', () => {
+            // Update active state
+            filterButtons.forEach(b => b.classList.remove('active'));
+            btn.classList.add('active');
+            
+            const filter = btn.dataset.filter;
+            
+            modules.forEach(module => {
+                if (filter === 'all') {
+                    module.style.display = 'block';
+                } else if (filter === 'solent' && module.dataset.institution === 'solent') {
+                    module.style.display = 'block';
+                } else if (filter === 'ulster' && module.dataset.institution === 'ulster') {
+                    module.style.display = 'block';
+                } else if (filter === 'crimson' && module.dataset.institution === 'crimson') {
+                    module.style.display = 'block';
+                } else if (filter === 'foundation' && module.dataset.level === 'foundation') {
+                    module.style.display = 'block';
+                } else if (filter === 'undergraduate' && module.dataset.level === 'undergraduate') {
+                    module.style.display = 'block';
+                } else if (filter === 'postgraduate' && module.dataset.level === 'postgraduate') {
+                    module.style.display = 'block';
+                } else {
+                    module.style.display = 'none';
+                }
+            });
+        });
+    });
+});
+</script>

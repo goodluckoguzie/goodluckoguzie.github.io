@@ -2762,6 +2762,249 @@ table tbody tr:last-child {
     margin-bottom: 1rem;
 }
 
+/* Teaching Page Styles */
+.teaching-positions {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+    margin: 2rem 0;
+}
+
+.position-card {
+    background: var(--bg-card);
+    padding: 2rem;
+    border-radius: 12px;
+    border: 1px solid var(--border);
+    box-shadow: var(--shadow);
+    transition: all var(--transition);
+}
+
+.position-card:hover {
+    transform: translateY(-4px);
+    box-shadow: var(--shadow-md);
+    border-color: var(--link);
+}
+
+.position-card h3 {
+    margin-top: 0;
+    color: var(--primary);
+    margin-bottom: 0.5rem;
+}
+
+.position-card p {
+    margin: 0.5rem 0;
+}
+
+/* Teaching Filters */
+.teaching-filters {
+    display: flex;
+    gap: 1rem;
+    margin: 1.5rem 0 2rem 0;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+/* Module Badges */
+.module-meta {
+    display: flex;
+    gap: 0.5rem;
+    flex-wrap: wrap;
+    margin: 1rem 0;
+    align-items: center;
+}
+
+.badge {
+    padding: 0.35rem 0.75rem;
+    border-radius: 16px;
+    font-size: 0.8rem;
+    font-weight: 600;
+    display: inline-block;
+}
+
+.badge-foundation {
+    background: #e3f2fd;
+    color: #1976d2;
+    border: 1px solid #90caf9;
+}
+
+.badge-undergraduate {
+    background: #f3e5f5;
+    color: #7b1fa2;
+    border: 1px solid #ce93d8;
+}
+
+.badge-postgraduate {
+    background: #fff3e0;
+    color: #e65100;
+    border: 1px solid #ffb74d;
+}
+
+.badge-secondary {
+    background: #e8f5e9;
+    color: #2e7d32;
+    border: 1px solid #a5d6a7;
+}
+
+.badge-hybrid {
+    background: #fce4ec;
+    color: #c2185b;
+    border: 1px solid #f48fb1;
+}
+
+.badge-online {
+    background: #e0f2f1;
+    color: #00695c;
+    border: 1px solid #80cbc4;
+}
+
+.badge-dates {
+    background: var(--bg-alt);
+    color: var(--text-light);
+    border: 1px solid var(--border);
+    font-size: 0.75rem;
+}
+
+/* Enhanced Module Cards */
+.module {
+    background: var(--bg-card);
+    padding: 2rem;
+    border-radius: 12px;
+    margin-bottom: 2rem;
+    box-shadow: var(--shadow);
+    transition: all var(--transition);
+    border: 1px solid var(--border);
+    border-left: 4px solid var(--link);
+}
+
+.module:hover {
+    transform: translateY(-4px);
+    box-shadow: var(--shadow-md);
+    border-color: var(--link);
+}
+
+.module h3 {
+    margin-top: 0;
+    color: var(--primary);
+    margin-bottom: 0.5rem;
+}
+
+.module p {
+    margin: 0.75rem 0;
+    line-height: 1.7;
+}
+
+.module strong {
+    color: var(--primary);
+    font-weight: 600;
+}
+
+/* Previous Roles */
+.previous-roles {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+    margin: 2rem 0;
+}
+
+.role-card {
+    background: var(--bg-card);
+    padding: 2rem;
+    border-radius: 12px;
+    border: 1px solid var(--border);
+    box-shadow: var(--shadow);
+    transition: all var(--transition);
+}
+
+.role-card:hover {
+    transform: translateY(-4px);
+    box-shadow: var(--shadow-md);
+    border-color: var(--link);
+}
+
+.role-card h3 {
+    margin-top: 0;
+    color: var(--primary);
+    margin-bottom: 0.5rem;
+}
+
+.role-card ul {
+    margin: 1rem 0;
+    padding-left: 1.5rem;
+}
+
+.role-card li {
+    margin: 0.5rem 0;
+    line-height: 1.6;
+}
+
+/* Contact Section */
+.contact-section {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 2rem;
+    margin: 2rem 0;
+}
+
+.contact-card {
+    background: var(--bg-card);
+    padding: 2rem;
+    border-radius: 12px;
+    border: 1px solid var(--border);
+    box-shadow: var(--shadow);
+    text-align: center;
+    transition: all var(--transition);
+}
+
+.contact-card:hover {
+    transform: translateY(-4px);
+    box-shadow: var(--shadow-md);
+    border-color: var(--link);
+}
+
+.contact-card h3 {
+    margin-top: 0;
+    color: var(--primary);
+    margin-bottom: 1rem;
+}
+
+.contact-card p {
+    margin: 0.5rem 0;
+}
+
+.contact-card a {
+    color: var(--link);
+    text-decoration: none;
+    font-weight: 500;
+}
+
+.contact-card a:hover {
+    text-decoration: underline;
+}
+
+/* Responsive Design for Teaching Page */
+@media (max-width: 768px) {
+    .teaching-filters {
+        flex-direction: column;
+        align-items: stretch;
+    }
+    
+    .filter-btn {
+        width: 100%;
+        text-align: center;
+    }
+    
+    .module-meta {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    
+    .teaching-positions,
+    .previous-roles,
+    .contact-section {
+        grid-template-columns: 1fr;
+    }
+}
+
 /* Print styles */
 @media print {
     .navbar,
@@ -2769,6 +3012,7 @@ table tbody tr:last-child {
     .theme-toggle,
     .publication-filters,
     .publication-search,
+    .teaching-filters,
     footer {
         display: none;
     }
