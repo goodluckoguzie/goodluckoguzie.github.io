@@ -1830,6 +1830,31 @@ table td.text-center {
     margin-right: auto;
 }
 
+/* Methods Grid Component */
+.methods-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+    gap: 1.5rem;
+    margin: 2rem 0;
+}
+
+.method-card {
+    background: var(--bg-card);
+    border: 1px solid var(--border);
+    border-radius: 10px;
+    padding: 1.5rem;
+}
+
+.method-card h3 {
+    margin-top: 0;
+    color: var(--primary);
+}
+
+.method-card p {
+    color: var(--text-light);
+    margin-bottom: 0;
+}
+
 .project-image-placeholder img {
     max-width: 100%;
     height: auto;

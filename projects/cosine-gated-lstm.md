@@ -11,9 +11,9 @@ title: Cosine-Gated LSTM - Research Project
   <p><strong>2024</strong> • Aston University • IEEE PRML 2024 (pp. 8-15)</p>
 </div>
 
-<div class="table-of-contents" style="background: var(--bg-alt); padding: 1.5rem; border-radius: 8px; margin: 2rem 0; border-left: 4px solid var(--link);">
-  <h3 style="margin-top: 0; color: var(--link);">📑 Table of Contents</h3>
-  <ul style="columns: 2; column-gap: 2rem; list-style: none; padding-left: 0;">
+<div class="table-of-contents">
+  <h3>📑 Table of Contents</h3>
+  <ul>
     <li><a href="#hero">1. Overview</a></li>
     <li><a href="#motivation">2. Research Motivation</a></li>
     <li><a href="#architecture">3. Architecture</a></li>
@@ -30,36 +30,36 @@ title: Cosine-Gated LSTM - Research Project
 
 ## <a id="hero"></a>1. Overview
 
-<div class="hero-section" style="background: linear-gradient(135deg, var(--bg-alt) 0%, var(--bg-card) 100%); padding: 2rem; border-radius: 12px; margin: 2rem 0; border: 2px solid var(--border);">
-  <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 2rem; align-items: center;">
-    <div>
-      <h2 style="margin-top: 0; color: var(--text); font-size: 2rem;">Cosine similarity meets recurrent gating</h2>
-      <p style="font-size: 1.125rem; line-height: 1.8; color: var(--text); margin-bottom: 1.5rem;">
-        CGLSTM adds a cosine-controlled gate to the vanilla LSTM so the network can emphasise inputs that align with the current trajectory and down-weight irrelevant signals. It replaces the traditional sigmoid-only gating with a similarity-aware mechanism, delivering consistent gains across synthetic sequence tasks, vision benchmarks, NLP datasets, and the <a href="{{ '/projects/socnavgym' | relative_url }}" style="color: var(--link); text-decoration: underline;">SocNavGym</a> prediction challenge.
+<div class="hero-section">
+  <div class="hero-section-grid">
+    <div class="hero-section-content">
+      <h2>Cosine similarity meets recurrent gating</h2>
+      <p>
+        CGLSTM adds a cosine-controlled gate to the vanilla LSTM so the network can emphasise inputs that align with the current trajectory and down-weight irrelevant signals. It replaces the traditional sigmoid-only gating with a similarity-aware mechanism, delivering consistent gains across synthetic sequence tasks, vision benchmarks, NLP datasets, and the <a href="{{ '/projects/socnavgym' | relative_url }}" class="internal-link">SocNavGym</a> prediction challenge.
       </p>
 
-      <div class="quick-stats" style="display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 1rem;">
-        <div style="text-align: center; padding: 1rem; background: var(--bg); border-radius: 8px; border: 1px solid var(--border);">
-          <div style="font-size: 2rem; margin-bottom: 0.5rem;">📈</div>
-          <div style="font-weight: bold; color: var(--link);">99.07% Accuracy</div>
-          <div style="font-size: 0.875rem; color: var(--text-light);">Row-wise MNIST (↑0.65 pts vs LSTM/GRU)</div>
+      <div class="quick-stats">
+        <div class="quick-stats-item">
+          <div class="quick-stats-item-icon">📈</div>
+          <div class="quick-stats-item-value">99.07% Accuracy</div>
+          <div class="quick-stats-item-label">Row-wise MNIST (↑0.65 pts vs LSTM/GRU)</div>
         </div>
-        <div style="text-align: center; padding: 1rem; background: var(--bg); border-radius: 8px; border: 1px solid var(--border);">
-          <div style="font-size: 2rem; margin-bottom: 0.5rem;">🧮</div>
-          <div style="font-weight: bold; color: var(--link);">0.0225 MAE</div>
-          <div style="font-size: 0.875rem; color: var(--text-light);">Adding problem (T=1000) lowest error</div>
+        <div class="quick-stats-item">
+          <div class="quick-stats-item-icon">🧮</div>
+          <div class="quick-stats-item-value">0.0225 MAE</div>
+          <div class="quick-stats-item-label">Adding problem (T=1000) lowest error</div>
         </div>
-        <div style="text-align: center; padding: 1rem; background: var(--bg); border-radius: 8px; border: 1px solid var(--border);">
-          <div style="font-size: 2rem; margin-bottom: 0.5rem;">🤖</div>
-          <div style="font-weight: bold; color: var(--link);">35% ↓ MAE @ k=10</div>
-          <div style="font-size: 0.875rem; color: var(--text-light);">SocNavGym vs Transformer baseline</div>
+        <div class="quick-stats-item">
+          <div class="quick-stats-item-icon">🤖</div>
+          <div class="quick-stats-item-value">35% ↓ MAE @ k=10</div>
+          <div class="quick-stats-item-label">SocNavGym vs Transformer baseline</div>
         </div>
       </div>
     </div>
 
-    <div style="text-align: center;">
-      <img src="{{ '/assets/images/CGLSTMArchitecture.jpg' | relative_url }}" alt="Overview of Cosine-Gated LSTM architecture" style="width: 100%; max-width: 580px; height: auto; border-radius: 8px; border: 1px solid var(--border); box-shadow: 0 4px 12px rgba(0,0,0,0.15);">
-      <p style="margin-top: 0.75rem; font-size: 0.85rem; color: var(--text-light); font-style: italic;">Architecture overview from my viva slides: vanilla LSTM (left), cosine-gated module (centre), and integrated output path (right).</p>
+    <div class="hero-section-media">
+      <img src="{{ '/assets/images/CGLSTMArchitecture.jpg' | relative_url }}" alt="Overview of Cosine-Gated LSTM architecture" />
+      <p>Architecture overview from my viva slides: vanilla LSTM (left), cosine-gated module (centre), and integrated output path (right).</p>
     </div>
   </div>
 </div>

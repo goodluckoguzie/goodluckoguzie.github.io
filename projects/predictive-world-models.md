@@ -11,9 +11,9 @@ title: Predictive World Models - Research Project
   <p><strong>2023</strong> • Aston University • UKCI 2023 Publication</p>
 </div>
 
-<div class="table-of-contents" style="background: var(--bg-alt); padding: 1.5rem; border-radius: 8px; margin: 2rem 0; border-left: 4px solid var(--link);">
-  <h3 style="margin-top: 0; color: var(--link);">📑 Table of Contents</h3>
-  <ul style="columns: 2; column-gap: 2rem; list-style: none; padding-left: 0;">
+<div class="table-of-contents">
+  <h3>📑 Table of Contents</h3>
+  <ul>
     <li><a href="#hero">1. Overview</a></li>
     <li><a href="#motivation">2. Research Motivation</a></li>
     <li><a href="#methods">3. Methods at a Glance</a></li>
@@ -32,36 +32,36 @@ title: Predictive World Models - Research Project
 
 ## <a id="hero"></a>1. Overview
 
-<div class="hero-section" style="background: linear-gradient(135deg, var(--bg-alt) 0%, var(--bg-card) 100%); padding: 2rem; border-radius: 12px; margin: 2rem 0; border: 2px solid var(--border);">
-  <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 2rem; align-items: center;">
-    <div>
-      <h2 style="margin-top: 0; color: var(--text); font-size: 2rem;">Anticipating Social Navigation Futures</h2>
-      <p style="font-size: 1.125rem; line-height: 1.8; color: var(--text); margin-bottom: 1.5rem;">
+<div class="hero-section">
+  <div class="hero-section-grid">
+    <div class="hero-section-content">
+      <h2>Anticipating Social Navigation Futures</h2>
+      <p>
         I developed three predictive world models that give a Dueling DQN agent prediction in SocNavGym. 2StepAhead, MASPM, and the combined 2StepAhead-MASPM predict upcoming latent states so the policy can choose safer, more efficient actions before the robot moves. This page summarises the thesis chapter and the UKCI 2023 paper where I reported these methods.
       </p>
 
-      <div class="quick-stats" style="display: grid; grid-template-columns: repeat(3, 1fr); gap: 1rem; margin: 1.5rem 0;">
-        <div style="text-align: center; padding: 1rem; background: var(--bg); border-radius: 8px; border: 1px solid var(--border);">
-          <div style="font-size: 2rem; margin-bottom: 0.5rem;">📈</div>
-          <div style="font-weight: bold; color: var(--link);">0.67 Reward</div>
-          <div style="font-size: 0.875rem; color: var(--text-light);">Peak value with 2StepAhead-MASPM</div>
+      <div class="quick-stats">
+        <div class="quick-stats-item">
+          <div class="quick-stats-item-icon">📈</div>
+          <div class="quick-stats-item-value">0.67 Reward</div>
+          <div class="quick-stats-item-label">Peak value with 2StepAhead-MASPM</div>
         </div>
-        <div style="text-align: center; padding: 1rem; background: var(--bg); border-radius: 8px; border: 1px solid var(--border);">
-          <div style="font-size: 2rem; margin-bottom: 0.5rem;">⏱️</div>
-          <div style="font-weight: bold; color: var(--link);">3,200 Episodes</div>
-          <div style="font-size: 0.875rem; color: var(--text-light);">2StepAhead solves SocNavGym</div>
+        <div class="quick-stats-item">
+          <div class="quick-stats-item-icon">⏱️</div>
+          <div class="quick-stats-item-value">3,200 Episodes</div>
+          <div class="quick-stats-item-label">2StepAhead solves SocNavGym</div>
         </div>
-        <div style="text-align: center; padding: 1rem; background: var(--bg); border-radius: 8px; border: 1px solid var(--border);">
-          <div style="font-size: 2rem; margin-bottom: 0.5rem;">🤝</div>
-          <div style="font-weight: bold; color: var(--link);">0.83 Compliance</div>
-          <div style="font-size: 0.875rem; color: var(--text-light);">Slightly below RVO2's 0.88 (Pareto trade-off)</div>
+        <div class="quick-stats-item">
+          <div class="quick-stats-item-icon">🤝</div>
+          <div class="quick-stats-item-value">0.83 Compliance</div>
+          <div class="quick-stats-item-label">Slightly below RVO2's 0.88 (Pareto trade-off)</div>
         </div>
       </div>
     </div>
 
-    <div style="text-align: center;">
-      <img src="{{ '/assets/images/predictive_world_models_training.png' | relative_url }}" alt="Training reward curves for predictive world models" style="width: 100%; max-width: 520px; height: auto; border-radius: 8px; box-shadow: 0 4px 12px rgba(0,0,0,0.15);" />
-      <p style="margin-top: 0.75rem; font-size: 0.875rem; color: var(--text-light); font-style: italic;">Training reward progression for baseline Dueling DQN and the three predictive world models (see <a href="#results" style="color: var(--link); text-decoration: underline;">Results & Evaluation section</a>).</p>
+    <div class="hero-section-media">
+      <img src="{{ '/assets/images/predictive_world_models_training.png' | relative_url }}" alt="Training reward curves for predictive world models" />
+      <p>Training reward progression for baseline Dueling DQN and the three predictive world models (see <a href="#results" class="internal-link">Results & Evaluation section</a>).</p>
     </div>
   </div>
 </div>
@@ -84,22 +84,22 @@ Reinforcement learning agents in social navigation lag whenever they only react 
 
 ## <a id="methods"></a>3. Methods at a Glance
 
-<div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); gap: 1.5rem; margin: 2rem 0;">
-  <div style="background: var(--bg-card); border: 1px solid var(--border); border-radius: 10px; padding: 1.5rem;">
-    <h3 style="margin-top: 0;">2StepAhead</h3>
-    <p style="color: var(--text-light);">Predicts a latent state two steps ahead for the current action. Offers early foresight while keeping computation lightweight.</p>
+<div class="methods-grid">
+  <div class="method-card">
+    <h3>2StepAhead</h3>
+    <p>Predicts a latent state two steps ahead for the current action. Offers early foresight while keeping computation lightweight.</p>
   </div>
-  <div style="background: var(--bg-card); border: 1px solid var(--border); border-radius: 10px; padding: 1.5rem;">
-    <h3 style="margin-top: 0;">MASPM</h3>
-    <p style="color: var(--text-light);">Generates one-step latent predictions for every possible action to show the policy what would happen if it picked each option.</p>
+  <div class="method-card">
+    <h3>MASPM</h3>
+    <p>Generates one-step latent predictions for every possible action to show the policy what would happen if it picked each option.</p>
   </div>
-  <div style="background: var(--bg-card); border: 1px solid var(--border); border-radius: 10px; padding: 1.5rem;">
-    <h3 style="margin-top: 0;">2StepAhead-MASPM</h3>
-    <p style="color: var(--text-light);">Combines both ideas by producing two-step forecasts for all actions. This hybrid achieved the best overall performance.</p>
+  <div class="method-card">
+    <h3>2StepAhead-MASPM</h3>
+    <p>Combines both ideas by producing two-step forecasts for all actions. This hybrid achieved the best overall performance.</p>
   </div>
 </div>
 
-Each method feeds the resulting latent forecasts into the same Dueling DQN backbone, ensuring a fair comparison against the baselines (see <a href="#comparison" style="color: var(--link); text-decoration: underline;">Comparison with Baselines section</a>).
+Each method feeds the resulting latent forecasts into the same Dueling DQN backbone, ensuring a fair comparison against the baselines (see <a href="#comparison" class="internal-link">Comparison with Baselines section</a>).
 
 ---
 
@@ -144,7 +144,7 @@ MASPM gives the policy a snapshot of “what if” scenarios before it commits t
 2. Concatenate the resulting latent states and hidden states.
 3. Pass the full set to the Dueling DQN.
 
-This hybrid provides depth (two steps) and breadth (all actions), which explains its superior results in Figure <a href="#results" style="color: var(--link); text-decoration: underline;">Results & Evaluation section</a>.
+This hybrid provides depth (two steps) and breadth (all actions), which explains its superior results in Figure <a href="#results" class="internal-link">Results & Evaluation section</a>.
 
 <figure style="margin: 2rem 0; text-align: center;">
   <img src="{{ '/assets/images/2StepAhead-MASPM.jpg' | relative_url }}" alt="2StepAhead-MASPM predictive world model architecture" style="width: 100%; max-width: 720px; height: auto; border-radius: 8px; border: 1px solid var(--border);">
@@ -161,7 +161,7 @@ This hybrid provides depth (two steps) and breadth (all actions), which explains
 - **Evaluation:** 500 held-out episodes per trained policy for safety and comfort metrics.
 - **Baselines:** Vanilla Dueling DQN, Dueling DQN with latent hidden state, RVO2, and Social Force Model.
 
-The training loop remains identical across methods; only the latent forecasting module changes. See the pseudocode in the <a href="#implementation" style="color: var(--link); text-decoration: underline;">Implementation & Usage section</a> for the integration pattern.
+The training loop remains identical across methods; only the latent forecasting module changes. See the pseudocode in the <a href="#implementation" class="internal-link">Implementation & Usage section</a> for the integration pattern.
 
 ---
 
@@ -321,7 +321,7 @@ for episode in range(num_episodes):
 
 - Start with 2StepAhead if you need a quick win and limited compute.
 - Switch to MASPM when action ambiguity is a problem.
-- Use 2StepAhead-MASPM when you need the best balance between safety, success rate, and efficiency (see <a href="#results" style="color: var(--link); text-decoration: underline;">Results & Evaluation section</a>).
+- Use 2StepAhead-MASPM when you need the best balance between safety, success rate, and efficiency (see <a href="#results" class="internal-link">Results & Evaluation section</a>).
 
 ---
 
