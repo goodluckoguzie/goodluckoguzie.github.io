@@ -479,7 +479,7 @@ These are the environments I've created or contributed to for evaluating reinfor
             
             <div class="card-video">
               <div class="image-placeholder">
-                <p style="text-align: center; padding: 2rem; color: var(--text-light); font-style: italic;">World Models Architecture diagram - Image coming soon</p>
+                <img src="{{ '/assets/images/world_model_schematic.jpg' | relative_url }}" alt="World Models architecture diagram showing VAE encoder, RNN dynamics model, and policy network components" class="carousel-image">
               </div>
               <p class="video-caption">World Models architecture and implementation</p>
             </div>
@@ -531,7 +531,7 @@ These are the environments I've created or contributed to for evaluating reinfor
             
             <div class="card-video">
               <div class="image-placeholder">
-                <p style="text-align: center; padding: 2rem; color: var(--text-light); font-style: italic;">PhD Thesis Cover - Image coming soon</p>
+                <img src="{{ '/assets/images/aston_title_background.jpg' | relative_url }}" alt="PhD Thesis cover page showing Aston University branding and thesis title: Enhancing Robot Social Navigation with Reinforcement Learning and Advanced Predictive Models" class="carousel-image">
               </div>
               <p class="video-caption">PhD Thesis: Enhancing Robot Social Navigation with Reinforcement Learning and Advanced Predictive Models</p>
             </div>
