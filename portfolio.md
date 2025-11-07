@@ -390,7 +390,7 @@ These are the environments I've created or contributed to for evaluating reinfor
           
           <div class="card-content">
             <div class="card-text">
-              <p class="project-description">Developing action recognition systems using Wi-Fi Channel State Information (CSI) with ESP32 microcontrollers. This research explores contactless human activity recognition through wireless signals, combining hardware design with machine learning. Exploring novel approaches to human activity recognition without cameras or wearables.</p>
+              <p class="project-description">Developing action recognition systems using Wi-Fi Channel State Information (CSI) with ESP32 microcontrollers to predict human actions using only WiFi. This research addresses privacy concerns associated with camera-based systems by exploring contactless human activity recognition through wireless signals. Investigating challenges such as noise interference and signal variability while combining hardware design with machine learning.</p>
               <a href="{{ '/projects/action-recognition' | relative_url }}" class="see-more-btn" aria-label="Explore Wi-Fi CSI Action Recognition system design, hardware implementation, and machine learning approach">
                 <span class="btn-text">View System Design</span>
                 <span class="btn-icon">→</span>
