@@ -79,7 +79,6 @@ I believe in combining cutting-edge research with practical application. My cour
 </div>
 <p><strong>Description:</strong> Introduction to computing fundamentals, programming basics, and computational thinking for students beginning their computing journey.</p>
 <p><strong>Learning Outcomes:</strong> By the end of this module, students will be able to understand basic computing concepts, write simple programs, and apply computational thinking to solve problems.</p>
-<p><strong>Assessment:</strong> Coursework (60%) • Practical Exercises (40%)</p>
 </div>
 
 <div class="module" data-institution="solent" data-level="foundation">
@@ -91,7 +90,6 @@ I believe in combining cutting-edge research with practical application. My cour
 </div>
 <p><strong>Description:</strong> Mathematical foundations essential for computer science, covering algebra, calculus, and discrete mathematics.</p>
 <p><strong>Learning Outcomes:</strong> Students will master fundamental mathematical concepts including algebraic manipulation, basic calculus, and discrete mathematics principles essential for computer science.</p>
-<p><strong>Assessment:</strong> Examinations (70%) • Coursework (30%)</p>
 </div>
 
 <div class="module" data-institution="solent" data-level="undergraduate">
@@ -104,7 +102,6 @@ I believe in combining cutting-edge research with practical application. My cour
 <p><strong>Description:</strong> Fundamentals of computer networks, protocols, network design, and basic cybersecurity principles. Uses Cisco NetAcad resources covering the OSI model, network operating systems (Windows and Linux), network services, resilience, and security principles.</p>
 <p><strong>Learning Outcomes:</strong> Students will understand network architectures, configure network services, implement security measures, and gain hands-on experience with Windows and Linux server environments.</p>
 <p><strong>Technologies Covered:</strong> Cisco NetAcad • Windows Server • Linux • Network Protocols • Security Fundamentals</p>
-<p><strong>Assessment:</strong> Practical Labs (50%) • Written Exam (30%) • Coursework (20%)</p>
 </div>
 
 <div class="module" data-institution="solent" data-level="undergraduate">
@@ -117,7 +114,6 @@ I believe in combining cutting-edge research with practical application. My cour
 <p><strong>Description:</strong> Exploration of network applications, core networking concepts, the OSI model, key features of Windows and Linux network operating systems, and essential network services, resilience, and security principles.</p>
 <p><strong>Learning Outcomes:</strong> Students will be able to design network applications, configure network services, manage shared resources, and perform command-line operations for system management.</p>
 <p><strong>Technologies Covered:</strong> Windows Server • Linux • Network Services • Command-Line Operations</p>
-<p><strong>Assessment:</strong> Practical Projects (60%) • Written Assessment (40%)</p>
 </div>
 
 <div class="module" data-institution="solent" data-level="undergraduate">
@@ -131,7 +127,6 @@ I believe in combining cutting-edge research with practical application. My cour
 <p><strong>Learning Outcomes:</strong> Students will design and implement object-oriented systems, create web applications using JSP, connect to databases using JDBC, apply design patterns, and write unit tests with JUnit.</p>
 <p><strong>Technologies Covered:</strong> Java • OOP Design • UML • JSP • JDBC • JUnit • Design Patterns • Git • Software Engineering</p>
 <p><strong>Topics:</strong> Introduction to Java, OOP principles, UML modeling, Arrays, JSP Sessions, Exception Handling, Database Connectivity (JDBC), Unit Testing, Coupling & Cohesion, Design Patterns</p>
-<p><strong>Assessment:</strong> Coursework Project (70%) • Practical Exam (30%)</p>
 </div>
 
 <div class="module" data-institution="solent" data-level="undergraduate">
@@ -144,7 +139,6 @@ I believe in combining cutting-edge research with practical application. My cour
 <p><strong>Description:</strong> Introduction to programming using the C language. Covers the fundamentals of C programming including vocabulary, basics of programming, flow control, variables, escape sequences, strings, and calculations.</p>
 <p><strong>Learning Outcomes:</strong> Students will be able to obtain and configure a compiler and IDE, write basic C programs, use variables and data types, implement control structures, work with strings, and perform calculations.</p>
 <p><strong>Technologies Covered:</strong> C Programming Language • Compilers • IDEs</p>
-<p><strong>Assessment:</strong> Practical Programming Exercises (60%) • Written Exam (40%)</p>
 </div>
 
 <div class="module" data-institution="solent" data-level="undergraduate">
@@ -157,7 +151,6 @@ I believe in combining cutting-edge research with practical application. My cour
 <p><strong>Description:</strong> Core programming concepts, data structures, algorithms, and problem-solving methodologies using Python. Emphasizes computational thinking and practical coding skills.</p>
 <p><strong>Learning Outcomes:</strong> Students will master Python programming fundamentals, implement data structures, design algorithms, and apply problem-solving methodologies to real-world scenarios.</p>
 <p><strong>Technologies Covered:</strong> Python • Data Structures • Algorithms</p>
-<p><strong>Assessment:</strong> Programming Projects (70%) • Written Assessment (30%)</p>
 </div>
 
 <div class="module" data-institution="solent" data-level="undergraduate">
@@ -170,7 +163,6 @@ I believe in combining cutting-edge research with practical application. My cour
 <p><strong>Description:</strong> Problem-solving through practice with weekly learning activities. Structured in four blocks: Basics (input/output, data types, variables, operators, control structures, functions), Data (data storage, sequences, file I/O, testing, error handling), Visualisation (data visualization libraries, charts, graphs, plots), and OOP (abstraction, objects, classes, encapsulation, inheritance, polymorphism).</p>
 <p><strong>Learning Outcomes:</strong> Students will develop comprehensive Python programming skills, create data visualizations, implement object-oriented designs, and build complete applications with error handling and testing.</p>
 <p><strong>Technologies Covered:</strong> Python • Data Structures • Data Visualization • OOP • File I/O • Testing & Debugging</p>
-<p><strong>Assessment:</strong> Progressive Coursework (80%) • Final Project (20%)</p>
 </div>
 
 <div class="module" data-institution="solent" data-level="undergraduate">
@@ -183,7 +175,6 @@ I believe in combining cutting-edge research with practical application. My cour
 <p><strong>Description:</strong> Comprehensive web application development covering both frontend and backend technologies. Students learn to build modern, scalable web applications using industry-standard frameworks and tools.</p>
 <p><strong>Learning Outcomes:</strong> Students will design and develop full-stack web applications, implement RESTful APIs, integrate databases, and deploy applications to cloud platforms.</p>
 <p><strong>Technologies Covered:</strong> Node.js • Express • React • MongoDB • PostgreSQL • AWS/Azure • RESTful APIs</p>
-<p><strong>Assessment:</strong> Full-Stack Project (70%) • Technical Report (30%)</p>
 </div>
 
 <div class="module" data-institution="solent" data-level="undergraduate">
@@ -196,7 +187,6 @@ I believe in combining cutting-edge research with practical application. My cour
 <p><strong>Description:</strong> Introduction to web technologies covering HTML, CSS, JavaScript, and modern web development practices. Students learn to create responsive, interactive web applications.</p>
 <p><strong>Learning Outcomes:</strong> Students will create semantic HTML structures, style pages with CSS, implement interactive features with JavaScript, and build responsive web applications following modern standards.</p>
 <p><strong>Technologies Covered:</strong> HTML5 • CSS3 • JavaScript (ES6+) • Responsive Design • Web Standards</p>
-<p><strong>Assessment:</strong> Website Project (60%) • Written Exam (40%)</p>
 </div>
 
 <div class="module" data-institution="solent" data-level="undergraduate">
@@ -209,7 +199,6 @@ I believe in combining cutting-edge research with practical application. My cour
 <p><strong>Description:</strong> User-centered design principles, UI prototyping, usability testing, and UX research methods. Focus on designing user-centric interfaces that enhance user satisfaction and accessibility.</p>
 <p><strong>Learning Outcomes:</strong> Students will conduct user research, create wireframes and prototypes, perform usability testing, and design accessible interfaces following UX best practices.</p>
 <p><strong>Technologies Covered:</strong> Figma • Adobe XD • User Research Tools • Prototyping Tools</p>
-<p><strong>Assessment:</strong> UX Portfolio (70%) • Usability Report (30%)</p>
 </div>
 
 <div class="module" data-institution="solent" data-level="undergraduate">
@@ -222,7 +211,6 @@ I believe in combining cutting-edge research with practical application. My cour
 <p><strong>Description:</strong> Introduction to digital media creation, manipulation, and distribution technologies. Covers multimedia fundamentals, digital content development, and media production workflows.</p>
 <p><strong>Learning Outcomes:</strong> Students will create digital media content, manipulate images and videos, understand multimedia formats, and distribute content across digital platforms.</p>
 <p><strong>Technologies Covered:</strong> Adobe Creative Suite • Video Editing Tools • Image Processing • Multimedia Formats</p>
-<p><strong>Assessment:</strong> Media Portfolio (60%) • Technical Report (40%)</p>
 </div>
 
 ---
@@ -237,7 +225,6 @@ I believe in combining cutting-edge research with practical application. My cour
 </div>
 <p><strong>Description:</strong> Strategic approaches to digital transformation in organizations, covering technology adoption, change management, and digital business models.</p>
 <p><strong>Learning Outcomes:</strong> Students will analyze digital transformation strategies, evaluate technology adoption frameworks, design change management plans, and develop digital business models.</p>
-<p><strong>Assessment:</strong> Case Study Analysis (50%) • Strategic Report (50%)</p>
 </div>
 
 <div class="module" data-institution="ulster" data-level="postgraduate">
@@ -249,7 +236,6 @@ I believe in combining cutting-edge research with practical application. My cour
 <p><strong>Description:</strong> Large-scale data processing, distributed systems, cloud infrastructure (AWS/Azure), and big data technologies. Covers container orchestration and serverless architectures.</p>
 <p><strong>Learning Outcomes:</strong> Students will design big data architectures, implement distributed systems, deploy containerized applications, and manage cloud infrastructure at scale.</p>
 <p><strong>Technologies Covered:</strong> AWS • Azure • Docker • Kubernetes • Hadoop • Spark • Big Data Tools</p>
-<p><strong>Assessment:</strong> Infrastructure Project (70%) • Technical Documentation (30%)</p>
 </div>
 
 <div class="module" data-institution="ulster" data-level="postgraduate">
@@ -261,7 +247,6 @@ I believe in combining cutting-edge research with practical application. My cour
 <p><strong>Description:</strong> Data wrangling, statistical analysis, supervised and unsupervised learning, and practical ML applications. Integrates research-level content with hands-on projects.</p>
 <p><strong>Learning Outcomes:</strong> Students will preprocess and analyze data, implement machine learning algorithms, evaluate model performance, and apply ML techniques to real-world problems.</p>
 <p><strong>Technologies Covered:</strong> Python • TensorFlow • PyTorch • scikit-learn • Pandas • NumPy • Data Analysis</p>
-<p><strong>Assessment:</strong> ML Project (60%) • Research Paper Review (40%)</p>
 </div>
 
 <div class="module" data-institution="ulster" data-level="postgraduate">
@@ -273,7 +258,6 @@ I believe in combining cutting-edge research with practical application. My cour
 <p><strong>Description:</strong> Advanced neural networks, deep learning architectures, computer vision, and practical applications. Connects coursework to cutting-edge research in AI and machine learning, including my own research on Cosine-Gated LSTM and reinforcement learning.</p>
 <p><strong>Learning Outcomes:</strong> Students will design deep neural networks, implement convolutional and recurrent architectures, apply transfer learning, and develop computer vision applications.</p>
 <p><strong>Technologies Covered:</strong> PyTorch • TensorFlow • Computer Vision • OpenCV • Deep Learning Frameworks</p>
-<p><strong>Assessment:</strong> Deep Learning Project (70%) • Research Presentation (30%)</p>
 </div>
 
 <div class="module" data-institution="ulster" data-level="postgraduate">
@@ -285,7 +269,6 @@ I believe in combining cutting-edge research with practical application. My cour
 <p><strong>Description:</strong> Knowledge representation, expert systems, ontologies, and knowledge-based systems. Covers semantic web technologies and knowledge management.</p>
 <p><strong>Learning Outcomes:</strong> Students will design knowledge bases, create ontologies, implement expert systems, and apply semantic web technologies for knowledge management.</p>
 <p><strong>Technologies Covered:</strong> OWL • RDF • SPARQL • Expert Systems • Ontology Tools</p>
-<p><strong>Assessment:</strong> Knowledge Base Project (65%) • Research Essay (35%)</p>
 </div>
 
 <div class="module" data-institution="ulster" data-level="postgraduate">
@@ -297,7 +280,6 @@ I believe in combining cutting-edge research with practical application. My cour
 <p><strong>Description:</strong> Building scalable software systems, microservices architecture, cloud-native development, and advanced software engineering practices. Emphasizes real-world projects and industry standards.</p>
 <p><strong>Learning Outcomes:</strong> Students will architect scalable systems, implement microservices, apply DevOps practices, and deploy applications using CI/CD pipelines.</p>
 <p><strong>Technologies Covered:</strong> Microservices • Cloud Platforms • DevOps • CI/CD • Container Orchestration</p>
-<p><strong>Assessment:</strong> Scalable System Project (75%) • Architecture Documentation (25%)</p>
 </div>
 
 <div class="module" data-institution="ulster" data-level="postgraduate">
@@ -308,7 +290,6 @@ I believe in combining cutting-edge research with practical application. My cour
 </div>
 <p><strong>Description:</strong> Practical consulting project work, applying computing knowledge to real-world business problems. Includes project management and client interaction.</p>
 <p><strong>Learning Outcomes:</strong> Students will analyze business requirements, design technical solutions, manage projects, communicate with stakeholders, and deliver consulting outcomes.</p>
-<p><strong>Assessment:</strong> Consulting Project (80%) • Reflective Report (20%)</p>
 </div>
 
 ---
@@ -324,7 +305,6 @@ I believe in combining cutting-edge research with practical application. My cour
 <p><strong>Description:</strong> Comprehensive GCSE curriculum covering programming fundamentals, algorithms, data structures, and computer systems. Designed for students preparing for GCSE examinations.</p>
 <p><strong>Learning Outcomes:</strong> Students will master programming concepts, understand algorithms and data structures, comprehend computer systems architecture, and excel in GCSE examinations.</p>
 <p><strong>Technologies Covered:</strong> Python • Algorithms • Data Structures • Computer Systems</p>
-<p><strong>Assessment:</strong> Mock Examinations • Coursework Projects • Final GCSE Examination</p>
 </div>
 
 <div class="module" data-institution="crimson" data-level="secondary">
@@ -336,7 +316,6 @@ I believe in combining cutting-edge research with practical application. My cour
 <p><strong>Description:</strong> Advanced computer science curriculum covering advanced programming, algorithms, data structures, software engineering, and computer systems. Prepares students for A-level examinations and further study.</p>
 <p><strong>Learning Outcomes:</strong> Students will develop advanced programming skills, design complex algorithms, understand software engineering principles, and achieve success in A-level examinations.</p>
 <p><strong>Technologies Covered:</strong> Advanced Python • Object-Oriented Programming • Software Engineering • Algorithms & Complexity</p>
-<p><strong>Assessment:</strong> Coursework Project (20%) • Written Examinations (80%)</p>
 </div>
 
 ---
