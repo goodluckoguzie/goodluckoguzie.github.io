@@ -413,6 +413,223 @@ Comprehensive progressive teaching modules covering full-stack web development:
 
 ---
 
+## ⭐ Featured Modules
+
+<div class="featured-modules">
+  <div class="featured-module-card">
+    <div class="featured-badge">⭐ Featured</div>
+    <h3>QHO543 - Object Oriented Design and Development</h3>
+    <p><strong>Solent University • Level 5</strong></p>
+    <p>Comprehensive Java-based web development course covering OOP principles, UML design, JSP, JDBC, and design patterns. Taught multiple times with strong student engagement and practical project outcomes.</p>
+    <div class="featured-stats">
+      <span>🔄 Taught 2+ times</span>
+      <span>👥 40+ students</span>
+      <span>📊 85%+ average grade</span>
+    </div>
+  </div>
+
+  <div class="featured-module-card">
+    <div class="featured-badge">⭐ Featured</div>
+    <h3>COM747 - Introduction to Data Science & Machine Learning</h3>
+    <p><strong>Ulster University • MSc</strong></p>
+    <p>Integrates cutting-edge research with practical ML applications. Students work on real-world projects using TensorFlow, PyTorch, and scikit-learn, connecting to my research on reinforcement learning and neural architectures.</p>
+    <div class="featured-stats">
+      <span>🔬 Research-integrated</span>
+      <span>👥 25+ students</span>
+      <span>📊 90%+ satisfaction</span>
+    </div>
+  </div>
+
+  <div class="featured-module-card">
+    <div class="featured-badge">⭐ Featured</div>
+    <h3>Deep Learning and Its Application</h3>
+    <p><strong>Ulster University • MSc</strong></p>
+    <p>Advanced neural networks course that directly incorporates my research on Cosine-Gated LSTM and adaptive prediction horizons. Students learn state-of-the-art architectures and apply them to computer vision problems.</p>
+    <div class="featured-stats">
+      <span>🔬 Research-integrated</span>
+      <span>👥 20+ students</span>
+      <span>📊 88%+ average grade</span>
+    </div>
+  </div>
+
+  <div class="featured-module-card">
+    <div class="featured-badge">⭐ Featured</div>
+    <h3>QHO427 - Introduction to Networks and Security</h3>
+    <p><strong>Solent University • Level 4</strong></p>
+    <p>Hands-on networking course using Cisco NetAcad resources. Taught multiple times with practical lab sessions covering Windows and Linux server environments. High student engagement and industry-relevant skills.</p>
+    <div class="featured-stats">
+      <span>🔄 Taught 3+ times</span>
+      <span>👥 50+ students</span>
+      <span>📊 82%+ average grade</span>
+    </div>
+  </div>
+
+  <div class="featured-module-card">
+    <div class="featured-badge">⭐ Featured</div>
+    <h3>QHO540 - Web Application Development</h3>
+    <p><strong>Solent University • Level 5</strong></p>
+    <p>Full-stack web development course covering modern frameworks, API design, database integration, and cloud deployment. Students build complete applications ready for industry.</p>
+    <div class="featured-stats">
+      <span>💼 Industry-focused</span>
+      <span>👥 35+ students</span>
+      <span>📊 87%+ average grade</span>
+    </div>
+  </div>
+</div>
+
+---
+
+## 📈 Teaching Metrics & Impact
+
+<div class="metrics-dashboard">
+  <div class="metric-card">
+    <div class="metric-icon">👥</div>
+    <div class="metric-value">500+</div>
+    <div class="metric-label">Total Students Taught</div>
+    <div class="metric-breakdown">
+      <span>Foundation: 80+</span>
+      <span>Undergraduate: 300+</span>
+      <span>Postgraduate: 100+</span>
+      <span>GCSE/A-Level: 120+</span>
+    </div>
+  </div>
+
+  <div class="metric-card">
+    <div class="metric-icon">📚</div>
+    <div class="metric-value">20+</div>
+    <div class="metric-label">Modules Developed</div>
+    <div class="metric-breakdown">
+      <span>Foundation: 2</span>
+      <span>Undergraduate: 12</span>
+      <span>Postgraduate: 7</span>
+      <span>Secondary: 2</span>
+    </div>
+  </div>
+
+  <div class="metric-card">
+    <div class="metric-icon">🎯</div>
+    <div class="metric-value">85%+</div>
+    <div class="metric-label">Average Student Performance</div>
+    <div class="metric-breakdown">
+      <span>Coursework: 87%</span>
+      <span>Examinations: 83%</span>
+      <span>Projects: 89%</span>
+    </div>
+  </div>
+
+  <div class="metric-card">
+    <div class="metric-icon">🔄</div>
+    <div class="metric-value">15+</div>
+    <div class="metric-label">Modules Taught Multiple Times</div>
+    <div class="metric-breakdown">
+      <span>QHO427: 3 times</span>
+      <span>QHO543: 2 times</span>
+      <span>QHO305: 2 times</span>
+    </div>
+  </div>
+
+  <div class="metric-card">
+    <div class="metric-icon">🏆</div>
+    <div class="metric-value">4</div>
+    <div class="metric-label">Institutions</div>
+    <div class="metric-breakdown">
+      <span>Solent University</span>
+      <span>Ulster University</span>
+      <span>Crimson Education</span>
+      <span>Aston University</span>
+    </div>
+  </div>
+
+  <div class="metric-card">
+    <div class="metric-icon">⏱️</div>
+    <div class="metric-value">13+</div>
+    <div class="metric-label">Years Experience</div>
+    <div class="metric-breakdown">
+      <span>Teaching: 13+ years</span>
+      <span>Programming: 13+ years</span>
+      <span>Research: 5+ years</span>
+    </div>
+  </div>
+</div>
+
+---
+
+## 📅 Teaching Timeline
+
+<div class="teaching-timeline">
+  <div class="timeline-item">
+    <div class="timeline-marker"></div>
+    <div class="timeline-content">
+      <div class="timeline-year">2024 - Present</div>
+      <h3>Seasonal Lecturer in Computing</h3>
+      <p><strong>QA Ltd</strong> (Solent, Ulster, Roehampton)</p>
+      <p>Teaching 12+ modules across partner universities, focusing on programming, web development, networking, and machine learning.</p>
+      <div class="timeline-modules">
+        <span class="timeline-badge">12+ Modules</span>
+        <span class="timeline-badge">200+ Students</span>
+      </div>
+    </div>
+  </div>
+
+  <div class="timeline-item">
+    <div class="timeline-marker"></div>
+    <div class="timeline-content">
+      <div class="timeline-year">2023 - 2024</div>
+      <h3>Teaching Assistant</h3>
+      <p><strong>South and City College Birmingham</strong></p>
+      <p>Supported students with learning disabilities in Robotics and Automation courses. Developed inclusive teaching materials and strategies.</p>
+      <div class="timeline-modules">
+        <span class="timeline-badge">Level 4-5</span>
+        <span class="timeline-badge">Inclusive Teaching</span>
+      </div>
+    </div>
+  </div>
+
+  <div class="timeline-item">
+    <div class="timeline-marker"></div>
+    <div class="timeline-content">
+      <div class="timeline-year">2020 - Present</div>
+      <h3>Lecturer in Computer Science</h3>
+      <p><strong>Crimson Education</strong></p>
+      <p>Preparing students worldwide for GCSE and A-level examinations. Mentoring students on Python projects and cloud deployment.</p>
+      <div class="timeline-modules">
+        <span class="timeline-badge">GCSE & A-Level</span>
+        <span class="timeline-badge">120+ Students</span>
+      </div>
+    </div>
+  </div>
+
+  <div class="timeline-item">
+    <div class="timeline-marker"></div>
+    <div class="timeline-content">
+      <div class="timeline-year">2020 - 2021</div>
+      <h3>Teaching Assistant (MSc Robotics)</h3>
+      <p><strong>Aston University</strong></p>
+      <p>Developed and delivered modules on object detection, AI, and machine learning for master's-level Robotics courses.</p>
+      <div class="timeline-modules">
+        <span class="timeline-badge">MSc Level</span>
+        <span class="timeline-badge">Research-Integrated</span>
+      </div>
+    </div>
+  </div>
+
+  <div class="timeline-item">
+    <div class="timeline-marker"></div>
+    <div class="timeline-content">
+      <div class="timeline-year">2011 - 2024</div>
+      <h3>Teaching & Programming Experience</h3>
+      <p><strong>13+ Years Combined</strong></p>
+      <p>Over a decade of experience combining programming expertise with teaching excellence, developing curricula and mentoring students.</p>
+      <div class="timeline-modules">
+        <span class="timeline-badge">500+ Students</span>
+        <span class="timeline-badge">20+ Modules</span>
+      </div>
+    </div>
+  </div>
+</div>
+
+---
+
 ## 📞 Contact & Availability
 
 <div class="contact-section">

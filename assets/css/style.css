@@ -2981,6 +2981,219 @@ table tbody tr:last-child {
     text-decoration: underline;
 }
 
+/* Featured Modules */
+.featured-modules {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+    margin: 2rem 0;
+}
+
+.featured-module-card {
+    background: var(--bg-card);
+    padding: 2rem;
+    border-radius: 12px;
+    border: 2px solid var(--link);
+    box-shadow: var(--shadow-md);
+    transition: all var(--transition);
+    position: relative;
+}
+
+.featured-module-card:hover {
+    transform: translateY(-6px);
+    box-shadow: var(--shadow-lg);
+    border-color: var(--link-hover);
+}
+
+.featured-badge {
+    position: absolute;
+    top: -12px;
+    right: 20px;
+    background: var(--link);
+    color: white;
+    padding: 0.4rem 1rem;
+    border-radius: 20px;
+    font-size: 0.75rem;
+    font-weight: 700;
+    box-shadow: var(--shadow);
+}
+
+.featured-module-card h3 {
+    margin-top: 0.5rem;
+    color: var(--primary);
+    margin-bottom: 0.5rem;
+}
+
+.featured-module-card p {
+    margin: 0.75rem 0;
+    line-height: 1.7;
+}
+
+.featured-stats {
+    display: flex;
+    gap: 1rem;
+    flex-wrap: wrap;
+    margin-top: 1rem;
+    padding-top: 1rem;
+    border-top: 1px solid var(--border);
+}
+
+.featured-stats span {
+    font-size: 0.85rem;
+    color: var(--text-light);
+    background: var(--bg-alt);
+    padding: 0.3rem 0.7rem;
+    border-radius: 12px;
+}
+
+/* Metrics Dashboard */
+.metrics-dashboard {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 2rem;
+    margin: 2rem 0;
+}
+
+.metric-card {
+    background: var(--bg-card);
+    padding: 2rem;
+    border-radius: 12px;
+    border: 1px solid var(--border);
+    box-shadow: var(--shadow);
+    text-align: center;
+    transition: all var(--transition);
+}
+
+.metric-card:hover {
+    transform: translateY(-4px);
+    box-shadow: var(--shadow-md);
+    border-color: var(--link);
+}
+
+.metric-icon {
+    font-size: 3rem;
+    margin-bottom: 1rem;
+}
+
+.metric-value {
+    font-size: 2.5rem;
+    font-weight: 700;
+    color: var(--link);
+    margin: 0.5rem 0;
+}
+
+.metric-label {
+    font-size: 1rem;
+    font-weight: 600;
+    color: var(--primary);
+    margin-bottom: 1rem;
+}
+
+.metric-breakdown {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    margin-top: 1rem;
+    padding-top: 1rem;
+    border-top: 1px solid var(--border);
+    font-size: 0.85rem;
+    color: var(--text-light);
+}
+
+.metric-breakdown span {
+    padding: 0.25rem 0;
+}
+
+/* Teaching Timeline */
+.teaching-timeline {
+    position: relative;
+    padding: 2rem 0;
+    margin: 2rem 0;
+}
+
+.teaching-timeline::before {
+    content: '';
+    position: absolute;
+    left: 20px;
+    top: 0;
+    bottom: 0;
+    width: 3px;
+    background: linear-gradient(to bottom, var(--link), var(--link-hover));
+    border-radius: 2px;
+}
+
+.timeline-item {
+    position: relative;
+    padding-left: 4rem;
+    margin-bottom: 3rem;
+}
+
+.timeline-marker {
+    position: absolute;
+    left: 12px;
+    top: 0;
+    width: 16px;
+    height: 16px;
+    border-radius: 50%;
+    background: var(--link);
+    border: 3px solid var(--bg);
+    box-shadow: 0 0 0 3px var(--link);
+    z-index: 1;
+}
+
+.timeline-content {
+    background: var(--bg-card);
+    padding: 1.5rem 2rem;
+    border-radius: 12px;
+    border: 1px solid var(--border);
+    box-shadow: var(--shadow);
+    transition: all var(--transition);
+}
+
+.timeline-content:hover {
+    transform: translateX(5px);
+    box-shadow: var(--shadow-md);
+    border-color: var(--link);
+}
+
+.timeline-year {
+    display: inline-block;
+    background: var(--link);
+    color: white;
+    padding: 0.3rem 0.8rem;
+    border-radius: 20px;
+    font-size: 0.85rem;
+    font-weight: 600;
+    margin-bottom: 0.75rem;
+}
+
+.timeline-content h3 {
+    margin-top: 0;
+    color: var(--primary);
+    margin-bottom: 0.5rem;
+}
+
+.timeline-content p {
+    margin: 0.5rem 0;
+    line-height: 1.6;
+}
+
+.timeline-modules {
+    display: flex;
+    gap: 0.5rem;
+    flex-wrap: wrap;
+    margin-top: 1rem;
+}
+
+.timeline-badge {
+    background: var(--bg-alt);
+    color: var(--text-light);
+    padding: 0.3rem 0.7rem;
+    border-radius: 12px;
+    font-size: 0.8rem;
+    border: 1px solid var(--border);
+}
+
 /* Responsive Design for Teaching Page */
 @media (max-width: 768px) {
     .teaching-filters {
@@ -3000,8 +3213,28 @@ table tbody tr:last-child {
     
     .teaching-positions,
     .previous-roles,
-    .contact-section {
+    .contact-section,
+    .featured-modules,
+    .metrics-dashboard {
         grid-template-columns: 1fr;
+    }
+    
+    .teaching-timeline::before {
+        left: 15px;
+    }
+    
+    .timeline-item {
+        padding-left: 3rem;
+    }
+    
+    .timeline-marker {
+        left: 8px;
+        width: 14px;
+        height: 14px;
+    }
+    
+    .metric-value {
+        font-size: 2rem;
     }
 }
 
