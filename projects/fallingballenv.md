@@ -211,19 +211,19 @@ Unlike most Gym environments that reveal all state information, FallingBallEnv d
 
 <div class="project-media">
   <div class="project-image-placeholder">
-    <img src="{{ '/assets/images/FallingBall.png' | relative_url }}" alt="FallingBall Environment Visualization">
+    <img src="{{ '/assets/images/FallingBall.png' | relative_url }}" alt="FallingBall Environment Visualization" loading="lazy">
     <p><strong>Figure 1: Environment Visualization</strong></p>
     <p>Ball falling and bouncing in FallingBallEnv. Yellow circle = current state. The floor position is not included in the observation space.</p>
   </div>
   
   <div class="project-image-placeholder">
-    <img src="{{ '/assets/images/FallingBallwithprediction.png' | relative_url }}" alt="FallingBall Prediction Results">
+    <img src="{{ '/assets/images/FallingBallwithprediction.png' | relative_url }}" alt="FallingBall Prediction Results" loading="lazy">
     <p><strong>Figure 2: Prediction Comparison</strong></p>
     <p>Sky blue = actual future, blue = CGLSTM prediction, red = errors, gray = perfect alignment.</p>
   </div>
   
   <div class="project-image-placeholder project-image-full-width">
-    <img src="{{ '/assets/images/fallingballenv_cglstm_results.jpg' | relative_url }}" alt="CGLSTM performance results in FallingBallEnv showing prediction accuracy across multiple horizons (k=1, 3, 5, 10) with comparison to baseline models" class="project-image-large">
+    <img src="{{ '/assets/images/fallingballenv_cglstm_results.jpg' | relative_url }}" alt="CGLSTM performance results in FallingBallEnv showing prediction accuracy across multiple horizons (k=1, 3, 5, 10) with comparison to baseline models" class="project-image-large" loading="lazy">
     <p><strong>Figure 3: CGLSTM Performance</strong></p>
     <p>Detailed results showing CGLSTM's superior accuracy across prediction horizons (k=1, 3, 5, 10).</p>
   </div>

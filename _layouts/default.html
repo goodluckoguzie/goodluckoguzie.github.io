@@ -5,7 +5,29 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>{% if page.title %}{{ page.title }} - {% endif %}{{ site.title }}</title>
     <link rel="stylesheet" href="{{ '/assets/css/style.css' | relative_url }}">
+    <script src="{{ '/assets/js/carousel.js' | relative_url }}" defer></script>
     {% seo %}
+    
+    <!-- Additional SEO Meta Tags -->
+    {% if page.description %}
+    <meta name="description" content="{{ page.description }}">
+    {% elsif page.excerpt %}
+    <meta name="description" content="{{ page.excerpt | strip_html | strip_newlines | truncate: 160 }}">
+    {% endif %}
+    
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="{{ site.url }}{{ page.url }}">
+    <meta property="og:title" content="{% if page.title %}{{ page.title }} - {% endif %}{{ site.title }}">
+    <meta property="og:description" content="{% if page.description %}{{ page.description }}{% else %}{{ site.description }}{% endif %}">
+    <meta property="og:image" content="{{ site.url }}{% if page.image %}{{ page.image }}{% else %}{{ site.og_image }}{% endif %}">
+    
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:url" content="{{ site.url }}{{ page.url }}">
+    <meta property="twitter:title" content="{% if page.title %}{{ page.title }} - {% endif %}{{ site.title }}">
+    <meta property="twitter:description" content="{% if page.description %}{{ page.description }}{% else %}{{ site.description }}{% endif %}">
+    <meta property="twitter:image" content="{{ site.url }}{% if page.image %}{{ page.image }}{% else %}{{ site.og_image }}{% endif %}">
 </head>
 <body>
     <header>
@@ -782,42 +804,93 @@
             goTo: function(index) { if (index >= 0 && index < this.totalSlides) { this.currentSlide = index; this.updateSlide(); } }
         };
         
-        // Carousel Control Functions (updated)
+        // Carousel Control Functions (using generic Carousel class)
         function moveCarousel(carouselId, direction) {
-            if (carouselId === 'environments') {
-                if (direction > 0) environmentsCarousel.next(); else environmentsCarousel.prev();
-            } else if (carouselId === 'models') {
-                if (direction > 0) modelsCarousel.next(); else modelsCarousel.prev();
-            } else if (carouselId === 'action-rec') {
-                if (direction > 0) actionRecCarousel.next(); else actionRecCarousel.prev();
-            } else if (carouselId === 'other-projects') {
-                if (direction > 0) otherProjectsCarousel.next(); else otherProjectsCarousel.prev();
-            } else if (carouselId === 'phd-thesis') {
-                if (direction > 0) phdThesisCarousel.next(); else phdThesisCarousel.prev();
+            try {
+                const fullId = carouselId + '-carousel';
+                const carousel = window.carouselInstances && window.carouselInstances[fullId];
+                if (carousel) {
+                    if (direction > 0) {
+                        carousel.next();
+                    } else {
+                        carousel.prev();
+                    }
+                } else {
+                    console.warn(`Carousel instance not found: ${fullId}`);
+                }
+            } catch (error) {
+                console.error(`Error moving carousel ${carouselId}:`, error);
             }
         }
         
         function goToSlide(carouselId, index) {
-            if (carouselId === 'environments') {
-                environmentsCarousel.goTo(index);
-            } else if (carouselId === 'models') {
-                modelsCarousel.goTo(index);
-            } else if (carouselId === 'action-rec') {
-                actionRecCarousel.goTo(index);
-            } else if (carouselId === 'other-projects') {
-                otherProjectsCarousel.goTo(index);
-            } else if (carouselId === 'phd-thesis') {
-                phdThesisCarousel.goTo(index);
+            try {
+                const fullId = carouselId + '-carousel';
+                const carousel = window.carouselInstances && window.carouselInstances[fullId];
+                if (carousel) {
+                    carousel.goTo(index);
+                } else {
+                    console.warn(`Carousel instance not found: ${fullId}`);
+                }
+            } catch (error) {
+                console.error(`Error going to slide in carousel ${carouselId}:`, error);
             }
         }
         
-        // Initialize carousels when page loads
+        // Initialize carousels using generic Carousel class
         document.addEventListener('DOMContentLoaded', function() {
-            environmentsCarousel.init();
-            modelsCarousel.init();
-            actionRecCarousel.init();
-            otherProjectsCarousel.init();
-            phdThesisCarousel.init();
+            // Store carousel instances globally for moveCarousel and goToSlide functions
+            window.carouselInstances = {};
+            
+            // Initialize each carousel
+            const carouselConfigs = [
+                {
+                    carouselId: 'environments-carousel',
+                    wrapperSelector: '.environments-carousel-wrapper',
+                    totalSlides: 3,
+                    autoPlayDelay: 7000,
+                    ariaLabel: 'Environments carousel'
+                },
+                {
+                    carouselId: 'models-carousel',
+                    wrapperSelector: '.environments-carousel-wrapper',
+                    totalSlides: 3,
+                    autoPlayDelay: 7000,
+                    ariaLabel: 'Models carousel'
+                },
+                {
+                    carouselId: 'action-rec-carousel',
+                    wrapperSelector: '.environments-carousel-wrapper',
+                    totalSlides: 1,
+                    autoPlayDelay: 7000,
+                    ariaLabel: 'Action recognition carousel'
+                },
+                {
+                    carouselId: 'other-projects-carousel',
+                    wrapperSelector: '.environments-carousel-wrapper',
+                    totalSlides: 2,
+                    autoPlayDelay: 7000,
+                    ariaLabel: 'Other projects carousel'
+                },
+                {
+                    carouselId: 'phd-thesis-carousel',
+                    wrapperSelector: '.environments-carousel-wrapper',
+                    totalSlides: 1,
+                    autoPlayDelay: 7000,
+                    ariaLabel: 'PhD thesis carousel'
+                }
+            ];
+            
+            carouselConfigs.forEach(config => {
+                try {
+                    const carousel = new Carousel(config);
+                    if (carousel.init()) {
+                        window.carouselInstances[config.carouselId] = carousel;
+                    }
+                } catch (error) {
+                    console.error(`Failed to initialize carousel ${config.carouselId}:`, error);
+                }
+            });
         });
     </script>
     
