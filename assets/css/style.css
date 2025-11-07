@@ -245,7 +245,7 @@
 
 .home-research-card {
     background: var(--bg-card);
-    padding: 2rem;
+    padding: 1.5rem;
     border-radius: 8px;
     border: 1px solid var(--border);
     box-shadow: var(--shadow);
@@ -270,7 +270,7 @@
     border-radius: 20px;
     font-size: 0.875rem;
     font-weight: 600;
-    margin-bottom: 1rem;
+    margin-bottom: 0.75rem;
 }
 
 .home-research-badge.ongoing {
@@ -280,27 +280,27 @@
 
 .home-research-card h3 {
     margin-top: 0;
-    margin-bottom: 0.5rem;
+    margin-bottom: 0.25rem;
     color: var(--text);
-    font-size: 1.5rem;
+    font-size: 1.375rem;
     line-height: 1.3;
 }
 
 .home-research-meta {
     color: var(--text-light);
-    font-size: 0.95rem;
-    margin-bottom: 1rem;
+    font-size: 0.9rem;
+    margin-bottom: 0.75rem;
 }
 
 .home-research-image {
-    margin: 1rem 0;
+    margin: 0.75rem 0;
     text-align: center;
 }
 
 .home-research-image img {
     width: 100%;
-    max-width: 500px;
-    max-height: 300px;
+    max-width: 400px;
+    max-height: 220px;
     height: auto;
     object-fit: contain;
     border-radius: 6px;
@@ -311,27 +311,29 @@
 
 .home-research-caption {
     text-align: center;
-    font-size: 0.875rem;
+    font-size: 0.8rem;
     color: var(--text-light);
-    margin-top: 0.75rem;
+    margin-top: 0.5rem;
     font-style: italic;
+    line-height: 1.4;
 }
 
 .home-research-card p {
     color: var(--text);
-    line-height: 1.7;
-    margin-bottom: 1rem;
+    line-height: 1.6;
+    margin-bottom: 0.75rem;
+    font-size: 0.95rem;
 }
 
 .home-research-tags {
     display: flex;
     gap: 0.5rem;
     flex-wrap: wrap;
-    margin-bottom: 1rem;
+    margin-bottom: 0.75rem;
 }
 
 .home-research-actions {
-    margin-top: 1rem;
+    margin-top: 0.75rem;
 }
 
 .home-research-link {
