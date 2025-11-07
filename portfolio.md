@@ -236,7 +236,7 @@ These are the environments I've created or contributed to for evaluating reinfor
           
           <div class="card-content">
             <div class="card-text">
-              <p class="project-description">I designed three predictive world models for <a href="{{ '/projects/socnavgym' | relative_url }}" style="color: var(--link); text-decoration: underline;">SocNavGym</a>: 2StepAhead extends the latent rollout two steps for the current action, MASPM estimates the next state for every discrete action, and 2StepAhead-MASPM fuses both behaviours. This framework improved success rate, reduced human collisions, and underpinned my <a href="{{ '/publications' | relative_url }}#ukci-2023" style="color: var(--link); text-decoration: underline;">UKCI 2023 publication</a>.</p>
+              <p class="project-description">Predictive world models give the agent a short-horizon view of how humans will move before it commits to an action. I designed three variants for <a href="{{ '/projects/socnavgym' | relative_url }}" style="color: var(--link); text-decoration: underline;">SocNavGym</a>: 2StepAhead rolls the latent state two steps forward for the current action, MASPM evaluates the next state for every discrete action, and 2StepAhead-MASPM fuses both behaviours. This framework improved success rate and reduced human collisions, leading to my <a href="{{ '/publications' | relative_url }}#ukci-2023" style="color: var(--link); text-decoration: underline;">UKCI 2023 publication</a>.</p>
 
               <div class="project-stats" style="margin: 1rem 0; padding: 0.75rem; background: var(--bg-alt); border-radius: 6px; font-size: 0.875rem;">
                 <div style="display: flex; align-items: center; gap: 0.5rem; margin: 0.5rem 0;">
@@ -248,8 +248,8 @@ These are the environments I've created or contributed to for evaluating reinfor
                   <span><strong>Lower human collisions</strong> across 500 test runs</span>
                 </div>
                 <div style="display: flex; align-items: center; gap: 0.5rem; margin: 0.5rem 0;">
-                  <span style="font-size: 1.2rem;">🧠</span>
-                  <span><strong>Three predictive variants</strong> (2StepAhead, MASPM, 2StepAhead-MASPM)</span>
+                  <span style="font-size: 1.2rem;">🕒</span>
+                  <span><strong>Converged in ~3,200 episodes</strong> (faster than baselines)</span>
                 </div>
               </div>
               <a href="{{ '/projects/predictive-world-models' | relative_url }}" class="see-more-btn">
@@ -260,7 +260,7 @@ These are the environments I've created or contributed to for evaluating reinfor
             
             <div class="card-video">
               <img src="{{ '/assets/images/predictive_world_models_training.png' | relative_url }}" alt="Training reward curves for predictive world models" class="carousel-image" style="width: 100%; height: auto; border-radius: 6px; display: block;">
-              <p class="video-caption">Training reward comparison showing how 2StepAhead-MASPM outperforms the baselines</p>
+              <p class="video-caption">Training reward comparison (200k episodes): 2StepAhead-MASPM maintains the highest cumulative reward</p>
             </div>
           </div>
         </div>
