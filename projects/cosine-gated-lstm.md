@@ -45,7 +45,7 @@ title: Cosine-Gated LSTM - Research Project
           <div class="quick-stats-item-label">Row-wise MNIST (↑0.65 pts vs LSTM/GRU)</div>
         </div>
         <div class="quick-stats-item">
-          <div class="quick-stats-item-icon">🧮</div>
+          <div class="quick-stats-item-icon">Math</div>
           <div class="quick-stats-item-value">0.0225 MAE</div>
           <div class="quick-stats-item-label">Adding problem (T=1000) lowest error</div>
         </div>
