@@ -236,20 +236,20 @@ These are the environments I've created or contributed to for evaluating reinfor
           
           <div class="card-content">
             <div class="card-text">
-              <p class="project-description">I built two predictive world models that give our SocNavGym agent a “future glance.” 2StepAhead tells the policy what happens next if it repeats the current action, while MASPM sketches the next state for every option. That foresight led to safer, higher-reward navigation in my UKCI 2023 paper.</p>
+              <p class="project-description">I designed three predictive world models for SocNavGym: 2StepAhead extends the latent rollout two steps for the current action, MASPM estimates the next state for every discrete action, and 2StepAhead-MASPM fuses both behaviours. This framework improved success rate, reduced human collisions, and underpinned my UKCI 2023 publication.</p>
 
               <div class="project-stats" style="margin: 1rem 0; padding: 0.75rem; background: var(--bg-alt); border-radius: 6px; font-size: 0.875rem;">
                 <div style="display: flex; align-items: center; gap: 0.5rem; margin: 0.5rem 0;">
                   <span style="font-size: 1.2rem;">📈</span>
-                  <span><strong>0.67 reward</strong> peak with 2StepAhead-MASPM</span>
+                  <span><strong>0.67 reward</strong> achieved by 2StepAhead-MASPM</span>
                 </div>
                 <div style="display: flex; align-items: center; gap: 0.5rem; margin: 0.5rem 0;">
                   <span style="font-size: 1.2rem;">🚫</span>
                   <span><strong>Lower human collisions</strong> across 500 test runs</span>
                 </div>
                 <div style="display: flex; align-items: center; gap: 0.5rem; margin: 0.5rem 0;">
-                  <span style="font-size: 1.2rem;">🎯</span>
-                  <span><strong>Fast convergence</strong> in ~3,200 episodes</span>
+                  <span style="font-size: 1.2rem;">🧠</span>
+                  <span><strong>Three predictive variants</strong> (2StepAhead, MASPM, 2StepAhead-MASPM)</span>
                 </div>
               </div>
               <a href="{{ '/projects/predictive-world-models' | relative_url }}" class="see-more-btn">
