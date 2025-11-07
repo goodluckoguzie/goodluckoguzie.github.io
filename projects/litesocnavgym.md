@@ -11,9 +11,9 @@ title: LiteSocNavGym - Research Project
   <p><strong>2024</strong> • Lightweight Social Navigation Environment • Optimized for Rapid Iteration</p>
 </div>
 
-<div class="table-of-contents" style="background: var(--bg-alt); padding: 1.5rem; border-radius: 8px; margin: 2rem 0; border-left: 4px solid var(--link);">
-  <h3 style="margin-top: 0; color: var(--link);">📑 Table of Contents</h3>
-  <ul style="columns: 2; column-gap: 2rem; list-style: none; padding-left: 0;">
+<div class="table-of-contents">
+  <h3>📑 Table of Contents</h3>
+  <ul>
     <li><a href="#hero">1. Overview</a></li>
     <li><a href="#motivation">2. Research Motivation</a></li>
     <li><a href="#challenge">3. The Challenge</a></li>
@@ -35,39 +35,39 @@ title: LiteSocNavGym - Research Project
 
 ## <a id="hero"></a>1. Overview
 
-<div class="hero-section" style="background: linear-gradient(135deg, var(--bg-alt) 0%, var(--bg-card) 100%); padding: 2rem; border-radius: 12px; margin: 2rem 0; border: 2px solid var(--border);">
-  <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 2rem; align-items: center;">
-    <div>
-      <h2 style="margin-top: 0; color: var(--text); font-size: 2rem;">Lite for Speed</h2>
-      <p style="font-size: 1.125rem; line-height: 1.8; color: var(--text); margin-bottom: 1.5rem;">
+<div class="hero-section">
+  <div class="hero-section-grid">
+    <div class="hero-section-content">
+      <h2>Lite for Speed</h2>
+      <p>
         I developed this lightweight version of SocNavGym optimized for rapid iteration and faster simulation. Designed for efficient testing of predictive models and reinforcement learning approaches, it maintains core social interaction dynamics while dramatically reducing simulation time.
       </p>
       
-      <div class="quick-stats" style="display: grid; grid-template-columns: repeat(3, 1fr); gap: 1rem; margin: 1.5rem 0;">
-        <div style="text-align: center; padding: 1rem; background: var(--bg); border-radius: 8px; border: 1px solid var(--border);">
-          <div style="font-size: 2rem; margin-bottom: 0.5rem;">⚡</div>
-          <div style="font-weight: bold; color: var(--link);">3-5x Faster</div>
-          <div style="font-size: 0.875rem; color: var(--text-light);">than SocNavGym</div>
+      <div class="quick-stats">
+        <div class="quick-stats-item">
+          <div class="quick-stats-item-icon">⚡</div>
+          <div class="quick-stats-item-value">3-5x Faster</div>
+          <div class="quick-stats-item-label">than SocNavGym</div>
         </div>
-        <div style="text-align: center; padding: 1rem; background: var(--bg); border-radius: 8px; border: 1px solid var(--border);">
-          <div style="font-size: 2rem; margin-bottom: 0.5rem;">🎯</div>
-          <div style="font-weight: bold; color: var(--link);">Predictive Models</div>
-          <div style="font-size: 0.875rem; color: var(--text-light);">Testing & validation</div>
+        <div class="quick-stats-item">
+          <div class="quick-stats-item-icon">🎯</div>
+          <div class="quick-stats-item-value">Predictive Models</div>
+          <div class="quick-stats-item-label">Testing & validation</div>
         </div>
-        <div style="text-align: center; padding: 1rem; background: var(--bg); border-radius: 8px; border: 1px solid var(--border);">
-          <div style="font-size: 2rem; margin-bottom: 0.5rem;">✅</div>
-          <div style="font-weight: bold; color: var(--link);">Core Dynamics</div>
-          <div style="font-size: 0.875rem; color: var(--text-light);">Preserved</div>
+        <div class="quick-stats-item">
+          <div class="quick-stats-item-icon">✅</div>
+          <div class="quick-stats-item-value">Core Dynamics</div>
+          <div class="quick-stats-item-label">Preserved</div>
         </div>
       </div>
     </div>
     
-    <div style="text-align: center;">
-      <video autoplay muted loop playsinline style="width: 100%; max-width: 500px; height: auto; border-radius: 8px; box-shadow: 0 4px 12px rgba(0,0,0,0.15);" poster="{{ '/video/LITESOCNAVGYM.webm' | relative_url }}">
+    <div class="hero-section-media">
+      <video autoplay muted loop playsinline poster="{{ '/video/LITESOCNAVGYM.webm' | relative_url }}">
         <source src="{{ '/video/LITESOCNAVGYM.webm' | relative_url }}" type="video/webm">
         Your browser does not support the video tag.
       </video>
-      <p style="margin-top: 0.75rem; font-size: 0.875rem; color: var(--text-light); font-style: italic;">Watch LiteSocNavGym in action: faster simulations with core social navigation features</p>
+      <p>Watch LiteSocNavGym in action: faster simulations with core social navigation features</p>
     </div>
   </div>
 </div>

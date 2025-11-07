@@ -11,9 +11,9 @@ title: SocNavGym - Research Project
   <p><strong>2020-2024</strong> • Team Project • Supervisor: Dr. Luis J. Manso</p>
 </div>
 
-<div class="table-of-contents" style="background: var(--bg-alt); padding: 1.5rem; border-radius: 8px; margin: 2rem 0; border-left: 4px solid var(--link);">
-  <h3 style="margin-top: 0; color: var(--link);">📑 Table of Contents</h3>
-  <ul style="columns: 2; column-gap: 2rem; list-style: none; padding-left: 0;">
+<div class="table-of-contents">
+  <h3>📑 Table of Contents</h3>
+  <ul>
     <li><a href="#hero">1. Overview</a></li>
     <li><a href="#motivation">2. Research Motivation</a></li>
     <li><a href="#challenge">3. The Challenge</a></li>
@@ -36,39 +36,39 @@ title: SocNavGym - Research Project
 
 ## <a id="hero"></a>1. Overview
 
-<div class="hero-section" style="background: linear-gradient(135deg, var(--bg-alt) 0%, var(--bg-card) 100%); padding: 2rem; border-radius: 12px; margin: 2rem 0; border: 2px solid var(--border);">
-  <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 2rem; align-items: center;">
-    <div>
-      <h2 style="margin-top: 0; color: var(--text); font-size: 2rem;">Comprehensive Social Navigation</h2>
-      <p style="font-size: 1.125rem; line-height: 1.8; color: var(--text); margin-bottom: 1.5rem;">
-        SocNavGym is a comprehensive social navigation gymnasium environment for evaluating social robot navigation algorithms with multiple entity types including robot agents, human pedestrians, and obstacles (<a href="#specs" style="color: var(--link); text-decoration: underline;">see Technical Specifications section</a>). As part of the development team, I focused on reinforcement learning aspects and integration with predictive models (<a href="#contribution" style="color: var(--link); text-decoration: underline;">see My Contribution section</a>). This was the primary environment for testing Predictive World Models and validating Adaptive Prediction Horizons (<a href="#impact" style="color: var(--link); text-decoration: underline;">see Research Impact section</a>), with results published in UKCI 2023 and my PhD thesis.
+<div class="hero-section">
+  <div class="hero-section-grid">
+    <div class="hero-section-content">
+      <h2>Comprehensive Social Navigation</h2>
+      <p>
+        SocNavGym is a comprehensive social navigation gymnasium environment for evaluating social robot navigation algorithms with multiple entity types including robot agents, human pedestrians, and obstacles (<a href="#specs" class="internal-link">see Technical Specifications section</a>). As part of the development team, I focused on reinforcement learning aspects and integration with predictive models (<a href="#contribution" class="internal-link">see My Contribution section</a>). This was the primary environment for testing Predictive World Models and validating Adaptive Prediction Horizons (<a href="#impact" class="internal-link">see Research Impact section</a>), with results published in UKCI 2023 and my PhD thesis.
       </p>
       
-      <div class="quick-stats" style="display: grid; grid-template-columns: repeat(3, 1fr); gap: 1rem; margin: 1.5rem 0;">
-        <div style="text-align: center; padding: 1rem; background: var(--bg); border-radius: 8px; border: 1px solid var(--border);">
-          <div style="font-size: 2rem; margin-bottom: 0.5rem;">🎯</div>
-          <div style="font-weight: bold; color: var(--link);">Primary Environment</div>
-          <div style="font-size: 0.875rem; color: var(--text-light);">For predictive models</div>
+      <div class="quick-stats">
+        <div class="quick-stats-item">
+          <div class="quick-stats-item-icon">🎯</div>
+          <div class="quick-stats-item-value">Primary Environment</div>
+          <div class="quick-stats-item-label">For predictive models</div>
         </div>
-        <div style="text-align: center; padding: 1rem; background: var(--bg); border-radius: 8px; border: 1px solid var(--border);">
-          <div style="font-size: 2rem; margin-bottom: 0.5rem;">📚</div>
-          <div style="font-weight: bold; color: var(--link);">UKCI 2023</div>
-          <div style="font-size: 0.875rem; color: var(--text-light);">Published results</div>
+        <div class="quick-stats-item">
+          <div class="quick-stats-item-icon">📚</div>
+          <div class="quick-stats-item-value">UKCI 2023</div>
+          <div class="quick-stats-item-label">Published results</div>
         </div>
-        <div style="text-align: center; padding: 1rem; background: var(--bg); border-radius: 8px; border: 1px solid var(--border);">
-          <div style="font-size: 2rem; margin-bottom: 0.5rem;">✅</div>
-          <div style="font-weight: bold; color: var(--link);">Team Project</div>
-          <div style="font-size: 0.875rem; color: var(--text-light);">2020-2024</div>
+        <div class="quick-stats-item">
+          <div class="quick-stats-item-icon">✅</div>
+          <div class="quick-stats-item-value">Team Project</div>
+          <div class="quick-stats-item-label">2020-2024</div>
         </div>
       </div>
     </div>
     
-    <div style="text-align: center;">
-      <video autoplay muted loop playsinline style="width: 100%; max-width: 500px; height: auto; border-radius: 8px; box-shadow: 0 4px 12px rgba(0,0,0,0.15);" poster="{{ '/video/SocNavGym.mp4' | relative_url }}">
+    <div class="hero-section-media">
+      <video autoplay muted loop playsinline poster="{{ '/video/SocNavGym.mp4' | relative_url }}">
         <source src="{{ '/video/SocNavGym.mp4' | relative_url }}" type="video/mp4">
         Your browser does not support the video tag.
       </video>
-      <p style="margin-top: 0.75rem; font-size: 0.875rem; color: var(--text-light); font-style: italic;">We can see SocNavGym in action: multiple entities interacting in social navigation scenarios. Blue circle = robot agent, colored circles = human pedestrians, gray rectangles = static obstacles (tables, walls), green markers = goals/destinations (<a href="#specs" style="color: var(--link); text-decoration: underline;">see Technical Specifications section</a> for entity details)</p>
+      <p>We can see SocNavGym in action: multiple entities interacting in social navigation scenarios. Blue circle = robot agent, colored circles = human pedestrians, gray rectangles = static obstacles (tables, walls), green markers = goals/destinations (<a href="#specs" class="internal-link">see Technical Specifications section</a> for entity details)</p>
     </div>
   </div>
 </div>

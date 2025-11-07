@@ -11,9 +11,9 @@ title: Adaptive Prediction Horizons - Research Project
   <p><strong>2024 - Present</strong> • Aston University</p>
 </div>
 
-<div class="table-of-contents" style="background: var(--bg-alt); padding: 1.5rem; border-radius: 8px; margin: 2rem 0; border-left: 4px solid var(--link);">
-  <h3 style="margin-top: 0; color: var(--link);">📑 Table of Contents</h3>
-  <ul style="columns: 2; column-gap: 2rem; list-style: none; padding-left: 0;">
+<div class="table-of-contents">
+  <h3>📑 Table of Contents</h3>
+  <ul>
     <li><a href="#hero">1. Overview</a></li>
     <li><a href="#motivation">2. Research Motivation</a></li>
     <li><a href="#architecture">3. Adaptive Architecture</a></li>
@@ -29,36 +29,36 @@ title: Adaptive Prediction Horizons - Research Project
 
 ## <a id="hero"></a>1. Overview
 
-<div class="hero-section" style="background: linear-gradient(135deg, var(--bg-alt) 0%, var(--bg-card) 100%); padding: 2rem; border-radius: 12px; margin: 2rem 0; border: 2px solid var(--border);">
-  <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 2rem; align-items: center;">
-    <div>
-      <h2 style="margin-top: 0; color: var(--text); font-size: 2rem;">Entropy-guided horizons for faster, safer RL</h2>
-      <p style="font-size: 1.1rem; line-height: 1.8; color: var(--text); margin-bottom: 1.5rem;">
+<div class="hero-section">
+  <div class="hero-section-grid">
+    <div class="hero-section-content">
+      <h2>Entropy-guided horizons for faster, safer RL</h2>
+      <p>
         Fixed prediction horizons lead to wasted computation in easy scenes and brittle planning in complex ones. This project uses policy entropy to adapt the depth of world-model rollouts on the fly. Early results show faster convergence in <strong>LunarLander-v2</strong> and stronger success/return trade-offs in <strong>LiteSocNavGym</strong>, while keeping inference latency suitable for robotics.
       </p>
 
-      <div class="quick-stats" style="display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 1rem;">
-        <div style="text-align: center; padding: 1rem; background: var(--bg); border-radius: 8px; border: 1px solid var(--border);">
-          <div style="font-size: 2rem; margin-bottom: 0.5rem;">⏱️</div>
-          <div style="font-weight: bold; color: var(--link);">53.48 h to 500k steps</div>
-          <div style="font-size: 0.85rem; color: var(--text-light);">Entropy horizon vs 59.54 h fixed (LunarLander)</div>
+      <div class="quick-stats">
+        <div class="quick-stats-item">
+          <div class="quick-stats-item-icon">⏱️</div>
+          <div class="quick-stats-item-value">53.48 h to 500k steps</div>
+          <div class="quick-stats-item-label">Entropy horizon vs 59.54 h fixed (LunarLander)</div>
         </div>
-        <div style="text-align: center; padding: 1rem; background: var(--bg); border-radius: 8px; border: 1px solid var(--border);">
-          <div style="font-size: 2rem; margin-bottom: 0.5rem;">100%</div>
-          <div style="font-weight: bold; color: var(--link);">Success rate</div>
-          <div style="font-size: 0.85rem; color: var(--text-light);">SAC + CGLSTM (adaptive) in LiteSocNavGym</div>
+        <div class="quick-stats-item">
+          <div class="quick-stats-item-icon">100%</div>
+          <div class="quick-stats-item-value">Success rate</div>
+          <div class="quick-stats-item-label">SAC + CGLSTM (adaptive) in LiteSocNavGym</div>
         </div>
-        <div style="text-align: center; padding: 1rem; background: var(--bg); border-radius: 8px; border: 1px solid var(--border);">
-          <div style="font-size: 2rem; margin-bottom: 0.5rem;">5.62 days</div>
-          <div style="font-weight: bold; color: var(--link);">Full training</div>
-          <div style="font-size: 0.85rem; color: var(--text-light);">LiteSocNavGym vs 28.41 days for DreamerV3 + CGLSTM</div>
+        <div class="quick-stats-item">
+          <div class="quick-stats-item-icon">5.62 days</div>
+          <div class="quick-stats-item-value">Full training</div>
+          <div class="quick-stats-item-label">LiteSocNavGym vs 28.41 days for DreamerV3 + CGLSTM</div>
         </div>
       </div>
     </div>
 
-    <div style="text-align: center;">
-      <img src="{{ '/assets/images/SAC_CGLSTM_Adaptive.jpg' | relative_url }}" alt="Adaptive prediction horizon pipeline" style="width: 100%; max-width: 560px; height: auto; border-radius: 8px; border: 1px solid var(--border); box-shadow: 0 4px 12px rgba(0,0,0,0.15);">
-      <p style="margin-top: 0.75rem; font-size: 0.85rem; color: var(--text-light); font-style: italic;">Adaptive horizon pipeline: policy entropy controls how many CGLSTM rollouts are generated before the SAC update.</p>
+    <div class="hero-section-media">
+      <img src="{{ '/assets/images/SAC_CGLSTM_Adaptive.jpg' | relative_url }}" alt="Adaptive prediction horizon pipeline" />
+      <p>Adaptive horizon pipeline: policy entropy controls how many CGLSTM rollouts are generated before the SAC update.</p>
     </div>
   </div>
 </div>
