@@ -435,35 +435,6 @@ These are the environments I've created or contributed to for evaluating reinfor
             <div class="card-badges">
               <div class="project-status-badge completed">COMPLETED</div>
             </div>
-            <h3>🎢 Disneyland Project</h3>
-            <p class="project-meta"><strong>Data Analysis & Visualization Project</strong></p>
-          </div>
-          
-          <div class="card-content">
-            <div class="card-text">
-              <p class="project-description">Data analysis project exploring Disneyland visitor data, including demographics, ride popularity, and operational insights using data science techniques.</p>
-              <a href="{{ '/projects/disneyland' | relative_url }}" class="see-more-btn" aria-label="Explore Disneyland data analysis project insights and visualizations">
-                <span class="btn-text">View Analysis & Insights</span>
-                <span class="btn-icon">→</span>
-              </a>
-            </div>
-            
-            <div class="card-video">
-              <div class="image-placeholder">
-                <p style="text-align: center; padding: 2rem; color: var(--text-light); font-style: italic;">Image coming soon</p>
-              </div>
-              <p class="video-caption">Data visualization and analysis of Disneyland visitor patterns</p>
-            </div>
-          </div>
-        </div>
-      </div>
-      
-      <div class="carousel-slide" data-slide="1">
-        <div class="carousel-card">
-          <div class="card-header">
-            <div class="card-badges">
-              <div class="project-status-badge completed">COMPLETED</div>
-            </div>
             <h3>🌍 WorldModels</h3>
             <p class="project-meta"><strong>Predictive Modeling Research</strong></p>
           </div>
