@@ -172,6 +172,35 @@ Quantitatively, the 500-episode evaluation logs recorded:
 - **Human collisions:** 38 collision events with 2StepAhead-MASPM compared with 74 for the vanilla baseline (−36 episodes).
 - **Personal space compliance:** Mean compliance of 0.83 for 2StepAhead-MASPM, slightly lower than the SFM baseline at 0.88, reflecting the Pareto balance discussed in the paper.
 
+<div style="overflow-x: auto; margin: 1.5rem 0;">
+<table style="width: 100%; max-width: 520px; border-collapse: collapse; font-size: 0.875rem; margin: 0 auto;">
+  <thead>
+    <tr style="background: var(--bg-alt); border-bottom: 2px solid var(--border);">
+      <th style="padding: 0.75rem; text-align: left; border: 1px solid var(--border);">Metric</th>
+      <th style="padding: 0.75rem; text-align: center; border: 1px solid var(--border);">2StepAhead-MASPM</th>
+      <th style="padding: 0.75rem; text-align: center; border: 1px solid var(--border);">Vanilla Dueling DQN</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td style="padding: 0.75rem; border: 1px solid var(--border);">Success rate</td>
+      <td style="padding: 0.75rem; text-align: center; border: 1px solid var(--border);">92.6% (463 / 500)</td>
+      <td style="padding: 0.75rem; text-align: center; border: 1px solid var(--border);">86.2% (431 / 500)</td>
+    </tr>
+    <tr>
+      <td style="padding: 0.75rem; border: 1px solid var(--border);">Collision episodes</td>
+      <td style="padding: 0.75rem; text-align: center; border: 1px solid var(--border);">38</td>
+      <td style="padding: 0.75rem; text-align: center; border: 1px solid var(--border);">74</td>
+    </tr>
+    <tr>
+      <td style="padding: 0.75rem; border: 1px solid var(--border);">Personal space compliance</td>
+      <td style="padding: 0.75rem; text-align: center; border: 1px solid var(--border);">0.83</td>
+      <td style="padding: 0.75rem; text-align: center; border: 1px solid var(--border);">0.88 (SFM baseline)</td>
+    </tr>
+  </tbody>
+</table>
+</div>
+
 The hybrid model respected the Pareto non-domination criterion reported in the thesis: no other method outperformed it on every metric simultaneously.
 
 ---
