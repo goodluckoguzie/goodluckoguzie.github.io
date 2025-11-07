@@ -236,7 +236,7 @@ These are the environments I've created or contributed to for evaluating reinfor
           
           <div class="card-content">
             <div class="card-text">
-              <p class="project-description">I developed predictive world models that let a Dueling DQN agent see ahead in SocNavGym. 2StepAhead forecasts two latent steps for the chosen action, while MASPM compares the next state for every action. Together they raised navigation success and safety in my UKCI 2023 publication.</p>
+              <p class="project-description">I built two predictive world models that give our SocNavGym agent a “future glance.” 2StepAhead tells the policy what happens next if it repeats the current action, while MASPM sketches the next state for every option. That foresight led to safer, higher-reward navigation in my UKCI 2023 paper.</p>
 
               <div class="project-stats" style="margin: 1rem 0; padding: 0.75rem; background: var(--bg-alt); border-radius: 6px; font-size: 0.875rem;">
                 <div style="display: flex; align-items: center; gap: 0.5rem; margin: 0.5rem 0;">
