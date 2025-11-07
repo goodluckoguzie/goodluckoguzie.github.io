@@ -6,7 +6,7 @@ title: Home
 <div class="hero-section">
   <div class="hero-content">
     <div class="hero-image">
-      <img src="{{ '/assets/images/goodluck.jpg' | relative_url }}" alt="Goodluck Oguzie" class="profile-photo">
+      <img src="{{ '/assets/images/goodluck.jpg' | relative_url }}" alt="Dr. Goodluck Oguzie, Post-PhD Researcher and Lecturer in Computer Science" class="profile-photo">
     </div>
     <div class="hero-text">
       <h1>Dr. Goodluck Oguzie</h1>
@@ -31,8 +31,8 @@ title: Home
       <h3>Adaptive Prediction Horizons in Reinforcement Learning</h3>
       <p class="research-meta">2024 - Present • Aston University</p>
       <div style="margin: 1rem 0;">
-        <img src="{{ '/assets/images/TrainingReturn_SocNavGym-1.jpg' | relative_url }}" alt="Adaptive prediction horizon training performance" style="width: 100%; max-width: 600px; height: auto; border-radius: 6px; display: block; margin: 0 auto;">
-        <p style="text-align: center; font-size: 0.875rem; color: var(--text-secondary); margin-top: 0.5rem;">Training performance: adaptive horizon sustains reward on LiteSocNavGym</p>
+        <img src="{{ '/assets/images/TrainingReturn_SocNavGym-1.jpg' | relative_url }}" alt="Training reward curves showing adaptive prediction horizon performance in LiteSocNavGym environment, demonstrating sustained reward improvement over training episodes" style="width: 100%; max-width: 600px; height: auto; border-radius: 6px; display: block; margin: 0 auto;">
+        <p style="text-align: center; font-size: 0.875rem; color: var(--text-light); margin-top: 0.5rem;">Training performance: adaptive horizon sustains reward on LiteSocNavGym</p>
       </div>
       <p>Developing entropy-driven adaptive prediction horizon systems for RL applications, enabling dynamic adjustment based on environmental complexity for improved performance in autonomous systems.</p>
       <div class="research-tags">

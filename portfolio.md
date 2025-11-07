@@ -259,7 +259,7 @@ These are the environments I've created or contributed to for evaluating reinfor
             </div>
             
             <div class="card-video">
-              <img src="{{ '/assets/images/predictive_world_models_training.png' | relative_url }}" alt="Training reward curves for predictive world models" class="carousel-image" style="width: 100%; height: auto; border-radius: 6px; display: block;">
+              <img src="{{ '/assets/images/predictive_world_models_training.png' | relative_url }}" alt="Training reward comparison chart showing 2StepAhead, MASPM, and 2StepAhead-MASPM models outperforming baseline Dueling DQN in SocNavGym environment" class="carousel-image" style="width: 100%; height: auto; border-radius: 6px; display: block;">
               <p class="video-caption">Training reward comparison (200k episodes): 2StepAhead-MASPM maintains the highest cumulative reward</p>
             </div>
           </div>
@@ -303,7 +303,7 @@ These are the environments I've created or contributed to for evaluating reinfor
             </div>
             
             <div class="card-video">
-              <img src="{{ '/assets/images/CGLSTMArchitecture.jpg' | relative_url }}" alt="Cosine-Gated LSTM architecture" class="carousel-image" style="width: 100%; height: auto; border-radius: 6px; display: block;">
+              <img src="{{ '/assets/images/CGLSTMArchitecture.jpg' | relative_url }}" alt="Cosine-Gated LSTM neural network architecture diagram showing cosine similarity gates and integrated gating mechanism for improved sequential learning" class="carousel-image" style="width: 100%; height: auto; border-radius: 6px; display: block;">
               <p class="video-caption">Cosine-Gated LSTM architecture</p>
             </div>
           </div>
@@ -346,7 +346,7 @@ These are the environments I've created or contributed to for evaluating reinfor
             </div>
             
             <div class="card-video">
-              <img src="{{ '/assets/images/TrainingReturn_SocNavGym-1.jpg' | relative_url }}" alt="Adaptive prediction horizon training curve" class="carousel-image" style="width: 100%; height: auto; border-radius: 6px; display: block;">
+              <img src="{{ '/assets/images/TrainingReturn_SocNavGym-1.jpg' | relative_url }}" alt="Training return curves comparing adaptive prediction horizon (cyan) with fixed horizon methods in LiteSocNavGym, showing superior learning performance" class="carousel-image" style="width: 100%; height: auto; border-radius: 6px; display: block;">
               <p class="video-caption">Training performance: adaptive horizon sustains reward on LiteSocNavGym</p>
             </div>
           </div>
@@ -399,7 +399,7 @@ These are the environments I've created or contributed to for evaluating reinfor
             
             <div class="card-video">
               <div class="image-placeholder">
-                <img src="https://goodluckoguzie.github.io/Viva/img/output.png" alt="Wi-Fi CSI Action Recognition" class="carousel-image">
+                <img src="{{ '/assets/images/output.png' | relative_url }}" alt="Wi-Fi CSI Action Recognition system showing ESP32 microcontroller and signal processing visualization" class="carousel-image">
               </div>
               <p class="video-caption">Wi-Fi CSI Action Recognition system with ESP32 microcontroller</p>
             </div>
@@ -450,7 +450,7 @@ These are the environments I've created or contributed to for evaluating reinfor
             
             <div class="card-video">
               <div class="image-placeholder">
-                <img src="https://via.placeholder.com/400x225?text=Disneyland+Project" alt="Disneyland Project Visualization" class="carousel-image">
+                <p style="text-align: center; padding: 2rem; color: var(--text-light); font-style: italic;">Image coming soon</p>
               </div>
               <p class="video-caption">Data visualization and analysis of Disneyland visitor patterns</p>
             </div>
@@ -479,7 +479,7 @@ These are the environments I've created or contributed to for evaluating reinfor
             
             <div class="card-video">
               <div class="image-placeholder">
-                <img src="https://goodluckoguzie.github.io/Viva/img/world_model_schematic.jpg" alt="World Models Architecture" class="carousel-image">
+                <p style="text-align: center; padding: 2rem; color: var(--text-light); font-style: italic;">World Models Architecture diagram - Image coming soon</p>
               </div>
               <p class="video-caption">World Models architecture and implementation</p>
             </div>
@@ -531,7 +531,7 @@ These are the environments I've created or contributed to for evaluating reinfor
             
             <div class="card-video">
               <div class="image-placeholder">
-                <img src="https://goodluckoguzie.github.io/Viva/img/aston_title_background.jpg" alt="PhD Thesis Cover" class="carousel-image">
+                <p style="text-align: center; padding: 2rem; color: var(--text-light); font-style: italic;">PhD Thesis Cover - Image coming soon</p>
               </div>
               <p class="video-caption">PhD Thesis: Enhancing Robot Social Navigation with Reinforcement Learning and Advanced Predictive Models</p>
             </div>

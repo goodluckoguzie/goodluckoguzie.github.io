@@ -49,8 +49,6 @@ navigation:
     url: /portfolio/
   - title: CV
     url: /cv/
-  - title: Insights
-    url: /insights/
 
 # Exclude from processing
 exclude:

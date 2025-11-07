@@ -223,7 +223,7 @@ Unlike most Gym environments that reveal all state information, FallingBallEnv d
   </div>
   
   <div class="project-image-placeholder" style="grid-column: 1 / -1; max-width: 100%;">
-    <img src="https://goodluckoguzie.github.io/Viva/img/fallingballenv_cglstm_results.jpg" alt="CGLSTM Results in FallingBallEnv" style="width: 100%; max-width: 1200px; height: auto; border-radius: 6px; margin-bottom: 1rem; display: block; margin-left: auto; margin-right: auto;">
+    <p style="text-align: center; padding: 2rem; color: var(--text-light); font-style: italic;">CGLSTM Results in FallingBallEnv - Image coming soon</p>
     <p><strong>Figure 3: CGLSTM Performance</strong></p>
     <p>Detailed results showing CGLSTM's superior accuracy across prediction horizons (k=1, 3, 5, 10).</p>
   </div>
