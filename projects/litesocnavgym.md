@@ -163,7 +163,7 @@ LiteSocNavGym achieves **3-5x faster simulation speeds** compared to SocNavGym w
 
 <div class="project-media">
   <div class="project-video-placeholder" style="grid-column: 1 / -1;">
-    <video autoplay muted loop playsinline style="max-width: 100%; height: auto; border-radius: 6px; margin-bottom: 1rem;">
+    <video autoplay muted loop playsinline preload="metadata" style="max-width: 100%; height: auto; border-radius: 6px; margin-bottom: 1rem;">
       <source src="{{ '/video/LITESOCNAVGYM.webm' | relative_url }}" type="video/webm">
       Your browser does not support the video tag.
     </video>
