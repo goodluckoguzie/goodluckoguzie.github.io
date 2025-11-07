@@ -20,7 +20,7 @@ Download my CV or view it online
 
 ## Profile
 
-**AI Researcher and Lecturer** with PhD from Aston University and 5+ years teaching experience.
+**AI Researcher and Lecturer** with PhD from Aston University and 13+ years of programming and teaching experience.
 
 **Research:** Published in top-tier conferences (UKCI 2023, IEEE PRML 2024). Expertise in:
 - Developing novel neural network architectures (Cosine-Gated LSTM)
@@ -71,39 +71,48 @@ Foundation in electrical engineering, electronics, and embedded systems.
 
 ## Professional Experience
 
-### Lecturer
-**QA Ltd**  
+### Seasonal Lecturer in Computing
+**QA Ltd** (Partner with Solent University, University of Roehampton, and Ulster University)  
 **Birmingham, United Kingdom**  
-**January 2024 – Present** • Part-time • Hybrid
+**January 2024 – Present** • Seasonal • Hybrid
 
-- Teaching computer science and AI courses to diverse student groups
-- Covering algorithms, data structures, machine learning, and software development
-- Delivering hybrid instruction combining online and in-person teaching
-- Mentoring students in practical programming and problem-solving skills
+- Deliver lectures and seminars on various computing modules across partner institutions
+- Teaching modules including: Deep Learning & Applications, Big Data & Infrastructure, Data Science & Machine Learning, Object-Oriented Design, Networks & Security, Problem Solving through Programming, UX, Digital Media Technologies
+- Adopt hybrid teaching model combining classroom-based and virtual sessions
+- Develop and continuously improve module content and assessments aligned with industry standards
 
 ---
 
 ### Lecturer in Computer Science
-**Crimson**  
+**Crimson Education**  
+**Birmingham, United Kingdom**  
 **November 2020 – Present** • Full-time
 
-- Teaching computer science fundamentals and advanced topics for 5+ years
-- Curriculum development and course design
-- Student mentoring and academic support
-- Developing comprehensive teaching materials
+- Prepare students worldwide for GCSE and A-level computer science examinations
+- Design and deliver curricula via online interactive sessions
+- Mentor students on final projects incorporating Python-based application development, data analysis, and cloud-based deployment
+- Devise innovative teaching strategies including project-based assessments and group coding workshops
 
 ---
 
-### Teaching Assistant
+### Teaching Assistant in A.I: Robotics and Autonomous Systems (MSc)
 **Aston University**  
 **Birmingham, United Kingdom**  
-**January 2020 – December 2024** • Contract
+**February 2020 – December 2021** • Contract
 
-- Supporting teaching in mathematics, algorithms, and data structures
-- Conducting tutorials and laboratory sessions
-- Assisting with course delivery and student assessment
-- Providing academic support to undergraduate and postgraduate students
-- Supporting research activities in the Computer Science department
+- Conducted advanced research and implemented complex algorithmic solutions in robotics
+- Developed and delivered modules on object detection, AI, and machine learning
+- Assisted in module delivery for master's-level Robotics courses, including advanced programming and control systems
+- Marked student assignments, contributed to curriculum updates, and supported exam preparation workshops
+
+### Teaching Assistant
+**South and City College Birmingham**  
+**Birmingham, United Kingdom**  
+**January 2023 – May 2024** • Contract
+
+- Provided tailored support to students with various learning disabilities, ensuring accessibility and understanding
+- Employed innovative teaching strategies to accommodate individual learning styles
+- Provided instructional support for Robotics and Automation courses, guiding Level 4-5 students in hands-on lab exercises
 
 ---
 
@@ -175,19 +184,22 @@ Multiple certifications in AI, Machine Learning, Deep Learning, and TensorFlow f
 ## Technical Skills
 
 ### Programming Languages
-Python • JavaScript • C++ • C# • C • Java • SQL • HTML/CSS • MATLAB
+Python (Advanced) • Modern C++17 • JavaScript • C++ • C# • Java • SQL • Bash • HTML/CSS • MATLAB
 
 ### Machine Learning & AI
-PyTorch • TensorFlow • Keras • Scikit-Learn • Neural Networks • Deep Learning • Reinforcement Learning • NLP • Computer Vision
+PyTorch • TensorFlow • JAX • Scikit-Learn • Computer Vision • OpenCV • Deep Learning • Reinforcement Learning • LLM Fine-tuning (LoRA, RAG) • LangChain • Hugging Face Transformers • vLLM
 
-### Robotics & Engineering
-Arduino • PLC • Robot Programming • OpenCV • Automation Control • Embedded Systems
+### Cloud & DevOps
+AWS (EC2, S3, ECR, Lambda) • Azure • Docker • Kubernetes • GitHub Actions • MLflow • DVC • TensorRT
 
-### Data Science & Development
-Pandas • Jupyter • Data Analysis • Big Data • React.js • Node.js • Express • SQLite • RESTful APIs
+### Robotics & Simulation
+ROS • CARLA • SocNavGym • Gazebo • Sensor Fusion • SLAM • Kalman Filters • Navigation Principles • Sensor Technology • Signal Processing
+
+### Web & Databases
+Django • React.js • Node.js • Express • PostgreSQL • MySQL • MongoDB
 
 ### Tools & Platforms
-Git/GitHub • Docker • Geographic Information Systems • Microsoft Office • Arena Simulation Software
+Git/GitHub • Jupyter • Blackboard • Moodle • MS Teams • Zoom • Tinkercad • Cisco Packet Tracer
 
 ---
 

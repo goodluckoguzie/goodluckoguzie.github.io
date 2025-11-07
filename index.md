@@ -57,14 +57,24 @@ title: Home
   
   <div class="teaching-cards">
     <div class="teaching-card">
-      <h4>Current Courses</h4>
-      <p><strong>QA Ltd & Crimson</strong></p>
-      <p>Teaching modules including Advanced Software Development, AI fundamentals, and Machine Learning applications.</p>
+      <h4>Current Positions</h4>
+      <p><strong>Seasonal Lecturer in Computing</strong><br>
+      <em>QA Ltd</em> (Partner with Solent University, University of Roehampton, Ulster University)<br>
+      January 2024 - Present</p>
+      <p><strong>Lecturer in Computer Science</strong><br>
+      <em>Crimson Education</em><br>
+      November 2020 - Present</p>
       <a href="{{ '/teaching' | relative_url }}" class="teaching-link">View All Courses →</a>
     </div>
     <div class="teaching-card">
+      <h4>Key Modules Taught</h4>
+      <p><strong>MSc Level:</strong> Deep Learning & Applications, Big Data & Infrastructure, Data Science & Machine Learning, Knowledge Engineering, Scalable Software Solutions</p>
+      <p><strong>Undergraduate:</strong> Object-Oriented Design, Networks & Security, Problem Solving through Programming, UX, Digital Media Technologies</p>
+      <a href="{{ '/teaching' | relative_url }}" class="teaching-link">View Full Details →</a>
+    </div>
+    <div class="teaching-card">
       <h4>Teaching Approach</h4>
-      <p>Student-centered learning with real-world projects, research integration, and practical application focus.</p>
+      <p>Student-centered learning with real-world projects, research integration, and practical application focus. Over 13 years of programming and teaching experience.</p>
       <a href="{{ '/teaching' | relative_url }}" class="teaching-link">Learn More →</a>
     </div>
   </div>
@@ -80,12 +90,12 @@ title: Home
     <p class="stat-label">Conference Papers Published</p>
   </div>
   <div class="stat-card">
-    <div class="stat-number">5+</div>
+    <div class="stat-number">13+</div>
     <p class="stat-label">Years Teaching Experience</p>
   </div>
   <div class="stat-card">
-    <div class="stat-number">6+</div>
-    <p class="stat-label">Courses Taught</p>
+    <div class="stat-number">15+</div>
+    <p class="stat-label">Modules Taught</p>
   </div>
   <div class="stat-card highlight-stat">
     <div class="stat-number">🔓</div>

@@ -16,7 +16,7 @@ My Professional Journey
     <p><strong>PhD, MSc, BSc</strong></p>
     <p>I'm an AI Researcher and Lecturer specializing in <strong>reinforcement learning</strong>, machine learning, social robotics, and human-computer interaction.</p>
     <p>I develop intelligent systems that integrate reinforcement learning, computer vision, machine learning, and predictive models to solve real-world problems. My research has been published at top conferences including UKCI 2023 and IEEE PRML 2024.</p>
-    <p>With 5+ years of teaching experience at Crimson and QA Ltd, and research at Aston University, I combine academic rigor with practical instruction to inspire the next generation of computer scientists and AI researchers.</p>
+    <p>With 13+ years of programming and teaching experience at Crimson, QA Ltd, and Aston University, I combine academic rigor with practical instruction to inspire the next generation of computer scientists and AI researchers.</p>
   </div>
 </div>
 
@@ -112,17 +112,34 @@ My Professional Journey
   </div>
 
   <div class="experience-item">
-    <div class="experience-date">Jan 2020 - Dec 2024</div>
+    <div class="experience-date">Jan 2023 - May 2024</div>
     <div class="experience-content">
       <h3>Teaching Assistant</h3>
+      <p><strong>South and City College Birmingham</strong></p>
+      <p>Birmingham, United Kingdom • Contract</p>
+      <div class="experience-achievements">
+        <h4>Key Responsibilities:</h4>
+        <ul>
+          <li>✓ Provided tailored support to students with various learning disabilities</li>
+          <li>✓ Employed innovative teaching strategies to accommodate individual learning styles</li>
+          <li>✓ Provided instructional support for Robotics and Automation courses (Level 4-5)</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+
+  <div class="experience-item">
+    <div class="experience-date">Feb 2020 - Dec 2021</div>
+    <div class="experience-content">
+      <h3>Teaching Assistant in A.I: Robotics and Autonomous Systems (MSc)</h3>
       <p><strong>Aston University</strong></p>
       <p>Birmingham, United Kingdom • Contract</p>
       <div class="experience-achievements">
         <h4>Key Responsibilities:</h4>
         <ul>
-          <li>✓ Supporting teaching in mathematics, algorithms, and data structures</li>
-          <li>✓ Assisting with course delivery and student support</li>
-          <li>✓ Conducting tutorials and laboratory sessions</li>
+          <li>✓ Conducted advanced research and implemented complex algorithmic solutions in robotics</li>
+          <li>✓ Developed and delivered modules on object detection, AI, and machine learning</li>
+          <li>✓ Assisted in module delivery for master's-level Robotics courses</li>
         </ul>
       </div>
     </div>
@@ -135,13 +152,14 @@ My Professional Journey
   <div class="tools-section">
     <h3>Programming Languages</h3>
     <div class="tools-tags">
-      <span>Python</span>
+      <span>Python (Advanced)</span>
       <span>JavaScript</span>
+      <span>Modern C++17</span>
       <span>C++</span>
       <span>C#</span>
-      <span>C</span>
       <span>Java</span>
       <span>SQL</span>
+      <span>Bash</span>
       <span>HTML/CSS</span>
       <span>MATLAB</span>
     </div>
@@ -151,35 +169,66 @@ My Professional Journey
     <div class="tools-tags">
       <span>PyTorch</span>
       <span>TensorFlow</span>
-      <span>Keras</span>
+      <span>JAX</span>
       <span>Scikit-Learn</span>
-      <span>Neural Networks</span>
+      <span>Computer Vision</span>
+      <span>OpenCV</span>
       <span>Deep Learning</span>
       <span>Reinforcement Learning</span>
-      <span>NLP</span>
+      <span>LLM Fine-tuning</span>
+      <span>LoRA</span>
+      <span>RAG</span>
+      <span>LangChain</span>
+      <span>Hugging Face</span>
     </div>
   </div>
   <div class="tools-section">
-    <h3>Computer Vision & Robotics</h3>
+    <h3>Cloud & DevOps</h3>
     <div class="tools-tags">
-      <span>OpenCV</span>
-      <span>Computer Vision</span>
-      <span>Robot Programming</span>
-      <span>Arduino</span>
-      <span>PLC</span>
-      <span>Robotics</span>
+      <span>AWS (EC2/S3/ECR/Lambda)</span>
+      <span>Azure</span>
+      <span>Docker</span>
+      <span>Kubernetes</span>
+      <span>GitHub Actions</span>
+      <span>MLflow</span>
+      <span>DVC</span>
+      <span>TensorRT</span>
     </div>
   </div>
   <div class="tools-section">
-    <h3>Data Science & Development</h3>
+    <h3>Robotics & Simulation</h3>
     <div class="tools-tags">
-      <span>Pandas</span>
-      <span>Data Analysis</span>
-      <span>Big Data</span>
+      <span>ROS</span>
+      <span>CARLA</span>
+      <span>SocNavGym</span>
+      <span>Gazebo</span>
+      <span>Sensor Fusion</span>
+      <span>SLAM</span>
+      <span>Kalman Filters</span>
+      <span>Navigation</span>
+    </div>
+  </div>
+  <div class="tools-section">
+    <h3>Web & Databases</h3>
+    <div class="tools-tags">
+      <span>Django</span>
       <span>React.js</span>
       <span>Node.js</span>
-      <span>Jupyter</span>
+      <span>Express</span>
+      <span>PostgreSQL</span>
+      <span>MySQL</span>
+      <span>MongoDB</span>
+    </div>
+  </div>
+  <div class="tools-section">
+    <h3>Tools & Platforms</h3>
+    <div class="tools-tags">
       <span>Git/GitHub</span>
+      <span>Jupyter</span>
+      <span>Blackboard</span>
+      <span>Moodle</span>
+      <span>Cisco Packet Tracer</span>
+      <span>Tinkercad</span>
     </div>
   </div>
 </div>
@@ -194,6 +243,8 @@ My Professional Journey
       <span>Neural Network Architectures</span>
       <span>Reinforcement Learning</span>
       <span>Computer Vision</span>
+      <span>ML OPS</span>
+      <span>Project Management</span>
       <span>Experimental Design</span>
       <span>Performance Evaluation</span>
     </div>
@@ -204,9 +255,11 @@ My Professional Journey
       <span>Curriculum Development</span>
       <span>Student Supervision</span>
       <span>Course Design</span>
+      <span>13+ Years Experience</span>
       <span>Mathematics</span>
       <span>OOP</span>
       <span>Data Structures</span>
+      <span>Inclusive Teaching</span>
     </div>
   </div>
   <div class="skills-section">
@@ -214,8 +267,11 @@ My Professional Journey
     <div class="skills-tags">
       <span>Automation Control</span>
       <span>Robotics Programming</span>
-      <span>Arduino Development</span>
-      <span>PLC Programming</span>
+      <span>Sensor Technology</span>
+      <span>Signal Processing</span>
+      <span>Navigation Principles</span>
+      <span>SLAM</span>
+      <span>Sensor Fusion</span>
       <span>Electronics Engineering</span>
     </div>
   </div>
@@ -225,8 +281,10 @@ My Professional Journey
       <span>Data Science</span>
       <span>Data Analysis</span>
       <span>Big Data</span>
+      <span>Knowledge Engineering</span>
       <span>Image Processing</span>
       <span>Statistical Analysis</span>
+      <span>Data Governance</span>
     </div>
   </div>
 </div>
