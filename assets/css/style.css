@@ -1536,13 +1536,34 @@ table tbody tr:last-child {
     border-bottom: 2px solid var(--border);
 }
 
+/* Table Highlight Row */
+table tr.highlight-row {
+    background: rgba(40, 167, 69, 0.1);
+    border-bottom: 2px solid #28a745;
+}
+
+table tr.highlight-row td {
+    font-weight: bold;
+    color: #28a745;
+}
+
+table th.text-left {
+    text-align: left;
+}
+
+table th.text-center,
+table td.text-center {
+    text-align: center;
+}
+
 /* Table of Contents */
+/* Table of Contents - Standardized */
 .table-of-contents {
     background: var(--bg-alt);
     padding: 1.5rem;
     border-radius: 8px;
-    border-left: 4px solid var(--link);
     margin: 2rem 0;
+    border-left: 4px solid var(--link);
 }
 
 .table-of-contents h3 {
@@ -1573,7 +1594,7 @@ table tbody tr:last-child {
     text-decoration: underline;
 }
 
-/* Hero Section */
+/* Hero Section - Standardized for Project Pages */
 .hero-section {
     background: linear-gradient(135deg, var(--bg-alt) 0%, var(--bg-card) 100%);
     padding: 2rem;
@@ -1582,12 +1603,47 @@ table tbody tr:last-child {
     margin: 2rem 0;
 }
 
-.hero-section h2 {
+.hero-section-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 2rem;
+    align-items: center;
+}
+
+.hero-section-content h2 {
     margin-top: 0;
     color: var(--text);
     font-size: 2rem;
 }
 
+.hero-section-content p {
+    font-size: 1.125rem;
+    line-height: 1.8;
+    color: var(--text);
+    margin-bottom: 1.5rem;
+}
+
+.hero-section-media {
+    text-align: center;
+}
+
+.hero-section-media video,
+.hero-section-media img {
+    width: 100%;
+    max-width: 500px;
+    height: auto;
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+}
+
+.hero-section-media p {
+    margin-top: 0.75rem;
+    font-size: 0.875rem;
+    color: var(--text-light);
+    font-style: italic;
+}
+
+/* Quick Stats - Standardized */
 .quick-stats {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
@@ -1595,12 +1651,101 @@ table tbody tr:last-child {
     margin: 1.5rem 0;
 }
 
-.quick-stats > div {
+.quick-stats-item {
     text-align: center;
     padding: 1rem;
     background: var(--bg);
     border-radius: 8px;
     border: 1px solid var(--border);
+}
+
+.quick-stats-item-icon {
+    font-size: 2rem;
+    margin-bottom: 0.5rem;
+}
+
+.quick-stats-item-value {
+    font-weight: bold;
+    color: var(--link);
+}
+
+.quick-stats-item-label {
+    font-size: 0.875rem;
+    color: var(--text-light);
+}
+
+/* Badge System - Standardized */
+.contribution-badge {
+    display: inline-block;
+    padding: 0.4rem 0.8rem;
+    border-radius: 4px;
+    font-size: 0.75rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+}
+
+.contribution-badge.created {
+    background: #28a745;
+    color: white;
+}
+
+.contribution-badge.team {
+    background: #17a2b8;
+    color: white;
+}
+
+.contribution-badge.publication {
+    background: #6c757d;
+    color: white;
+}
+
+.badge-spacing {
+    margin-left: 0.5rem;
+}
+
+.project-status-badge {
+    display: inline-block;
+    padding: 0.4rem 0.8rem;
+    border-radius: 4px;
+    font-size: 0.75rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+}
+
+.project-status-badge.completed {
+    background: #28a745;
+    color: white;
+}
+
+.project-status-badge.ongoing {
+    background: #ffc107;
+    color: #333;
+}
+
+/* Internal Link Styling */
+.internal-link {
+    color: var(--link);
+    text-decoration: underline;
+    transition: color var(--transition);
+}
+
+.internal-link:hover {
+    color: var(--link-hover);
+}
+
+/* Info Box Component */
+.info-box {
+    background: var(--bg-alt);
+    padding: 1.5rem;
+    border-radius: 8px;
+    margin: 1.5rem 0;
+}
+
+.info-box h4 {
+    margin-top: 0;
+    color: var(--primary);
 }
 
 /* Responsive adjustments */
@@ -1609,12 +1754,34 @@ table tbody tr:last-child {
         columns: 1;
     }
     
-    .hero-section {
+    .hero-section-grid {
         grid-template-columns: 1fr;
     }
     
     .quick-stats {
+        grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    }
+}
+
+@media (max-width: 640px) {
+    .hero-section {
+        padding: 1.5rem;
+    }
+    
+    .hero-section-content h2 {
+        font-size: 1.5rem;
+    }
+    
+    .hero-section-content p {
+        font-size: 1rem;
+    }
+    
+    .quick-stats {
         grid-template-columns: 1fr;
+    }
+    
+    .table-of-contents {
+        padding: 1rem;
     }
 }
 
@@ -1637,6 +1804,30 @@ table tbody tr:last-child {
     border-radius: 6px;
     border: 1px solid var(--border);
     text-align: center;
+}
+
+.project-image-placeholder img,
+.project-video-placeholder img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 6px;
+    margin-bottom: 1rem;
+}
+
+.project-image-full-width {
+    grid-column: 1 / -1;
+    max-width: 100%;
+}
+
+.project-image-large {
+    width: 100%;
+    max-width: 1200px;
+    height: auto;
+    border-radius: 6px;
+    margin-bottom: 1rem;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .project-image-placeholder img {
@@ -1892,47 +2083,7 @@ table tbody tr:last-child {
     line-height: 1.5;
 }
 
-.contribution-badge {
-    display: inline-block;
-    padding: 0.35rem 0.75rem;
-    border-radius: 16px;
-    font-size: 0.7rem;
-    font-weight: 600;
-    text-transform: uppercase;
-    letter-spacing: 0.3px;
-    line-height: 1;
-}
-
-.contribution-badge.created {
-    background: #28a745;
-    color: white;
-}
-
-.contribution-badge.team {
-    background: #0066cc;
-    color: white;
-}
-
-.project-status-badge {
-    display: inline-block;
-    padding: 0.35rem 0.75rem;
-    border-radius: 16px;
-    font-size: 0.7rem;
-    font-weight: 600;
-    text-transform: uppercase;
-    letter-spacing: 0.3px;
-    line-height: 1;
-}
-
-.project-status-badge.completed {
-    background: #ffa500;
-    color: white;
-}
-
-.project-status-badge.ongoing {
-    background: #ff6b6b;
-    color: white;
-}
+/* Badge styles consolidated - using standardized version above */
 
 .carousel-nav {
     position: absolute;

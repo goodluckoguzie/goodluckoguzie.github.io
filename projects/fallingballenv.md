@@ -8,13 +8,13 @@ title: FallingBallEnv - Research Project
 <div class="project-header">
   <div class="contribution-badge created">DEVELOPED</div>
   <div class="project-status-badge completed">COMPLETED</div>
-  <div class="contribution-badge" style="background: #6c757d; color: white; display: inline-block; margin-left: 0.5rem;">USED IN: IEEE PRML 2024</div>
+  <div class="contribution-badge publication badge-spacing">USED IN: IEEE PRML 2024</div>
   <p><strong>2023</strong> • Custom OpenAI Gym Environment • Published in PhD Thesis Chapter 6</p>
 </div>
 
-<div class="table-of-contents" style="background: var(--bg-alt); padding: 1.5rem; border-radius: 8px; margin: 2rem 0; border-left: 4px solid var(--link);">
-  <h3 style="margin-top: 0; color: var(--link);">📑 Table of Contents</h3>
-  <ul style="columns: 2; column-gap: 2rem; list-style: none; padding-left: 0;">
+<div class="table-of-contents">
+  <h3>📑 Table of Contents</h3>
+  <ul>
     <li><a href="#hero">1. Overview</a></li>
     <li><a href="#motivation">2. Research Motivation</a></li>
     <li><a href="#challenge">3. The Challenge</a></li>
@@ -36,39 +36,39 @@ title: FallingBallEnv - Research Project
 
 ## <a id="hero"></a>1. Overview
 
-<div class="hero-section" style="background: linear-gradient(135deg, var(--bg-alt) 0%, var(--bg-card) 100%); padding: 2rem; border-radius: 12px; margin: 2rem 0; border: 2px solid var(--border);">
-  <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 2rem; align-items: center;">
-    <div>
-      <h2 style="margin-top: 0; color: var(--text); font-size: 2rem;">A Simple Challenge</h2>
-      <p style="font-size: 1.125rem; line-height: 1.8; color: var(--text); margin-bottom: 1.5rem;">
+<div class="hero-section">
+  <div class="hero-section-grid">
+    <div class="hero-section-content">
+      <h2>A Simple Challenge</h2>
+      <p>
         I developed this simple environment where a ball falls and bounces, obeying the free fall of gravity. The floor position is not included in the observation space. Can the model learn to predict the next state of this environment, for example, the bouncing of the ball when it hits the ground?
       </p>
       
-      <div class="quick-stats" style="display: grid; grid-template-columns: repeat(3, 1fr); gap: 1rem; margin: 1.5rem 0;">
-        <div style="text-align: center; padding: 1rem; background: var(--bg); border-radius: 8px; border: 1px solid var(--border);">
-          <div style="font-size: 2rem; margin-bottom: 0.5rem;">🎯</div>
-          <div style="font-weight: bold; color: var(--link);">25% Lower MAE</div>
-          <div style="font-size: 0.875rem; color: var(--text-light);">with balanced datasets</div>
+      <div class="quick-stats">
+        <div class="quick-stats-item">
+          <div class="quick-stats-item-icon">🎯</div>
+          <div class="quick-stats-item-value">25% Lower MAE</div>
+          <div class="quick-stats-item-label">with balanced datasets</div>
         </div>
-        <div style="text-align: center; padding: 1rem; background: var(--bg); border-radius: 8px; border: 1px solid var(--border);">
-          <div style="font-size: 2rem; margin-bottom: 0.5rem;">📊</div>
-          <div style="font-weight: bold; color: var(--link);">3 Datasets</div>
-          <div style="font-size: 0.875rem; color: var(--text-light);">20K, 14.7K balanced, 14.7K unbalanced</div>
+        <div class="quick-stats-item">
+          <div class="quick-stats-item-icon">📊</div>
+          <div class="quick-stats-item-value">3 Datasets</div>
+          <div class="quick-stats-item-label">20K, 14.7K balanced, 14.7K unbalanced</div>
         </div>
-        <div style="text-align: center; padding: 1rem; background: var(--bg); border-radius: 8px; border: 1px solid var(--border);">
-          <div style="font-size: 2rem; margin-bottom: 0.5rem;">✅</div>
-          <div style="font-weight: bold; color: var(--link);">Validated CGLSTM</div>
-          <div style="font-size: 0.875rem; color: var(--text-light);">IEEE PRML 2024</div>
+        <div class="quick-stats-item">
+          <div class="quick-stats-item-icon">✅</div>
+          <div class="quick-stats-item-value">Validated CGLSTM</div>
+          <div class="quick-stats-item-label">IEEE PRML 2024</div>
         </div>
       </div>
     </div>
     
-    <div style="text-align: center;">
-      <video autoplay muted loop playsinline style="width: 100%; max-width: 500px; height: auto; border-radius: 8px; box-shadow: 0 4px 12px rgba(0,0,0,0.15);" poster="{{ '/assets/images/FallingBall.png' | relative_url }}">
+    <div class="hero-section-media">
+      <video autoplay muted loop playsinline poster="{{ '/assets/images/FallingBall.png' | relative_url }}">
         <source src="{{ '/video/FallingBallEnv.webm' | relative_url }}" type="video/webm">
         Your browser does not support the video tag.
       </video>
-      <p style="margin-top: 0.75rem; font-size: 0.875rem; color: var(--text-light); font-style: italic;">Watch the environment in action: hidden floor challenge demonstrated</p>
+      <p>Watch the environment in action: hidden floor challenge demonstrated</p>
     </div>
   </div>
 </div>
@@ -99,7 +99,7 @@ The balanced dataset ensured models were exposed to bounce events more frequentl
 
 ### What Makes This Hard?
 
-In FallingBallEnv, the floor position is deliberately hidden from the observation space (<a href="#innovation" style="color: var(--link); text-decoration: underline;">see Key Innovation section</a>). Models only receive:
+In FallingBallEnv, the floor position is deliberately hidden from the observation space (<a href="#innovation" class="internal-link">see Key Innovation section</a>). Models only receive:
 - Ball's position (x, y)
 - Ball's velocity (vx, vy)
 
@@ -121,7 +121,7 @@ This tests whether models can:
 Unlike most Gym environments that reveal all state information, FallingBallEnv deliberately omits the floor position from the observation space. This creates a controlled test of sequential learning where models must infer boundary conditions from trajectory patterns alone.
 
 **Key Design Elements:**
-- **Observation Space:** (x, y, vx, vy) - 4D continuous vector (<a href="#specs" style="color: var(--link); text-decoration: underline;">see Technical Specifications section</a>)
+- **Observation Space:** (x, y, vx, vy) - 4D continuous vector (<a href="#specs" class="internal-link">see Technical Specifications section</a>)
 - **Hidden State:** Floor position (y_floor) - deliberately excluded
 - **Learning Challenge:** Infer floor position from trajectory observations
 - **Controlled Complexity:** Simple physics simulation with complex learning requirement
@@ -132,62 +132,62 @@ Unlike most Gym environments that reveal all state information, FallingBallEnv d
 
 ### Balanced Dataset Impact
 
-<div style="background: var(--bg-alt); padding: 1.5rem; border-radius: 8px; margin: 1.5rem 0;">
+<div class="info-box">
   <h4>Key Finding: Balanced Dataset Impact</h4>
   <p>The balanced dataset (equal representation of bounce and free-fall windows) resulted in a <strong>25% reduction in MAE</strong> compared to the unbalanced dataset, highlighting the importance of balanced training data for learning transition events like bounces.</p>
 </div>
 
 ### Model Performance Comparison
 
-<div style="overflow-x: auto; margin: 2rem 0;">
-<table style="width: 100%; border-collapse: collapse; font-size: 0.9rem;">
+<div class="table-wrapper">
+<table>
   <thead>
-    <tr style="background: var(--bg-alt); border-bottom: 2px solid var(--border);">
-      <th style="padding: 0.75rem; text-align: left; border: 1px solid var(--border);"><strong>Model</strong></th>
-      <th style="padding: 0.75rem; text-align: center; border: 1px solid var(--border);"><strong>MAE (k=1)</strong></th>
-      <th style="padding: 0.75rem; text-align: center; border: 1px solid var(--border);"><strong>MAE (k=3)</strong></th>
-      <th style="padding: 0.75rem; text-align: center; border: 1px solid var(--border);"><strong>MAE (k=5)</strong></th>
-      <th style="padding: 0.75rem; text-align: center; border: 1px solid var(--border);"><strong>MAE (k=10)</strong></th>
-      <th style="padding: 0.75rem; text-align: center; border: 1px solid var(--border);"><strong>Time (s)</strong></th>
-      <th style="padding: 0.75rem; text-align: center; border: 1px solid var(--border);"><strong>Params</strong></th>
+    <tr>
+      <th class="text-left"><strong>Model</strong></th>
+      <th class="text-center"><strong>MAE (k=1)</strong></th>
+      <th class="text-center"><strong>MAE (k=3)</strong></th>
+      <th class="text-center"><strong>MAE (k=5)</strong></th>
+      <th class="text-center"><strong>MAE (k=10)</strong></th>
+      <th class="text-center"><strong>Time (s)</strong></th>
+      <th class="text-center"><strong>Params</strong></th>
     </tr>
   </thead>
   <tbody>
-    <tr style="border-bottom: 1px solid var(--border);">
-      <td style="padding: 0.75rem; border: 1px solid var(--border);"><strong>Vanilla LSTM</strong></td>
-      <td style="padding: 0.75rem; text-align: center; border: 1px solid var(--border);">1.643×10⁻⁴</td>
-      <td style="padding: 0.75rem; text-align: center; border: 1px solid var(--border);">1.705×10⁻⁴</td>
-      <td style="padding: 0.75rem; text-align: center; border: 1px solid var(--border);">1.730×10⁻⁴</td>
-      <td style="padding: 0.75rem; text-align: center; border: 1px solid var(--border);">4.696×10⁻³</td>
-      <td style="padding: 0.75rem; text-align: center; border: 1px solid var(--border);">0.00108</td>
-      <td style="padding: 0.75rem; text-align: center; border: 1px solid var(--border);">84,419</td>
+    <tr>
+      <td><strong>Vanilla LSTM</strong></td>
+      <td class="text-center">1.643×10⁻⁴</td>
+      <td class="text-center">1.705×10⁻⁴</td>
+      <td class="text-center">1.730×10⁻⁴</td>
+      <td class="text-center">4.696×10⁻³</td>
+      <td class="text-center">0.00108</td>
+      <td class="text-center">84,419</td>
     </tr>
-    <tr style="border-bottom: 1px solid var(--border);">
-      <td style="padding: 0.75rem; border: 1px solid var(--border);"><strong>GRU</strong></td>
-      <td style="padding: 0.75rem; text-align: center; border: 1px solid var(--border);">1.737×10⁻⁴</td>
-      <td style="padding: 0.75rem; text-align: center; border: 1px solid var(--border);">1.677×10⁻⁴</td>
-      <td style="padding: 0.75rem; text-align: center; border: 1px solid var(--border);">2.114×10⁻⁴</td>
-      <td style="padding: 0.75rem; text-align: center; border: 1px solid var(--border);">4.793×10⁻³</td>
-      <td style="padding: 0.75rem; text-align: center; border: 1px solid var(--border);">0.00091</td>
-      <td style="padding: 0.75rem; text-align: center; border: 1px solid var(--border);">63,363</td>
+    <tr>
+      <td><strong>GRU</strong></td>
+      <td class="text-center">1.737×10⁻⁴</td>
+      <td class="text-center">1.677×10⁻⁴</td>
+      <td class="text-center">2.114×10⁻⁴</td>
+      <td class="text-center">4.793×10⁻³</td>
+      <td class="text-center">0.00091</td>
+      <td class="text-center">63,363</td>
     </tr>
-    <tr style="border-bottom: 1px solid var(--border);">
-      <td style="padding: 0.75rem; border: 1px solid var(--border);"><strong>Transformer</strong></td>
-      <td style="padding: 0.75rem; text-align: center; border: 1px solid var(--border);">9.138×10⁻⁵</td>
-      <td style="padding: 0.75rem; text-align: center; border: 1px solid var(--border);">7.189×10⁻⁵</td>
-      <td style="padding: 0.75rem; text-align: center; border: 1px solid var(--border);">8.910×10⁻⁵</td>
-      <td style="padding: 0.75rem; text-align: center; border: 1px solid var(--border);">1.528×10⁻³</td>
-      <td style="padding: 0.75rem; text-align: center; border: 1px solid var(--border);">0.01417</td>
-      <td style="padding: 0.75rem; text-align: center; border: 1px solid var(--border);">1,125,059</td>
+    <tr>
+      <td><strong>Transformer</strong></td>
+      <td class="text-center">9.138×10⁻⁵</td>
+      <td class="text-center">7.189×10⁻⁵</td>
+      <td class="text-center">8.910×10⁻⁵</td>
+      <td class="text-center">1.528×10⁻³</td>
+      <td class="text-center">0.01417</td>
+      <td class="text-center">1,125,059</td>
     </tr>
-    <tr style="background: rgba(40, 167, 69, 0.1); border-bottom: 2px solid #28a745;">
-      <td style="padding: 0.75rem; border: 1px solid var(--border);"><strong>🎯 CGLSTM</strong></td>
-      <td style="padding: 0.75rem; text-align: center; border: 1px solid var(--border); font-weight: bold; color: #28a745;"><strong>3.558×10⁻⁵</strong></td>
-      <td style="padding: 0.75rem; text-align: center; border: 1px solid var(--border); font-weight: bold; color: #28a745;"><strong>4.302×10⁻⁵</strong></td>
-      <td style="padding: 0.75rem; text-align: center; border: 1px solid var(--border); font-weight: bold; color: #28a745;"><strong>2.341×10⁻⁵</strong></td>
-      <td style="padding: 0.75rem; text-align: center; border: 1px solid var(--border); font-weight: bold; color: #28a745;"><strong>1.360×10⁻³</strong></td>
-      <td style="padding: 0.75rem; text-align: center; border: 1px solid var(--border);">0.00325</td>
-      <td style="padding: 0.75rem; text-align: center; border: 1px solid var(--border);">104,771</td>
+    <tr class="highlight-row">
+      <td><strong>🎯 CGLSTM</strong></td>
+      <td class="text-center"><strong>3.558×10⁻⁵</strong></td>
+      <td class="text-center"><strong>4.302×10⁻⁵</strong></td>
+      <td class="text-center"><strong>2.341×10⁻⁵</strong></td>
+      <td class="text-center"><strong>1.360×10⁻³</strong></td>
+      <td class="text-center">0.00325</td>
+      <td class="text-center">104,771</td>
     </tr>
   </tbody>
 </table>
@@ -211,19 +211,19 @@ Unlike most Gym environments that reveal all state information, FallingBallEnv d
 
 <div class="project-media">
   <div class="project-image-placeholder">
-    <img src="{{ '/assets/images/FallingBall.png' | relative_url }}" alt="FallingBall Environment Visualization" style="max-width: 100%; height: auto; border-radius: 6px; margin-bottom: 1rem;">
+    <img src="{{ '/assets/images/FallingBall.png' | relative_url }}" alt="FallingBall Environment Visualization">
     <p><strong>Figure 1: Environment Visualization</strong></p>
     <p>Ball falling and bouncing in FallingBallEnv. Yellow circle = current state. The floor position is not included in the observation space.</p>
   </div>
   
   <div class="project-image-placeholder">
-    <img src="{{ '/assets/images/FallingBallwithprediction.png' | relative_url }}" alt="FallingBall Prediction Results" style="max-width: 100%; height: auto; border-radius: 6px; margin-bottom: 1rem;">
+    <img src="{{ '/assets/images/FallingBallwithprediction.png' | relative_url }}" alt="FallingBall Prediction Results">
     <p><strong>Figure 2: Prediction Comparison</strong></p>
     <p>Sky blue = actual future, blue = CGLSTM prediction, red = errors, gray = perfect alignment.</p>
   </div>
   
-  <div class="project-image-placeholder" style="grid-column: 1 / -1; max-width: 100%;">
-    <img src="{{ '/assets/images/fallingballenv_cglstm_results.jpg' | relative_url }}" alt="CGLSTM performance results in FallingBallEnv showing prediction accuracy across multiple horizons (k=1, 3, 5, 10) with comparison to baseline models" style="width: 100%; max-width: 1200px; height: auto; border-radius: 6px; margin-bottom: 1rem; display: block; margin-left: auto; margin-right: auto;">
+  <div class="project-image-placeholder project-image-full-width">
+    <img src="{{ '/assets/images/fallingballenv_cglstm_results.jpg' | relative_url }}" alt="CGLSTM performance results in FallingBallEnv showing prediction accuracy across multiple horizons (k=1, 3, 5, 10) with comparison to baseline models" class="project-image-large">
     <p><strong>Figure 3: CGLSTM Performance</strong></p>
     <p>Detailed results showing CGLSTM's superior accuracy across prediction horizons (k=1, 3, 5, 10).</p>
   </div>
@@ -265,7 +265,7 @@ Unlike most Gym environments that reveal all state information, FallingBallEnv d
   - `y`: Vertical position (continuous)
   - `vx`: Horizontal velocity (continuous)
   - `vy`: Vertical velocity (continuous)
-- **Important:** Floor position (`y_floor`) is deliberately excluded from observations (<a href="#innovation" style="color: var(--link); text-decoration: underline;">see Key Innovation section</a>)
+- **Important:** Floor position (`y_floor`) is deliberately excluded from observations (<a href="#innovation" class="internal-link">see Key Innovation section</a>)
 
 ### Action Space
 - **Type:** None (prediction/forecasting task)
@@ -417,17 +417,17 @@ FallingBallEnv was important for evaluating and validating the Cosine-Gated LSTM
 - <a href="{{ '/projects/litesocnavgym' | relative_url }}">LiteSocNavGym</a> - Lightweight version for faster iteration
 
 **Comparison with Other Environments:**
-Unlike standard Gym environments (CartPole, MountainCar, etc.), FallingBallEnv deliberately omits state information to test implicit physics learning (<a href="#innovation" style="color: var(--link); text-decoration: underline;">see Key Innovation section</a>). This makes it unique for evaluating sequential learning models that must infer hidden dynamics.
+Unlike standard Gym environments (CartPole, MountainCar, etc.), FallingBallEnv deliberately omits state information to test implicit physics learning (<a href="#innovation" class="internal-link">see Key Innovation section</a>). This makes it unique for evaluating sequential learning models that must infer hidden dynamics.
 
 ---
 
 ## <a id="faq"></a>13. FAQ
 
 ### Q: Why is the floor position hidden?
-**A:** This design tests whether models can learn implicit physics from observations alone. Unlike most Gym environments that reveal all state information, FallingBallEnv requires models to infer hidden boundary conditions from trajectory patterns (<a href="#innovation" style="color: var(--link); text-decoration: underline;">see Key Innovation section</a>).
+**A:** This design tests whether models can learn implicit physics from observations alone. Unlike most Gym environments that reveal all state information, FallingBallEnv requires models to infer hidden boundary conditions from trajectory patterns (<a href="#innovation" class="internal-link">see Key Innovation section</a>).
 
 ### Q: How does this compare to other Gym environments?
-**A:** Most Gym environments (CartPole, MountainCar, etc.) reveal all state information. FallingBallEnv uniquely tests learning of implicit physics by hiding the floor position, creating a controlled test of sequential learning capabilities (<a href="#innovation" style="color: var(--link); text-decoration: underline;">see Key Innovation section</a>).
+**A:** Most Gym environments (CartPole, MountainCar, etc.) reveal all state information. FallingBallEnv uniquely tests learning of implicit physics by hiding the floor position, creating a controlled test of sequential learning capabilities (<a href="#innovation" class="internal-link">see Key Innovation section</a>).
 
 ### Q: Can I use this for my research?
 **A:** Yes! The environment is open-source and available on GitHub. It's particularly useful for:
@@ -440,7 +440,7 @@ Unlike standard Gym environments (CartPole, MountainCar, etc.), FallingBallEnv d
 **A:** The hidden floor position forces models to learn implicit physics from trajectory observations alone. This tests whether models can infer boundary conditions without explicit state information.
 
 ### Q: How do I get started?
-**A:** Clone the repository, install dependencies, and check out the Quick Start example in the <a href="#usage" style="color: var(--link); text-decoration: underline;">Installation & Usage section</a> above.
+**A:** Clone the repository, install dependencies, and check out the Quick Start example in the <a href="#usage" class="internal-link">Installation & Usage section</a> above.
 
 ### Q: What datasets were used?
 **A:** Three datasets were created:
