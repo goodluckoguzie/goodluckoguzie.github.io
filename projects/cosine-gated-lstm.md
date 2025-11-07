@@ -68,7 +68,7 @@ title: Cosine-Gated LSTM - Research Project
 
 ## <a id="motivation"></a>2. Research Motivation
 
-- **Problem observed in SocNavGym world models:** vanilla LSTM-based predictors drifted as the horizon increased, producing inaccurate latent rollouts for <a href="{{ '/projects/predictive-world-models' | relative_url }}" style="color: var(--link); text-decoration: underline;">Predictive World Models</a> research.
+- **Problem observed in SocNavGym world models:** vanilla LSTM-based predictors drifted as the horizon increased, producing inaccurate latent rollouts for <a href="{{ '/projects/predictive-world-models' | relative_url }}" class="internal-link">Predictive World Models</a> research.
 - **Hypothesis:** a gate that measures alignment between the input trajectory and the current hidden state can decide whether to retain, blend, or suppress information.
 - **Goal:** improve long-range dependency retention without the parameter overhead of Transformers, while keeping inference latency acceptable for real-time robotics.
 
@@ -167,7 +167,7 @@ The IEEE PRML 2024 paper reports results across synthetic sequence modelling, vi
 
 ## <a id="socnav"></a>5. SocNavGym Performance
 
-Cosine-gating was originally motivated by social navigation prediction. The IEEE PRML paper reports the following results when predicting latent trajectories in the <a href="{{ '/projects/socnavgym' | relative_url }}" style="color: var(--link); text-decoration: underline;">SocNavGym</a> environment configured with four moving humans, a table, and a flowerpot.
+Cosine-gating was originally motivated by social navigation prediction. The IEEE PRML paper reports the following results when predicting latent trajectories in the <a href="{{ '/projects/socnavgym' | relative_url }}" class="internal-link">SocNavGym</a> environment configured with four moving humans, a table, and a flowerpot.
 
 <div style="overflow-x: auto; margin: 1.5rem 0;">
 <table style="width: 100%; border-collapse: collapse; font-size: 0.9rem;">
@@ -217,7 +217,7 @@ Key takeaways:
 
 - 35% reduction in MAE at k=10 relative to the Transformer baseline, while keeping inference under 8 ms.
 - Visual inspection (Fig. 3 in the paper) shows blue dominance for CGLSTM, indicating tighter alignment with ground-truth trajectories.
-- The model was subsequently integrated into the <a href="{{ '/projects/predictive-world-models' | relative_url }}" style="color: var(--link); text-decoration: underline;">Predictive World Models</a> pipeline to replace the world-model backbone.
+- The model was subsequently integrated into the <a href="{{ '/projects/predictive-world-models' | relative_url }}" class="internal-link">Predictive World Models</a> pipeline to replace the world-model backbone.
 
 <img src="{{ '/assets/images/cgltsmtestResultforsocnav.jpg' | relative_url }}" alt="Visual comparison of predictive trajectories in SocNavGym for CGLSTM and baselines" style="width: 100%; max-width: 760px; height: auto; border-radius: 8px; border: 1px solid var(--border); margin: 2rem 0;">
 <p style="margin-top: -1.25rem; font-size: 0.85rem; color: var(--text-light); font-style: italic; text-align: center;">SocNavGym qualitative comparison from my viva: CGLSTM predictions (right) retain blue overlays indicating accurate future states, whereas vanilla LSTM and GRU (left) accumulate red error regions.</p>
@@ -260,7 +260,7 @@ cglstm = CosineGatedLSTM(latent_dim=64, hidden_size=128)
 ## <a id="impact"></a>7. Research Impact
 
 - Published in **IEEE PRML 2024**, with proceedings pages 8–15.
-- Serves as the latent model in the <a href="{{ '/projects/predictive-world-models' | relative_url }}" style="color: var(--link); text-decoration: underline;">Predictive World Models</a> and <a href="{{ '/projects/adaptive-prediction-horizons' | relative_url }}" style="color: var(--link); text-decoration: underline;">Adaptive Prediction Horizons</a> contributions.
+- Serves as the latent model in the <a href="{{ '/projects/predictive-world-models' | relative_url }}" class="internal-link">Predictive World Models</a> and <a href="{{ '/projects/adaptive-prediction-horizons' | relative_url }}" class="internal-link">Adaptive Prediction Horizons</a> contributions.
 - Demonstrated improvements across vision and NLP benchmarks: +0.44 pts on Fashion-MNIST, +0.37 pts on MNIST, +9.5% lower MAE on the adding problem.
 - Provided publicly accessible implementation (<a href="https://github.com/goodluckoguzie/CosineGatedLSTM" target="_blank">GitHub</a>) supporting replication and extension.
 
