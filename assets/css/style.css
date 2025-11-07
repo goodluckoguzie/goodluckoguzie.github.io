@@ -245,7 +245,7 @@
 
 .home-research-card {
     background: var(--bg-card);
-    padding: 2.5rem;
+    padding: 2rem;
     border-radius: 8px;
     border: 1px solid var(--border);
     box-shadow: var(--shadow);
@@ -282,25 +282,27 @@
     margin-top: 0;
     margin-bottom: 0.5rem;
     color: var(--text);
-    font-size: 1.75rem;
+    font-size: 1.5rem;
     line-height: 1.3;
 }
 
 .home-research-meta {
     color: var(--text-light);
     font-size: 0.95rem;
-    margin-bottom: 1.5rem;
+    margin-bottom: 1rem;
 }
 
 .home-research-image {
-    margin: 1.5rem 0;
+    margin: 1rem 0;
     text-align: center;
 }
 
 .home-research-image img {
     width: 100%;
-    max-width: 600px;
+    max-width: 500px;
+    max-height: 300px;
     height: auto;
+    object-fit: contain;
     border-radius: 6px;
     box-shadow: var(--shadow-md);
     display: block;
@@ -318,14 +320,14 @@
 .home-research-card p {
     color: var(--text);
     line-height: 1.7;
-    margin-bottom: 1.5rem;
+    margin-bottom: 1rem;
 }
 
 .home-research-tags {
     display: flex;
     gap: 0.5rem;
     flex-wrap: wrap;
-    margin-bottom: 1.5rem;
+    margin-bottom: 1rem;
 }
 
 .home-research-actions {
