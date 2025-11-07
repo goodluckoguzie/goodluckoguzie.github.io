@@ -279,7 +279,7 @@ These are the environments I've created or contributed to for evaluating reinfor
           
           <div class="card-content">
             <div class="card-text">
-              <p class="project-description">I introduced cosine-controlled gates to the LSTM so the network can highlight inputs that align with the current trajectory. CGLSTM delivers stronger sequence prediction across synthetic tasks, row-wise MNIST, Fashion-MNIST, IMDB, and the SocNavGym predictor. Published at IEEE PRML 2024 and deployed inside the Predictive World Models framework.</p>
+              <p class="project-description">Cosine-Gated LSTM augments the vanilla architecture with cosine similarity gates that prioritise trajectory-aligned inputs. The model achieves superior sequence prediction across synthetic tasks, row-wise MNIST, Fashion-MNIST, IMDB, and the SocNavGym predictor, underpinning the Predictive World Models framework showcased at IEEE PRML 2024.</p>
 
               <div class="project-stats" style="margin: 1rem 0; padding: 0.75rem; background: var(--bg-alt); border-radius: 6px; font-size: 0.875rem;">
                 <div style="display: flex; align-items: center; gap: 0.5rem; margin: 0.5rem 0;">
