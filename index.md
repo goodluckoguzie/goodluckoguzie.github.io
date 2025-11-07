@@ -108,6 +108,25 @@ title: Home
 <div class="home-teaching-section">
   <p>I teach AI and machine learning courses at multiple institutions, with <strong>13+ years of experience</strong> preparing students for academic and industry careers. My courses integrate cutting-edge research with practical application.</p>
   
+  <div class="home-teaching-metrics" style="display: grid; grid-template-columns: repeat(auto-fit, minmax(150px, 1fr)); gap: 1.5rem; margin: 2rem 0;">
+    <div style="text-align: center; padding: 1rem; background: var(--bg-card); border-radius: 8px; border: 1px solid var(--border);">
+      <div style="font-size: 2rem; font-weight: bold; color: var(--accent); margin-bottom: 0.5rem;">500+</div>
+      <div style="font-size: 0.9rem; color: var(--text-light);">Students Taught</div>
+    </div>
+    <div style="text-align: center; padding: 1rem; background: var(--bg-card); border-radius: 8px; border: 1px solid var(--border);">
+      <div style="font-size: 2rem; font-weight: bold; color: var(--accent); margin-bottom: 0.5rem;">20+</div>
+      <div style="font-size: 0.9rem; color: var(--text-light);">Modules Taught</div>
+    </div>
+    <div style="text-align: center; padding: 1rem; background: var(--bg-card); border-radius: 8px; border: 1px solid var(--border);">
+      <div style="font-size: 2rem; font-weight: bold; color: var(--accent); margin-bottom: 0.5rem;">85%+</div>
+      <div style="font-size: 0.9rem; color: var(--text-light);">Avg Performance</div>
+    </div>
+    <div style="text-align: center; padding: 1rem; background: var(--bg-card); border-radius: 8px; border: 1px solid var(--border);">
+      <div style="font-size: 2rem; font-weight: bold; color: var(--accent); margin-bottom: 0.5rem;">4</div>
+      <div style="font-size: 0.9rem; color: var(--text-light);">Institutions</div>
+    </div>
+  </div>
+  
   <div class="home-teaching-highlights">
     <div class="home-teaching-highlight">
       <strong>Current Positions:</strong> Seasonal Lecturer at QA Ltd (Partner with Solent University, University of Roehampton, Ulster University) • Lecturer at Crimson Education

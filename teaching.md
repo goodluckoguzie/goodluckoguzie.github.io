@@ -32,6 +32,157 @@ I believe in combining cutting-edge research with practical application. My cour
 
 ---
 
+## Teaching Metrics & Impact
+
+<div class="metrics-dashboard">
+  <div class="metric-card">
+    <div class="metric-icon">People</div>
+    <div class="metric-value">500+</div>
+    <div class="metric-label">Total Students Taught</div>
+    <div class="metric-breakdown">
+      <span>Foundation: 80+</span>
+      <span>Undergraduate: 300+</span>
+      <span>Postgraduate: 100+</span>
+      <span>GCSE/A-Level: 120+</span>
+    </div>
+  </div>
+
+  <div class="metric-card">
+    <div class="metric-icon">Book</div>
+    <div class="metric-value">20+</div>
+    <div class="metric-label">Modules Developed</div>
+    <div class="metric-breakdown">
+      <span>Foundation: 2</span>
+      <span>Undergraduate: 12</span>
+      <span>Postgraduate: 7</span>
+      <span>Secondary: 2</span>
+    </div>
+  </div>
+
+  <div class="metric-card">
+    <div class="metric-icon">Target</div>
+    <div class="metric-value">85%+</div>
+    <div class="metric-label">Average Student Performance</div>
+    <div class="metric-breakdown">
+      <span>Coursework: 87%</span>
+      <span>Examinations: 83%</span>
+      <span>Projects: 89%</span>
+    </div>
+  </div>
+
+  <div class="metric-card">
+    <div class="metric-icon">Refresh</div>
+    <div class="metric-value">15+</div>
+    <div class="metric-label">Modules Taught Multiple Times</div>
+    <div class="metric-breakdown">
+      <span>QHO427: 3 times</span>
+      <span>QHO543: 2 times</span>
+      <span>QHO305: 2 times</span>
+    </div>
+  </div>
+
+  <div class="metric-card">
+    <div class="metric-icon">Trophy</div>
+    <div class="metric-value">4</div>
+    <div class="metric-label">Institutions</div>
+    <div class="metric-breakdown">
+      <span>Solent University</span>
+      <span>Ulster University</span>
+      <span>Crimson Education</span>
+      <span>Aston University</span>
+    </div>
+  </div>
+
+  <div class="metric-card">
+    <div class="metric-icon">Time</div>
+    <div class="metric-value">13+</div>
+    <div class="metric-label">Years Experience</div>
+    <div class="metric-breakdown">
+      <span>Teaching: 13+ years</span>
+      <span>Programming: 13+ years</span>
+      <span>Research: 5+ years</span>
+    </div>
+  </div>
+</div>
+
+---
+
+## Teaching Timeline
+
+<div class="teaching-timeline">
+  <div class="timeline-item">
+    <div class="timeline-marker"></div>
+    <div class="timeline-content">
+      <div class="timeline-year">2024 - Present</div>
+      <h3>Seasonal Lecturer in Computing</h3>
+      <p><strong>QA Ltd</strong> (Solent, Ulster, Roehampton)</p>
+      <p>Teaching 12+ modules across partner universities, focusing on programming, web development, networking, and machine learning.</p>
+      <div class="timeline-modules">
+        <span class="timeline-badge">12+ Modules</span>
+        <span class="timeline-badge">200+ Students</span>
+      </div>
+    </div>
+  </div>
+
+  <div class="timeline-item">
+    <div class="timeline-marker"></div>
+    <div class="timeline-content">
+      <div class="timeline-year">2023 - 2024</div>
+      <h3>Teaching Assistant</h3>
+      <p><strong>South and City College Birmingham</strong></p>
+      <p>Supported students with learning disabilities in Robotics and Automation courses. Developed inclusive teaching materials and strategies.</p>
+      <div class="timeline-modules">
+        <span class="timeline-badge">Level 4-5</span>
+        <span class="timeline-badge">Inclusive Teaching</span>
+      </div>
+    </div>
+  </div>
+
+  <div class="timeline-item">
+    <div class="timeline-marker"></div>
+    <div class="timeline-content">
+      <div class="timeline-year">2020 - Present</div>
+      <h3>Lecturer in Computer Science</h3>
+      <p><strong>Crimson Education</strong></p>
+      <p>Preparing students worldwide for GCSE and A-level examinations. Mentoring students on Python projects and cloud deployment.</p>
+      <div class="timeline-modules">
+        <span class="timeline-badge">GCSE & A-Level</span>
+        <span class="timeline-badge">120+ Students</span>
+      </div>
+    </div>
+  </div>
+
+  <div class="timeline-item">
+    <div class="timeline-marker"></div>
+    <div class="timeline-content">
+      <div class="timeline-year">2020 - 2021</div>
+      <h3>Teaching Assistant (MSc Robotics)</h3>
+      <p><strong>Aston University</strong></p>
+      <p>Developed and delivered modules on object detection, AI, and machine learning for master's-level Robotics courses.</p>
+      <div class="timeline-modules">
+        <span class="timeline-badge">MSc Level</span>
+        <span class="timeline-badge">Research-Integrated</span>
+      </div>
+    </div>
+  </div>
+
+  <div class="timeline-item">
+    <div class="timeline-marker"></div>
+    <div class="timeline-content">
+      <div class="timeline-year">2011 - 2024</div>
+      <h3>Teaching & Programming Experience</h3>
+      <p><strong>13+ Years Combined</strong></p>
+      <p>Over a decade of experience combining programming expertise with teaching excellence, developing curricula and mentoring students.</p>
+      <div class="timeline-modules">
+        <span class="timeline-badge">500+ Students</span>
+        <span class="timeline-badge">20+ Modules</span>
+      </div>
+    </div>
+  </div>
+</div>
+
+---
+
 ## Current Teaching Positions
 
 <div class="teaching-positions">
@@ -452,157 +603,6 @@ Comprehensive progressive teaching modules covering full-stack web development:
       <span>Industry-focused</span>
       <span>35+ students</span>
       <span>87%+ average grade</span>
-    </div>
-  </div>
-</div>
-
----
-
-## Teaching Metrics & Impact
-
-<div class="metrics-dashboard">
-  <div class="metric-card">
-    <div class="metric-icon">People</div>
-    <div class="metric-value">500+</div>
-    <div class="metric-label">Total Students Taught</div>
-    <div class="metric-breakdown">
-      <span>Foundation: 80+</span>
-      <span>Undergraduate: 300+</span>
-      <span>Postgraduate: 100+</span>
-      <span>GCSE/A-Level: 120+</span>
-    </div>
-  </div>
-
-  <div class="metric-card">
-    <div class="metric-icon">Book</div>
-    <div class="metric-value">20+</div>
-    <div class="metric-label">Modules Developed</div>
-    <div class="metric-breakdown">
-      <span>Foundation: 2</span>
-      <span>Undergraduate: 12</span>
-      <span>Postgraduate: 7</span>
-      <span>Secondary: 2</span>
-    </div>
-  </div>
-
-  <div class="metric-card">
-    <div class="metric-icon">Target</div>
-    <div class="metric-value">85%+</div>
-    <div class="metric-label">Average Student Performance</div>
-    <div class="metric-breakdown">
-      <span>Coursework: 87%</span>
-      <span>Examinations: 83%</span>
-      <span>Projects: 89%</span>
-    </div>
-  </div>
-
-  <div class="metric-card">
-    <div class="metric-icon">Refresh</div>
-    <div class="metric-value">15+</div>
-    <div class="metric-label">Modules Taught Multiple Times</div>
-    <div class="metric-breakdown">
-      <span>QHO427: 3 times</span>
-      <span>QHO543: 2 times</span>
-      <span>QHO305: 2 times</span>
-    </div>
-  </div>
-
-  <div class="metric-card">
-    <div class="metric-icon">🏆</div>
-    <div class="metric-value">4</div>
-    <div class="metric-label">Institutions</div>
-    <div class="metric-breakdown">
-      <span>Solent University</span>
-      <span>Ulster University</span>
-      <span>Crimson Education</span>
-      <span>Aston University</span>
-    </div>
-  </div>
-
-  <div class="metric-card">
-    <div class="metric-icon">Time</div>
-    <div class="metric-value">13+</div>
-    <div class="metric-label">Years Experience</div>
-    <div class="metric-breakdown">
-      <span>Teaching: 13+ years</span>
-      <span>Programming: 13+ years</span>
-      <span>Research: 5+ years</span>
-    </div>
-  </div>
-</div>
-
----
-
-## 📅 Teaching Timeline
-
-<div class="teaching-timeline">
-  <div class="timeline-item">
-    <div class="timeline-marker"></div>
-    <div class="timeline-content">
-      <div class="timeline-year">2024 - Present</div>
-      <h3>Seasonal Lecturer in Computing</h3>
-      <p><strong>QA Ltd</strong> (Solent, Ulster, Roehampton)</p>
-      <p>Teaching 12+ modules across partner universities, focusing on programming, web development, networking, and machine learning.</p>
-      <div class="timeline-modules">
-        <span class="timeline-badge">12+ Modules</span>
-        <span class="timeline-badge">200+ Students</span>
-      </div>
-    </div>
-  </div>
-
-  <div class="timeline-item">
-    <div class="timeline-marker"></div>
-    <div class="timeline-content">
-      <div class="timeline-year">2023 - 2024</div>
-      <h3>Teaching Assistant</h3>
-      <p><strong>South and City College Birmingham</strong></p>
-      <p>Supported students with learning disabilities in Robotics and Automation courses. Developed inclusive teaching materials and strategies.</p>
-      <div class="timeline-modules">
-        <span class="timeline-badge">Level 4-5</span>
-        <span class="timeline-badge">Inclusive Teaching</span>
-      </div>
-    </div>
-  </div>
-
-  <div class="timeline-item">
-    <div class="timeline-marker"></div>
-    <div class="timeline-content">
-      <div class="timeline-year">2020 - Present</div>
-      <h3>Lecturer in Computer Science</h3>
-      <p><strong>Crimson Education</strong></p>
-      <p>Preparing students worldwide for GCSE and A-level examinations. Mentoring students on Python projects and cloud deployment.</p>
-      <div class="timeline-modules">
-        <span class="timeline-badge">GCSE & A-Level</span>
-        <span class="timeline-badge">120+ Students</span>
-      </div>
-    </div>
-  </div>
-
-  <div class="timeline-item">
-    <div class="timeline-marker"></div>
-    <div class="timeline-content">
-      <div class="timeline-year">2020 - 2021</div>
-      <h3>Teaching Assistant (MSc Robotics)</h3>
-      <p><strong>Aston University</strong></p>
-      <p>Developed and delivered modules on object detection, AI, and machine learning for master's-level Robotics courses.</p>
-      <div class="timeline-modules">
-        <span class="timeline-badge">MSc Level</span>
-        <span class="timeline-badge">Research-Integrated</span>
-      </div>
-    </div>
-  </div>
-
-  <div class="timeline-item">
-    <div class="timeline-marker"></div>
-    <div class="timeline-content">
-      <div class="timeline-year">2011 - 2024</div>
-      <h3>Teaching & Programming Experience</h3>
-      <p><strong>13+ Years Combined</strong></p>
-      <p>Over a decade of experience combining programming expertise with teaching excellence, developing curricula and mentoring students.</p>
-      <div class="timeline-modules">
-        <span class="timeline-badge">500+ Students</span>
-        <span class="timeline-badge">20+ Modules</span>
-      </div>
     </div>
   </div>
 </div>
