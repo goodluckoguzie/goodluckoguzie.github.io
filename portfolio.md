@@ -236,7 +236,7 @@ These are the environments I've created or contributed to for evaluating reinfor
           
           <div class="card-content">
             <div class="card-text">
-              <p class="project-description">Proposed reinforcement learning models enabling autonomous systems to navigate safely in social environments. Introduced two complementary approaches: <strong>2StepAhead</strong> (multi-step ahead prediction system) and <strong>MASPM</strong> (Multi-Action State Predictive Model for comprehensive action evaluation). Published at UKCI 2023 with superior navigation performance compared to baseline methods.</p>
+              <p class="project-description">Proposed reinforcement learning models enabling autonomous systems to navigate safely in social environments. Introduced two complementary approaches: 2StepAhead (multi-step ahead prediction system) and MASPM (Multi-Action State Predictive Model for comprehensive action evaluation). Published at UKCI 2023 with superior navigation performance compared to baseline methods.</p>
               <a href="{{ '/projects/predictive-world-models' | relative_url }}" class="see-more-btn">
                 <span class="btn-text">View Full Details</span>
                 <span class="btn-icon">→</span>
@@ -244,11 +244,8 @@ These are the environments I've created or contributed to for evaluating reinfor
             </div>
             
             <div class="card-video">
-              <video controls class="carousel-video">
-                <source src="https://goodluckoguzie.github.io/Viva/img/problem.mp4" type="video/mp4">
-                Your browser does not support the video tag.
-              </video>
-              <p class="video-caption">Predictive World Models demonstration showing navigation performance</p>
+              <img src="{{ '/assets/images/predictive_world_models_training.png' | relative_url }}" alt="Training reward curves for predictive world models" class="carousel-image" style="width: 100%; height: auto; border-radius: 6px; display: block;">
+              <p class="video-caption">Training reward comparison for the predictive world models</p>
             </div>
           </div>
         </div>
