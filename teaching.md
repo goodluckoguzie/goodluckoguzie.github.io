@@ -613,7 +613,7 @@ Comprehensive progressive teaching modules covering full-stack web development:
 
 <div class="contact-section">
   <div class="contact-card">
-    <h3>📧 Email</h3>
+    <h3>Email</h3>
     <p><a href="mailto:goodluckoguzie1@gmail.com">goodluckoguzie1@gmail.com</a></p>
     <p><em>Response time: Within 48 hours</em></p>
   </div>
