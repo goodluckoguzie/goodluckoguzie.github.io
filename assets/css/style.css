@@ -1932,6 +1932,11 @@ table td.text-center {
     text-decoration: none;
 }
 
+.see-more-btn:focus-visible {
+    outline: 3px solid var(--link);
+    outline-offset: 2px;
+}
+
 .see-more-btn.expanded .btn-icon {
     transform: rotate(180deg);
 }
@@ -2137,6 +2142,11 @@ table td.text-center {
     transform: translateY(-50%) scale(1.1);
 }
 
+.carousel-nav:focus-visible {
+    outline: 3px solid var(--link);
+    outline-offset: 2px;
+}
+
 .carousel-prev {
     left: -15px;
 }
@@ -2173,6 +2183,11 @@ table td.text-center {
 .carousel-dot:hover {
     background: var(--link);
     opacity: 0.7;
+}
+
+.carousel-dot:focus-visible {
+    outline: 3px solid var(--link);
+    outline-offset: 2px;
 }
 
 .see-more-btn {

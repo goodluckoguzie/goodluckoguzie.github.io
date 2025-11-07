@@ -84,8 +84,8 @@ These are the environments I've created or contributed to for evaluating reinfor
                 </div>
               </div>
               
-              <a href="{{ '/projects/fallingballenv' | relative_url }}" class="see-more-btn">
-                <span class="btn-text">Explore Details</span>
+              <a href="{{ '/projects/fallingballenv' | relative_url }}" class="see-more-btn" aria-label="Explore FallingBallEnv project details, results, and technical specifications">
+                <span class="btn-text">Explore Environment Details</span>
                 <span class="btn-icon">→</span>
               </a>
             </div>
@@ -143,8 +143,8 @@ These are the environments I've created or contributed to for evaluating reinfor
                 </div>
               </div>
               
-              <a href="{{ '/projects/litesocnavgym' | relative_url }}" class="see-more-btn">
-                <span class="btn-text">Explore Details</span>
+              <a href="{{ '/projects/litesocnavgym' | relative_url }}" class="see-more-btn" aria-label="Explore LiteSocNavGym lightweight environment details and performance metrics">
+                <span class="btn-text">View Performance Metrics</span>
                 <span class="btn-icon">→</span>
               </a>
             </div>
@@ -182,8 +182,8 @@ These are the environments I've created or contributed to for evaluating reinfor
           <div class="card-content">
             <div class="card-text">
               <p class="project-description">Comprehensive social navigation gymnasium environment for evaluating social robot navigation algorithms. As part of the development team, I focused on reinforcement learning aspects and integration with predictive models. This was the primary environment for testing Predictive World Models and validating Adaptive Prediction Horizons.</p>
-              <a href="{{ '/projects/socnavgym' | relative_url }}" class="see-more-btn">
-                <span class="btn-text">View Full Details</span>
+              <a href="{{ '/projects/socnavgym' | relative_url }}" class="see-more-btn" aria-label="Explore SocNavGym comprehensive environment specifications and research applications">
+                <span class="btn-text">Explore Environment Specs</span>
                 <span class="btn-icon">→</span>
               </a>
             </div>
@@ -252,8 +252,8 @@ These are the environments I've created or contributed to for evaluating reinfor
                   <span><strong>Converged in ~3,200 episodes</strong> (faster than baselines)</span>
                 </div>
               </div>
-              <a href="{{ '/projects/predictive-world-models' | relative_url }}" class="see-more-btn">
-                <span class="btn-text">View Full Details</span>
+              <a href="{{ '/projects/predictive-world-models' | relative_url }}" class="see-more-btn" aria-label="Explore Predictive World Models architecture, training results, and performance comparisons">
+                <span class="btn-text">View Architecture & Results</span>
                 <span class="btn-icon">→</span>
               </a>
             </div>
@@ -296,8 +296,8 @@ These are the environments I've created or contributed to for evaluating reinfor
                 </div>
               </div>
 
-              <a href="{{ '/projects/cosine-gated-lstm' | relative_url }}" class="see-more-btn">
-                <span class="btn-text">View Full Details</span>
+              <a href="{{ '/projects/cosine-gated-lstm' | relative_url }}" class="see-more-btn" aria-label="Explore Cosine-Gated LSTM architecture, benchmark results, and implementation details">
+                <span class="btn-text">View Benchmarks & Code</span>
                 <span class="btn-icon">→</span>
               </a>
             </div>
@@ -339,8 +339,8 @@ These are the environments I've created or contributed to for evaluating reinfor
                   <span><strong>5.62 days</strong> training vs 28.41 days for DreamerV3 + CGLSTM</span>
                 </div>
               </div>
-              <a href="{{ '/projects/adaptive-prediction-horizons' | relative_url }}" class="see-more-btn">
-                <span class="btn-text">View Full Details</span>
+              <a href="{{ '/projects/adaptive-prediction-horizons' | relative_url }}" class="see-more-btn" aria-label="Explore Adaptive Prediction Horizons methodology, experimental results, and entropy-based adaptation">
+                <span class="btn-text">View Methodology & Results</span>
                 <span class="btn-icon">→</span>
               </a>
             </div>
@@ -391,8 +391,8 @@ These are the environments I've created or contributed to for evaluating reinfor
           <div class="card-content">
             <div class="card-text">
               <p class="project-description">Developing action recognition systems using Wi-Fi Channel State Information (CSI) with ESP32 microcontrollers. This research explores contactless human activity recognition through wireless signals, combining hardware design with machine learning. Exploring novel approaches to human activity recognition without cameras or wearables.</p>
-              <a href="{{ '/projects/action-recognition' | relative_url }}" class="see-more-btn">
-                <span class="btn-text">View Full Details</span>
+              <a href="{{ '/projects/action-recognition' | relative_url }}" class="see-more-btn" aria-label="Explore Wi-Fi CSI Action Recognition system design, hardware implementation, and machine learning approach">
+                <span class="btn-text">View System Design</span>
                 <span class="btn-icon">→</span>
               </a>
             </div>
@@ -442,8 +442,8 @@ These are the environments I've created or contributed to for evaluating reinfor
           <div class="card-content">
             <div class="card-text">
               <p class="project-description">Data analysis project exploring Disneyland visitor data, including demographics, ride popularity, and operational insights using data science techniques.</p>
-              <a href="{{ '/projects/disneyland' | relative_url }}" class="see-more-btn">
-                <span class="btn-text">View Full Details</span>
+              <a href="{{ '/projects/disneyland' | relative_url }}" class="see-more-btn" aria-label="Explore Disneyland data analysis project insights and visualizations">
+                <span class="btn-text">View Analysis & Insights</span>
                 <span class="btn-icon">→</span>
               </a>
             </div>
@@ -471,8 +471,8 @@ These are the environments I've created or contributed to for evaluating reinfor
           <div class="card-content">
             <div class="card-text">
               <p class="project-description">Exploration and implementation of World Models concept in reinforcement learning, where an agent learns a compressed, predictive model of its environment for efficient policy learning.</p>
-              <a href="{{ '/projects/worldmodels' | relative_url }}" class="see-more-btn">
-                <span class="btn-text">View Full Details</span>
+              <a href="{{ '/projects/worldmodels' | relative_url }}" class="see-more-btn" aria-label="Explore World Models implementation and reinforcement learning approach">
+                <span class="btn-text">View Implementation</span>
                 <span class="btn-icon">→</span>
               </a>
             </div>
@@ -523,8 +523,8 @@ These are the environments I've created or contributed to for evaluating reinfor
           <div class="card-content">
             <div class="card-text">
               <p class="project-description">Completed PhD thesis integrating all three proposed models into a comprehensive framework for social robot navigation: <strong>Predictive World Models</strong> (2StepAhead, MASPM), <strong>Cosine-Gated LSTM</strong> architecture, and <strong>Adaptive Prediction Horizons</strong> (entropy-driven). Successfully defended with 2 conference papers published (UKCI 2023, IEEE PRML 2024) and superior performance in all tested environments.</p>
-              <a href="{{ '/projects/phd-thesis' | relative_url }}" class="see-more-btn">
-                <span class="btn-text">View Full Details</span>
+              <a href="{{ '/projects/phd-thesis' | relative_url }}" class="see-more-btn" aria-label="Explore PhD thesis comprehensive framework, publications, and research contributions">
+                <span class="btn-text">Read Thesis Summary</span>
                 <span class="btn-icon">→</span>
               </a>
             </div>

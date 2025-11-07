@@ -317,6 +317,22 @@
                 
                 if (!carousel) return;
                 
+                // Add keyboard navigation
+                carousel.addEventListener('keydown', (e) => {
+                    if (e.key === 'ArrowLeft') {
+                        e.preventDefault();
+                        this.prev();
+                    } else if (e.key === 'ArrowRight') {
+                        e.preventDefault();
+                        this.next();
+                    }
+                });
+                
+                // Make carousel focusable
+                carousel.setAttribute('tabindex', '0');
+                carousel.setAttribute('role', 'region');
+                carousel.setAttribute('aria-label', 'Environments carousel');
+                
                 this.updateSlide();
                 this.startAutoPlay();
                 
@@ -392,13 +408,17 @@
             },
             
             updateSlide: function() {
+                const wrapper = document.querySelector('.environments-carousel-wrapper');
                 const slides = document.querySelectorAll('#environments-carousel .carousel-slide');
-                const dots = document.querySelectorAll('.carousel-indicators .carousel-dot');
+                const dots = wrapper ? wrapper.querySelectorAll('.carousel-indicators .carousel-dot') : [];
                 
                 slides.forEach((slide, index) => {
                     slide.classList.remove('active');
                     if (index === this.currentSlide) {
                         slide.classList.add('active');
+                        slide.setAttribute('aria-hidden', 'false');
+                    } else {
+                        slide.setAttribute('aria-hidden', 'true');
                     }
                 });
                 
@@ -406,7 +426,14 @@
                     dot.classList.remove('active');
                     if (index === this.currentSlide) {
                         dot.classList.add('active');
+                        dot.setAttribute('aria-current', 'true');
+                    } else {
+                        dot.removeAttribute('aria-current');
                     }
+                    if (!dot.hasAttribute('aria-label')) {
+                        dot.setAttribute('aria-label', `Go to environments slide ${index + 1}`);
+                    }
+                    dot.setAttribute('tabindex', '0');
                 });
             },
             
