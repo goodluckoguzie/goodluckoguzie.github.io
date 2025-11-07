@@ -82,8 +82,8 @@ title: Home
     <h3>Adaptive Prediction Horizons in Reinforcement Learning</h3>
     <p class="home-research-meta">2024 - Present • Aston University</p>
     <div class="home-research-image">
-      <img src="{{ '/assets/images/TrainingReturn_SocNavGym-1.jpg' | relative_url }}" alt="Training reward curves showing adaptive prediction horizon performance in LiteSocNavGym environment" loading="lazy">
-      <p class="home-research-caption">Training performance: adaptive horizon sustains reward on LiteSocNavGym</p>
+      <img src="{{ '/assets/images/AverageReturnvsInferenceTime.png' | relative_url }}" alt="Scatter plot showing average return vs inference time trade-off for various RL models in LiteSocNavGym, demonstrating adaptive prediction horizon achieving highest return among low-latency models" loading="lazy">
+      <p class="home-research-caption">Performance vs efficiency: adaptive prediction horizon achieves highest return among low-latency models</p>
     </div>
     <p>Developing entropy-driven adaptive prediction horizon systems for RL applications, enabling dynamic adjustment based on environmental complexity for improved performance in autonomous systems.</p>
     <div class="home-research-tags">
