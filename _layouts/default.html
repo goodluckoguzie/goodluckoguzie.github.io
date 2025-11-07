@@ -239,36 +239,36 @@
                     
                     const filter = btn.dataset.filter;
                     
-                    // Find all portfolio case studies
-                    const portfolioProjects = document.querySelectorAll('.portfolio-case-study');
+                    // Find all carousel containers (sections)
+                    const carouselContainers = document.querySelectorAll('.environments-carousel-container');
                     
-                    portfolioProjects.forEach(project => {
-                        const category = project.dataset.category || '';
-                        const projectText = project.textContent.toLowerCase();
+                    carouselContainers.forEach(container => {
+                        const category = container.dataset.category || '';
+                        const containerText = container.textContent.toLowerCase();
                         
                         // Determine project type based on category and content
                         const isSocialNav = category.includes('social-nav') || 
-                                          projectText.includes('socnav') || 
-                                          projectText.includes('social navigation') ||
-                                          projectText.includes('predictive world');
+                                          containerText.includes('socnav') || 
+                                          containerText.includes('social navigation') ||
+                                          containerText.includes('predictive world');
                         const isRLModels = category.includes('rl-models') || 
-                                          projectText.includes('cosine-gated') ||
-                                          projectText.includes('cglstm') ||
-                                          projectText.includes('adaptive prediction');
+                                          containerText.includes('cosine-gated') ||
+                                          containerText.includes('cglstm') ||
+                                          containerText.includes('adaptive prediction');
                         const isActionRec = category.includes('action-rec') || 
-                                          projectText.includes('action recognition') ||
-                                          projectText.includes('wi-fi csi') ||
-                                          projectText.includes('esp32');
+                                          containerText.includes('action recognition') ||
+                                          containerText.includes('wi-fi csi') ||
+                                          containerText.includes('esp32');
                         const isEnvironments = category.includes('environments') || 
-                                              projectText.includes('fallingballenv') ||
-                                              projectText.includes('litesocnavgym') ||
-                                              projectText.includes('socnavgym') ||
-                                              projectText.includes('environment');
+                                              containerText.includes('fallingballenv') ||
+                                              containerText.includes('litesocnavgym') ||
+                                              containerText.includes('socnavgym') ||
+                                              containerText.includes('environment');
                         
                         const isOngoing = category.includes('ongoing') || 
-                                        project.querySelector('.project-status-badge.ongoing');
+                                        container.querySelector('.project-status-badge.ongoing');
                         const isCompleted = category.includes('completed') || 
-                                          project.querySelector('.project-status-badge.completed');
+                                          container.querySelector('.project-status-badge.completed');
                         
                         let shouldShow = false;
                         
@@ -288,11 +288,44 @@
                             shouldShow = isEnvironments;
                         }
                         
-                        // Show/hide project
+                        // Find the heading (H2) that precedes this container
+                        let heading = null;
+                        let currentElement = container.previousElementSibling;
+                        while (currentElement) {
+                            if (currentElement.tagName === 'H2') {
+                                heading = currentElement;
+                                break;
+                            }
+                            if (currentElement.tagName === 'HR' || currentElement.classList.contains('environments-carousel-container')) {
+                                break;
+                            }
+                            currentElement = currentElement.previousElementSibling;
+                        }
+                        
+                        // Also check if there's a description paragraph between heading and container
+                        let description = null;
+                        if (heading) {
+                            let nextElement = heading.nextElementSibling;
+                            while (nextElement && nextElement !== container) {
+                                if (nextElement.tagName === 'P') {
+                                    description = nextElement;
+                                }
+                                if (nextElement.tagName === 'HR' || nextElement.classList.contains('environments-carousel-container')) {
+                                    break;
+                                }
+                                nextElement = nextElement.nextElementSibling;
+                            }
+                        }
+                        
+                        // Show/hide container, heading, and description
                         if (shouldShow) {
-                            project.style.display = '';
+                            container.style.display = '';
+                            if (heading) heading.style.display = '';
+                            if (description) description.style.display = '';
                         } else {
-                            project.style.display = 'none';
+                            container.style.display = 'none';
+                            if (heading) heading.style.display = 'none';
+                            if (description) description.style.display = 'none';
                         }
                     });
                 });

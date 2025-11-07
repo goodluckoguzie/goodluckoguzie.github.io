@@ -44,7 +44,7 @@ My research focuses on **Social Robot Navigation**, **Reinforcement Learning**, 
 
 These are the environments I've created or contributed to for evaluating reinforcement learning algorithms and social navigation models.
 
-<div class="environments-carousel-container">
+<div class="environments-carousel-container" data-category="environments social-nav completed">
   <div class="environments-carousel-wrapper">
     <!-- Carousel Navigation -->
     <button class="carousel-nav carousel-prev" aria-label="Previous project" onclick="moveCarousel('environments', -1)">←</button>
@@ -214,7 +214,7 @@ These are the environments I've created or contributed to for evaluating reinfor
 
 ## 🧠 Proposed Models & Algorithms
 
-<div class="environments-carousel-container">
+<div class="environments-carousel-container" data-category="rl-models social-nav completed">
   <div class="environments-carousel-wrapper">
     <!-- Carousel Navigation -->
     <button class="carousel-nav carousel-prev" aria-label="Previous model" onclick="moveCarousel('models', -1)">←</button>
@@ -368,7 +368,7 @@ These are the environments I've created or contributed to for evaluating reinfor
 
 ## 📡 Action Recognition Research
 
-<div class="environments-carousel-container">
+<div class="environments-carousel-container" data-category="action-rec ongoing">
   <div class="environments-carousel-wrapper">
     <!-- Carousel Navigation -->
     <button class="carousel-nav carousel-prev" aria-label="Previous project" onclick="moveCarousel('action-rec', -1)">←</button>
@@ -420,7 +420,7 @@ These are the environments I've created or contributed to for evaluating reinfor
 
 ## 🔧 Other Projects & Tools
 
-<div class="environments-carousel-container">
+<div class="environments-carousel-container" data-category="completed">
   <div class="environments-carousel-wrapper">
     <!-- Carousel Navigation -->
     <button class="carousel-nav carousel-prev" aria-label="Previous project" onclick="moveCarousel('other-projects', -1)">←</button>
@@ -472,7 +472,7 @@ These are the environments I've created or contributed to for evaluating reinfor
 
 ## 🎓 PhD Thesis Integration
 
-<div class="environments-carousel-container">
+<div class="environments-carousel-container" data-category="completed">
   <div class="environments-carousel-wrapper">
     <!-- Carousel Navigation -->
     <button class="carousel-nav carousel-prev" aria-label="Previous project" onclick="moveCarousel('phd-thesis', -1)">←</button>
