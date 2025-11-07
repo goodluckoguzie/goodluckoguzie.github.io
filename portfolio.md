@@ -279,7 +279,23 @@ These are the environments I've created or contributed to for evaluating reinfor
           
           <div class="card-content">
             <div class="card-text">
-              <p class="project-description">Novel neural network architecture using cosine gating mechanisms for improved sequential learning. The CGLSTM dynamically weighs inputs versus hidden states based on cosine similarities, outperforming LSTM, GRU, and Transformer models. Published at IEEE PRML 2024 with superior benchmark results and used as a component in the Predictive World Models framework.</p>
+              <p class="project-description">I introduced cosine-controlled gates to the LSTM so the network can highlight inputs that align with the current trajectory. CGLSTM delivers stronger sequence prediction across synthetic tasks, row-wise MNIST, Fashion-MNIST, IMDB, and the SocNavGym predictor. Published at IEEE PRML 2024 and deployed inside the Predictive World Models framework.</p>
+
+              <div class="project-stats" style="margin: 1rem 0; padding: 0.75rem; background: var(--bg-alt); border-radius: 6px; font-size: 0.875rem;">
+                <div style="display: flex; align-items: center; gap: 0.5rem; margin: 0.5rem 0;">
+                  <span style="font-size: 1.2rem;">🧮</span>
+                  <span><strong>0.0225 MAE</strong> on the adding problem (T=1000)</span>
+                </div>
+                <div style="display: flex; align-items: center; gap: 0.5rem; margin: 0.5rem 0;">
+                  <span style="font-size: 1.2rem;">🎯</span>
+                  <span><strong>99.07% accuracy</strong> on row-wise MNIST</span>
+                </div>
+                <div style="display: flex; align-items: center; gap: 0.5rem; margin: 0.5rem 0;">
+                  <span style="font-size: 1.2rem;">🤖</span>
+                  <span><strong>35% lower MAE</strong> than Transformer at k=10 in SocNavGym</span>
+                </div>
+              </div>
+
               <a href="{{ '/projects/cosine-gated-lstm' | relative_url }}" class="see-more-btn">
                 <span class="btn-text">View Full Details</span>
                 <span class="btn-icon">→</span>
