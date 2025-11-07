@@ -37,7 +37,7 @@ title: Predictive World Models - Research Project
     <div>
       <h2 style="margin-top: 0; color: var(--text); font-size: 2rem;">Anticipating Social Navigation Futures</h2>
       <p style="font-size: 1.125rem; line-height: 1.8; color: var(--text); margin-bottom: 1.5rem;">
-        I developed three predictive world models that give a Dueling DQN agent foresight in SocNavGym. 2StepAhead, MASPM, and the combined 2StepAhead-MASPM predict upcoming latent states so the policy can choose safer, more efficient actions before the robot moves. This page summarises the thesis chapter and the UKCI 2023 paper where I reported these methods.
+        I developed three predictive world models that give a Dueling DQN agent prediction in SocNavGym. 2StepAhead, MASPM, and the combined 2StepAhead-MASPM predict upcoming latent states so the policy can choose safer, more efficient actions before the robot moves. This page summarises the thesis chapter and the UKCI 2023 paper where I reported these methods.
       </p>
 
       <div class="quick-stats" style="display: grid; grid-template-columns: repeat(3, 1fr); gap: 1rem; margin: 1.5rem 0;">
