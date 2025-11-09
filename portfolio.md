@@ -33,11 +33,9 @@ My research focuses on **Social Robot Navigation**, **Reinforcement Learning**, 
     <h3>Cosine-Gated LSTM for Sequential Learning</h3>
     <p class="portfolio-card-meta">2024 • Neural Network Architecture</p>
     <div class="portfolio-card-media">
-      <div class="portfolio-card-video">
-        <video autoplay muted loop playsinline preload="metadata" poster="{{ '/assets/images/CGLSTMArchitecture.jpg' | relative_url }}" aria-label="Cosine-Gated LSTM demonstration video">
-          <source src="{{ '/video/FallingBallEnv.webm' | relative_url }}" type="video/webm">
-          Your browser does not support the video tag.
-        </video>
+      <div class="portfolio-card-pdf">
+        <iframe src="{{ '/PredictionforSocNav.pdf' | relative_url }}#toolbar=0&navpanes=0&scrollbar=0" width="100%" height="400px" style="border: none;" aria-label="Visual comparison of predictive performance in SocNavGym: CGLSTM (accurate predictions in blue), Transformer (high accuracy with some red inconsistencies), Vanilla LSTM (predominantly red, inaccurate), and GRU (inaccurate but slightly better than LSTM). Yellow represents current state."></iframe>
+        <p class="portfolio-card-pdf-caption">Visual comparison of predictive performance in the SocNavGym environment, highlighting the color-coded accuracy of predictions: Blue indicates an accurate prediction aligned with the actual future states, red signifies discrepancies between the model's predictions and the actual future states, and yellow represents the current state. Specifically, (a) the CGLSTM model demonstrates precise alignment, indicating accurate predictions. (b) The Transformer model exhibits high predictive accuracy, with some inconsistency marked by red. (c) The Vanilla LSTM model, predominantly in red, shows a high level of inaccuracy in predictions. (d) The GRU model also shows inaccurate predictions but performs slightly better than the Vanilla LSTM model.</p>
       </div>
       <div class="portfolio-card-image">
         <img src="{{ '/assets/images/CGLSTMArchitecture.jpg' | relative_url }}" alt="Cosine-Gated LSTM architecture diagram" loading="lazy">
