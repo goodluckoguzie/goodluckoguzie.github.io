@@ -157,11 +157,11 @@ description: "Learn about Dr. Dirichukwu Goodluck Oguzie (PhD, MSc, BSc in Compu
     <div class="expertise-tags">
       <span class="expertise-tag expert">Reinforcement Learning ⭐⭐⭐</span>
       <span class="expertise-tag expert">Neural Network Architectures ⭐⭐⭐</span>
-      <span class="expertise-tag advanced">Computer Vision ⭐⭐</span>
-      <span class="expertise-tag advanced">Social Robotics ⭐⭐</span>
-      <span class="expertise-tag advanced">Algorithm Development ⭐⭐</span>
-      <span class="expertise-tag intermediate">ML OPS ⭐</span>
-      <span class="expertise-tag intermediate">Project Management ⭐</span>
+      <span class="expertise-tag advanced">Computer Vision ⭐⭐⭐</span>
+      <span class="expertise-tag advanced">Social Robotics ⭐⭐⭐</span>
+      <span class="expertise-tag advanced">Algorithm Development ⭐⭐⭐</span>
+      <span class="expertise-tag intermediate">ML OPS ⭐⭐⭐</span>
+      <span class="expertise-tag intermediate">Project Management ⭐⭐⭐</span>
     </div>
   </div>
   
@@ -170,14 +170,14 @@ description: "Learn about Dr. Dirichukwu Goodluck Oguzie (PhD, MSc, BSc in Compu
     <div class="expertise-tags">
       <span class="expertise-tag expert">Python ⭐⭐⭐</span>
       <span class="expertise-tag expert">PyTorch ⭐⭐⭐</span>
-      <span class="expertise-tag advanced">TensorFlow ⭐⭐</span>
-      <span class="expertise-tag advanced">AWS ⭐⭐</span>
-      <span class="expertise-tag advanced">Docker ⭐⭐</span>
-      <span class="expertise-tag intermediate">JavaScript ⭐</span>
-      <span class="expertise-tag intermediate">React.js ⭐</span>
-      <span class="expertise-tag intermediate">PostgreSQL ⭐</span>
-      <span class="expertise-tag intermediate">ROS ⭐</span>
-      <span class="expertise-tag intermediate">Git/GitHub ⭐</span>
+      <span class="expertise-tag advanced">TensorFlow ⭐⭐⭐</span>
+      <span class="expertise-tag advanced">AWS ⭐⭐⭐</span>
+      <span class="expertise-tag advanced">Docker ⭐⭐⭐</span>
+      <span class="expertise-tag intermediate">JavaScript ⭐⭐⭐</span>
+      <span class="expertise-tag intermediate">React.js ⭐⭐⭐</span>
+      <span class="expertise-tag intermediate">PostgreSQL ⭐⭐⭐</span>
+      <span class="expertise-tag intermediate">ROS ⭐⭐⭐</span>
+      <span class="expertise-tag intermediate">Git/GitHub ⭐⭐⭐</span>
     </div>
   </div>
   
@@ -186,11 +186,11 @@ description: "Learn about Dr. Dirichukwu Goodluck Oguzie (PhD, MSc, BSc in Compu
     <div class="expertise-tags">
       <span class="expertise-tag expert">Curriculum Development ⭐⭐⭐</span>
       <span class="expertise-tag expert">Student Supervision ⭐⭐⭐</span>
-      <span class="expertise-tag advanced">Course Design ⭐⭐</span>
-      <span class="expertise-tag advanced">Inclusive Teaching ⭐⭐</span>
-      <span class="expertise-tag intermediate">Mathematics ⭐</span>
-      <span class="expertise-tag intermediate">OOP ⭐</span>
-      <span class="expertise-tag intermediate">Data Structures ⭐</span>
+      <span class="expertise-tag advanced">Course Design ⭐⭐⭐</span>
+      <span class="expertise-tag advanced">Inclusive Teaching ⭐⭐⭐</span>
+      <span class="expertise-tag intermediate">Mathematics ⭐⭐⭐</span>
+      <span class="expertise-tag intermediate">OOP ⭐⭐⭐</span>
+      <span class="expertise-tag intermediate">Data Structures ⭐⭐⭐</span>
     </div>
   </div>
 </div>
