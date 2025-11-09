@@ -14,7 +14,6 @@ description: "Dr. Dirichukwu Goodluck Oguzie (PhD, MSc, BSc) - Post-PhD Research
       <p class="home-hero-tagline">Researcher & Lecturer</p>
       <p class="home-hero-credentials">PhD, MSc, BSc • Computer Science<br>Specializing in RL & Social Robotics</p>
       <p class="home-hero-intro">I develop intelligent systems that integrate reinforcement learning, predictive models, and neural network architectures to solve real-world problems in social robotics. My research focuses on creating safer, more efficient autonomous navigation systems, with work published at top-tier conferences including IEEE PRML 2024 and UKCI 2023.</p>
-      <p class="home-hero-bio">Published at IEEE PRML 2024 • UKCI 2023</p>
       <div class="home-hero-actions">
         <a href="{{ '/portfolio' | relative_url }}" class="btn btn-primary">View Research</a>
         <a href="{{ '/collaborations' | relative_url }}" class="btn btn-secondary">Contact</a>
