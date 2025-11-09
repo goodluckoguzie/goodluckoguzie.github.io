@@ -60,4 +60,9 @@ exclude:
   - vendor/cache/
   - vendor/gems/
   - vendor/ruby/
+  - IMAGE_OPTIMIZATION.md
+  - README.md
+  - QUICK_START.md
+  - GITHUB_SETUP.md
+  - PUSH_TO_GITHUB.md
 

@@ -5389,6 +5389,62 @@ h3:hover {
     }
 }
 
+/* ============================================
+   SCROLL PROGRESS INDICATOR
+   ============================================ */
+
+.scroll-progress {
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 3px;
+    background: linear-gradient(90deg, #ff006e, #8338ec, #3a86ff, #06ffa5, #ffbe0b);
+    z-index: 10001;
+    transition: width 0.1s ease;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+/* ============================================
+   COPY CODE BUTTON STYLES
+   ============================================ */
+
+.copy-code-btn {
+    position: absolute;
+    top: 0.5rem;
+    right: 0.5rem;
+    padding: 0.375rem 0.75rem;
+    background: var(--bg-card);
+    border: 1px solid var(--border);
+    border-radius: 4px;
+    color: var(--text);
+    font-size: 0.75rem;
+    cursor: pointer;
+    opacity: 0;
+    transition: opacity 0.2s ease, background 0.2s ease;
+    z-index: 10;
+}
+
+pre:hover .copy-code-btn,
+code:hover + .copy-code-btn {
+    opacity: 1;
+}
+
+.copy-code-btn:hover {
+    background: var(--link);
+    color: white;
+    border-color: var(--link);
+}
+
+.copy-code-btn.copied {
+    background: #06ffa5;
+    color: #000;
+    border-color: #06ffa5;
+}
+
+pre {
+    position: relative;
+}
+
 /* Print styles */
 @media print {
     .navbar,

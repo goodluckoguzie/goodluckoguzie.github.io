@@ -29,16 +29,41 @@ class CitationTools {
     }
 
     addCitationTools() {
-        // Add to CGLSTM publication
+        // Add to all publications - enhanced detection
         const publications = document.querySelectorAll('.publication');
         publications.forEach(pub => {
+            // Skip if citation tool already exists
+            if (pub.querySelector('.citation-tools')) return;
+            
             const title = pub.querySelector('h3')?.textContent || '';
-            if (title.includes('Cosine-Gated LSTM')) {
+            const meta = pub.querySelector('.publication-meta')?.textContent || '';
+            const fullText = (title + ' ' + meta).toLowerCase();
+            
+            // Enhanced detection with multiple keywords
+            if (title.includes('Cosine-Gated LSTM') || fullText.includes('cglstm') || fullText.includes('ieee prml 2024')) {
                 this.createCitationTool(pub, 'cglstm');
-            } else if (title.includes('Predictive World Models')) {
+            } else if (title.includes('Predictive World Models') || fullText.includes('ukci 2023') || fullText.includes('2stepahead') || fullText.includes('maspm')) {
                 this.createCitationTool(pub, 'predictive-world');
-            } else if (title.includes('PhD Thesis') || title.includes('Enhancing Robot Social Navigation')) {
+            } else if (title.includes('PhD Thesis') || title.includes('Enhancing Robot Social Navigation') || fullText.includes('doctoral dissertation') || pub.dataset.type === 'thesis') {
                 this.createCitationTool(pub, 'phd-thesis');
+            }
+        });
+        
+        // Also add to home publication cards
+        const homePublications = document.querySelectorAll('.home-publication-card');
+        homePublications.forEach(card => {
+            const title = card.querySelector('h3')?.textContent || '';
+            if (title.includes('Cosine-Gated LSTM')) {
+                // Add citation link that opens full publication page
+                const citationLink = document.createElement('a');
+                citationLink.href = '/publications';
+                citationLink.className = 'citation-link-btn';
+                citationLink.textContent = '📋 View Citation';
+                citationLink.style.cssText = 'display: inline-block; margin-top: 0.5rem; font-size: 0.875rem; color: var(--link); text-decoration: none;';
+                const actions = card.querySelector('.home-publication-actions');
+                if (actions) {
+                    actions.appendChild(citationLink);
+                }
             }
         });
     }

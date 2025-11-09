@@ -10,6 +10,14 @@ permalink: /404.html
     <h2 class="error-title">Page Not Found</h2>
     <p class="error-message">Sorry, the page you're looking for doesn't exist or has been moved.</p>
     
+    <!-- Search on 404 Page -->
+    <div class="error-search">
+      <p><strong>Try searching for what you need:</strong></p>
+      <button class="btn btn-primary" onclick="document.querySelector('.search-toggle')?.click();" style="margin-top: 1rem;">
+        🔍 Open Search (Ctrl+K)
+      </button>
+    </div>
+    
     <div class="error-actions">
       <a href="{{ '/' | relative_url }}" class="btn btn-primary">Go Home</a>
       <a href="{{ '/portfolio' | relative_url }}" class="btn btn-secondary">View Research</a>
@@ -23,6 +31,14 @@ permalink: /404.html
         <li><a href="{{ '/teaching' | relative_url }}">Teaching</a></li>
         <li><a href="{{ '/collaborations' | relative_url }}">Collaborations</a></li>
         <li><a href="{{ '/cv' | relative_url }}">CV</a></li>
+      </ul>
+      
+      <h3 style="margin-top: 2rem;">Research Projects:</h3>
+      <ul>
+        <li><a href="{{ '/projects/cosine-gated-lstm' | relative_url }}">Cosine-Gated LSTM</a></li>
+        <li><a href="{{ '/projects/predictive-world-models' | relative_url }}">Predictive World Models</a></li>
+        <li><a href="{{ '/projects/adaptive-prediction-horizons' | relative_url }}">Adaptive Prediction Horizons</a></li>
+        <li><a href="{{ '/projects/fallingballenv' | relative_url }}">FallingBallEnv</a></li>
       </ul>
     </div>
   </div>
@@ -107,6 +123,19 @@ permalink: /404.html
 .error-suggestions a:hover {
   color: var(--link-hover);
   text-decoration: underline;
+}
+
+.error-search {
+  margin: 2rem 0;
+  padding: 1.5rem;
+  background: var(--bg-alt);
+  border-radius: 8px;
+  text-align: center;
+}
+
+.error-search p {
+  margin-bottom: 0.5rem;
+  color: var(--text);
 }
 
 @media (max-width: 768px) {
