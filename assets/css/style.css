@@ -586,6 +586,7 @@ select:focus-visible {
 
 html {
     scroll-behavior: smooth;
+    overflow-x: hidden;
 }
 
 body {
@@ -598,6 +599,9 @@ body {
     -moz-osx-font-smoothing: grayscale;
     perspective: 1000px;
     transform-style: preserve-3d;
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
 }
 
 .container {
@@ -697,7 +701,6 @@ body {
 
 /* Main Content */
 main {
-    min-height: calc(100vh - 200px);
     padding: 3rem 0;
 }
 
@@ -887,7 +890,7 @@ li {
 footer {
     background: linear-gradient(135deg, var(--bg-alt) 0%, var(--bg) 100%);
     padding: 3rem 0;
-    margin-top: 5rem;
+    margin-top: 3rem;
     border-top: 1px solid var(--border);
 }
 
