@@ -5,6 +5,16 @@
     box-sizing: border-box;
 }
 
+/* Prevent horizontal scroll globally */
+html, body {
+    max-width: 100%;
+    overflow-x: hidden;
+}
+
+* {
+    max-width: 100%;
+}
+
 /* Accessibility: Skip Link */
 .skip-link {
     position: absolute;
@@ -608,6 +618,8 @@ body {
     max-width: 1200px;
     margin: 0 auto;
     padding: 0 24px;
+    width: 100%;
+    box-sizing: border-box;
 }
 
 /* Enhanced Navigation */
@@ -701,7 +713,8 @@ body {
 
 /* Main Content */
 main {
-    padding: 3rem 0;
+    padding: 3rem 0 0 0;
+    min-height: auto;
 }
 
 /* Enhanced Typography */
@@ -889,9 +902,11 @@ li {
 /* Enhanced Footer */
 footer {
     background: linear-gradient(135deg, var(--bg-alt) 0%, var(--bg) 100%);
-    padding: 3rem 0;
-    margin-top: 3rem;
+    padding: 2rem 0;
+    margin-top: 2rem;
     border-top: 1px solid var(--border);
+    width: 100%;
+    box-sizing: border-box;
 }
 
 .footer-content {
@@ -2695,11 +2710,11 @@ table td.text-center {
 }
 
 .carousel-prev {
-    left: -15px;
+    left: 0;
 }
 
 .carousel-next {
-    right: -15px;
+    right: 0;
 }
 
 .carousel-indicators {
@@ -4212,10 +4227,10 @@ h1, h2, h3 {
 body::before {
     content: '';
     position: fixed;
-    top: -50%;
-    left: -50%;
-    width: 200%;
-    height: 200%;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
     background: radial-gradient(
         circle at 20% 50%,
         rgba(0, 102, 204, 0.05) 0%,
@@ -4229,6 +4244,7 @@ body::before {
     animation: morphBackground 20s ease-in-out infinite;
     z-index: -1;
     pointer-events: none;
+    overflow: hidden;
 }
 
 @keyframes morphBackground {
