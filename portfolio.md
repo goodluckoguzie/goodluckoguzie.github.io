@@ -130,13 +130,13 @@ My research focuses on **Social Robot Navigation**, **Reinforcement Learning**, 
     <p class="portfolio-card-meta">2020-2024 • Team Project • Supervisor: Dr. Luis J. Manso</p>
     <div class="portfolio-card-media">
       <div class="portfolio-card-video">
-        <video autoplay muted loop playsinline preload="metadata" poster="{{ '/assets/images/output.png' | relative_url }}" aria-label="SocNavGym demonstration video">
+        <video autoplay muted loop playsinline preload="metadata" poster="{{ '/assets/images/TestingMetrics1.jpg' | relative_url }}" aria-label="SocNavGym demonstration video">
           <source src="{{ '/video/SocNavGym.mp4' | relative_url }}" type="video/mp4">
           Your browser does not support the video tag.
         </video>
       </div>
       <div class="portfolio-card-image">
-        <img src="{{ '/assets/images/output.png' | relative_url }}" alt="SocNavGym environment visualization" loading="lazy">
+        <img src="{{ '/assets/images/TestingMetrics1.jpg' | relative_url }}" alt="SocNavGym episode metrics histograms comparing RVO2, DuelingDQN, SFM, WM DuelingDQN and 2StepAhead MASPM DuelingDQN algorithms" loading="lazy">
       </div>
     </div>
     <p class="portfolio-card-description">Comprehensive social navigation gymnasium environment for evaluating social robot navigation algorithms. Primary environment for testing Predictive World Models.</p>
@@ -231,11 +231,6 @@ My research focuses on **Social Robot Navigation**, **Reinforcement Learning**, 
     </div>
     <h3>Wi-Fi CSI Action Recognition with ESP32</h3>
     <p class="portfolio-card-meta">2024 - Present • Hardware-based Action Recognition</p>
-    <div class="portfolio-card-media">
-      <div class="portfolio-card-image">
-        <img src="{{ '/assets/images/world_model_schematic.jpg' | relative_url }}" alt="Wi-Fi CSI Action Recognition system schematic" loading="lazy">
-      </div>
-    </div>
     <p class="portfolio-card-description">Developing action recognition systems using Wi-Fi Channel State Information (CSI) with ESP32 microcontrollers for privacy-preserving human action prediction.</p>
     <a href="{{ '/projects/action-recognition' | relative_url }}" class="portfolio-card-link">View System Design →</a>
   </div>
