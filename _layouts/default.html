@@ -642,22 +642,9 @@
         });
         
         // ============================================
-        // 5D HOLOGRAM INTERACTIVE EFFECTS - ONLY FOR HEADINGS
+        // 5D HOLOGRAM EFFECTS - REMOVED
+        // All holographic/5D effects have been removed
         // ============================================
-        
-        // Holographic Text Color Shift on Scroll - Only for headings
-        const heroTitle = document.querySelector('.home-hero-title');
-        if (heroTitle) {
-            let scrollPosition = 0;
-            window.addEventListener('scroll', () => {
-                scrollPosition = window.pageYOffset;
-                const hue = (scrollPosition * 0.1) % 360;
-                heroTitle.style.filter = `drop-shadow(0 0 10px hsl(${hue}, 70%, 60%)) hue-rotate(${hue}deg)`;
-            });
-        }
-        
-        // Removed: All other holographic effects (cards, badges, buttons, photos, stats)
-        // Only headings (h1-h6) have holographic effects now
     </script>
     
     <!-- Google Analytics (Replace G-XXXXXXXXXX with your actual tracking ID) -->
