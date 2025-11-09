@@ -1,0 +1,13 @@
+User-agent: *
+Allow: /
+
+# Sitemap
+Sitemap: https://goodluckoguzie.github.io/sitemap.xml
+
+# Disallow admin and private files
+Disallow: /doc/
+Disallow: /Solent University/
+Disallow: /Ulster/
+Disallow: /*.pdf$
+Disallow: /*.zip$
+

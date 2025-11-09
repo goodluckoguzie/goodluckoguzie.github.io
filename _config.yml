@@ -11,7 +11,8 @@ twitter:
 og_image: "/assets/images/goodluck.jpg"
 
 # Google Analytics (add your ID when ready)
-# google_analytics: ""
+# Uncomment and add your tracking ID: google_analytics: "G-XXXXXXXXXX"
+google_analytics: ""
 
 # Author/Profile Information
 author:
