@@ -126,8 +126,16 @@ select:focus-visible {
     line-height: 1.6;
 }
 
+.home-hero-intro {
+    font-size: 1.05rem;
+    line-height: 1.7;
+    color: var(--text);
+    margin: 1.5rem 0 1rem 0;
+    max-width: 75ch;
+}
+
 .home-hero-bio {
-    font-size: 1rem;
+    font-size: 0.95rem;
     line-height: 1.6;
     color: var(--text-light);
     margin-bottom: 2rem;
@@ -633,8 +641,13 @@ select:focus-visible {
         font-size: 1.25rem;
     }
     
-    .home-hero-bio {
+    .home-hero-intro {
         font-size: 1rem;
+        margin: 1.25rem 0 0.75rem 0;
+    }
+    
+    .home-hero-bio {
+        font-size: 0.9rem;
     }
     
     .home-hero-actions {
