@@ -1,7 +1,7 @@
 ---
 layout: default
 title: About
-description: "Learn about Dr. Goodluck Oguzie's professional journey, research approach, education, and experience in AI, machine learning, and social robotics."
+description: "Learn about Dr. Dirichukwu Goodluck Oguzie (PhD, MSc, BSc in Computer Science) - professional journey, research approach, education, and experience in AI, machine learning, and social robotics."
 ---
 
 # About Me
@@ -10,11 +10,11 @@ My Professional Journey
 
 <div class="about-hero-section">
   <div class="about-image">
-    <img src="{{ '/assets/images/goodluck.jpg' | relative_url }}" alt="Dr. Goodluck Oguzie, Post-PhD Researcher and Lecturer in Computer Science" class="about-photo" loading="lazy">
+    <img src="{{ '/assets/images/goodluck.jpg' | relative_url }}" alt="Dr. Dirichukwu Goodluck Oguzie, PhD in Computer Science, Post-PhD Researcher and Lecturer" class="about-photo" loading="lazy">
   </div>
   <div class="about-content">
-    <h2>Hello, I'm Dr. Goodluck Oguzie</h2>
-    <p><strong>PhD, MSc, BSc</strong></p>
+    <h2>Hello, I'm Dr. Dirichukwu Goodluck Oguzie</h2>
+    <p><strong>PhD, MSc, BSc</strong> • Computer Science</p>
     <p>I'm an AI Researcher and Lecturer specializing in <strong>reinforcement learning</strong>, machine learning, social robotics, and human-computer interaction.</p>
     <p>I develop intelligent systems that integrate reinforcement learning, computer vision, machine learning, and predictive models to solve real-world problems. My research has been published at top conferences including UKCI 2023 and IEEE PRML 2024.</p>
     <p>With 13+ years of programming and teaching experience at Crimson, QA Ltd, and Aston University, I combine academic rigor with practical instruction to inspire the next generation of computer scientists and AI researchers.</p>

@@ -1,7 +1,7 @@
 ---
 layout: default
 title: Publications
-description: "Research publications by Dr. Goodluck Oguzie including IEEE PRML 2024 and UKCI 2023 conference papers on Cosine-Gated LSTM, Predictive World Models, and PhD thesis on social robot navigation."
+description: "Research publications by Dr. Dirichukwu Goodluck Oguzie (PhD, MSc, BSc in Computer Science) including IEEE PRML 2024 and UKCI 2023 conference papers on Cosine-Gated LSTM, Predictive World Models, and PhD thesis on social robot navigation."
 ---
 
 # Publications

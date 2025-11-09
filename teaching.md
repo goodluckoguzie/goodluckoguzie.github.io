@@ -1,7 +1,7 @@
 ---
 layout: default
 title: Teaching
-description: "Teaching experience and courses by Dr. Goodluck Oguzie at QA Ltd, Crimson Education, Solent University, and Ulster University. Specializing in Python, OOP, machine learning, and computer science."
+description: "Teaching experience and courses by Dr. Dirichukwu Goodluck Oguzie (PhD, MSc, BSc in Computer Science) at QA Ltd, Crimson Education, Solent University, and Ulster University. Specializing in Python, OOP, machine learning, and computer science."
 ---
 
 # Teaching & Courses

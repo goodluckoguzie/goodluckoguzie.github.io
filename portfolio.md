@@ -1,7 +1,7 @@
 ---
 layout: default
 title: Research Portfolio
-description: "Explore Dr. Goodluck Oguzie's research portfolio including SocNavGym, LiteSocNavGym, FallingBallEnv environments, Cosine-Gated LSTM, Predictive World Models, and Adaptive Prediction Horizons."
+description: "Explore Dr. Dirichukwu Goodluck Oguzie's (PhD, MSc, BSc in Computer Science) research portfolio including SocNavGym, LiteSocNavGym, FallingBallEnv environments, Cosine-Gated LSTM, Predictive World Models, and Adaptive Prediction Horizons."
 ---
 
 # Research Portfolio

@@ -1,15 +1,15 @@
 ---
 layout: default
 title: CV
-description: "Curriculum Vitae of Dr. Goodluck Oguzie - Post-PhD Researcher & Lecturer with expertise in Reinforcement Learning, Social Robotics, and Neural Network Architectures."
+description: "Curriculum Vitae of Dr. Dirichukwu Goodluck Oguzie (PhD, MSc, BSc in Computer Science) - Post-PhD Researcher & Lecturer with expertise in Reinforcement Learning, Social Robotics, and Neural Network Architectures."
 ---
 
 # Curriculum Vitae
 
-## Dr. Goodluck Oguzie
-**PhD, MSc, BSc**
+## Dr. Dirichukwu Goodluck Oguzie
+**PhD, MSc, BSc** • Computer Science
 
-**Computer Science • Machine Learning • Robotics**
+**Machine Learning • Robotics • Artificial Intelligence**
 
 Download my CV or view it online
 

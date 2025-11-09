@@ -1,18 +1,18 @@
 ---
 layout: default
 title: Home
-description: "Dr. Goodluck Oguzie - Post-PhD Researcher & Lecturer specializing in Reinforcement Learning, Social Robotics, and Neural Network Architectures. Published at IEEE PRML 2024 and UKCI 2023."
+description: "Dr. Dirichukwu Goodluck Oguzie (PhD, MSc, BSc) - Post-PhD Researcher & Lecturer in Computer Science specializing in Reinforcement Learning, Social Robotics, and Neural Network Architectures. Published at IEEE PRML 2024 and UKCI 2023."
 ---
 
 <div class="home-hero">
   <div class="home-hero-content">
     <div class="home-hero-image">
-      <img src="{{ '/assets/images/goodluck.jpg' | relative_url }}" alt="Dr. Goodluck Oguzie, Post-PhD Researcher and Lecturer in Computer Science" class="home-profile-photo" loading="lazy">
+      <img src="{{ '/assets/images/goodluck.jpg' | relative_url }}" alt="Dr. Dirichukwu Goodluck Oguzie, PhD in Computer Science, Post-PhD Researcher and Lecturer" class="home-profile-photo" loading="lazy">
     </div>
     <div class="home-hero-text">
-      <h1 class="home-hero-title">Dr. Goodluck Oguzie</h1>
+      <h1 class="home-hero-title">Dr. Dirichukwu Goodluck Oguzie</h1>
       <p class="home-hero-tagline">Advancing Social Robot Navigation through Reinforcement Learning and Predictive Models</p>
-      <p class="home-hero-credentials">Published at IEEE PRML 2024 • UKCI 2023<br>PhD Researcher & Lecturer</p>
+      <p class="home-hero-credentials">Published at IEEE PRML 2024 • UKCI 2023<br>PhD, MSc, BSc • Computer Science Researcher & Lecturer</p>
       <p class="home-hero-bio">I develop intelligent systems that integrate reinforcement learning, predictive models, and neural network architectures to solve real-world problems in social robotics.</p>
       <div class="home-hero-actions">
         <a href="{{ '/portfolio' | relative_url }}" class="btn btn-primary">View My Research</a>
