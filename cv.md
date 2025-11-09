@@ -11,10 +11,27 @@ description: "Curriculum Vitae of Dr. Dirichukwu Goodluck Oguzie (PhD, MSc, BSc 
 
 **Machine Learning • Robotics • Artificial Intelligence**
 
-Download my CV or view it online
+Download my CV in your preferred format or view it online below.
 
 <div class="cv-download">
-  <a href="{{ '/DrGoodluck.pdf' | relative_url }}" class="btn" target="_blank">Download CV (PDF)</a>
+  <a href="{{ '/DrGoodluck.pdf' | relative_url }}" class="btn" target="_blank" download>
+    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+      <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path>
+      <polyline points="7 10 12 15 17 10"></polyline>
+      <line x1="12" y1="15" x2="12" y2="3"></line>
+    </svg>
+    Download CV (PDF)
+  </a>
+  <a href="{{ '/DrGoodluck.docx' | relative_url }}" class="btn btn-secondary" target="_blank" download>
+    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+      <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path>
+      <polyline points="14 2 14 8 20 8"></polyline>
+      <line x1="16" y1="13" x2="8" y2="13"></line>
+      <line x1="16" y1="17" x2="8" y2="17"></line>
+      <polyline points="10 9 9 9 8 9"></polyline>
+    </svg>
+    Download CV (DOC)
+  </a>
 </div>
 
 ---
@@ -145,21 +162,21 @@ Foundation in electrical engineering, electronics, and embedded systems.
 ### Conference Papers
 
 1. **Predictive World Models for Social Navigation**  
-   Goodluck Oguzie  
+   Dirichukwu Goodluck Oguzie  
    UKCI 2023 - UK Conference on Intelligent Systems, 2023  
    [Paper PDF]({{ '/_UKCI_2023__Predictive_World_Models_for_Social_Navigation.pdf' | relative_url }})
 
 2. **Cosine-Gated LSTM for Sequential Learning**  
-   Goodluck Oguzie  
+   Dirichukwu Goodluck Oguzie  
    2024 IEEE 5th International Conference on Pattern Recognition and Machine Learning (PRML), 2024, pp. 8-15  
    [Paper PDF]({{ '/Cosine_Gated_LSTM_main.pdf' | relative_url }})
 
 ### PhD Thesis
 
 **Enhancing Robot Social Navigation with Reinforcement Learning and Advanced Predictive Models**  
-Goodluck Oguzie  
+Dirichukwu Goodluck Oguzie  
 PhD Thesis, Aston University, United Kingdom, 2024  
-[Thesis PDF]({{ '/Goodluck_s_thesis.zip' | relative_url }}) | [Viva Presentation](https://goodluckoguzie.github.io/Viva/)
+[Thesis PDF]({{ '/OGUZIE DIRICHUKWU GOODLUCK  190212683 2024.pdf' | relative_url }}) | [Viva Presentation](https://goodluckoguzie.github.io/Viva/)
 
 ---
 
@@ -218,10 +235,10 @@ Git/GitHub • Jupyter • Blackboard • Moodle • MS Teams • Zoom • Tinke
 
 ## Contact
 
-**Email:** [drgoodluckoguzie@gmail.com](mailto:drgoodluckoguzie@gmail.com)  
+**Email:** [goodluckoguzie1@gmail.com](mailto:goodluckoguzie1@gmail.com)  
 **LinkedIn:** [linkedin.com/in/goodluck-oguzie-0387b3157](https://www.linkedin.com/in/goodluck-oguzie-0387b3157)  
 **GitHub:** [github.com/goodluckoguzie](https://github.com/goodluckoguzie)
 
 ---
 
-**Last Updated:** November 2024
+**Last Updated:** December 2024

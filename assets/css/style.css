@@ -2210,7 +2210,23 @@ code {
 /* CV Page Styles */
 .cv-download {
     margin: 2rem 0;
-    text-align: center;
+    display: flex;
+    gap: 1rem;
+    justify-content: center;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+.cv-download .btn {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    min-width: 180px;
+}
+
+.cv-download .btn svg {
+    margin-right: 0.5rem;
+    flex-shrink: 0;
 }
 
 .competencies-tags {
@@ -3951,6 +3967,15 @@ table td.text-center {
     
     .about-contact-cta .btn {
         width: 100%;
+    }
+    
+    .cv-download {
+        flex-direction: column;
+    }
+    
+    .cv-download .btn {
+        width: 100%;
+        min-width: auto;
     }
     
     .research-actions {
