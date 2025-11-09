@@ -4440,9 +4440,11 @@ body::before {
    5D HOLOGRAM EFFECTS - ADVANCED VISUAL ENHANCEMENTS
    ============================================ */
 
-/* Holographic Text Effect */
+/* Holographic Text Effect - ALL headings across ALL pages */
 .home-hero-title,
-h1 {
+h1,
+h2,
+h3 {
     background: linear-gradient(
         90deg,
         #ff006e 0%,
@@ -4460,6 +4462,15 @@ h1 {
     filter: drop-shadow(0 0 10px rgba(131, 56, 236, 0.5));
 }
 
+/* H2 and H3 with slightly different intensity */
+h2 {
+    filter: drop-shadow(0 0 8px rgba(131, 56, 236, 0.4));
+}
+
+h3 {
+    filter: drop-shadow(0 0 6px rgba(131, 56, 236, 0.3));
+}
+
 @keyframes hologramShift {
     0% {
         background-position: 0% center;
@@ -4469,12 +4480,41 @@ h1 {
     }
 }
 
-/* Holographic Card Effect */
+/* Holographic Card Effect - Applied to ALL cards across ALL pages */
 .home-publication-card,
 .home-research-card,
 .carousel-card,
 .publication,
-.module {
+.module,
+.collaboration-area-card,
+.collaboration-type-card,
+.collaboration-form-section,
+.contact-info-box,
+.cv-download,
+.competencies-tags,
+.project-header,
+.hero-section,
+.hero-section-content,
+.quick-stats-item,
+.table-of-contents,
+.position-card,
+.role-card,
+.approach-card,
+.education-card,
+.experience-item,
+.metric-card,
+.stat-card,
+.timeline-item,
+.featured-module-card,
+.contact-card,
+.tools-section,
+.skills-section,
+.research-overview-stats,
+.stats-grid,
+.metrics-dashboard,
+.teaching-timeline,
+.previous-roles,
+.featured-modules {
     position: relative;
     overflow: hidden;
 }
@@ -4483,7 +4523,27 @@ h1 {
 .home-research-card::after,
 .carousel-card::after,
 .publication::after,
-.module::after {
+.module::after,
+.collaboration-area-card::after,
+.collaboration-type-card::after,
+.collaboration-form-section::after,
+.contact-info-box::after,
+.project-header::after,
+.hero-section::after,
+.quick-stats-item::after,
+.table-of-contents::after,
+.position-card::after,
+.role-card::after,
+.approach-card::after,
+.education-card::after,
+.experience-item::after,
+.metric-card::after,
+.stat-card::after,
+.timeline-item::after,
+.featured-module-card::after,
+.contact-card::after,
+.tools-section::after,
+.skills-section::after {
     content: '';
     position: absolute;
     top: -50%;
@@ -4514,19 +4574,55 @@ h1 {
     }
 }
 
-/* Chromatic Aberration Effect on Hover */
+/* Chromatic Aberration Effect on Hover - ALL cards */
 .home-publication-card:hover,
 .home-research-card:hover,
 .carousel-card:hover,
 .publication:hover,
-.module:hover {
+.module:hover,
+.collaboration-area-card:hover,
+.collaboration-type-card:hover,
+.collaboration-form-section:hover,
+.contact-info-box:hover,
+.project-header:hover,
+.hero-section:hover,
+.quick-stats-item:hover,
+.table-of-contents:hover,
+.position-card:hover,
+.role-card:hover,
+.approach-card:hover,
+.education-card:hover,
+.experience-item:hover,
+.metric-card:hover,
+.stat-card:hover,
+.timeline-item:hover,
+.featured-module-card:hover,
+.contact-card:hover,
+.tools-section:hover,
+.skills-section:hover {
     filter: drop-shadow(0 0 20px rgba(131, 56, 236, 0.3));
 }
 
 .home-publication-card:hover h3,
 .home-research-card:hover h3,
 .carousel-card:hover h3,
-.publication:hover h3 {
+.publication:hover h3,
+.module:hover h3,
+.collaboration-area-card:hover h3,
+.collaboration-area-card:hover h4,
+.collaboration-type-card:hover h3,
+.project-header:hover h2,
+.hero-section:hover h2,
+.approach-card:hover h3,
+.education-card:hover h3,
+.experience-item:hover h3,
+.metric-card:hover h3,
+.stat-card:hover h3,
+.timeline-item:hover h3,
+.featured-module-card:hover h3,
+.contact-card:hover h3,
+.tools-section:hover h3,
+.skills-section:hover h3 {
     text-shadow: 
         2px 0 0 rgba(255, 0, 110, 0.5),
         -2px 0 0 rgba(58, 134, 255, 0.5),
@@ -4700,7 +4796,9 @@ h1 {
 }
 
 .home-hero-title:hover,
-h1:hover {
+h1:hover,
+h2:hover,
+h3:hover {
     animation: hologramShift 3s linear infinite, hologramGlitch 0.3s ease infinite;
 }
 
@@ -4742,10 +4840,13 @@ h1:hover {
     animation: hologramGradient 1s ease infinite, hologramSweep 2s linear infinite;
 }
 
-/* Holographic Stat Numbers */
+/* Holographic Stat Numbers - ALL pages */
 .home-stat-number,
 .stat-number,
-.metric-value {
+.metric-value,
+.quick-stats-item-value,
+.stat-box .stat-number,
+.research-overview-stats .stat-number {
     background: linear-gradient(
         180deg,
         #ff006e 0%,
@@ -4771,16 +4872,28 @@ h1:hover {
     }
 }
 
-/* Holographic Border Effect */
+/* Holographic Border Effect - Applied to sections across ALL pages */
 .home-quick-stats,
-.home-collaboration-section {
+.home-collaboration-section,
+.collaboration-form-section,
+.contact-info-box,
+.cv-download,
+.project-header,
+.hero-section,
+.table-of-contents {
     position: relative;
     border: 2px solid transparent;
     background-clip: padding-box;
 }
 
 .home-quick-stats::before,
-.home-collaboration-section::before {
+.home-collaboration-section::before,
+.collaboration-form-section::before,
+.contact-info-box::before,
+.cv-download::before,
+.project-header::before,
+.hero-section::before,
+.table-of-contents::before {
     content: '';
     position: absolute;
     top: -2px;
@@ -4804,7 +4917,13 @@ h1:hover {
 }
 
 .home-quick-stats:hover::before,
-.home-collaboration-section:hover::before {
+.home-collaboration-section:hover::before,
+.collaboration-form-section:hover::before,
+.contact-info-box:hover::before,
+.cv-download:hover::before,
+.project-header:hover::before,
+.hero-section:hover::before,
+.table-of-contents:hover::before {
     opacity: 1;
     animation: hologramGradient 2s ease infinite, hologramSweep 3s linear infinite;
 }
@@ -4817,13 +4936,23 @@ h1:hover {
 
 [data-theme="dark"] .home-stat-number,
 [data-theme="dark"] .stat-number,
-[data-theme="dark"] .metric-value {
+[data-theme="dark"] .metric-value,
+[data-theme="dark"] .quick-stats-item-value {
     filter: drop-shadow(0 0 20px rgba(131, 56, 236, 0.8));
 }
 
 [data-theme="dark"] .home-publication-card::after,
 [data-theme="dark"] .home-research-card::after,
-[data-theme="dark"] .carousel-card::after {
+[data-theme="dark"] .carousel-card::after,
+[data-theme="dark"] .publication::after,
+[data-theme="dark"] .module::after,
+[data-theme="dark"] .collaboration-area-card::after,
+[data-theme="dark"] .collaboration-type-card::after,
+[data-theme="dark"] .project-header::after,
+[data-theme="dark"] .hero-section::after,
+[data-theme="dark"] .approach-card::after,
+[data-theme="dark"] .education-card::after,
+[data-theme="dark"] .experience-item::after {
     mix-blend-mode: screen;
     opacity: 0.3;
 }
@@ -4831,7 +4960,9 @@ h1:hover {
 /* Performance: Reduce holographic effects on mobile */
 @media (max-width: 768px) {
     .home-hero-title,
-    h1 {
+    h1,
+    h2,
+    h3 {
         animation: none;
         background: var(--text);
         -webkit-text-fill-color: var(--text);
@@ -4840,7 +4971,8 @@ h1:hover {
     
     .home-stat-number,
     .stat-number,
-    .metric-value {
+    .metric-value,
+    .quick-stats-item-value {
         animation: none;
         background: var(--link);
         -webkit-text-fill-color: var(--link);
@@ -4849,7 +4981,13 @@ h1:hover {
     
     .home-publication-card::after,
     .home-research-card::after,
-    .carousel-card::after {
+    .carousel-card::after,
+    .publication::after,
+    .module::after,
+    .collaboration-area-card::after,
+    .collaboration-type-card::after,
+    .project-header::after,
+    .hero-section::after {
         display: none;
     }
 }

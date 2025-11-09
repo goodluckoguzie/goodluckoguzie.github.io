@@ -475,8 +475,8 @@
             });
         }
         
-        // 3D Card Tilt on Mouse Move
-        const cards = document.querySelectorAll('.home-publication-card, .home-research-card, .carousel-card, .publication, .module, .approach-card, .education-card');
+        // 3D Card Tilt on Mouse Move - ALL cards across ALL pages
+        const cards = document.querySelectorAll('.home-publication-card, .home-research-card, .carousel-card, .publication, .module, .approach-card, .education-card, .collaboration-area-card, .collaboration-type-card, .collaboration-form-section, .contact-info-box, .project-header, .hero-section, .quick-stats-item, .table-of-contents, .position-card, .role-card, .experience-item, .metric-card, .stat-card, .timeline-item, .featured-module-card, .contact-card, .tools-section, .skills-section');
         
         cards.forEach(card => {
             card.addEventListener('mousemove', (e) => {
@@ -579,8 +579,8 @@
         // 5D HOLOGRAM INTERACTIVE EFFECTS
         // ============================================
         
-        // Dynamic Holographic Intensity Based on Mouse Position
-        const holographicCards = document.querySelectorAll('.home-publication-card, .home-research-card, .carousel-card, .publication, .module');
+        // Dynamic Holographic Intensity Based on Mouse Position - ALL cards
+        const holographicCards = document.querySelectorAll('.home-publication-card, .home-research-card, .carousel-card, .publication, .module, .collaboration-area-card, .collaboration-type-card, .collaboration-form-section, .contact-info-box, .project-header, .hero-section, .quick-stats-item, .table-of-contents, .position-card, .role-card, .approach-card, .education-card, .experience-item, .metric-card, .stat-card, .timeline-item, .featured-module-card, .contact-card, .tools-section, .skills-section');
         
         holographicCards.forEach(card => {
             card.addEventListener('mousemove', (e) => {
@@ -681,8 +681,8 @@
             });
         });
         
-        // Holographic Stat Number Pulse on View
-        const statNumbers = document.querySelectorAll('.home-stat-number, .stat-number, .metric-value');
+        // Holographic Stat Number Pulse on View - ALL stat numbers
+        const statNumbers = document.querySelectorAll('.home-stat-number, .stat-number, .metric-value, .quick-stats-item-value, .stat-box .stat-number, .research-overview-stats .stat-number');
         const statObserver = new IntersectionObserver((entries) => {
             entries.forEach(entry => {
                 if (entry.isIntersecting) {
