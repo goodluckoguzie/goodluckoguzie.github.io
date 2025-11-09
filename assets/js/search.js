@@ -9,14 +9,19 @@ class SiteSearch {
     }
 
     async init() {
-        await this.buildSearchIndex();
-        this.createSearchUI();
-        this.attachEventListeners();
+        try {
+            await this.buildSearchIndex();
+            this.createSearchUI();
+            this.attachEventListeners();
+        } catch (error) {
+            console.error('Error initializing site search:', error);
+        }
     }
 
     async buildSearchIndex() {
-        // Build search index from page content
-        const pages = [
+        try {
+            // Build search index from page content
+            const pages = [
             { url: '/', title: 'Home', content: 'Dr. Goodluck Oguzie, Reinforcement Learning, Social Robotics, Neural Networks' },
             { url: '/about', title: 'About', content: 'About Dr. Goodluck Oguzie, PhD, MSc, BSc, Computer Science, Machine Learning, Robotics' },
             { url: '/portfolio', title: 'Research Portfolio', content: 'Research Environments, FallingBallEnv, LiteSocNavGym, SocNavGym, Predictive World Models, Cosine-Gated LSTM, Adaptive Prediction Horizons' },
@@ -46,12 +51,17 @@ class SiteSearch {
             ...page,
             searchableText: `${page.title} ${page.content}`.toLowerCase()
         }));
+        } catch (error) {
+            console.error('Error building search index:', error);
+            this.searchIndex = [];
+        }
     }
 
     createSearchUI() {
-        // Create search button in navbar
-        const navbar = document.querySelector('.navbar .container');
-        if (!navbar) return;
+        try {
+            // Create search button in navbar
+            const navbar = document.querySelector('.navbar .container');
+            if (!navbar) return;
 
         const searchButton = document.createElement('button');
         searchButton.className = 'search-toggle';
@@ -116,23 +126,35 @@ class SiteSearch {
                 this.closeSearch();
             }
         });
+        } catch (error) {
+            console.error('Error creating search UI:', error);
+        }
     }
 
     openSearch() {
-        this.searchContainer.classList.add('active');
-        this.searchInput.focus();
+        try {
+            this.searchContainer.classList.add('active');
+            this.searchInput.focus();
+        } catch (error) {
+            console.error('Error opening search:', error);
+        }
     }
 
     closeSearch() {
-        this.searchContainer.classList.remove('active');
-        this.searchInput.value = '';
-        this.searchResults.innerHTML = '';
+        try {
+            this.searchContainer.classList.remove('active');
+            this.searchInput.value = '';
+            this.searchResults.innerHTML = '';
+        } catch (error) {
+            console.error('Error closing search:', error);
+        }
     }
 
     attachEventListeners() {
-        if (!this.searchInput) return;
+        try {
+            if (!this.searchInput) return;
 
-        let searchTimeout;
+            let searchTimeout;
         this.searchInput.addEventListener('input', (e) => {
             clearTimeout(searchTimeout);
             const query = e.target.value.trim().toLowerCase();
@@ -156,9 +178,13 @@ class SiteSearch {
                 }
             }
         });
+        } catch (error) {
+            console.error('Error attaching event listeners:', error);
+        }
     }
 
     performSearch(query) {
+        try {
         const results = this.searchIndex
             .filter(item => item.searchableText.includes(query))
             .map(item => {
@@ -169,6 +195,10 @@ class SiteSearch {
             .slice(0, 10);
 
         this.displayResults(results, query);
+        } catch (error) {
+            console.error('Error performing search:', error);
+            this.searchResults.innerHTML = '<p class="search-error">An error occurred while searching. Please try again.</p>';
+        }
     }
 
     calculateRelevance(item, query) {

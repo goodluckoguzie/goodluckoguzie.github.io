@@ -1,6 +1,7 @@
 ---
 layout: default
 title: Home
+description: "Dr. Goodluck Oguzie - Post-PhD Researcher & Lecturer specializing in Reinforcement Learning, Social Robotics, and Neural Network Architectures. Published at IEEE PRML 2024 and UKCI 2023."
 ---
 
 <div class="home-hero">

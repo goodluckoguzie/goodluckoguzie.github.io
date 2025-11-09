@@ -196,7 +196,8 @@ class Carousel {
             const endX = e.changedTouches[0].clientX;
             const diff = this.startX - endX;
             
-            if (Math.abs(diff) > 50) {
+            // Reduced threshold for better mobile responsiveness (30px instead of 50px)
+            if (Math.abs(diff) > 30) {
                 if (diff > 0) {
                     this.next();
                 } else {
@@ -204,6 +205,7 @@ class Carousel {
                 }
             }
             
+            // Autoplay will not restart on mobile (handled in startAutoPlay)
             if (this.totalSlides > 1) {
                 this.startAutoPlay();
             }
@@ -372,12 +374,14 @@ class Carousel {
     }
     
     /**
-     * Start autoplay
+     * Start autoplay (disabled on mobile for better UX and performance)
      */
     startAutoPlay() {
         try {
             this.stopAutoPlay();
-            if (this.totalSlides > 1) {
+            // Disable autoplay on mobile devices
+            const isMobile = window.matchMedia('(max-width: 768px)').matches;
+            if (this.totalSlides > 1 && !isMobile) {
                 this.autoPlayInterval = setInterval(() => {
                     this.next();
                 }, this.autoPlayDelay);

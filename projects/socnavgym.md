@@ -64,7 +64,7 @@ title: SocNavGym - Research Project
     </div>
     
     <div class="hero-section-media">
-      <video autoplay muted loop playsinline preload="metadata" poster="{{ '/video/SocNavGym.mp4' | relative_url }}">
+      <video controls muted loop playsinline preload="metadata" poster="{{ '/video/SocNavGym.mp4' | relative_url }}" aria-label="SocNavGym environment demonstration video">
         <source src="{{ '/video/SocNavGym.mp4' | relative_url }}" type="video/mp4">
         Your browser does not support the video tag.
       </video>

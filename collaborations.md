@@ -1,6 +1,7 @@
 ---
 layout: default
 title: Collaborations
+description: "Open for research collaborations in reinforcement learning, social robotics, and neural network architectures. Joint projects, student co-supervision, and industry partnerships welcome."
 ---
 
 # Open for Collaborations

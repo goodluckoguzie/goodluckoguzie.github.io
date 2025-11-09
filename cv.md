@@ -1,6 +1,7 @@
 ---
 layout: default
 title: CV
+description: "Curriculum Vitae of Dr. Goodluck Oguzie - Post-PhD Researcher & Lecturer with expertise in Reinforcement Learning, Social Robotics, and Neural Network Architectures."
 ---
 
 # Curriculum Vitae

@@ -1,6 +1,7 @@
 ---
 layout: default
 title: About
+description: "Learn about Dr. Goodluck Oguzie's professional journey, research approach, education, and experience in AI, machine learning, and social robotics."
 ---
 
 # About Me
@@ -9,7 +10,7 @@ My Professional Journey
 
 <div class="about-hero-section">
   <div class="about-image">
-    <img src="{{ '/assets/images/goodluck.jpg' | relative_url }}" alt="Dr. Goodluck Oguzie" class="about-photo">
+    <img src="{{ '/assets/images/goodluck.jpg' | relative_url }}" alt="Dr. Goodluck Oguzie, Post-PhD Researcher and Lecturer in Computer Science" class="about-photo" loading="lazy">
   </div>
   <div class="about-content">
     <h2>Hello, I'm Dr. Goodluck Oguzie</h2>

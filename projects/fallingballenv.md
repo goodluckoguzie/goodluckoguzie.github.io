@@ -64,7 +64,7 @@ title: FallingBallEnv - Research Project
     </div>
     
     <div class="hero-section-media">
-      <video autoplay muted loop playsinline preload="metadata" poster="{{ '/assets/images/FallingBall.png' | relative_url }}">
+      <video controls muted loop playsinline preload="metadata" poster="{{ '/assets/images/FallingBall.png' | relative_url }}" aria-label="FallingBallEnv demonstration video showing CGLSTM predicting bounces">
         <source src="{{ '/video/FallingBallEnv.webm' | relative_url }}" type="video/webm">
         Your browser does not support the video tag.
       </video>

@@ -46,8 +46,9 @@ input:focus-visible,
 textarea:focus-visible,
 select:focus-visible {
     outline: 3px solid var(--link);
-    outline-offset: 2px;
-    border-radius: 2px;
+    outline-offset: 3px;
+    border-radius: 4px;
+    box-shadow: 0 0 0 2px rgba(0, 102, 204, 0.2);
 }
 
 /* Keyboard Navigation Improvements */
@@ -55,8 +56,9 @@ select:focus-visible {
 .btn:focus,
 .filter-btn:focus {
     outline: 3px solid var(--link);
-    outline-offset: 2px;
-    background-color: rgba(0, 102, 204, 0.1);
+    outline-offset: 3px;
+    background-color: rgba(0, 102, 204, 0.15);
+    box-shadow: 0 0 0 2px rgba(0, 102, 204, 0.2);
 }
 
 /* ============================================
@@ -776,6 +778,8 @@ h3 {
 
 p {
     margin-bottom: 1.25rem;
+    line-height: 1.75;
+    max-width: 75ch;
 }
 
 .lead {
@@ -1060,6 +1064,8 @@ footer {
     border: none;
     cursor: pointer;
     box-shadow: var(--shadow);
+    min-height: 44px;
+    min-width: 44px;
 }
 
 .btn:hover {
@@ -1162,6 +1168,8 @@ code {
 @media (max-width: 768px) {
     .mobile-menu-toggle {
         display: flex;
+        min-width: 44px;
+        min-height: 44px;
     }
     
     .nav-menu {
@@ -1175,6 +1183,8 @@ code {
         padding: 1rem;
         gap: 0.5rem;
         box-shadow: var(--shadow-lg);
+        max-height: calc(100vh - 60px);
+        overflow-y: auto;
     }
     
     .nav-menu.active {
@@ -1182,12 +1192,16 @@ code {
     }
     
     .nav-menu a {
-        padding: 0.75rem 1rem;
+        padding: 0.875rem 1rem;
         border-radius: 6px;
+        min-height: 44px;
+        display: flex;
+        align-items: center;
     }
     
-    .nav-menu a:hover {
-        background-color: rgba(255, 255, 255, 0.1);
+    .nav-menu a:hover,
+    .nav-menu a:focus {
+        background-color: rgba(255, 255, 255, 0.15);
     }
     
     .hero-content {
@@ -1317,6 +1331,11 @@ code {
     transition: all var(--transition);
     font-weight: 500;
     font-size: 0.9rem;
+    min-height: 44px;
+    min-width: 44px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .filter-btn:hover,
@@ -2024,6 +2043,11 @@ code {
     font-weight: 500;
     cursor: pointer;
     transition: all var(--transition);
+    min-height: 44px;
+    min-width: 44px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .portfolio-filter-btn:hover {
@@ -2714,8 +2738,8 @@ table td.text-center {
     background: var(--bg-card);
     border: 2px solid var(--link);
     color: var(--link);
-    width: 38px;
-    height: 38px;
+    width: 44px;
+    height: 44px;
     border-radius: 50%;
     font-size: 1.1rem;
     font-weight: bold;
@@ -2726,6 +2750,8 @@ table td.text-center {
     align-items: center;
     justify-content: center;
     box-shadow: var(--shadow-md);
+    min-width: 44px;
+    min-height: 44px;
 }
 
 .carousel-nav:hover {
@@ -2757,14 +2783,19 @@ table td.text-center {
 }
 
 .carousel-dot {
-    width: 10px;
-    height: 10px;
+    width: 12px;
+    height: 12px;
     border-radius: 50%;
     border: 2px solid var(--link);
     background: transparent;
     cursor: pointer;
     transition: all var(--transition);
     padding: 0;
+    min-width: 44px;
+    min-height: 44px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .carousel-dot.active {
@@ -2816,7 +2847,7 @@ table td.text-center {
 /* Responsive Design for Carousel */
 @media (max-width: 968px) {
     .environments-carousel-wrapper {
-        padding: 0 2.5rem;
+        padding: 0 3rem;
     }
     
     .card-content {
@@ -2838,9 +2869,11 @@ table td.text-center {
     }
     
     .carousel-nav {
-        width: 35px;
-        height: 35px;
-        font-size: 1rem;
+        width: 44px;
+        height: 44px;
+        font-size: 1.1rem;
+        min-width: 44px;
+        min-height: 44px;
     }
     
     .carousel-prev {
@@ -2858,7 +2891,7 @@ table td.text-center {
 
 @media (max-width: 640px) {
     .environments-carousel-wrapper {
-        padding: 0 2rem;
+        padding: 0 3rem;
     }
     
     .carousel-card {
@@ -2871,6 +2904,17 @@ table td.text-center {
     
     .card-text .project-description {
         font-size: 0.9rem;
+    }
+    
+    .carousel-nav {
+        width: 44px;
+        height: 44px;
+        font-size: 1rem;
+    }
+    
+    .carousel-dot {
+        min-width: 44px;
+        min-height: 44px;
     }
 }
 
@@ -4022,40 +4066,10 @@ table td.text-center {
 }
 
 /* ============================================
-   3D/4D VISUAL EFFECTS - APPLIED ACROSS ALL PAGES
+   SIMPLIFIED HOVER EFFECTS - PERFORMANCE OPTIMIZED
    ============================================ */
 
-/* 3D Perspective Container - Applied to main container */
-main.container {
-    transform-style: preserve-3d;
-    position: relative;
-}
-
-/* 3D Card Tilt Effect - Applied to all cards */
-.home-publication-card,
-.home-stat-item,
-.carousel-card,
-.publication,
-.module,
-.position-card,
-.role-card,
-.approach-card,
-.education-card,
-.experience-item,
-.metric-card,
-.stat-card,
-.timeline-item,
-.featured-module-card,
-.contact-card,
-.tools-section,
-.skills-section {
-    transform-style: preserve-3d;
-    transition: transform 0.3s cubic-bezier(0.23, 1, 0.32, 1),
-                box-shadow 0.3s ease;
-    position: relative;
-}
-
-/* 3D Tilt on Hover */
+/* Simple hover effects - removed 3D transforms for better performance */
 .home-publication-card:hover,
 .home-stat-item:hover,
 .carousel-card:hover,
@@ -4071,302 +4085,19 @@ main.container {
 .timeline-item:hover,
 .featured-module-card:hover,
 .contact-card:hover {
-    transform: translateY(-8px) rotateX(2deg) rotateY(2deg) scale(1.02);
-    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.15),
-                0 0 30px rgba(0, 102, 204, 0.1);
+    transform: translateY(-4px);
+    box-shadow: var(--shadow-md);
 }
 
-[data-theme="dark"] .home-publication-card:hover,
-[data-theme="dark"] .carousel-card:hover,
-[data-theme="dark"] .publication:hover {
-    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.4),
-                0 0 30px rgba(102, 179, 255, 0.2);
-}
-
-/* Glass-morphism Effect */
-.home-quick-stats,
-.home-teaching-section,
-.home-collaboration-section,
-.metrics-dashboard,
-.publication,
-.module,
-.position-card,
-.approach-card {
-    backdrop-filter: blur(10px);
-    -webkit-backdrop-filter: blur(10px);
-    background: rgba(255, 255, 255, 0.8);
-    border: 1px solid rgba(255, 255, 255, 0.3);
-}
-
-[data-theme="dark"] .home-quick-stats,
-[data-theme="dark"] .home-teaching-section,
-[data-theme="dark"] .home-collaboration-section,
-[data-theme="dark"] .metrics-dashboard,
-[data-theme="dark"] .publication,
-[data-theme="dark"] .module {
-    background: rgba(42, 42, 42, 0.8);
-    border: 1px solid rgba(255, 255, 255, 0.1);
-}
-
-/* 3D Text Shadows */
-h1, h2, h3 {
-    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1),
-                 0 0 20px rgba(0, 102, 204, 0.1);
-    transform: translateZ(0);
-}
-
-.home-hero-title {
-    text-shadow: 3px 3px 6px rgba(0, 0, 0, 0.15),
-                 0 0 30px rgba(0, 102, 204, 0.2);
-}
-
-[data-theme="dark"] h1,
-[data-theme="dark"] h2,
-[data-theme="dark"] h3 {
-    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5),
-                 0 0 20px rgba(102, 179, 255, 0.2);
-}
-
-/* Glow Effects */
-.home-stat-number,
-.stat-number,
-.metric-value {
-    text-shadow: 0 0 10px rgba(0, 102, 204, 0.3),
-                 0 0 20px rgba(0, 102, 204, 0.2);
-    animation: pulseGlow 3s ease-in-out infinite;
-}
-
-@keyframes pulseGlow {
-    0%, 100% {
-        text-shadow: 0 0 10px rgba(0, 102, 204, 0.3),
-                     0 0 20px rgba(0, 102, 204, 0.2);
-    }
-    50% {
-        text-shadow: 0 0 20px rgba(0, 102, 204, 0.5),
-                     0 0 30px rgba(0, 102, 204, 0.3);
-    }
-}
-
-[data-theme="dark"] .home-stat-number,
-[data-theme="dark"] .stat-number,
-[data-theme="dark"] .metric-value {
-    text-shadow: 0 0 10px rgba(102, 179, 255, 0.4),
-                 0 0 20px rgba(102, 179, 255, 0.3);
-}
-
-/* Buttons with 3D Lift Effect */
-.btn,
-.btn-primary,
-.btn-secondary,
-.see-more-btn,
-.filter-btn,
-.portfolio-filter-btn {
-    transform-style: preserve-3d;
-    transition: transform 0.3s cubic-bezier(0.23, 1, 0.32, 1),
-                box-shadow 0.3s ease;
-    position: relative;
-    overflow: hidden;
-}
-
-.btn:hover,
-.btn-primary:hover,
-.btn-secondary:hover,
-.see-more-btn:hover {
-    transform: translateY(-4px) translateZ(10px) scale(1.05);
-    box-shadow: 0 10px 25px rgba(0, 102, 204, 0.3),
-                0 0 20px rgba(0, 102, 204, 0.2);
-}
-
-.btn:active,
-.btn-primary:active,
-.btn-secondary:active {
-    transform: translateY(-2px) translateZ(5px) scale(1.02);
-}
-
-/* Shine Sweep Effect on Cards */
-.home-publication-card::before,
-.carousel-card::before,
-.publication::before {
-    content: '';
-    position: absolute;
-    top: 0;
-    left: -100%;
-    width: 100%;
-    height: 100%;
-    background: linear-gradient(
-        90deg,
-        transparent,
-        rgba(255, 255, 255, 0.3),
-        transparent
-    );
-    transition: left 0.5s ease;
-    z-index: 1;
-    pointer-events: none;
-}
-
-.home-publication-card:hover::before,
-.carousel-card:hover::before,
-.publication:hover::before {
-    left: 100%;
-}
-
-[data-theme="dark"] .home-publication-card::before,
-[data-theme="dark"] .carousel-card::before,
-[data-theme="dark"] .publication::before {
-    background: linear-gradient(
-        90deg,
-        transparent,
-        rgba(255, 255, 255, 0.1),
-        transparent
-    );
-}
-
-/* Floating Animation */
-@keyframes float {
-    0%, 100% {
-        transform: translateY(0px) translateZ(0);
-    }
-    50% {
-        transform: translateY(-10px) translateZ(0);
-    }
-}
-
-.home-profile-photo,
-.about-photo {
-    animation: float 6s ease-in-out infinite;
-}
-
-/* Rotating Icons Effect */
-.nav-menu a,
-.social-links a {
-    transition: transform 0.3s ease;
-}
-
-.nav-menu a:hover,
-.social-links a:hover {
-    transform: rotateY(360deg) scale(1.1);
-}
-
-/* Parallax Background Shapes */
-body::before {
-    content: '';
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background: radial-gradient(
-        circle at 20% 50%,
-        rgba(0, 102, 204, 0.05) 0%,
-        transparent 50%
-    ),
-    radial-gradient(
-        circle at 80% 80%,
-        rgba(0, 102, 204, 0.05) 0%,
-        transparent 50%
-    );
-    animation: morphBackground 20s ease-in-out infinite;
-    z-index: -1;
-    pointer-events: none;
-    overflow: hidden;
-}
-
-@keyframes morphBackground {
-    0%, 100% {
-        transform: translate(0, 0) scale(1);
-    }
-    33% {
-        transform: translate(5%, 5%) scale(1.1);
-    }
-    66% {
-        transform: translate(-5%, -5%) scale(0.9);
-    }
-}
-
-[data-theme="dark"] body::before {
-    background: radial-gradient(
-        circle at 20% 50%,
-        rgba(102, 179, 255, 0.1) 0%,
-        transparent 50%
-    ),
-    radial-gradient(
-        circle at 80% 80%,
-        rgba(102, 179, 255, 0.1) 0%,
-        transparent 50%
-    );
-}
-
-/* Gradient Shift Animation */
-.home-quick-stats,
-.home-collaboration-section {
-    background: linear-gradient(135deg, var(--bg-alt) 0%, var(--bg-card) 100%);
-    animation: gradientShift 10s ease infinite;
-    background-size: 200% 200%;
-}
-
-@keyframes gradientShift {
-    0% {
-        background-position: 0% 50%;
-    }
-    50% {
-        background-position: 100% 50%;
-    }
-    100% {
-        background-position: 0% 50%;
-    }
-}
-
-/* Ripple Effect on Click */
-@keyframes ripple {
-    0% {
-        transform: scale(0);
-        opacity: 1;
-    }
-    100% {
-        transform: scale(4);
-        opacity: 0;
-    }
-}
-
-.btn,
-.btn-primary,
-.btn-secondary {
-    position: relative;
-    overflow: hidden;
-}
-
-.btn::after,
-.btn-primary::after,
-.btn-secondary::after {
-    content: '';
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    width: 0;
-    height: 0;
-    border-radius: 50%;
-    background: rgba(255, 255, 255, 0.5);
-    transform: translate(-50%, -50%);
-    transition: width 0.6s, height 0.6s;
-}
-
-.btn:active::after,
-.btn-primary:active::after,
-.btn-secondary:active::after {
-    width: 300px;
-    height: 300px;
-    animation: ripple 0.6s ease-out;
-}
-
-/* Fade-in on Scroll */
+/* Fade-in on Scroll - Simple and performant */
 @keyframes fadeInUp {
     from {
         opacity: 0;
-        transform: translateY(30px) translateZ(0);
+        transform: translateY(20px);
     }
     to {
         opacity: 1;
-        transform: translateY(0) translateZ(0);
+        transform: translateY(0);
     }
 }
 
@@ -4381,132 +4112,57 @@ body::before {
     animation: fadeInUp 0.6s ease-out;
 }
 
-/* 3D Badge Effects */
-.home-publication-badge,
-.contribution-badge,
-.project-status-badge,
-.badge {
-    transform: translateZ(5px);
-    transition: transform 0.3s ease;
-}
-
-.home-publication-badge:hover,
-.contribution-badge:hover,
-.project-status-badge:hover {
-    transform: translateZ(10px) scale(1.1);
-}
-
-/* Enhanced Shadows with Depth */
-.home-publication-card,
-.carousel-card,
-.publication {
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1),
-                0 0 0 1px rgba(0, 0, 0, 0.05),
-                inset 0 1px 0 rgba(255, 255, 255, 0.1);
-}
-
-[data-theme="dark"] .home-publication-card,
-[data-theme="dark"] .carousel-card,
-[data-theme="dark"] .publication {
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3),
-                0 0 0 1px rgba(255, 255, 255, 0.05),
-                inset 0 1px 0 rgba(255, 255, 255, 0.05);
-}
-
-/* Parallax Mouse Movement Effect */
-.home-hero-title,
-.home-hero-tagline {
-    transition: transform 0.1s ease-out;
-}
-
-/* Particle System Background (Lightweight) */
-.particles-container {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    pointer-events: none;
-    z-index: -1;
-    overflow: hidden;
-}
-
-.particle {
-    position: absolute;
-    width: 2px;
-    height: 2px;
-    background: rgba(0, 102, 204, 0.3);
-    border-radius: 50%;
-    animation: particleFloat 15s infinite ease-in-out;
-}
-
-@keyframes particleFloat {
-    0%, 100% {
-        transform: translate(0, 0) translateZ(0);
-        opacity: 0;
-    }
-    10% {
-        opacity: 1;
-    }
-    90% {
-        opacity: 1;
-    }
-    100% {
-        transform: translate(100px, -100px) translateZ(0);
-        opacity: 0;
-    }
-}
-
-[data-theme="dark"] .particle {
-    background: rgba(102, 179, 255, 0.4);
-}
-
-/* 3D Image Effects */
-.carousel-image,
-.about-photo {
-    transform-style: preserve-3d;
-    transition: transform 0.3s ease;
-}
-
-.carousel-image:hover,
-.about-photo:hover {
-    transform: rotateY(5deg) rotateX(5deg) scale(1.05);
-}
-
-/* Smooth Scroll Parallax */
+/* Smooth Scroll */
 @media (prefers-reduced-motion: no-preference) {
     html {
         scroll-behavior: smooth;
     }
 }
 
-/* Performance Optimization */
-.home-publication-card,
-.carousel-card,
-.publication,
-.module {
-    will-change: transform;
-    backface-visibility: hidden;
-    -webkit-backface-visibility: hidden;
+/* ============================================
+   BREADCRUMB NAVIGATION
+   ============================================ */
+.breadcrumb {
+    margin-bottom: 2rem;
+    padding: 0.75rem 0;
+    font-size: 0.9rem;
 }
 
-/* Responsive: Reduce 3D effects on mobile */
-@media (max-width: 768px) {
-    body {
-        perspective: none;
-    }
-    
-    .home-publication-card:hover,
-    .carousel-card:hover,
-    .publication:hover {
-        transform: translateY(-4px) scale(1.01);
-    }
-    
-    .btn:hover,
-    .btn-primary:hover,
-    .btn-secondary:hover {
-        transform: translateY(-2px) scale(1.02);
-    }
+.breadcrumb ol {
+    display: flex;
+    flex-wrap: wrap;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    gap: 0.5rem;
+}
+
+.breadcrumb li {
+    margin: 0;
+    display: flex;
+    align-items: center;
+}
+
+.breadcrumb li:not(:last-child)::after {
+    content: '›';
+    margin-left: 0.5rem;
+    color: var(--text-light);
+}
+
+.breadcrumb a {
+    color: var(--link);
+    text-decoration: none;
+    transition: color var(--transition);
+}
+
+.breadcrumb a:hover {
+    color: var(--link-hover);
+    text-decoration: underline;
+}
+
+.breadcrumb [aria-current="page"] {
+    color: var(--text);
+    font-weight: 500;
 }
 
 /* ============================================

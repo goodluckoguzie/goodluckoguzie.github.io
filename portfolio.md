@@ -1,6 +1,7 @@
 ---
 layout: default
 title: Research Portfolio
+description: "Explore Dr. Goodluck Oguzie's research portfolio including SocNavGym, LiteSocNavGym, FallingBallEnv environments, Cosine-Gated LSTM, Predictive World Models, and Adaptive Prediction Horizons."
 ---
 
 # Research Portfolio
@@ -90,13 +91,14 @@ These are the environments I've created or contributed to for evaluating reinfor
             
             <div class="card-video">
               <video 
-                autoplay
+                controls
                 muted
                 loop
                 playsinline
                 class="carousel-video"
                 preload="metadata"
                 poster="{{ '/assets/images/FallingBall.png' | relative_url }}"
+                aria-label="FallingBallEnv demonstration video showing CGLSTM predicting bounces"
                 style="width: 100%; height: auto; border-radius: 6px; cursor: pointer;">
                 <source src="{{ '/video/FallingBallEnv.webm' | relative_url }}" type="video/webm">
                 Your browser does not support the video tag.
@@ -148,13 +150,14 @@ These are the environments I've created or contributed to for evaluating reinfor
             
             <div class="card-video">
               <video 
-                autoplay
+                controls
                 muted
                 loop
                 playsinline
                 class="carousel-video"
                 preload="metadata"
                 poster="{{ '/video/LITESOCNAVGYM.webm' | relative_url }}"
+                aria-label="LiteSocNavGym environment demonstration video"
                 style="width: 100%; height: auto; border-radius: 6px; cursor: pointer;">
                 <source src="{{ '/video/LITESOCNAVGYM.webm' | relative_url }}" type="video/webm">
                 Your browser does not support the video tag.
@@ -186,7 +189,7 @@ These are the environments I've created or contributed to for evaluating reinfor
             </div>
             
             <div class="card-video">
-              <video autoplay muted loop playsinline class="carousel-video" preload="auto" style="width: 100%; height: auto; border-radius: 6px; cursor: pointer;">
+              <video controls muted loop playsinline class="carousel-video" preload="metadata" aria-label="SocNavGym environment demonstration video" style="width: 100%; height: auto; border-radius: 6px; cursor: pointer;">
                 <source src="{{ '/video/SocNavGym.mp4' | relative_url }}" type="video/mp4">
                 Your browser does not support the video tag.
               </video>
