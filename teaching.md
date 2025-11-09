@@ -229,8 +229,11 @@ I believe in combining cutting-edge research with practical application. My cour
   <span class="badge badge-hybrid">Hybrid</span>
   <span class="badge badge-dates">14/10/24 - 16/02/25</span>
 </div>
-<p><strong>Description:</strong> Introduction to computing fundamentals, programming basics, and computational thinking for students beginning their computing journey.</p>
-<p><strong>Learning Outcomes:</strong> By the end of this module, students will be able to understand basic computing concepts, write simple programs, and apply computational thinking to solve problems.</p>
+<p>Introduction to computing fundamentals, programming basics, and computational thinking for students beginning their computing journey.</p>
+<details class="module-details">
+  <summary>View Learning Outcomes</summary>
+  <p>By the end of this module, students will be able to understand basic computing concepts, write simple programs, and apply computational thinking to solve problems.</p>
+</details>
 </div>
 
 <div class="module" data-institution="solent" data-level="foundation">
@@ -240,8 +243,11 @@ I believe in combining cutting-edge research with practical application. My cour
   <span class="badge badge-hybrid">Hybrid</span>
   <span class="badge badge-dates">17/02/25 - 16/06/25</span>
 </div>
-<p><strong>Description:</strong> Mathematical foundations essential for computer science, covering algebra, calculus, and discrete mathematics.</p>
-<p><strong>Learning Outcomes:</strong> Students will master fundamental mathematical concepts including algebraic manipulation, basic calculus, and discrete mathematics principles essential for computer science.</p>
+<p>Mathematical foundations essential for computer science, covering algebra, calculus, and discrete mathematics.</p>
+<details class="module-details">
+  <summary>View Learning Outcomes</summary>
+  <p>Students will master fundamental mathematical concepts including algebraic manipulation, basic calculus, and discrete mathematics principles essential for computer science.</p>
+</details>
 </div>
 
 <div class="module" data-institution="solent" data-level="undergraduate">
@@ -251,9 +257,12 @@ I believe in combining cutting-edge research with practical application. My cour
   <span class="badge badge-hybrid">Hybrid</span>
   <span class="badge badge-dates">19/02/24 - 24/06/24 | 17/02/25 - 16/06/25 | 13/10/25 - 8/02/26</span>
 </div>
-<p><strong>Description:</strong> Fundamentals of computer networks, protocols, network design, and basic cybersecurity principles. Uses Cisco NetAcad resources covering the OSI model, network operating systems (Windows and Linux), network services, resilience, and security principles.</p>
-<p><strong>Learning Outcomes:</strong> Students will understand network architectures, configure network services, implement security measures, and gain hands-on experience with Windows and Linux server environments.</p>
-<p><strong>Technologies Covered:</strong> Cisco NetAcad • Windows Server • Linux • Network Protocols • Security Fundamentals</p>
+<p>Fundamentals of computer networks, protocols, network design, and basic cybersecurity principles. Uses Cisco NetAcad resources covering the OSI model, network operating systems (Windows and Linux), network services, resilience, and security principles.</p>
+<details class="module-details">
+  <summary>View Details</summary>
+  <p><strong>Learning Outcomes:</strong> Students will understand network architectures, configure network services, implement security measures, and gain hands-on experience with Windows and Linux server environments.</p>
+  <p><strong>Technologies:</strong> Cisco NetAcad • Windows Server • Linux • Network Protocols • Security Fundamentals</p>
+</details>
 </div>
 
 <div class="module" data-institution="solent" data-level="undergraduate">
@@ -263,9 +272,12 @@ I believe in combining cutting-edge research with practical application. My cour
   <span class="badge badge-hybrid">Hybrid</span>
   <span class="badge badge-dates">13/10/25 - 8/02/26</span>
 </div>
-<p><strong>Description:</strong> Exploration of network applications, core networking concepts, the OSI model, key features of Windows and Linux network operating systems, and essential network services, resilience, and security principles.</p>
-<p><strong>Learning Outcomes:</strong> Students will be able to design network applications, configure network services, manage shared resources, and perform command-line operations for system management.</p>
-<p><strong>Technologies Covered:</strong> Windows Server • Linux • Network Services • Command-Line Operations</p>
+<p>Exploration of network applications, core networking concepts, the OSI model, key features of Windows and Linux network operating systems, and essential network services, resilience, and security principles.</p>
+<details class="module-details">
+  <summary>View Details</summary>
+  <p><strong>Learning Outcomes:</strong> Students will be able to design network applications, configure network services, manage shared resources, and perform command-line operations for system management.</p>
+  <p><strong>Technologies:</strong> Windows Server • Linux • Network Services • Command-Line Operations</p>
+</details>
 </div>
 
 <div class="module" data-institution="solent" data-level="undergraduate">
@@ -275,10 +287,13 @@ I believe in combining cutting-edge research with practical application. My cour
   <span class="badge badge-hybrid">Hybrid</span>
   <span class="badge badge-dates">19/02/24 - 24/06/24 | 17/02/25 - 16/06/25</span>
 </div>
-<p><strong>Description:</strong> Advanced software development practices including OOP principles, Java programming, UML design, JSP (JavaServer Pages), JDBC, exception handling, and software engineering best practices.</p>
-<p><strong>Learning Outcomes:</strong> Students will design and implement object-oriented systems, create web applications using JSP, connect to databases using JDBC, apply design patterns, and write unit tests with JUnit.</p>
-<p><strong>Technologies Covered:</strong> Java • OOP Design • UML • JSP • JDBC • JUnit • Design Patterns • Git • Software Engineering</p>
-<p><strong>Topics:</strong> Introduction to Java, OOP principles, UML modeling, Arrays, JSP Sessions, Exception Handling, Database Connectivity (JDBC), Unit Testing, Coupling & Cohesion, Design Patterns</p>
+<p>Advanced software development practices including OOP principles, Java programming, UML design, JSP (JavaServer Pages), JDBC, exception handling, and software engineering best practices.</p>
+<details class="module-details">
+  <summary>View Details</summary>
+  <p><strong>Learning Outcomes:</strong> Students will design and implement object-oriented systems, create web applications using JSP, connect to databases using JDBC, apply design patterns, and write unit tests with JUnit.</p>
+  <p><strong>Technologies:</strong> Java • OOP Design • UML • JSP • JDBC • JUnit • Design Patterns • Git • Software Engineering</p>
+  <p><strong>Topics:</strong> Introduction to Java, OOP principles, UML modeling, Arrays, JSP Sessions, Exception Handling, Database Connectivity (JDBC), Unit Testing, Coupling & Cohesion, Design Patterns</p>
+</details>
 </div>
 
 <div class="module" data-institution="solent" data-level="undergraduate">
@@ -288,9 +303,12 @@ I believe in combining cutting-edge research with practical application. My cour
   <span class="badge badge-hybrid">Hybrid</span>
   <span class="badge badge-dates">10/02/25 - 16/06/25 | 16/06/25 - 6/10/25</span>
 </div>
-<p><strong>Description:</strong> Introduction to programming using the C language. Covers the fundamentals of C programming including vocabulary, basics of programming, flow control, variables, escape sequences, strings, and calculations.</p>
-<p><strong>Learning Outcomes:</strong> Students will be able to obtain and configure a compiler and IDE, write basic C programs, use variables and data types, implement control structures, work with strings, and perform calculations.</p>
-<p><strong>Technologies Covered:</strong> C Programming Language • Compilers • IDEs</p>
+<p>Introduction to programming using the C language. Covers the fundamentals of C programming including vocabulary, basics of programming, flow control, variables, escape sequences, strings, and calculations.</p>
+<details class="module-details">
+  <summary>View Details</summary>
+  <p><strong>Learning Outcomes:</strong> Students will be able to obtain and configure a compiler and IDE, write basic C programs, use variables and data types, implement control structures, work with strings, and perform calculations.</p>
+  <p><strong>Technologies:</strong> C Programming Language • Compilers • IDEs</p>
+</details>
 </div>
 
 <div class="module" data-institution="solent" data-level="undergraduate">
@@ -300,9 +318,12 @@ I believe in combining cutting-edge research with practical application. My cour
   <span class="badge badge-hybrid">Hybrid</span>
   <span class="badge badge-dates">17/02/25 - 16/06/25</span>
 </div>
-<p><strong>Description:</strong> Core programming concepts, data structures, algorithms, and problem-solving methodologies using Python. Emphasizes computational thinking and practical coding skills.</p>
-<p><strong>Learning Outcomes:</strong> Students will master Python programming fundamentals, implement data structures, design algorithms, and apply problem-solving methodologies to real-world scenarios.</p>
-<p><strong>Technologies Covered:</strong> Python • Data Structures • Algorithms</p>
+<p>Core programming concepts, data structures, algorithms, and problem-solving methodologies using Python. Emphasizes computational thinking and practical coding skills.</p>
+<details class="module-details">
+  <summary>View Details</summary>
+  <p><strong>Learning Outcomes:</strong> Students will master Python programming fundamentals, implement data structures, design algorithms, and apply problem-solving methodologies to real-world scenarios.</p>
+  <p><strong>Technologies:</strong> Python • Data Structures • Algorithms</p>
+</details>
 </div>
 
 <div class="module" data-institution="solent" data-level="undergraduate">
@@ -312,9 +333,12 @@ I believe in combining cutting-edge research with practical application. My cour
   <span class="badge badge-hybrid">Hybrid</span>
   <span class="badge badge-dates">13/10/25 - 8/02/26</span>
 </div>
-<p><strong>Description:</strong> Problem-solving through practice with weekly learning activities. Structured in four blocks: Basics (input/output, data types, variables, operators, control structures, functions), Data (data storage, sequences, file I/O, testing, error handling), Visualisation (data visualization libraries, charts, graphs, plots), and OOP (abstraction, objects, classes, encapsulation, inheritance, polymorphism).</p>
-<p><strong>Learning Outcomes:</strong> Students will develop comprehensive Python programming skills, create data visualizations, implement object-oriented designs, and build complete applications with error handling and testing.</p>
-<p><strong>Technologies Covered:</strong> Python • Data Structures • Data Visualization • OOP • File I/O • Testing & Debugging</p>
+<p>Problem-solving through practice with weekly learning activities. Structured in four blocks: Basics, Data, Visualisation, and OOP.</p>
+<details class="module-details">
+  <summary>View Details</summary>
+  <p><strong>Learning Outcomes:</strong> Students will develop comprehensive Python programming skills, create data visualizations, implement object-oriented designs, and build complete applications with error handling and testing.</p>
+  <p><strong>Technologies:</strong> Python • Data Structures • Data Visualization • OOP • File I/O • Testing & Debugging</p>
+</details>
 </div>
 
 <div class="module" data-institution="solent" data-level="undergraduate">
@@ -324,9 +348,12 @@ I believe in combining cutting-edge research with practical application. My cour
   <span class="badge badge-hybrid">Hybrid</span>
   <span class="badge badge-dates">16/06/25 - 6/10/25</span>
 </div>
-<p><strong>Description:</strong> Comprehensive web application development covering both frontend and backend technologies. Students learn to build modern, scalable web applications using industry-standard frameworks and tools.</p>
-<p><strong>Learning Outcomes:</strong> Students will design and develop full-stack web applications, implement RESTful APIs, integrate databases, and deploy applications to cloud platforms.</p>
-<p><strong>Technologies Covered:</strong> Node.js • Express • React • MongoDB • PostgreSQL • AWS/Azure • RESTful APIs</p>
+<p>Comprehensive web application development covering both frontend and backend technologies. Students learn to build modern, scalable web applications using industry-standard frameworks and tools.</p>
+<details class="module-details">
+  <summary>View Details</summary>
+  <p><strong>Learning Outcomes:</strong> Students will design and develop full-stack web applications, implement RESTful APIs, integrate databases, and deploy applications to cloud platforms.</p>
+  <p><strong>Technologies:</strong> Node.js • Express • React • MongoDB • PostgreSQL • AWS/Azure • RESTful APIs</p>
+</details>
 </div>
 
 <div class="module" data-institution="solent" data-level="undergraduate">
@@ -336,9 +363,12 @@ I believe in combining cutting-edge research with practical application. My cour
   <span class="badge badge-hybrid">Hybrid</span>
   <span class="badge badge-dates">10/02/25 - 16/06/25</span>
 </div>
-<p><strong>Description:</strong> Introduction to web technologies covering HTML, CSS, JavaScript, and modern web development practices. Students learn to create responsive, interactive web applications.</p>
-<p><strong>Learning Outcomes:</strong> Students will create semantic HTML structures, style pages with CSS, implement interactive features with JavaScript, and build responsive web applications following modern standards.</p>
-<p><strong>Technologies Covered:</strong> HTML5 • CSS3 • JavaScript (ES6+) • Responsive Design • Web Standards</p>
+<p>Introduction to web technologies covering HTML, CSS, JavaScript, and modern web development practices. Students learn to create responsive, interactive web applications.</p>
+<details class="module-details">
+  <summary>View Details</summary>
+  <p><strong>Learning Outcomes:</strong> Students will create semantic HTML structures, style pages with CSS, implement interactive features with JavaScript, and build responsive web applications following modern standards.</p>
+  <p><strong>Technologies:</strong> HTML5 • CSS3 • JavaScript (ES6+) • Responsive Design • Web Standards</p>
+</details>
 </div>
 
 <div class="module" data-institution="solent" data-level="undergraduate">
@@ -348,9 +378,12 @@ I believe in combining cutting-edge research with practical application. My cour
   <span class="badge badge-hybrid">Hybrid</span>
   <span class="badge badge-dates">Currently Teaching</span>
 </div>
-<p><strong>Description:</strong> User-centered design principles, UI prototyping, usability testing, and UX research methods. Focus on designing user-centric interfaces that enhance user satisfaction and accessibility.</p>
-<p><strong>Learning Outcomes:</strong> Students will conduct user research, create wireframes and prototypes, perform usability testing, and design accessible interfaces following UX best practices.</p>
-<p><strong>Technologies Covered:</strong> Figma • Adobe XD • User Research Tools • Prototyping Tools</p>
+<p>User-centered design principles, UI prototyping, usability testing, and UX research methods. Focus on designing user-centric interfaces that enhance user satisfaction and accessibility.</p>
+<details class="module-details">
+  <summary>View Details</summary>
+  <p><strong>Learning Outcomes:</strong> Students will conduct user research, create wireframes and prototypes, perform usability testing, and design accessible interfaces following UX best practices.</p>
+  <p><strong>Technologies:</strong> Figma • Adobe XD • User Research Tools • Prototyping Tools</p>
+</details>
 </div>
 
 <div class="module" data-institution="solent" data-level="undergraduate">
@@ -360,9 +393,12 @@ I believe in combining cutting-edge research with practical application. My cour
   <span class="badge badge-hybrid">Hybrid</span>
   <span class="badge badge-dates">Currently Teaching</span>
 </div>
-<p><strong>Description:</strong> Introduction to digital media creation, manipulation, and distribution technologies. Covers multimedia fundamentals, digital content development, and media production workflows.</p>
-<p><strong>Learning Outcomes:</strong> Students will create digital media content, manipulate images and videos, understand multimedia formats, and distribute content across digital platforms.</p>
-<p><strong>Technologies Covered:</strong> Adobe Creative Suite • Video Editing Tools • Image Processing • Multimedia Formats</p>
+<p>Introduction to digital media creation, manipulation, and distribution technologies. Covers multimedia fundamentals, digital content development, and media production workflows.</p>
+<details class="module-details">
+  <summary>View Details</summary>
+  <p><strong>Learning Outcomes:</strong> Students will create digital media content, manipulate images and videos, understand multimedia formats, and distribute content across digital platforms.</p>
+  <p><strong>Technologies:</strong> Adobe Creative Suite • Video Editing Tools • Image Processing • Multimedia Formats</p>
+</details>
 </div>
 
 ---
@@ -375,8 +411,11 @@ I believe in combining cutting-edge research with practical application. My cour
   <span class="badge badge-postgraduate">MSc</span>
   <span class="badge badge-hybrid">Hybrid</span>
 </div>
-<p><strong>Description:</strong> Strategic approaches to digital transformation in organizations, covering technology adoption, change management, and digital business models.</p>
-<p><strong>Learning Outcomes:</strong> Students will analyze digital transformation strategies, evaluate technology adoption frameworks, design change management plans, and develop digital business models.</p>
+<p>Strategic approaches to digital transformation in organizations, covering technology adoption, change management, and digital business models.</p>
+<details class="module-details">
+  <summary>View Details</summary>
+  <p><strong>Learning Outcomes:</strong> Students will analyze digital transformation strategies, evaluate technology adoption frameworks, design change management plans, and develop digital business models.</p>
+</details>
 </div>
 
 <div class="module" data-institution="ulster" data-level="postgraduate">
@@ -385,9 +424,12 @@ I believe in combining cutting-edge research with practical application. My cour
   <span class="badge badge-postgraduate">MSc</span>
   <span class="badge badge-hybrid">Hybrid</span>
 </div>
-<p><strong>Description:</strong> Large-scale data processing, distributed systems, cloud infrastructure (AWS/Azure), and big data technologies. Covers container orchestration and serverless architectures.</p>
-<p><strong>Learning Outcomes:</strong> Students will design big data architectures, implement distributed systems, deploy containerized applications, and manage cloud infrastructure at scale.</p>
-<p><strong>Technologies Covered:</strong> AWS • Azure • Docker • Kubernetes • Hadoop • Spark • Big Data Tools</p>
+<p>Large-scale data processing, distributed systems, cloud infrastructure (AWS/Azure), and big data technologies. Covers container orchestration and serverless architectures.</p>
+<details class="module-details">
+  <summary>View Details</summary>
+  <p><strong>Learning Outcomes:</strong> Students will design big data architectures, implement distributed systems, deploy containerized applications, and manage cloud infrastructure at scale.</p>
+  <p><strong>Technologies:</strong> AWS • Azure • Docker • Kubernetes • Hadoop • Spark • Big Data Tools</p>
+</details>
 </div>
 
 <div class="module" data-institution="ulster" data-level="postgraduate">
@@ -396,9 +438,12 @@ I believe in combining cutting-edge research with practical application. My cour
   <span class="badge badge-postgraduate">MSc</span>
   <span class="badge badge-hybrid">Hybrid</span>
 </div>
-<p><strong>Description:</strong> Data wrangling, statistical analysis, supervised and unsupervised learning, and practical ML applications. Integrates research-level content with hands-on projects.</p>
-<p><strong>Learning Outcomes:</strong> Students will preprocess and analyze data, implement machine learning algorithms, evaluate model performance, and apply ML techniques to real-world problems.</p>
-<p><strong>Technologies Covered:</strong> Python • TensorFlow • PyTorch • scikit-learn • Pandas • NumPy • Data Analysis</p>
+<p>Data wrangling, statistical analysis, supervised and unsupervised learning, and practical ML applications. Integrates research-level content with hands-on projects.</p>
+<details class="module-details">
+  <summary>View Details</summary>
+  <p><strong>Learning Outcomes:</strong> Students will preprocess and analyze data, implement machine learning algorithms, evaluate model performance, and apply ML techniques to real-world problems.</p>
+  <p><strong>Technologies:</strong> Python • TensorFlow • PyTorch • scikit-learn • Pandas • NumPy • Data Analysis</p>
+</details>
 </div>
 
 <div class="module" data-institution="ulster" data-level="postgraduate">
@@ -407,9 +452,12 @@ I believe in combining cutting-edge research with practical application. My cour
   <span class="badge badge-postgraduate">MSc</span>
   <span class="badge badge-hybrid">Hybrid</span>
 </div>
-<p><strong>Description:</strong> Advanced neural networks, deep learning architectures, computer vision, and practical applications. Connects coursework to cutting-edge research in AI and machine learning, including my own research on Cosine-Gated LSTM and reinforcement learning.</p>
-<p><strong>Learning Outcomes:</strong> Students will design deep neural networks, implement convolutional and recurrent architectures, apply transfer learning, and develop computer vision applications.</p>
-<p><strong>Technologies Covered:</strong> PyTorch • TensorFlow • Computer Vision • OpenCV • Deep Learning Frameworks</p>
+<p>Advanced neural networks, deep learning architectures, computer vision, and practical applications. Connects coursework to cutting-edge research in AI and machine learning, including my own research on Cosine-Gated LSTM and reinforcement learning.</p>
+<details class="module-details">
+  <summary>View Details</summary>
+  <p><strong>Learning Outcomes:</strong> Students will design deep neural networks, implement convolutional and recurrent architectures, apply transfer learning, and develop computer vision applications.</p>
+  <p><strong>Technologies:</strong> PyTorch • TensorFlow • Computer Vision • OpenCV • Deep Learning Frameworks</p>
+</details>
 </div>
 
 <div class="module" data-institution="ulster" data-level="postgraduate">
@@ -418,9 +466,12 @@ I believe in combining cutting-edge research with practical application. My cour
   <span class="badge badge-postgraduate">MSc</span>
   <span class="badge badge-hybrid">Hybrid</span>
 </div>
-<p><strong>Description:</strong> Knowledge representation, expert systems, ontologies, and knowledge-based systems. Covers semantic web technologies and knowledge management.</p>
-<p><strong>Learning Outcomes:</strong> Students will design knowledge bases, create ontologies, implement expert systems, and apply semantic web technologies for knowledge management.</p>
-<p><strong>Technologies Covered:</strong> OWL • RDF • SPARQL • Expert Systems • Ontology Tools</p>
+<p>Knowledge representation, expert systems, ontologies, and knowledge-based systems. Covers semantic web technologies and knowledge management.</p>
+<details class="module-details">
+  <summary>View Details</summary>
+  <p><strong>Learning Outcomes:</strong> Students will design knowledge bases, create ontologies, implement expert systems, and apply semantic web technologies for knowledge management.</p>
+  <p><strong>Technologies:</strong> OWL • RDF • SPARQL • Expert Systems • Ontology Tools</p>
+</details>
 </div>
 
 <div class="module" data-institution="ulster" data-level="postgraduate">
@@ -429,9 +480,12 @@ I believe in combining cutting-edge research with practical application. My cour
   <span class="badge badge-postgraduate">MSc</span>
   <span class="badge badge-hybrid">Hybrid</span>
 </div>
-<p><strong>Description:</strong> Building scalable software systems, microservices architecture, cloud-native development, and advanced software engineering practices. Emphasizes real-world projects and industry standards.</p>
-<p><strong>Learning Outcomes:</strong> Students will architect scalable systems, implement microservices, apply DevOps practices, and deploy applications using CI/CD pipelines.</p>
-<p><strong>Technologies Covered:</strong> Microservices • Cloud Platforms • DevOps • CI/CD • Container Orchestration</p>
+<p>Building scalable software systems, microservices architecture, cloud-native development, and advanced software engineering practices. Emphasizes real-world projects and industry standards.</p>
+<details class="module-details">
+  <summary>View Details</summary>
+  <p><strong>Learning Outcomes:</strong> Students will architect scalable systems, implement microservices, apply DevOps practices, and deploy applications using CI/CD pipelines.</p>
+  <p><strong>Technologies:</strong> Microservices • Cloud Platforms • DevOps • CI/CD • Container Orchestration</p>
+</details>
 </div>
 
 <div class="module" data-institution="ulster" data-level="postgraduate">
@@ -440,8 +494,11 @@ I believe in combining cutting-edge research with practical application. My cour
   <span class="badge badge-postgraduate">MSc</span>
   <span class="badge badge-hybrid">Hybrid</span>
 </div>
-<p><strong>Description:</strong> Practical consulting project work, applying computing knowledge to real-world business problems. Includes project management and client interaction.</p>
-<p><strong>Learning Outcomes:</strong> Students will analyze business requirements, design technical solutions, manage projects, communicate with stakeholders, and deliver consulting outcomes.</p>
+<p>Practical consulting project work, applying computing knowledge to real-world business problems. Includes project management and client interaction.</p>
+<details class="module-details">
+  <summary>View Details</summary>
+  <p><strong>Learning Outcomes:</strong> Students will analyze business requirements, design technical solutions, manage projects, communicate with stakeholders, and deliver consulting outcomes.</p>
+</details>
 </div>
 
 ---
@@ -454,9 +511,12 @@ I believe in combining cutting-edge research with practical application. My cour
   <span class="badge badge-secondary">GCSE (Level 2)</span>
   <span class="badge badge-online">Online</span>
 </div>
-<p><strong>Description:</strong> Comprehensive GCSE curriculum covering programming fundamentals, algorithms, data structures, and computer systems. Designed for students preparing for GCSE examinations.</p>
-<p><strong>Learning Outcomes:</strong> Students will master programming concepts, understand algorithms and data structures, comprehend computer systems architecture, and excel in GCSE examinations.</p>
-<p><strong>Technologies Covered:</strong> Python • Algorithms • Data Structures • Computer Systems</p>
+<p>Comprehensive GCSE curriculum covering programming fundamentals, algorithms, data structures, and computer systems. Designed for students preparing for GCSE examinations.</p>
+<details class="module-details">
+  <summary>View Details</summary>
+  <p><strong>Learning Outcomes:</strong> Students will master programming concepts, understand algorithms and data structures, comprehend computer systems architecture, and excel in GCSE examinations.</p>
+  <p><strong>Technologies:</strong> Python • Algorithms • Data Structures • Computer Systems</p>
+</details>
 </div>
 
 <div class="module" data-institution="crimson" data-level="secondary">
@@ -465,9 +525,12 @@ I believe in combining cutting-edge research with practical application. My cour
   <span class="badge badge-secondary">A-Level (Level 3)</span>
   <span class="badge badge-online">Online</span>
 </div>
-<p><strong>Description:</strong> Advanced computer science curriculum covering advanced programming, algorithms, data structures, software engineering, and computer systems. Prepares students for A-level examinations and further study.</p>
-<p><strong>Learning Outcomes:</strong> Students will develop advanced programming skills, design complex algorithms, understand software engineering principles, and achieve success in A-level examinations.</p>
-<p><strong>Technologies Covered:</strong> Advanced Python • Object-Oriented Programming • Software Engineering • Algorithms & Complexity</p>
+<p>Advanced computer science curriculum covering advanced programming, algorithms, data structures, software engineering, and computer systems. Prepares students for A-level examinations and further study.</p>
+<details class="module-details">
+  <summary>View Details</summary>
+  <p><strong>Learning Outcomes:</strong> Students will develop advanced programming skills, design complex algorithms, understand software engineering principles, and achieve success in A-level examinations.</p>
+  <p><strong>Technologies:</strong> Advanced Python • Object-Oriented Programming • Software Engineering • Algorithms & Complexity</p>
+</details>
 </div>
 
 ---
@@ -544,72 +607,6 @@ Comprehensive progressive teaching modules covering full-stack web development:
 
 ---
 
-## Featured Modules
-
-<div class="featured-modules">
-  <div class="featured-module-card">
-    <div class="featured-badge">Featured</div>
-    <h3>QHO543 - Object Oriented Design and Development</h3>
-    <p><strong>Solent University • Level 5</strong></p>
-    <p>Comprehensive Java-based web development course covering OOP principles, UML design, JSP, JDBC, and design patterns. Taught multiple times with strong student engagement and practical project outcomes.</p>
-    <div class="featured-stats">
-      <span>Taught 2+ times</span>
-      <span>40+ students</span>
-      <span>85%+ average grade</span>
-    </div>
-  </div>
-
-  <div class="featured-module-card">
-    <div class="featured-badge">Featured</div>
-    <h3>COM747 - Introduction to Data Science & Machine Learning</h3>
-    <p><strong>Ulster University • MSc</strong></p>
-    <p>Integrates cutting-edge research with practical ML applications. Students work on real-world projects using TensorFlow, PyTorch, and scikit-learn, connecting to my research on reinforcement learning and neural architectures.</p>
-    <div class="featured-stats">
-      <span>Research-integrated</span>
-      <span>25+ students</span>
-      <span>90%+ satisfaction</span>
-    </div>
-  </div>
-
-  <div class="featured-module-card">
-    <div class="featured-badge">Featured</div>
-    <h3>Deep Learning and Its Application</h3>
-    <p><strong>Ulster University • MSc</strong></p>
-    <p>Advanced neural networks course that directly incorporates my research on Cosine-Gated LSTM and adaptive prediction horizons. Students learn state-of-the-art architectures and apply them to computer vision problems.</p>
-    <div class="featured-stats">
-      <span>Research-integrated</span>
-      <span>20+ students</span>
-      <span>88%+ average grade</span>
-    </div>
-  </div>
-
-  <div class="featured-module-card">
-    <div class="featured-badge">Featured</div>
-    <h3>QHO427 - Introduction to Networks and Security</h3>
-    <p><strong>Solent University • Level 4</strong></p>
-    <p>Hands-on networking course using Cisco NetAcad resources. Taught multiple times with practical lab sessions covering Windows and Linux server environments. High student engagement and industry-relevant skills.</p>
-    <div class="featured-stats">
-      <span>Taught 3+ times</span>
-      <span>50+ students</span>
-      <span>82%+ average grade</span>
-    </div>
-  </div>
-
-  <div class="featured-module-card">
-    <div class="featured-badge">Featured</div>
-    <h3>QHO540 - Web Application Development</h3>
-    <p><strong>Solent University • Level 5</strong></p>
-    <p>Full-stack web development course covering modern frameworks, API design, database integration, and cloud deployment. Students build complete applications ready for industry.</p>
-    <div class="featured-stats">
-      <span>Industry-focused</span>
-      <span>35+ students</span>
-      <span>87%+ average grade</span>
-    </div>
-  </div>
-</div>
-
----
-
 ## Contact & Availability
 
 <div class="contact-section">
@@ -635,60 +632,3 @@ Comprehensive progressive teaching modules covering full-stack web development:
 <p class="section-cta">
   <strong>For course-related inquiries, student consultations, or teaching resource requests, please feel free to reach out.</strong>
 </p>
-
----
-
-## Teaching Experience Summary
-
-<ul>
-<li><strong>13+ years</strong> of programming and teaching experience across multiple institutions</li>
-<li><strong>20+ modules</strong> developed and delivered at undergraduate and postgraduate levels</li>
-<li><strong>500+ students</strong> taught across various levels (Foundation, GCSE, A-Level, Undergraduate, MSc)</li>
-<li>Current positions: <strong>QA Ltd</strong> (January 2024 - Present) and <strong>Crimson Education</strong> (November 2020 - Present)</li>
-<li>Previous roles: <strong>South and City College Birmingham</strong> (2023-2024) and <strong>Aston University</strong> (2020-2021)</li>
-<li>Experience with diverse student cohorts, including students with learning disabilities</li>
-<li>Expertise in both face-to-face and online/hybrid delivery methods</li>
-<li>Proven track record in curriculum development, assessment design, and student mentoring</li>
-</ul>
-
-<p class="section-cta">
-  <strong>I'm open to discussing teaching opportunities, course development, and educational collaborations.</strong>
-</p>
-
-<script>
-// Teaching page filter functionality
-document.addEventListener('DOMContentLoaded', function() {
-    const filterButtons = document.querySelectorAll('.teaching-filters .filter-btn');
-    const modules = document.querySelectorAll('.module');
-    
-    filterButtons.forEach(btn => {
-        btn.addEventListener('click', () => {
-            // Update active state
-            filterButtons.forEach(b => b.classList.remove('active'));
-            btn.classList.add('active');
-            
-            const filter = btn.dataset.filter;
-            
-            modules.forEach(module => {
-                if (filter === 'all') {
-                    module.style.display = 'block';
-                } else if (filter === 'solent' && module.dataset.institution === 'solent') {
-                    module.style.display = 'block';
-                } else if (filter === 'ulster' && module.dataset.institution === 'ulster') {
-                    module.style.display = 'block';
-                } else if (filter === 'crimson' && module.dataset.institution === 'crimson') {
-                    module.style.display = 'block';
-                } else if (filter === 'foundation' && module.dataset.level === 'foundation') {
-                    module.style.display = 'block';
-                } else if (filter === 'undergraduate' && module.dataset.level === 'undergraduate') {
-                    module.style.display = 'block';
-                } else if (filter === 'postgraduate' && module.dataset.level === 'postgraduate') {
-                    module.style.display = 'block';
-                } else {
-                    module.style.display = 'none';
-                }
-            });
-        });
-    });
-});
-</script>

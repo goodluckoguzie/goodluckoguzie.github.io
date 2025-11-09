@@ -16,6 +16,9 @@
     <script src="{{ '/assets/js/reading-time.js' | relative_url }}" defer></script>
     <script src="{{ '/assets/js/social-sharing.js' | relative_url }}" defer></script>
     {% endif %}
+    {% if page.url == '/teaching/' or page.url == '/teaching' %}
+    <script src="{{ '/assets/js/teaching-filters.js' | relative_url }}" defer></script>
+    {% endif %}
     <script src="{{ '/assets/js/image-optimization.js' | relative_url }}" defer></script>
     <script src="{{ '/assets/js/enhanced-features.js' | relative_url }}" defer></script>
     {% seo %}

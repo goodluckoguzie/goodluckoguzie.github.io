@@ -3357,6 +3357,22 @@ table td.text-center {
     margin: 2rem 0;
 }
 
+@media (max-width: 768px) {
+    .portfolio-grid {
+        grid-template-columns: 1fr;
+        gap: 1.5rem;
+    }
+    
+    .portfolio-filters {
+        gap: 0.5rem;
+    }
+    
+    .portfolio-filter-btn {
+        padding: 0.5rem 1rem;
+        font-size: 0.85rem;
+    }
+}
+
 .portfolio-grid-single {
     grid-template-columns: 1fr;
     max-width: 800px;
@@ -3944,6 +3960,39 @@ table td.text-center {
 .module p {
     margin: 0.75rem 0;
     line-height: 1.7;
+}
+
+.module-details {
+    margin-top: 1rem;
+}
+
+.module-details summary {
+    cursor: pointer;
+    color: var(--link);
+    font-weight: 500;
+    padding: 0.5rem 0;
+    user-select: none;
+    transition: color var(--transition);
+}
+
+.module-details summary:hover {
+    color: var(--link-hover);
+    text-decoration: underline;
+}
+
+.module-details summary:focus-visible {
+    outline: 2px solid var(--link);
+    outline-offset: 2px;
+    border-radius: 2px;
+}
+
+.module-details[open] summary {
+    margin-bottom: 0.75rem;
+}
+
+.module-details p {
+    margin: 0.5rem 0;
+    padding-left: 1rem;
 }
 
 .module strong {
