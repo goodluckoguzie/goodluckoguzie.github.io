@@ -1,450 +1,276 @@
 # 🔥 BRUTAL CRITIQUE: Research Portfolio Page
 
-## Current State: https://goodluckoguzie.github.io/portfolio
+## Current State: OVERWHELMING & CAROUSEL OVERLOAD
 
-**Date:** November 2024  
-**Focus:** Research portfolio page restructure and improvement
-
----
-
-## 🚨 CRITICAL ISSUES
-
-### **ISSUE #1: MISSING YOUR ACTUAL RESEARCH STRUCTURE**
-**Problem:** Your page lists projects but doesn't show your research THEME or ORGANIZATION.
-
-**What's Missing:**
-- ❌ No clear research areas (Social Robot Navigation, RL, Action Recognition)
-- ❌ Environments are buried (SocNavGym, FallingBallEnv, LiteSocNavGym)
-- ❌ Your models aren't clearly categorized (Predictive World Models, CGLSTM, Adaptive Prediction Horizons)
-- ❌ Projects look disconnected, not like a coherent research program
-
-**Impact:** Visitors can't see your research vision or how projects connect.
+**Rating: 3.5/10** - Functional but visitors will be confused by too many carousels and too much scrolling.
 
 ---
 
-### **ISSUE #2: GITHUB LINKS ARE GENERIC**
-**Problem:** Most links just say "Code Repository" pointing to your main GitHub, not specific repos.
+## 🚨 FATAL FLAWS
 
-**What's Wrong:**
-- ❌ "Code Repository" → generic GitHub profile (useless)
-- ❌ Missing direct links to:
-  - SocNavGym (you were part of team)
-  - FallingBallEnv (you created it!)
-  - LiteSocNavGym (you created it!)
-  - CosineGatedLSTM
-  - ActionRecognitionUsingWiFi
-  - Disneyland_Project
-  - WorldModels
-- ❌ No differentiation between "created" vs "contributed to"
+### 1. **CAROUSEL OVERLOAD: 5 CAROUSELS!**
+**Problems:**
+- ❌ **5 separate carousels** - Environments, Models, Action Recognition, Other Projects, PhD Thesis
+- ❌ **Carousels with 1 item** - Action Recognition (1 slide), PhD Thesis (1 slide), Other Projects (1 slide)
+- ❌ **Why carousel for 1 item?** - Makes no sense, just show the card!
+- ❌ **Navigation confusion** - Visitors don't know there are multiple carousels
+- ❌ **Mobile nightmare** - Carousels are hard to use on mobile
+- ❌ **Accessibility issues** - Carousels require JavaScript, keyboard navigation is complex
 
-**Impact:** Can't verify your work. Looks unprofessional. Missing credit for your creations.
+**Impact:** Visitors get lost, can't find what they want, frustrated with navigation.
 
 ---
 
-### **ISSUE #3: NO RESEARCH AREA ORGANIZATION**
-**Problem:** Everything is flat. No grouping by research theme.
+### 2. **TOO MUCH SCROLLING: ENDLESS PAGE**
+**Problems:**
+- ❌ **539 lines** of content
+- ❌ **6 major sections** with carousels
+- ❌ **Generic "Research Methodologies"** section at bottom (waste of space)
+- ❌ **No quick navigation** - Can't jump to sections
+- ❌ **Everything requires scrolling** - Nothing visible above fold
 
-**Current Structure:**
-```
-- Project 1
-- Project 2
-- Project 3
-- Project 4
-- Project 5
-```
-
-**What You Need:**
-```
-🔬 Research Area 1: Social Robot Navigation
-  ├── Environments (SocNavGym, FallingBallEnv, LiteSocNavGym)
-  ├── Models (Predictive World Models, CGLSTM, Adaptive Prediction Horizons)
-  └── Publications
-  
-🔬 Research Area 2: Action Recognition
-  ├── Wi-Fi CSI Action Recognition
-  └── ESP32 Implementation
-  
-🔬 Research Area 3: Other Projects
-  ├── Disneyland Project
-  └── WorldModels
-```
-
-**Impact:** Hard to understand your research focus. Looks scattered.
+**Impact:** Visitors leave before seeing your best work.
 
 ---
 
-### **ISSUE #4: ENVIRONMENTS ARE INVISIBLE**
-**Problem:** You created FallingBallEnv and LiteSocNavGym, but they're not featured!
+### 3. **INLINE STYLES EVERYWHERE**
+**Problems:**
+- ❌ **Inline styles in project-stats** - `style="margin: 1rem 0; padding: 0.75rem; background: var(--bg-alt); border-radius: 6px; font-size: 0.875rem;"`
+- ❌ **Inline styles in video elements** - `style="width: 100%; height: auto; border-radius: 6px; cursor: pointer;"`
+- ❌ **Inline styles in placeholders** - `style="display: flex; align-items: center; justify-content: center; min-height: 200px; background: var(--bg-alt); border-radius: 6px; border: 2px dashed var(--border);"`
+- ❌ **Inconsistent styling** - Some cards styled inline, others use classes
+- ❌ **Maintenance nightmare** - Can't update styles globally
 
-**What's Missing:**
-- ❌ No "Environments" section
-- ❌ Can't see that you CREATED environments (big deal!)
-- ❌ SocNavGym contribution isn't clear (you were "part of team")
-- ❌ Environments should be highlighted as research tools
-
-**Impact:** Major contribution missing. Creating RL environments is significant work!
-
----
-
-### **ISSUE #5: MODELS ARE CONFUSED WITH PROJECTS**
-**Problem:** Your models (Predictive World Models, CGLSTM, Adaptive Prediction Horizons) are buried in project descriptions.
-
-**What's Confusing:**
-- Is "Predictive World Models" a project or a model?
-- Is "CGLSTM" a separate project or part of another?
-- Where does "Adaptive Prediction Horizons" fit?
-
-**What You Need:**
-- Clear MODEL section showing your 3 proposed models
-- Each model should have:
-  - What it is (model/proposed solution)
-  - What problems it solves
-  - Where it's used/validated
-  - GitHub links
-  - Publications
+**Impact:** Unprofessional, hard to maintain, inconsistent appearance.
 
 ---
 
-### **ISSUE #6: ONGOING VS COMPLETED IS CLEAR BUT PROJECTS ARE INCOMPLETE**
-**Problem:** Good separation, but projects missing details.
+### 4. **FILTER SYSTEM IS CONFUSING**
+**Problems:**
+- ❌ **7 filter buttons** - Too many options
+- ❌ **Filters don't match sections** - Filters say "social-nav" but sections are "Research Environments"
+- ❌ **No visual feedback** - Hard to see what's filtered
+- ❌ **Carousels break filtering** - Filtering doesn't work well with carousels
+- ❌ **"All Research" is default** - Shows everything anyway
 
-**Missing Information:**
-- ❌ Which environment was used for each model?
-- ❌ What were the results/metrics?
-- ❌ Which projects are published vs unpublished?
-- ❌ What's the timeline/chronology?
-
----
-
-### **ISSUE #7: ACTION RECOGNITION IS BURIED**
-**Problem:** Wi-Fi CSI Action Recognition is a significant project but:
-- ❌ Not clearly visible
-- ❌ No clear category
-- ❌ ESP32 hardware aspect not highlighted (unique!)
-
-**Impact:** Misses showing breadth of your research beyond robotics.
+**Impact:** Filters are useless, visitors ignore them.
 
 ---
 
-### **ISSUE #8: "OTHER PROJECTS" NEED CONTEXT**
-**Problem:** Disneyland Project and WorldModels listed but:
-- ❌ No description of what they are
-- ❌ Why they're important
-- ❌ How they fit your research
+### 5. **STATS SECTION IS REDUNDANT**
+**Problems:**
+- ❌ **Stats already on homepage** - Why repeat?
+- ❌ **Takes up valuable space** - Could show actual projects instead
+- ❌ **Not actionable** - Just numbers, no context
 
-**Impact:** Looks like random projects, not intentional research.
-
----
-
-### **ISSUE #9: NO VISUAL HIERARCHY FOR RESEARCH THEMES**
-**Problem:** Everything looks same importance.
-
-**What You Need:**
-- Primary research areas (clear headings)
-- Sub-sections within each area
-- Visual separation (cards, tabs, or accordions)
-- Clear indication of what's ongoing vs completed
+**Should Be:**
+- ✅ Remove or move to bottom
+- ✅ Or integrate into page intro
 
 ---
 
-### **ISSUE #10: FILTERING IS GENERIC**
-**Problem:** Filters are "Research | Web | Teaching" but don't match your actual research structure.
+### 6. **SECTIONS ARE TOO LONG**
+**Problems:**
+- ❌ **Each carousel card is massive** - Full description, stats, video, badges
+- ❌ **Too much information per card** - Overwhelming
+- ❌ **Can't scan quickly** - Have to read everything
+- ❌ **Videos autoplay?** - No, but they're prominent (good, but takes space)
 
-**Better Filters:**
-- By Research Area (Social Navigation | RL Models | Action Recognition)
-- By Type (Environments | Models | Applications)
-- By Status (Ongoing | Completed | Published)
-- By Environment (SocNavGym | FallingBallEnv | LiteSocNavGym)
+**Should Be:**
+- ✅ Shorter cards
+- ✅ Expandable details
+- ✅ Quick scan format
 
 ---
 
-## 💡 SUGGESTIONS FOR IMPROVEMENT
+### 7. **"RESEARCH METHODOLOGIES" IS GENERIC FILLER**
+**Problems:**
+- ❌ **4 bullet points** - "Algorithm Development", "Experimental Design", etc.
+- ❌ **No specific examples** - Just generic statements
+- ❌ **Takes up space** - Doesn't add value
+- ❌ **Should be removed** - Or moved to About page
 
-### **SUGGESTION 1: RESTRUCTURE BY RESEARCH AREAS**
+**Impact:** Looks like filler content, unprofessional.
 
-**New Structure:**
+---
+
+### 8. **NO CLEAR HIERARCHY**
+**Problems:**
+- ❌ **Everything looks equal** - Environments, Models, Action Recognition all same level
+- ❌ **No visual distinction** - All carousels look the same
+- ❌ **Can't tell what's important** - Published work vs ongoing vs completed
+- ❌ **No "featured" section** - Your best work isn't highlighted
+
+**Should Be:**
+- ✅ Featured section at top (published papers)
+- ✅ Clear visual hierarchy
+- ✅ Status badges more prominent
+
+---
+
+### 9. **CAROUSELS FOR SINGLE ITEMS**
+**Problems:**
+- ❌ **Action Recognition** - 1 slide, why carousel?
+- ❌ **PhD Thesis** - 1 slide, why carousel?
+- ❌ **Other Projects** - 1 slide, why carousel?
+- ❌ **Waste of space** - Carousel controls take space for nothing
+
+**Should Be:**
+- ✅ Just show the card directly
+- ✅ No carousel needed
+
+---
+
+### 10. **MOBILE EXPERIENCE IS TERRIBLE**
+**Problems:**
+- ❌ **Carousels are hard to swipe** - Multiple carousels confuse users
+- ❌ **Too much scrolling** - Page is extremely long
+- ❌ **Cards are too wide** - Hard to read on mobile
+- ❌ **Filters overflow** - 7 buttons don't fit on mobile
+
+**Impact:** Mobile users leave immediately.
+
+---
+
+## 💡 WHAT VISITORS ACTUALLY NEED
+
+1. **Quick overview** - What research areas?
+2. **Featured work** - Best/published projects first
+3. **Easy navigation** - Jump to sections
+4. **Scannable content** - Quick cards, expandable details
+5. **Clear status** - Published vs Ongoing vs Completed
+
+**Total time to understand: 30 seconds max**
+
+---
+
+## 🎯 SIMPLICITY PRINCIPLES
+
+1. **Remove Carousels** - Use grid/cards instead
+2. **Reduce Sections** - Combine related items
+3. **Progressive Disclosure** - Show less, expand for details
+4. **Visual Hierarchy** - Featured → Published → Ongoing
+5. **Quick Navigation** - Sticky nav or jump links
+
+---
+
+## 📊 CURRENT VS IDEAL
+
+| Current | Ideal |
+|---------|-------|
+| 5 carousels | 0 carousels (grid layout) |
+| 539 lines | ~200 lines |
+| 6 sections | 3-4 sections |
+| Inline styles | CSS classes only |
+| Generic filters | Smart filtering |
+| Endless scroll | Quick navigation |
+
+---
+
+## ✅ WHAT TO KEEP
+
+1. ✅ Project cards (but simplify)
+2. ✅ Status badges (ONGOING, COMPLETED, PUBLISHED)
+3. ✅ Videos/images (but smaller)
+4. ✅ Filter concept (but improve)
+
+## ❌ WHAT TO REMOVE/CHANGE
+
+1. ❌ All carousels → Grid layout
+2. ❌ Inline styles → CSS classes
+3. ❌ Generic "Research Methodologies" → Remove
+4. ❌ Stats section → Remove or move
+5. ❌ Single-item carousels → Direct cards
+
+---
+
+## 🚀 RECOMMENDED RESTRUCTURE
+
+### **New Structure:**
 
 ```
 Research Portfolio
 
-[Research Area Tabs/Nav]
-├── 🔬 Social Robot Navigation (Primary)
-├── 🤖 Reinforcement Learning Models  
-├── 📡 Action Recognition
-└── 🔧 Tools & Environments
+[Quick Stats - Optional, smaller]
 
-OR
+[Featured Work - Published Papers]
+├── Cosine-Gated LSTM (IEEE PRML 2024)
+└── Predictive World Models (UKCI 2023)
 
-[Hierarchical Sections]
-├── 1. SOCIAL ROBOT NAVIGATION
-│   ├── Environments
-│   │   ├── SocNavGym (Team Contribution)
-│   │   ├── FallingBallEnv (Created)
-│   │   └── LiteSocNavGym (Created)
-│   └── Models & Algorithms
-│       ├── Predictive World Models
-│       ├── Adaptive Prediction Horizons
-│       └── CGLSTM (used here)
-├── 2. REINFORCEMENT LEARNING MODELS
-│   ├── Predictive World Models for Social Navigation
-│   ├── Cosine-Gated LSTM (CGLSTM)
-│   └── Adaptive Predictive RL (Entropy-Driven)
-└── 3. ACTION RECOGNITION
-    └── Wi-Fi CSI Action Recognition (ESP32)
+[Research Areas - Tabs or Sections]
+├── 🔬 Social Robot Navigation
+│   ├── Environments (Grid: 3 cards)
+│   └── Models (Grid: 2 cards)
+├── 🤖 Reinforcement Learning
+│   └── Models (Grid: 1 card)
+└── 📡 Action Recognition
+    └── Projects (Grid: 1 card)
+
+[PhD Thesis - Single card, no carousel]
+
+[Other Projects - Grid, no carousel]
 ```
+
+**Total: 4-5 sections, no carousels, grid layout**
 
 ---
 
-### **SUGGESTION 2: CREATE SEPARATE SECTIONS**
+## 🎨 DESIGN FIXES NEEDED
 
-**Section 1: Research Environments**
-```
-🎯 Research Environments
-
-These are the environments I created or contributed to for 
-evaluating reinforcement learning algorithms and social 
-navigation models.
-
-[Card 1] FallingBallEnv
-- Created: You
-- Purpose: Gravity/bouncing simulation
-- GitHub: [link]
-- Used in: [which projects]
-
-[Card 2] LiteSocNavGym  
-- Created: You
-- Purpose: Lightweight social navigation
-- GitHub: [link]
-- Used in: [which projects]
-
-[Card 3] SocNavGym
-- Team Contribution
-- Your Role: RL aspect development
-- GitHub: [link]
-- Used in: [which projects]
-```
-
-**Section 2: Proposed Models**
-```
-🧠 Proposed Models & Algorithms
-
-[Model Card 1] Predictive World Models
-- Type: RL Model
-- Problem: Multi-step prediction for navigation
-- Environment: SocNavGym, FallingBallEnv
-- Publication: UKCI 2023
-- GitHub: [if available]
-
-[Model Card 2] Cosine-Gated LSTM (CGLSTM)
-- Type: Neural Architecture
-- Problem: Sequential learning
-- Environment: Used in Predictive Models
-- Publication: IEEE PRML 2024
-- GitHub: [link]
-
-[Model Card 3] Adaptive Prediction Horizons
-- Type: RL Algorithm
-- Problem: Dynamic horizon adjustment
-- Environment: SocNavGym, FallingBallEnv
-- Status: Ongoing
-- GitHub: [if available]
-```
-
-**Section 3: Applications**
-```
-📡 Action Recognition
-- Wi-Fi CSI Action Recognition
-- Hardware: ESP32
-- GitHub: [link]
-- Status: [ongoing/completed]
-```
+1. **Replace carousels with grid** - 2-3 columns, responsive
+2. **Shorter cards** - Title, brief description, image, link
+3. **Expandable details** - Click to see full description
+4. **Remove inline styles** - All CSS in stylesheet
+5. **Better filtering** - Visual feedback, clear categories
+6. **Sticky navigation** - Jump to sections
+7. **Featured section** - Highlight published work
 
 ---
 
-### **SUGGESTION 3: IMPROVE VISUAL ORGANIZATION**
+## 📈 EXPECTED IMPROVEMENTS
 
-**Option A: Tabbed Interface**
-- Tabs: Environments | Models | Applications | All
-- Click tab to filter
-- Visual, easy navigation
-
-**Option B: Accordion Sections**
-- Expandable sections per research area
-- Can see overview, expand for details
-- Reduces overwhelming feeling
-
-**Option C: Card Grid with Tags**
-- Cards organized by research area
-- Tags for filtering: #Environment #Model #Published #Ongoing
-- Visual hierarchy with size/color
+**After Simplification:**
+- ✅ 70% less scrolling
+- ✅ Faster page load
+- ✅ Better mobile experience
+- ✅ Easier to scan
+- ✅ More professional
+- ✅ Higher engagement
 
 ---
 
-### **SUGGESTION 4: ADD RESEARCH TIMELINE/CHRONOLOGY**
+## 🚨 PRIORITY FIXES
 
-Show progression:
-```
-Research Journey:
+### **Week 1 (Critical):**
+1. ✅ Remove all carousels → Grid layout
+2. ✅ Remove inline styles → CSS classes
+3. ✅ Remove "Research Methodologies" section
+4. ✅ Simplify cards → Shorter, expandable
+5. ✅ Remove single-item carousels → Direct cards
 
-2023: Predictive World Models → UKCI 2023
-2024: CGLSTM → IEEE PRML 2024
-2024: Adaptive Prediction Horizons (Ongoing)
-2024: Action Recognition (Ongoing)
-```
-
----
-
-### **SUGGESTION 5: CLEAR CONTRIBUTION LABELS**
-
-For each project, clearly show:
-- ✅ **Created** - You built this from scratch
-- 👥 **Team Contribution** - You were part of team (specify role)
-- 📄 **Published** - Peer-reviewed publication
-- 🔄 **Ongoing** - Active development
+### **Week 2 (Important):**
+1. ✅ Add featured section (published papers)
+2. ✅ Improve filtering system
+3. ✅ Add quick navigation
+4. ✅ Optimize mobile experience
+5. ✅ Reduce page length
 
 ---
 
-### **SUGGESTION 6: IMPROVE GITHUB LINKS**
+## 💭 FINAL THOUGHTS
 
-Replace generic "Code Repository" with:
-- Specific repo names
-- Brief description of what's in repo
-- Direct links to each repo
-- Differentiate: Created vs Contributed
+**Your research is impressive, but the presentation is overwhelming.**
 
-Example:
-```
-GitHub Repositories:
-• [falling_ball_env](link) - Custom Gym environment for gravity simulation
-• [CosineGatedLSTM](link) - Implementation of CGLSTM architecture  
-• [SocNavGym](link) - Team contribution: RL aspects
-```
+**Visitors want to:**
+- See your best work quickly
+- Understand your research areas
+- Find specific projects easily
+- Read details when interested
 
----
+**Current page makes them:**
+- Scroll forever
+- Navigate confusing carousels
+- Get lost in too much information
+- Leave frustrated
 
-### **SUGGESTION 7: ADD VISUAL ELEMENTS**
-
-- Research area icons/badges
-- Environment logos or screenshots
-- Model architecture diagrams (placeholders for now)
-- Timeline visualization
-- Connection lines showing how projects relate
-
----
-
-### **SUGGESTION 8: SIMPLIFY PROJECT DESCRIPTIONS**
-
-**Current Problem:** Too many bullets, overwhelming
-
-**Solution:** 
-- Summary paragraph (2-3 sentences)
-- Key contributions (3-4 bullets max)
-- Technologies used (one line, comma-separated)
-- Results/Impact (brief, 2-3 bullets)
-
----
-
-### **SUGGESTION 9: ADD "QUICK FACTS" SECTION**
-
-At top of page:
-```
-Research Overview:
-• 3 Proposed Models
-• 3 Environments (2 created, 1 team contribution)
-• 2 Conference Papers Published
-• 1 PhD Thesis Completed
-• Active Areas: Social Navigation, RL, Action Recognition
-```
-
----
-
-### **SUGGESTION 10: MOBILE-FRIENDLY FILTERING**
-
-For mobile:
-- Dropdown instead of buttons
-- Stack sections vertically
-- Collapsible sections
-- Touch-friendly buttons
-
----
-
-## 📐 PROPOSED WIREFRAME
-
-```
-╔═══════════════════════════════════════════════════════════════╗
-║ RESEARCH PORTFOLIO                                             ║
-╠═══════════════════════════════════════════════════════════════╣
-║                                                                 ║
-║ [Quick Facts Banner]                                           ║
-║ • 3 Proposed Models • 3 Environments • 2 Papers Published     ║
-║                                                                 ║
-╠═══════════════════════════════════════════════════════════════╣
-║                                                                 ║
-║ [Research Area Navigation]                                     ║
-║ [All] [Social Navigation] [RL Models] [Action Recognition]   ║
-║                                                                 ║
-╠═══════════════════════════════════════════════════════════════╣
-║                                                                 ║
-║ 🔬 SOCIAL ROBOT NAVIGATION                                     ║
-║                                                                 ║
-║ ┌─────────────────────────────────────────────────────────┐  ║
-║ │ Environments                                             │  ║
-║ │ ┌────┐ ┌────┐ ┌────┐                                    │  ║
-║ │ │FB │ │LSN │ │SN │                                    │  ║
-║ │ └────┘ └────┘ └────┘                                    │  ║
-║ └─────────────────────────────────────────────────────────┘  ║
-║                                                                 ║
-║ ┌─────────────────────────────────────────────────────────┐  ║
-║ │ Models & Algorithms                                       │  ║
-║ │ • Predictive World Models (Published)                    │  ║
-║ │ • Adaptive Prediction Horizons (Ongoing)                │  ║
-║ └─────────────────────────────────────────────────────────┘  ║
-║                                                                 ║
-╠═══════════════════════════════════════════════════════════════╣
-║                                                                 ║
-║ 🧠 REINFORCEMENT LEARNING MODELS                               ║
-║                                                                 ║
-║ [Model Cards showing each proposed model]                     ║
-║                                                                 ║
-╠═══════════════════════════════════════════════════════════════╣
-║                                                                 ║
-║ 📡 ACTION RECOGNITION                                          ║
-║                                                                 ║
-║ [Wi-Fi CSI Action Recognition project]                          ║
-║                                                                 ║
-╚═══════════════════════════════════════════════════════════════╝
-```
-
----
-
-## 🎯 IMPLEMENTATION PRIORITY
-
-### **HIGH PRIORITY (Do First)**
-1. ✅ Add all GitHub repo links (specific, not generic)
-2. ✅ Organize by research areas (Social Navigation, RL Models, Action Recognition)
-3. ✅ Create Environments section highlighting your creations
-4. ✅ Separate Models section from Projects
-
-### **MEDIUM PRIORITY**
-5. ✅ Improve filtering by research area
-6. ✅ Add contribution labels (Created vs Team)
-7. ✅ Simplify project descriptions
-8. ✅ Add Quick Facts section
-
-### **LOW PRIORITY (Polish)**
-9. ✅ Add visual elements (icons, badges)
-10. ✅ Timeline/chronology view
-11. ✅ Mobile enhancements
-
----
-
-## 💬 NEXT STEPS
-
-1. **You review this critique**
-2. **Decide on structure** (tabs vs sections vs cards)
-3. **Provide more details** about each project if needed
-4. **I implement** the restructure
-5. **We iterate** based on your feedback
-
-**Ready to transform your research page?** 🚀
-
+**Fix: Simplify, remove carousels, use grids, progressive disclosure.**
