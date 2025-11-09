@@ -541,8 +541,8 @@
             });
         }
         
-        // 3D Card Tilt on Mouse Move - ALL cards across ALL pages
-        const cards = document.querySelectorAll('.home-publication-card, .home-research-card, .carousel-card, .publication, .module, .approach-card, .education-card, .collaboration-area-card, .collaboration-type-card, .collaboration-form-section, .contact-info-box, .project-header, .hero-section, .quick-stats-item, .table-of-contents, .position-card, .role-card, .experience-item, .metric-card, .stat-card, .timeline-item, .featured-module-card, .contact-card, .tools-section, .skills-section');
+        // 3D Card Tilt on Mouse Move - ALL cards across ALL pages (excluding research cards)
+        const cards = document.querySelectorAll('.home-publication-card, .carousel-card, .publication, .module, .approach-card, .education-card, .collaboration-area-card, .collaboration-type-card, .collaboration-form-section, .contact-info-box, .project-header, .hero-section, .quick-stats-item, .table-of-contents, .position-card, .role-card, .experience-item, .metric-card, .stat-card, .timeline-item, .featured-module-card, .contact-card, .tools-section, .skills-section');
         
         cards.forEach(card => {
             card.addEventListener('mousemove', (e) => {
@@ -592,8 +592,8 @@
             createParticles();
         }
         
-        // Scroll Parallax Effect
-        const parallaxElements = document.querySelectorAll('.home-hero, .home-research-image img, .carousel-image');
+        // Scroll Parallax Effect (excluding research images)
+        const parallaxElements = document.querySelectorAll('.home-hero, .carousel-image');
         
         function updateParallax() {
             const scrolled = window.pageYOffset;
