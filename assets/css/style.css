@@ -4758,8 +4758,8 @@ body::before {
 }
 
 .copy-citation-btn.copied {
-    background: #06ffa5;
-    color: #000;
+    background: #28a745;
+    color: white;
 }
 
 /* ============================================
