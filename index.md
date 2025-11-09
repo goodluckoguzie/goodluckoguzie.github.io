@@ -78,22 +78,51 @@ description: "Dr. Dirichukwu Goodluck Oguzie (PhD, MSc, BSc) - Post-PhD Research
 ## Current Research
 
 <div class="home-research-section">
-  <div class="home-research-card featured">
-    <div class="home-research-badge ongoing">ONGOING</div>
-    <h3>Adaptive Prediction Horizons in Reinforcement Learning</h3>
-    <p class="home-research-meta">2024 - Present • Aston University</p>
-    <div class="home-research-image">
-      <img src="{{ '/assets/images/AverageReturnvsInferenceTime.png' | relative_url }}" alt="Scatter plot showing average return vs inference time trade-off for various RL models in LiteSocNavGym, demonstrating adaptive prediction horizon achieving highest return among low-latency models" loading="lazy">
-      <p class="home-research-caption">Performance vs efficiency: adaptive prediction horizon achieves highest return among low-latency models</p>
+  <div class="home-research-grid">
+    <!-- Left Column: Adaptive Prediction Horizons -->
+    <div class="home-research-card">
+      <div class="home-research-badge ongoing">ONGOING</div>
+      <h3>Adaptive Prediction Horizons in Reinforcement Learning</h3>
+      <p class="home-research-meta">2024 - Present • Aston University</p>
+      <div class="home-research-image">
+        <img src="{{ '/assets/images/AverageReturnvsInferenceTime.png' | relative_url }}" alt="Scatter plot showing average return vs inference time trade-off for various RL models in LiteSocNavGym, demonstrating adaptive prediction horizon achieving highest return among low-latency models" loading="lazy">
+        <p class="home-research-caption">Performance vs efficiency: adaptive prediction horizon achieves highest return among low-latency models</p>
+      </div>
+      <p>Developing entropy-driven adaptive prediction horizon systems for RL applications, enabling dynamic adjustment based on environmental complexity for improved performance in autonomous systems.</p>
+      <div class="home-research-tags">
+        <span class="tag">Reinforcement Learning</span>
+        <span class="tag">Robotics</span>
+        <span class="tag">Adaptive Systems</span>
+      </div>
+      <div class="home-research-actions">
+        <a href="{{ '/projects/adaptive-prediction-horizons' | relative_url }}" class="home-research-link">View Project Details →</a>
+      </div>
     </div>
-    <p>Developing entropy-driven adaptive prediction horizon systems for RL applications, enabling dynamic adjustment based on environmental complexity for improved performance in autonomous systems.</p>
-    <div class="home-research-tags">
-      <span class="tag">Reinforcement Learning</span>
-      <span class="tag">Robotics</span>
-      <span class="tag">Adaptive Systems</span>
-    </div>
-    <div class="home-research-actions">
-      <a href="{{ '/projects/adaptive-prediction-horizons' | relative_url }}" class="home-research-link">View Project Details →</a>
+
+    <!-- Right Column: WiFi CSI Action Recognition -->
+    <div class="home-research-card">
+      <div class="home-research-badge ongoing">ONGOING</div>
+      <h3>Wi-Fi CSI Action Recognition with ESP32</h3>
+      <p class="home-research-meta">2024 - Present • Hardware-based Action Recognition</p>
+      <div class="home-research-image">
+        <div style="background: var(--bg-alt); border-radius: 6px; padding: 2rem; text-align: center; min-height: 180px; display: flex; align-items: center; justify-content: center; color: var(--text-light);">
+          <div>
+            <div style="font-size: 3rem; margin-bottom: 0.5rem;">📡</div>
+            <div style="font-size: 0.9rem;">Wi-Fi CSI Signal Processing</div>
+          </div>
+        </div>
+        <p class="home-research-caption">Privacy-preserving action recognition using wireless signals</p>
+      </div>
+      <p>Developing action recognition systems using Wi-Fi Channel State Information (CSI) with ESP32 microcontrollers to predict human actions using only WiFi signals, addressing privacy concerns of camera-based systems.</p>
+      <div class="home-research-tags">
+        <span class="tag">Wi-Fi CSI</span>
+        <span class="tag">ESP32</span>
+        <span class="tag">Action Recognition</span>
+        <span class="tag">Privacy</span>
+      </div>
+      <div class="home-research-actions">
+        <a href="{{ '/projects/action-recognition' | relative_url }}" class="home-research-link">View Project Details →</a>
+      </div>
     </div>
   </div>
 

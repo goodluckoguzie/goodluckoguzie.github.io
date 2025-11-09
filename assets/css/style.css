@@ -315,14 +315,23 @@ select:focus-visible {
     margin: 3rem 0;
 }
 
+.home-research-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 2rem;
+    margin-bottom: 2rem;
+}
+
 .home-research-card {
     background: var(--bg-card);
-    padding: 1.5rem;
-    border-radius: 8px;
+    padding: 2rem;
+    border-radius: 12px;
     border: 1px solid var(--border);
     box-shadow: var(--shadow);
     position: relative;
     transition: transform 0.3s ease, box-shadow 0.3s ease;
+    display: flex;
+    flex-direction: column;
 }
 
 .home-research-card.featured {
@@ -331,8 +340,8 @@ select:focus-visible {
 }
 
 .home-research-card:hover {
-    transform: translateY(-8px) scale(1.02);
-    box-shadow: 0 12px 24px rgba(0, 0, 0, 0.15);
+    transform: translateY(-4px);
+    box-shadow: var(--shadow-md);
     border-color: var(--link);
 }
 
@@ -365,20 +374,27 @@ select:focus-visible {
 }
 
 .home-research-image {
-    margin: 0.75rem 0;
+    margin: 1rem 0;
     text-align: center;
 }
 
 .home-research-image img {
     width: 100%;
-    max-width: 400px;
-    max-height: 220px;
+    max-width: 100%;
+    max-height: 200px;
     height: auto;
     object-fit: contain;
-    border-radius: 6px;
+    border-radius: 8px;
     box-shadow: var(--shadow);
     display: block;
     margin: 0 auto;
+}
+
+.home-research-image > div {
+    width: 100%;
+    max-height: 200px;
+    border-radius: 8px;
+    box-shadow: var(--shadow);
 }
 
 .home-research-caption {
@@ -392,9 +408,10 @@ select:focus-visible {
 
 .home-research-card p {
     color: var(--text);
-    line-height: 1.6;
-    margin-bottom: 0.75rem;
+    line-height: 1.7;
+    margin-bottom: 1rem;
     font-size: 0.95rem;
+    flex-grow: 1;
 }
 
 .home-research-tags {
@@ -562,12 +579,17 @@ select:focus-visible {
         grid-template-columns: 1fr;
     }
     
+    .home-research-grid {
+        grid-template-columns: 1fr;
+        gap: 1.5rem;
+    }
+    
     .home-research-card {
         padding: 1.5rem;
     }
     
     .home-research-card h3 {
-        font-size: 1.5rem;
+        font-size: 1.25rem;
     }
     
     .home-teaching-highlights {
