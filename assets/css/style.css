@@ -4099,6 +4099,19 @@ table td.text-center {
         padding: 1.5rem;
     }
     
+    .portfolio-card-media {
+        margin: 0.75rem 0;
+        gap: 0.75rem;
+    }
+    
+    .portfolio-card-video video {
+        max-height: 200px;
+    }
+    
+    .portfolio-card-image img {
+        max-height: 150px;
+    }
+    
     .research-actions {
         flex-direction: column;
     }
