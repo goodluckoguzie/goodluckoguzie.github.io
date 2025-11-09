@@ -16,6 +16,7 @@ description: "Dr. Dirichukwu Goodluck Oguzie (PhD, MSc, BSc) - Post-PhD Research
       <p class="home-hero-bio">I develop intelligent systems that integrate reinforcement learning, predictive models, and neural network architectures to solve real-world problems in social robotics.</p>
       <div class="home-hero-actions">
         <a href="{{ '/portfolio' | relative_url }}" class="btn btn-primary">View My Research</a>
+        <a href="{{ '/portfolio' | relative_url }}" class="btn btn-secondary">My Portfolio</a>
         <a href="{{ '/collaborations' | relative_url }}" class="btn btn-secondary">Contact Me</a>
       </div>
     </div>
