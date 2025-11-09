@@ -4,20 +4,15 @@ document.addEventListener('DOMContentLoaded', function() {
     const portfolioGrids = document.querySelectorAll('.portfolio-grid');
     const portfolioCards = document.querySelectorAll('.portfolio-card');
     
-    // Debug logging
-    console.log('Portfolio Filter Init:', {
-        buttons: filterButtons.length,
-        grids: portfolioGrids.length,
-        cards: portfolioCards.length
-    });
-    
     if (filterButtons.length === 0 || portfolioCards.length === 0) {
-        console.warn('Portfolio filter: Missing elements', {
-            buttons: filterButtons.length,
-            cards: portfolioCards.length
-        });
         return; // Exit if elements don't exist
     }
+    
+    // Initialize: ensure all cards are visible on page load
+    portfolioCards.forEach(card => {
+        card.style.display = '';
+        card.classList.remove('filtered-out');
+    });
     
     filterButtons.forEach(btn => {
         btn.addEventListener('click', function(e) {
@@ -29,33 +24,32 @@ document.addEventListener('DOMContentLoaded', function() {
             this.classList.add('active');
             
             const filter = this.dataset.filter;
-            console.log('Filter clicked:', filter);
             
             // Filter all portfolio cards across all grids
             portfolioCards.forEach(card => {
                 const categories = card.dataset.category || '';
+                const categoryArray = categories.split(' ').filter(cat => cat.length > 0);
                 
                 if (filter === 'all') {
                     // Show all cards - reset to default display
                     card.style.display = '';
-                } else if (categories && categories.split(' ').includes(filter)) {
+                    card.classList.remove('filtered-out');
+                } else if (categoryArray.includes(filter)) {
                     // Show card if it matches the filter (check each category separately)
                     card.style.display = '';
+                    card.classList.remove('filtered-out');
                 } else {
                     // Hide card if it doesn't match
                     card.style.display = 'none';
+                    card.classList.add('filtered-out');
                 }
             });
             
             // Update grid visibility - show/hide section headings if needed
             portfolioGrids.forEach(grid => {
-                const visibleCards = Array.from(grid.querySelectorAll('.portfolio-card')).filter(card => 
-                    card.style.display !== 'none' && card.style.display !== ''
-                );
-                
                 // Check if grid has any visible cards
                 const hasVisibleCards = Array.from(grid.querySelectorAll('.portfolio-card')).some(card => 
-                    card.style.display !== 'none'
+                    !card.classList.contains('filtered-out') && card.style.display !== 'none'
                 );
                 
                 // Show/hide the grid's parent section heading if it exists
@@ -75,8 +69,6 @@ document.addEventListener('DOMContentLoaded', function() {
                 // Always show grid (it will be empty if no cards)
                 grid.style.display = 'grid';
             });
-            
-            console.log('Filter applied:', filter, 'Visible cards:', document.querySelectorAll('.portfolio-card[style*="display: none"]').length);
         });
     });
 });
