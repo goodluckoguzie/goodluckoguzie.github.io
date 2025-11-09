@@ -145,6 +145,24 @@ My Professional Journey
       </div>
     </div>
   </div>
+
+  <div class="experience-item">
+    <div class="experience-date">Oct 2021 - Dec 2022</div>
+    <div class="experience-content">
+      <h3>Junior Business Operations Coordinator</h3>
+      <p><strong>Total Security Services</strong></p>
+      <p>Birmingham, UK • Full-time</p>
+      <div class="experience-achievements">
+        <h4>Key Achievements:</h4>
+        <ul>
+          <li>✓ Played key role in CRM data management, improving customer data accuracy by 35%</li>
+          <li>✓ Maintained 100% accuracy in performance tracking by developing and monitoring weekly and monthly operational reports, enhancing data-driven decision-making</li>
+          <li>✓ Liaised with 10+ key stakeholders, including security personnel, management teams, and external partners, to align business operations during the Birmingham Commonwealth Games 2022</li>
+          <li>✓ Assisted in onboarding and training 5+ new team members, improving team productivity and ensuring compliance with operational standards</li>
+        </ul>
+      </div>
+    </div>
+  </div>
 </div>
 
 ## Tools & Technologies

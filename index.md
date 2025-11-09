@@ -24,7 +24,7 @@ description: "Dr. Goodluck Oguzie - Post-PhD Researcher & Lecturer specializing 
 
 <div class="home-quick-stats">
   <div class="home-stat-item">
-    <div class="home-stat-number">2</div>
+    <div class="home-stat-number">2+</div>
     <div class="home-stat-label">Papers Published</div>
     <div class="home-stat-detail">IEEE PRML 2024 • UKCI 2023</div>
   </div>

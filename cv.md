@@ -117,6 +117,18 @@ Foundation in electrical engineering, electronics, and embedded systems.
 
 ---
 
+### Junior Business Operations Coordinator
+**Total Security Services**  
+**Birmingham, UK**  
+**October 2021 – December 2022** • Full-time
+
+- Played key role in CRM data management, improving customer data accuracy by 35%
+- Maintained 100% accuracy in performance tracking by developing and monitoring weekly and monthly operational reports, enhancing data-driven decision-making
+- Liaised with 10+ key stakeholders, including security personnel, management teams, and external partners, to align business operations during the Birmingham Commonwealth Games 2022
+- Assisted in onboarding and training 5+ new team members, improving team productivity and ensuring compliance with operational standards
+
+---
+
 ### Student Leadership Roles
 **Sheffield Hallam University**  
 **2018 – 2020**
