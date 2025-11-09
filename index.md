@@ -11,13 +11,12 @@ description: "Dr. Dirichukwu Goodluck Oguzie (PhD, MSc, BSc) - Post-PhD Research
     </div>
     <div class="home-hero-text">
       <h1 class="home-hero-title">Dr. Dirichukwu Goodluck Oguzie</h1>
-      <p class="home-hero-tagline">Advancing Social Robot Navigation through Reinforcement Learning and Predictive Models</p>
-      <p class="home-hero-credentials">Published at IEEE PRML 2024 • UKCI 2023<br>PhD, MSc, BSc • Computer Science Researcher & Lecturer</p>
-      <p class="home-hero-bio">I develop intelligent systems that integrate reinforcement learning, predictive models, and neural network architectures to solve real-world problems in social robotics.</p>
+      <p class="home-hero-tagline">Researcher & Lecturer</p>
+      <p class="home-hero-credentials">PhD, MSc, BSc • Computer Science<br>Specializing in RL & Social Robotics</p>
+      <p class="home-hero-bio">Published at IEEE PRML 2024 • UKCI 2023</p>
       <div class="home-hero-actions">
-        <a href="{{ '/portfolio' | relative_url }}" class="btn btn-primary">View My Research</a>
-        <a href="{{ '/portfolio' | relative_url }}" class="btn btn-secondary">My Portfolio</a>
-        <a href="{{ '/collaborations' | relative_url }}" class="btn btn-secondary">Contact Me</a>
+        <a href="{{ '/portfolio' | relative_url }}" class="btn btn-primary">View Research</a>
+        <a href="{{ '/collaborations' | relative_url }}" class="btn btn-secondary">Contact</a>
       </div>
     </div>
   </div>
@@ -39,26 +38,20 @@ description: "Dr. Dirichukwu Goodluck Oguzie (PhD, MSc, BSc) - Post-PhD Research
     <div class="home-stat-label">Years Teaching</div>
     <div class="home-stat-detail">AI & Machine Learning Courses</div>
   </div>
-  <div class="home-stat-item highlight-stat">
-    <div class="home-stat-number">Open</div>
-    <div class="home-stat-label">For Collaboration</div>
-    <div class="home-stat-detail"><a href="{{ '/collaborations' | relative_url }}" class="home-stat-link">Let's Work Together →</a></div>
-  </div>
 </div>
 
 ---
 
-## Recent Publications
+## Featured Publications
 
 <div class="home-publications">
   <div class="home-publication-card">
     <div class="home-publication-badge">IEEE PRML 2024</div>
     <h3>Cosine-Gated LSTM for Sequential Learning</h3>
     <p class="home-publication-meta">Published • Neural Network Architecture</p>
-    <p>Introduced a novel Cosine-Gated LSTM (CGLSTM) architecture that uses cosine gating mechanisms for improved sequential learning, outperforming LSTM, GRU, and Transformer models across multiple benchmarks.</p>
+    <p>Novel Cosine-Gated LSTM architecture for improved sequential learning, outperforming LSTM, GRU, and Transformer models.</p>
     <div class="home-publication-actions">
-      <a href="{{ '/projects/cosine-gated-lstm' | relative_url }}" class="home-publication-link">View Details →</a>
-      <a href="{{ '/publications' | relative_url }}" class="home-publication-link">All Publications →</a>
+      <a href="{{ '/projects/cosine-gated-lstm' | relative_url }}" class="home-publication-link">View Paper →</a>
     </div>
   </div>
 
@@ -66,12 +59,15 @@ description: "Dr. Dirichukwu Goodluck Oguzie (PhD, MSc, BSc) - Post-PhD Research
     <div class="home-publication-badge">UKCI 2023</div>
     <h3>Predictive World Models for Social Navigation</h3>
     <p class="home-publication-meta">Published • Reinforcement Learning</p>
-    <p>Developed predictive models introducing 2StepAhead and MASPM for safe autonomous navigation in social environments, significantly improving navigation performance and reducing collisions.</p>
+    <p>Predictive models (2StepAhead, MASPM) for safe autonomous navigation, improving performance and reducing collisions.</p>
     <div class="home-publication-actions">
-      <a href="{{ '/projects/predictive-world-models' | relative_url }}" class="home-publication-link">View Details →</a>
-      <a href="{{ '/publications' | relative_url }}" class="home-publication-link">All Publications →</a>
+      <a href="{{ '/projects/predictive-world-models' | relative_url }}" class="home-publication-link">View Paper →</a>
     </div>
   </div>
+
+  <p class="section-cta">
+    <a href="{{ '/publications' | relative_url }}" class="btn btn-secondary">All Publications →</a>
+  </p>
 </div>
 
 ---
@@ -89,14 +85,9 @@ description: "Dr. Dirichukwu Goodluck Oguzie (PhD, MSc, BSc) - Post-PhD Research
         <img src="{{ '/assets/images/AverageReturnvsInferenceTime.png' | relative_url }}" alt="Scatter plot showing average return vs inference time trade-off for various RL models in LiteSocNavGym, demonstrating adaptive prediction horizon achieving highest return among low-latency models" loading="lazy">
         <p class="home-research-caption">Performance vs efficiency: adaptive prediction horizon achieves highest return among low-latency models</p>
       </div>
-      <p>Developing entropy-driven adaptive prediction horizon systems for RL applications, enabling dynamic adjustment based on environmental complexity for improved performance in autonomous systems.</p>
-      <div class="home-research-tags">
-        <span class="tag">Reinforcement Learning</span>
-        <span class="tag">Robotics</span>
-        <span class="tag">Adaptive Systems</span>
-      </div>
+      <p>Entropy-driven adaptive prediction horizons for RL, enabling dynamic adjustment based on environmental complexity.</p>
       <div class="home-research-actions">
-        <a href="{{ '/projects/adaptive-prediction-horizons' | relative_url }}" class="home-research-link">View Project Details →</a>
+        <a href="{{ '/projects/adaptive-prediction-horizons' | relative_url }}" class="home-research-link">View Project →</a>
       </div>
     </div>
 
@@ -114,15 +105,9 @@ description: "Dr. Dirichukwu Goodluck Oguzie (PhD, MSc, BSc) - Post-PhD Research
         </div>
         <p class="home-research-caption">Privacy-preserving action recognition using wireless signals</p>
       </div>
-      <p>Developing action recognition systems using Wi-Fi Channel State Information (CSI) with ESP32 microcontrollers to predict human actions using only WiFi signals, addressing privacy concerns of camera-based systems.</p>
-      <div class="home-research-tags">
-        <span class="tag">Wi-Fi CSI</span>
-        <span class="tag">ESP32</span>
-        <span class="tag">Action Recognition</span>
-        <span class="tag">Privacy</span>
-      </div>
+      <p>Wi-Fi CSI action recognition with ESP32 for privacy-preserving human action prediction using wireless signals.</p>
       <div class="home-research-actions">
-        <a href="{{ '/projects/action-recognition' | relative_url }}" class="home-research-link">View Project Details →</a>
+        <a href="{{ '/projects/action-recognition' | relative_url }}" class="home-research-link">View Project →</a>
       </div>
     </div>
   </div>
@@ -137,38 +122,9 @@ description: "Dr. Dirichukwu Goodluck Oguzie (PhD, MSc, BSc) - Post-PhD Research
 ## Teaching
 
 <div class="home-teaching-section">
-  <p>I teach AI and machine learning courses at multiple institutions, with <strong>13+ years of experience</strong> preparing students for academic and industry careers. My courses integrate cutting-edge research with practical application.</p>
-  
-  <div class="home-teaching-metrics">
-    <div>
-      <div class="metric-number">500+</div>
-      <div class="metric-text">Students Taught</div>
-    </div>
-    <div>
-      <div class="metric-number">20+</div>
-      <div class="metric-text">Modules Taught</div>
-    </div>
-    <div>
-      <div class="metric-number">85%+</div>
-      <div class="metric-text">Avg Performance</div>
-    </div>
-    <div>
-      <div class="metric-number">4</div>
-      <div class="metric-text">Institutions</div>
-    </div>
-  </div>
-  
-  <div class="home-teaching-highlights">
-    <div class="home-teaching-highlight">
-      <strong>Current Positions:</strong> Seasonal Lecturer at QA Ltd (Partner with Solent University, University of Roehampton, Ulster University) • Lecturer at Crimson Education
-    </div>
-    <div class="home-teaching-highlight">
-      <strong>Key Areas:</strong> Deep Learning, Machine Learning, Data Science, Object-Oriented Design, Networks & Security, Web Development
-    </div>
-  </div>
-
+  <p>I teach AI and machine learning courses with <strong>13+ years of experience</strong> at multiple institutions, integrating cutting-edge research with practical application.</p>
   <p class="section-cta">
-    <a href="{{ '/teaching' | relative_url }}" class="btn btn-secondary">View Teaching Details</a>
+    <a href="{{ '/teaching' | relative_url }}" class="btn btn-secondary">View Teaching Details →</a>
   </p>
 </div>
 
@@ -177,10 +133,9 @@ description: "Dr. Dirichukwu Goodluck Oguzie (PhD, MSc, BSc) - Post-PhD Research
 ## Open for Collaboration
 
 <div class="home-collaboration-section">
-  <h2>Let's Work Together</h2>
-  <p>I'm actively seeking research collaborations in <strong>Reinforcement Learning & Autonomous Systems</strong>, <strong>Social Robot Navigation</strong>, and <strong>Neural Network Architectures</strong>.</p>
-  <p>Open to joint research projects, student co-supervision (PhD/MSc), industry partnerships, and grant applications.</p>
+  <p>Seeking research partnerships in <strong>Reinforcement Learning & Autonomous Systems</strong>, <strong>Social Robot Navigation</strong>, and <strong>Neural Network Architectures</strong>.</p>
+  <p>Open to joint projects, student co-supervision, industry partnerships, and grant applications.</p>
   <div class="home-collaboration-actions">
-    <a href="{{ '/collaborations' | relative_url }}" class="btn">Let's Collaborate</a>
+    <a href="{{ '/collaborations' | relative_url }}" class="btn btn-primary">Let's Collaborate →</a>
   </div>
 </div>
