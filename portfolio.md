@@ -87,8 +87,8 @@ My research focuses on **Social Robot Navigation**, **Reinforcement Learning**, 
           Your browser does not support the video tag.
         </video>
       </div>
-      <div class="portfolio-card-image">
-        <img src="{{ '/assets/images/FallingBall.png' | relative_url }}" alt="FallingBallEnv environment visualization" loading="lazy">
+      <div class="portfolio-card-pdf">
+        <iframe src="{{ '/bounceoff.pdf' | relative_url }}#toolbar=0&navpanes=0&scrollbar=0" width="100%" height="400px" style="border: none;" aria-label="FallingBallEnv bounce-off visualization showing ball physics and bouncing behavior"></iframe>
       </div>
     </div>
     <p class="portfolio-card-description">Simple environment where a ball falls and bounces, obeying gravity. The floor position is not included in the observation space, testing predictive capabilities.</p>
