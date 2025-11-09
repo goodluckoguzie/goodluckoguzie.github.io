@@ -4213,15 +4213,33 @@ table td.text-center {
     background: none;
     border: none;
     color: white;
-    font-size: 1.25rem;
     cursor: pointer;
     padding: 0.5rem;
-    transition: transform 0.2s ease;
+    transition: all 0.2s ease;
     margin-right: 0.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-width: 44px;
+    min-height: 44px;
+    border-radius: 4px;
+}
+
+.search-toggle svg {
+    width: 20px;
+    height: 20px;
+    stroke: currentColor;
+    transition: opacity 0.2s ease;
 }
 
 .search-toggle:hover {
-    transform: scale(1.1);
+    background: rgba(255, 255, 255, 0.1);
+    transform: scale(1.05);
+}
+
+.search-toggle:focus-visible {
+    outline: 3px solid white;
+    outline-offset: 2px;
 }
 
 .search-overlay {
