@@ -207,46 +207,16 @@
             }
         });
 
-        // Performance: Throttle function for scroll/mousemove events
-        function throttle(func, limit) {
-            let inThrottle;
-            return function() {
-                const args = arguments;
-                const context = this;
-                if (!inThrottle) {
-                    func.apply(context, args);
-                    inThrottle = true;
-                    setTimeout(() => inThrottle = false, limit);
-                }
-            }
-        }
-        
-        // Performance: Debounce function for resize events
-        function debounce(func, wait) {
-            let timeout;
-            return function() {
-                const context = this;
-                const args = arguments;
-                clearTimeout(timeout);
-                timeout = setTimeout(() => func.apply(context, args), wait);
-            }
-        }
-        
-        // Check if user prefers reduced motion (performance optimization)
-        const prefersReducedMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
-
-        // Back to Top Button (throttled for performance)
+        // Back to Top Button
         const backToTop = document.querySelector('.back-to-top');
         
-        const handleScroll = throttle(() => {
+        window.addEventListener('scroll', () => {
             if (window.pageYOffset > 300) {
                 backToTop.classList.add('show');
             } else {
                 backToTop.classList.remove('show');
             }
-        }, 100); // Throttle to max once per 100ms
-        
-        window.addEventListener('scroll', handleScroll, { passive: true });
+        });
 
         if (backToTop) {
             backToTop.addEventListener('click', () => {
@@ -553,36 +523,29 @@
         const heroTagline = document.querySelector('.home-hero-tagline');
         
         if (heroTitle || heroTagline) {
-            // Throttle mousemove for performance (skip if reduced motion)
-            if (!prefersReducedMotion) {
-                const throttledMouseMove = throttle((e) => {
-                    const mouseX = e.clientX / window.innerWidth;
-                    const mouseY = e.clientY / window.innerHeight;
-                    
-                    if (heroTitle) {
-                        const rotateX = (mouseY - 0.5) * 10;
-                        const rotateY = (mouseX - 0.5) * -10;
-                        heroTitle.style.transform = `perspective(1000px) rotateX(${rotateX}deg) rotateY(${rotateY}deg) translateZ(0)`;
-                    }
-                    
-                    if (heroTagline) {
-                        const rotateX = (mouseY - 0.5) * 5;
-                        const rotateY = (mouseX - 0.5) * -5;
-                        heroTagline.style.transform = `perspective(1000px) rotateX(${rotateX}deg) rotateY(${rotateY}deg) translateZ(0)`;
-                    }
-                }, 16); // ~60fps
+            document.addEventListener('mousemove', (e) => {
+                const mouseX = e.clientX / window.innerWidth;
+                const mouseY = e.clientY / window.innerHeight;
                 
-                document.addEventListener('mousemove', throttledMouseMove, { passive: true });
-            }
+                if (heroTitle) {
+                    const rotateX = (mouseY - 0.5) * 10;
+                    const rotateY = (mouseX - 0.5) * -10;
+                    heroTitle.style.transform = `perspective(1000px) rotateX(${rotateX}deg) rotateY(${rotateY}deg) translateZ(0)`;
+                }
+                
+                if (heroTagline) {
+                    const rotateX = (mouseY - 0.5) * 5;
+                    const rotateY = (mouseX - 0.5) * -5;
+                    heroTagline.style.transform = `perspective(1000px) rotateX(${rotateX}deg) rotateY(${rotateY}deg) translateZ(0)`;
+                }
+            });
         }
         
         // 3D Card Tilt on Mouse Move - ALL cards across ALL pages
         const cards = document.querySelectorAll('.home-publication-card, .home-research-card, .carousel-card, .publication, .module, .approach-card, .education-card, .collaboration-area-card, .collaboration-type-card, .collaboration-form-section, .contact-info-box, .project-header, .hero-section, .quick-stats-item, .table-of-contents, .position-card, .role-card, .experience-item, .metric-card, .stat-card, .timeline-item, .featured-module-card, .contact-card, .tools-section, .skills-section');
         
-        // Only add 3D effects if not reduced motion
-        if (!prefersReducedMotion) {
-            cards.forEach(card => {
-                const throttledCardMove = throttle((e) => {
+        cards.forEach(card => {
+            card.addEventListener('mousemove', (e) => {
                 const rect = card.getBoundingClientRect();
                 const x = e.clientX - rect.left;
                 const y = e.clientY - rect.top;
@@ -596,13 +559,10 @@
                 card.style.transform = `perspective(1000px) rotateX(${rotateX}deg) rotateY(${rotateY}deg) translateY(-8px) scale(1.02)`;
             });
             
-                card.addEventListener('mouseleave', () => {
-                    card.style.transform = '';
-                });
-                
-                card.addEventListener('mousemove', throttledCardMove, { passive: true });
+            card.addEventListener('mouseleave', () => {
+                card.style.transform = '';
             });
-        }
+        });
         
         // Lightweight Particle System
         function createParticles() {
@@ -627,8 +587,8 @@
             }
         }
         
-        // Initialize particles only on desktop and if not reduced motion (reduce mobile load)
-        if (window.innerWidth > 768 && !prefersReducedMotion) {
+        // Initialize particles only on desktop (reduce mobile load)
+        if (window.innerWidth > 768) {
             createParticles();
         }
         
@@ -645,20 +605,17 @@
             });
         }
         
-        // Throttle scroll events for performance (skip parallax if reduced motion)
-        if (!prefersReducedMotion) {
-            let ticking = false;
-            const throttledParallax = () => {
-                if (!ticking) {
-                    window.requestAnimationFrame(() => {
-                        updateParallax();
-                        ticking = false;
-                    });
-                    ticking = true;
-                }
-            };
-            window.addEventListener('scroll', throttledParallax, { passive: true });
-        }
+        // Throttle scroll events for performance
+        let ticking = false;
+        window.addEventListener('scroll', () => {
+            if (!ticking) {
+                window.requestAnimationFrame(() => {
+                    updateParallax();
+                    ticking = false;
+                });
+                ticking = true;
+            }
+        });
         
         // Intersection Observer for fade-in animations
         const observerOptions = {
@@ -691,10 +648,8 @@
         // Dynamic Holographic Intensity Based on Mouse Position - ALL cards
         const holographicCards = document.querySelectorAll('.home-publication-card, .home-research-card, .carousel-card, .publication, .module, .collaboration-area-card, .collaboration-type-card, .collaboration-form-section, .contact-info-box, .project-header, .hero-section, .quick-stats-item, .table-of-contents, .position-card, .role-card, .approach-card, .education-card, .experience-item, .metric-card, .stat-card, .timeline-item, .featured-module-card, .contact-card, .tools-section, .skills-section');
         
-        // Only add holographic effects if not reduced motion
-        if (!prefersReducedMotion) {
-            holographicCards.forEach(card => {
-                const throttledHolographicMove = throttle((e) => {
+        holographicCards.forEach(card => {
+            card.addEventListener('mousemove', (e) => {
                 const rect = card.getBoundingClientRect();
                 const x = e.clientX - rect.left;
                 const y = e.clientY - rect.top;
@@ -712,25 +667,20 @@
                 card.style.filter = `drop-shadow(0 0 ${20 + glowIntensity * 20}px rgba(131, 56, 236, ${0.3 + glowIntensity * 0.4}))`;
             });
             
-                card.addEventListener('mouseleave', () => {
-                    card.style.filter = '';
-                });
-                
-                card.addEventListener('mousemove', throttledHolographicMove, { passive: true });
+            card.addEventListener('mouseleave', () => {
+                card.style.filter = '';
             });
-        }
+        });
         
-        // Holographic Text Color Shift on Scroll (skip if reduced motion)
-        if (!prefersReducedMotion) {
-            const heroTitleForScroll = document.querySelector('.home-hero-title');
-            if (heroTitleForScroll) {
-                const throttledScrollHue = throttle(() => {
-                    const scrollPosition = window.pageYOffset;
-                    const hue = (scrollPosition * 0.1) % 360;
-                    heroTitleForScroll.style.filter = `drop-shadow(0 0 10px hsl(${hue}, 70%, 60%)) hue-rotate(${hue}deg)`;
-                }, 50);
-                window.addEventListener('scroll', throttledScrollHue, { passive: true });
-            }
+        // Holographic Text Color Shift on Scroll
+        const heroTitle = document.querySelector('.home-hero-title');
+        if (heroTitle) {
+            let scrollPosition = 0;
+            window.addEventListener('scroll', () => {
+                scrollPosition = window.pageYOffset;
+                const hue = (scrollPosition * 0.1) % 360;
+                heroTitle.style.filter = `drop-shadow(0 0 10px hsl(${hue}, 70%, 60%)) hue-rotate(${hue}deg)`;
+            });
         }
         
         // Interactive Holographic Badge Pulse
@@ -777,10 +727,8 @@
         
         // Holographic Profile Photo Interactive Effect
         const profilePhotos = document.querySelectorAll('.home-profile-photo, .about-photo');
-        // Only add photo effects if not reduced motion
-        if (!prefersReducedMotion) {
-            profilePhotos.forEach(photo => {
-                const throttledPhotoMove = throttle((e) => {
+        profilePhotos.forEach(photo => {
+            photo.addEventListener('mousemove', (e) => {
                 const rect = photo.getBoundingClientRect();
                 const x = e.clientX - rect.left;
                 const y = e.clientY - rect.top;
@@ -794,13 +742,10 @@
                 photo.style.transform = `perspective(1000px) rotateX(${rotateX}deg) rotateY(${rotateY}deg) translateZ(20px)`;
             });
             
-                photo.addEventListener('mouseleave', () => {
-                    photo.style.transform = '';
-                });
-                
-                photo.addEventListener('mousemove', throttledPhotoMove, { passive: true });
+            photo.addEventListener('mouseleave', () => {
+                photo.style.transform = '';
             });
-        }
+        });
         
         // Holographic Stat Number Pulse on View - ALL stat numbers
         const statNumbers = document.querySelectorAll('.home-stat-number, .stat-number, .metric-value, .quick-stats-item-value, .stat-box .stat-number, .research-overview-stats .stat-number');

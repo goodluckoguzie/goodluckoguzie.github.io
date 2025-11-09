@@ -4479,11 +4479,14 @@ body::before {
    5D HOLOGRAM EFFECTS - ADVANCED VISUAL ENHANCEMENTS
    ============================================ */
 
-/* Holographic Text Effect - ALL headings across ALL pages */
+/* Holographic Text Effect - ALL headings and subheadings across ALL pages */
 .home-hero-title,
 h1,
 h2,
-h3 {
+h3,
+h4,
+h5,
+h6 {
     background: linear-gradient(
         90deg,
         #ff006e 0%,
@@ -4501,13 +4504,25 @@ h3 {
     filter: drop-shadow(0 0 10px rgba(131, 56, 236, 0.5));
 }
 
-/* H2 and H3 with slightly different intensity */
+/* Different intensity for different heading levels */
 h2 {
     filter: drop-shadow(0 0 8px rgba(131, 56, 236, 0.4));
 }
 
 h3 {
     filter: drop-shadow(0 0 6px rgba(131, 56, 236, 0.3));
+}
+
+h4 {
+    filter: drop-shadow(0 0 5px rgba(131, 56, 236, 0.25));
+}
+
+h5 {
+    filter: drop-shadow(0 0 4px rgba(131, 56, 236, 0.2));
+}
+
+h6 {
+    filter: drop-shadow(0 0 3px rgba(131, 56, 236, 0.15));
 }
 
 @keyframes hologramShift {
@@ -4519,296 +4534,7 @@ h3 {
     }
 }
 
-/* Holographic Card Effect - Applied to ALL cards across ALL pages */
-.home-publication-card,
-.home-research-card,
-.carousel-card,
-.publication,
-.module,
-.collaboration-area-card,
-.collaboration-type-card,
-.collaboration-form-section,
-.contact-info-box,
-.cv-download,
-.competencies-tags,
-.project-header,
-.hero-section,
-.hero-section-content,
-.quick-stats-item,
-.table-of-contents,
-.position-card,
-.role-card,
-.approach-card,
-.education-card,
-.experience-item,
-.metric-card,
-.stat-card,
-.timeline-item,
-.featured-module-card,
-.contact-card,
-.tools-section,
-.skills-section,
-.research-overview-stats,
-.stats-grid,
-.metrics-dashboard,
-.teaching-timeline,
-.previous-roles,
-.featured-modules {
-    position: relative;
-    overflow: hidden;
-}
-
-.home-publication-card::after,
-.home-research-card::after,
-.carousel-card::after,
-.publication::after,
-.module::after,
-.collaboration-area-card::after,
-.collaboration-type-card::after,
-.collaboration-form-section::after,
-.contact-info-box::after,
-.project-header::after,
-.hero-section::after,
-.quick-stats-item::after,
-.table-of-contents::after,
-.position-card::after,
-.role-card::after,
-.approach-card::after,
-.education-card::after,
-.experience-item::after,
-.metric-card::after,
-.stat-card::after,
-.timeline-item::after,
-.featured-module-card::after,
-.contact-card::after,
-.tools-section::after,
-.skills-section::after {
-    content: '';
-    position: absolute;
-    top: -50%;
-    left: -50%;
-    width: 200%;
-    height: 200%;
-    background: linear-gradient(
-        45deg,
-        transparent 30%,
-        rgba(255, 0, 110, 0.1) 40%,
-        rgba(131, 56, 236, 0.1) 50%,
-        rgba(58, 134, 255, 0.1) 60%,
-        rgba(6, 255, 165, 0.1) 70%,
-        transparent 80%
-    );
-    animation: hologramSweep 4s linear infinite;
-    pointer-events: none;
-    z-index: 1;
-    mix-blend-mode: overlay;
-}
-
-@keyframes hologramSweep {
-    0% {
-        transform: translate(-50%, -50%) rotate(0deg);
-    }
-    100% {
-        transform: translate(-50%, -50%) rotate(360deg);
-    }
-}
-
-/* Chromatic Aberration Effect on Hover - ALL cards */
-.home-publication-card:hover,
-.home-research-card:hover,
-.carousel-card:hover,
-.publication:hover,
-.module:hover,
-.collaboration-area-card:hover,
-.collaboration-type-card:hover,
-.collaboration-form-section:hover,
-.contact-info-box:hover,
-.project-header:hover,
-.hero-section:hover,
-.quick-stats-item:hover,
-.table-of-contents:hover,
-.position-card:hover,
-.role-card:hover,
-.approach-card:hover,
-.education-card:hover,
-.experience-item:hover,
-.metric-card:hover,
-.stat-card:hover,
-.timeline-item:hover,
-.featured-module-card:hover,
-.contact-card:hover,
-.tools-section:hover,
-.skills-section:hover {
-    filter: drop-shadow(0 0 20px rgba(131, 56, 236, 0.3));
-}
-
-.home-publication-card:hover h3,
-.home-research-card:hover h3,
-.carousel-card:hover h3,
-.publication:hover h3,
-.module:hover h3,
-.collaboration-area-card:hover h3,
-.collaboration-area-card:hover h4,
-.collaboration-type-card:hover h3,
-.project-header:hover h2,
-.hero-section:hover h2,
-.approach-card:hover h3,
-.education-card:hover h3,
-.experience-item:hover h3,
-.metric-card:hover h3,
-.stat-card:hover h3,
-.timeline-item:hover h3,
-.featured-module-card:hover h3,
-.contact-card:hover h3,
-.tools-section:hover h3,
-.skills-section:hover h3 {
-    text-shadow: 
-        2px 0 0 rgba(255, 0, 110, 0.5),
-        -2px 0 0 rgba(58, 134, 255, 0.5),
-        0 2px 0 rgba(6, 255, 165, 0.5),
-        0 -2px 0 rgba(255, 190, 11, 0.5);
-    animation: chromaticAberration 0.3s ease;
-}
-
-@keyframes chromaticAberration {
-    0%, 100% {
-        text-shadow: 
-            2px 0 0 rgba(255, 0, 110, 0.5),
-            -2px 0 0 rgba(58, 134, 255, 0.5),
-            0 2px 0 rgba(6, 255, 165, 0.5),
-            0 -2px 0 rgba(255, 190, 11, 0.5);
-    }
-    50% {
-        text-shadow: 
-            3px 0 0 rgba(255, 0, 110, 0.7),
-            -3px 0 0 rgba(58, 134, 255, 0.7),
-            0 3px 0 rgba(6, 255, 165, 0.7),
-            0 -3px 0 rgba(255, 190, 11, 0.7);
-    }
-}
-
-/* Holographic Badge Effect */
-.home-publication-badge,
-.home-research-badge,
-.contribution-badge,
-.project-status-badge {
-    background: linear-gradient(
-        135deg,
-        rgba(255, 0, 110, 0.9) 0%,
-        rgba(131, 56, 236, 0.9) 25%,
-        rgba(58, 134, 255, 0.9) 50%,
-        rgba(6, 255, 165, 0.9) 75%,
-        rgba(255, 190, 11, 0.9) 100%
-    );
-    background-size: 200% 200%;
-    animation: hologramGradient 3s ease infinite;
-    box-shadow: 
-        0 0 20px rgba(131, 56, 236, 0.5),
-        inset 0 0 20px rgba(255, 255, 255, 0.2);
-    position: relative;
-    overflow: hidden;
-}
-
-.home-publication-badge::before,
-.home-research-badge::before,
-.contribution-badge::before,
-.project-status-badge::before {
-    content: '';
-    position: absolute;
-    top: -50%;
-    left: -50%;
-    width: 200%;
-    height: 200%;
-    background: linear-gradient(
-        45deg,
-        transparent,
-        rgba(255, 255, 255, 0.3),
-        transparent
-    );
-    animation: hologramShine 2s linear infinite;
-}
-
-@keyframes hologramGradient {
-    0%, 100% {
-        background-position: 0% 50%;
-    }
-    50% {
-        background-position: 100% 50%;
-    }
-}
-
-@keyframes hologramShine {
-    0% {
-        transform: translate(-50%, -50%) rotate(0deg);
-    }
-    100% {
-        transform: translate(-50%, -50%) rotate(360deg);
-    }
-}
-
-/* Holographic Button Effect */
-.btn:hover,
-.btn-primary:hover,
-.btn-secondary:hover {
-    background: linear-gradient(
-        135deg,
-        #ff006e 0%,
-        #8338ec 25%,
-        #3a86ff 50%,
-        #06ffa5 75%,
-        #ffbe0b 100%
-    );
-    background-size: 200% 200%;
-    animation: hologramGradient 2s ease infinite;
-    box-shadow: 
-        0 10px 25px rgba(131, 56, 236, 0.4),
-        0 0 30px rgba(58, 134, 255, 0.3),
-        inset 0 0 20px rgba(255, 255, 255, 0.2);
-    color: white;
-    text-shadow: 0 0 10px rgba(255, 255, 255, 0.5);
-}
-
-/* Multi-Layer Depth Effect (5D) */
-.home-hero,
-.home-quick-stats,
-.home-publications {
-    position: relative;
-}
-
-.home-hero::before,
-.home-quick-stats::before {
-    content: '';
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    background: radial-gradient(
-        circle at 30% 50%,
-        rgba(131, 56, 236, 0.1) 0%,
-        transparent 50%
-    ),
-    radial-gradient(
-        circle at 70% 50%,
-        rgba(58, 134, 255, 0.1) 0%,
-        transparent 50%
-    );
-    pointer-events: none;
-    z-index: -1;
-    animation: depthPulse 8s ease-in-out infinite;
-    transform: translateZ(-50px);
-}
-
-@keyframes depthPulse {
-    0%, 100% {
-        opacity: 0.5;
-        transform: translateZ(-50px) scale(1);
-    }
-    50% {
-        opacity: 0.8;
-        transform: translateZ(-30px) scale(1.1);
-    }
-}
+/* Removed: Holographic Card Effects - Only headings have holographic effects now */
 
 /* Holographic Glitch Effect */
 @keyframes hologramGlitch {
@@ -4837,197 +4563,43 @@ h3 {
 .home-hero-title:hover,
 h1:hover,
 h2:hover,
-h3:hover {
+h3:hover,
+h4:hover,
+h5:hover,
+h6:hover {
     animation: hologramShift 3s linear infinite, hologramGlitch 0.3s ease infinite;
 }
 
-/* Prism/Rainbow Light Effect */
-.home-profile-photo,
-.about-photo {
-    position: relative;
-}
+/* Removed: Prism/Rainbow Light Effect on profile photos - Only headings have holographic effects now */
 
-.home-profile-photo::before,
-.about-photo::before {
-    content: '';
-    position: absolute;
-    top: -2px;
-    left: -2px;
-    right: -2px;
-    bottom: -2px;
-    background: linear-gradient(
-        45deg,
-        #ff006e,
-        #8338ec,
-        #3a86ff,
-        #06ffa5,
-        #ffbe0b,
-        #ff006e
-    );
-    background-size: 300% 300%;
-    border-radius: 50%;
-    z-index: -1;
-    animation: hologramGradient 3s ease infinite;
-    opacity: 0.7;
-    filter: blur(8px);
-}
+/* Removed: Holographic Stat Numbers - Only headings have holographic effects now */
 
-.home-profile-photo:hover::before,
-.about-photo:hover::before {
-    opacity: 1;
-    filter: blur(12px);
-    animation: hologramGradient 1s ease infinite, hologramSweep 2s linear infinite;
-}
+/* Removed: Holographic Border Effects - Only headings have holographic effects now */
 
-/* Holographic Stat Numbers - ALL pages */
-.home-stat-number,
-.stat-number,
-.metric-value,
-.quick-stats-item-value,
-.stat-box .stat-number,
-.research-overview-stats .stat-number {
-    background: linear-gradient(
-        180deg,
-        #ff006e 0%,
-        #8338ec 25%,
-        #3a86ff 50%,
-        #06ffa5 75%,
-        #ffbe0b 100%
-    );
-    background-size: 100% 200%;
-    -webkit-background-clip: text;
-    background-clip: text;
-    -webkit-text-fill-color: transparent;
-    animation: hologramVertical 4s ease infinite;
-    filter: drop-shadow(0 0 15px rgba(131, 56, 236, 0.6));
-}
-
-@keyframes hologramVertical {
-    0%, 100% {
-        background-position: 0% 0%;
-    }
-    50% {
-        background-position: 0% 100%;
-    }
-}
-
-/* Holographic Border Effect - Applied to sections across ALL pages */
-.home-quick-stats,
-.home-collaboration-section,
-.collaboration-form-section,
-.contact-info-box,
-.cv-download,
-.project-header,
-.hero-section,
-.table-of-contents {
-    position: relative;
-    border: 2px solid transparent;
-    background-clip: padding-box;
-}
-
-.home-quick-stats::before,
-.home-collaboration-section::before,
-.collaboration-form-section::before,
-.contact-info-box::before,
-.cv-download::before,
-.project-header::before,
-.hero-section::before,
-.table-of-contents::before {
-    content: '';
-    position: absolute;
-    top: -2px;
-    left: -2px;
-    right: -2px;
-    bottom: -2px;
-    background: linear-gradient(
-        45deg,
-        #ff006e,
-        #8338ec,
-        #3a86ff,
-        #06ffa5,
-        #ffbe0b,
-        #ff006e
-    );
-    background-size: 300% 300%;
-    border-radius: inherit;
-    z-index: -1;
-    animation: hologramGradient 4s ease infinite;
-    opacity: 0.6;
-}
-
-.home-quick-stats:hover::before,
-.home-collaboration-section:hover::before,
-.collaboration-form-section:hover::before,
-.contact-info-box:hover::before,
-.cv-download:hover::before,
-.project-header:hover::before,
-.hero-section:hover::before,
-.table-of-contents:hover::before {
-    opacity: 1;
-    animation: hologramGradient 2s ease infinite, hologramSweep 3s linear infinite;
-}
-
-/* Dark Mode Holographic Adjustments */
+/* Dark Mode Holographic Adjustments - Only for headings */
 [data-theme="dark"] .home-hero-title,
-[data-theme="dark"] h1 {
+[data-theme="dark"] h1,
+[data-theme="dark"] h2,
+[data-theme="dark"] h3,
+[data-theme="dark"] h4,
+[data-theme="dark"] h5,
+[data-theme="dark"] h6 {
     filter: drop-shadow(0 0 15px rgba(131, 56, 236, 0.7));
 }
 
-[data-theme="dark"] .home-stat-number,
-[data-theme="dark"] .stat-number,
-[data-theme="dark"] .metric-value,
-[data-theme="dark"] .quick-stats-item-value {
-    filter: drop-shadow(0 0 20px rgba(131, 56, 236, 0.8));
-}
-
-[data-theme="dark"] .home-publication-card::after,
-[data-theme="dark"] .home-research-card::after,
-[data-theme="dark"] .carousel-card::after,
-[data-theme="dark"] .publication::after,
-[data-theme="dark"] .module::after,
-[data-theme="dark"] .collaboration-area-card::after,
-[data-theme="dark"] .collaboration-type-card::after,
-[data-theme="dark"] .project-header::after,
-[data-theme="dark"] .hero-section::after,
-[data-theme="dark"] .approach-card::after,
-[data-theme="dark"] .education-card::after,
-[data-theme="dark"] .experience-item::after {
-    mix-blend-mode: screen;
-    opacity: 0.3;
-}
-
-/* Performance: Reduce holographic effects on mobile */
+/* Performance: Reduce holographic effects on mobile - Only headings */
 @media (max-width: 768px) {
     .home-hero-title,
     h1,
     h2,
-    h3 {
+    h3,
+    h4,
+    h5,
+    h6 {
         animation: none;
         background: var(--text);
         -webkit-text-fill-color: var(--text);
         filter: none;
-    }
-    
-    .home-stat-number,
-    .stat-number,
-    .metric-value,
-    .quick-stats-item-value {
-        animation: none;
-        background: var(--link);
-        -webkit-text-fill-color: var(--link);
-        filter: none;
-    }
-    
-    .home-publication-card::after,
-    .home-research-card::after,
-    .carousel-card::after,
-    .publication::after,
-    .module::after,
-    .collaboration-area-card::after,
-    .collaboration-type-card::after,
-    .project-header::after,
-    .hero-section::after {
-        display: none;
     }
 }
 
@@ -5443,51 +5015,6 @@ code:hover + .copy-code-btn {
 
 pre {
     position: relative;
-}
-
-/* ============================================
-   PERFORMANCE OPTIMIZATIONS
-   ============================================ */
-
-/* Reduced Motion Support (Accessibility + Performance) */
-@media (prefers-reduced-motion: reduce) {
-    *,
-    *::before,
-    *::after {
-        animation-duration: 0.01ms !important;
-        animation-iteration-count: 1 !important;
-        transition-duration: 0.01ms !important;
-        scroll-behavior: auto !important;
-    }
-    
-    .particles-container {
-        display: none !important;
-    }
-}
-
-/* Optimize animations for performance */
-@media (prefers-reduced-motion: no-preference) {
-    /* Only apply heavy animations if user doesn't prefer reduced motion */
-    .home-hero-title,
-    h1, h2, h3 {
-        animation: hologramShift 8s ease-in-out infinite;
-    }
-}
-
-/* Disable effects on very small screens for better performance */
-@media (max-width: 480px) {
-    .particles-container {
-        display: none;
-    }
-    
-    .home-hero-title,
-    h1, h2, h3 {
-        background: var(--text) !important;
-        -webkit-background-clip: unset !important;
-        background-clip: unset !important;
-        -webkit-text-fill-color: var(--text) !important;
-        animation: none !important;
-    }
 }
 
 /* Print styles */
