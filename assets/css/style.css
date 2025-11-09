@@ -557,6 +557,8 @@ body {
     background-color: var(--bg);
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
+    perspective: 1000px;
+    transform-style: preserve-3d;
 }
 
 .container {
@@ -3932,6 +3934,926 @@ table td.text-center {
     }
 }
 
+/* ============================================
+   3D/4D VISUAL EFFECTS - APPLIED ACROSS ALL PAGES
+   ============================================ */
+
+/* 3D Perspective Container - Applied to main container */
+main.container {
+    transform-style: preserve-3d;
+    position: relative;
+}
+
+/* 3D Card Tilt Effect - Applied to all cards */
+.home-publication-card,
+.home-research-card,
+.home-stat-item,
+.carousel-card,
+.publication,
+.module,
+.position-card,
+.role-card,
+.approach-card,
+.education-card,
+.experience-item,
+.metric-card,
+.stat-card,
+.timeline-item,
+.featured-module-card,
+.contact-card,
+.tools-section,
+.skills-section {
+    transform-style: preserve-3d;
+    transition: transform 0.3s cubic-bezier(0.23, 1, 0.32, 1),
+                box-shadow 0.3s ease;
+    position: relative;
+}
+
+/* 3D Tilt on Hover */
+.home-publication-card:hover,
+.home-research-card:hover,
+.home-stat-item:hover,
+.carousel-card:hover,
+.publication:hover,
+.module:hover,
+.position-card:hover,
+.role-card:hover,
+.approach-card:hover,
+.education-card:hover,
+.experience-item:hover,
+.metric-card:hover,
+.stat-card:hover,
+.timeline-item:hover,
+.featured-module-card:hover,
+.contact-card:hover {
+    transform: translateY(-8px) rotateX(2deg) rotateY(2deg) scale(1.02);
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.15),
+                0 0 30px rgba(0, 102, 204, 0.1);
+}
+
+[data-theme="dark"] .home-publication-card:hover,
+[data-theme="dark"] .home-research-card:hover,
+[data-theme="dark"] .carousel-card:hover,
+[data-theme="dark"] .publication:hover {
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.4),
+                0 0 30px rgba(102, 179, 255, 0.2);
+}
+
+/* Glass-morphism Effect */
+.home-quick-stats,
+.home-teaching-section,
+.home-collaboration-section,
+.metrics-dashboard,
+.publication,
+.module,
+.position-card,
+.approach-card {
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    background: rgba(255, 255, 255, 0.8);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+}
+
+[data-theme="dark"] .home-quick-stats,
+[data-theme="dark"] .home-teaching-section,
+[data-theme="dark"] .home-collaboration-section,
+[data-theme="dark"] .metrics-dashboard,
+[data-theme="dark"] .publication,
+[data-theme="dark"] .module {
+    background: rgba(42, 42, 42, 0.8);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+/* 3D Text Shadows */
+h1, h2, h3 {
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1),
+                 0 0 20px rgba(0, 102, 204, 0.1);
+    transform: translateZ(0);
+}
+
+.home-hero-title {
+    text-shadow: 3px 3px 6px rgba(0, 0, 0, 0.15),
+                 0 0 30px rgba(0, 102, 204, 0.2);
+}
+
+[data-theme="dark"] h1,
+[data-theme="dark"] h2,
+[data-theme="dark"] h3 {
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5),
+                 0 0 20px rgba(102, 179, 255, 0.2);
+}
+
+/* Glow Effects */
+.home-stat-number,
+.stat-number,
+.metric-value {
+    text-shadow: 0 0 10px rgba(0, 102, 204, 0.3),
+                 0 0 20px rgba(0, 102, 204, 0.2);
+    animation: pulseGlow 3s ease-in-out infinite;
+}
+
+@keyframes pulseGlow {
+    0%, 100% {
+        text-shadow: 0 0 10px rgba(0, 102, 204, 0.3),
+                     0 0 20px rgba(0, 102, 204, 0.2);
+    }
+    50% {
+        text-shadow: 0 0 20px rgba(0, 102, 204, 0.5),
+                     0 0 30px rgba(0, 102, 204, 0.3);
+    }
+}
+
+[data-theme="dark"] .home-stat-number,
+[data-theme="dark"] .stat-number,
+[data-theme="dark"] .metric-value {
+    text-shadow: 0 0 10px rgba(102, 179, 255, 0.4),
+                 0 0 20px rgba(102, 179, 255, 0.3);
+}
+
+/* Buttons with 3D Lift Effect */
+.btn,
+.btn-primary,
+.btn-secondary,
+.see-more-btn,
+.filter-btn,
+.portfolio-filter-btn {
+    transform-style: preserve-3d;
+    transition: transform 0.3s cubic-bezier(0.23, 1, 0.32, 1),
+                box-shadow 0.3s ease;
+    position: relative;
+    overflow: hidden;
+}
+
+.btn:hover,
+.btn-primary:hover,
+.btn-secondary:hover,
+.see-more-btn:hover {
+    transform: translateY(-4px) translateZ(10px) scale(1.05);
+    box-shadow: 0 10px 25px rgba(0, 102, 204, 0.3),
+                0 0 20px rgba(0, 102, 204, 0.2);
+}
+
+.btn:active,
+.btn-primary:active,
+.btn-secondary:active {
+    transform: translateY(-2px) translateZ(5px) scale(1.02);
+}
+
+/* Shine Sweep Effect on Cards */
+.home-publication-card::before,
+.home-research-card::before,
+.carousel-card::before,
+.publication::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(
+        90deg,
+        transparent,
+        rgba(255, 255, 255, 0.3),
+        transparent
+    );
+    transition: left 0.5s ease;
+    z-index: 1;
+    pointer-events: none;
+}
+
+.home-publication-card:hover::before,
+.home-research-card:hover::before,
+.carousel-card:hover::before,
+.publication:hover::before {
+    left: 100%;
+}
+
+[data-theme="dark"] .home-publication-card::before,
+[data-theme="dark"] .home-research-card::before,
+[data-theme="dark"] .carousel-card::before,
+[data-theme="dark"] .publication::before {
+    background: linear-gradient(
+        90deg,
+        transparent,
+        rgba(255, 255, 255, 0.1),
+        transparent
+    );
+}
+
+/* Floating Animation */
+@keyframes float {
+    0%, 100% {
+        transform: translateY(0px) translateZ(0);
+    }
+    50% {
+        transform: translateY(-10px) translateZ(0);
+    }
+}
+
+.home-profile-photo,
+.about-photo {
+    animation: float 6s ease-in-out infinite;
+}
+
+/* Rotating Icons Effect */
+.nav-menu a,
+.social-links a {
+    transition: transform 0.3s ease;
+}
+
+.nav-menu a:hover,
+.social-links a:hover {
+    transform: rotateY(360deg) scale(1.1);
+}
+
+/* Parallax Background Shapes */
+body::before {
+    content: '';
+    position: fixed;
+    top: -50%;
+    left: -50%;
+    width: 200%;
+    height: 200%;
+    background: radial-gradient(
+        circle at 20% 50%,
+        rgba(0, 102, 204, 0.05) 0%,
+        transparent 50%
+    ),
+    radial-gradient(
+        circle at 80% 80%,
+        rgba(0, 102, 204, 0.05) 0%,
+        transparent 50%
+    );
+    animation: morphBackground 20s ease-in-out infinite;
+    z-index: -1;
+    pointer-events: none;
+}
+
+@keyframes morphBackground {
+    0%, 100% {
+        transform: translate(0, 0) scale(1);
+    }
+    33% {
+        transform: translate(5%, 5%) scale(1.1);
+    }
+    66% {
+        transform: translate(-5%, -5%) scale(0.9);
+    }
+}
+
+[data-theme="dark"] body::before {
+    background: radial-gradient(
+        circle at 20% 50%,
+        rgba(102, 179, 255, 0.1) 0%,
+        transparent 50%
+    ),
+    radial-gradient(
+        circle at 80% 80%,
+        rgba(102, 179, 255, 0.1) 0%,
+        transparent 50%
+    );
+}
+
+/* Gradient Shift Animation */
+.home-quick-stats,
+.home-collaboration-section {
+    background: linear-gradient(135deg, var(--bg-alt) 0%, var(--bg-card) 100%);
+    animation: gradientShift 10s ease infinite;
+    background-size: 200% 200%;
+}
+
+@keyframes gradientShift {
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
+}
+
+/* Ripple Effect on Click */
+@keyframes ripple {
+    0% {
+        transform: scale(0);
+        opacity: 1;
+    }
+    100% {
+        transform: scale(4);
+        opacity: 0;
+    }
+}
+
+.btn,
+.btn-primary,
+.btn-secondary {
+    position: relative;
+    overflow: hidden;
+}
+
+.btn::after,
+.btn-primary::after,
+.btn-secondary::after {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 0;
+    height: 0;
+    border-radius: 50%;
+    background: rgba(255, 255, 255, 0.5);
+    transform: translate(-50%, -50%);
+    transition: width 0.6s, height 0.6s;
+}
+
+.btn:active::after,
+.btn-primary:active::after,
+.btn-secondary:active::after {
+    width: 300px;
+    height: 300px;
+    animation: ripple 0.6s ease-out;
+}
+
+/* Fade-in on Scroll */
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(30px) translateZ(0);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0) translateZ(0);
+    }
+}
+
+.home-hero,
+.home-quick-stats,
+.home-publications,
+.home-research-section,
+.home-teaching-section,
+.home-collaboration-section,
+.publication,
+.module,
+.carousel-card {
+    animation: fadeInUp 0.6s ease-out;
+}
+
+/* 3D Badge Effects */
+.home-publication-badge,
+.home-research-badge,
+.contribution-badge,
+.project-status-badge,
+.badge {
+    transform: translateZ(5px);
+    transition: transform 0.3s ease;
+}
+
+.home-publication-badge:hover,
+.home-research-badge:hover,
+.contribution-badge:hover,
+.project-status-badge:hover {
+    transform: translateZ(10px) scale(1.1);
+}
+
+/* Enhanced Shadows with Depth */
+.home-publication-card,
+.home-research-card,
+.carousel-card,
+.publication {
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1),
+                0 0 0 1px rgba(0, 0, 0, 0.05),
+                inset 0 1px 0 rgba(255, 255, 255, 0.1);
+}
+
+[data-theme="dark"] .home-publication-card,
+[data-theme="dark"] .home-research-card,
+[data-theme="dark"] .carousel-card,
+[data-theme="dark"] .publication {
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3),
+                0 0 0 1px rgba(255, 255, 255, 0.05),
+                inset 0 1px 0 rgba(255, 255, 255, 0.05);
+}
+
+/* Parallax Mouse Movement Effect */
+.home-hero-title,
+.home-hero-tagline {
+    transition: transform 0.1s ease-out;
+}
+
+/* Particle System Background (Lightweight) */
+.particles-container {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    pointer-events: none;
+    z-index: -1;
+    overflow: hidden;
+}
+
+.particle {
+    position: absolute;
+    width: 2px;
+    height: 2px;
+    background: rgba(0, 102, 204, 0.3);
+    border-radius: 50%;
+    animation: particleFloat 15s infinite ease-in-out;
+}
+
+@keyframes particleFloat {
+    0%, 100% {
+        transform: translate(0, 0) translateZ(0);
+        opacity: 0;
+    }
+    10% {
+        opacity: 1;
+    }
+    90% {
+        opacity: 1;
+    }
+    100% {
+        transform: translate(100px, -100px) translateZ(0);
+        opacity: 0;
+    }
+}
+
+[data-theme="dark"] .particle {
+    background: rgba(102, 179, 255, 0.4);
+}
+
+/* 3D Image Effects */
+.home-research-image img,
+.carousel-image,
+.about-photo {
+    transform-style: preserve-3d;
+    transition: transform 0.3s ease;
+}
+
+.home-research-image:hover img,
+.carousel-image:hover,
+.about-photo:hover {
+    transform: rotateY(5deg) rotateX(5deg) scale(1.05);
+}
+
+/* Smooth Scroll Parallax */
+@media (prefers-reduced-motion: no-preference) {
+    html {
+        scroll-behavior: smooth;
+    }
+}
+
+/* Performance Optimization */
+.home-publication-card,
+.home-research-card,
+.carousel-card,
+.publication,
+.module {
+    will-change: transform;
+    backface-visibility: hidden;
+    -webkit-backface-visibility: hidden;
+}
+
+/* Responsive: Reduce 3D effects on mobile */
+@media (max-width: 768px) {
+    body {
+        perspective: none;
+    }
+    
+    .home-publication-card:hover,
+    .home-research-card:hover,
+    .carousel-card:hover,
+    .publication:hover {
+        transform: translateY(-4px) scale(1.01);
+    }
+    
+    .btn:hover,
+    .btn-primary:hover,
+    .btn-secondary:hover {
+        transform: translateY(-2px) scale(1.02);
+    }
+}
+
+/* ============================================
+   5D HOLOGRAM EFFECTS - ADVANCED VISUAL ENHANCEMENTS
+   ============================================ */
+
+/* Holographic Text Effect */
+.home-hero-title,
+h1 {
+    background: linear-gradient(
+        90deg,
+        #ff006e 0%,
+        #8338ec 20%,
+        #3a86ff 40%,
+        #06ffa5 60%,
+        #ffbe0b 80%,
+        #ff006e 100%
+    );
+    background-size: 200% auto;
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    animation: hologramShift 3s linear infinite;
+    filter: drop-shadow(0 0 10px rgba(131, 56, 236, 0.5));
+}
+
+@keyframes hologramShift {
+    0% {
+        background-position: 0% center;
+    }
+    100% {
+        background-position: 200% center;
+    }
+}
+
+/* Holographic Card Effect */
+.home-publication-card,
+.home-research-card,
+.carousel-card,
+.publication,
+.module {
+    position: relative;
+    overflow: hidden;
+}
+
+.home-publication-card::after,
+.home-research-card::after,
+.carousel-card::after,
+.publication::after,
+.module::after {
+    content: '';
+    position: absolute;
+    top: -50%;
+    left: -50%;
+    width: 200%;
+    height: 200%;
+    background: linear-gradient(
+        45deg,
+        transparent 30%,
+        rgba(255, 0, 110, 0.1) 40%,
+        rgba(131, 56, 236, 0.1) 50%,
+        rgba(58, 134, 255, 0.1) 60%,
+        rgba(6, 255, 165, 0.1) 70%,
+        transparent 80%
+    );
+    animation: hologramSweep 4s linear infinite;
+    pointer-events: none;
+    z-index: 1;
+    mix-blend-mode: overlay;
+}
+
+@keyframes hologramSweep {
+    0% {
+        transform: translate(-50%, -50%) rotate(0deg);
+    }
+    100% {
+        transform: translate(-50%, -50%) rotate(360deg);
+    }
+}
+
+/* Chromatic Aberration Effect on Hover */
+.home-publication-card:hover,
+.home-research-card:hover,
+.carousel-card:hover,
+.publication:hover,
+.module:hover {
+    filter: drop-shadow(0 0 20px rgba(131, 56, 236, 0.3));
+}
+
+.home-publication-card:hover h3,
+.home-research-card:hover h3,
+.carousel-card:hover h3,
+.publication:hover h3 {
+    text-shadow: 
+        2px 0 0 rgba(255, 0, 110, 0.5),
+        -2px 0 0 rgba(58, 134, 255, 0.5),
+        0 2px 0 rgba(6, 255, 165, 0.5),
+        0 -2px 0 rgba(255, 190, 11, 0.5);
+    animation: chromaticAberration 0.3s ease;
+}
+
+@keyframes chromaticAberration {
+    0%, 100% {
+        text-shadow: 
+            2px 0 0 rgba(255, 0, 110, 0.5),
+            -2px 0 0 rgba(58, 134, 255, 0.5),
+            0 2px 0 rgba(6, 255, 165, 0.5),
+            0 -2px 0 rgba(255, 190, 11, 0.5);
+    }
+    50% {
+        text-shadow: 
+            3px 0 0 rgba(255, 0, 110, 0.7),
+            -3px 0 0 rgba(58, 134, 255, 0.7),
+            0 3px 0 rgba(6, 255, 165, 0.7),
+            0 -3px 0 rgba(255, 190, 11, 0.7);
+    }
+}
+
+/* Holographic Badge Effect */
+.home-publication-badge,
+.home-research-badge,
+.contribution-badge,
+.project-status-badge {
+    background: linear-gradient(
+        135deg,
+        rgba(255, 0, 110, 0.9) 0%,
+        rgba(131, 56, 236, 0.9) 25%,
+        rgba(58, 134, 255, 0.9) 50%,
+        rgba(6, 255, 165, 0.9) 75%,
+        rgba(255, 190, 11, 0.9) 100%
+    );
+    background-size: 200% 200%;
+    animation: hologramGradient 3s ease infinite;
+    box-shadow: 
+        0 0 20px rgba(131, 56, 236, 0.5),
+        inset 0 0 20px rgba(255, 255, 255, 0.2);
+    position: relative;
+    overflow: hidden;
+}
+
+.home-publication-badge::before,
+.home-research-badge::before,
+.contribution-badge::before,
+.project-status-badge::before {
+    content: '';
+    position: absolute;
+    top: -50%;
+    left: -50%;
+    width: 200%;
+    height: 200%;
+    background: linear-gradient(
+        45deg,
+        transparent,
+        rgba(255, 255, 255, 0.3),
+        transparent
+    );
+    animation: hologramShine 2s linear infinite;
+}
+
+@keyframes hologramGradient {
+    0%, 100% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+}
+
+@keyframes hologramShine {
+    0% {
+        transform: translate(-50%, -50%) rotate(0deg);
+    }
+    100% {
+        transform: translate(-50%, -50%) rotate(360deg);
+    }
+}
+
+/* Holographic Button Effect */
+.btn:hover,
+.btn-primary:hover,
+.btn-secondary:hover {
+    background: linear-gradient(
+        135deg,
+        #ff006e 0%,
+        #8338ec 25%,
+        #3a86ff 50%,
+        #06ffa5 75%,
+        #ffbe0b 100%
+    );
+    background-size: 200% 200%;
+    animation: hologramGradient 2s ease infinite;
+    box-shadow: 
+        0 10px 25px rgba(131, 56, 236, 0.4),
+        0 0 30px rgba(58, 134, 255, 0.3),
+        inset 0 0 20px rgba(255, 255, 255, 0.2);
+    color: white;
+    text-shadow: 0 0 10px rgba(255, 255, 255, 0.5);
+}
+
+/* Multi-Layer Depth Effect (5D) */
+.home-hero,
+.home-quick-stats,
+.home-publications {
+    position: relative;
+}
+
+.home-hero::before,
+.home-quick-stats::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: radial-gradient(
+        circle at 30% 50%,
+        rgba(131, 56, 236, 0.1) 0%,
+        transparent 50%
+    ),
+    radial-gradient(
+        circle at 70% 50%,
+        rgba(58, 134, 255, 0.1) 0%,
+        transparent 50%
+    );
+    pointer-events: none;
+    z-index: -1;
+    animation: depthPulse 8s ease-in-out infinite;
+    transform: translateZ(-50px);
+}
+
+@keyframes depthPulse {
+    0%, 100% {
+        opacity: 0.5;
+        transform: translateZ(-50px) scale(1);
+    }
+    50% {
+        opacity: 0.8;
+        transform: translateZ(-30px) scale(1.1);
+    }
+}
+
+/* Holographic Glitch Effect */
+@keyframes hologramGlitch {
+    0%, 100% {
+        transform: translate(0);
+        filter: hue-rotate(0deg);
+    }
+    20% {
+        transform: translate(-2px, 2px);
+        filter: hue-rotate(90deg);
+    }
+    40% {
+        transform: translate(-2px, -2px);
+        filter: hue-rotate(180deg);
+    }
+    60% {
+        transform: translate(2px, 2px);
+        filter: hue-rotate(270deg);
+    }
+    80% {
+        transform: translate(2px, -2px);
+        filter: hue-rotate(360deg);
+    }
+}
+
+.home-hero-title:hover,
+h1:hover {
+    animation: hologramShift 3s linear infinite, hologramGlitch 0.3s ease infinite;
+}
+
+/* Prism/Rainbow Light Effect */
+.home-profile-photo,
+.about-photo {
+    position: relative;
+}
+
+.home-profile-photo::before,
+.about-photo::before {
+    content: '';
+    position: absolute;
+    top: -2px;
+    left: -2px;
+    right: -2px;
+    bottom: -2px;
+    background: linear-gradient(
+        45deg,
+        #ff006e,
+        #8338ec,
+        #3a86ff,
+        #06ffa5,
+        #ffbe0b,
+        #ff006e
+    );
+    background-size: 300% 300%;
+    border-radius: 50%;
+    z-index: -1;
+    animation: hologramGradient 3s ease infinite;
+    opacity: 0.7;
+    filter: blur(8px);
+}
+
+.home-profile-photo:hover::before,
+.about-photo:hover::before {
+    opacity: 1;
+    filter: blur(12px);
+    animation: hologramGradient 1s ease infinite, hologramSweep 2s linear infinite;
+}
+
+/* Holographic Stat Numbers */
+.home-stat-number,
+.stat-number,
+.metric-value {
+    background: linear-gradient(
+        180deg,
+        #ff006e 0%,
+        #8338ec 25%,
+        #3a86ff 50%,
+        #06ffa5 75%,
+        #ffbe0b 100%
+    );
+    background-size: 100% 200%;
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    animation: hologramVertical 4s ease infinite;
+    filter: drop-shadow(0 0 15px rgba(131, 56, 236, 0.6));
+}
+
+@keyframes hologramVertical {
+    0%, 100% {
+        background-position: 0% 0%;
+    }
+    50% {
+        background-position: 0% 100%;
+    }
+}
+
+/* Holographic Border Effect */
+.home-quick-stats,
+.home-collaboration-section {
+    position: relative;
+    border: 2px solid transparent;
+    background-clip: padding-box;
+}
+
+.home-quick-stats::before,
+.home-collaboration-section::before {
+    content: '';
+    position: absolute;
+    top: -2px;
+    left: -2px;
+    right: -2px;
+    bottom: -2px;
+    background: linear-gradient(
+        45deg,
+        #ff006e,
+        #8338ec,
+        #3a86ff,
+        #06ffa5,
+        #ffbe0b,
+        #ff006e
+    );
+    background-size: 300% 300%;
+    border-radius: inherit;
+    z-index: -1;
+    animation: hologramGradient 4s ease infinite;
+    opacity: 0.6;
+}
+
+.home-quick-stats:hover::before,
+.home-collaboration-section:hover::before {
+    opacity: 1;
+    animation: hologramGradient 2s ease infinite, hologramSweep 3s linear infinite;
+}
+
+/* Dark Mode Holographic Adjustments */
+[data-theme="dark"] .home-hero-title,
+[data-theme="dark"] h1 {
+    filter: drop-shadow(0 0 15px rgba(131, 56, 236, 0.7));
+}
+
+[data-theme="dark"] .home-stat-number,
+[data-theme="dark"] .stat-number,
+[data-theme="dark"] .metric-value {
+    filter: drop-shadow(0 0 20px rgba(131, 56, 236, 0.8));
+}
+
+[data-theme="dark"] .home-publication-card::after,
+[data-theme="dark"] .home-research-card::after,
+[data-theme="dark"] .carousel-card::after {
+    mix-blend-mode: screen;
+    opacity: 0.3;
+}
+
+/* Performance: Reduce holographic effects on mobile */
+@media (max-width: 768px) {
+    .home-hero-title,
+    h1 {
+        animation: none;
+        background: var(--text);
+        -webkit-text-fill-color: var(--text);
+        filter: none;
+    }
+    
+    .home-stat-number,
+    .stat-number,
+    .metric-value {
+        animation: none;
+        background: var(--link);
+        -webkit-text-fill-color: var(--link);
+        filter: none;
+    }
+    
+    .home-publication-card::after,
+    .home-research-card::after,
+    .carousel-card::after {
+        display: none;
+    }
+}
+
 /* Print styles */
 @media print {
     .navbar,
@@ -3941,6 +4863,32 @@ table td.text-center {
     .publication-search,
     .teaching-filters,
     footer {
+        display: none;
+    }
+    
+    /* Disable 3D and holographic effects for printing */
+    body {
+        perspective: none;
+    }
+    
+    .home-publication-card,
+    .home-research-card,
+    .carousel-card {
+        transform: none !important;
+        box-shadow: none !important;
+    }
+    
+    .home-hero-title,
+    h1 {
+        animation: none;
+        background: #000;
+        -webkit-text-fill-color: #000;
+        filter: none;
+    }
+    
+    .home-publication-card::after,
+    .home-research-card::after,
+    .carousel-card::after {
         display: none;
     }
 }
