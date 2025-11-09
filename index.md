@@ -105,10 +105,10 @@ description: "Dr. Dirichukwu Goodluck Oguzie (PhD, MSc, BSc) - Post-PhD Research
       <h3>Wi-Fi CSI Action Recognition with ESP32</h3>
       <p class="home-research-meta">2024 - Present • Hardware-based Action Recognition</p>
       <div class="home-research-image">
-        <div style="background: var(--bg-alt); border-radius: 6px; padding: 2rem; text-align: center; min-height: 180px; display: flex; align-items: center; justify-content: center; color: var(--text-light);">
+        <div class="home-research-placeholder">
           <div>
-            <div style="font-size: 3rem; margin-bottom: 0.5rem;">📡</div>
-            <div style="font-size: 0.9rem;">Wi-Fi CSI Signal Processing</div>
+            <div class="home-research-placeholder-icon">📡</div>
+            <div class="home-research-placeholder-text">Wi-Fi CSI Signal Processing</div>
           </div>
         </div>
         <p class="home-research-caption">Privacy-preserving action recognition using wireless signals</p>
@@ -126,7 +126,7 @@ description: "Dr. Dirichukwu Goodluck Oguzie (PhD, MSc, BSc) - Post-PhD Research
     </div>
   </div>
 
-  <p style="text-align: center; margin-top: 2rem;">
+  <p class="section-cta">
     <a href="{{ '/portfolio' | relative_url }}" class="btn btn-secondary">View All Research Projects</a>
   </p>
 </div>
@@ -138,22 +138,22 @@ description: "Dr. Dirichukwu Goodluck Oguzie (PhD, MSc, BSc) - Post-PhD Research
 <div class="home-teaching-section">
   <p>I teach AI and machine learning courses at multiple institutions, with <strong>13+ years of experience</strong> preparing students for academic and industry careers. My courses integrate cutting-edge research with practical application.</p>
   
-  <div class="home-teaching-metrics" style="display: grid; grid-template-columns: repeat(auto-fit, minmax(150px, 1fr)); gap: 1.5rem; margin: 2rem 0;">
-    <div style="text-align: center; padding: 1rem; background: var(--bg-card); border-radius: 8px; border: 1px solid var(--border);">
-      <div style="font-size: 2rem; font-weight: bold; color: var(--accent); margin-bottom: 0.5rem;">500+</div>
-      <div style="font-size: 0.9rem; color: var(--text-light);">Students Taught</div>
+  <div class="home-teaching-metrics">
+    <div>
+      <div class="metric-number">500+</div>
+      <div class="metric-text">Students Taught</div>
     </div>
-    <div style="text-align: center; padding: 1rem; background: var(--bg-card); border-radius: 8px; border: 1px solid var(--border);">
-      <div style="font-size: 2rem; font-weight: bold; color: var(--accent); margin-bottom: 0.5rem;">20+</div>
-      <div style="font-size: 0.9rem; color: var(--text-light);">Modules Taught</div>
+    <div>
+      <div class="metric-number">20+</div>
+      <div class="metric-text">Modules Taught</div>
     </div>
-    <div style="text-align: center; padding: 1rem; background: var(--bg-card); border-radius: 8px; border: 1px solid var(--border);">
-      <div style="font-size: 2rem; font-weight: bold; color: var(--accent); margin-bottom: 0.5rem;">85%+</div>
-      <div style="font-size: 0.9rem; color: var(--text-light);">Avg Performance</div>
+    <div>
+      <div class="metric-number">85%+</div>
+      <div class="metric-text">Avg Performance</div>
     </div>
-    <div style="text-align: center; padding: 1rem; background: var(--bg-card); border-radius: 8px; border: 1px solid var(--border);">
-      <div style="font-size: 2rem; font-weight: bold; color: var(--accent); margin-bottom: 0.5rem;">4</div>
-      <div style="font-size: 0.9rem; color: var(--text-light);">Institutions</div>
+    <div>
+      <div class="metric-number">4</div>
+      <div class="metric-text">Institutions</div>
     </div>
   </div>
   
@@ -166,7 +166,7 @@ description: "Dr. Dirichukwu Goodluck Oguzie (PhD, MSc, BSc) - Post-PhD Research
     </div>
   </div>
 
-  <p style="text-align: center; margin-top: 1.5rem;">
+  <p class="section-cta">
     <a href="{{ '/teaching' | relative_url }}" class="btn btn-secondary">View Teaching Details</a>
   </p>
 </div>

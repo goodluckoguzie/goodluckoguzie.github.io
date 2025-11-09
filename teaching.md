@@ -12,7 +12,7 @@ I believe in combining cutting-edge research with practical application. My cour
 
 ## Teaching Overview
 
-<div class="stats-grid" style="margin: 2rem 0;">
+<div class="stats-grid">
   <div class="stat-card">
     <div class="stat-number">13+</div>
     <p class="stat-label">Years Experience</p>
@@ -632,7 +632,7 @@ Comprehensive progressive teaching modules covering full-stack web development:
   </div>
 </div>
 
-<p style="margin-top: 2rem; text-align: center;">
+<p class="section-cta">
   <strong>For course-related inquiries, student consultations, or teaching resource requests, please feel free to reach out.</strong>
 </p>
 
@@ -651,7 +651,7 @@ Comprehensive progressive teaching modules covering full-stack web development:
 <li>Proven track record in curriculum development, assessment design, and student mentoring</li>
 </ul>
 
-<p style="text-align: center; margin-top: 2rem;">
+<p class="section-cta">
   <strong>I'm open to discussing teaching opportunities, course development, and educational collaborations.</strong>
 </p>
 
