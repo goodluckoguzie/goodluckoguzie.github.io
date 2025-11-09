@@ -5445,6 +5445,51 @@ pre {
     position: relative;
 }
 
+/* ============================================
+   PERFORMANCE OPTIMIZATIONS
+   ============================================ */
+
+/* Reduced Motion Support (Accessibility + Performance) */
+@media (prefers-reduced-motion: reduce) {
+    *,
+    *::before,
+    *::after {
+        animation-duration: 0.01ms !important;
+        animation-iteration-count: 1 !important;
+        transition-duration: 0.01ms !important;
+        scroll-behavior: auto !important;
+    }
+    
+    .particles-container {
+        display: none !important;
+    }
+}
+
+/* Optimize animations for performance */
+@media (prefers-reduced-motion: no-preference) {
+    /* Only apply heavy animations if user doesn't prefer reduced motion */
+    .home-hero-title,
+    h1, h2, h3 {
+        animation: hologramShift 8s ease-in-out infinite;
+    }
+}
+
+/* Disable effects on very small screens for better performance */
+@media (max-width: 480px) {
+    .particles-container {
+        display: none;
+    }
+    
+    .home-hero-title,
+    h1, h2, h3 {
+        background: var(--text) !important;
+        -webkit-background-clip: unset !important;
+        background-clip: unset !important;
+        -webkit-text-fill-color: var(--text) !important;
+        animation: none !important;
+    }
+}
+
 /* Print styles */
 @media print {
     .navbar,
