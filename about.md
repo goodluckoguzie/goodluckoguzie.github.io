@@ -6,8 +6,6 @@ description: "Learn about Dr. Dirichukwu Goodluck Oguzie (PhD, MSc, BSc in Compu
 
 # About Me
 
-My Professional Journey
-
 <div class="about-hero-section">
   <div class="about-image">
     <img src="{{ '/assets/images/goodluck.jpg' | relative_url }}" alt="Dr. Dirichukwu Goodluck Oguzie, PhD in Computer Science, Post-PhD Researcher and Lecturer" class="about-photo" loading="lazy">
@@ -15,38 +13,56 @@ My Professional Journey
   <div class="about-content">
     <h2>Hello, I'm Dr. Dirichukwu Goodluck Oguzie</h2>
     <p><strong>PhD, MSc, BSc</strong> • Computer Science</p>
-    <p>I'm an AI Researcher and Lecturer specializing in <strong>reinforcement learning</strong>, machine learning, social robotics, and human-computer interaction.</p>
+    <p>I'm an AI Researcher and Lecturer specializing in <strong>reinforcement learning</strong>, machine learning, social robotics, and neural network architectures.</p>
     <p>I develop intelligent systems that integrate reinforcement learning, computer vision, machine learning, and predictive models to solve real-world problems. My research has been published at top conferences including UKCI 2023 and IEEE PRML 2024.</p>
-    <p>With 13+ years of programming and teaching experience at Crimson, QA Ltd, and Aston University, I combine academic rigor with practical instruction to inspire the next generation of computer scientists and AI researchers.</p>
+    <p>With 13+ years of programming and teaching experience, I combine academic rigor with practical instruction to inspire the next generation of computer scientists and AI researchers.</p>
   </div>
 </div>
 
-## My Approach
+---
 
-<div class="approach-grid">
-  <div class="approach-card">
-    <h3>Research-Driven</h3>
-    <p>Every project starts with clear research objectives. I focus on solving real-world problems while advancing knowledge in AI and robotics.</p>
+## Quick Stats
+
+<div class="stats-grid">
+  <div class="stat-card">
+    <div class="stat-number">PhD</div>
+    <p class="stat-label">Computer Science</p>
+    <p class="stat-detail">Aston University • 2024</p>
   </div>
-  <div class="approach-card">
-    <h3>Collaborative</h3>
-    <p>Success is a team effort. I work closely with colleagues, students, and research partners to achieve the best outcomes.</p>
+  <div class="stat-card">
+    <div class="stat-number">2</div>
+    <p class="stat-label">Papers Published</p>
+    <p class="stat-detail">IEEE PRML 2024 • UKCI 2023</p>
   </div>
-  <div class="approach-card">
-    <h3>Rigorous</h3>
-    <p>I use rigorous evaluation methodologies to validate research and continuously optimize performance in both research and teaching.</p>
+  <div class="stat-card">
+    <div class="stat-number">13+</div>
+    <p class="stat-label">Years Teaching</p>
+    <p class="stat-detail">AI & Machine Learning</p>
   </div>
-  <div class="approach-card">
-    <h3>Adaptive</h3>
-    <p>Research environments evolve quickly. I stay flexible and adjust strategies to meet new challenges and opportunities.</p>
+  <div class="stat-card">
+    <div class="stat-number">4</div>
+    <p class="stat-label">Institutions</p>
+    <p class="stat-detail">QA Ltd • Crimson • Aston • Others</p>
   </div>
 </div>
+
+---
+
+## My Story
+
+<p>My journey in AI and robotics began with a passion for understanding how intelligent systems can solve real-world problems. Starting from Electrical and Electronics Engineering, I transitioned to Robotics and Automation, eventually focusing on reinforcement learning and social robot navigation during my PhD at Aston University.</p>
+
+<p>What drives me is the intersection of research and teaching—developing novel algorithms while sharing knowledge with students. My research on Cosine-Gated LSTM and Predictive World Models emerged from the need to create more efficient and socially-aware navigation systems. I believe in making AI accessible, practical, and beneficial for society.</p>
+
+<p>Outside of research, I enjoy exploring new technologies, contributing to open-source projects, and mentoring students. I'm always open to collaborations that advance the field of AI and robotics.</p>
+
+---
 
 ## Education
 
 <div class="education-grid">
-  <div class="education-card">
-    <div class="education-icon">Degree</div>
+  <div class="education-card education-card-phd">
+    <div class="education-icon">🎓</div>
     <div class="education-content">
       <h3>PhD, Computer Science</h3>
       <p><strong>Aston University</strong></p>
@@ -57,7 +73,7 @@ My Professional Journey
   </div>
   
   <div class="education-card">
-    <div class="education-icon">Degree</div>
+    <div class="education-icon">🎓</div>
     <div class="education-content">
       <h3>MSc, Automation Control and Robotics</h3>
       <p><strong>Sheffield Hallam University</strong></p>
@@ -66,7 +82,7 @@ My Professional Journey
   </div>
   
   <div class="education-card">
-    <div class="education-icon">Degree</div>
+    <div class="education-icon">🎓</div>
     <div class="education-content">
       <h3>BSc, Electrical and Electronics Engineering</h3>
       <p><strong>Cyprus International University</strong></p>
@@ -75,40 +91,28 @@ My Professional Journey
   </div>
 </div>
 
+---
+
 ## Professional Experience
 
 <div class="experience-timeline">
-  <div class="experience-item">
+  <div class="experience-item experience-current">
     <div class="experience-date">Jan 2024 - Present</div>
     <div class="experience-content">
       <h3>Lecturer</h3>
       <p><strong>QA Ltd</strong></p>
       <p>Birmingham, United Kingdom • Part-time • Hybrid</p>
-      <div class="experience-achievements">
-        <h4>Key Areas:</h4>
-        <ul>
-          <li>✓ Teaching computer science and AI courses</li>
-          <li>✓ Covering topics in algorithms, data structures, and machine learning</li>
-          <li>✓ Delivering hybrid instruction combining online and in-person teaching</li>
-        </ul>
-      </div>
+      <p>Teaching computer science and AI courses across partner universities, covering algorithms, data structures, and machine learning.</p>
     </div>
   </div>
 
-  <div class="experience-item">
+  <div class="experience-item experience-current">
     <div class="experience-date">Nov 2020 - Present</div>
     <div class="experience-content">
       <h3>Lecturer in Computer Science</h3>
-      <p><strong>Crimson</strong></p>
-      <p>Full-time</p>
-      <div class="experience-achievements">
-        <h4>Key Responsibilities:</h4>
-        <ul>
-          <li>✓ Teaching computer science fundamentals and advanced topics</li>
-          <li>✓ Curriculum development and course design</li>
-          <li>✓ Student mentoring and academic support</li>
-        </ul>
-      </div>
+      <p><strong>Crimson Education</strong></p>
+      <p>Full-time • Online</p>
+      <p>Teaching computer science fundamentals and advanced topics, developing curricula, and mentoring students worldwide for GCSE and A-level examinations.</p>
     </div>
   </div>
 
@@ -118,31 +122,17 @@ My Professional Journey
       <h3>Teaching Assistant</h3>
       <p><strong>South and City College Birmingham</strong></p>
       <p>Birmingham, United Kingdom • Contract</p>
-      <div class="experience-achievements">
-        <h4>Key Responsibilities:</h4>
-        <ul>
-          <li>✓ Provided tailored support to students with various learning disabilities</li>
-          <li>✓ Employed innovative teaching strategies to accommodate individual learning styles</li>
-          <li>✓ Provided instructional support for Robotics and Automation courses (Level 4-5)</li>
-        </ul>
-      </div>
+      <p>Provided tailored support to students with learning disabilities, employing innovative teaching strategies for Robotics and Automation courses (Level 4-5).</p>
     </div>
   </div>
 
   <div class="experience-item">
     <div class="experience-date">Feb 2020 - Dec 2021</div>
     <div class="experience-content">
-      <h3>Teaching Assistant in A.I: Robotics and Autonomous Systems (MSc)</h3>
+      <h3>Teaching Assistant (MSc Robotics)</h3>
       <p><strong>Aston University</strong></p>
       <p>Birmingham, United Kingdom • Contract</p>
-      <div class="experience-achievements">
-        <h4>Key Responsibilities:</h4>
-        <ul>
-          <li>✓ Conducted advanced research and implemented complex algorithmic solutions in robotics</li>
-          <li>✓ Developed and delivered modules on object detection, AI, and machine learning</li>
-          <li>✓ Assisted in module delivery for master's-level Robotics courses</li>
-        </ul>
-      </div>
+      <p>Conducted advanced research, developed modules on object detection and AI, and assisted in master's-level Robotics courses.</p>
     </div>
   </div>
 
@@ -152,166 +142,75 @@ My Professional Journey
       <h3>Junior Business Operations Coordinator</h3>
       <p><strong>Total Security Services</strong></p>
       <p>Birmingham, UK • Full-time</p>
-      <div class="experience-achievements">
-        <h4>Key Achievements:</h4>
-        <ul>
-          <li>✓ Played key role in CRM data management, improving customer data accuracy by 35%</li>
-          <li>✓ Maintained 100% accuracy in performance tracking by developing and monitoring weekly and monthly operational reports, enhancing data-driven decision-making</li>
-          <li>✓ Liaised with 10+ key stakeholders, including security personnel, management teams, and external partners, to align business operations during the Birmingham Commonwealth Games 2022</li>
-          <li>✓ Assisted in onboarding and training 5+ new team members, improving team productivity and ensuring compliance with operational standards</li>
-        </ul>
-      </div>
-    </div>
-  </div>
-</div>
-
-## Tools & Technologies
-
-<div class="tools-grid">
-  <div class="tools-section">
-    <h3>Programming Languages</h3>
-    <div class="tools-tags">
-      <span>Python (Advanced)</span>
-      <span>JavaScript</span>
-      <span>Modern C++17</span>
-      <span>C++</span>
-      <span>C#</span>
-      <span>Java</span>
-      <span>SQL</span>
-      <span>Bash</span>
-      <span>HTML/CSS</span>
-      <span>MATLAB</span>
-    </div>
-  </div>
-  <div class="tools-section">
-    <h3>Machine Learning & AI</h3>
-    <div class="tools-tags">
-      <span>PyTorch</span>
-      <span>TensorFlow</span>
-      <span>JAX</span>
-      <span>Scikit-Learn</span>
-      <span>Computer Vision</span>
-      <span>OpenCV</span>
-      <span>Deep Learning</span>
-      <span>Reinforcement Learning</span>
-      <span>LLM Fine-tuning</span>
-      <span>LoRA</span>
-      <span>RAG</span>
-      <span>LangChain</span>
-      <span>Hugging Face</span>
-    </div>
-  </div>
-  <div class="tools-section">
-    <h3>Cloud & DevOps</h3>
-    <div class="tools-tags">
-      <span>AWS (EC2/S3/ECR/Lambda)</span>
-      <span>Azure</span>
-      <span>Docker</span>
-      <span>Kubernetes</span>
-      <span>GitHub Actions</span>
-      <span>MLflow</span>
-      <span>DVC</span>
-      <span>TensorRT</span>
-    </div>
-  </div>
-  <div class="tools-section">
-    <h3>Robotics & Simulation</h3>
-    <div class="tools-tags">
-      <span>ROS</span>
-      <span>CARLA</span>
-      <span>SocNavGym</span>
-      <span>Gazebo</span>
-      <span>Sensor Fusion</span>
-      <span>SLAM</span>
-      <span>Kalman Filters</span>
-      <span>Navigation</span>
-    </div>
-  </div>
-  <div class="tools-section">
-    <h3>Web & Databases</h3>
-    <div class="tools-tags">
-      <span>Django</span>
-      <span>React.js</span>
-      <span>Node.js</span>
-      <span>Express</span>
-      <span>PostgreSQL</span>
-      <span>MySQL</span>
-      <span>MongoDB</span>
-    </div>
-  </div>
-  <div class="tools-section">
-    <h3>Tools & Platforms</h3>
-    <div class="tools-tags">
-      <span>Git/GitHub</span>
-      <span>Jupyter</span>
-      <span>Blackboard</span>
-      <span>Moodle</span>
-      <span>Cisco Packet Tracer</span>
-      <span>Tinkercad</span>
-    </div>
-  </div>
-</div>
-
-## Skills & Competencies
-
-<div class="skills-grid">
-  <div class="skills-section">
-    <h3>Research & Development</h3>
-    <div class="skills-tags">
-      <span>Algorithm Development</span>
-      <span>Neural Network Architectures</span>
-      <span>Reinforcement Learning</span>
-      <span>Computer Vision</span>
-      <span>ML OPS</span>
-      <span>Project Management</span>
-      <span>Experimental Design</span>
-      <span>Performance Evaluation</span>
-    </div>
-  </div>
-  <div class="skills-section">
-    <h3>Teaching & Mentoring</h3>
-    <div class="skills-tags">
-      <span>Curriculum Development</span>
-      <span>Student Supervision</span>
-      <span>Course Design</span>
-      <span>13+ Years Experience</span>
-      <span>Mathematics</span>
-      <span>OOP</span>
-      <span>Data Structures</span>
-      <span>Inclusive Teaching</span>
-    </div>
-  </div>
-  <div class="skills-section">
-    <h3>Engineering & Robotics</h3>
-    <div class="skills-tags">
-      <span>Automation Control</span>
-      <span>Robotics Programming</span>
-      <span>Sensor Technology</span>
-      <span>Signal Processing</span>
-      <span>Navigation Principles</span>
-      <span>SLAM</span>
-      <span>Sensor Fusion</span>
-      <span>Electronics Engineering</span>
-    </div>
-  </div>
-  <div class="skills-section">
-    <h3>Data & Analytics</h3>
-    <div class="skills-tags">
-      <span>Data Science</span>
-      <span>Data Analysis</span>
-      <span>Big Data</span>
-      <span>Knowledge Engineering</span>
-      <span>Image Processing</span>
-      <span>Statistical Analysis</span>
-      <span>Data Governance</span>
+      <p>Managed CRM data (35% accuracy improvement), developed operational reports, and coordinated business operations during Birmingham Commonwealth Games 2022.</p>
     </div>
   </div>
 </div>
 
 ---
 
-## Contact
+## Core Expertise
 
-**Email:** [drgoodluckoguzie@gmail.com](mailto:drgoodluckoguzie@gmail.com)  
-**LinkedIn:** [linkedin.com/in/goodluck-oguzie-0387b3157](https://www.linkedin.com/in/goodluck-oguzie-0387b3157)  
-**GitHub:** [github.com/goodluckoguzie](https://github.com/goodluckoguzie)
+<div class="expertise-grid">
+  <div class="expertise-section">
+    <h3>Research & Development</h3>
+    <div class="expertise-tags">
+      <span class="expertise-tag expert">Reinforcement Learning ⭐⭐⭐</span>
+      <span class="expertise-tag expert">Neural Network Architectures ⭐⭐⭐</span>
+      <span class="expertise-tag advanced">Computer Vision ⭐⭐</span>
+      <span class="expertise-tag advanced">Social Robotics ⭐⭐</span>
+      <span class="expertise-tag advanced">Algorithm Development ⭐⭐</span>
+      <span class="expertise-tag intermediate">ML OPS ⭐</span>
+      <span class="expertise-tag intermediate">Project Management ⭐</span>
+    </div>
+  </div>
+  
+  <div class="expertise-section">
+    <h3>Technologies</h3>
+    <div class="expertise-tags">
+      <span class="expertise-tag expert">Python ⭐⭐⭐</span>
+      <span class="expertise-tag expert">PyTorch ⭐⭐⭐</span>
+      <span class="expertise-tag advanced">TensorFlow ⭐⭐</span>
+      <span class="expertise-tag advanced">AWS ⭐⭐</span>
+      <span class="expertise-tag advanced">Docker ⭐⭐</span>
+      <span class="expertise-tag intermediate">JavaScript ⭐</span>
+      <span class="expertise-tag intermediate">React.js ⭐</span>
+      <span class="expertise-tag intermediate">PostgreSQL ⭐</span>
+      <span class="expertise-tag intermediate">ROS ⭐</span>
+      <span class="expertise-tag intermediate">Git/GitHub ⭐</span>
+    </div>
+  </div>
+  
+  <div class="expertise-section">
+    <h3>Teaching & Mentoring</h3>
+    <div class="expertise-tags">
+      <span class="expertise-tag expert">Curriculum Development ⭐⭐⭐</span>
+      <span class="expertise-tag expert">Student Supervision ⭐⭐⭐</span>
+      <span class="expertise-tag advanced">Course Design ⭐⭐</span>
+      <span class="expertise-tag advanced">Inclusive Teaching ⭐⭐</span>
+      <span class="expertise-tag intermediate">Mathematics ⭐</span>
+      <span class="expertise-tag intermediate">OOP ⭐</span>
+      <span class="expertise-tag intermediate">Data Structures ⭐</span>
+    </div>
+  </div>
+</div>
+
+---
+
+## Get in Touch
+
+<div class="about-contact-section">
+  <h3>Let's Connect</h3>
+  
+  <div class="contact-info-box">
+    <p><strong>Email:</strong> <a href="mailto:goodluckoguzie1@gmail.com">goodluckoguzie1@gmail.com</a></p>
+    <p><strong>LinkedIn:</strong> <a href="https://www.linkedin.com/in/goodluck-oguzie-0387b3157" target="_blank">linkedin.com/in/goodluck-oguzie-0387b3157</a></p>
+    <p><strong>GitHub:</strong> <a href="https://github.com/goodluckoguzie" target="_blank">github.com/goodluckoguzie</a></p>
+    <p><strong>Response Time:</strong> Within 48 hours</p>
+  </div>
+
+  <p class="about-contact-cta">
+    <a href="mailto:goodluckoguzie1@gmail.com?subject=Hello from Website" class="btn">Send Email</a>
+    <a href="https://www.linkedin.com/in/goodluck-oguzie-0387b3157" class="btn btn-secondary" target="_blank">Connect on LinkedIn</a>
+  </p>
+</div>

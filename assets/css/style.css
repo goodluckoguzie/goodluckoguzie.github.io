@@ -1882,8 +1882,31 @@ code {
     border-color: var(--link);
 }
 
+.education-card-phd {
+    border: 2px solid var(--link);
+    background: linear-gradient(to bottom, var(--bg-card), var(--bg-alt));
+}
+
+.education-card-phd .education-icon {
+    font-size: 2rem;
+    background: var(--link);
+    color: white;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+}
+
 .education-icon {
-    font-size: 2.5rem;
+    font-size: 1.5rem;
+    width: 50px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
     flex-shrink: 0;
 }
 
@@ -1900,22 +1923,70 @@ code {
 
 .experience-timeline {
     margin: 3rem 0 4rem 0;
+    position: relative;
+    padding-left: 2rem;
+}
+
+.experience-timeline::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    width: 3px;
+    background: var(--border);
 }
 
 .experience-item {
-    display: flex;
-    gap: 2rem;
+    position: relative;
     margin-bottom: 3rem;
     padding-bottom: 2rem;
-    border-bottom: 2px solid var(--border);
+    padding-left: 2rem;
+}
+
+.experience-item::before {
+    content: '';
+    position: absolute;
+    left: -0.5rem;
+    top: 0.5rem;
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    background: var(--link);
+    border: 3px solid var(--bg);
+    box-shadow: 0 0 0 2px var(--link);
+}
+
+.experience-item.experience-current::before {
+    background: var(--link);
+    box-shadow: 0 0 0 2px var(--link), 0 0 0 4px rgba(0, 102, 204, 0.2);
+    animation: pulse 2s infinite;
+}
+
+@keyframes pulse {
+    0%, 100% {
+        opacity: 1;
+    }
+    50% {
+        opacity: 0.7;
+    }
+}
+
+.experience-item.experience-current {
+    border-left: 3px solid var(--link);
+    padding-left: 1.5rem;
+    margin-left: -2rem;
+    background: linear-gradient(to right, rgba(0, 102, 204, 0.05), transparent);
+    padding: 1.5rem;
+    border-radius: 8px;
 }
 
 .experience-date {
-    flex-shrink: 0;
-    width: 150px;
     font-weight: 600;
     color: var(--link);
     font-size: 0.95rem;
+    margin-bottom: 0.5rem;
+    display: block;
 }
 
 .experience-content {
@@ -2048,6 +2119,92 @@ code {
     font-size: 0.9rem;
     color: var(--text);
     border: 1px solid var(--border);
+}
+
+/* Expertise Grid (Consolidated) */
+.expertise-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+    margin: 3rem 0;
+}
+
+.expertise-section {
+    background: var(--bg-card);
+    padding: 2rem;
+    border-radius: 12px;
+    border: 1px solid var(--border);
+    box-shadow: var(--shadow);
+    transition: all var(--transition);
+}
+
+.expertise-section:hover {
+    transform: translateY(-4px);
+    box-shadow: var(--shadow-md);
+    border-color: var(--link);
+}
+
+.expertise-section h3 {
+    margin-top: 0;
+    margin-bottom: 1.25rem;
+    color: var(--text);
+    font-size: 1.25rem;
+}
+
+.expertise-tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.75rem;
+}
+
+.expertise-tag {
+    background: var(--bg-alt);
+    padding: 0.5rem 1rem;
+    border-radius: 6px;
+    font-size: 0.9rem;
+    color: var(--text);
+    border: 1px solid var(--border);
+    transition: all var(--transition);
+}
+
+.expertise-tag.expert {
+    border-color: var(--link);
+    background: rgba(0, 102, 204, 0.1);
+    font-weight: 500;
+}
+
+.expertise-tag.advanced {
+    border-color: var(--primary);
+    background: rgba(0, 123, 255, 0.05);
+}
+
+.expertise-tag.intermediate {
+    border-color: var(--border);
+}
+
+/* About Contact Section */
+.about-contact-section {
+    background: var(--bg-alt);
+    padding: 2.5rem;
+    border-radius: 12px;
+    margin: 3rem 0;
+    border: 1px solid var(--border);
+}
+
+.about-contact-section h3 {
+    margin-top: 0;
+    color: var(--text);
+    font-size: 1.5rem;
+    margin-bottom: 1.5rem;
+}
+
+.about-contact-cta {
+    text-align: center;
+    margin-top: 2rem;
+    display: flex;
+    gap: 1rem;
+    justify-content: center;
+    flex-wrap: wrap;
 }
 
 /* CV Page Styles */
@@ -3768,6 +3925,31 @@ table td.text-center {
     }
     
     .collaboration-cta-buttons .btn {
+        width: 100%;
+    }
+    
+    .experience-timeline {
+        padding-left: 1.5rem;
+    }
+    
+    .experience-item {
+        padding-left: 1.5rem;
+    }
+    
+    .experience-item.experience-current {
+        margin-left: -1.5rem;
+        padding-left: 1rem;
+    }
+    
+    .expertise-grid {
+        grid-template-columns: 1fr;
+    }
+    
+    .about-contact-cta {
+        flex-direction: column;
+    }
+    
+    .about-contact-cta .btn {
         width: 100%;
     }
     
