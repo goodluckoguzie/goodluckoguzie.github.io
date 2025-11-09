@@ -2246,6 +2246,79 @@ code {
     font-weight: 500;
 }
 
+/* CV Publication Cards */
+.publication-cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+    margin: 2rem 0;
+}
+
+.publication-card {
+    background: var(--bg-card);
+    padding: 2rem;
+    border-radius: 12px;
+    border: 1px solid var(--border);
+    box-shadow: var(--shadow);
+    transition: all var(--transition);
+}
+
+.publication-card:hover {
+    transform: translateY(-4px);
+    box-shadow: var(--shadow-md);
+    border-color: var(--link);
+}
+
+.publication-card h3 {
+    margin-top: 0;
+    margin-bottom: 1rem;
+    color: var(--text);
+    font-size: 1.25rem;
+}
+
+.publication-card .publication-meta {
+    color: var(--text-light);
+    font-size: 0.9rem;
+    margin-bottom: 1.5rem;
+    line-height: 1.6;
+}
+
+.publication-card .publication-links {
+    display: flex;
+    gap: 0.75rem;
+    flex-wrap: wrap;
+}
+
+.publication-card .publication-links .btn {
+    font-size: 0.9rem;
+    padding: 0.5rem 1rem;
+}
+
+/* CV Contact Section */
+.cv-contact-section {
+    background: var(--bg-alt);
+    padding: 2rem;
+    border-radius: 12px;
+    margin: 2rem 0;
+    border: 1px solid var(--border);
+}
+
+.cv-contact-section p {
+    margin: 0.75rem 0;
+    color: var(--text);
+}
+
+.cv-contact-section a {
+    color: var(--link);
+    text-decoration: none;
+    transition: color var(--transition);
+}
+
+.cv-contact-section a:hover {
+    color: var(--link-hover);
+    text-decoration: underline;
+}
+
 /* Insights Page Styles */
 .insights-filters {
     margin: 2rem 0;
@@ -3976,6 +4049,14 @@ table td.text-center {
     .cv-download .btn {
         width: 100%;
         min-width: auto;
+    }
+    
+    .publication-cards {
+        grid-template-columns: 1fr;
+    }
+    
+    .cv-contact-section {
+        padding: 1.5rem;
     }
     
     .research-actions {
