@@ -3,22 +3,22 @@ class CitationTools {
     constructor() {
         this.citations = {
             'cglstm': {
-                apa: 'Oguzie, G. (2024). Cosine-Gated LSTM for Sequential Learning. 2024 IEEE 5th International Conference on Pattern Recognition and Machine Learning (PRML), 8-15.',
-                mla: 'Oguzie, Goodluck. "Cosine-Gated LSTM for Sequential Learning." 2024 IEEE 5th International Conference on Pattern Recognition and Machine Learning (PRML), 2024, pp. 8-15.',
-                chicago: 'Oguzie, Goodluck. "Cosine-Gated LSTM for Sequential Learning." In 2024 IEEE 5th International Conference on Pattern Recognition and Machine Learning (PRML), 8-15. 2024.',
-                bibtex: '@inproceedings{oguzie2024cglstm,\n  title={Cosine-Gated LSTM for Sequential Learning},\n  author={Oguzie, Goodluck},\n  booktitle={2024 IEEE 5th International Conference on Pattern Recognition and Machine Learning (PRML)},\n  pages={8--15},\n  year={2024}\n}'
+                apa: 'Oguzie, D. G. (2024). Cosine-Gated LSTM for Sequential Learning. 2024 IEEE 5th International Conference on Pattern Recognition and Machine Learning (PRML), 8-15.',
+                mla: 'Oguzie, Dirichukwu Goodluck. "Cosine-Gated LSTM for Sequential Learning." 2024 IEEE 5th International Conference on Pattern Recognition and Machine Learning (PRML), 2024, pp. 8-15.',
+                chicago: 'Oguzie, Dirichukwu Goodluck. "Cosine-Gated LSTM for Sequential Learning." In 2024 IEEE 5th International Conference on Pattern Recognition and Machine Learning (PRML), 8-15. 2024.',
+                bibtex: '@inproceedings{oguzie2024cglstm,\n  title={Cosine-Gated LSTM for Sequential Learning},\n  author={Oguzie, Dirichukwu Goodluck},\n  booktitle={2024 IEEE 5th International Conference on Pattern Recognition and Machine Learning (PRML)},\n  pages={8--15},\n  year={2024}\n}'
             },
             'predictive-world': {
-                apa: 'Oguzie, G. (2023). Predictive World Models for Social Navigation. UKCI 2023 - UK Conference on Intelligent Systems.',
-                mla: 'Oguzie, Goodluck. "Predictive World Models for Social Navigation." UKCI 2023 - UK Conference on Intelligent Systems, 2023.',
-                chicago: 'Oguzie, Goodluck. "Predictive World Models for Social Navigation." UKCI 2023 - UK Conference on Intelligent Systems. 2023.',
-                bibtex: '@inproceedings{oguzie2023predictive,\n  title={Predictive World Models for Social Navigation},\n  author={Oguzie, Goodluck},\n  booktitle={UKCI 2023 - UK Conference on Intelligent Systems},\n  year={2023}\n}'
+                apa: 'Oguzie, D. G. (2023). Predictive World Models for Social Navigation. UKCI 2023 - UK Conference on Intelligent Systems.',
+                mla: 'Oguzie, Dirichukwu Goodluck. "Predictive World Models for Social Navigation." UKCI 2023 - UK Conference on Intelligent Systems, 2023.',
+                chicago: 'Oguzie, Dirichukwu Goodluck. "Predictive World Models for Social Navigation." UKCI 2023 - UK Conference on Intelligent Systems. 2023.',
+                bibtex: '@inproceedings{oguzie2023predictive,\n  title={Predictive World Models for Social Navigation},\n  author={Oguzie, Dirichukwu Goodluck},\n  booktitle={UKCI 2023 - UK Conference on Intelligent Systems},\n  year={2023}\n}'
             },
             'phd-thesis': {
-                apa: 'Oguzie, G. (2024). Enhancing Robot Social Navigation with Reinforcement Learning and Advanced Predictive Models (Doctoral dissertation, Aston University).',
-                mla: 'Oguzie, Goodluck. "Enhancing Robot Social Navigation with Reinforcement Learning and Advanced Predictive Models." PhD diss., Aston University, 2024.',
-                chicago: 'Oguzie, Goodluck. "Enhancing Robot Social Navigation with Reinforcement Learning and Advanced Predictive Models." PhD diss., Aston University, 2024.',
-                bibtex: '@phdthesis{oguzie2024thesis,\n  title={Enhancing Robot Social Navigation with Reinforcement Learning and Advanced Predictive Models},\n  author={Oguzie, Goodluck},\n  school={Aston University},\n  year={2024},\n  type={PhD Thesis}\n}'
+                apa: 'Oguzie, D. G. (2024). Enhancing Robot Social Navigation with Reinforcement Learning and Advanced Predictive Models (Doctoral dissertation, Aston University).',
+                mla: 'Oguzie, Dirichukwu Goodluck. "Enhancing Robot Social Navigation with Reinforcement Learning and Advanced Predictive Models." PhD diss., Aston University, 2024.',
+                chicago: 'Oguzie, Dirichukwu Goodluck. "Enhancing Robot Social Navigation with Reinforcement Learning and Advanced Predictive Models." PhD diss., Aston University, 2024.',
+                bibtex: '@phdthesis{oguzie2024thesis,\n  title={Enhancing Robot Social Navigation with Reinforcement Learning and Advanced Predictive Models},\n  author={Oguzie, Dirichukwu Goodluck},\n  school={Aston University},\n  year={2024},\n  type={PhD Thesis}\n}'
             }
         };
         this.init();
