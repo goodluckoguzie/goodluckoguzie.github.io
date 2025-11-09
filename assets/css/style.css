@@ -173,6 +173,13 @@ select:focus-visible {
 .home-stat-item {
     text-align: center;
     padding: 1rem;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    cursor: pointer;
+}
+
+.home-stat-item:hover {
+    transform: translateY(-8px) scale(1.05);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.15);
 }
 
 .home-stat-item.highlight-stat {
@@ -232,8 +239,8 @@ select:focus-visible {
 }
 
 .home-publication-card:hover {
-    transform: translateY(-4px);
-    box-shadow: var(--shadow-md);
+    transform: translateY(-8px) scale(1.02);
+    box-shadow: 0 12px 24px rgba(0, 0, 0, 0.15);
     border-color: var(--link);
 }
 
@@ -311,7 +318,13 @@ select:focus-visible {
     background: linear-gradient(to right, rgba(255, 165, 0, 0.05), var(--bg-card));
 }
 
+.home-research-card {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
 .home-research-card:hover {
+    transform: translateY(-8px) scale(1.02);
+    box-shadow: 0 12px 24px rgba(0, 0, 0, 0.15);
     border-color: var(--link);
 }
 
@@ -436,11 +449,29 @@ select:focus-visible {
     font-size: 0.95rem;
     line-height: 1.6;
     color: var(--text);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    cursor: pointer;
+}
+
+.home-teaching-highlight:hover {
+    transform: translateY(-8px) scale(1.05);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.15);
 }
 
 .home-teaching-highlight strong {
     color: var(--text);
     font-weight: 600;
+}
+
+/* Teaching Metrics Boxes - Pop Effect */
+.home-teaching-metrics > div {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    cursor: pointer;
+}
+
+.home-teaching-metrics > div:hover {
+    transform: translateY(-8px) scale(1.05);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.15);
 }
 
 /* Home Collaboration Section */
