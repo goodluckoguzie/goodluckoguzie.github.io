@@ -33,8 +33,8 @@ My research focuses on **Social Robot Navigation**, **Reinforcement Learning**, 
     <h3>Cosine-Gated LSTM for Sequential Learning</h3>
     <p class="portfolio-card-meta">2024 • Neural Network Architecture</p>
     <div class="portfolio-card-media">
-      <div class="portfolio-card-pdf">
-        <iframe src="{{ '/PredictionforSocNav.pdf' | relative_url }}#toolbar=0&navpanes=0&scrollbar=0" width="100%" height="400px" style="border: none;" aria-label="Visual comparison of predictive performance in SocNavGym: CGLSTM (accurate predictions in blue), Transformer (high accuracy with some red inconsistencies), Vanilla LSTM (predominantly red, inaccurate), and GRU (inaccurate but slightly better than LSTM). Yellow represents current state."></iframe>
+      <div class="portfolio-card-image">
+        <img src="{{ '/assets/images/cgltsmtestResultforsocnav.jpg' | relative_url }}" alt="Visual comparison of predictive performance in SocNavGym: CGLSTM (accurate predictions in blue), Transformer (high accuracy with some red inconsistencies), Vanilla LSTM (predominantly red, inaccurate), and GRU (inaccurate but slightly better than LSTM). Yellow represents current state." loading="lazy">
         <p class="portfolio-card-pdf-caption">Visual comparison of predictive performance in the SocNavGym environment, highlighting the color-coded accuracy of predictions: Blue indicates an accurate prediction aligned with the actual future states, red signifies discrepancies between the model's predictions and the actual future states, and yellow represents the current state. Specifically, (a) the CGLSTM model demonstrates precise alignment, indicating accurate predictions. (b) The Transformer model exhibits high predictive accuracy, with some inconsistency marked by red. (c) The Vanilla LSTM model, predominantly in red, shows a high level of inaccuracy in predictions. (d) The GRU model also shows inaccurate predictions but performs slightly better than the Vanilla LSTM model.</p>
       </div>
       <div class="portfolio-card-image">
@@ -87,8 +87,8 @@ My research focuses on **Social Robot Navigation**, **Reinforcement Learning**, 
           Your browser does not support the video tag.
         </video>
       </div>
-      <div class="portfolio-card-pdf">
-        <iframe src="{{ '/bounceoff.pdf' | relative_url }}#toolbar=0&navpanes=0&scrollbar=0" width="100%" height="400px" style="border: none;" aria-label="FallingBallEnv bounce-off visualization showing ball physics and bouncing behavior"></iframe>
+      <div class="portfolio-card-image">
+        <img src="{{ '/assets/images/FallingBallwithprediction.png' | relative_url }}" alt="FallingBallEnv bounce-off visualization showing ball physics and bouncing behavior with prediction states" loading="lazy">
       </div>
     </div>
     <p class="portfolio-card-description">Simple environment where a ball falls and bounces, obeying gravity. The floor position is not included in the observation space, testing predictive capabilities.</p>
