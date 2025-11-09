@@ -22,11 +22,11 @@ document.addEventListener('DOMContentLoaded', function() {
                 const categories = card.dataset.category;
                 
                 if (filter === 'all') {
-                    // Show all cards
-                    card.style.display = 'block';
+                    // Show all cards - reset to default display
+                    card.style.display = '';
                 } else if (categories && categories.includes(filter)) {
                     // Show card if it matches the filter
-                    card.style.display = 'block';
+                    card.style.display = '';
                 } else {
                     // Hide card if it doesn't match
                     card.style.display = 'none';
