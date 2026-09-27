@@ -81,7 +81,7 @@ Download my CV in your preferred format or view it online below.
     <div class="education-content">
       <h3>PhD, Computer Science</h3>
       <p><strong>Aston University</strong></p>
-      <p>United Kingdom • 2020 – 2024</p>
+      <p>United Kingdom • 2020 – 2025</p>
       <p><strong>Thesis:</strong> "Enhancing Robot Social Navigation with Reinforcement Learning and Advanced Predictive Models"</p>
       <p><strong>Supervisors:</strong> Dr. Luis J. Manso, Prof. Dr. Aniko Ekart</p>
       <p><strong>Key Contributions:</strong> Predictive World Models (2StepAhead, MASPM), Cosine-Gated LSTM (CGLSTM) architecture, Adaptive Prediction Horizons</p>
@@ -93,8 +93,11 @@ Download my CV in your preferred format or view it online below.
     <div class="education-content">
       <h3>MSc, Automation Control and Robotics</h3>
       <p><strong>Sheffield Hallam University</strong></p>
-      <p>Sheffield, United Kingdom • 2018 – 2019</p>
-      <p>Focus on automation systems, control engineering, and robotics applications.</p>
+      <p>Sheffield, United Kingdom • January 2018 – May 2019</p>
+      <p><strong>Classification:</strong> Merit. Full time. Awarded 25 June 2019.</p>
+      <p><strong>Dissertation (63, 60 credits):</strong> “Multifunctional Autonomous Mobile Robot for Various Applications.” Supervisor: Dr Lyuba Alboul. January 2019 to May 2019.</p>
+      <p>Built and tested a physical wheeled Hummer bot on an Arduino UNO with an L298N motor driver. The robot did infrared and ultrasonic obstacle avoidance, line following, and wireless control by infrared remote and Bluetooth. The controller used sensor thresholds and timed motor commands. It was not a learned policy.</p>
+      <p><strong>Module marks:</strong> Control of Linear Systems 76, Robotics 65, Applicable Artificial Intelligence 64, Advanced Control Methods 62, Project and Dissertation 63, Sustainability, Energy and Environmental Management 60, Electrical Energy Systems 53, Industrial Automation 50, Manufacturing Systems 50. All passed.</p>
     </div>
   </div>
   

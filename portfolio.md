@@ -235,6 +235,22 @@ My research focuses on **Social Robot Navigation**, **Reinforcement Learning**, 
 
 ---
 
+## MSc Project
+
+<div class="portfolio-grid portfolio-grid-single" data-category="completed">
+  <div class="portfolio-card portfolio-card-large" data-category="completed">
+    <div class="portfolio-card-badges">
+      <div class="project-status-badge completed">COMPLETED</div>
+    </div>
+    <h3>Multifunctional Autonomous Mobile Robot</h3>
+    <p class="portfolio-card-meta">January 2019 – May 2019 • Sheffield Hallam University • MSc Merit</p>
+    <p class="portfolio-card-description">Dissertation supervised by Dr Lyuba Alboul. A physical wheeled Hummer bot on an Arduino UNO with an L298N motor driver. Tested infrared obstacle avoidance, ultrasonic obstacle avoidance, line following, and wireless control by infrared remote and Bluetooth. The controller used sensor thresholds and timed motor commands. Mark 63.</p>
+    <a href="{{ '/projects/msc-mobile-robot' | relative_url }}" class="portfolio-card-link">Read the project →</a>
+  </div>
+</div>
+
+---
+
 ## PhD Thesis
 
 <div class="portfolio-grid portfolio-grid-single" data-category="completed">
@@ -243,7 +259,7 @@ My research focuses on **Social Robot Navigation**, **Reinforcement Learning**, 
       <div class="project-status-badge completed">COMPLETED</div>
     </div>
     <h3>PhD Thesis: Enhancing Robot Social Navigation</h3>
-    <p class="portfolio-card-meta">2020 - 2024 • Aston University</p>
+    <p class="portfolio-card-meta">2020 - 2025 • Aston University</p>
     <div class="portfolio-card-media">
       <div class="portfolio-card-video">
         <video autoplay muted loop playsinline preload="metadata" poster="{{ '/assets/images/AverageReturnvsInferenceTime.png' | relative_url }}" aria-label="PhD Thesis demonstration showing integrated models">

@@ -66,7 +66,7 @@ description: "Learn about Dr. Dirichukwu Goodluck Oguzie (PhD, MSc, BSc in Compu
     <div class="education-content">
       <h3>PhD, Computer Science</h3>
       <p><strong>Aston University</strong></p>
-      <p>United Kingdom • 2020 - 2024</p>
+      <p>United Kingdom • 2020 - 2025</p>
       <p><strong>Thesis:</strong> "Enhancing Robot Social Navigation with Reinforcement Learning and Advanced Predictive Models"</p>
       <p><strong>Supervisors:</strong> Dr. Luis J. Manso, Prof. Dr. Aniko Ekart</p>
     </div>
@@ -77,7 +77,10 @@ description: "Learn about Dr. Dirichukwu Goodluck Oguzie (PhD, MSc, BSc in Compu
     <div class="education-content">
       <h3>MSc, Automation Control and Robotics</h3>
       <p><strong>Sheffield Hallam University</strong></p>
-      <p>Sheffield, United Kingdom • 2018 - 2019</p>
+      <p>Sheffield, United Kingdom • January 2018 – May 2019</p>
+      <p><strong>Classification:</strong> Merit. Full time. Awarded 25 June 2019.</p>
+      <p><strong>Dissertation:</strong> “Multifunctional Autonomous Mobile Robot for Various Applications” (63). Supervisor: Dr Lyuba Alboul.</p>
+      <p>A physical wheeled Hummer bot on an Arduino UNO. Infrared and ultrasonic obstacle avoidance, line following, and infrared and Bluetooth control. Sensor thresholds, not a learned policy.</p>
     </div>
   </div>
   
